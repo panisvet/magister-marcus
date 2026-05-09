@@ -1,3 +1,5 @@
+import TopNav from '../components/TopNav.jsx';
+
 const STYLES = `
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400;1,600&family=IM+Fell+English:ital@0;1&display=swap');
 
@@ -6,6 +8,7 @@ body{background:#0a0804;overflow-x:hidden;}
 
 .hp-root{
   min-height:100vh;
+  padding-top:40px;
   font-family:'Crimson Pro',Georgia,serif;
   color:#f7edcc;
   background:#0a0804;
@@ -28,7 +31,7 @@ body{background:#0a0804;overflow-x:hidden;}
 /* Header */
 .hp-header{
   text-align:center;
-  padding:64px 0 52px;
+  padding:36px 0 44px;
   border-bottom:1px solid #c9902a22;
   margin-bottom:52px;
 }
@@ -225,6 +228,7 @@ export default function Home() {
     <>
       <style>{STYLES}</style>
       <div className="hp-root">
+        <TopNav current="/"/>
         <div className="hp-inner">
 
           <header className="hp-header">

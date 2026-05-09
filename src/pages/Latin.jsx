@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import TopNav from "../components/TopNav.jsx";
 
 // ── Styles injected once ──────────────────────────────────────────────────────
 const STYLES = `
@@ -15,7 +16,7 @@ const STYLES = `
 .mm-bg{position:absolute;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(ellipse 80% 60% at 15% 20%,#2a1a0855,transparent),
              radial-gradient(ellipse 60% 80% at 85% 80%,#1a0e0455,transparent),#0e0b07;}
-.mm-shell{position:relative;z-index:1;display:grid;height:100vh;
+.mm-shell{position:relative;z-index:1;display:grid;height:calc(100vh - 40px);margin-top:40px;
   grid-template-columns:240px 1fr;grid-template-rows:auto auto 1fr auto;
   grid-template-areas:"sb sbar""sb tbar""sb chat""sb ibar";}
 
@@ -45,8 +46,6 @@ const STYLES = `
 .mm-cb:hover{color:var(--parch2);border-left-color:var(--gold);background:#c9902a0d;}
 .mm-cb .auth{font-family:'Cinzel',serif;font-size:.53rem;letter-spacing:.1em;color:var(--gold);display:block;text-transform:uppercase;}
 .mm-sb-foot{padding:7px 11px;font-size:.66rem;color:var(--stone);font-style:italic;border-top:1px solid #c9902a18;}
-.mm-back{display:inline-flex;align-items:center;gap:6px;font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);text-decoration:none;padding:5px 10px;border:1px solid #c9902a22;border-radius:2px;transition:all .15s;margin:8px 11px 0;}
-.mm-back:hover{color:var(--gold2);border-color:var(--gold);background:#c9902a0d;}
 .mm-speed-section{padding:9px 11px 8px;border-bottom:1px solid #c9902a18;}
 .mm-speed-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;}
 .mm-speed-label{font-family:'Cinzel',serif;font-size:.54rem;letter-spacing:.15em;color:var(--stone);text-transform:uppercase;}
@@ -611,6 +610,7 @@ export default function MagisterMarcus() {
       <style>{STYLES}</style>
       <div className="mm-root">
         <div className="mm-bg"/>
+        <TopNav current="/latin"/>
         <div className="mm-shell">
 
           {/* SIDEBAR */}
@@ -620,7 +620,6 @@ export default function MagisterMarcus() {
               <div className="mm-brand-title">Magister Marcus</div>
               <div className="mm-brand-sub">Via Latina · The Latin Way</div>
             </div>
-            <a href="/" className="mm-back">← All Subjects</a>
 
             <SpeedSlider/>
 
