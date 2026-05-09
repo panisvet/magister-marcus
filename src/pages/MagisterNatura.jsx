@@ -182,7 +182,8 @@ export default function MagisterNatura() {
   }
 
   return (
-    <div style={styles.root}>
+    <div style={styles.root} className="sch-nav-offset">
+      <style>{CSS_VARS}</style>
       <TopNav current="/magister-natura" />
 
       {/* Decorative leaves */}
@@ -224,7 +225,7 @@ export default function MagisterNatura() {
               {PROFILES.map(p => (
                 <button key={p.id} style={styles.profileCard} onClick={() => startSession(p)}
                   onMouseEnter={e => {
-                    e.currentTarget.style.borderColor = 'var(--gold)'
+                    e.currentTarget.style.borderColor = '#c9902a'
                     e.currentTarget.style.transform = 'translateY(-3px)'
                     e.currentTarget.style.boxShadow = '0 8px 32px rgba(201,144,42,0.18)'
                   }}
@@ -299,7 +300,7 @@ export default function MagisterNatura() {
                 <div style={styles.promptsList}>
                   {NATURE_PROMPTS.slice(0, 4).map(p => (
                     <button key={p} style={styles.promptChip} onClick={() => usePrompt(p)}
-                      onMouseEnter={e => e.currentTarget.style.borderColor = 'var(--gold)'}
+                      onMouseEnter={e => e.currentTarget.style.borderColor = '#c9902a'}
                       onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(201,144,42,0.3)'}
                     >
                       {p}
@@ -349,17 +350,30 @@ export default function MagisterNatura() {
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: rgba(14,11,7,0.5); }
         ::-webkit-scrollbar-thumb { background: rgba(201,144,42,0.3); border-radius: 3px; }
-        textarea:focus { outline: none; border-color: var(--gold) !important; box-shadow: 0 0 0 2px rgba(201,144,42,0.15); }
+        textarea:focus { outline: none; border-color: #c9902a !important; box-shadow: 0 0 0 2px rgba(201,144,42,0.15); }
       `}</style>
     </div>
   )
 }
 
+const CSS_VARS = `
+  :root {
+    --gold:    #c9902a;
+    --gold2:   #e8b84b;
+    --gold3:   #f5d070;
+    --parch:   #f7edcc;
+    --bg:      #0e0b07;
+    --stone:   #9e8c72;
+    --laurel2: #5a7a4a;
+  }
+  body { background: #0e0b07; }
+`;
+
 const styles = {
   root: {
     minHeight: '100vh',
-    background: 'var(--bg)',
-    color: 'var(--parch)',
+    background: '#0e0b07',
+    color: '#f7edcc',
     fontFamily: "'Crimson Pro', Georgia, serif",
     position: 'relative',
     overflowX: 'hidden',
@@ -376,7 +390,7 @@ const styles = {
     padding: '2.5rem 0 1.5rem',
   },
   headerOrn: {
-    color: 'var(--gold)',
+    color: '#c9902a',
     fontSize: '1rem',
     letterSpacing: '0.5em',
     marginBottom: '0.75rem',
@@ -385,7 +399,7 @@ const styles = {
   title: {
     fontFamily: "'Cinzel Decorative', 'Cinzel', serif",
     fontSize: 'clamp(1.8rem, 5vw, 2.8rem)',
-    color: 'var(--gold2)',
+    color: '#e8b84b',
     margin: 0,
     letterSpacing: '0.04em',
     textShadow: '0 2px 20px rgba(201,144,42,0.3)',
@@ -393,7 +407,7 @@ const styles = {
   subtitle: {
     fontFamily: "'Cinzel', serif",
     fontSize: '0.85rem',
-    color: 'var(--stone)',
+    color: '#9e8c72',
     letterSpacing: '0.25em',
     textTransform: 'uppercase',
     margin: '0.4rem 0 1rem',
@@ -401,7 +415,7 @@ const styles = {
   headerDivider: {
     width: 120,
     height: 1,
-    background: 'linear-gradient(90deg, transparent, var(--gold), transparent)',
+    background: 'linear-gradient(90deg, transparent, #c9902a, transparent)',
     margin: '0 auto 1rem',
   },
   motto: {
@@ -412,7 +426,7 @@ const styles = {
   },
   attribution: {
     fontSize: '0.85rem',
-    color: 'var(--stone)',
+    color: '#9e8c72',
     fontStyle: 'normal',
   },
   profileSection: {
@@ -441,7 +455,7 @@ const styles = {
     textAlign: 'center',
     transition: 'all 0.25s ease',
     boxShadow: '0 2px 12px rgba(0,0,0,0.3)',
-    color: 'var(--parch)',
+    color: '#f7edcc',
     fontFamily: "'Crimson Pro', serif",
   },
   profileIcon: {
@@ -452,7 +466,7 @@ const styles = {
   profileLatin: {
     fontFamily: "'Cinzel', serif",
     fontSize: '0.65rem',
-    color: 'var(--stone)',
+    color: '#9e8c72',
     letterSpacing: '0.2em',
     textTransform: 'uppercase',
     marginBottom: '0.3rem',
@@ -460,12 +474,12 @@ const styles = {
   profileName: {
     fontFamily: "'Cinzel Decorative', serif",
     fontSize: '1.1rem',
-    color: 'var(--gold2)',
+    color: '#e8b84b',
     marginBottom: '0.2rem',
   },
   profileAge: {
     fontSize: '0.8rem',
-    color: 'var(--stone)',
+    color: '#9e8c72',
     marginBottom: '0.6rem',
   },
   profileDesc: {
@@ -483,7 +497,7 @@ const styles = {
   sourcesTitle: {
     fontFamily: "'Cinzel', serif",
     fontSize: '0.75rem',
-    color: 'var(--gold)',
+    color: '#c9902a',
     letterSpacing: '0.2em',
     textTransform: 'uppercase',
     marginBottom: '1rem',
@@ -499,7 +513,7 @@ const styles = {
     lineHeight: 1.6,
   },
   sourceDot: {
-    color: 'var(--gold)',
+    color: '#c9902a',
     marginRight: '0.4rem',
   },
   chatSection: {
@@ -522,12 +536,12 @@ const styles = {
   },
   badgeName: {
     fontFamily: "'Cinzel Decorative', serif",
-    color: 'var(--gold2)',
+    color: '#e8b84b',
     fontSize: '0.95rem',
   },
   badgeLatin: {
     fontFamily: "'Cinzel', serif",
-    color: 'var(--stone)',
+    color: '#9e8c72',
     fontSize: '0.8rem',
   },
   changeBtn: {
@@ -535,7 +549,7 @@ const styles = {
     background: 'none',
     border: '1px solid rgba(201,144,42,0.3)',
     borderRadius: 4,
-    color: 'var(--stone)',
+    color: '#9e8c72',
     fontSize: '0.8rem',
     padding: '0.25rem 0.6rem',
     cursor: 'pointer',
@@ -567,7 +581,7 @@ const styles = {
   magisterlabel: {
     fontFamily: "'Cinzel', serif",
     fontSize: '0.65rem',
-    color: 'var(--gold)',
+    color: '#c9902a',
     letterSpacing: '0.15em',
     textTransform: 'uppercase',
     paddingLeft: '0.25rem',
@@ -600,9 +614,9 @@ const styles = {
     padding: '0.9rem 1.1rem',
     fontStyle: 'normal',
   },
-  dot1: { animation: 'pulse 1.4s ease-in-out infinite', fontSize: '1.5rem', color: 'var(--gold)', lineHeight: 1 },
-  dot2: { animation: 'pulse 1.4s ease-in-out 0.2s infinite', fontSize: '1.5rem', color: 'var(--gold)', lineHeight: 1 },
-  dot3: { animation: 'pulse 1.4s ease-in-out 0.4s infinite', fontSize: '1.5rem', color: 'var(--gold)', lineHeight: 1 },
+  dot1: { animation: 'pulse 1.4s ease-in-out infinite', fontSize: '1.5rem', color: '#c9902a', lineHeight: 1 },
+  dot2: { animation: 'pulse 1.4s ease-in-out 0.2s infinite', fontSize: '1.5rem', color: '#c9902a', lineHeight: 1 },
+  dot3: { animation: 'pulse 1.4s ease-in-out 0.4s infinite', fontSize: '1.5rem', color: '#c9902a', lineHeight: 1 },
   promptsRow: {
     background: 'rgba(20,16,8,0.7)',
     border: '1px solid rgba(201,144,42,0.12)',
@@ -612,7 +626,7 @@ const styles = {
   promptsLabel: {
     fontFamily: "'Cinzel', serif",
     fontSize: '0.65rem',
-    color: 'var(--stone)',
+    color: '#9e8c72',
     letterSpacing: '0.18em',
     textTransform: 'uppercase',
     marginBottom: '0.6rem',
@@ -644,7 +658,7 @@ const styles = {
     border: '1px solid rgba(201,144,42,0.25)',
     borderRadius: 8,
     padding: '0.75rem 1rem',
-    color: 'var(--parch)',
+    color: '#f7edcc',
     fontSize: '1rem',
     fontFamily: "'Crimson Pro', serif",
     lineHeight: 1.6,
@@ -658,7 +672,7 @@ const styles = {
     width: 44,
     height: 44,
     fontSize: '1.4rem',
-    color: 'var(--gold2)',
+    color: '#e8b84b',
     cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
@@ -680,7 +694,7 @@ const styles = {
     borderTop: '1px solid rgba(201,144,42,0.1)',
   },
   footerOrn: {
-    color: 'var(--gold)',
+    color: '#c9902a',
     opacity: 0.4,
     fontSize: '0.8rem',
     letterSpacing: '0.5em',
@@ -689,7 +703,7 @@ const styles = {
   footerText: {
     fontFamily: "'Cinzel', serif",
     fontSize: '0.7rem',
-    color: 'var(--stone)',
+    color: '#9e8c72',
     letterSpacing: '0.2em',
     opacity: 0.5,
     margin: 0,

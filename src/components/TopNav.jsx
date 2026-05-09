@@ -66,14 +66,14 @@ const NAV_STYLES = `
 // Single source of truth for active subjects.
 // Add entries here as new subjects go live.
 const ACTIVE_SUBJECTS = [
-  { label: 'Latin', href: '/latin' },
+  { label: 'Latin',   href: '/latin'           },
+  { label: 'Natura',  href: '/magister-natura' },
   // { label: 'Math',    href: '/math'    },
   // { label: 'History', href: '/history' },
 ];
 
 export default function TopNav({ current }) {
   const path = current || (typeof window !== 'undefined' ? window.location.pathname : '');
-
   return (
     <>
       <style>{NAV_STYLES}</style>
