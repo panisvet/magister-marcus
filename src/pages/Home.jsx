@@ -13,77 +13,41 @@ body{background:#0a0804;overflow-x:hidden;}
 
 /* ── Password gate ── */
 .pw-root{
-  min-height:100vh;
-  background:#0a0804;
-  background-image:
-    radial-gradient(ellipse 70% 50% at 20% 10%, #2a1a0833, transparent),
-    radial-gradient(ellipse 60% 70% at 80% 90%, #1a0e0433, transparent);
+  min-height:100vh;background:#0a0804;
+  background-image:radial-gradient(ellipse 70% 50% at 20% 10%,#2a1a0833,transparent),
+    radial-gradient(ellipse 60% 70% at 80% 90%,#1a0e0433,transparent);
   display:flex;align-items:center;justify-content:center;
-  font-family:'Crimson Pro',Georgia,serif;
-  color:#f7edcc;
+  font-family:'Crimson Pro',Georgia,serif;color:#f7edcc;
 }
 .pw-box{
-  text-align:center;
-  display:flex;flex-direction:column;align-items:center;gap:14px;
-  padding:48px 40px;
-  background:linear-gradient(135deg,#1e160f,#14100700);
-  border:1px solid #c9902a2a;
-  border-radius:3px;
-  min-width:300px;
+  text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;
+  padding:48px 40px;background:linear-gradient(135deg,#1e160f,#14100700);
+  border:1px solid #c9902a2a;border-radius:3px;min-width:300px;
 }
 .pw-crest{font-size:2.4rem;margin-bottom:4px;}
-.pw-title{
-  font-family:'Cinzel Decorative',serif;
-  font-size:1.3rem;color:#e8b84b;
-  letter-spacing:.06em;
-  text-shadow:0 0 24px rgba(232,184,75,.3);
-}
-.pw-sub{
-  font-family:'IM Fell English',serif;
-  font-style:italic;font-size:.9rem;color:#9e8c72;
-}
-.pw-divider{
-  width:200px;height:1px;
-  background:linear-gradient(90deg,transparent,#c9902a,transparent);
-  margin:4px 0;
-}
+.pw-title{font-family:'Cinzel Decorative',serif;font-size:1.3rem;color:#e8b84b;letter-spacing:.06em;text-shadow:0 0 24px rgba(232,184,75,.3);}
+.pw-sub{font-family:'IM Fell English',serif;font-style:italic;font-size:.9rem;color:#9e8c72;}
+.pw-divider{width:200px;height:1px;background:linear-gradient(90deg,transparent,#c9902a,transparent);margin:4px 0;}
 .pw-input{
-  width:100%;padding:10px 14px;
-  font-family:'Crimson Pro',Georgia,serif;
-  font-size:1rem;
-  background:#0f0a05;color:#f7edcc;
-  border:1px solid #c9902a44;border-radius:2px;
-  outline:none;
-  transition:border-color .2s;
+  width:100%;padding:10px 14px;font-family:'Crimson Pro',Georgia,serif;font-size:1rem;
+  background:#0f0a05;color:#f7edcc;border:1px solid #c9902a44;border-radius:2px;outline:none;transition:border-color .2s;
 }
 .pw-input:focus{border-color:#c9902a99;}
 .pw-input.error{border-color:#8b3a3a;}
-.pw-error{
-  font-family:'IM Fell English',serif;
-  font-style:italic;font-size:.85rem;color:#8b3a3a;
-}
+.pw-error{font-family:'IM Fell English',serif;font-style:italic;font-size:.85rem;color:#8b3a3a;}
 .pw-btn{
-  width:100%;padding:10px 0;
-  font-family:'Cinzel',serif;font-size:.75rem;
-  letter-spacing:.2em;text-transform:uppercase;
-  background:transparent;color:#c9902a;
-  border:1px solid #c9902a55;border-radius:2px;
-  cursor:pointer;transition:all .2s;
+  width:100%;padding:10px 0;font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;
+  background:transparent;color:#c9902a;border:1px solid #c9902a55;border-radius:2px;cursor:pointer;transition:all .2s;
 }
 .pw-btn:hover{background:#c9902a18;border-color:#c9902a99;}
 
-/* ── Main page (unchanged) ── */
+/* ── Main page ── */
 .hp-root{
-  min-height:100vh;
-  padding-top:40px;
-  font-family:'Crimson Pro',Georgia,serif;
-  color:#f7edcc;
+  min-height:100vh;padding-top:40px;font-family:'Crimson Pro',Georgia,serif;color:#f7edcc;
   background:#0a0804;
-  background-image:
-    radial-gradient(ellipse 70% 50% at 20% 10%, #2a1a0833, transparent),
-    radial-gradient(ellipse 60% 70% at 80% 90%, #1a0e0433, transparent);
-  position:relative;
-  overflow:hidden;
+  background-image:radial-gradient(ellipse 70% 50% at 20% 10%,#2a1a0833,transparent),
+    radial-gradient(ellipse 60% 70% at 80% 90%,#1a0e0433,transparent);
+  position:relative;overflow:hidden;
 }
 .hp-root::before{
   content:'';position:fixed;inset:0;z-index:0;opacity:.025;
@@ -91,98 +55,132 @@ body{background:#0a0804;overflow-x:hidden;}
   pointer-events:none;
 }
 .hp-inner{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 32px 80px;}
-.hp-header{
-  text-align:center;
-  padding:36px 0 44px;
-  border-bottom:1px solid #c9902a22;
-  margin-bottom:52px;
-}
-.hp-crest{
-  display:flex;align-items:center;justify-content:center;gap:20px;
-  margin-bottom:18px;
-}
+.hp-header{text-align:center;padding:36px 0 44px;border-bottom:1px solid #c9902a22;margin-bottom:52px;}
+.hp-crest{display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:18px;}
 .hp-laurel{width:56px;opacity:.8;}
 .hp-laurel.flip{transform:scaleX(-1);}
-.hp-school-name{
-  font-family:'Cinzel Decorative',serif;
-  font-size:clamp(1.6rem,4vw,2.6rem);
-  color:#e8b84b;
-  letter-spacing:.06em;
-  text-shadow:0 0 30px rgba(232,184,75,.35);
-  line-height:1.1;
-}
-.hp-school-sub{
-  font-family:'IM Fell English',serif;
-  font-style:italic;font-size:1.05rem;
-  color:#9e8c72;margin-top:6px;letter-spacing:.06em;
-}
-.hp-divider{
-  width:280px;height:1px;
-  background:linear-gradient(90deg,transparent,#c9902a,transparent);
-  margin:20px auto 0;
-}
-.hp-motto{
-  font-family:'IM Fell English',serif;font-style:italic;
-  font-size:.92rem;color:#9e8c7288;margin-top:14px;letter-spacing:.08em;
-}
-.hp-section-label{
-  font-family:'Cinzel',serif;font-size:.62rem;
-  letter-spacing:.25em;color:#9e8c72;
-  text-transform:uppercase;margin-bottom:22px;
-}
-.hp-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-  gap:20px;margin-bottom:52px;
-}
+.hp-school-name{font-family:'Cinzel Decorative',serif;font-size:clamp(1.6rem,4vw,2.6rem);color:#e8b84b;letter-spacing:.06em;text-shadow:0 0 30px rgba(232,184,75,.35);line-height:1.1;}
+.hp-school-sub{font-family:'IM Fell English',serif;font-style:italic;font-size:1.05rem;color:#9e8c72;margin-top:6px;letter-spacing:.06em;}
+.hp-divider{width:280px;height:1px;background:linear-gradient(90deg,transparent,#c9902a,transparent);margin:20px auto 0;}
+.hp-motto{font-family:'IM Fell English',serif;font-style:italic;font-size:.92rem;color:#9e8c7288;margin-top:14px;letter-spacing:.08em;}
+
+.hp-section-label{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.25em;color:#9e8c72;text-transform:uppercase;margin-bottom:22px;}
+.hp-section-divider{border:none;border-top:1px solid #c9902a18;margin:44px 0 40px;}
+
+/* Subject cards */
+.hp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-bottom:52px;}
 .hp-card{
-  background:linear-gradient(135deg,#1e160f,#14100700);
-  border:1px solid #c9902a2a;border-radius:3px;
-  padding:24px 22px 22px;cursor:pointer;transition:all .22s;
-  text-decoration:none;display:block;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#1e160f,#14100700);border:1px solid #c9902a2a;border-radius:3px;
+  padding:24px 22px 22px;cursor:pointer;transition:all .22s;text-decoration:none;display:block;position:relative;overflow:hidden;
 }
-.hp-card::before{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,#c9902a0a,transparent);
-  opacity:0;transition:opacity .22s;
-}
-.hp-card:hover{
-  border-color:#c9902a66;transform:translateY(-2px);
-  box-shadow:0 8px 32px rgba(14,11,7,.6), 0 0 0 1px #c9902a22;
-}
+.hp-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#c9902a0a,transparent);opacity:0;transition:opacity .22s;}
+.hp-card:hover{border-color:#c9902a66;transform:translateY(-2px);box-shadow:0 8px 32px rgba(14,11,7,.6),0 0 0 1px #c9902a22;}
 .hp-card:hover::before{opacity:1;}
 .hp-card.coming-soon{opacity:.45;cursor:default;}
 .hp-card.coming-soon:hover{transform:none;box-shadow:none;}
-.hp-card-accent{
-  position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,transparent,var(--accent,#c9902a),transparent);
-  opacity:.7;
-}
+.hp-card-accent{position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent,#c9902a),transparent);opacity:.7;}
 .hp-card-icon{font-size:2rem;margin-bottom:12px;display:block;filter:drop-shadow(0 0 8px rgba(201,144,42,.3));}
 .hp-card-title{font-family:'Cinzel',serif;font-size:.92rem;letter-spacing:.12em;color:#e8b84b;text-transform:uppercase;margin-bottom:4px;}
 .hp-card-subtitle{font-family:'IM Fell English',serif;font-style:italic;font-size:.88rem;color:#9e8c72;margin-bottom:10px;}
 .hp-card-desc{font-size:.95rem;color:#ede0b088;line-height:1.6;}
-.hp-card-tag{
-  display:inline-block;margin-top:12px;
-  font-family:'Cinzel',serif;font-size:.55rem;
-  letter-spacing:.15em;text-transform:uppercase;
-  padding:3px 9px;border-radius:1px;border:1px solid;
-}
+.hp-card-tag{display:inline-block;margin-top:12px;font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;padding:3px 9px;border-radius:1px;border:1px solid;}
 .hp-card-tag.active{color:#5a7a4a;border-color:#5a7a4a55;background:#5a7a4a11;}
 .hp-card-tag.soon{color:#9e8c72;border-color:#9e8c7233;}
-.hp-card-arrow{
-  position:absolute;bottom:18px;right:18px;
-  font-size:.8rem;color:#c9902a55;transition:all .2s;
-}
+.hp-card-arrow{position:absolute;bottom:18px;right:18px;font-size:.8rem;color:#c9902a55;transition:all .2s;}
 .hp-card:hover .hp-card-arrow{color:#c9902a;transform:translateX(3px);}
+
+/* ── Game cards — parchment world ── */
+.hp-games-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(460px,1fr));gap:24px;margin-bottom:52px;}
+
+.game-card{
+  display:flex;text-decoration:none;
+  position:relative;overflow:hidden;border-radius:3px;
+  border:1px solid #7a3a1a44;
+  transition:all .25s;
+  cursor:pointer;
+}
+/* parchment inner glow */
+.game-card::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 30% 40%, #2e1a0a55, transparent);
+  transition:opacity .25s;opacity:1;pointer-events:none;z-index:0;
+}
+.game-card:hover{
+  border-color:#8b3a1a88;
+  transform:translateY(-2px);
+  box-shadow:0 10px 40px rgba(8,4,2,.7), 0 0 0 1px #7a3a1a33;
+}
+
+/* crimson top accent */
+.game-card-accent{
+  position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,#8b2020,#c9902a,#8b2020,transparent);
+  opacity:.8;z-index:2;
+}
+
+/* left: warm parchment panel */
+.game-card-art{
+  flex:0 0 130px;
+  background:linear-gradient(160deg,#2a1608,#1a0d05);
+  display:flex;align-items:center;justify-content:center;
+  padding:24px 16px;
+  position:relative;z-index:1;
+  border-right:1px solid #7a3a1a22;
+}
+.game-card-art::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at center,#c9902a0a,transparent 70%);
+}
+
+/* SPQR scroll SVG */
+.game-scroll-icon{width:64px;height:64px;opacity:.9;filter:drop-shadow(0 2px 8px rgba(139,32,32,.4));}
+
+/* right: content */
+.game-card-body{
+  flex:1;padding:22px 24px 20px;
+  background:linear-gradient(135deg,#1a0e07,#0f0904);
+  position:relative;z-index:1;
+}
+.game-card-eyebrow{
+  font-family:'Cinzel',serif;font-size:.52rem;letter-spacing:.28em;
+  color:#8b2020aa;text-transform:uppercase;margin-bottom:6px;
+}
+.game-card-title{
+  font-family:'Cinzel',serif;font-size:1.05rem;letter-spacing:.08em;
+  color:#e8c87a;text-transform:uppercase;margin-bottom:4px;
+  text-shadow:0 0 20px rgba(232,184,75,.2);
+}
+.game-card-subtitle{
+  font-family:'IM Fell English',serif;font-style:italic;
+  font-size:.9rem;color:#9e7a5a;margin-bottom:10px;
+}
+.game-card-desc{font-size:.93rem;color:#ede0b077;line-height:1.6;margin-bottom:14px;}
+
+.game-card-footer{display:flex;align-items:center;justify-content:space-between;}
+.game-card-badge{
+  font-family:'Cinzel',serif;font-size:.52rem;letter-spacing:.15em;text-transform:uppercase;
+  padding:3px 9px;border-radius:1px;
+  color:#8b2020;border:1px solid #8b202044;background:#8b20200d;
+}
+.game-card-play{
+  font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;
+  color:#c9902a;display:flex;align-items:center;gap:6px;
+  transition:all .2s;
+}
+.game-card:hover .game-card-play{color:#e8b84b;gap:10px;}
+.game-card-play-arrow{font-size:.9rem;}
+
 .hp-footer{border-top:1px solid #c9902a18;padding-top:28px;text-align:center;}
 .hp-footer-text{font-family:'IM Fell English',serif;font-style:italic;font-size:.85rem;color:#9e8c7255;letter-spacing:.06em;}
 
-@media(max-width:600px){
+@media(max-width:700px){
   .hp-inner{padding:0 16px 60px;}
   .hp-header{padding:40px 0 36px;margin-bottom:36px;}
   .hp-grid{grid-template-columns:1fr;}
+  .hp-games-grid{grid-template-columns:1fr;}
   .pw-box{padding:36px 24px;min-width:unset;width:90vw;}
+  .game-card-art{flex:0 0 90px;}
+  .game-card-title{font-size:.88rem;}
 }
 `;
 
@@ -244,6 +242,18 @@ const TOOLS = [
   },
 ];
 
+const GAMES = [
+  {
+    id: 'marcus-messenger',
+    eyebrow: 'An Educational Adventure',
+    title: 'Marcus and the Lost Scroll',
+    subtitle: 'Roman Numerals · Ages 8–12',
+    desc: 'A young messenger in ancient Rome must learn the secret of Roman numerals to deliver a mysterious scroll to the Emperor.',
+    href: 'https://marcus-the-messenger.ctso.workers.dev',
+    badge: 'Game · Opens in new tab',
+  },
+];
+
 export default function Home() {
   const [unlocked, setUnlocked] = useState(
     () => localStorage.getItem('schola-auth') === '1'
@@ -298,9 +308,7 @@ export default function Home() {
           <header className="hp-header">
             <div className="hp-crest">
               <LaurelSvg/>
-              <div>
-                <div className="hp-school-name">Schola Domestica</div>
-              </div>
+              <div><div className="hp-school-name">Schola Domestica</div></div>
               <LaurelSvg flip/>
             </div>
             <div className="hp-school-sub">Classical Homeschool · AI-Powered Instruction</div>
@@ -310,9 +318,14 @@ export default function Home() {
 
           <div className="hp-section-label">Disciplinae · Subjects</div>
           <div className="hp-grid">
-            {TOOLS.map(t => (
-              <ToolCard key={t.id} tool={t}/>
-            ))}
+            {TOOLS.map(t => <ToolCard key={t.id} tool={t}/>)}
+          </div>
+
+          <hr className="hp-section-divider"/>
+
+          <div className="hp-section-label">Ludi · Games</div>
+          <div className="hp-games-grid">
+            {GAMES.map(g => <GameCard key={g.id} game={g}/>)}
           </div>
 
           <footer className="hp-footer">
@@ -324,6 +337,47 @@ export default function Home() {
         </div>
       </div>
     </>
+  );
+}
+
+function GameCard({ game }) {
+  return (
+    <a className="game-card" href={game.href} target="_blank" rel="noopener noreferrer">
+      <div className="game-card-accent"/>
+      <div className="game-card-art">
+        <SpqrScrollSvg/>
+      </div>
+      <div className="game-card-body">
+        <div className="game-card-eyebrow">{game.eyebrow}</div>
+        <div className="game-card-title">{game.title}</div>
+        <div className="game-card-subtitle">{game.subtitle}</div>
+        <div className="game-card-desc">{game.desc}</div>
+        <div className="game-card-footer">
+          <span className="game-card-badge">{game.badge}</span>
+          <span className="game-card-play">
+            Play the Game <span className="game-card-play-arrow">→</span>
+          </span>
+        </div>
+      </div>
+    </a>
+  );
+}
+
+function SpqrScrollSvg() {
+  return (
+    <svg className="game-scroll-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* scroll rollers */}
+      <rect x="6" y="14" width="52" height="36" rx="3" fill="#3a1a08" stroke="#8b4a1a" strokeWidth="1.2"/>
+      <rect x="4" y="12" width="8" height="40" rx="4" fill="#5a2a10" stroke="#a0561e" strokeWidth="1"/>
+      <rect x="52" y="12" width="8" height="40" rx="4" fill="#5a2a10" stroke="#a0561e" strokeWidth="1"/>
+      {/* parchment lines */}
+      <line x1="16" y1="24" x2="48" y2="24" stroke="#8b6a3a" strokeWidth=".8" opacity=".6"/>
+      <line x1="16" y1="29" x2="48" y2="29" stroke="#8b6a3a" strokeWidth=".8" opacity=".6"/>
+      <line x1="16" y1="34" x2="48" y2="34" stroke="#8b6a3a" strokeWidth=".8" opacity=".6"/>
+      <line x1="16" y1="39" x2="40" y2="39" stroke="#8b6a3a" strokeWidth=".8" opacity=".6"/>
+      {/* SPQR text */}
+      <text x="32" y="33" textAnchor="middle" fontFamily="serif" fontSize="8" fill="#c9902a" letterSpacing="2" fontWeight="bold">SPQR</text>
+    </svg>
   );
 }
 
