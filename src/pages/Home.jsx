@@ -189,6 +189,17 @@ const TOOLS = [
     tag: 'Active',
   },
   {
+    id: 'natura',
+    icon: '🌿',
+    title: 'Magister Natura',
+    subtitle: 'Natural History & Science',
+    desc: 'Fabre, Buckley, Comstock, and Seton. Insects, plants, ecology, and the living world — with an AI tutor who observes before naming.',
+    accent: '#5a7a4a',
+    href: '/magister-natura',
+    status: 'active',
+    tag: 'Active',
+  },
+  {
     id: 'math',
     icon: '📐',
     title: 'Coming Soon',
