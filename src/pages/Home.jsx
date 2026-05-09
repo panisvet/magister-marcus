@@ -1,4 +1,9 @@
+import { useState } from 'react';
 import TopNav from '../components/TopNav.jsx';
+
+// ─── Change this to your password ───────────────────────────────────────────
+const PASSWORD = 'deus_caritas_est';
+// ────────────────────────────────────────────────────────────────────────────
 
 const STYLES = `
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400;1,600&family=IM+Fell+English:ital@0;1&display=swap');
@@ -6,6 +11,68 @@ const STYLES = `
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:#0a0804;overflow-x:hidden;}
 
+/* ── Password gate ── */
+.pw-root{
+  min-height:100vh;
+  background:#0a0804;
+  background-image:
+    radial-gradient(ellipse 70% 50% at 20% 10%, #2a1a0833, transparent),
+    radial-gradient(ellipse 60% 70% at 80% 90%, #1a0e0433, transparent);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Crimson Pro',Georgia,serif;
+  color:#f7edcc;
+}
+.pw-box{
+  text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  padding:48px 40px;
+  background:linear-gradient(135deg,#1e160f,#14100700);
+  border:1px solid #c9902a2a;
+  border-radius:3px;
+  min-width:300px;
+}
+.pw-crest{font-size:2.4rem;margin-bottom:4px;}
+.pw-title{
+  font-family:'Cinzel Decorative',serif;
+  font-size:1.3rem;color:#e8b84b;
+  letter-spacing:.06em;
+  text-shadow:0 0 24px rgba(232,184,75,.3);
+}
+.pw-sub{
+  font-family:'IM Fell English',serif;
+  font-style:italic;font-size:.9rem;color:#9e8c72;
+}
+.pw-divider{
+  width:200px;height:1px;
+  background:linear-gradient(90deg,transparent,#c9902a,transparent);
+  margin:4px 0;
+}
+.pw-input{
+  width:100%;padding:10px 14px;
+  font-family:'Crimson Pro',Georgia,serif;
+  font-size:1rem;
+  background:#0f0a05;color:#f7edcc;
+  border:1px solid #c9902a44;border-radius:2px;
+  outline:none;
+  transition:border-color .2s;
+}
+.pw-input:focus{border-color:#c9902a99;}
+.pw-input.error{border-color:#8b3a3a;}
+.pw-error{
+  font-family:'IM Fell English',serif;
+  font-style:italic;font-size:.85rem;color:#8b3a3a;
+}
+.pw-btn{
+  width:100%;padding:10px 0;
+  font-family:'Cinzel',serif;font-size:.75rem;
+  letter-spacing:.2em;text-transform:uppercase;
+  background:transparent;color:#c9902a;
+  border:1px solid #c9902a55;border-radius:2px;
+  cursor:pointer;transition:all .2s;
+}
+.pw-btn:hover{background:#c9902a18;border-color:#c9902a99;}
+
+/* ── Main page (unchanged) ── */
 .hp-root{
   min-height:100vh;
   padding-top:40px;
@@ -18,17 +85,12 @@ body{background:#0a0804;overflow-x:hidden;}
   position:relative;
   overflow:hidden;
 }
-
-/* Mosaic texture */
 .hp-root::before{
   content:'';position:fixed;inset:0;z-index:0;opacity:.025;
   background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9902a'%3E%3Cpath d='M0 0h8v8H0zm16 0h8v8h-8zm32 0h8v8h-8zm-16 16h8v8h-8zm32 0h8v8h-8zM0 16h8v8H0zm32 16h8v8h-8zm-16 16h8v8h-8zm32 0h8v8h-8zM0 32h8v8H0z'/%3E%3C/g%3E%3C/svg%3E");
   pointer-events:none;
 }
-
 .hp-inner{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 32px 80px;}
-
-/* Header */
 .hp-header{
   text-align:center;
   padding:36px 0 44px;
@@ -51,11 +113,8 @@ body{background:#0a0804;overflow-x:hidden;}
 }
 .hp-school-sub{
   font-family:'IM Fell English',serif;
-  font-style:italic;
-  font-size:1.05rem;
-  color:#9e8c72;
-  margin-top:6px;
-  letter-spacing:.06em;
+  font-style:italic;font-size:1.05rem;
+  color:#9e8c72;margin-top:6px;letter-spacing:.06em;
 }
 .hp-divider{
   width:280px;height:1px;
@@ -63,116 +122,67 @@ body{background:#0a0804;overflow-x:hidden;}
   margin:20px auto 0;
 }
 .hp-motto{
-  font-family:'IM Fell English',serif;
-  font-style:italic;
-  font-size:.92rem;
-  color:#9e8c7288;
-  margin-top:14px;
-  letter-spacing:.08em;
+  font-family:'IM Fell English',serif;font-style:italic;
+  font-size:.92rem;color:#9e8c7288;margin-top:14px;letter-spacing:.08em;
 }
-
-/* Section label */
 .hp-section-label{
-  font-family:'Cinzel',serif;
-  font-size:.62rem;
-  letter-spacing:.25em;
-  color:#9e8c72;
-  text-transform:uppercase;
-  margin-bottom:22px;
+  font-family:'Cinzel',serif;font-size:.62rem;
+  letter-spacing:.25em;color:#9e8c72;
+  text-transform:uppercase;margin-bottom:22px;
 }
-
-/* Tool grid */
 .hp-grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-  gap:20px;
-  margin-bottom:52px;
+  gap:20px;margin-bottom:52px;
 }
-
-/* Tool card */
 .hp-card{
   background:linear-gradient(135deg,#1e160f,#14100700);
-  border:1px solid #c9902a2a;
-  border-radius:3px;
-  padding:24px 22px 22px;
-  cursor:pointer;
-  transition:all .22s;
-  text-decoration:none;
-  display:block;
-  position:relative;
-  overflow:hidden;
+  border:1px solid #c9902a2a;border-radius:3px;
+  padding:24px 22px 22px;cursor:pointer;transition:all .22s;
+  text-decoration:none;display:block;position:relative;overflow:hidden;
 }
 .hp-card::before{
-  content:'';
-  position:absolute;inset:0;
+  content:'';position:absolute;inset:0;
   background:linear-gradient(135deg,#c9902a0a,transparent);
   opacity:0;transition:opacity .22s;
 }
 .hp-card:hover{
-  border-color:#c9902a66;
-  transform:translateY(-2px);
+  border-color:#c9902a66;transform:translateY(-2px);
   box-shadow:0 8px 32px rgba(14,11,7,.6), 0 0 0 1px #c9902a22;
 }
 .hp-card:hover::before{opacity:1;}
 .hp-card.coming-soon{opacity:.45;cursor:default;}
 .hp-card.coming-soon:hover{transform:none;box-shadow:none;}
-
 .hp-card-accent{
   position:absolute;top:0;left:0;right:0;height:2px;
   background:linear-gradient(90deg,transparent,var(--accent,#c9902a),transparent);
   opacity:.7;
 }
-.hp-card-icon{
-  font-size:2rem;margin-bottom:12px;display:block;
-  filter:drop-shadow(0 0 8px rgba(201,144,42,.3));
-}
-.hp-card-title{
-  font-family:'Cinzel',serif;
-  font-size:.92rem;letter-spacing:.12em;
-  color:#e8b84b;text-transform:uppercase;
-  margin-bottom:4px;
-}
-.hp-card-subtitle{
-  font-family:'IM Fell English',serif;
-  font-style:italic;font-size:.88rem;
-  color:#9e8c72;margin-bottom:10px;
-}
-.hp-card-desc{
-  font-size:.95rem;color:#ede0b088;
-  line-height:1.6;
-}
+.hp-card-icon{font-size:2rem;margin-bottom:12px;display:block;filter:drop-shadow(0 0 8px rgba(201,144,42,.3));}
+.hp-card-title{font-family:'Cinzel',serif;font-size:.92rem;letter-spacing:.12em;color:#e8b84b;text-transform:uppercase;margin-bottom:4px;}
+.hp-card-subtitle{font-family:'IM Fell English',serif;font-style:italic;font-size:.88rem;color:#9e8c72;margin-bottom:10px;}
+.hp-card-desc{font-size:.95rem;color:#ede0b088;line-height:1.6;}
 .hp-card-tag{
   display:inline-block;margin-top:12px;
   font-family:'Cinzel',serif;font-size:.55rem;
   letter-spacing:.15em;text-transform:uppercase;
-  padding:3px 9px;border-radius:1px;
-  border:1px solid;
+  padding:3px 9px;border-radius:1px;border:1px solid;
 }
 .hp-card-tag.active{color:#5a7a4a;border-color:#5a7a4a55;background:#5a7a4a11;}
 .hp-card-tag.soon{color:#9e8c72;border-color:#9e8c7233;}
-
 .hp-card-arrow{
   position:absolute;bottom:18px;right:18px;
-  font-size:.8rem;color:#c9902a55;
-  transition:all .2s;
+  font-size:.8rem;color:#c9902a55;transition:all .2s;
 }
 .hp-card:hover .hp-card-arrow{color:#c9902a;transform:translateX(3px);}
-
-/* Footer */
-.hp-footer{
-  border-top:1px solid #c9902a18;
-  padding-top:28px;text-align:center;
-}
-.hp-footer-text{
-  font-family:'IM Fell English',serif;font-style:italic;
-  font-size:.85rem;color:#9e8c7255;
-  letter-spacing:.06em;
-}
+.hp-footer{border-top:1px solid #c9902a18;padding-top:28px;text-align:center;}
+.hp-footer-text{font-family:'IM Fell English',serif;font-style:italic;font-size:.85rem;color:#9e8c7255;letter-spacing:.06em;}
 
 @media(max-width:600px){
   .hp-inner{padding:0 16px 60px;}
   .hp-header{padding:40px 0 36px;margin-bottom:36px;}
   .hp-grid{grid-template-columns:1fr;}
+  .pw-box{padding:36px 24px;min-width:unset;width:90vw;}
 }
 `;
 
@@ -235,6 +245,49 @@ const TOOLS = [
 ];
 
 export default function Home() {
+  const [unlocked, setUnlocked] = useState(
+    () => localStorage.getItem('schola-auth') === '1'
+  );
+  const [input, setInput] = useState('');
+  const [error, setError] = useState(false);
+
+  function check() {
+    if (input === PASSWORD) {
+      localStorage.setItem('schola-auth', '1');
+      setUnlocked(true);
+    } else {
+      setError(true);
+      setInput('');
+    }
+  }
+
+  if (!unlocked) {
+    return (
+      <>
+        <style>{STYLES}</style>
+        <div className="pw-root">
+          <div className="pw-box">
+            <div className="pw-crest">🏛️</div>
+            <div className="pw-title">Schola Domestica</div>
+            <div className="pw-sub">Classical Homeschool · AI-Powered Instruction</div>
+            <div className="pw-divider"/>
+            <input
+              className={`pw-input${error ? ' error' : ''}`}
+              type="password"
+              placeholder="Enter password"
+              value={input}
+              autoFocus
+              onChange={e => { setInput(e.target.value); setError(false); }}
+              onKeyDown={e => e.key === 'Enter' && check()}
+            />
+            {error && <div className="pw-error">Incorrect password — try again</div>}
+            <button className="pw-btn" onClick={check}>Enter</button>
+          </div>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <style>{STYLES}</style>
