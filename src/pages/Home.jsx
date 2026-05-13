@@ -208,6 +208,17 @@ const TOOLS = [
     tag: 'Active',
   },
   {
+    id: 'lesson-viewer',
+    icon: '📖',
+    title: 'Lesson Viewer',
+    subtitle: 'Wonders of the Created World',
+    desc: 'All 90 lessons across Units 1–6. Lesson plans, narration prompts, nature journal instructions, spine links, and vocabulary — with Age 8 / Age 11 toggle.',
+    accent: '#5a7a4a',
+    href: '/lesson-viewer',
+    status: 'active',
+    tag: 'Active',
+  },
+  {
     id: 'math',
     icon: '📐',
     title: 'Coming Soon',
