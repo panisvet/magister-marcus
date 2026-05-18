@@ -119,6 +119,7 @@ export const UNITS = [
         resources: [
           { lbl: "Life Cycle of a Butterfly — SciShow Kids", url: "https://www.youtube.com/watch?v=3kZD6rlSLUw", note: "YouTube" },
           { lbl: "Life Of A Butterfly — Dr. Binocs", url: "https://www.youtube.com/watch?v=dM71jKNuk-M", note: "YouTube" },
+          { lbl: "The Life of the Fly — LibriVox", url: "https://librivox.org/the-life-of-the-fly-by-jean-henri-fabre/", note: "Free audiobook" },
         ],
         title: "Complete vs. Incomplete Metamorphosis",
         tagline: null,
@@ -176,6 +177,7 @@ export const UNITS = [
         resources: [
           { lbl: "Honeybees Perform Waggle Dance — Ranger Rick / NWF", url: "https://rangerrick.org/rr_videos/honeybees-perform-waggle-dance/", note: "Video" },
           { lbl: "Waggle Dance Explanation — Georgia Tech", url: "https://www.youtube.com/watch?v=bFDGPgXtK-U", note: "YouTube" },
+          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
         ],
         title: "Bees, Ants, and the Question of Instinct",
         tagline: null,
@@ -229,6 +231,9 @@ export const UNITS = [
       },
       {
         id: "1.11", week: 4, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Life of the Spider — LibriVox", url: "https://librivox.org/the-life-of-the-spider-by-jean-henri-fabre/", note: "Free audiobook" },
+        ],
         title: "Fabre Watches a Spider",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, spider sections",
@@ -262,6 +267,9 @@ export const UNITS = [
       },
       {
         id: "1.13", week: 5, type: "OBSERVE",
+        resources: [
+          { lbl: "Wild Animals I Have Known — LibriVox", url: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/", note: "Free audiobook" },
+        ],
         title: "Seton's Animals — Ecology Through Biography",
         tagline: null,
         teacherPrep: null,
@@ -280,6 +288,9 @@ export const UNITS = [
       },
       {
         id: "1.14", week: 5, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Wild Animals I Have Known — LibriVox", url: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/", note: "Free audiobook" },
+        ],
         title: "The Food Web: Who Eats Whom?",
         tagline: null,
         teacherPrep: "Review the food web material in HNS animal sections",
@@ -340,6 +351,10 @@ export const UNITS = [
       },
       {
         id: "2.2", week: 8, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
+          { lbl: "Little Wanderers — LibriVox", url: "https://librivox.org/search?q=little+wanderers+morley", note: "Search LibriVox" },
+        ],
         title: "Buckley's Primrose and Morley's Travelers",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Lesson 46 (The Apple Tree) and Part I introduction",
@@ -396,6 +411,9 @@ export const UNITS = [
       },
       {
         id: "2.5", week: 9, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Little Wanderers — LibriVox", url: "https://librivox.org/search?q=little+wanderers+morley", note: "Search LibriVox" },
+        ],
         title: "Seeds That Cling, Float, and Explode",
         tagline: null,
         teacherPrep: "HNS introductory plant sections",
@@ -433,6 +451,7 @@ export const UNITS = [
           { lbl: "Britannica Kids: Photosynthesis", url: "https://kids.britannica.com/kids/article/photosynthesis/353500", note: "Reference" },
           { lbl: "Photosynthesis in Elodea — YouTube", url: "https://www.youtube.com/watch?v=yg8vqsBOFMw", note: "YouTube demo" },
           { lbl: "Bubbling Plants Experiment — YouTube", url: "https://www.youtube.com/watch?v=B3-16GVWfe0", note: "YouTube demo" },
+          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
         ],
         title: "The Sunbeam's Work",
         tagline: "Set up the Elodea experiment at the start of this lesson.",
@@ -468,6 +487,9 @@ export const UNITS = [
       },
       {
         id: "2.9", week: 10, type: "RECORD",
+        resources: [
+          { lbl: "The Story-Book of Science — LibriVox", url: "https://librivox.org/search?q=story+book+of+science+fabre", note: "Search LibriVox" },
+        ],
         title: "Trees and Deep Time",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Lessons 46 and 47. If a tree stump or cross-section is available, bring it.",
@@ -569,6 +591,9 @@ export const UNITS = [
       },
       {
         id: "3.2", week: 12, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Winners in Life's Race — LibriVox", url: "https://librivox.org/search?q=winners+in+life%27s+race+buckley", note: "Search LibriVox" },
+        ],
         title: "From the Lancelet to the Cod",
         tagline: null,
         teacherPrep: "Buckley, Winners in Life's Race, Ch. I 'The Backboned Family' + Ch. II 'The Lancelet & The Fishes' — open at PG #72898 and skim Sunday evening.",
@@ -677,6 +702,10 @@ export const UNITS = [
       },
       {
         id: "3.8", week: 14, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Winners in Life's Race — LibriVox", url: "https://librivox.org/search?q=winners+in+life%27s+race+buckley", note: "Search LibriVox" },
+          { lbl: "Wild Animals I Have Known — LibriVox", url: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/", note: "Free audiobook" },
+        ],
         title: "Buckley on Birds; Audubon the Painter",
         tagline: null,
         teacherPrep: "Buckley Ch. VI–VII (Birds — general; orders of birds). Have the Age 8 Audubon picture book and the Age 11 Audubon chapter book ready (library or home shelf). If your library has a print folio of Audubon's Birds of America, this is the week to borrow it.",
@@ -731,6 +760,10 @@ export const UNITS = [
       },
       {
         id: "3.11", week: 15, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Winners in Life's Race — LibriVox", url: "https://librivox.org/search?q=winners+in+life%27s+race+buckley", note: "Search LibriVox" },
+          { lbl: "Wild Animals I Have Known — LibriVox", url: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/", note: "Free audiobook" },
+        ],
         title: "Mammals, and the Story of Lobo",
         tagline: null,
         teacherPrep: "Buckley Ch. VIII–IX (Mammals; pouched and placental). Plan to split Lobo across two evenings — not one. The Age 8 child should not get Lobo's death immediately before bed.",
@@ -801,6 +834,10 @@ export const UNITS = [
       },
       {
         id: "4.2", week: 16, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Story-Book of Science — LibriVox", url: "https://librivox.org/search?q=story+book+of+science+fabre", note: "Search LibriVox" },
+          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
+        ],
         title: "The Spinning Earth",
         tagline: null,
         teacherPrep: "Gather: globe, flashlight. Darken the room for the demonstration.",
@@ -1027,6 +1064,9 @@ export const UNITS = [
       // ── WEEK 20: THE STARS AND THE LARGER UNIVERSE ─────────────────────────
       {
         id: "4.14", week: 20, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
+        ],
         title: "What Is a Star?",
         tagline: null,
         teacherPrep: "On a clear night before this lesson, go outside briefly and look carefully at star colors. Some appear slightly yellow, orange-red, or bluish-white. This is real — mention it at the opening.",
@@ -1198,6 +1238,9 @@ export const UNITS = [
       },
       {
         id: "5.8", week: 23, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Voyage of the Beagle — LibriVox", url: "https://librivox.org/the-voyage-of-the-beagle-by-charles-darwin/", note: "Free audiobook" },
+        ],
         title: "The Fossil Record",
         tagline: null,
         teacherPrep: "Read ahead in Lyell (Manual of Elementary Geology, PG #34350) — select passages on fossils and strata that illustrate his method and assumptions without requiring the full philosophical discussion (that comes in Week 24). Also read Darwin's Voyage of the Beagle chapter on Patagonia fossil mammals.",
@@ -1427,6 +1470,9 @@ export const UNITS = [
       },
       {
         id: "6.5", week: 27, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Chemical History of a Candle — LibriVox", url: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/", note: "Free audiobook" },
+        ],
         title: "The Chemical History of a Candle — Lectures 3, 4 & 5",
         tagline: null,
         teacherPrep: "Read Lectures 3-5. Know the difference between an element and a compound. Know the composition of water and the atmosphere.",
@@ -1444,6 +1490,9 @@ export const UNITS = [
       },
       {
         id: "6.6", week: 27, type: "RECORD",
+        resources: [
+          { lbl: "The Chemical History of a Candle — LibriVox", url: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/", note: "Free audiobook" },
+        ],
         title: "Combustion and Respiration — The Same Process",
         tagline: "One of the great moments in scientific writing for children.",
         teacherPrep: "Read Lecture 6 in full: Carbon or Charcoal, Coal Gas, Respiration and Its Analogy to the Burning of a Candle. Faraday's conclusion: a candle and a human being are the same chemical process.",
@@ -1477,6 +1526,9 @@ export const UNITS = [
       },
       {
         id: "6.8", week: 28, type: "READ & NARRATE",
+        resources: [
+          { lbl: "On the Various Forces of Nature — LibriVox", url: "https://librivox.org/search?q=various+forces+of+nature+faraday", note: "Search LibriVox" },
+        ],
         title: "On the Various Forces of Nature — Lectures 1–3",
         tagline: null,
         teacherPrep: "Read the first three lectures. Know field theory vs. action-at-a-distance. Know Faraday's intuition about the unity of forces.",
