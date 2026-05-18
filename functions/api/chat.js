@@ -24,6 +24,18 @@ function corsHeaders(origin) {
 export async function onRequestPost(context) {
   const { request, env } = context;
 
+  // Rate limit by IP (20 req / 10 s per edge location)
+  if (env.CHAT_RATE_LIMITER) {
+    const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
+    const { success } = await env.CHAT_RATE_LIMITER.limit({ key: ip });
+    if (!success) {
+      return new Response(
+        JSON.stringify({ error: { message: 'Too many requests.' } }),
+        { status: 429, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+  }
+
   const origin = request.headers.get('Origin') || '';
   if (!ALLOWED_ORIGINS.includes(origin)) {
     return new Response('Forbidden', { status: 403 });
