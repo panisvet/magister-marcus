@@ -9,6 +9,7 @@ const MAX_TOKENS_CAP = 1024;
 
 const ALLOWED_ORIGINS = [
   'https://magister-marcus.pages.dev',
+  'https://schola-domestica.beatitudo.org',
   'http://localhost:5173',
   'http://localhost:4173',
 ];

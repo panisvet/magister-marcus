@@ -10,9 +10,9 @@ const CSS = `
 
 /* ── Sidebar ── */
 .lv-sidebar{width:200px;flex-shrink:0;background:#1a1208;border-right:1px solid #3d2e1e;overflow-y:auto;display:flex;flex-direction:column;}
-.lv-unit-hdr{padding:8px 12px 4px;font-family:'Cinzel',serif;font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#c9902a;border-top:1px solid #2a1e10;margin-top:2px;}
+.lv-unit-hdr{padding:8px 12px 4px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#c9902a;border-top:1px solid #2a1e10;margin-top:2px;}
 .lv-unit-hdr:first-child{border-top:none;margin-top:0;}
-.lv-lbtn{width:100%;text-align:left;padding:7px 12px;background:transparent;border:none;border-left:3px solid transparent;color:#7a6a55;cursor:pointer;font-size:11px;font-family:'Crimson Pro',Georgia,serif;line-height:1.4;}
+.lv-lbtn{width:100%;text-align:left;padding:7px 12px;background:transparent;border:none;border-left:3px solid transparent;color:#7a6a55;cursor:pointer;font-size:14px;font-family:'Crimson Pro',Georgia,serif;line-height:1.4;}
 .lv-lbtn:hover{background:#2a1e10;color:#c8b48a;}
 .lv-lbtn.on{background:#2a1e10;border-left-color:#c9902a;color:#f7edcc;}
 .lv-lbtn .lv-tp{font-size:9px;color:#4a6741;margin-bottom:1px;font-family:'Cinzel',serif;letter-spacing:.1em;}
@@ -64,12 +64,12 @@ const CSS = `
 .lv-sbitem p{font-size:12px;line-height:1.6;color:#9e8c72;}
 
 /* Resources card */
-.lv-res-hdr{padding:6px 12px;font-family:'Cinzel',serif;font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:#e8dfc8;background:#2d4a6a;}
-.lv-res-item{padding:7px 12px;border-bottom:1px solid #2a1e10;}
+.lv-res-hdr{padding:8px 14px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#e8dfc8;background:#2d4a6a;}
+.lv-res-item{padding:10px 14px;border-bottom:1px solid #2a1e10;}
 .lv-res-item:last-child{border-bottom:none;}
-.lv-res-link{font-size:11px;color:#7ab0d0;text-decoration:none;font-style:italic;display:block;margin-bottom:2px;}
+.lv-res-link{font-size:13px;color:#7ab0d0;text-decoration:none;font-style:italic;display:block;margin-bottom:3px;}
 .lv-res-link:hover{color:#b0d4f0;text-decoration:underline;}
-.lv-res-note{font-size:10px;color:#9e8c72;}
+.lv-res-note{font-size:12px;color:#9e8c72;}
 
 /* Bottom nav */
 .lv-bnav{display:flex;justify-content:space-between;align-items:center;padding:12px 24px 16px;border-top:1px solid #3d2e1e;margin-top:6px;}
@@ -203,7 +203,7 @@ export default function LessonViewer() {
                 <div className="lv-age-btns">
                   {['both','8','11'].map(a=>(
                     <button key={a} className={`lv-abtn${age===a?' on':''}`} onClick={()=>setAge(a)}>
-                      {a==='both'?'Both':a==='8'?'Age 8':'Age 11'}
+                      {a==='both'?'Both':a==='8'?'Form IA':'Form IIA'}
                     </button>
                   ))}
                 </div>
@@ -259,6 +259,11 @@ export default function LessonViewer() {
                           <a href={r.url} target="_blank" rel="noopener" className="lv-rdlink">
                             📖 Read: {r.lbl}
                           </a>
+                          {r.images && r.images.map((img, j) => (
+                            <a key={j} href={img.url} target="_blank" rel="noopener" className="lv-rdlink" style={{marginTop:'6px'}}>
+                              🖼 {img.lbl}
+                            </a>
+                          ))}
                         </div>
                       ))}
                     </div>
@@ -288,18 +293,18 @@ export default function LessonViewer() {
               <div className="lv-rcol">
 
                 {/* Narration */}
-                {(l.narration8 || l.narration11) && (
+                {(((age==='both'||age==='8') && l.narration8) || ((age==='both'||age==='11') && l.narration11)) && (
                   <div className="lv-card">
                     <div className="lv-chard" style={{background:'#1a1208',borderBottom:'1px solid #3d2e1e'}}>Narration</div>
                     {(age==='both'||age==='8') && l.narration8 && (
                       <div style={{padding:'10px 12px', borderBottom: age==='both'&&l.narration11 ? '1px solid #2a1e10' : 'none'}}>
-                        <span className="lv-badge lv-a8">Age 8 · Oral</span>
+                        <span className="lv-badge lv-a8">Form IA · Oral</span>
                         <p style={{fontSize:'12px',fontStyle:'italic',color:'#9e8c72',lineHeight:1.6}}>{l.narration8}</p>
                       </div>
                     )}
                     {(age==='both'||age==='11') && l.narration11 && (
                       <div style={{padding:'10px 12px'}}>
-                        <span className="lv-badge lv-a11">Age 11 · Written</span>
+                        <span className="lv-badge lv-a11">Form IIA · Written</span>
                         <p style={{fontSize:'12px',fontStyle:'italic',color:'#9e8c72',lineHeight:1.6}}>{l.narration11}</p>
                       </div>
                     )}
@@ -307,18 +312,18 @@ export default function LessonViewer() {
                 )}
 
                 {/* Journal */}
-                {(l.journal8 || l.journal11) && (
+                {(((age==='both'||age==='8') && l.journal8) || ((age==='both'||age==='11') && l.journal11)) && (
                   <div className="lv-card">
                     <div className="lv-chard" style={{background:'#1a2a3a'}}>Nature Journal</div>
                     {(age==='both'||age==='8') && l.journal8 && (
                       <div style={{padding:'10px 12px', borderBottom: age==='both'&&l.journal11 ? '1px solid #2a1e10' : 'none'}}>
-                        <span className="lv-badge lv-a8">Age 8</span>
+                        <span className="lv-badge lv-a8">Form IA</span>
                         <p style={{fontSize:'12px',color:'#9e8c72',lineHeight:1.6}}>{l.journal8}</p>
                       </div>
                     )}
                     {(age==='both'||age==='11') && l.journal11 && (
                       <div style={{padding:'10px 12px'}}>
-                        <span className="lv-badge lv-a11">Age 11</span>
+                        <span className="lv-badge lv-a11">Form IIA</span>
                         <p style={{fontSize:'12px',color:'#9e8c72',lineHeight:1.6}}>{l.journal11}</p>
                       </div>
                     )}
@@ -360,7 +365,7 @@ export default function LessonViewer() {
                     )}
                     {l.digDeeper && (age==='both'||age==='11') && (
                       <div className="lv-sbitem" style={{background:'#141828'}}>
-                        <div className="lv-sblbl" style={{color:'#4a6a9a'}}>Dig Deeper · Age 11</div>
+                        <div className="lv-sblbl" style={{color:'#4a6a9a'}}>Dig Deeper · Form IIA</div>
                         <p>{l.digDeeper}</p>
                       </div>
                     )}
