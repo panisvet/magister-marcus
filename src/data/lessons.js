@@ -28,6 +28,7 @@
 //   vocab       string[]
 //   watchFor    string | null   teacher sidebar
 //   digDeeper   string | null   Age 11 extension
+//   resources   {lbl:string, url:string, note:string}[]   links shown in a Resources card
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const UNITS = [
@@ -43,6 +44,10 @@ export const UNITS = [
     lessons: [
       {
         id: "1.1", week: 1, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Insect", url: "https://kids.britannica.com/kids/article/insect/353292", note: "Reference & narration" },
+          { lbl: "How Scientists Sort Bugs — KADB", url: "https://www.youtube.com/watch?v=1VawiwBYpZc", note: "Taxonomy sorting demo (YouTube)" },
+        ],
         title: "The Six-Legged Test",
         tagline: "Before reading anything, go outside.",
         teacherPrep: null,
@@ -59,6 +64,10 @@ export const UNITS = [
       },
       {
         id: "1.2", week: 1, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Life of the Fly — Project Gutenberg #3422", url: "https://www.gutenberg.org/files/3422/3422-h/3422-h.htm", note: "Full text, free" },
+          { lbl: "Life of the Fly — LibriVox audiobook", url: "https://librivox.org/search?q=life+of+the+fly+fabre", note: "Search: Life of the Fly Fabre" },
+        ],
         title: "Fabre Defends the Fly",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Part V introduction (pp. 300–310)",
@@ -107,6 +116,10 @@ export const UNITS = [
       },
       {
         id: "1.5", week: 2, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Life Cycle of a Butterfly — SciShow Kids", url: "https://www.youtube.com/watch?v=3kZD6rlSLUw", note: "YouTube" },
+          { lbl: "Life Of A Butterfly — Dr. Binocs", url: "https://www.youtube.com/watch?v=dM71jKNuk-M", note: "YouTube" },
+        ],
         title: "Complete vs. Incomplete Metamorphosis",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Lesson 56 (The Butterfly)",
@@ -140,6 +153,10 @@ export const UNITS = [
       },
       {
         id: "1.7", week: 3, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Honeybee", url: "https://kids.britannica.com/kids/article/honeybee/353480", note: "Reference" },
+          { lbl: "The Hidden Math of Honeycombs — Veritasium", url: "https://www.youtube.com/watch?v=CEmYXYpAhvk", note: "Hexagon efficiency (YouTube)" },
+        ],
         title: "The Honeybee's City",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Lesson 62 (The Honey Bee) — read in full, essential background.",
@@ -156,6 +173,10 @@ export const UNITS = [
       },
       {
         id: "1.8", week: 3, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Honeybees Perform Waggle Dance — Ranger Rick / NWF", url: "https://rangerrick.org/rr_videos/honeybees-perform-waggle-dance/", note: "Video" },
+          { lbl: "Waggle Dance Explanation — Georgia Tech", url: "https://www.youtube.com/watch?v=bFDGPgXtK-U", note: "YouTube" },
+        ],
         title: "Bees, Ants, and the Question of Instinct",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Lesson 62 (The Honey Bee)",
@@ -189,6 +210,9 @@ export const UNITS = [
       },
       {
         id: "1.10", week: 4, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Spider", url: "https://kids.britannica.com/kids/article/spider/353570", note: "Reference" },
+        ],
         title: "Spider Anatomy",
         tagline: "Go outside in early morning — dew on webs.",
         teacherPrep: "Handbook of Nature Study, spider sections",
@@ -350,6 +374,10 @@ export const UNITS = [
       },
       {
         id: "2.4", week: 9, type: "OBSERVE",
+        resources: [
+          { lbl: "How Do Plant Seeds Travel? — SciShow Kids", url: "https://www.youtube.com/watch?v=WqgVks9NViQ", note: "YouTube" },
+          { lbl: "Seed Dispersal — YouTube", url: "https://www.youtube.com/watch?v=-KIYVGXT1lA", note: "YouTube" },
+        ],
         title: "Seeds That Fly",
         tagline: null,
         teacherPrep: "Collect dandelion seed heads and maple samaras if possible.",
@@ -401,6 +429,11 @@ export const UNITS = [
       },
       {
         id: "2.7", week: 10, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Britannica Kids: Photosynthesis", url: "https://kids.britannica.com/kids/article/photosynthesis/353500", note: "Reference" },
+          { lbl: "Photosynthesis in Elodea — YouTube", url: "https://www.youtube.com/watch?v=yg8vqsBOFMw", note: "YouTube demo" },
+          { lbl: "Bubbling Plants Experiment — YouTube", url: "https://www.youtube.com/watch?v=B3-16GVWfe0", note: "YouTube demo" },
+        ],
         title: "The Sunbeam's Work",
         tagline: "Set up the Elodea experiment at the start of this lesson.",
         teacherPrep: "HNS plant physiology sections. Obtain Elodea from an aquarium store.",
@@ -747,6 +780,10 @@ export const UNITS = [
       // ── WEEK 16: THE EARTH IN SPACE ────────────────────────────────────────
       {
         id: "4.1", week: 16, type: "OBSERVE",
+        resources: [
+          { lbl: "Free Monthly Star Maps — skymaps.com", url: "https://www.skymaps.com", note: "Print-ready sky charts" },
+          { lbl: "Stellarium — Free Planetarium (desktop & mobile)", url: "https://stellarium.org", note: "Preview tonight's sky before going out" },
+        ],
         title: "The Moving Shadow",
         tagline: "Before reading anything, go outside.",
         teacherPrep: "Materials: straight stick or dowel (12–18 inches), paper or chalk, pencil. Sunny day required. Plan to go outside at 9am, noon, and 3pm.",
@@ -872,6 +909,9 @@ export const UNITS = [
       // ── WEEK 18: THE MOON ───────────────────────────────────────────────────
       {
         id: "4.8", week: 18, type: "OBSERVE",
+        resources: [
+          { lbl: "Moon Phase Calendar — Time and Date", url: "https://www.timeanddate.com/moon/phases/", note: "Free monthly moon phase tracker for journal" },
+        ],
         title: "Moon Tracking Begins",
         tagline: null,
         teacherPrep: "Begin on a day when the moon is visible (daytime or evening). Check the lunar calendar. If the moon is not visible today, identify it on the calendar and plan accordingly.",
@@ -924,6 +964,10 @@ export const UNITS = [
       // ── WEEK 19: THE SOLAR SYSTEM ───────────────────────────────────────────
       {
         id: "4.11", week: 19, type: "OBSERVE",
+        resources: [
+          { lbl: "Solar System Scale Model — Exploratorium", url: "https://www.exploratorium.edu/ronh/solar_system/", note: "Free online scale calculator for toilet paper model" },
+          { lbl: "NASA Eyes on the Solar System — free interactive 3D", url: "https://eyes.nasa.gov/apps/solar-system/", note: "Live planet positions" },
+        ],
         title: "Solar System Scale Model",
         tagline: "Numbers alone are meaningless. Walk it out.",
         teacherPrep: "Materials: 1 roll of toilet paper (440 sheets), tape measure, chalk or small flags, open outdoor space (long driveway, sidewalk, or field). 1 sheet = 1 AU ≈ 150 million km.",
@@ -942,6 +986,10 @@ export const UNITS = [
       },
       {
         id: "4.12", week: 19, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Planet Size Comparison Chart — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Planets_and_sun_size_comparison.jpg", note: "Visual planet size comparison" },
+          { lbl: "The Planets — NASA Science", url: "https://science.nasa.gov/solar-system/planets/", note: "Photos & key facts for each planet" },
+        ],
         title: "The Planets",
         tagline: null,
         teacherPrep: "Index cards for planet fact cards — 8 cards per student.",
@@ -1168,6 +1216,10 @@ export const UNITS = [
       },
       {
         id: "5.9", week: 23, type: "RECORD",
+        resources: [
+          { lbl: "Cambrian Explosion — YouTube", url: "https://www.youtube.com/results?search_query=cambrian+explosion+explained", note: "Search: Cambrian Explosion explained" },
+          { lbl: "Burgess Shale fossils — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Burgess_Shale", note: "High-resolution Cambrian fossils for Before/After drawings" },
+        ],
         title: "The Cambrian Explosion",
         tagline: "The most philosophically significant lesson in the unit. Do not rush it.",
         teacherPrep: "Prepare a fossil record timeline showing the Cambrian boundary. Review the three framework positions: gradualist evolution, punctuated equilibrium (Gould), creation. Know each position well enough to present it fairly.",
@@ -1303,6 +1355,10 @@ export const UNITS = [
 
       {
         id: "6.1", week: 26, type: "OBSERVE",
+        resources: [
+          { lbl: "Chemical History of a Candle — Gutenberg #14474", url: "https://www.gutenberg.org/ebooks/14474", note: "Full text, free" },
+          { lbl: "Chemical History of a Candle — LibriVox", url: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/", note: "Free audiobook" },
+        ],
         title: "The Candle Flame",
         tagline: "The most important opening lesson of the unit. Take your time.",
         teacherPrep: "Light a candle. Set it on the table. Both students observe in silence for two full minutes. Prepare: white paper (soot test), cold mirror (water vapour test), glass jar. Do not explain anything during the observation period.",
@@ -1319,6 +1375,10 @@ export const UNITS = [
       },
       {
         id: "6.2", week: 26, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Bill Hammack — Faraday's Candle Lectures (YouTube playlist)", url: "https://www.youtube.com/playlist?list=PLnT2pATp7adWUMudAuMVJT0-jGBBtD8C8", note: "Illustrated modern companion to Faraday's lectures" },
+          { lbl: "Chemical History of a Candle — LibriVox", url: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/", note: "Free audiobook — Lectures 1 & 2" },
+        ],
         title: "The Chemical History of a Candle — Lectures 1 & 2",
         tagline: null,
         teacherPrep: "Read Lectures 1-2 before this lesson. Know the three flame zones. Note: Faraday constantly says 'Now let me show you' — he demonstrates rather than asserts. Highlight this habit explicitly.",

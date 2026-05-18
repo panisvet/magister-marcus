@@ -63,6 +63,14 @@ const CSS = `
 .lv-sblbl{font-family:'Cinzel',serif;font-size:8px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px;}
 .lv-sbitem p{font-size:12px;line-height:1.6;color:#9e8c72;}
 
+/* Resources card */
+.lv-res-hdr{padding:6px 12px;font-family:'Cinzel',serif;font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:#e8dfc8;background:#2d4a6a;}
+.lv-res-item{padding:7px 12px;border-bottom:1px solid #2a1e10;}
+.lv-res-item:last-child{border-bottom:none;}
+.lv-res-link{font-size:11px;color:#7ab0d0;text-decoration:none;font-style:italic;display:block;margin-bottom:2px;}
+.lv-res-link:hover{color:#b0d4f0;text-decoration:underline;}
+.lv-res-note{font-size:10px;color:#9e8c72;}
+
 /* Bottom nav */
 .lv-bnav{display:flex;justify-content:space-between;align-items:center;padding:12px 24px 16px;border-top:1px solid #3d2e1e;margin-top:6px;}
 .lv-nbtn{padding:7px 18px;background:#1a1208;color:#e8dfc8;border:1px solid #3d2e1e;border-radius:4px;cursor:pointer;font-size:12px;font-family:'Crimson Pro',Georgia,serif;}
@@ -324,6 +332,19 @@ export default function LessonViewer() {
                     <div className="lv-cbody">
                       {l.vocab.map(v => <span key={v} className="lv-vchip">{v}</span>)}
                     </div>
+                  </div>
+                )}
+
+                {/* Resources */}
+                {l.resources && l.resources.length > 0 && (
+                  <div className="lv-card">
+                    <div className="lv-res-hdr">Resources</div>
+                    {l.resources.map((r, i) => (
+                      <div key={i} className="lv-res-item">
+                        <a href={r.url} target="_blank" rel="noopener noreferrer" className="lv-res-link">{r.lbl}</a>
+                        {r.note && <div className="lv-res-note">{r.note}</div>}
+                      </div>
+                    ))}
                   </div>
                 )}
 
