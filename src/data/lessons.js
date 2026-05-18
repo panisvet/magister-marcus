@@ -630,10 +630,9 @@ export const UNITS = [
         spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
         reads: [
           { lbl: "Winners in Life's Race, Ch. IV–V — Amphibians & Cold-Blooded Air Breathers", url: "https://www.gutenberg.org/cache/epub/72898/pg72898-images.html#Page_89", note: "" },
-          { lbl: "By Pond and River — Ch. I: A Frog's Life", url: "/readings/reading_u3_frog.html", note: "",
+          { lbl: "By Pond and River — Ch. I: A Frog's Life", url: "/images/u3_frogs_p1_v2.png", note: "",
             images: [
-              { lbl: "Illustration, p. 1", url: "/images/u3_frogs_p1_v2.png" },
-              { lbl: "Illustration, p. 2", url: "/images/u3_frogs_p2_v4.png" },
+              { lbl: "p. 2", url: "/images/u3_frogs_p2_v4.png" },
             ],
           },
         ],
