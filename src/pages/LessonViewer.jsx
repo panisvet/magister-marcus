@@ -175,11 +175,11 @@ export default function LessonViewer() {
   // ── Main content ───────────────────────────────────────────────────────────
   const reads = l.reads || (l.spine ? [{
     src: l.spine, dur: '15 min', note: '', url: l.spineLink || '#', lbl: l.spine,
-    ...(l.secondSpine ? {} : {})
+    librivox: l.spineLibrivox || null,
   }] : [])
 
   if (l.spine && l.secondSpine) {
-    reads.push({ src: l.secondSpine, dur: '10 min', note: '', url: l.secondSpineLink || '#', lbl: l.secondSpine })
+    reads.push({ src: l.secondSpine, dur: '10 min', note: '', url: l.secondSpineLink || '#', lbl: l.secondSpine, librivox: l.secondSpineLibrivox || null })
   }
 
   return (
@@ -259,6 +259,11 @@ export default function LessonViewer() {
                           <a href={r.url} target="_blank" rel="noopener" className="lv-rdlink">
                             📖 Read: {r.lbl}
                           </a>
+                          {r.librivox && (
+                            <a href={r.librivox} target="_blank" rel="noopener" className="lv-rdlink" style={{marginTop:'5px'}}>
+                              🎧 LibriVox audiobook
+                            </a>
+                          )}
                           {r.images && r.images.map((img, j) => (
                             <a key={j} href={img.url} target="_blank" rel="noopener" className="lv-rdlink" style={{marginTop:'6px'}}>
                               🖼 {img.lbl}

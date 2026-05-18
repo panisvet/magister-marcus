@@ -64,10 +64,6 @@ export const UNITS = [
       },
       {
         id: "1.2", week: 1, type: "READ & NARRATE",
-        resources: [
-          { lbl: "Life of the Fly — Project Gutenberg #3422", url: "https://www.gutenberg.org/files/3422/3422-h/3422-h.htm", note: "Full text, free" },
-          { lbl: "Life of the Fly — LibriVox audiobook", url: "https://librivox.org/search?q=life+of+the+fly+fabre", note: "Search: Life of the Fly Fabre" },
-        ],
         title: "Fabre Defends the Fly",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Part V introduction (pp. 300–310)",
@@ -75,6 +71,7 @@ export const UNITS = [
         activity: { label: "Classification Rule", text: "After reading, return to the sorted creatures. Present the insect rule: 3 body segments, 6 legs, usually wings. Re-sort using Fabre's precision." },
         spine: "The Life of the Fly, Ch. I — The Harmas",
         spineLink: "https://www.gutenberg.org/files/3422/3422-h/3422-h.htm#link2HCH0001",
+        spineLibrivox: "https://librivox.org/the-life-of-the-fly-by-jean-henri-fabre/",
         secondSpine: null, secondSpineLink: null,
         narration8: "Tell me what makes an insect an insect.",
         narration11: "Describe Fabre's method of observation and explain how the insect classification rule works. (3–5 sentences)",
@@ -119,7 +116,6 @@ export const UNITS = [
         resources: [
           { lbl: "Life Cycle of a Butterfly — SciShow Kids", url: "https://www.youtube.com/watch?v=3kZD6rlSLUw", note: "YouTube" },
           { lbl: "Life Of A Butterfly — Dr. Binocs", url: "https://www.youtube.com/watch?v=dM71jKNuk-M", note: "YouTube" },
-          { lbl: "The Life of the Fly — LibriVox", url: "https://librivox.org/the-life-of-the-fly-by-jean-henri-fabre/", note: "Free audiobook" },
         ],
         title: "Complete vs. Incomplete Metamorphosis",
         tagline: null,
@@ -129,6 +125,7 @@ export const UNITS = [
         spine: "The Insect Folk — The Grasshopper Tribes",
         spineLink: "https://www.gutenberg.org/files/18790/18790-h/18790-h.htm#Page_59",
         secondSpine: "The Life of the Fly, Ch. XIV — The Bluebottle: The Laying",
+        secondSpineLibrivox: "https://librivox.org/the-life-of-the-fly-by-jean-henri-fabre/",
         secondSpineLink: "https://www.gutenberg.org/cache/epub/3422/pg3422-images.html#link2HCH0014",
         narration8: "What are the stages of complete metamorphosis? Of incomplete?",
         narration11: "Compare complete and incomplete metamorphosis. Give two examples of each. Explain one advantage each strategy might offer.",
@@ -177,7 +174,6 @@ export const UNITS = [
         resources: [
           { lbl: "Honeybees Perform Waggle Dance — Ranger Rick / NWF", url: "https://rangerrick.org/rr_videos/honeybees-perform-waggle-dance/", note: "Video" },
           { lbl: "Waggle Dance Explanation — Georgia Tech", url: "https://www.youtube.com/watch?v=bFDGPgXtK-U", note: "YouTube" },
-          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
         ],
         title: "Bees, Ants, and the Question of Instinct",
         tagline: null,
@@ -186,6 +182,7 @@ export const UNITS = [
         activity: { label: "Caste System", text: "Queen: lays eggs; 1 per hive; lives 3–5 years.\nWorkers: sterile females; all other jobs; live 6 weeks in summer.\nDrones: males; mate with new queens; expelled before winter." },
         spine: "The Fairy-Land of Science, Lectures IX & X — Bees in the Hive",
         spineLink: "https://www.gutenberg.org/cache/epub/5726/pg5726-images.html",
+        spineLibrivox: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/",
         secondSpine: "The Story-Book of Science — The Fairy Tale and the True Story",
         secondSpineLink: "https://www.gutenberg.org/files/56795/56795-h/56795-h.htm#ch02",
         narration8: "What are the three kinds of bees in a hive? What does each one do?",
@@ -231,9 +228,6 @@ export const UNITS = [
       },
       {
         id: "1.11", week: 4, type: "READ & NARRATE",
-        resources: [
-          { lbl: "The Life of the Spider — LibriVox", url: "https://librivox.org/the-life-of-the-spider-by-jean-henri-fabre/", note: "Free audiobook" },
-        ],
         title: "Fabre Watches a Spider",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, spider sections",
@@ -241,6 +235,7 @@ export const UNITS = [
         activity: { label: "Key Distinction", text: "Radius threads are dry — the spider walks on these. Capture spiral threads are sticky — that is what catches prey. The spider always knows which is which." },
         spine: "The Life of the Spider, Ch. I — The Black-Bellied Tarantula",
         spineLink: "https://www.gutenberg.org/files/1887/1887-h/1887-h.htm#link2HCH0001",
+        spineLibrivox: "https://librivox.org/the-life-of-the-spider-by-jean-henri-fabre/",
         secondSpine: "The Life of the Spider, Ch. III — The Geometry of the Web",
         secondSpineLink: "https://www.gutenberg.org/files/1887/1887-h/1887-h.htm#link2HCH0003",
         narration8: "How does a spider build its web? What are the two kinds of thread?",
@@ -267,9 +262,6 @@ export const UNITS = [
       },
       {
         id: "1.13", week: 5, type: "OBSERVE",
-        resources: [
-          { lbl: "Wild Animals I Have Known — LibriVox", url: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/", note: "Free audiobook" },
-        ],
         title: "Seton's Animals — Ecology Through Biography",
         tagline: null,
         teacherPrep: null,
@@ -277,6 +269,7 @@ export const UNITS = [
         activity: { label: "Read Aloud", text: "Wild Animals I Have Known, Raggylug — the opening section. Seton writes from the rabbit's perspective: every shadow is a threat, every moment requires vigilance." },
         spine: "Wild Animals I Have Known — Raggylug",
         spineLink: "https://www.gutenberg.org/files/3031/3031-h/3031-h.htm#link2H_4_0003",
+        spineLibrivox: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/",
         secondSpine: null, secondSpineLink: null,
         narration8: "What does Raggylug know that he was never taught? What did he have to learn?",
         narration11: "What is the difference between instinct and learned behavior? Use Raggylug as your example.",
@@ -288,9 +281,6 @@ export const UNITS = [
       },
       {
         id: "1.14", week: 5, type: "READ & NARRATE",
-        resources: [
-          { lbl: "Wild Animals I Have Known — LibriVox", url: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/", note: "Free audiobook" },
-        ],
         title: "The Food Web: Who Eats Whom?",
         tagline: null,
         teacherPrep: "Review the food web material in HNS animal sections",
@@ -298,6 +288,7 @@ export const UNITS = [
         activity: { label: "Trophic Cascade", text: "When wolves were removed from Yellowstone, elk overgrazed riverbanks. Trees disappeared. Songbirds declined. Rivers changed course. When wolves returned, all of this reversed. This is called a trophic cascade." },
         spine: "Wild Animals I Have Known — Lobo, the King of Currumpaw",
         spineLink: "https://www.gutenberg.org/files/3031/3031-h/3031-h.htm#lobo",
+        spineLibrivox: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/",
         secondSpine: null, secondSpineLink: null,
         narration8: "Give two examples of how animals depend on each other. What happens when one is removed?",
         narration11: "Explain what a trophic cascade is using the Yellowstone example. What does this tell us about the importance of predators?",
@@ -351,10 +342,6 @@ export const UNITS = [
       },
       {
         id: "2.2", week: 8, type: "READ & NARRATE",
-        resources: [
-          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
-          { lbl: "Little Wanderers — LibriVox", url: "https://librivox.org/search?q=little+wanderers+morley", note: "Search LibriVox" },
-        ],
         title: "Buckley's Primrose and Morley's Travelers",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Lesson 46 (The Apple Tree) and Part I introduction",
@@ -362,7 +349,9 @@ export const UNITS = [
         activity: { label: "Key Idea", text: "A flower is not beautiful for our sake — it is beautiful for the bee's sake. Every petal, every color, every scent is a specific solution to a specific problem: how to move pollen from one plant to another." },
         spine: "The Fairy-Land of Science, Lecture VII — The Life of a Primrose",
         spineLink: "https://www.gutenberg.org/cache/epub/5726/pg5726-images.html",
+        spineLibrivox: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/",
         secondSpine: "Little Wanderers — Why Plants Travel",
+        secondSpineLibrivox: "https://librivox.org/search?q=little+wanderers+morley",
         secondSpineLink: "https://www.gutenberg.org/files/61295/61295-h/61295-h.htm#Page_1",
         narration8: "Trace a flower's life from seed to seed. What must happen at each stage?",
         narration11: "Explain why flowers are colorful and fragrant. Then explain what Morley means when she says the plant world is topsy-turvy.",
@@ -400,6 +389,7 @@ export const UNITS = [
         activity: { label: "Observation", text: "Blow a dandelion. Examine a single seed with the hand lens: find the akene (seed case) at the bottom, the white stalk, and the pappus (parachute hairs) at the top.\n\nDrop a maple samara — watch it spin. The wing shape creates the spin that slows descent. The plant has engineered the seed to interact with wind in a specific way." },
         spine: "Little Wanderers — Those That Fly with Plumes or Down: Dandelions",
         spineLink: "https://www.gutenberg.org/files/61295/61295-h/61295-h.htm",
+        spineLibrivox: "https://librivox.org/search?q=little+wanderers+morley",
         secondSpine: null, secondSpineLink: null,
         narration8: "Describe one seed you observed. How does it travel?",
         narration11: "The dandelion's pappus solves the problem of ___ by ___. This is an example of natural selection because ___.",
@@ -411,9 +401,6 @@ export const UNITS = [
       },
       {
         id: "2.5", week: 9, type: "READ & NARRATE",
-        resources: [
-          { lbl: "Little Wanderers — LibriVox", url: "https://librivox.org/search?q=little+wanderers+morley", note: "Search LibriVox" },
-        ],
         title: "Seeds That Cling, Float, and Explode",
         tagline: null,
         teacherPrep: "HNS introductory plant sections",
@@ -451,7 +438,6 @@ export const UNITS = [
           { lbl: "Britannica Kids: Photosynthesis", url: "https://kids.britannica.com/kids/article/photosynthesis/353500", note: "Reference" },
           { lbl: "Photosynthesis in Elodea — YouTube", url: "https://www.youtube.com/watch?v=yg8vqsBOFMw", note: "YouTube demo" },
           { lbl: "Bubbling Plants Experiment — YouTube", url: "https://www.youtube.com/watch?v=B3-16GVWfe0", note: "YouTube demo" },
-          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
         ],
         title: "The Sunbeam's Work",
         tagline: "Set up the Elodea experiment at the start of this lesson.",
@@ -460,6 +446,7 @@ export const UNITS = [
         activity: { label: "Photosynthesis", text: "Carbon dioxide + water + sunlight → sugar + oxygen.\n\nThe plant takes in CO₂ through stomata, pulls water up from roots, and uses chlorophyll to combine them into glucose. Oxygen is the byproduct. Check the Elodea — the bubbles on the leaves are oxygen being exhaled." },
         spine: "The Fairy-Land of Science, Lecture II — Sunbeams and the Work They Do",
         spineLink: "https://www.gutenberg.org/cache/epub/5726/pg5726-images.html",
+        spineLibrivox: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/",
         secondSpine: null, secondSpineLink: null,
         narration8: "What does a plant need to make food? What does it produce? Where does the oxygen in the air come from?",
         narration11: "Explain photosynthesis in your own words. Then explain what Buckley means when she says we are all living on stored sunlight. Is this literally true?",
@@ -487,9 +474,6 @@ export const UNITS = [
       },
       {
         id: "2.9", week: 10, type: "RECORD",
-        resources: [
-          { lbl: "The Story-Book of Science — LibriVox", url: "https://librivox.org/search?q=story+book+of+science+fabre", note: "Search LibriVox" },
-        ],
         title: "Trees and Deep Time",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Lessons 46 and 47. If a tree stump or cross-section is available, bring it.",
@@ -591,9 +575,6 @@ export const UNITS = [
       },
       {
         id: "3.2", week: 12, type: "READ & NARRATE",
-        resources: [
-          { lbl: "Winners in Life's Race — LibriVox", url: "https://librivox.org/search?q=winners+in+life%27s+race+buckley", note: "Search LibriVox" },
-        ],
         title: "From the Lancelet to the Cod",
         tagline: null,
         teacherPrep: "Buckley, Winners in Life's Race, Ch. I 'The Backboned Family' + Ch. II 'The Lancelet & The Fishes' — open at PG #72898 and skim Sunday evening.",
@@ -601,6 +582,7 @@ export const UNITS = [
         activity: { label: "Key Idea", text: "Buckley begins with the Lancelet — a tiny, almost-fish — to show the bare beginning of a backbone, then walks up to the Cod, which has the full thing. The lesson is the rod. Every later vertebrate is built on it." },
         spine: "Winners in Life's Race, Ch. I–II — The Threshold of Backboned Life; How the Quaint Old Fishes of Ancient Times Have Lived On into Our Day",
         spineLink: "https://www.gutenberg.org/cache/epub/72898/pg72898-images.html",
+        spineLibrivox: "https://librivox.org/search?q=winners+in+life%27s+race+buckley",
         secondSpine: null, secondSpineLink: null,
         narration8: "Tell me back, in your own words, about the Lancelet. What does it look like? Where does it live?",
         narration11: "Describe the Lancelet and the Cod. What is the same in both? What has the Cod added?",
@@ -702,10 +684,6 @@ export const UNITS = [
       },
       {
         id: "3.8", week: 14, type: "READ & NARRATE",
-        resources: [
-          { lbl: "Winners in Life's Race — LibriVox", url: "https://librivox.org/search?q=winners+in+life%27s+race+buckley", note: "Search LibriVox" },
-          { lbl: "Wild Animals I Have Known — LibriVox", url: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/", note: "Free audiobook" },
-        ],
         title: "Buckley on Birds; Audubon the Painter",
         tagline: null,
         teacherPrep: "Buckley Ch. VI–VII (Birds — general; orders of birds). Have the Age 8 Audubon picture book and the Age 11 Audubon chapter book ready (library or home shelf). If your library has a print folio of Audubon's Birds of America, this is the week to borrow it.",
@@ -713,7 +691,9 @@ export const UNITS = [
         activity: { label: "Biography", text: "Read aloud from the Audubon book at each child's level. Discuss: Audubon shot the birds he painted. He painted them dead but posed as if alive. Was that wrong? Was it the only way at the time? What do bird-painters today do instead?" },
         spine: "Winners in Life's Race, Ch. VI–VII — The Feathered Conquerors of the Air",
         spineLink: "https://www.gutenberg.org/cache/epub/72898/pg72898-images.html#Page_123",
+        spineLibrivox: "https://librivox.org/search?q=winners+in+life%27s+race+buckley",
         secondSpine: "Wild Animals I Have Known — Silverspot, the Story of a Crow",
+        secondSpineLibrivox: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/",
         secondSpineLink: "https://www.gutenberg.org/files/3031/3031-h/3031-h.htm#link2H_4_0002",
         narration8: "Tell me about Silverspot. What did the old crow teach the young ones? Tell me one thing about Audubon.",
         narration11: "What is the relationship Buckley draws between bird and reptile? What did Audubon contribute to the science of birds, and what did he sacrifice in his methods?",
@@ -760,10 +740,6 @@ export const UNITS = [
       },
       {
         id: "3.11", week: 15, type: "READ & NARRATE",
-        resources: [
-          { lbl: "Winners in Life's Race — LibriVox", url: "https://librivox.org/search?q=winners+in+life%27s+race+buckley", note: "Search LibriVox" },
-          { lbl: "Wild Animals I Have Known — LibriVox", url: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/", note: "Free audiobook" },
-        ],
         title: "Mammals, and the Story of Lobo",
         tagline: null,
         teacherPrep: "Buckley Ch. VIII–IX (Mammals; pouched and placental). Plan to split Lobo across two evenings — not one. The Age 8 child should not get Lobo's death immediately before bed.",
@@ -771,7 +747,9 @@ export const UNITS = [
         activity: { label: "The Five Together", text: "Pull out the Family Tree worksheet (page 5 of the Unit 3 packet) and look at it together. The children will fill it in for the capstone (Lesson 3.12). Today, just look — you have now met all five classes." },
         spine: "Winners in Life's Race, Ch. VIII–IX — Mammals; Pouched and Placental",
         spineLink: "https://www.gutenberg.org/cache/epub/72898/pg72898-images.html",
+        spineLibrivox: "https://librivox.org/search?q=winners+in+life%27s+race+buckley",
         secondSpine: "Wild Animals I Have Known — Lobo, the King of Currumpaw",
+        secondSpineLibrivox: "https://librivox.org/wild-animals-i-have-known-by-ernest-thompson-seton/",
         secondSpineLink: "https://www.gutenberg.org/files/3031/3031-h/3031-h.htm#lobo",
         narration8: "Why does a fish not need fur, and why does a polar bear need so much of it? Tell me about Lobo.",
         narration11: "Buckley distinguishes pouched and placental mammals. What is the difference, and what is one place each strategy works well? Why does Seton admire Lobo, and why does Lobo's loyalty to Blanca cost him?",
@@ -834,10 +812,6 @@ export const UNITS = [
       },
       {
         id: "4.2", week: 16, type: "READ & NARRATE",
-        resources: [
-          { lbl: "The Story-Book of Science — LibriVox", url: "https://librivox.org/search?q=story+book+of+science+fabre", note: "Search LibriVox" },
-          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
-        ],
         title: "The Spinning Earth",
         tagline: null,
         teacherPrep: "Gather: globe, flashlight. Darken the room for the demonstration.",
@@ -845,6 +819,7 @@ export const UNITS = [
         activity: { label: "Demonstration", text: "Darken the room. Hold a flashlight at one end (sun). Hold a globe at the other. Rotate the globe slowly — watch day and night sweep across it. Then tilt the axis and walk the globe around the flashlight: summer solstice (N. hemisphere leaning toward the sun), winter solstice (leaning away), two equinoxes (neither hemisphere favored)." },
         spine: "The Story-Book of Science, Ch. LV — Day and Night",
         spineLink: "https://www.gutenberg.org/files/56795/56795-h/56795-h.htm#ch55",
+        spineLibrivox: "https://librivox.org/search?q=story-book+of+science+fabre",
         secondSpine: "Astronomy for Amateurs, Ch. VIII — The Earth",
         secondSpineLink: "https://www.gutenberg.org/cache/epub/25267/pg25267-images.html#Page_205",
         narration8: "Tell me in your own words: why do we have day and night? Why do we have summer and winter?",
@@ -1064,9 +1039,6 @@ export const UNITS = [
       // ── WEEK 20: THE STARS AND THE LARGER UNIVERSE ─────────────────────────
       {
         id: "4.14", week: 20, type: "READ & NARRATE",
-        resources: [
-          { lbl: "The Fairy-Land of Science — LibriVox", url: "https://librivox.org/the-fairy-land-of-science-by-arabella-b-buckley/", note: "Free audiobook" },
-        ],
         title: "What Is a Star?",
         tagline: null,
         teacherPrep: "On a clear night before this lesson, go outside briefly and look carefully at star colors. Some appear slightly yellow, orange-red, or bluish-white. This is real — mention it at the opening.",
@@ -1238,9 +1210,6 @@ export const UNITS = [
       },
       {
         id: "5.8", week: 23, type: "READ & NARRATE",
-        resources: [
-          { lbl: "The Voyage of the Beagle — LibriVox", url: "https://librivox.org/the-voyage-of-the-beagle-by-charles-darwin/", note: "Free audiobook" },
-        ],
         title: "The Fossil Record",
         tagline: null,
         teacherPrep: "Read ahead in Lyell (Manual of Elementary Geology, PG #34350) — select passages on fossils and strata that illustrate his method and assumptions without requiring the full philosophical discussion (that comes in Week 24). Also read Darwin's Voyage of the Beagle chapter on Patagonia fossil mammals.",
@@ -1248,6 +1217,7 @@ export const UNITS = [
         activity: { label: "Three Key Concepts", text: "Index fossils: certain organisms lived during specific time periods and are now extinct. Their fossils are used to date rock layers. The reasoning is circular: the rock's age is determined by the fossil; the fossil's age is determined by the rock layer. This circularity is real and acknowledged; it limits precision but does not invalidate the system.\n\nGeological column: a composite sequence assembled from observations worldwide. No single location contains the complete column. It is a conceptual framework, not a physical object.\n\nFossil succession: simpler organisms generally appear in lower layers, more complex in higher layers. This pattern is real and consistent. It is compatible with multiple interpretations." },
         spine: "The Voyage of the Beagle — Ch. V: Bahia Blanca",
         spineLink: "https://www.gutenberg.org/cache/epub/944/pg944-images.html#link2HCH0005",
+        spineLibrivox: "https://librivox.org/the-voyage-of-the-beagle-by-charles-darwin/",
         secondSpine: "Elements of Geology — Lesson VIII, Part 1: Heat, Deposits, and Fossils",
         secondSpineLink: "https://librivox.org/the-elements-of-geology-by-william-ruschenberger/",
         narration8: "What is a fossil? How does one form? What can fossils tell us about the past?",
@@ -1399,10 +1369,7 @@ export const UNITS = [
 
       {
         id: "6.1", week: 26, type: "OBSERVE",
-        resources: [
-          { lbl: "Chemical History of a Candle — Gutenberg #14474", url: "https://www.gutenberg.org/ebooks/14474", note: "Full text, free" },
-          { lbl: "Chemical History of a Candle — LibriVox", url: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/", note: "Free audiobook" },
-        ],
+        resources: [],
         title: "The Candle Flame",
         tagline: "The most important opening lesson of the unit. Take your time.",
         teacherPrep: "Light a candle. Set it on the table. Both students observe in silence for two full minutes. Prepare: white paper (soot test), cold mirror (water vapour test), glass jar. Do not explain anything during the observation period.",
@@ -1421,7 +1388,6 @@ export const UNITS = [
         id: "6.2", week: 26, type: "READ & NARRATE",
         resources: [
           { lbl: "Bill Hammack — Faraday's Candle Lectures (YouTube playlist)", url: "https://www.youtube.com/playlist?list=PLnT2pATp7adWUMudAuMVJT0-jGBBtD8C8", note: "Illustrated modern companion to Faraday's lectures" },
-          { lbl: "Chemical History of a Candle — LibriVox", url: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/", note: "Free audiobook — Lectures 1 & 2" },
         ],
         title: "The Chemical History of a Candle — Lectures 1 & 2",
         tagline: null,
@@ -1430,6 +1396,7 @@ export const UNITS = [
         activity: { label: "Three Zones of the Flame", text: "Inner dark zone: unburned wax vapour. Bright middle zone: combustion — tiny solid carbon particles heated to incandescence produce the yellow-white light. Outer blue zone: complete combustion.\n\nProducts of combustion: water (H₂O) and carbon dioxide (CO₂) — both invisible gases. The candle loses mass because its matter converts into gases that rise away." },
         spine: "The Chemical History of a Candle — Lectures I & II",
         spineLink: "https://www.gutenberg.org/cache/epub/14474/pg14474-images.html",
+        spineLibrivox: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/",
         secondSpine: null, secondSpineLink: null,
         narration8: "What are the three parts of a candle flame? What does the flame need to burn? What does it make when it burns?",
         narration11: "Explain combustion. What are its products? Why does the candle lose weight as it burns? Where does the mass go?",
@@ -1470,9 +1437,6 @@ export const UNITS = [
       },
       {
         id: "6.5", week: 27, type: "READ & NARRATE",
-        resources: [
-          { lbl: "The Chemical History of a Candle — LibriVox", url: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/", note: "Free audiobook" },
-        ],
         title: "The Chemical History of a Candle — Lectures 3, 4 & 5",
         tagline: null,
         teacherPrep: "Read Lectures 3-5. Know the difference between an element and a compound. Know the composition of water and the atmosphere.",
@@ -1480,6 +1444,7 @@ export const UNITS = [
         activity: { label: "Elements and Compounds", text: "Water is a compound: hydrogen + oxygen (H₂O). Not an element but two elements joined. Hydrogen burns with a pale blue flame — proving water contains hydrogen. Oxygen supports combustion. Atmosphere: ~4/5 nitrogen, ~1/5 oxygen — only the oxygen supports combustion. Faraday here anticipates the periodic table (Mendeleev publishes in 1869, nine years after these lectures)." },
         spine: "The Chemical History of a Candle — Lectures III, IV & V",
         spineLink: "https://www.gutenberg.org/cache/epub/14474/pg14474-images.html",
+        spineLibrivox: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/",
         secondSpine: null, secondSpineLink: null,
         narration8: "What is water made of? What is an element? What is a compound? Give one example of each.",
         narration11: "Explain the difference between an element and a compound. Use water as your example. What does the composition of the atmosphere tell us about why oxygen is necessary for combustion?",
@@ -1490,9 +1455,6 @@ export const UNITS = [
       },
       {
         id: "6.6", week: 27, type: "RECORD",
-        resources: [
-          { lbl: "The Chemical History of a Candle — LibriVox", url: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/", note: "Free audiobook" },
-        ],
         title: "Combustion and Respiration — The Same Process",
         tagline: "One of the great moments in scientific writing for children.",
         teacherPrep: "Read Lecture 6 in full: Carbon or Charcoal, Coal Gas, Respiration and Its Analogy to the Burning of a Candle. Faraday's conclusion: a candle and a human being are the same chemical process.",
@@ -1500,6 +1462,7 @@ export const UNITS = [
         activity: null,
         spine: "The Chemical History of a Candle — Lecture VI",
         spineLink: "https://www.gutenberg.org/cache/epub/14474/pg14474-images.html",
+        spineLibrivox: "https://librivox.org/the-chemical-history-of-a-candle-by-michael-faraday/",
         secondSpine: null, secondSpineLink: null,
         narration8: "How is breathing like a candle burning? Tell me in 3-4 sentences.",
         narration11: "Explain Faraday's comparison between combustion and respiration. Is this a metaphor, an analogy, or a literal chemical equivalence? What is the difference between those three things?",
@@ -1526,9 +1489,6 @@ export const UNITS = [
       },
       {
         id: "6.8", week: 28, type: "READ & NARRATE",
-        resources: [
-          { lbl: "On the Various Forces of Nature — LibriVox", url: "https://librivox.org/search?q=various+forces+of+nature+faraday", note: "Search LibriVox" },
-        ],
         title: "On the Various Forces of Nature — Lectures 1–3",
         tagline: null,
         teacherPrep: "Read the first three lectures. Know field theory vs. action-at-a-distance. Know Faraday's intuition about the unity of forces.",
@@ -1536,6 +1496,7 @@ export const UNITS = [
         activity: { label: "The Unity of Forces", text: "Faraday believed gravity, magnetism, electricity, chemical affinity, and light are all manifestations of a single underlying force. He was not entirely right but more right than anyone else of his time. Modern physics — the Standard Model, electroweak unification — has proven him substantially correct." },
         spine: "On the Various Forces of Nature — Lectures I, II & III",
         spineLink: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html#Page_13",
+        spineLibrivox: "https://librivox.org/search?q=various+forces+of+nature+faraday",
         secondSpine: null, secondSpineLink: null,
         narration8: "Name four forces Faraday talks about. What does gravity do? What does magnetism do?",
         narration11: "Explain Faraday's intuition about the unity of forces. What was he trying to prove? How far did he get? What has modern physics discovered about this question?",
