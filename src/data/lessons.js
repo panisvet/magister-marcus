@@ -82,6 +82,9 @@ export const UNITS = [
       },
       {
         id: "1.3", week: 1, type: "RECORD",
+        resources: [
+          { lbl: "Insect anatomy illustrations — Biodiversity Heritage Library", url: "https://www.biodiversitylibrary.org/search?searchTerm=insect+anatomy", note: "Public domain plates for journal reference" },
+        ],
         title: "Nature Journal — Insect Portrait",
         tagline: null,
         teacherPrep: null,
@@ -97,6 +100,9 @@ export const UNITS = [
       },
       {
         id: "1.4", week: 2, type: "OBSERVE",
+        resources: [
+          { lbl: "Butterfly life cycle — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Butterfly_life_cycle", note: "Public domain sequence images for prediction activity" },
+        ],
         title: "Before and After",
         tagline: null,
         teacherPrep: null,
@@ -194,6 +200,9 @@ export const UNITS = [
       },
       {
         id: "1.9", week: 3, type: "RECORD",
+        resources: [
+          { lbl: "Honeybee Hive Anatomy Cross-Section — Carr's Consulting", url: "https://www.carrsconsulting.com/honeybee/normal/anatomyhive.htm", note: "Labeled: queen cells, worker brood, honey cells, drones" },
+        ],
         title: "Hive Cross-Section",
         tagline: null,
         teacherPrep: null,
@@ -247,6 +256,10 @@ export const UNITS = [
       },
       {
         id: "1.12", week: 4, type: "RECORD",
+        resources: [
+          { lbl: "Orb Web Construction & Features (PDF) — Virginia Tech Entomology", url: "https://www.ento.vt.edu/content/dam/ento_vt_edu/2021-hokie-bugfest/activities/Web%20building%20and%20features.pdf", note: "Labeled diagram: hub, radii, capture spiral, signal thread" },
+          { lbl: "Garden Orb Web Spider — BBC Earth time-lapse", url: "https://thekidshouldseethis.com/post/a-garden-orb-web-spider-builds-its-web-in-time-lapse", note: "The Kid Should See This" },
+        ],
         title: "Orb Web Diagram",
         tagline: null,
         teacherPrep: null,
@@ -299,6 +312,9 @@ export const UNITS = [
       },
       {
         id: "1.15", week: 5, type: "RECORD",
+        resources: [
+          { lbl: "Food Web diagram — National Geographic Education", url: "https://education.nationalgeographic.org/resource/food-chain/", note: "Producers, consumers, decomposers" },
+        ],
         title: "Food Web Drawing",
         tagline: null,
         teacherPrep: null,
@@ -326,6 +342,10 @@ export const UNITS = [
     lessons: [
       {
         id: "2.1", week: 8, type: "OBSERVE",
+        resources: [
+          { lbl: "Seed anatomy plates — Biodiversity Heritage Library", url: "https://www.biodiversitylibrary.org/search?searchTerm=seed+anatomy", note: "Bean seed dissection: embryo, cotyledons — public domain botany plates" },
+          { lbl: "Seed germination time-lapse — YouTube", url: "https://www.youtube.com/results?search_query=seed+germination+time+lapse+kids", note: "Search: seed germination time-lapse kids" },
+        ],
         title: "The Seed's Secret",
         tagline: "Soak bean seeds overnight before this lesson.",
         teacherPrep: "Handbook of Nature Study, Lesson 49 (The Bean) and Part I introduction",
@@ -362,6 +382,10 @@ export const UNITS = [
       },
       {
         id: "2.3", week: 8, type: "RECORD",
+        resources: [
+          { lbl: "Labeled flower anatomy diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Mature_flower_diagram.svg", note: "Sepal, petal, stamen, pistil, ovary — public domain" },
+          { lbl: "Historical botanical illustrations — NYPL Digital Collections", url: "https://digitalcollections.nypl.org/search/index?utf8=%E2%9C%93&keywords=flower+anatomy", note: "Search: flower anatomy — public domain plates" },
+        ],
         title: "Flower Dissection",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Lesson 46 — flower anatomy sections. Obtain one large flower per student (tulip or lily).",
@@ -474,6 +498,9 @@ export const UNITS = [
       },
       {
         id: "2.9", week: 10, type: "RECORD",
+        resources: [
+          { lbl: "Tree Rings: Recorders of Climate Change — UCAR", url: "https://scied.ucar.edu/learning-zone/how-climate-works/tree-rings", note: "Dendrochronology explained with labeled cross-section" },
+        ],
         title: "Trees and Deep Time",
         tagline: null,
         teacherPrep: "Handbook of Nature Study, Lessons 46 and 47. If a tree stump or cross-section is available, bring it.",
@@ -493,6 +520,10 @@ export const UNITS = [
       },
       {
         id: "2.10", week: 11, type: "OBSERVE",
+        resources: [
+          { lbl: "Plant groups comparison — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Plant_morphology", note: "Moss, fern, conifer, flowering plant — side by side" },
+          { lbl: "Plant kingdom — Britannica Kids", url: "https://kids.britannica.com/kids/article/plant/353517", note: "Non-vascular to flowering plants" },
+        ],
         title: "The Four Plant Groups",
         tagline: null,
         teacherPrep: "Gather examples of four types: a moss, a fern, a conifer branch, and a flowering plant.",
@@ -705,6 +736,9 @@ export const UNITS = [
       },
       {
         id: "3.9", week: 14, type: "RECORD",
+        resources: [
+          { lbl: "Feather structure diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Feather_structure.svg", note: "Barbs, barbules, rachis, after-feather — public domain" },
+        ],
         title: "Beak-and-Foot Key; Feather Anatomy",
         tagline: "Worksheet — page 4 of the Unit 3 packet.",
         teacherPrep: "Have a handful of feathers ready (backyard, craft store, or a friend's chicken coop) and the magnifying lens.",
@@ -1369,7 +1403,9 @@ export const UNITS = [
 
       {
         id: "6.1", week: 26, type: "OBSERVE",
-        resources: [],
+        resources: [
+          { lbl: "Candle flame zones diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Candle_flame_diagram.svg", note: "Inner dark cone, luminous zone, outer blue mantle" },
+        ],
         title: "The Candle Flame",
         tagline: "The most important opening lesson of the unit. Take your time.",
         teacherPrep: "Light a candle. Set it on the table. Both students observe in silence for two full minutes. Prepare: white paper (soot test), cold mirror (water vapour test), glass jar. Do not explain anything during the observation period.",
@@ -1422,6 +1458,9 @@ export const UNITS = [
       },
       {
         id: "6.4", week: 27, type: "OBSERVE",
+        resources: [
+          { lbl: "Lemon battery experiment — YouTube", url: "https://www.youtube.com/results?search_query=lemon+battery+experiment+kids+LED", note: "Search: lemon battery experiment kids LED" },
+        ],
         title: "The Lemon Battery",
         tagline: null,
         teacherPrep: "Materials: lemon, zinc nail (galvanised), copper coin or copper wire, wires, LED or voltmeter. Also: baking soda, vinegar, glass, steel wool, match.",
@@ -1474,6 +1513,9 @@ export const UNITS = [
       },
       {
         id: "6.7", week: 28, type: "OBSERVE",
+        resources: [
+          { lbl: "Non-contact forces demonstration — YouTube", url: "https://www.youtube.com/results?search_query=non-contact+forces+demonstration+kids", note: "Gravity, magnetism, static electricity demos" },
+        ],
         title: "Forces Without Touching",
         tagline: "Something is acting — but you cannot see it touch.",
         teacherPrep: "Materials: bar magnets (2), iron filings, white paper, balloon, wool sweater. Also: rock, feather.",
@@ -1507,6 +1549,10 @@ export const UNITS = [
       },
       {
         id: "6.9", week: 28, type: "RECORD",
+        resources: [
+          { lbl: "Faraday induction experiment — YouTube", url: "https://www.youtube.com/results?search_query=faraday+electromagnetic+induction+simple+experiment", note: "Coil + bar magnet + voltmeter demo" },
+          { lbl: "Electromagnetic induction diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Electromagnetic_induction_-_solenoid_to_galvanometer.svg", note: "Coil and galvanometer labeled" },
+        ],
         title: "Electromagnetic Induction Experiment",
         tagline: "The principle of every electric generator on Earth, demonstrated at home.",
         teacherPrep: "Materials: 50-100 feet copper wire (22-28 gauge), cardboard tube (paper towel roll), bar magnet, voltmeter/multimeter. Pre-coil the wire around the tube before the lesson.",
@@ -1717,6 +1763,10 @@ export const UNITS = [
       },
       {
         id: "7.6", week: 32, type: "RECORD",
+        resources: [
+          { lbl: "Human skeleton diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Human_skeleton_diagrams", note: "Labeled skeleton for journal reference" },
+          { lbl: "Biceps and triceps antagonistic pair — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Biceps_brachii_muscle09.png", note: "Flexion/extension: arm bones and muscles labeled" },
+        ],
         title: "Nature Journal — The Skeleton at Work",
         tagline: null,
         teacherPrep: null,
@@ -1768,6 +1818,9 @@ export const UNITS = [
       },
       {
         id: "7.9", week: 33, type: "RECORD",
+        resources: [
+          { lbl: "Four-chamber heart diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Diagram_of_the_human_heart_(cropped).svg", note: "Pulmonary and systemic circuits, red/blue labeling" },
+        ],
         title: "William Harvey and the Circulation of the Blood",
         tagline: null,
         teacherPrep: null,
@@ -1870,6 +1923,10 @@ export const UNITS = [
       },
       {
         id: "7.15", week: 35, type: "RECORD",
+        resources: [
+          { lbl: "Brain regions diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Brain_diagrams", note: "Cerebrum, cerebellum, medulla labeled" },
+          { lbl: "Ear anatomy (cochlea, hammer, anvil, stirrup) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Ear_anatomy.svg", note: "For sensory atlas ear section" },
+        ],
         title: "The Sensory Atlas",
         tagline: null,
         teacherPrep: null,
