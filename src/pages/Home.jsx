@@ -344,7 +344,7 @@ export default function Home() {
             </div>
             <div style={{marginTop:'10px'}}>
               <button className="hp-build-btn" onClick={() => setShowNotes(true)}>
-                2026-05-18 · build b6c994a
+                {__BUILD_DATE__} · build {__BUILD_HASH__}
               </button>
             </div>
           </footer>
@@ -424,7 +424,7 @@ function ReleaseNotes({ onClose }) {
           <button className="rn-close" onClick={onClose}>✕</button>
         </div>
         <div className="rn-body">
-          <div className="rn-date">2026-05-18</div>
+          <div className="rn-date">{__BUILD_DATE__}</div>
 
           <div className="rn-section">
             <div className="rn-section-title">Security</div>
@@ -450,7 +450,7 @@ function ReleaseNotes({ onClose }) {
             <div className="rn-item">404 catch-all route added; unknown paths now load home</div>
           </div>
 
-          <div className="rn-hash">build b6c994a</div>
+          <div className="rn-hash">build {__BUILD_HASH__}</div>
         </div>
       </div>
     </div>
