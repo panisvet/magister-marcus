@@ -622,6 +622,10 @@ export const UNITS = [
       },
       {
         id: "3.5", week: 13, type: "READ & NARRATE",
+        resources: [
+          { lbl: "By Pond and River — Illustration, p. 1", url: "/images/u3_frogs_p1_v2.png", note: "Reading illustration · open to view" },
+          { lbl: "By Pond and River — Illustration, p. 2", url: "/images/u3_frogs_p2_v4.png", note: "Reading illustration · open to view" },
+        ],
         title: "Frogs, Snakes, and the Two Great Eggs",
         tagline: null,
         teacherPrep: "Buckley Ch. IV 'Frogs, Toads, and Newts' + Ch. V 'Reptiles.' Plan to read in two sittings if your children's stamina is stretched.",
