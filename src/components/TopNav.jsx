@@ -68,6 +68,7 @@ const NAV_STYLES = `
 const ACTIVE_SUBJECTS = [
   { label: 'Latin',   href: '/latin'           },
   { label: 'Natura',  href: '/magister-natura' },
+  { label: 'Lessons', href: '/lesson-viewer'   },
   // { label: 'Math',    href: '/math'    },
   // { label: 'History', href: '/history' },
 ];
