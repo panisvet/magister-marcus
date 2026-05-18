@@ -41,6 +41,7 @@ export const UNITS = [
     title: "Natural History: The Living World",
     subtitle: "Weeks 1–7 · Insects, Spiders, Ecology",
     icon: "🪲",
+    worksheetUrl: "/worksheets/unit1_worksheets.html",
     lessons: [
       {
         id: "1.1", week: 1, type: "OBSERVE",
@@ -339,6 +340,7 @@ export const UNITS = [
     title: "Natural History: Plants and Seeds",
     subtitle: "Weeks 8–11 · Photosynthesis, Dispersal, Diversity",
     icon: "🌿",
+    worksheetUrl: "/worksheets/unit2_worksheets.html",
     lessons: [
       {
         id: "2.1", week: 8, type: "OBSERVE",
@@ -810,7 +812,7 @@ export const UNITS = [
       },
 
     ],
-    worksheetUrl: "unit3_worksheets.html",
+    worksheetUrl: "/worksheets/unit3_worksheets.html",
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -821,6 +823,7 @@ export const UNITS = [
     title: "Astronomy: The Seasonal Sky",
     subtitle: "Weeks 16–20 · Stars, Moon, Solar System",
     icon: "✦",
+    worksheetUrl: "/worksheets/unit4/unit4_worksheets.html",
     lessons: [
 
       // ── WEEK 16: THE EARTH IN SPACE ────────────────────────────────────────
@@ -884,6 +887,10 @@ export const UNITS = [
       // ── WEEK 17: THE CONSTELLATIONS ─────────────────────────────────────────
       {
         id: "4.4", week: 17, type: "OBSERVE",
+        resources: [
+          { lbl: "📋 Sky Observation Log — Form IA", url: "/worksheets/unit4/u4_FormIA_sky_observation_log_v2.png", note: "Lesson 4.4 · Form IA worksheet" },
+          { lbl: "📋 Sky Observation Log — Form IIA", url: "/worksheets/unit4/u4_FormIIA_sky_observation_log_v2.png", note: "Lesson 4.4 · Form IIA worksheet" },
+        ],
         title: "First Evening Sky Session",
         tagline: "Go outside after dark.",
         teacherPrep: "Download a free sky app (Stellarium, SkySafari, or Star Walk) or print the seasonal charts from Serviss Round the Year with the Stars, Gutenberg #68391. Plan for 1–2 hours after sunset on a clear night.",
@@ -920,6 +927,10 @@ export const UNITS = [
       },
       {
         id: "4.6", week: 17, type: "RECORD",
+        resources: [
+          { lbl: "📋 Constellation Map — Form IA", url: "/worksheets/unit4/u4_FormIA_constellation_map_v2.png", note: "Lesson 4.6 · Form IA worksheet" },
+          { lbl: "📋 Constellation Map — Form IIA", url: "/worksheets/unit4/u4_FormIIA_constellation_map_v2.png", note: "Lesson 4.6 · Form IIA worksheet" },
+        ],
         title: "Constellation Map",
         tagline: null,
         teacherPrep: "Dark paper, white gel pen or chalk. Index cards for planet fact cards (used next week).",
@@ -958,6 +969,8 @@ export const UNITS = [
         id: "4.8", week: 18, type: "OBSERVE",
         resources: [
           { lbl: "Moon Phase Calendar — Time and Date", url: "https://www.timeanddate.com/moon/phases/", note: "Free monthly moon phase tracker for journal" },
+          { lbl: "📋 Moon Journal — Form IA", url: "/worksheets/unit4/u4_FormIA_moon_journal_v1.png", note: "Lesson 4.8 · Form IA worksheet" },
+          { lbl: "📋 Moon Journal — Form IIA", url: "/worksheets/unit4/u4_FormIIA_moon_journal_v3.png", note: "Lesson 4.8 · Form IIA worksheet" },
         ],
         title: "Moon Tracking Begins",
         tagline: null,
@@ -1055,6 +1068,10 @@ export const UNITS = [
       },
       {
         id: "4.13", week: 19, type: "OBSERVE",
+        resources: [
+          { lbl: "📋 Telescope Log — Form IA", url: "/worksheets/unit4/u4_FormIA_telescope_log_v1.png", note: "Lesson 4.13 · Form IA worksheet" },
+          { lbl: "📋 Telescope Log — Form IIA", url: "/worksheets/unit4/u4_FormIIA_telescope_log_v1.png", note: "Lesson 4.13 · Form IIA worksheet" },
+        ],
         title: "Third Evening Sky Session — Planets",
         tagline: "Find a planet. Note: it will not twinkle.",
         teacherPrep: "Look up which planets are currently visible in the evening sky before this session. If Jupiter is visible, binoculars may reveal one or two of the Galilean moons.",
@@ -1118,6 +1135,7 @@ export const UNITS = [
     title: "Earth Science and Geology",
     subtitle: "Weeks 21–25 · Rocks, Fossils, Deep Time, and Lyell",
     icon: "🪨",
+    worksheetUrl: "/worksheets/unit5/unit5_worksheets.html",
     lessons: [
 
       // ── WEEK 21: WHAT IS A ROCK? WHAT IS A MINERAL? ────────────────────────
@@ -1157,6 +1175,9 @@ export const UNITS = [
       },
       {
         id: "5.3", week: 21, type: "RECORD",
+        resources: [
+          { lbl: "📋 Rock & Mineral Guide", url: "/worksheets/unit5/unit5_page2_rock_mineral_guide.png", note: "Lesson 5.3 notebooking page" },
+        ],
         title: "Mineral Identification Chart",
         tagline: null,
         teacherPrep: null,
@@ -1210,6 +1231,11 @@ export const UNITS = [
       },
       {
         id: "5.6", week: 22, type: "RECORD",
+        resources: [
+          { lbl: "📋 The Three Rock Families", url: "/worksheets/unit5/unit5_page3_three_families_1.png", note: "Lesson 5.6 notebooking page" },
+          { lbl: "📋 Rock Cycle — Form IA", url: "/worksheets/unit5/u5_FormIA_rock_cycle_v3.png", note: "Lesson 5.6 · Form IA worksheet" },
+          { lbl: "📋 Rock Cycle — Form IIA", url: "/worksheets/unit5/u5_FormIIA_rock_cycle_v2.png", note: "Lesson 5.6 · Form IIA worksheet" },
+        ],
         title: "The Rock Cycle Diagram",
         tagline: null,
         teacherPrep: null,
@@ -1267,6 +1293,9 @@ export const UNITS = [
         resources: [
           { lbl: "Cambrian Explosion — YouTube", url: "https://www.youtube.com/results?search_query=cambrian+explosion+explained", note: "Search: Cambrian Explosion explained" },
           { lbl: "Burgess Shale fossils — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Burgess_Shale", note: "High-resolution Cambrian fossils for Before/After drawings" },
+          { lbl: "📋 Fossils & the Cambrian Explosion", url: "/worksheets/unit5/unit5_page5_fossils_cambrian.png", note: "Lesson 5.9 notebooking page" },
+          { lbl: "📋 Fossils & Cambrian — Form IA", url: "/worksheets/unit5/u5_FormIA_fossils_cambrian_v1.png", note: "Lesson 5.9 · Form IA worksheet" },
+          { lbl: "📋 Fossils & Cambrian — Form IIA", url: "/worksheets/unit5/u5_FormIIA_fossils_cambrian_v1.png", note: "Lesson 5.9 · Form IIA worksheet" },
         ],
         title: "The Cambrian Explosion",
         tagline: "The most philosophically significant lesson in the unit. Do not rush it.",
@@ -1338,6 +1367,9 @@ export const UNITS = [
       // ── WEEK 25: WHAT THE EARTH TEACHES ────────────────────────────────────
       {
         id: "5.13", week: 25, type: "OBSERVE",
+        resources: [
+          { lbl: "📋 The Hardware River Watershed — Field Study", url: "/worksheets/unit5/hardware_river_watershed_v10.png", note: "Local field guide · Fluvanna County, Virginia" },
+        ],
         title: "Field Lesson — Reading the Rocks",
         tagline: "This lesson has no book reading. Go outside.",
         teacherPrep: "Identify a location where rock layers are visible: road cut, stream bank, exposed soil profile, creek bed, or gravel pit. If nothing is available locally, use a detailed photograph of a rock exposure and examine it together.",
@@ -1399,12 +1431,15 @@ export const UNITS = [
     title: "Physics and Chemistry: The Forces of Nature",
     subtitle: "Weeks 26–30 · The Chemical History of a Candle · Michael Faraday",
     icon: "🕯",
+    worksheetUrl: "/worksheets/unit6/unit6_worksheets.html",
     lessons: [
 
       {
         id: "6.1", week: 26, type: "OBSERVE",
         resources: [
           { lbl: "Candle flame zones diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Candle_flame_diagram.svg", note: "Inner dark cone, luminous zone, outer blue mantle" },
+          { lbl: "📋 Zones of a Flame — Notebooking Page", url: "/worksheets/unit6/unit6_p1_zones_of_flame_v2.png", note: "Lesson 6.1 worksheet" },
+          { lbl: "📋 Candle Flame Observations Journal", url: "/worksheets/unit6/unit6_p8_candle_observation_journal.png", note: "Lesson 6.1 worksheet" },
         ],
         title: "The Candle Flame",
         tagline: "The most important opening lesson of the unit. Take your time.",
@@ -1476,6 +1511,10 @@ export const UNITS = [
       },
       {
         id: "6.5", week: 27, type: "READ & NARRATE",
+        resources: [
+          { lbl: "📋 Combustion — Word & Chemical Equation", url: "/worksheets/unit6/unit6_p2_combustion_equation.png", note: "Lesson 6.5 worksheet" },
+          { lbl: "📋 Before the Periodic Table", url: "/worksheets/unit6/unit6_before_periodic_table.png", note: "Lesson 6.5 worksheet" },
+        ],
         title: "The Chemical History of a Candle — Lectures 3, 4 & 5",
         tagline: null,
         teacherPrep: "Read Lectures 3-5. Know the difference between an element and a compound. Know the composition of water and the atmosphere.",
@@ -1515,6 +1554,8 @@ export const UNITS = [
         id: "6.7", week: 28, type: "OBSERVE",
         resources: [
           { lbl: "Non-contact forces demonstration — YouTube", url: "https://www.youtube.com/results?search_query=non-contact+forces+demonstration+kids", note: "Gravity, magnetism, static electricity demos" },
+          { lbl: "📋 Magnetic Field Lines", url: "/worksheets/unit6/unit6_p3_magnetic_field_lines.png", note: "Lesson 6.7 worksheet" },
+          { lbl: "📋 Surface Tension — The Water Dome", url: "/worksheets/unit6/unit6_p4_penny_water_dome.png", note: "Lesson 6.7 worksheet" },
         ],
         title: "Forces Without Touching",
         tagline: "Something is acting — but you cannot see it touch.",
@@ -1552,6 +1593,8 @@ export const UNITS = [
         resources: [
           { lbl: "Faraday induction experiment — YouTube", url: "https://www.youtube.com/results?search_query=faraday+electromagnetic+induction+simple+experiment", note: "Coil + bar magnet + voltmeter demo" },
           { lbl: "Electromagnetic induction diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Electromagnetic_induction_-_solenoid_to_galvanometer.svg", note: "Coil and galvanometer labeled" },
+          { lbl: "📋 Electromagnetic Induction", url: "/worksheets/unit6/unit6_p5_electromagnetic_induction.png", note: "Lesson 6.9 worksheet" },
+          { lbl: "📋 Faraday's Laboratory Notebook", url: "/worksheets/unit6/unit6_faraday_lab_notebook.png", note: "Lesson 6.9 worksheet" },
         ],
         title: "Electromagnetic Induction Experiment",
         tagline: "The principle of every electric generator on Earth, demonstrated at home.",
@@ -1568,6 +1611,9 @@ export const UNITS = [
       },
       {
         id: "6.10", week: 29, type: "OBSERVE",
+        resources: [
+          { lbl: "📋 The Visible Spectrum", url: "/worksheets/unit6/unit6_p6_visible_spectrum.png", note: "Lesson 6.10 worksheet" },
+        ],
         title: "The Spectrum",
         tagline: null,
         teacherPrep: "Materials: glass prism, CD/DVD as diffraction grating, or garden hose set to fine mist on a sunny day. Also a candle and salt (for sodium flame).",
@@ -1617,6 +1663,9 @@ export const UNITS = [
       },
       {
         id: "6.13", week: 30, type: "READ & NARRATE",
+        resources: [
+          { lbl: "📋 Michael Faraday — Bookbinder, Scientist, Man of Faith", url: "/worksheets/unit6/unit6_p7_faraday_portrait.png", note: "Lesson 6.13 worksheet" },
+        ],
         title: "The Biography of Michael Faraday",
         tagline: null,
         teacherPrep: "Read selected chapters of Jerrold biography (PG #46763): childhood, apprenticeship, letter to Davy, working method, refusals of honours, Sandemanian faith, death in 1867. Know these stories well enough to tell them compellingly.",
@@ -1633,6 +1682,9 @@ export const UNITS = [
       },
       {
         id: "6.14", week: 30, type: "OBSERVE",
+        resources: [
+          { lbl: "📋 The Homopolar Motor", url: "/worksheets/unit6/unit6_homopolar_motor.png", note: "Lesson 6.14 worksheet" },
+        ],
         title: "Building an Electromagnet",
         tagline: null,
         teacherPrep: "Materials: large iron nail, copper wire (24 gauge), 9V battery, paper clips.",
@@ -1648,6 +1700,9 @@ export const UNITS = [
       },
       {
         id: "6.15", week: 30, type: "RECORD",
+        resources: [
+          { lbl: "📋 Conservation of Energy", url: "/worksheets/unit6/unit6_conservation_of_energy.png", note: "Lesson 6.15 worksheet" },
+        ],
         title: "Unit Synthesis",
         tagline: "From the candle flame to the man who changed the world.",
         teacherPrep: null,
@@ -1713,6 +1768,9 @@ export const UNITS = [
       },
       {
         id: "7.3", week: 31, type: "RECORD",
+        resources: [
+          { lbl: "📋 Body Systems Map", url: "/worksheets/unit7/u7_p01_body_systems.png", note: "Lesson 7.3 notebooking page" },
+        ],
         title: "Body Systems Map",
         tagline: null,
         teacherPrep: null,
@@ -1730,6 +1788,9 @@ export const UNITS = [
       // ── WEEK 32: THE SKELETON AND MUSCLES ──────────────────────────────────
       {
         id: "7.4", week: 32, type: "OBSERVE",
+        resources: [
+          { lbl: "📋 How Joints Work", url: "/worksheets/unit7/u7_p03_how_joints_work.png", note: "Lesson 7.4 notebooking page" },
+        ],
         title: "What Holds You Up",
         tagline: "A body without bones is a pile. A body without muscles is a statue.",
         teacherPrep: "If possible, have a chicken wing or whole chicken available for dissection observation — a chicken wing is the simplest way to see bone, cartilage, tendon, and muscle together. Alternatively, examine a clean chicken bone from dinner. Kitchen anatomy is entirely appropriate here.",
@@ -1746,6 +1807,9 @@ export const UNITS = [
       },
       {
         id: "7.5", week: 32, type: "READ & NARRATE",
+        resources: [
+          { lbl: "📋 Levers in the Body", url: "/worksheets/unit7/u7_p04_levers_in_the_body.png", note: "Lesson 7.5 notebooking page" },
+        ],
         title: "Levers, Bones, and the Engine of Movement",
         tagline: null,
         teacherPrep: "Read Object Lessons Lesson 3 (Bones) and Lesson 4 (Muscles). Know the three classes of levers and which class the forearm represents.",
@@ -1766,6 +1830,7 @@ export const UNITS = [
         resources: [
           { lbl: "Human skeleton diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Human_skeleton_diagrams", note: "Labeled skeleton for journal reference" },
           { lbl: "Biceps and triceps antagonistic pair — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Biceps_brachii_muscle09.png", note: "Flexion/extension: arm bones and muscles labeled" },
+          { lbl: "📋 Bone Anatomy", url: "/worksheets/unit7/u7_p02_bone_anatomy.png", note: "Lesson 7.6 notebooking page" },
         ],
         title: "Nature Journal — The Skeleton at Work",
         tagline: null,
@@ -1820,6 +1885,8 @@ export const UNITS = [
         id: "7.9", week: 33, type: "RECORD",
         resources: [
           { lbl: "Four-chamber heart diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Diagram_of_the_human_heart_(cropped).svg", note: "Pulmonary and systemic circuits, red/blue labeling" },
+          { lbl: "📋 Double-Loop Circulation", url: "/worksheets/unit7/u7_p05_double_loop_circulation.png", note: "Lesson 7.9 notebooking page" },
+          { lbl: "📋 William Harvey", url: "/worksheets/unit7/u7_p12_william_harvey.png", note: "Lesson 7.9 notebooking page" },
         ],
         title: "William Harvey and the Circulation of the Blood",
         tagline: null,
@@ -1838,6 +1905,9 @@ export const UNITS = [
       // ── WEEK 34: LUNGS, DIGESTION, AND FOOD AS FUEL ────────────────────────
       {
         id: "7.10", week: 34, type: "OBSERVE",
+        resources: [
+          { lbl: "📋 Gas Exchange in the Lungs", url: "/worksheets/unit7/u7_p06_gas_exchange_lungs.png", note: "Lesson 7.10 notebooking page" },
+        ],
         title: "Breathing and the Exchange",
         tagline: "Every breath is a chemical transaction.",
         teacherPrep: "Materials: a glass of limewater (or substitute: blow through a straw into a clear glass of water with a drop of bromothymol blue indicator — available at aquarium supply shops — which turns yellow in CO₂). Alternatively, use the simple fog-on-cold-glass test. The point is to make exhaled CO₂ visible.",
@@ -1872,6 +1942,9 @@ export const UNITS = [
       },
       {
         id: "7.12", week: 34, type: "RECORD",
+        resources: [
+          { lbl: "📋 The Digestive System", url: "/worksheets/unit7/u7_p07_digestive_system.png", note: "Lesson 7.12 notebooking page" },
+        ],
         title: "The Digestive Map and Meal Analysis",
         tagline: null,
         teacherPrep: null,
@@ -1889,6 +1962,9 @@ export const UNITS = [
       // ── WEEK 35: THE NERVOUS SYSTEM AND THE SENSES ─────────────────────────
       {
         id: "7.13", week: 35, type: "OBSERVE",
+        resources: [
+          { lbl: "📋 Fast Reflexes", url: "/worksheets/unit7/u7_p10_fast_reflexes.png", note: "Lesson 7.13 notebooking page" },
+        ],
         title: "The Body's Telegraph",
         tagline: "A message from finger to brain to hand in a fraction of a second.",
         teacherPrep: "Materials: ruler, blindfold or closed eyes, a partner. The ruler-drop reaction time test requires nothing but a ruler. A hot object and a cold object (mug of warm water, ice cube) are ideal for the touch investigation.",
@@ -1926,6 +2002,8 @@ export const UNITS = [
         resources: [
           { lbl: "Brain regions diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Brain_diagrams", note: "Cerebrum, cerebellum, medulla labeled" },
           { lbl: "Ear anatomy (cochlea, hammer, anvil, stirrup) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Ear_anatomy.svg", note: "For sensory atlas ear section" },
+          { lbl: "📋 The Eye", url: "/worksheets/unit7/u7_p08_the_eye.png", note: "Lesson 7.15 notebooking page" },
+          { lbl: "📋 The Ear", url: "/worksheets/unit7/u7_p09_the_ear.png", note: "Lesson 7.15 notebooking page" },
         ],
         title: "The Sensory Atlas",
         tagline: null,
@@ -1960,6 +2038,9 @@ export const UNITS = [
       },
       {
         id: "7.17", week: 36, type: "READ & NARRATE",
+        resources: [
+          { lbl: "📋 Florence Nightingale", url: "/worksheets/unit7/u7_p11_florence_nightingale.png", note: "Lesson 7.17 notebooking page" },
+        ],
         title: "The Biography of Florence Nightingale",
         tagline: null,
         teacherPrep: "Age 8: read aloud from a library picture book biography of Florence Nightingale (many available).\nAge 11: Diane Stanley's Florence Nightingale, or chapters from any solid chapter biography.\nKnow these stories well enough to tell them compellingly: the privileged family that forbade nursing; the two years of statistical work in the Crimea; the lamp; the rose diagrams; the return to England and the 50 years of reform work from her bedroom.",
@@ -1977,6 +2058,9 @@ export const UNITS = [
       },
       {
         id: "7.18", week: 36, type: "RECORD",
+        resources: [
+          { lbl: "📋 Wonders of the Created World — Year Synthesis", url: "/worksheets/unit7/u7_p13_wonders_synthesis.png", note: "Lesson 7.18 notebooking page" },
+        ],
         title: "Unit Synthesis — The Body as a Created Thing",
         tagline: "We are fearfully and wonderfully made.",
         teacherPrep: null,
@@ -1993,7 +2077,7 @@ export const UNITS = [
       },
 
     ],
-    worksheetUrl: "unit7_worksheets.html",
+    worksheetUrl: "/worksheets/unit7/unit7_worksheets.html",
   },
 
 
