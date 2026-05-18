@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import TopNav from '../components/TopNav.jsx';
 
 const STYLES = `
@@ -137,6 +138,23 @@ body{background:#0a0804;overflow-x:hidden;}
 
 .hp-footer{border-top:1px solid #c9902a18;padding-top:28px;text-align:center;}
 .hp-footer-text{font-family:'IM Fell English',serif;font-style:italic;font-size:.85rem;color:#9e8c7255;letter-spacing:.06em;}
+.hp-build-btn{background:none;border:none;cursor:pointer;font-family:monospace;font-size:.7rem;color:#9e8c7233;letter-spacing:.04em;padding:0;transition:color .2s;}
+.hp-build-btn:hover{color:#9e8c7288;}
+
+/* Release notes modal */
+.rn-overlay{position:fixed;inset:0;z-index:500;background:rgba(8,5,2,.75);display:flex;align-items:center;justify-content:center;padding:24px;}
+.rn-box{background:linear-gradient(135deg,#1e160f,#140e07);border:1px solid #c9902a44;border-radius:4px;max-width:480px;width:100%;max-height:80vh;overflow-y:auto;box-shadow:0 16px 60px rgba(0,0,0,.7);}
+.rn-hdr{display:flex;align-items:baseline;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid #c9902a22;}
+.rn-title{font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:.18em;color:#e8b84b;text-transform:uppercase;}
+.rn-close{background:none;border:none;cursor:pointer;font-size:1.1rem;color:#9e8c72;line-height:1;padding:0;}
+.rn-close:hover{color:#e8dfc8;}
+.rn-body{padding:16px 20px 20px;}
+.rn-date{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.15em;color:#c9902a;text-transform:uppercase;margin-bottom:10px;}
+.rn-section{margin-bottom:14px;}
+.rn-section-title{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.12em;color:#9e8c72;text-transform:uppercase;margin-bottom:6px;}
+.rn-item{font-size:.88rem;color:#c8b48a;line-height:1.7;padding-left:12px;position:relative;}
+.rn-item::before{content:'·';position:absolute;left:0;color:#c9902a;}
+.rn-hash{font-family:monospace;font-size:.72rem;color:#9e8c7266;margin-top:14px;padding-top:12px;border-top:1px solid #c9902a14;}
 
 @media(max-width:700px){
   .hp-inner{padding:0 16px 60px;}
@@ -230,6 +248,7 @@ const GAMES = [
 ];
 
 export default function Home() {
+  const [showNotes, setShowNotes] = useState(false);
   return (
     <>
       <style>{STYLES}</style>
@@ -264,7 +283,13 @@ export default function Home() {
             <div className="hp-footer-text">
               Omnia, Lucili, aliena sunt, tempus tantum nostrum est.
             </div>
+            <div style={{marginTop:'10px'}}>
+              <button className="hp-build-btn" onClick={() => setShowNotes(true)}>
+                2026-05-18 · build b6c994a
+              </button>
+            </div>
           </footer>
+          {showNotes && <ReleaseNotes onClose={() => setShowNotes(false)}/>}
 
         </div>
       </div>
@@ -328,6 +353,48 @@ function ToolCard({tool}) {
       <span className={`hp-card-tag ${tool.status}`}>{tool.tag}</span>
       {isActive && <span className="hp-card-arrow">→</span>}
     </Tag>
+  );
+}
+
+function ReleaseNotes({ onClose }) {
+  return (
+    <div className="rn-overlay" onClick={onClose}>
+      <div className="rn-box" onClick={e => e.stopPropagation()}>
+        <div className="rn-hdr">
+          <span className="rn-title">Release Notes</span>
+          <button className="rn-close" onClick={onClose}>✕</button>
+        </div>
+        <div className="rn-body">
+          <div className="rn-date">2026-05-18</div>
+
+          <div className="rn-section">
+            <div className="rn-section-title">Security</div>
+            <div className="rn-item">API locked to allowlisted origins only — no wildcard CORS</div>
+            <div className="rn-item">Model pinned server-side; client can no longer override it</div>
+            <div className="rn-item">Rate limiting: 20 requests / 10 s per IP via Cloudflare binding</div>
+            <div className="rn-item">XSS: model output escaped before <code>dangerouslySetInnerHTML</code></div>
+            <div className="rn-item">Password gate removed — site is now open</div>
+          </div>
+
+          <div className="rn-section">
+            <div className="rn-section-title">Lesson Viewer</div>
+            <div className="rn-item">Age toggle (Both / Age 8 / Age 11) added to lesson header</div>
+            <div className="rn-item">Resources card added to right column — links to spines, videos, and reference pages</div>
+          </div>
+
+          <div className="rn-section">
+            <div className="rn-section-title">Bug Fixes</div>
+            <div className="rn-item">Welcome message fires exactly once per student tab</div>
+            <div className="rn-item">TTS speed slider now persists when navigating between students</div>
+            <div className="rn-item">Removed stale <code>history</code> state and redundant API call logic</div>
+            <div className="rn-item">Browser globals guarded for future SSR / test compatibility</div>
+            <div className="rn-item">404 catch-all route added; unknown paths now load home</div>
+          </div>
+
+          <div className="rn-hash">build b6c994a</div>
+        </div>
+      </div>
+    </div>
   );
 }
 
