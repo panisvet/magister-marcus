@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import TopNav from '../components/TopNav.jsx';
 
+const PASSWORD = 'deus_caritas_est';
+
 const STYLES = `
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400;1,600&family=IM+Fell+English:ital@0;1&display=swap');
 
@@ -138,6 +140,20 @@ body{background:#0a0804;overflow-x:hidden;}
 
 .hp-footer{border-top:1px solid #c9902a18;padding-top:28px;text-align:center;}
 .hp-footer-text{font-family:'IM Fell English',serif;font-style:italic;font-size:.85rem;color:#9e8c7255;letter-spacing:.06em;}
+/* Password gate */
+.pw-root{min-height:100vh;background:#0a0804;background-image:radial-gradient(ellipse 70% 50% at 20% 10%,#2a1a0833,transparent),radial-gradient(ellipse 60% 70% at 80% 90%,#1a0e0433,transparent);display:flex;align-items:center;justify-content:center;font-family:'Crimson Pro',Georgia,serif;color:#f7edcc;}
+.pw-box{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;padding:48px 40px;background:linear-gradient(135deg,#1e160f,#14100700);border:1px solid #c9902a2a;border-radius:3px;min-width:300px;}
+.pw-crest{font-size:2.4rem;margin-bottom:4px;}
+.pw-title{font-family:'Cinzel Decorative',serif;font-size:1.3rem;color:#e8b84b;letter-spacing:.06em;text-shadow:0 0 24px rgba(232,184,75,.3);}
+.pw-sub{font-family:'IM Fell English',serif;font-style:italic;font-size:.9rem;color:#9e8c72;}
+.pw-divider{width:200px;height:1px;background:linear-gradient(90deg,transparent,#c9902a,transparent);margin:4px 0;}
+.pw-input{width:100%;padding:10px 14px;font-family:'Crimson Pro',Georgia,serif;font-size:1rem;background:#0f0a05;color:#f7edcc;border:1px solid #c9902a44;border-radius:2px;outline:none;transition:border-color .2s;}
+.pw-input:focus{border-color:#c9902a99;}
+.pw-input.error{border-color:#8b3a3a;}
+.pw-error{font-family:'IM Fell English',serif;font-style:italic;font-size:.85rem;color:#8b3a3a;}
+.pw-btn{width:100%;padding:10px 0;font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;background:transparent;color:#c9902a;border:1px solid #c9902a55;border-radius:2px;cursor:pointer;transition:all .2s;}
+.pw-btn:hover{background:#c9902a18;border-color:#c9902a99;}
+
 .hp-build-btn{background:none;border:none;cursor:pointer;font-family:monospace;font-size:.7rem;color:#9e8c7233;letter-spacing:.04em;padding:0;transition:color .2s;}
 .hp-build-btn:hover{color:#9e8c7288;}
 
@@ -248,7 +264,50 @@ const GAMES = [
 ];
 
 export default function Home() {
+  const [unlocked, setUnlocked] = useState(
+    () => localStorage.getItem('schola-auth') === '1'
+  );
+  const [input, setInput] = useState('');
+  const [error, setError] = useState(false);
   const [showNotes, setShowNotes] = useState(false);
+
+  function check() {
+    if (input === PASSWORD) {
+      localStorage.setItem('schola-auth', '1');
+      setUnlocked(true);
+    } else {
+      setError(true);
+      setInput('');
+    }
+  }
+
+  if (!unlocked) {
+    return (
+      <>
+        <style>{STYLES}</style>
+        <div className="pw-root">
+          <div className="pw-box">
+            <div className="pw-crest">🏛️</div>
+            <div className="pw-title">Schola Domestica</div>
+            <div className="pw-sub">Classical Homeschool · AI-Powered Instruction</div>
+            <div className="pw-divider"/>
+            <input
+              className={`pw-input${error ? ' error' : ''}`}
+              type="password"
+              placeholder="Enter password"
+              value={input}
+              autoFocus
+              onChange={e => { setInput(e.target.value); setError(false); }}
+              onKeyDown={e => e.key === 'Enter' && check()}
+            />
+            {error && <div className="pw-error">Incorrect password — try again</div>}
+            <button className="pw-btn" onClick={check}>Enter</button>
+          </div>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <style>{STYLES}</style>
