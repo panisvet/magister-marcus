@@ -217,7 +217,7 @@ const DEFAULTS = ["Student I","Student II","Student III","Student IV"];
 const lvlNums = {I:1,II:2,III:3,IV:4,V:5};
 
 function mkStudent(name) {
-  return {name, level:"I", textKey:null, textTitle:"Free Conversation Mode", textMeta:"Ask Magister Marcus anything about Latin", history:[], welcomed:false};
+  return {name, level:"I", textKey:null, textTitle:"Free Conversation Mode", textMeta:"Ask Magister Marcus anything about Latin", welcomed:false};
 }
 
 // ── Classical TTS ─────────────────────────────────────────────────────────────
@@ -226,7 +226,10 @@ function initVoice() {
   const voices = window.speechSynthesis?.getVoices() || [];
   preferredVoice = voices.find(v=>v.lang.startsWith('it')) || voices.find(v=>v.lang.startsWith('es')) || voices[0] || null;
 }
-if (window.speechSynthesis) { window.speechSynthesis.onvoiceschanged = initVoice; initVoice(); }
+if (typeof window !== 'undefined' && window.speechSynthesis) {
+  window.speechSynthesis.onvoiceschanged = initVoice;
+  initVoice();
+}
 
 function classicPhonetic(t) {
   return t.replace(/ae/gi, m=>m[0]==='A'?'Ai':'ai').replace(/oe/gi,m=>m[0]==='O'?'Oi':'oi').replace(/\bv/gi,m=>m==='V'?'W':'w');
@@ -290,10 +293,14 @@ function ParsedResponse({text, onSpeak}) {
   }
   if(last<text.length) parts.push({type:'text',content:text.slice(last)});
 
+  function esc(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
   function renderText(t) {
     return t.split('\n\n').map((para,pi)=>(
       <p key={pi} dangerouslySetInnerHTML={{__html:
-        para.replace(/\n/g,'<br>')
+        esc(para)
+          .replace(/\n/g,'<br>')
           .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
           .replace(/\*(.+?)\*/g,'<em>$1</em>')
       }}/>
@@ -323,7 +330,7 @@ function LatinBlock({lat, eng, onSpeak}) {
       <button className={`mm-speak-btn${speaking?' speaking':''}`} onClick={handleSpeak}>
         {speaking?'■ STOP':'▶ RECITA'}
       </button>
-      <div dangerouslySetInnerHTML={{__html:lat.replace(/\n/g,'<br>')}}/>
+      <div dangerouslySetInnerHTML={{__html:lat.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')}}/>
       <div className="mm-lat-eng">{eng}</div>
     </div>
   );
@@ -331,7 +338,7 @@ function LatinBlock({lat, eng, onSpeak}) {
 
 // ── Drill Modal ───────────────────────────────────────────────────────────────
 function DrillModal({level, onClose}) {
-  const SRCtor = window.SpeechRecognition||window.webkitSpeechRecognition||null;
+  const SRCtor = (typeof window !== 'undefined' && (window.SpeechRecognition||window.webkitSpeechRecognition)) || null;
   const lvlNum = lvlNums[level]||1;
   const phrases = useRef(DRILL_PHRASES.filter(p=>p.level<=lvlNum).sort(()=>Math.random()-.5));
   const [idx,setIdx]=useState(0);
@@ -418,8 +425,8 @@ function SpeedSlider() {
     {rate:1.00, label:'Celerrime'},
   ];
   const [stepIdx, setStepIdx] = useState(1); // default: Lente (0.50)
-  // sync to global on mount
-  useEffect(()=>{ ttsRate = STEPS[stepIdx].rate; },[]);
+  // sync global ttsRate whenever step changes
+  useEffect(()=>{ ttsRate = STEPS[stepIdx].rate; },[stepIdx]);
 
   function handleChange(e) {
     const i = parseInt(e.target.value);
@@ -448,7 +455,7 @@ function SpeedSlider() {
 }
 
 export default function MagisterMarcus() {
-  const SRCtor = window.SpeechRecognition||window.webkitSpeechRecognition||null;
+  const SRCtor = (typeof window !== 'undefined' && (window.SpeechRecognition||window.webkitSpeechRecognition)) || null;
   const [students, setStudents] = useState(DEFAULTS.map(mkStudent));
   const [activeIdx, setActiveIdx] = useState(0);
   // Per-student chat messages: array of arrays
@@ -463,12 +470,17 @@ export default function MagisterMarcus() {
   const student = students[activeIdx];
   const msgs = allMsgs[activeIdx];
 
-  // Welcome on first visit per student
+  // Welcome on first visit per student — read from latest state to avoid stale closure
   useEffect(()=>{
-    if(!student.welcomed) {
-      addAssistantMsg(activeIdx, 'welcome');
-      setStudents(prev=>{const n=[...prev];n[activeIdx]={...n[activeIdx],welcomed:true};return n;});
-    }
+    let shouldWelcome = false;
+    setStudents(prev=>{
+      if(prev[activeIdx].welcomed) return prev;
+      shouldWelcome = true;
+      const n=[...prev];
+      n[activeIdx]={...n[activeIdx],welcomed:true};
+      return n;
+    });
+    if(shouldWelcome) addAssistantMsg(activeIdx, 'welcome');
   },[activeIdx]);
 
   useEffect(()=>{
@@ -499,8 +511,7 @@ export default function MagisterMarcus() {
     const historyMsgs = allMsgs[idx]
       .filter(m=>m.content!=='welcome'&&m.content!=='typing')
       .map(m=>({role:m.role, content:m.content}));
-    if(!silent) historyMsgs.push({role:'user',content:userText});
-    else historyMsgs.push({role:'user',content:userText});
+    historyMsgs.push({role:'user',content:userText});
 
     // Add typing indicator
     setAllMsgs(prev=>{const n=prev.map(a=>[...a]);n[idx]=[...n[idx],{role:'assistant',content:'typing'}];return n;});
@@ -512,8 +523,7 @@ export default function MagisterMarcus() {
           'Content-Type':'application/json',
         },
         body:JSON.stringify({
-          model:'claude-sonnet-4-5',
-          max_tokens:1000,
+          max_tokens:1024,
           system:buildSystem(s),
           messages:historyMsgs
         })
@@ -525,12 +535,6 @@ export default function MagisterMarcus() {
         addAssistantMsg(idx,`ERROR: ${data.error.message}`);
       } else {
         const reply = data?.content?.[0]?.text || 'Ignosce mihi — no response. Please try again.';
-        // Update student history
-        setStudents(prev=>{
-          const n=[...prev];
-          n[idx]={...n[idx],history:[...n[idx].history,{role:'user',content:userText},{role:'assistant',content:reply}]};
-          return n;
-        });
         addAssistantMsg(idx, reply);
       }
     } catch(e) {
@@ -546,7 +550,7 @@ export default function MagisterMarcus() {
     stopSpeaking();
     setStudents(prev=>{
       const n=[...prev];
-      n[activeIdx]={...n[activeIdx],textKey:key,textTitle:corpus.title,textMeta:corpus.meta,history:[]};
+      n[activeIdx]={...n[activeIdx],textKey:key,textTitle:corpus.title,textMeta:corpus.meta};
       return n;
     });
     setAllMsgs(prev=>{const n=prev.map(a=>[...a]);n[activeIdx]=[];return n;});
@@ -603,7 +607,14 @@ export default function MagisterMarcus() {
     return name.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()||'S';
   }
 
-  const welcomeHtml = `<strong>Salve, ${student.name}!</strong> Welcome to <em>Via Latina</em> — the Latin Way.<br/><br/>I am Magister Marcus. Together we will read <strong>Virgil's poetry</strong>, <strong>Caesar's dispatches from Gaul</strong>, <strong>Cicero's speeches</strong>, <strong>Seneca's letters</strong>, and Holy Scripture in the words of St. Jerome.<br/><br/>Look for the <strong>▶ RECITA</strong> button on Latin passages to hear them spoken aloud. Use the 🎤 microphone to speak your answers. Open <strong>Pronunciation Drill</strong> to practice speaking Latin phrases.<br/><br/><em>Festina lente.</em> Make haste slowly. Choose a <strong>level</strong> and a <strong>text</strong> to begin. <em>Quid vis discere hodie?</em>`;
+  function WelcomeMessage({name}) {
+    return (<>
+      <p><strong>Salve, {name}!</strong> Welcome to <em>Via Latina</em> — the Latin Way.</p>
+      <p>I am Magister Marcus. Together we will read <strong>Virgil's poetry</strong>, <strong>Caesar's dispatches from Gaul</strong>, <strong>Cicero's speeches</strong>, <strong>Seneca's letters</strong>, and Holy Scripture in the words of St. Jerome.</p>
+      <p>Look for the <strong>▶ RECITA</strong> button on Latin passages to hear them spoken aloud. Use the 🎤 microphone to speak your answers. Open <strong>Pronunciation Drill</strong> to practice speaking Latin phrases.</p>
+      <p><em>Festina lente.</em> Make haste slowly. Choose a <strong>level</strong> and a <strong>text</strong> to begin. <em>Quid vis discere hodie?</em></p>
+    </>);
+  }
 
   return (
     <>
@@ -693,7 +704,7 @@ export default function MagisterMarcus() {
                 <div className="mm-bub">
                   <span className="mm-lbl">{msg.role==='assistant'?'Magister Marcus':student.name}</span>
                   {msg.content==='welcome'
-                    ? <p dangerouslySetInnerHTML={{__html:welcomeHtml}}/>
+                    ? <WelcomeMessage name={student.name}/>
                     : msg.content==='typing'
                     ? <div className="mm-dots"><span/><span/><span/></div>
                     : msg.role==='assistant'

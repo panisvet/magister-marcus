@@ -185,10 +185,21 @@ export default function LessonViewer() {
 
             {/* Lesson header */}
             <div className="lv-lhdr" style={{background: tc}}>
-              <div className="lv-meta">{l.type} · Lesson {l.id} · Week {l.week}</div>
-              <h1>{l.title}</h1>
-              {l.tagline && <div className="lv-tag">{l.tagline}</div>}
-              <div className="lv-tdesc">{l._unit.title}</div>
+              <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',flexWrap:'wrap',gap:'8px'}}>
+                <div>
+                  <div className="lv-meta">{l.type} · Lesson {l.id} · Week {l.week}</div>
+                  <h1>{l.title}</h1>
+                  {l.tagline && <div className="lv-tag">{l.tagline}</div>}
+                  <div className="lv-tdesc">{l._unit.title}</div>
+                </div>
+                <div className="lv-age-btns">
+                  {['both','8','11'].map(a=>(
+                    <button key={a} className={`lv-abtn${age===a?' on':''}`} onClick={()=>setAge(a)}>
+                      {a==='both'?'Both':a==='8'?'Age 8':'Age 11'}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Spines bar */}

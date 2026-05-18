@@ -17,6 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/math"    element={<Math />} />
         <Route path="/history" element={<History />} />
         */}
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

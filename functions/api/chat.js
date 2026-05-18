@@ -3,39 +3,40 @@
  * Proxies requests to Anthropic API.
  * ANTHROPIC_API_KEY is stored as a Cloudflare secret (never in code).
  */
-export async function onRequestPost(context) {
-  const { request, env } = context;
 
-  // CORS — allow your Pages domain and localhost dev
-  const origin = request.headers.get('Origin') || '';
-  const allowedOrigins = [
-    'http://localhost:5173',
-    'http://localhost:4173',
-  ];
-  const corsOrigin = allowedOrigins.includes(origin) || origin.endsWith('.pages.dev') || !origin
-    ? origin || '*'
-    : null;
+const PINNED_MODEL = 'claude-sonnet-4-5-20250929';
+const MAX_TOKENS_CAP = 1024;
 
-  if (!corsOrigin) {
-    return new Response('Forbidden', { status: 403 });
-  }
+const ALLOWED_ORIGINS = [
+  'https://magister-marcus.pages.dev',
+  'http://localhost:5173',
+  'http://localhost:4173',
+];
 
-  const corsHeaders = {
-    'Access-Control-Allow-Origin': corsOrigin,
+function corsHeaders(origin) {
+  return {
+    'Access-Control-Allow-Origin': origin,
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
   };
+}
 
-  // Preflight
-  if (request.method === 'OPTIONS') {
-    return new Response(null, { status: 204, headers: corsHeaders });
+export async function onRequestPost(context) {
+  const { request, env } = context;
+
+  const origin = request.headers.get('Origin') || '';
+  if (!ALLOWED_ORIGINS.includes(origin)) {
+    return new Response('Forbidden', { status: 403 });
   }
+
+  const headers = corsHeaders(origin);
 
   // Validate API key is configured
   if (!env.ANTHROPIC_API_KEY) {
+    console.error('ANTHROPIC_API_KEY secret not configured in Cloudflare dashboard.');
     return new Response(
-      JSON.stringify({ error: { message: 'ANTHROPIC_API_KEY secret not configured in Cloudflare dashboard.' } }),
-      { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      JSON.stringify({ error: { message: 'Server misconfigured.' } }),
+      { status: 500, headers: { ...headers, 'Content-Type': 'application/json' } }
     );
   }
 
@@ -45,9 +46,17 @@ export async function onRequestPost(context) {
   } catch {
     return new Response(
       JSON.stringify({ error: { message: 'Invalid JSON body.' } }),
-      { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      { status: 400, headers: { ...headers, 'Content-Type': 'application/json' } }
     );
   }
+
+  // Build a clean payload — pin model server-side, cap tokens, whitelist fields only
+  const payload = {
+    model: PINNED_MODEL,
+    max_tokens: Math.min(body.max_tokens ?? MAX_TOKENS_CAP, MAX_TOKENS_CAP),
+    messages: body.messages,
+  };
+  if (body.system) payload.system = body.system;
 
   // Forward to Anthropic
   const anthropicRes = await fetch('https://api.anthropic.com/v1/messages', {
@@ -57,25 +66,28 @@ export async function onRequestPost(context) {
       'x-api-key': env.ANTHROPIC_API_KEY,
       'anthropic-version': '2023-06-01',
     },
-    body: JSON.stringify(body),
+    body: JSON.stringify(payload),
   });
 
   const data = await anthropicRes.json();
 
   return new Response(JSON.stringify(data), {
     status: anthropicRes.status,
-    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    headers: { ...headers, 'Content-Type': 'application/json' },
   });
 }
 
-// Handle OPTIONS preflight
-export async function onRequestOptions() {
+// Handle OPTIONS preflight — same allowlist, never wildcard
+export async function onRequestOptions(context) {
+  const { request } = context;
+  const origin = request.headers.get('Origin') || '';
+
+  if (!ALLOWED_ORIGINS.includes(origin)) {
+    return new Response('Forbidden', { status: 403 });
+  }
+
   return new Response(null, {
     status: 204,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    },
+    headers: corsHeaders(origin),
   });
 }
