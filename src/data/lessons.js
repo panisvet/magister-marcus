@@ -317,8 +317,10 @@ export const UNITS = [
         id: "1.15", week: 5, type: "RECORD",
         resources: [
           { lbl: "Food Web diagram — National Geographic Education", url: "https://education.nationalgeographic.org/resource/food-chain/", note: "Producers, consumers, decomposers" },
+          { lbl: "📋 Unit 1 Synthesis — Form IA", url: "/worksheets/unit1_synthesis.html", note: "Print-ready synthesis page · Form IA" },
+          { lbl: "📋 Unit 1 Synthesis — Form IIA", url: "/worksheets/unit1_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
         ],
-        title: "Food Web Drawing",
+        title: "Unit Synthesis — The Living World",
         tagline: null,
         teacherPrep: null,
         opening: "Draw a food web for a local or familiar ecosystem. Include at least 1 producer, 3 consumers, and 1 decomposer. Draw arrows showing energy flow — arrows point FROM what is eaten TO what eats it.",
@@ -564,7 +566,11 @@ export const UNITS = [
       },
       {
         id: "2.12", week: 11, type: "RECORD",
-        title: "Plant Life Cycle Map",
+        resources: [
+          { lbl: "📋 Unit 2 Synthesis — Form IA", url: "/worksheets/unit2_synthesis.html", note: "Print-ready synthesis page · Form IA" },
+          { lbl: "📋 Unit 2 Synthesis — Form IIA", url: "/worksheets/unit2_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
+        ],
+        title: "Unit Synthesis — Seeds, Flowers, and Trees",
         tagline: null,
         teacherPrep: null,
         opening: "Germination check — final entry for the bean plant. Then create a Plant Life Cycle Map tracing the complete journey from seed to seed.",
@@ -801,7 +807,11 @@ export const UNITS = [
       },
       {
         id: "3.12", week: 15, type: "RECORD",
-        title: "Capstone — The Backboned Family Tree",
+        resources: [
+          { lbl: "📋 Unit 3 Synthesis — Form IA", url: "/worksheets/unit3_synthesis.html", note: "Print-ready synthesis page · Form IA" },
+          { lbl: "📋 Unit 3 Synthesis — Form IIA", url: "/worksheets/unit3_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
+        ],
+        title: "Unit Synthesis — The Backboned Family Tree",
         tagline: "Worksheet — page 5 (Family Tree + Naturalist's Report) of the Unit 3 packet.",
         teacherPrep: "Have the observation log entries from Lessons 3.1, 3.4, 3.7, 3.10 pulled together. Print page 5 of the worksheet packet for each student.",
         opening: "Recite, together, the four memory passages from Weeks 12–15 — Genesis 1:20, Job 12:7–8, Psalm 104:12, Psalm 104:24.",
@@ -1113,7 +1123,11 @@ export const UNITS = [
       },
       {
         id: "4.15", week: 20, type: "RECORD",
-        title: "Unit Synthesis",
+        resources: [
+          { lbl: "📋 Unit 4 Synthesis — Form IA", url: "/worksheets/unit4/unit4_synthesis.html", note: "Print-ready synthesis page · Form IA" },
+          { lbl: "📋 Unit 4 Synthesis — Form IIA", url: "/worksheets/unit4/unit4_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
+        ],
+        title: "Unit Synthesis — The Seasonal Sky",
         tagline: "From the spinning Earth to the stars in distant galaxies.",
         teacherPrep: null,
         opening: "Two-page nature journal entry. Page 1: labeled diagram of the solar system from memory — no reference. Page 2: written answer to the question: What is the most surprising thing you learned in this unit? What question are you still holding?",
@@ -1415,7 +1429,11 @@ export const UNITS = [
       },
       {
         id: "5.15", week: 25, type: "RECORD",
-        title: "The Created Earth — Unit Synthesis",
+        resources: [
+          { lbl: "📋 Unit 5 Synthesis — Form IA", url: "/worksheets/unit5/unit5_synthesis.html", note: "Print-ready synthesis page · Form IA" },
+          { lbl: "📋 Unit 5 Synthesis — Form IIA", url: "/worksheets/unit5/unit5_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
+        ],
+        title: "Unit Synthesis — The Created Earth",
         tagline: "From picking up a rock to the earth's history as God made it.",
         teacherPrep: null,
         opening: "Two-page unit synthesis journal entry. Page 1: rock cycle diagram from memory — no reference. Page 2: unit synthesis narration.",
@@ -1722,8 +1740,10 @@ export const UNITS = [
         id: "6.15", week: 30, type: "RECORD",
         resources: [
           { lbl: "📋 Conservation of Energy", url: "/worksheets/unit6/unit6_conservation_of_energy.png", note: "Lesson 6.15 worksheet" },
+          { lbl: "📋 Unit 6 Synthesis — Form IA", url: "/worksheets/unit6/unit6_synthesis.html", note: "Print-ready synthesis page · Form IA" },
+          { lbl: "📋 Unit 6 Synthesis — Form IIA", url: "/worksheets/unit6/unit6_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
         ],
-        title: "Unit Synthesis",
+        title: "Unit Synthesis — The Candle and the Forces of Nature",
         tagline: "From the candle flame to the man who changed the world.",
         teacherPrep: null,
         opening: "Three-part final lesson: oral synthesis, copywork, and the final question that connects Faraday and Lyell.",
@@ -2080,7 +2100,8 @@ export const UNITS = [
       {
         id: "7.18", week: 36, type: "RECORD",
         resources: [
-          { lbl: "📋 Wonders of the Created World — Year Synthesis", url: "/worksheets/unit7/u7_p13_wonders_synthesis.png", note: "Lesson 7.18 notebooking page" },
+          { lbl: "📋 Unit 7 Synthesis — Form IA", url: "/worksheets/unit7/unit7_synthesis.html", note: "Print-ready synthesis page · Form IA" },
+          { lbl: "📋 Unit 7 Synthesis — Form IIA", url: "/worksheets/unit7/unit7_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
         ],
         title: "Unit Synthesis — The Body as a Created Thing",
         tagline: "We are fearfully and wonderfully made.",

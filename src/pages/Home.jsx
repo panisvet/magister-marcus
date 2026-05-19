@@ -210,7 +210,7 @@ const TOOLS = [
     icon: '📖',
     title: 'Lesson Viewer',
     subtitle: 'Wonders of the Created World',
-    desc: 'All 90 lessons across Units 1–6. Lesson plans, narration prompts, nature journal instructions, spine links, and vocabulary — with Age 8 / Age 11 toggle.',
+    desc: 'All 90 lessons across Units 1–6. Lesson plans, narration prompts, nature journal instructions, spine links, and vocabulary — with Form IA / Form IIA toggle.',
     accent: '#5a7a4a',
     href: '/lesson-viewer',
     status: 'active',
@@ -437,7 +437,7 @@ function ReleaseNotes({ onClose }) {
 
           <div className="rn-section">
             <div className="rn-section-title">Lesson Viewer</div>
-            <div className="rn-item">Age toggle (Both / Age 8 / Age 11) added to lesson header</div>
+            <div className="rn-item">Form IA / Form IIA toggle added to lesson header</div>
             <div className="rn-item">Resources card added to right column — links to spines, videos, and reference pages</div>
           </div>
 
