@@ -2103,7 +2103,7 @@ export const UNITS = [
           { lbl: "📋 Unit 7 Synthesis — Form IA", url: "/worksheets/unit7/unit7_synthesis.html", note: "Print-ready synthesis page · Form IA" },
           { lbl: "📋 Unit 7 Synthesis — Form IIA", url: "/worksheets/unit7/unit7_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
         ],
-        title: "Unit Synthesis — The Body as a Created Thing",
+        title: "Unit Synthesis — All Mankind",
         tagline: "We are fearfully and wonderfully made.",
         teacherPrep: null,
         opening: "Three-part final lesson: oral synthesis, journal entry, and the final question that connects the whole year.",

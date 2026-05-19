@@ -184,17 +184,6 @@ body{background:#0a0804;overflow-x:hidden;}
 
 const TOOLS = [
   {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {
     id: 'latin',
     icon: '🏛',
     title: 'Magister Marcus',
@@ -202,17 +191,6 @@ const TOOLS = [
     desc: 'Read Caesar, Virgil, Cicero, and the Vulgate. Classical pronunciation, pronunciation drills, and 4 student profiles.',
     accent: '#c9902a',
     href: '/latin',
-    status: 'active',
-    tag: 'Active',
-  },
-  {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
     status: 'active',
     tag: 'Active',
   },
@@ -228,17 +206,6 @@ const TOOLS = [
     tag: 'Active',
   },
   {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {
     id: 'lesson-viewer',
     icon: '📖',
     title: 'Lesson Viewer',
@@ -246,17 +213,6 @@ const TOOLS = [
     desc: 'All 90 lessons across Units 1–6. Lesson plans, narration prompts, nature journal instructions, spine links, and vocabulary — with Form IA / Form IIA toggle.',
     accent: '#5a7a4a',
     href: '/lesson-viewer',
-    status: 'active',
-    tag: 'Active',
-  },
-  {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
     status: 'active',
     tag: 'Active',
   },
@@ -272,17 +228,6 @@ const TOOLS = [
     tag: 'Coming Soon',
   },
   {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {
     id: 'history',
     icon: '🗺',
     title: 'Coming Soon',
@@ -292,17 +237,6 @@ const TOOLS = [
     href: null,
     status: 'soon',
     tag: 'Coming Soon',
-  },
-  {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
   },
   {
     id: 'writing',
@@ -318,17 +252,6 @@ const TOOLS = [
 ];
 
 const GAMES = [
-  {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
   {
     id: 'marcus-messenger',
     eyebrow: 'An Educational Adventure',
@@ -377,18 +300,7 @@ export default function Home() {
               onChange={e => { setInput(e.target.value); setError(false); }}
               onKeyDown={e => e.key === 'Enter' && check()}
             />
-            {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {error && <div className="pw-error">Incorrect password — try again</div>}
+            {error && <div className="pw-error">Incorrect password — try again</div>}
             <button className="pw-btn" onClick={check}>Enter</button>
           </div>
         </div>
@@ -416,36 +328,14 @@ export default function Home() {
 
           <div className="hp-section-label">Disciplinae · Subjects</div>
           <div className="hp-grid">
-            {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {TOOLS.map(t => <ToolCard key={t.id} tool={t}/>)}
+            {TOOLS.map(t => <ToolCard key={t.id} tool={t}/>)}
           </div>
 
           <hr className="hp-section-divider"/>
 
           <div className="hp-section-label">Ludi · Games</div>
           <div className="hp-games-grid">
-            {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {GAMES.map(g => <GameCard key={g.id} game={g}/>)}
+            {GAMES.map(g => <GameCard key={g.id} game={g}/>)}
           </div>
 
           <footer className="hp-footer">
@@ -454,33 +344,11 @@ export default function Home() {
             </div>
             <div style={{marginTop:'10px'}}>
               <button className="hp-build-btn" onClick={() => setShowNotes(true)}>
-                {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {__BUILD_DATE__} · build {__BUILD_HASH__}
+                {__BUILD_DATE__} · build {__BUILD_HASH__}
               </button>
             </div>
           </footer>
-          {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {showNotes && <ReleaseNotes onClose={() => setShowNotes(false)}/>}
+          {showNotes && <ReleaseNotes onClose={() => setShowNotes(false)}/>}
 
         </div>
       </div>
@@ -514,49 +382,16 @@ function GameCard({ game }) {
 function SpqrScrollSvg() {
   return (
     <svg className="game-scroll-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {/* scroll rollers */}
+      {/* scroll rollers */}
       <rect x="6" y="14" width="52" height="36" rx="3" fill="#3a1a08" stroke="#8b4a1a" strokeWidth="1.2"/>
       <rect x="4" y="12" width="8" height="40" rx="4" fill="#5a2a10" stroke="#a0561e" strokeWidth="1"/>
       <rect x="52" y="12" width="8" height="40" rx="4" fill="#5a2a10" stroke="#a0561e" strokeWidth="1"/>
-      {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {/* parchment lines */}
+      {/* parchment lines */}
       <line x1="16" y1="24" x2="48" y2="24" stroke="#8b6a3a" strokeWidth=".8" opacity=".6"/>
       <line x1="16" y1="29" x2="48" y2="29" stroke="#8b6a3a" strokeWidth=".8" opacity=".6"/>
       <line x1="16" y1="34" x2="48" y2="34" stroke="#8b6a3a" strokeWidth=".8" opacity=".6"/>
       <line x1="16" y1="39" x2="40" y2="39" stroke="#8b6a3a" strokeWidth=".8" opacity=".6"/>
-      {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {/* SPQR text */}
+      {/* SPQR text */}
       <text x="32" y="33" textAnchor="middle" fontFamily="serif" fontSize="8" fill="#c9902a" letterSpacing="2" fontWeight="bold">SPQR</text>
     </svg>
   );
@@ -575,18 +410,7 @@ function ToolCard({tool}) {
       <div className="hp-card-subtitle">{tool.subtitle}</div>
       <div className="hp-card-desc">{tool.desc}</div>
       <span className={`hp-card-tag ${tool.status}`}>{tool.tag}</span>
-      {
-    id: 'schola-cantorum',
-    icon: '𝄞',
-    title: 'Schola Cantorum Domestica',
-    subtitle: 'Sacred Music & Solfège',
-    desc: 'Two years of fixed-do solfège, Byzantine chant, Gregorian chant, and Latin hymns. Ladukhin exercises with Form IA / Form IIA differentiation.',
-    accent: '#c9902a',
-    href: '/schola-cantorum',
-    status: 'active',
-    tag: 'Active',
-  },
-  {isActive && <span className="hp-card-arrow">→</span>}
+      {isActive && <span className="hp-card-arrow">→</span>}
     </Tag>
   );
 }
