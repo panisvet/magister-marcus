@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx'
 import Latin from './pages/Latin.jsx'
 import MagisterNatura from './pages/MagisterNatura.jsx'
 import LessonViewer from './pages/LessonViewer.jsx'
+import ScholaCantorum from './pages/ScholaCantorum.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/latin" element={<Latin />} />
         <Route path="/magister-natura" element={<MagisterNatura />} />
         <Route path="/lesson-viewer" element={<LessonViewer />} />
+        <Route path="/schola-cantorum" element={<ScholaCantorum />} />
         {/* Add future subjects here:
         <Route path="/math"    element={<Math />} />
         <Route path="/history" element={<History />} />
