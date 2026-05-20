@@ -159,7 +159,7 @@ export const UNITS = [
       {
         id: "1.7", week: 3, type: "OBSERVE",
         resources: [
-          { lbl: "Britannica Kids: Honeybee", url: "https://kids.britannica.com/students/article/honeybee/274439", note: "Reference" },
+          { lbl: "Britannica Kids: Honeybee", url: "https://kids.britannica.com/students/article/honeybee/637194", note: "Reference" },
           { lbl: "The Hidden Math of Honeycombs — Veritasium", url: "https://www.youtube.com/watch?v=CEmYXYpAhvk", note: "Hexagon efficiency (YouTube)" },
         ],
         title: "The Honeybee's City",
@@ -222,7 +222,7 @@ export const UNITS = [
       {
         id: "1.10", week: 4, type: "OBSERVE",
         resources: [
-          { lbl: "Britannica Kids: Spider", url: "https://kids.britannica.com/students/article/spider/276764", note: "Reference" },
+          { lbl: "Britannica Kids: Spider", url: "https://kids.britannica.com/kids/article/spider/353800", note: "Reference" },
         ],
         title: "Spider Anatomy",
         tagline: "Go outside in early morning — dew on webs.",
@@ -390,7 +390,7 @@ export const UNITS = [
         id: "2.3", week: 8, type: "RECORD",
         resources: [
           { lbl: "Labeled flower anatomy diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Mature_flower_diagram.svg", note: "Sepal, petal, stamen, pistil, ovary — public domain" },
-          { lbl: "Historical botanical illustrations — NYPL Digital Collections", url: "https://digitalcollections.nypl.org/search/index?utf8=%E2%9C%93&keywords=flower+anatomy", note: "Search: flower anatomy — public domain plates" },
+          { lbl: "Botanical illustrations — Biodiversity Heritage Library", url: "https://www.biodiversitylibrary.org/subject/Botanical+illustrations", note: "Public domain flower anatomy plates" },
         ],
         title: "Flower Dissection",
         tagline: null,
@@ -466,7 +466,7 @@ export const UNITS = [
       {
         id: "2.7", week: 10, type: "READ & NARRATE",
         resources: [
-          { lbl: "Britannica Kids: Photosynthesis", url: "https://kids.britannica.com/students/article/photosynthesis/276434", note: "Reference" },
+          { lbl: "Britannica Kids: Photosynthesis", url: "https://kids.britannica.com/kids/article/photosynthesis/353624", note: "Reference" },
           { lbl: "Photosynthesis in Elodea — YouTube", url: "https://www.youtube.com/watch?v=yg8vqsBOFMw", note: "YouTube demo" },
           { lbl: "Bubbling Plants Experiment — YouTube", url: "https://www.youtube.com/watch?v=B3-16GVWfe0", note: "YouTube demo" },
         ],
@@ -530,7 +530,7 @@ export const UNITS = [
         id: "2.10", week: 11, type: "OBSERVE",
         resources: [
           { lbl: "Plant groups comparison — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Plant_morphology", note: "Moss, fern, conifer, flowering plant — side by side" },
-          { lbl: "Plant kingdom — Britannica Kids", url: "https://kids.britannica.com/kids/article/plant/353517", note: "Non-vascular to flowering plants" },
+          { lbl: "Plant kingdom — Britannica Kids", url: "https://kids.britannica.com/kids/article/plant/353639", note: "Non-vascular to flowering plants" },
         ],
         title: "The Four Plant Groups",
         tagline: null,
@@ -711,6 +711,9 @@ export const UNITS = [
       // ═══════════════════════════════════════════════════════════════════════
       {
         id: "3.7", week: 14, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Bird", url: "https://kids.britannica.com/kids/article/bird/352857", note: "Reference" },
+        ],
         title: "At the Feeder; the Hollow Bone",
         tagline: null,
         teacherPrep: "Bird feeder up at least one week before this lesson. Have a chicken drumstick (cooked, cleaned) and a small hollow bone (a wishbone from a previous chicken meal works) ready.",
@@ -749,7 +752,7 @@ export const UNITS = [
       {
         id: "3.9", week: 14, type: "RECORD",
         resources: [
-          { lbl: "Feather structure diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Feather_structure.svg", note: "Barbs, barbules, rachis, after-feather — public domain" },
+          { lbl: "Feather anatomy diagrams — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Bird_wing_feather_diagrams", note: "Barbs, barbules, rachis — public domain diagrams" },
         ],
         title: "Beak-and-Foot Key; Feather Anatomy",
         tagline: "Worksheet — page 4 of the Unit 3 packet.",
@@ -844,7 +847,7 @@ export const UNITS = [
       {
         id: "4.1", week: 16, type: "OBSERVE",
         resources: [
-          { lbl: "Free Monthly Star Maps — skymaps.com", url: "https://www.skymaps.com", note: "Print-ready sky charts" },
+          { lbl: "Free Monthly Star Maps — skymaps.com", url: "https://www.skymaps.com/downloads.html", note: "Print-ready monthly sky charts — free PDF" },
           { lbl: "Stellarium — Free Planetarium (desktop & mobile)", url: "https://stellarium.org", note: "Preview tonight's sky before going out" },
         ],
         title: "The Moving Shadow",
@@ -1290,8 +1293,6 @@ export const UNITS = [
       {
         id: "5.8", week: 23, type: "READ & NARRATE",
         resources: [
-          { lbl: "🎧 Voyage of the Beagle, Ch. V Part 2 — LibriVox", url: "https://dn710702.ca.archive.org/0/items/voyage_beagle_0810_librivox/voyageofthebeagle_05-2_darwin.mp3", note: "Part 2 of Ch. V" },
-        ],
         title: "The Fossil Record",
         tagline: null,
         teacherPrep: "Read ahead in Lyell (Manual of Elementary Geology, PG #34350) — select passages on fossils and strata that illustrate his method and assumptions without requiring the full philosophical discussion (that comes in Week 24). Also read Darwin's Voyage of the Beagle chapter on Patagonia fossil mammals.",
@@ -1315,9 +1316,9 @@ export const UNITS = [
         id: "5.9", week: 23, type: "RECORD",
         resources: [
           { lbl: "The Cambrian Explosion — PBS Eons", url: "https://www.youtube.com/watch?v=qNtQwUO9ff8", note: "YouTube · clear explainer for ages 11+" },
-          { lbl: "Cambrian Explosion — SciShow Kids", url: "https://www.youtube.com/watch?v=RDPl9_6LMq0", note: "YouTube · ages 8+" },
-          { lbl: "Anomalocaris fossil (Burgess Shale) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Anomalocaris_canadensis.jpg", note: "High-resolution Cambrian predator fossil" },
-          { lbl: "Trilobite fossil — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Elrathia_kingii_trilobite.jpg", note: "Classic Cambrian index fossil" },
+          { lbl: "Cambrian Explosion — Easy to Understand", url: "https://www.youtube.com/watch?v=GXEZV9EQVCQ", note: "YouTube · ages 8+" },
+          { lbl: "Anomalocaris fossil (Burgess Shale) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Anomalocaris_canadensis.jpg#/media/File:Anomalocaris_canadensis.jpg", note: "High-resolution Cambrian predator fossil" },
+          { lbl: "Trilobite fossil — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Elrathia_kingii_growth_series.jpg#/media/File:Elrathia_kingii_growth_series.jpg", note: "Classic Cambrian index fossil" },
           { lbl: "📋 Fossils & the Cambrian Explosion", url: "/worksheets/unit5/unit5_page5_fossils_cambrian.png", note: "Lesson 5.9 notebooking page" },
           { lbl: "📋 Fossils & Cambrian — Form IA", url: "/worksheets/unit5/u5_FormIA_fossils_cambrian_v1.png", note: "Lesson 5.9 · Form IA worksheet" },
           { lbl: "📋 Fossils & Cambrian — Form IIA", url: "/worksheets/unit5/u5_FormIIA_fossils_cambrian_v1.png", note: "Lesson 5.9 · Form IIA worksheet" },
@@ -1466,7 +1467,7 @@ export const UNITS = [
       {
         id: "6.1", week: 26, type: "OBSERVE",
         resources: [
-          { lbl: "Candle flame zones diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Candle_flame_diagram.svg", note: "Inner dark cone, luminous zone, outer blue mantle" },
+          { lbl: "Candle flame zones diagram — Science Learn", url: "https://www.sciencelearn.org.nz/images/4210-a-candle-s-flame", note: "Inner dark cone, luminous zone, outer blue mantle" },
           { lbl: "📋 Zones of a Flame — Notebooking Page", url: "/worksheets/unit6/unit6_p1_zones_of_flame_v2.png", note: "Lesson 6.1 worksheet" },
           { lbl: "📋 Candle Flame Observations Journal", url: "/worksheets/unit6/unit6_p8_candle_observation_journal.png", note: "Lesson 6.1 worksheet" },
         ],
@@ -1628,7 +1629,7 @@ export const UNITS = [
         id: "6.9", week: 28, type: "RECORD",
         resources: [
           { lbl: "Faraday induction experiment — YouTube", url: "https://www.youtube.com/results?search_query=faraday+electromagnetic+induction+simple+experiment", note: "Coil + bar magnet + voltmeter demo" },
-          { lbl: "Electromagnetic induction diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Electromagnetic_induction_-_solenoid_to_galvanometer.svg", note: "Coil and galvanometer labeled" },
+          { lbl: "Electromagnetic induction diagrams — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Electromagnetic_induction", note: "Coil and galvanometer diagrams — public domain" },
           { lbl: "📋 Electromagnetic Induction", url: "/worksheets/unit6/unit6_p5_electromagnetic_induction.png", note: "Lesson 6.9 worksheet" },
           { lbl: "📋 Faraday's Laboratory Notebook", url: "/worksheets/unit6/unit6_faraday_lab_notebook.png", note: "Lesson 6.9 worksheet" },
         ],
@@ -1701,7 +1702,7 @@ export const UNITS = [
       {
         id: "6.13", week: 30, type: "READ & NARRATE",
         resources: [
-          { lbl: "Michael Faraday, Man of Science — Ch. II: The Turning Point (Gutenberg)", url: "https://www.gutenberg.org/cache/epub/46763/pg46763-images.html#Page_53", note: "Ch. II: Letter to Davy; hired as bottle-washer" },
+          { lbl: "Michael Faraday — Biography Video", url: "https://www.dailymotion.com/video/x9a4w72", note: "Faraday biography" },
           { lbl: "📋 Michael Faraday — Bookbinder, Scientist, Man of Faith", url: "/worksheets/unit6/unit6_p7_faraday_portrait.png", note: "Lesson 6.13 worksheet" },
         ],
         title: "The Biography of Michael Faraday",
@@ -1868,7 +1869,7 @@ export const UNITS = [
       {
         id: "7.6", week: 32, type: "RECORD",
         resources: [
-          { lbl: "Human skeleton diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Human_skeleton_diagrams", note: "Labeled skeleton for journal reference" },
+          { lbl: "Human skeleton diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Human_skeleton_front_en.svg", note: "Labeled skeleton for journal reference" },
           { lbl: "Biceps and triceps antagonistic pair — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Biceps_brachii_muscle09.png", note: "Flexion/extension: arm bones and muscles labeled" },
           { lbl: "📋 Bone Anatomy", url: "/worksheets/unit7/u7_p02_bone_anatomy.png", note: "Lesson 7.6 notebooking page" },
         ],
@@ -2040,8 +2041,8 @@ export const UNITS = [
       {
         id: "7.15", week: 35, type: "RECORD",
         resources: [
-          { lbl: "Brain regions diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Brain_diagrams", note: "Cerebrum, cerebellum, medulla labeled" },
-          { lbl: "Ear anatomy (cochlea, hammer, anvil, stirrup) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Ear_anatomy.svg", note: "For sensory atlas ear section" },
+          { lbl: "Brain regions diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Human_brain_midsagittal_view_description.JPG", note: "Cerebrum, cerebellum, medulla labeled" },
+          { lbl: "Ear anatomy (cochlea, hammer, anvil, stirrup) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Anatomy_of_the_Human_Ear.svg", note: "For sensory atlas ear section" },
           { lbl: "📋 The Eye", url: "/worksheets/unit7/u7_p08_the_eye.png", note: "Lesson 7.15 notebooking page" },
           { lbl: "📋 The Ear", url: "/worksheets/unit7/u7_p09_the_ear.png", note: "Lesson 7.15 notebooking page" },
         ],
