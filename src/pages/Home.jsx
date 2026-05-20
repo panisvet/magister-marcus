@@ -208,8 +208,8 @@ const TOOLS = [
   {
     id: 'lesson-viewer',
     icon: '📖',
-    title: 'Lesson Viewer',
-    subtitle: 'Wonders of the Created World',
+    title: 'Wonders of the Created World',
+    subtitle: 'Lesson Viewer · Units 1–7',
     desc: 'All 90 lessons across Units 1–6. Lesson plans, narration prompts, nature journal instructions, spine links, and vocabulary — with Form IA / Form IIA toggle.',
     accent: '#5a7a4a',
     href: '/lesson-viewer',
