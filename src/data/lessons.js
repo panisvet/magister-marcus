@@ -45,7 +45,7 @@ export const UNITS = [
     lessons: [
       {
         id: "1.1", week: 1, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Britannica Kids: Insect", url: "https://kids.britannica.com/kids/article/insect/353292", note: "Reference & narration" },
           { lbl: "How Scientists Sort Bugs — KADB", url: "https://www.youtube.com/watch?v=1VawiwBYpZc", note: "Taxonomy sorting demo (YouTube)" },
         ],
@@ -83,7 +83,7 @@ export const UNITS = [
       },
       {
         id: "1.3", week: 1, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Insect anatomy illustrations — Biodiversity Heritage Library", url: "https://www.biodiversitylibrary.org/search?searchTerm=insect+anatomy", note: "Public domain plates for journal reference" },
         ],
         title: "Nature Journal — Insect Portrait",
@@ -101,7 +101,7 @@ export const UNITS = [
       },
       {
         id: "1.4", week: 2, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Butterfly life cycle — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Butterfly_life_cycle", note: "Public domain sequence images for prediction activity" },
         ],
         title: "Before and After",
@@ -120,7 +120,7 @@ export const UNITS = [
       },
       {
         id: "1.5", week: 2, type: "READ & NARRATE",
-        resources: [
+        resources: [],
           { lbl: "Life Cycle of a Butterfly — SciShow Kids", url: "https://www.youtube.com/watch?v=3kZD6rlSLUw", note: "YouTube" },
           { lbl: "Life Of A Butterfly — Dr. Binocs", url: "https://www.youtube.com/watch?v=dM71jKNuk-M", note: "YouTube" },
         ],
@@ -158,7 +158,7 @@ export const UNITS = [
       },
       {
         id: "1.7", week: 3, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Britannica Kids: Honeybee", url: "https://kids.britannica.com/students/article/honeybee/637194", note: "Reference" },
           { lbl: "The Hidden Math of Honeycombs — Veritasium", url: "https://www.youtube.com/watch?v=CEmYXYpAhvk", note: "Hexagon efficiency (YouTube)" },
         ],
@@ -178,7 +178,7 @@ export const UNITS = [
       },
       {
         id: "1.8", week: 3, type: "READ & NARRATE",
-        resources: [
+        resources: [],
           { lbl: "Honeybees Perform Waggle Dance — Ranger Rick / NWF", url: "https://rangerrick.org/rr_videos/honeybees-perform-waggle-dance/", note: "Video" },
           { lbl: "Waggle Dance Explanation — Georgia Tech", url: "https://www.youtube.com/watch?v=bFDGPgXtK-U", note: "YouTube" },
           { lbl: "🎧 Fairy-Land of Science, Lecture X — LibriVox", url: "https://ia600802.us.archive.org/15/items/fairyland_of_science_buckley_0805_librivox/fairyland_of_science_10_buckley.mp3", note: "Bees in the Hive, Part 2" },
@@ -203,7 +203,7 @@ export const UNITS = [
       },
       {
         id: "1.9", week: 3, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Honeybee Hive Anatomy Cross-Section — Carr's Consulting", url: "https://www.carrsconsulting.com/honeybee/normal/anatomyhive.htm", note: "Labeled: queen cells, worker brood, honey cells, drones" },
         ],
         title: "Hive Cross-Section",
@@ -221,7 +221,7 @@ export const UNITS = [
       },
       {
         id: "1.10", week: 4, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Britannica Kids: Spider", url: "https://kids.britannica.com/kids/article/spider/353800", note: "Reference" },
         ],
         title: "Spider Anatomy",
@@ -259,7 +259,7 @@ export const UNITS = [
       },
       {
         id: "1.12", week: 4, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Orb Web Construction & Features (PDF) — Virginia Tech Entomology", url: "https://www.ento.vt.edu/content/dam/ento_vt_edu/2021-hokie-bugfest/activities/Web%20building%20and%20features.pdf", note: "Labeled diagram: hub, radii, capture spiral, signal thread" },
           { lbl: "Garden Orb Web Spider — BBC Earth time-lapse", url: "https://thekidshouldseethis.com/post/a-garden-orb-web-spider-builds-its-web-in-time-lapse", note: "The Kid Should See This" },
         ],
@@ -315,7 +315,7 @@ export const UNITS = [
       },
       {
         id: "1.15", week: 5, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Food Web diagram — National Geographic Education", url: "https://education.nationalgeographic.org/resource/food-chain/", note: "Producers, consumers, decomposers" },
           { lbl: "📋 Unit 1 Synthesis — Form IA", url: "/worksheets/unit1_synthesis.html", note: "Print-ready synthesis page · Form IA" },
           { lbl: "📋 Unit 1 Synthesis — Form IIA", url: "/worksheets/unit1_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
@@ -348,7 +348,7 @@ export const UNITS = [
     lessons: [
       {
         id: "2.1", week: 8, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Seed anatomy plates — Biodiversity Heritage Library", url: "https://www.biodiversitylibrary.org/search?searchTerm=seed+anatomy", note: "Bean seed dissection: embryo, cotyledons — public domain botany plates" },
           { lbl: "Seed germination time-lapse — YouTube", url: "https://www.youtube.com/results?search_query=seed+germination+time+lapse+kids", note: "Search: seed germination time-lapse kids" },
         ],
@@ -388,7 +388,7 @@ export const UNITS = [
       },
       {
         id: "2.3", week: 8, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Labeled flower anatomy diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Mature_flower_diagram.svg", note: "Sepal, petal, stamen, pistil, ovary — public domain" },
           { lbl: "Botanical illustrations — Biodiversity Heritage Library", url: "https://www.biodiversitylibrary.org/subject/Botanical+illustrations", note: "Public domain flower anatomy plates" },
         ],
@@ -408,7 +408,7 @@ export const UNITS = [
       },
       {
         id: "2.4", week: 9, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "How Do Plant Seeds Travel? — SciShow Kids", url: "https://www.youtube.com/watch?v=WqgVks9NViQ", note: "YouTube" },
           { lbl: "Seed Dispersal — YouTube", url: "https://www.youtube.com/watch?v=-KIYVGXT1lA", note: "YouTube" },
         ],
@@ -465,7 +465,7 @@ export const UNITS = [
       },
       {
         id: "2.7", week: 10, type: "READ & NARRATE",
-        resources: [
+        resources: [],
           { lbl: "Britannica Kids: Photosynthesis", url: "https://kids.britannica.com/kids/article/photosynthesis/353624", note: "Reference" },
           { lbl: "Photosynthesis in Elodea — YouTube", url: "https://www.youtube.com/watch?v=yg8vqsBOFMw", note: "YouTube demo" },
           { lbl: "Bubbling Plants Experiment — YouTube", url: "https://www.youtube.com/watch?v=B3-16GVWfe0", note: "YouTube demo" },
@@ -505,7 +505,7 @@ export const UNITS = [
       },
       {
         id: "2.9", week: 10, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Tree Rings: Recorders of Climate Change — UCAR", url: "https://scied.ucar.edu/learning-zone/how-climate-works/tree-rings", note: "Dendrochronology explained with labeled cross-section" },
         ],
         title: "Trees and Deep Time",
@@ -528,7 +528,7 @@ export const UNITS = [
       },
       {
         id: "2.10", week: 11, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Plant groups comparison — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Plant_morphology", note: "Moss, fern, conifer, flowering plant — side by side" },
           { lbl: "Plant kingdom — Britannica Kids", url: "https://kids.britannica.com/kids/article/plant/353639", note: "Non-vascular to flowering plants" },
         ],
@@ -566,7 +566,7 @@ export const UNITS = [
       },
       {
         id: "2.12", week: 11, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 Unit 2 Synthesis — Form IA", url: "/worksheets/unit2_synthesis.html", note: "Print-ready synthesis page · Form IA" },
           { lbl: "📋 Unit 2 Synthesis — Form IIA", url: "/worksheets/unit2_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
         ],
@@ -711,7 +711,7 @@ export const UNITS = [
       // ═══════════════════════════════════════════════════════════════════════
       {
         id: "3.7", week: 14, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Britannica Kids: Bird", url: "https://kids.britannica.com/kids/article/bird/352857", note: "Reference" },
         ],
         title: "At the Feeder; the Hollow Bone",
@@ -751,7 +751,7 @@ export const UNITS = [
       },
       {
         id: "3.9", week: 14, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Feather anatomy diagrams — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Bird_wing_feather_diagrams", note: "Barbs, barbules, rachis — public domain diagrams" },
         ],
         title: "Beak-and-Foot Key; Feather Anatomy",
@@ -810,7 +810,7 @@ export const UNITS = [
       },
       {
         id: "3.12", week: 15, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 Unit 3 Synthesis — Form IA", url: "/worksheets/unit3_synthesis.html", note: "Print-ready synthesis page · Form IA" },
           { lbl: "📋 Unit 3 Synthesis — Form IIA", url: "/worksheets/unit3_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
         ],
@@ -846,7 +846,7 @@ export const UNITS = [
       // ── WEEK 16: THE EARTH IN SPACE ────────────────────────────────────────
       {
         id: "4.1", week: 16, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Free Monthly Star Maps — skymaps.com", url: "https://www.skymaps.com/downloads.html", note: "Print-ready monthly sky charts — free PDF" },
           { lbl: "Stellarium — Free Planetarium (desktop & mobile)", url: "https://stellarium.org", note: "Preview tonight's sky before going out" },
         ],
@@ -904,7 +904,7 @@ export const UNITS = [
       // ── WEEK 17: THE CONSTELLATIONS ─────────────────────────────────────────
       {
         id: "4.4", week: 17, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "📋 Sky Observation Log — Form IA", url: "/worksheets/unit4/u4_FormIA_sky_observation_log_v2.png", note: "Lesson 4.4 · Form IA worksheet" },
           { lbl: "📋 Sky Observation Log — Form IIA", url: "/worksheets/unit4/u4_FormIIA_sky_observation_log_v2.png", note: "Lesson 4.4 · Form IIA worksheet" },
         ],
@@ -945,7 +945,7 @@ export const UNITS = [
       },
       {
         id: "4.6", week: 17, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 Constellation Map — Form IA", url: "/worksheets/unit4/u4_FormIA_constellation_map_v2.png", note: "Lesson 4.6 · Form IA worksheet" },
           { lbl: "📋 Constellation Map — Form IIA", url: "/worksheets/unit4/u4_FormIIA_constellation_map_v2.png", note: "Lesson 4.6 · Form IIA worksheet" },
         ],
@@ -985,7 +985,7 @@ export const UNITS = [
       // ── WEEK 18: THE MOON ───────────────────────────────────────────────────
       {
         id: "4.8", week: 18, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Moon Phase Calendar — Time and Date", url: "https://www.timeanddate.com/moon/phases/", note: "Free monthly moon phase tracker for journal" },
           { lbl: "📋 Moon Journal — Form IA", url: "/worksheets/unit4/u4_FormIA_moon_journal_v1.png", note: "Lesson 4.8 · Form IA worksheet" },
           { lbl: "📋 Moon Journal — Form IIA", url: "/worksheets/unit4/u4_FormIIA_moon_journal_v3.png", note: "Lesson 4.8 · Form IIA worksheet" },
@@ -1042,7 +1042,7 @@ export const UNITS = [
       // ── WEEK 19: THE SOLAR SYSTEM ───────────────────────────────────────────
       {
         id: "4.11", week: 19, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Solar System Scale Model — Exploratorium", url: "https://www.exploratorium.edu/ronh/solar_system/", note: "Free online scale calculator for toilet paper model" },
           { lbl: "NASA Eyes on the Solar System — free interactive 3D", url: "https://eyes.nasa.gov/apps/solar-system/", note: "Live planet positions" },
         ],
@@ -1064,7 +1064,7 @@ export const UNITS = [
       },
       {
         id: "4.12", week: 19, type: "READ & NARRATE",
-        resources: [
+        resources: [],
           { lbl: "Planet Size Comparison Chart — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Planets_and_sun_size_comparison.jpg", note: "Visual planet size comparison" },
           { lbl: "The Planets — NASA Science", url: "https://science.nasa.gov/solar-system/planets/", note: "Photos & key facts for each planet" },
         ],
@@ -1086,7 +1086,7 @@ export const UNITS = [
       },
       {
         id: "4.13", week: 19, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "📋 Telescope Log — Form IA", url: "/worksheets/unit4/u4_FormIA_telescope_log_v1.png", note: "Lesson 4.13 · Form IA worksheet" },
           { lbl: "📋 Telescope Log — Form IIA", url: "/worksheets/unit4/u4_FormIIA_telescope_log_v1.png", note: "Lesson 4.13 · Form IIA worksheet" },
         ],
@@ -1126,7 +1126,7 @@ export const UNITS = [
       },
       {
         id: "4.15", week: 20, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 Unit 4 Synthesis — Form IA", url: "/worksheets/unit4/unit4_synthesis.html", note: "Print-ready synthesis page · Form IA" },
           { lbl: "📋 Unit 4 Synthesis — Form IIA", url: "/worksheets/unit4/unit4_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
         ],
@@ -1197,7 +1197,7 @@ export const UNITS = [
       },
       {
         id: "5.3", week: 21, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 Rock & Mineral Guide", url: "/worksheets/unit5/unit5_page2_rock_mineral_guide.png", note: "Lesson 5.3 notebooking page" },
         ],
         title: "Mineral Identification Chart",
@@ -1253,7 +1253,7 @@ export const UNITS = [
       },
       {
         id: "5.6", week: 22, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 The Three Rock Families", url: "/worksheets/unit5/unit5_page3_three_families_1.png", note: "Lesson 5.6 notebooking page" },
           { lbl: "📋 Rock Cycle — Form IA", url: "/worksheets/unit5/u5_FormIA_rock_cycle_v3.png", note: "Lesson 5.6 · Form IA worksheet" },
           { lbl: "📋 Rock Cycle — Form IIA", url: "/worksheets/unit5/u5_FormIIA_rock_cycle_v2.png", note: "Lesson 5.6 · Form IIA worksheet" },
@@ -1292,7 +1292,7 @@ export const UNITS = [
       },
       {
         id: "5.8", week: 23, type: "READ & NARRATE",
-        resources: [
+        resources: [],
         title: "The Fossil Record",
         tagline: null,
         teacherPrep: "Read ahead in Lyell (Manual of Elementary Geology, PG #34350) — select passages on fossils and strata that illustrate his method and assumptions without requiring the full philosophical discussion (that comes in Week 24). Also read Darwin's Voyage of the Beagle chapter on Patagonia fossil mammals.",
@@ -1314,7 +1314,7 @@ export const UNITS = [
       },
       {
         id: "5.9", week: 23, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "The Cambrian Explosion — PBS Eons", url: "https://www.youtube.com/watch?v=qNtQwUO9ff8", note: "YouTube · clear explainer for ages 11+" },
           { lbl: "Cambrian Explosion — Easy to Understand", url: "https://www.youtube.com/watch?v=GXEZV9EQVCQ", note: "YouTube · ages 8+" },
           { lbl: "Anomalocaris fossil (Burgess Shale) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Anomalocaris_canadensis.jpg#/media/File:Anomalocaris_canadensis.jpg", note: "High-resolution Cambrian predator fossil" },
@@ -1393,7 +1393,7 @@ export const UNITS = [
       // ── WEEK 25: WHAT THE EARTH TEACHES ────────────────────────────────────
       {
         id: "5.13", week: 25, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "📋 The Hardware River Watershed — Field Study", url: "/worksheets/unit5/hardware_river_watershed_v10.png", note: "Local field guide · Fluvanna County, Virginia" },
         ],
         title: "Field Lesson — Reading the Rocks",
@@ -1430,7 +1430,7 @@ export const UNITS = [
       },
       {
         id: "5.15", week: 25, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 Unit 5 Synthesis — Form IA", url: "/worksheets/unit5/unit5_synthesis.html", note: "Print-ready synthesis page · Form IA" },
           { lbl: "📋 Unit 5 Synthesis — Form IIA", url: "/worksheets/unit5/unit5_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
         ],
@@ -1466,7 +1466,7 @@ export const UNITS = [
 
       {
         id: "6.1", week: 26, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Candle flame zones diagram — Science Learn", url: "https://www.sciencelearn.org.nz/images/4210-a-candle-s-flame", note: "Inner dark cone, luminous zone, outer blue mantle" },
           { lbl: "📋 Zones of a Flame — Notebooking Page", url: "/worksheets/unit6/unit6_p1_zones_of_flame_v2.png", note: "Lesson 6.1 worksheet" },
           { lbl: "📋 Candle Flame Observations Journal", url: "/worksheets/unit6/unit6_p8_candle_observation_journal.png", note: "Lesson 6.1 worksheet" },
@@ -1487,7 +1487,7 @@ export const UNITS = [
       },
       {
         id: "6.2", week: 26, type: "READ & NARRATE",
-        resources: [
+        resources: [],
           { lbl: "Bill Hammack — Faraday's Candle Lectures", url: "https://www.youtube.com/watch?v=RrHnLXMTOWM&list=PL0INsTTU1k2UCpOfRuMDR-wlvWkLan1_r", note: "Illustrated modern companion to Faraday's lectures" },
           { lbl: "🎧 Chemical History of a Candle, Lecture II — LibriVox", url: "https://dn720702.ca.archive.org/0/items/chemical_history_candle_ava_librivox/chemicalhistorycandle_2_faraday.mp3", note: "Lecture 2" },
         ],
@@ -1524,7 +1524,7 @@ export const UNITS = [
       },
       {
         id: "6.4", week: 27, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Lemon battery experiment — YouTube", url: "https://www.youtube.com/results?search_query=lemon+battery+experiment+kids+LED", note: "Search: lemon battery experiment kids LED" },
         ],
         title: "The Lemon Battery",
@@ -1542,7 +1542,7 @@ export const UNITS = [
       },
       {
         id: "6.5", week: 27, type: "READ & NARRATE",
-        resources: [
+        resources: [],
           { lbl: "🎧 Chemical History of a Candle, Lecture IV — LibriVox", url: "https://dn720702.ca.archive.org/0/items/chemical_history_candle_ava_librivox/chemicalhistorycandle_4_faraday.mp3", note: "Lecture 4" },
           { lbl: "🎧 Chemical History of a Candle, Lecture V — LibriVox", url: "https://dn720702.ca.archive.org/0/items/chemical_history_candle_ava_librivox/chemicalhistorycandle_5_faraday.mp3", note: "Lecture 5" },
           { lbl: "📋 Combustion — Word & Chemical Equation", url: "/worksheets/unit6/unit6_p2_combustion_equation.png", note: "Lesson 6.5 worksheet" },
@@ -1585,7 +1585,7 @@ export const UNITS = [
       },
       {
         id: "6.7", week: 28, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "Non-contact forces demonstration — YouTube", url: "https://www.youtube.com/results?search_query=non-contact+forces+demonstration+kids", note: "Gravity, magnetism, static electricity demos" },
           { lbl: "🎧 Various Forces of Nature, Lecture II (a) — LibriVox", url: "https://dn721804.ca.archive.org/0/items/on_the_various_forces_of_nature_2108_librivox/forcesofnature_02_faraday_128kb.mp3", note: "Lecture II Part 1" },
           { lbl: "🎧 Various Forces of Nature, Lecture II (b) — LibriVox", url: "https://dn721804.ca.archive.org/0/items/on_the_various_forces_of_nature_2108_librivox/forcesofnature_03_faraday_128kb.mp3", note: "Lecture II Part 2" },
@@ -1627,7 +1627,7 @@ export const UNITS = [
       },
       {
         id: "6.9", week: 28, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Faraday induction experiment — YouTube", url: "https://www.youtube.com/results?search_query=faraday+electromagnetic+induction+simple+experiment", note: "Coil + bar magnet + voltmeter demo" },
           { lbl: "Electromagnetic induction diagrams — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/Category:Electromagnetic_induction", note: "Coil and galvanometer diagrams — public domain" },
           { lbl: "📋 Electromagnetic Induction", url: "/worksheets/unit6/unit6_p5_electromagnetic_induction.png", note: "Lesson 6.9 worksheet" },
@@ -1648,7 +1648,7 @@ export const UNITS = [
       },
       {
         id: "6.10", week: 29, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "📋 The Visible Spectrum", url: "/worksheets/unit6/unit6_p6_visible_spectrum.png", note: "Lesson 6.10 worksheet" },
         ],
         title: "The Spectrum",
@@ -1701,7 +1701,7 @@ export const UNITS = [
       },
       {
         id: "6.13", week: 30, type: "READ & NARRATE",
-        resources: [
+        resources: [],
           { lbl: "Michael Faraday — Biography Video", url: "https://www.dailymotion.com/video/x9a4w72", note: "Faraday biography" },
           { lbl: "📋 Michael Faraday — Bookbinder, Scientist, Man of Faith", url: "/worksheets/unit6/unit6_p7_faraday_portrait.png", note: "Lesson 6.13 worksheet" },
         ],
@@ -1721,7 +1721,7 @@ export const UNITS = [
       },
       {
         id: "6.14", week: 30, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "📋 The Homopolar Motor", url: "/worksheets/unit6/unit6_homopolar_motor.png", note: "Lesson 6.14 worksheet" },
         ],
         title: "Building an Electromagnet",
@@ -1739,7 +1739,7 @@ export const UNITS = [
       },
       {
         id: "6.15", week: 30, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 Conservation of Energy", url: "/worksheets/unit6/unit6_conservation_of_energy.png", note: "Lesson 6.15 worksheet" },
           { lbl: "📋 Unit 6 Synthesis — Form IA", url: "/worksheets/unit6/unit6_synthesis.html", note: "Print-ready synthesis page · Form IA" },
           { lbl: "📋 Unit 6 Synthesis — Form IIA", url: "/worksheets/unit6/unit6_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
@@ -1809,7 +1809,7 @@ export const UNITS = [
       },
       {
         id: "7.3", week: 31, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 Body Systems Map", url: "/worksheets/unit7/u7_p01_body_systems.png", note: "Lesson 7.3 notebooking page" },
         ],
         title: "Body Systems Map",
@@ -1829,7 +1829,7 @@ export const UNITS = [
       // ── WEEK 32: THE SKELETON AND MUSCLES ──────────────────────────────────
       {
         id: "7.4", week: 32, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "📋 How Joints Work", url: "/worksheets/unit7/u7_p03_how_joints_work.png", note: "Lesson 7.4 notebooking page" },
         ],
         title: "What Holds You Up",
@@ -1848,7 +1848,7 @@ export const UNITS = [
       },
       {
         id: "7.5", week: 32, type: "READ & NARRATE",
-        resources: [
+        resources: [],
           { lbl: "📋 Levers in the Body", url: "/worksheets/unit7/u7_p04_levers_in_the_body.png", note: "Lesson 7.5 notebooking page" },
         ],
         title: "Levers, Bones, and the Engine of Movement",
@@ -1868,7 +1868,7 @@ export const UNITS = [
       },
       {
         id: "7.6", week: 32, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Human skeleton diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Human_skeleton_front_en.svg", note: "Labeled skeleton for journal reference" },
           { lbl: "Biceps and triceps antagonistic pair — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Biceps_brachii_muscle09.png", note: "Flexion/extension: arm bones and muscles labeled" },
           { lbl: "📋 Bone Anatomy", url: "/worksheets/unit7/u7_p02_bone_anatomy.png", note: "Lesson 7.6 notebooking page" },
@@ -1924,7 +1924,7 @@ export const UNITS = [
       },
       {
         id: "7.9", week: 33, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Four-chamber heart diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Diagram_of_the_human_heart_(cropped).svg", note: "Pulmonary and systemic circuits, red/blue labeling" },
           { lbl: "📋 Double-Loop Circulation", url: "/worksheets/unit7/u7_p05_double_loop_circulation.png", note: "Lesson 7.9 notebooking page" },
           { lbl: "📋 William Harvey", url: "/worksheets/unit7/u7_p12_william_harvey.png", note: "Lesson 7.9 notebooking page" },
@@ -1946,7 +1946,7 @@ export const UNITS = [
       // ── WEEK 34: LUNGS, DIGESTION, AND FOOD AS FUEL ────────────────────────
       {
         id: "7.10", week: 34, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "📋 Gas Exchange in the Lungs", url: "/worksheets/unit7/u7_p06_gas_exchange_lungs.png", note: "Lesson 7.10 notebooking page" },
         ],
         title: "Breathing and the Exchange",
@@ -1983,7 +1983,7 @@ export const UNITS = [
       },
       {
         id: "7.12", week: 34, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 The Digestive System", url: "/worksheets/unit7/u7_p07_digestive_system.png", note: "Lesson 7.12 notebooking page" },
         ],
         title: "The Digestive Map and Meal Analysis",
@@ -2003,7 +2003,7 @@ export const UNITS = [
       // ── WEEK 35: THE NERVOUS SYSTEM AND THE SENSES ─────────────────────────
       {
         id: "7.13", week: 35, type: "OBSERVE",
-        resources: [
+        resources: [],
           { lbl: "📋 Fast Reflexes", url: "/worksheets/unit7/u7_p10_fast_reflexes.png", note: "Lesson 7.13 notebooking page" },
         ],
         title: "The Body's Telegraph",
@@ -2040,7 +2040,7 @@ export const UNITS = [
       },
       {
         id: "7.15", week: 35, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "Brain regions diagram — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Human_brain_midsagittal_view_description.JPG", note: "Cerebrum, cerebellum, medulla labeled" },
           { lbl: "Ear anatomy (cochlea, hammer, anvil, stirrup) — Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Anatomy_of_the_Human_Ear.svg", note: "For sensory atlas ear section" },
           { lbl: "📋 The Eye", url: "/worksheets/unit7/u7_p08_the_eye.png", note: "Lesson 7.15 notebooking page" },
@@ -2079,7 +2079,7 @@ export const UNITS = [
       },
       {
         id: "7.17", week: 36, type: "READ & NARRATE",
-        resources: [
+        resources: [],
           { lbl: "📋 Florence Nightingale", url: "/worksheets/unit7/u7_p11_florence_nightingale.png", note: "Lesson 7.17 notebooking page" },
         ],
         title: "The Biography of Florence Nightingale",
@@ -2100,7 +2100,7 @@ export const UNITS = [
       },
       {
         id: "7.18", week: 36, type: "RECORD",
-        resources: [
+        resources: [],
           { lbl: "📋 Unit 7 Synthesis — Form IA", url: "/worksheets/unit7/unit7_synthesis.html", note: "Print-ready synthesis page · Form IA" },
           { lbl: "📋 Unit 7 Synthesis — Form IIA", url: "/worksheets/unit7/unit7_synthesis.html#form-iia", note: "Print-ready synthesis page · Form IIA" },
         ],
