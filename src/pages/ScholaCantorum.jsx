@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { YEARS, ALL_LESSONS } from '../data/scholaCantorum.js'
+import { YEARS, ALL_LESSONS } from '../data/schola-cantorum.js'
 import { OPENING_EXERCISES } from '../data/openingExercises.js'
 import TopNav from '../components/TopNav.jsx'
 
