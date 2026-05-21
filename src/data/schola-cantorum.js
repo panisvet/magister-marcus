@@ -896,420 +896,632 @@ export const YEARS = [
       // ───────────────────────────────────────────────────────────────────────
       // UNIT 3: Minor — The Other Side of the Door (Weeks 13–18)
       // ───────────────────────────────────────────────────────────────────────
-      {
-        id: 'u3',
-        title: 'Minor — The Other Side of the Door',
-        subtitle: 'Weeks 13–18 · A natural minor · La as tonal center · Minor-mode chant',
-        icon: '🌙',
-        lessons: [
-          {
-            id: '13.A', week: 13, session: 'A', unit: 'u3',
-            title: 'La Is Home — A Natural Minor',
-            duration: '~25 minutes',
-            ladukhin: 'Exercise 19',
-            materials: ['Piano', 'Ladukhin pp. 13–14 (Exercise 19)', 'Music journals'],
-            openingRitual: 'Find Do. Sing the C major scale from memory. Then immediately: play A minor scale on piano. "Listen to the difference."',
-            story: null,
-            drill: {
-              title: 'Exercise 19 — La as Home',
-              steps: [
-                'INTRODUCE MINOR: Play C major scale, then A natural minor scale on piano. Ask: "How does this feel compared to Do?" Common answers: darker, sadder, mysterious, more serious.',
-                'Say: "In minor, the home note is La — A. The scale still uses the same seven notes as C major, but La is home now." Sing: La-Ti-Do-Re-Mi-Fa-Sol-La on solfège.',
-                'EXERCISE 19: Sing together 3 times. Focus on La as the resting point.',
-                'Echo game in minor: teacher sings a 3-note pattern in A minor. Students echo.',
-              ],
-            },
-            formIA: 'He echoes in minor. He does not need to understand the theory — the sound is the lesson. Ask him: "How does this feel? Draw it later."',
-            formIIA: 'He sings from notation. Before singing, he identifies La (A) on the staff as the new home note.',
-            sacredMusic: {
-              searchTerm: 'Orthodox Holy Saturday Lamentations',
-              label: 'Lamentations — Holy Saturday',
-              listenFor: 'Say: "This is sung on Holy Saturday, the night before Pascha. It is music of waiting — of grief, but also of hope just beneath the surface. Just listen. What do you notice about how it moves?"',
-            },
-            journal: {
-              formIA: 'Write or draw: "Major sounds like ___. Minor sounds like ___."',
-              formIIA: 'Write: "In A minor, La (A) is home. The same seven notes as C major — but a different home." Explain in your own words.',
-            },
-            closingRitual: 'Find Do. Sing the minor scale. "Two homes: Do and La."',
-            teacherNotes: 'Do not over-explain minor. The sound is the teacher. Let students sit with the feeling before analyzing it. The emotional response is data — take it seriously.',
-            shortenIt: 'Just introduce the minor scale and Exercise 19. Skip the echo game.',
-            stretchIt: 'Form IIA: compare C major scale (Do home) and A natural minor scale (La home) side by side on the staff in his journal.',
-            watchFor: 'Students who flatten the minor scale — singing every note lower than written because it "sounds darker." The notes themselves are the same; only the tonal center changes.',
-          },
-          {
-            id: '13.B', week: 13, session: 'B', unit: 'u3',
-            title: 'Major and Minor — The Feeling Test',
-            duration: '~20 minutes',
-            ladukhin: 'Exercise 19 review',
-            materials: ['Piano', 'Music journals'],
-            openingRitual: 'Find Do. Sing A minor scale. "Two homes."',
-            story: null,
-            drill: {
-              title: 'Major/Minor Identification Game',
-              steps: [
-                'Teacher plays or sings a short phrase in C major or A minor. Students call out: "major feeling" or "minor feeling."',
-                'Start with obvious examples. Gradually make them more ambiguous.',
-                'Then sing Exercise 19 again: both students, from memory if possible.',
-              ],
-            },
-            formIA: 'He answers "major" or "minor" by feeling — no theory required.',
-            formIIA: 'After identifying, he names the tonal center: "This is minor — La is home."',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — major-mode Byzantine',
-              listenFor: 'Say: "After all that minor, here is something different. Is this major or minor?" Play 60 seconds. "Why does this feel different from the Lamentations?"',
-            },
-            journal: {
-              formIA: 'Draw two doors: one labeled "major — Do is home" and one labeled "minor — La is home."',
-              formIIA: 'Write: "The Lamentations feel ___ because ___. Agni Parthene feels ___ because ___."',
-            },
-            closingRitual: 'Find Do. Done.',
-            teacherNotes: 'The contrast between Lamentations and Agni Parthene is pedagogically powerful. The same scale system produces both — only the tonal center and the musical choices differ.',
-            shortenIt: 'Just the major/minor game. Skip Exercise 19.',
-            stretchIt: 'Form IIA: can he play a C major scale and an A minor scale on the piano (slowly, one finger)? Both use the same white keys.',
-            watchFor: 'Students who identify all minor as "sad" and major as "happy." Gently complicate this: "Is Agni Parthene happy? Is it the same kind of feeling as a pop song?" The liturgical mode carries something different.',
-          },
-          {
-            id: '14.A', week: 14, session: 'A', unit: 'u3',
-            title: 'La as Resting Point — Exercises 20–21',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 20–21',
-            materials: ['Piano', 'Ladukhin pp. 13–15 (Exercises 20–21)', 'Music journals'],
-            openingRitual: 'Find Do. Sing A minor scale. Then C major scale. "Two homes — Do and La."',
-            story: null,
-            drill: {
-              title: 'Exercises 20–21 — Minor Consolidation',
-              steps: [
-                'WARM-UP: Sing Exercise 19 from memory.',
-                'EXERCISE 20: Teacher sings first. Then together. La as home — pause on La and feel the rest. 3 repetitions.',
-                'EXERCISE 21: Same process.',
-                'Minor scale game: teacher starts on La and sings up — students complete the scale from wherever teacher stops.',
-              ],
-            },
-            formIA: 'He echoes all exercises and participates in the minor scale game.',
-            formIIA: 'He reads from notation. For Exercises 20–21, he identifies La on the page as home before singing.',
-            sacredMusic: {
-              searchTerm: 'Orthodox Holy Saturday Lamentations',
-              label: 'Lamentations — return',
-              listenFor: 'Return to the Lamentations. "Does this sound more familiar now that you have been singing in minor? What do you hear differently?"',
-            },
-            journal: {
-              formIA: 'Echo and copy one measure of Exercise 20 (teacher draws lightly; student traces).',
-              formIIA: 'Copy Exercise 20 notation. Write solfège syllables below. Circle La every time it appears.',
-            },
-            closingRitual: 'Find Do. Sing La. "Two homes."',
-            teacherNotes: 'The minor scale game (completing from teacher\'s stopping point) trains tonal hearing. If a student cannot complete the scale, he has not yet internalized the minor tonality — return to more listening before proceeding.',
-            shortenIt: 'Just Exercise 20. Skip 21.',
-            stretchIt: 'Form IIA: sight-sing Exercise 20 cold, without any preview.',
-            watchFor: 'Students finishing the minor scale with Ti-Do instead of Sol-La. They are reverting to C major. Slow down and isolate the top of the minor scale: La-Sol-Fa-Mi-La (descending).',
-          },
-          {
-            id: '14.B', week: 14, session: 'B', unit: 'u3',
-            title: 'Dictation in Minor',
-            duration: '~20 minutes',
-            ladukhin: 'Exercises 20–21 review',
-            materials: ['Piano', 'Music journals'],
-            openingRitual: 'Find Do. Sing Exercises 19–21 in order.',
-            story: null,
-            drill: {
-              title: 'Solfège Dictation — Minor Phrases',
-              steps: [
-                'Teacher sings a 4-note pattern in A minor. Students echo on solfège syllables.',
-                'After echo, Form IIA writes the solfège letters in his journal (La = L, Ti = T, Do = D, etc.).',
-                'Do 4–5 patterns. Begin simple (La-Sol-La-Mi) and increase complexity.',
-              ],
-            },
-            formIA: 'Echo only. No written dictation.',
-            formIIA: 'Echo then write. Check his syllables after each pattern.',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — opening phrase',
-              listenFor: 'Learn the opening phrase by ear. Teacher sings it, students echo. Then play the recording and echo again.',
-            },
-            journal: {
-              formIA: 'Draw the feeling of the Lamentations and the feeling of Agni Parthene side by side.',
-              formIIA: 'Write the solfège syllables of one dictation pattern from memory. Check against the page.',
-            },
-            closingRitual: 'Find Do. Done.',
-            teacherNotes: 'Dictation in minor is significantly harder than dictation in major — the scale is less familiar. Go slowly. Errors are information, not failure.',
-            shortenIt: 'Two dictation patterns only.',
-            stretchIt: 'Form IIA: after writing dictation, sing his written pattern back to check it. Can he catch his own errors?',
-            watchFor: 'Students writing Re when they hear Do in a minor context. The confusion is between scale degree 1 (La in minor) and scale degree 2 (Ti in minor). Play them separately on the piano until the distinction is clear.',
-          },
-          {
-            id: '15.A', week: 15, session: 'A', unit: 'u3',
-            title: 'Major and Minor Together — Exercises 22–24',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 22–24',
-            materials: ['Piano', 'Ladukhin pp. 15–17 (Exercises 22–24)', 'Music journals'],
-            openingRitual: 'Find Do. Sing C major scale. Sing A minor scale. "Which one are we in? Listen." Play a phrase in one key — students identify.',
-            story: null,
-            drill: {
-              title: 'Exercises 22–24 — Mixed Major and Minor',
-              steps: [
-                'Say: "These exercises mix major and minor. Before we sing each one, identify: is this in major (Do home) or minor (La home)?"',
-                'Exercise 22: identify key, then sing. 3 times.',
-                'Exercise 23: same. If major/minor identification is wrong, correct gently before singing.',
-                'Exercise 24: same.',
-              ],
-            },
-            formIA: 'He answers major/minor by feeling when you play a few notes first. He does not read the key signature — teacher identifies it for him.',
-            formIIA: 'He identifies key from the notation — looking for whether the final note of the exercise is Do or La.',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — two more phrases',
-              listenFor: 'Learn phrases 2 and 3 by ear. Slow and careful. "What does this hymn seem to be about just from the feeling of the music?"',
-            },
-            journal: {
-              formIA: 'Write: "This hymn is about ___." (Based on what he heard — not what he was told.)',
-              formIIA: 'Write: "This hymn is about ___. I can hear this because ___." He connects his musical observation to his sense of the hymn\'s character.',
-            },
-            closingRitual: 'Find Do. "Two homes. We know them both now."',
-            teacherNotes: 'The mixed major/minor exercises are a significant leap. Do not rush. If a student consistently misidentifies the key, return to separate major and minor exercises for one more session before mixing them.',
-            shortenIt: 'Just Exercises 22–23.',
-            stretchIt: 'Form IIA: sight-sing Exercise 24 cold. No preview.',
-            watchFor: 'Students who can identify major/minor in isolation but lose it in a mixed exercise. This is normal — context switching is harder than pure identification. Celebrate progress.',
-          },
-          {
-            id: '15.B', week: 15, session: 'B', unit: 'u3',
-            title: 'Beat-Keeping — 4/4 Introduced',
-            duration: '~20 minutes',
-            ladukhin: 'Exercises 22–24 review',
-            materials: ['Piano', 'Music journals'],
-            openingRitual: 'Find Do. Sing Exercises 22–24 in order.',
-            story: null,
-            drill: {
-              title: 'Conducting Beat in 4/4',
-              steps: [
-                'Say: "Music has a pulse — a steady beat. In 4/4 time, we count 4 beats per measure. The conducting pattern: right fist moves down, then left, then right, then up." Demonstrate.',
-                'Practice the beat pattern without singing: 1-down, 2-left, 3-right, 4-up. Everyone together.',
-                'Sing Exercise 22 while conducting the beat.',
-                'Switch: one student conducts, one sings. Then swap.',
-              ],
-            },
-            formIA: 'He conducts with a simplified gesture: down for beat 1, up for beat 3. Two-beat pattern is fine for now.',
-            formIIA: 'Full 4/4 conducting pattern. He conducts while teacher sings to confirm the gesture is correct.',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — singing together',
-              listenFor: 'Sing the learned phrases together with the recording (quietly, supporting). "Notice: sacred music does not always fit a strict 4-beat pattern. Byzantine chant breathes differently."',
-            },
-            journal: {
-              formIA: 'Draw the 4-beat conducting pattern (arrows showing the four directions).',
-              formIIA: 'Draw the 4-beat pattern and write: "In 4/4 time, each measure has ___ beats. The conducting pattern goes ___."',
-            },
-            closingRitual: 'Find Do. Done.',
-            teacherNotes: 'The conducting pattern is a tool for feeling the beat, not a performance requirement. Do not stress precision. The goal is that the body is engaged with the music.',
-            shortenIt: 'Skip the conducting. Just review the exercises and do the journal.',
-            stretchIt: 'Form IIA: conduct Exercise 22 in 4/4 while Form IA sings. Teacher observes both simultaneously.',
-            watchFor: 'Students whose conducting gets ahead of or behind the singing. The beat is felt, not imposed. If the conducting is fighting the singing, simplify: just tap the pulse.',
-          },
-          {
-            id: '16.A', week: 16, session: 'A', unit: 'u3',
-            title: 'Longer Exercises — Exercises 25–26',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 25–26',
-            materials: ['Piano', 'Ladukhin pp. 17–18 (Exercises 25–26)', 'Music journals'],
-            openingRitual: 'Find Do. Sing the minor scale with conducting beat. Then the major scale.',
-            story: null,
-            drill: {
-              title: 'Exercises 25–26 — Sustained Attention',
-              steps: [
-                'These exercises are longer — they require sustained attention. Say: "A longer exercise is not harder — it just takes longer. Same skills, more time."',
-                'Exercise 25: teacher sings first through completely. Then together. 2 repetitions.',
-                'Exercise 26: same. Note: if attention flags, break the exercise into two halves.',
-              ],
-            },
-            formIA: 'He echoes in halves if needed. Teacher sings the first half, he echoes; then the second half.',
-            formIIA: 'He reads from notation. Challenge: can he mark the halfway point with his finger before beginning, so he knows where he is?',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — all phrases learned',
-              listenFor: 'Try to sing all learned phrases together with the recording. Note where the melody goes beyond what you have learned.',
-            },
-            journal: {
-              formIA: 'Write the solfège syllables of a 4-note minor pattern (teacher dictates): La-Sol-Mi-La.',
-              formIIA: 'Write the solfège syllables of a 6-note pattern (teacher dictates): La-Ti-Do-Re-Mi-La.',
-            },
-            closingRitual: 'Find Do. Sing La. "Two homes — well known."',
-            teacherNotes: 'Longer exercises build concentration as much as musicianship. If a student consistently cannot sustain attention, note this — it may be worth shortening all exercises and building length gradually.',
-            shortenIt: 'Exercise 25 only.',
-            stretchIt: 'Form IIA: sight-sing Exercise 25 in two separate passes — first from beginning to middle, then from middle to end. Then combine.',
-            watchFor: 'Students losing the tonal center (La) over the course of a long exercise and drifting toward Do. Anchor with a piano La at the midpoint if needed.',
-          },
-          {
-            id: '16.B', week: 16, session: 'B', unit: 'u3',
-            title: 'Introduction to Two-Part Singing',
-            duration: '~20 minutes',
-            ladukhin: 'Exercise 19 — two-part introduction',
-            materials: ['Piano', 'Music journals'],
-            openingRitual: 'Find Do. Sing Exercises 25–26 together.',
-            story: null,
-            drill: {
-              title: 'Two-Part: Teacher Drone While Student Sings',
-              steps: [
-                'Say: "We are going to try something new — two different notes at the same time. I will hold La (a drone) while you sing Exercise 19."',
-                'Teacher sings or plays La continuously (drone) while students sing Exercise 19.',
-                'Ask: "Did you feel your note and my note? Could you keep yours?"',
-                'If ready: teacher sings Exercise 19 while Form IIA sings Exercise 20 simultaneously. One student can try to hold a drone while the other sings.',
-              ],
-            },
-            formIA: 'He sings Exercise 19 over teacher\'s drone. This is his first two-part experience.',
-            formIIA: 'If ready: attempt to sing Exercise 20 while teacher sings Exercise 19. If not ready, he holds the drone while Form IA sings.',
-            sacredMusic: {
-              searchTerm: 'Orthodox Holy Saturday Lamentations',
-              label: 'Lamentations — drone return',
-              listenFor: 'Play 60 seconds. "Do you hear a held note beneath the melody? Some sacred music uses a drone — a steady low note while the melody moves above it."',
-            },
-            journal: {
-              formIA: 'Draw two voices as two lines — one moving, one still.',
-              formIIA: 'Write: "A drone is ___. In sacred music, it serves as ___."',
-            },
-            closingRitual: 'Find Do. Done.',
-            teacherNotes: 'Do not force two-part singing before the students are ready. The drone is the safest entry point — it does not require independent melodic lines. If it goes well, be encouraged; if not, return in Unit 4.',
-            shortenIt: 'Just the drone exercise. Skip full two-part attempt.',
-            stretchIt: 'If two-part goes well: Form IIA holds La throughout while Form IA sings the full minor scale. Can he maintain La while hearing something above it?',
-            watchFor: 'Students who abandon their note when they hear the other voice. This is normal — the ear is not yet trained to hold its own line independently. Do not pressure. The skill comes with time.',
-          },
-          {
-            id: '17.A', week: 17, session: 'A', unit: 'u3',
-            title: 'All Minor Exercises — Exercises 27–28',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 27–28',
-            materials: ['Piano', 'Ladukhin pp. 18–20 (Exercises 27–28)', 'Music journals'],
-            openingRitual: 'Find Do. Sing minor scale from memory. Clap the beat.',
-            story: null,
-            drill: {
-              title: 'Exercises 27–28 — Full Minor Review',
-              steps: [
-                'Sing Exercises 19–26 in order — a complete minor unit review. Brisk pace.',
-                'Exercise 27: new material. Identify major/minor first. Sing together 3 times.',
-                'Exercise 28: same.',
-                'Two-part attempt: teacher sings Exercise 27 while Form IIA sings Exercise 19 (or holds drone). Form IA sings Exercise 19 with teacher.',
-              ],
-            },
-            formIA: 'Sings all exercises with teacher. Participates in two-part as the melody voice over a drone.',
-            formIIA: 'Reads from notation. Attempts to sing independently on at least one exercise.',
-            sacredMusic: {
-              searchTerm: 'Orthodox Holy Saturday Lamentations',
-              label: 'Lamentations — final Unit 3 listening',
-              listenFor: 'Full 2-minute listening. No questions until it finishes. Then: "What does this music tell you about Holy Saturday? What is the Church waiting for?"',
-            },
-            journal: {
-              formIA: 'Free draw: what does the waiting of Holy Saturday look like?',
-              formIIA: 'Write: "Holy Saturday is the day ___. The Lamentations express ___ because ___."',
-            },
-            closingRitual: 'Find Do. Sing La. "The Church sings in both. We are learning both."',
-            teacherNotes: 'This is the penultimate lesson in Unit 3. Use it to consolidate rather than push into new territory. The mid-year assessment is next session.',
-            shortenIt: 'Exercises 19, 23, 27 only. Skip the full review.',
-            stretchIt: 'Form IIA: sight-sing Exercise 28 cold.',
-            watchFor: 'Fatigue with minor after six weeks. If students are tired of it, acknowledge that: "We have been in minor for a while. Next unit we go back to major — but with new keys." Give them something to look forward to.',
-          },
-          {
-            id: '17.B', week: 17, session: 'B', unit: 'u3',
-            title: 'Unit 3 Review and Mid-Year Assessment',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 19–28 assessment',
-            materials: ['Piano', 'Ladukhin pp. 13–20', 'Music journals'],
-            openingRitual: 'Find Do. "Today we see how far we have come."',
-            story: null,
-            drill: {
-              title: 'Mid-Year Assessment',
-              steps: [
-                'Sing exercises from both major (Unit 2) and minor (Unit 3): Exercises 9, 16, 19, 25.',
-                'Assessment 1 — Pitch: teacher sings an exercise cold, students sing back. Score on rubric.',
-                'Assessment 2 — Rhythm: clap a pattern, students echo. Score on rubric.',
-                'Assessment 3 — Reading (Form IIA): sight-sing one exercise. Score on rubric.',
-                'Assessment 4 — Sacred Music: teacher plays 15 seconds of Lamentations and 15 seconds of Agni Parthene. Students identify: major/minor, Byzantine/Gregorian.',
-              ],
-            },
-            formIA: 'Assessed on pitch accuracy, rhythm, and sacred music recognition only.',
-            formIIA: 'Full assessment including notation reading.',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — mid-year celebration',
-              listenFor: 'After assessment: put the music on and sing together. "This is our celebration. You have done good work."',
-            },
-            journal: {
-              formIA: 'Free journal: "What have you learned so far? What is your favorite?"',
-              formIIA: 'Write: "What I can do in music now that I could not do in September." Three specific things.',
-            },
-            closingRitual: 'Find Do. "Half of Year 1 is complete. Well done."',
-            teacherNotes: 'Use the assessment rubric from the Parent Guide. Record results. This is the mid-year checkpoint — note any gaps that need attention in Units 4–5. Brief notes only.',
-            shortenIt: 'Assessment items 1 and 4 only (pitch and sacred music). Skip rhythm and reading assessment.',
-            stretchIt: 'Form IIA: self-assessment. Ask him to rate himself on each category before you do. Compare.',
-            watchFor: 'Students who perform worse under formal assessment than in regular lessons. This is common and normal. Note it, reassure them, and weight the regular lesson observations more heavily.',
-          },
-          {
-            id: '18.A', week: 18, session: 'A', unit: 'u3',
-            title: 'Celebration Lesson — Everything We Love',
-            duration: '~25 minutes',
-            ladukhin: 'Student choice',
-            materials: ['Piano', 'Music journals', 'Optional: candle'],
-            openingRitual: 'Find Do. Students choose the warm-up exercise.',
-            story: null,
-            drill: {
-              title: 'Free Singing — Student-Led',
-              steps: [
-                'Ask: "Which exercise do you want to sing first?" Students choose. Sing it.',
-                'Ask: "What do you want to sing next?" Continue until the full session is filled.',
-                'End with Agni Parthene together — all phrases learned so far.',
-              ],
-            },
-            formIA: 'He chooses exercises and leads the session informally.',
-            formIIA: 'He may introduce exercises for Form IA to echo while he reads from notation.',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — full singing',
-              listenFor: 'Sing along together for as much as you know. Do not stop to correct. Offer it.',
-            },
-            journal: {
-              formIA: 'Free journal: any drawing, any response to the music.',
-              formIIA: 'Free journal: same.',
-            },
-            closingRitual: 'Find Do. "We have been singing for half a year. The voice is a gift. Thank you for offering yours."',
-            teacherNotes: 'This session is for joy. No assessment, no correction, no agenda. The habit of singing for its own sake — and for God\'s glory — is formed here.',
-            shortenIt: 'Do nothing except the Agni Parthene and one student-choice exercise.',
-            stretchIt: 'End the session with a silent listening to the Lamentations and Agni Parthene back to back. No comments — just listen.',
-            watchFor: 'Students who are self-critical even in a free session. If a student says "I sang that wrong," redirect: "You offered your voice. That is enough."',
-          },
-          {
-            id: '18.B', week: 18, session: 'B', unit: 'u3',
-            title: 'Unit 3 Close — Preview of Unit 4',
-            duration: '~20 minutes',
-            ladukhin: 'No new exercises',
-            materials: ['Music journals'],
-            openingRitual: 'Find Do. Sing both scales: C major and A minor.',
-            story: null,
-            drill: {
-              title: 'Preview of New Keys',
-              steps: [
-                'Say: "Next unit we are going to different homes — G major and F major. Different keys. Listen." Play G major scale on piano. "Same shape — but starting on G instead of C. Do is still Do; it just begins in a different place."',
-                'Ask: "Does this sound like major or minor?" (Major.) "Where is Do?" (G.)',
-                'Play F major scale. Same questions.',
-                'Sing the G major scale together on solfège. Teachers says: "Sol is now where we start — but Do is still the home."',
-              ],
-            },
-            formIA: 'He listens and echoes the G major scale.',
-            formIIA: 'He sings both G and F major scales with solfège. He begins to notice: "The steps and skips feel the same — but the actual notes are different."',
-            sacredMusic: {
-              searchTerm: 'Orthodox Vespers Lord I Call Byzantine',
-              label: 'Lord I Call — new key preview',
-              listenFor: 'Play 60 seconds. "This is in a different key than C major — but it still moves by steps and skips, just like everything we have practiced. Listen for the long diatonic phrases."',
-            },
-            journal: {
-              formIA: 'Draw three houses — one labeled "C major / Do," one labeled "G major / Do," one labeled "A minor / La." They look different from outside but feel the same inside.',
-              formIIA: 'Write: "G major uses the same solfège as C major — but the actual note called Do is now ___. F major: Do is ___."',
-            },
-            closingRitual: 'Find Do. "Unit 3 is complete. We know minor. Next: new keys."',
-            teacherNotes: 'The preview of new keys is brief and conceptual. Do not teach G or F major here — just plant the idea that Do can begin on different pitches. Fixed-do will handle the rest.',
-            shortenIt: 'Just the G major scale introduction. Skip F major preview.',
-            stretchIt: 'Form IIA: on the piano, can he find the G major scale (all white keys, starting G)? The F major scale requires one black key (Bb) — just show this without drilling it.',
-            watchFor: 'Confusion between fixed-do and movable-do. In our system, Do is always C. When we say "G major / Do is G" we are speaking loosely about where the pattern begins — Do is still C. Clarify this carefully: "In our system, Do is always C. But in G major, the scale starts on G — which we call Sol."',
-          },
+// UNIT 3 — Minor: The Other Side of the Door
+// Weeks 13–18 | 12 sessions | Ladukhin Ex. 19–28 | A natural minor | La as tonal center
+// Splice this array into the UNITS array in schola-cantorum.js as the third unit object.
+
+{
+  id: "unit3",
+  title: "Unit 3: Minor — The Other Side of the Door",
+  weeks: "13–18",
+  ladukhin: "Exercises 19–28",
+  overview: "A natural minor scale. La as tonal center. Major/minor contrast. Beat-keeping introduced. Two-part drone. Mid-year assessment.",
+  lessons: [
+
+    // ─────────────────────────────────────────
+    // WEEK 13
+    // ─────────────────────────────────────────
+
+    {
+      id: "13A",
+      week: 13,
+      session: "A",
+      unit: "unit3",
+      title: "The Other Side of the Door",
+      duration: "25 min",
+      ladukhin: "Exercise 19",
+      materials: [
+        "Ladukhin Elementary Course, pp. 14–15 (Ex. 19)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      story: "Before the drill, say: \"For twelve weeks we have lived in Do's house. Do is bright, settled, confident — like a sunny room. Today I am going to take you through a different door. This is the same house, but a different room. It is called minor. Listen first.\" Play A natural minor scale on piano slowly, all the way up and back down. Let the sound sit for a moment. Ask: \"How does that feel compared to what we usually sing?\" Accept any honest answer. Common responses: sad, dark, mysterious, like night, like the church on a fasting day. Say: \"All of those are right. Minor isn't worse than major — it's different. The Church sings in minor when she wants to say something deep, something serious, something that can't be said in a bright room. You will learn to feel the difference perfectly. That is what this unit is for.\"",
+
+      drill: {
+        title: "A Natural Minor Scale + Ladukhin Ex. 19",
+        steps: [
+          "Play A on the piano. Say: \"This is La. In minor, La is home — the same way Do is home in major. Sing it with me.\" Everyone sings La together on a comfortable breath.",
+          "Say: \"The minor scale has the same seven steps as major, but in a different order, starting from La. Its name in solfège is: La-Ti-Do-Re-Mi-Fa-Sol-La. Say it with me.\" Everyone speaks the syllables together (not sung yet). Repeat twice.",
+          "Sing the ascending A minor scale slowly on a quarter-note beat: La-Ti-Do-Re-Mi-Fa-Sol-La. Children echo. Repeat 3 times.",
+          "Sing the descending scale: La-Sol-Fa-Mi-Re-Do-Ti-La. Children echo. Repeat 3 times.",
+          "Ask: \"Where does Ti fall in this scale?\" (Second step up from La.) \"And where does Do fall?\" (Third step.) \"Do is still in the scale — but now it isn't home. La is home.\" Let this sink in without over-explaining.",
+          "Open to Ladukhin Ex. 19. Teacher sings it once through at a moderate pace. Then everyone sings together. Repeat 2–3 times.",
+          "Form IIA: Follow the notation on the page as you sing. Before beginning, identify where La appears — it will be on the second ledger space below the staff, or the teacher can point it out. Form IA: Follow the teacher's voice and echo. Do not require page-following yet.",
         ],
       },
 
+      formIA: "Echo the scale and Ex. 19 entirely by ear. Do not require the page. If Form IA wants to look at the page, allow it — but the expectation is accurate echoing, not reading. Watch for La being sung flat; it often drops slightly. Simply sing it yourself clearly and continue.",
+      formIIA: "Follow notation throughout. Before singing Ex. 19, point to the first note and identify it by solfège name. Identify the key: no sharps, no flats — but La, not Do, is home now. This is A natural minor. Form IIA should be able to name the difference between the major scale and this scale by the end of the session.",
+
+      sacredMusic: {
+        searchTerm: "Orthodox Holy Saturday Lamentations Byzantine",
+        label: "Holy Saturday Lamentations",
+        listenFor: "Play approximately 90 seconds. Say: \"This music is sung on the night before Pascha, at the tomb of Christ. It is one of the most beautiful things the Church sings all year. Listen for the feeling. Is it major or minor?\" (Minor.) \"Does it feel sad, or does it feel like something else?\" Accept all responses. The goal is not the right word — it is the habit of noticing that music carries meaning.",
+      },
+
+      journal: {
+        formIA: "Write today's date. Write: 'La = home in minor.' Draw two doors — one labeled Major (bright) and one labeled Minor (dark). Decorate them however feels right.",
+        formIIA: "Write today's date. Write: 'A natural minor scale: La-Ti-Do-Re-Mi-Fa-Sol-La.' Copy the scale on the staff, one note per space or line, ascending. Label each note with its solfège syllable underneath.",
+      },
+
+      closingRitual: "Play A on the piano. Everyone sings La together. Say: \"La is home now. Same as Do — just a different room.\" Then play C and sing Do. \"Both are home. Different rooms, same house.\"",
+
+      teacherNotes: "The major/minor distinction is one of the most durable musical intuitions a child can develop. Do not rush to name the theory — the physical sensation of the scale change is what matters this week. Form IA will feel it before he can name it. Form IIA may want to know why it sounds different; the short answer is: 'The distances between the steps are in a different order.' Do not go further than that this week.",
+      shortenIt: "Skip the journal entirely. Do opening, scale work, Ex. 19, and listening only.",
+      stretchIt: "After Ex. 19, sing the C major scale and then the A minor scale back to back. Ask Form IIA: 'What note is different between these two scales?' (They share all the same pitches — the difference is which note is home.) This is an advanced observation; offer it only if Form IIA is clearly comfortable.",
+      watchFor: "Both children singing La flat — it drifts down easily when the scale feels unfamiliar. Sing it clearly yourself each time. Form IA rushing through the descending scale and losing La at the bottom. Form IIA over-thinking the notation and under-singing.",
+    },
+
+    {
+      id: "13B",
+      week: 13,
+      session: "B",
+      unit: "unit3",
+      title: "Major or Minor? — Learning to Hear the Room",
+      duration: "20–25 min",
+      ladukhin: "Exercise 19 review",
+      materials: [
+        "Ladukhin Elementary Course, p. 14 (Ex. 19)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Major/Minor Echo Game + Ex. 19 Review",
+        steps: [
+          "Find La together on the piano. Everyone sings La. Then find Do. Everyone sings Do. Do this twice — La, Do, La, Do — so both tonal centers are fresh in the ear.",
+          "Review Ex. 19 together. Sing once straight through. Then ask Form IIA to sing it alone while Form IA listens. Then Form IA echoes it phrase by phrase with the teacher.",
+          "Begin the Major/Minor Echo Game. Say: \"I am going to sing a short phrase — just four or five notes. You tell me: does it feel like Do's room (major) or La's room (minor)? No tricks. Just listen.\" Sing clearly, in a comfortable range.",
+          "Phrase 1: Sing Do-Re-Mi-Sol-Mi (major, bright). Children call out: major.",
+          "Phrase 2: Sing La-Ti-Do-Mi-Do (minor, darker). Children call out: minor.",
+          "Phrase 3: Sing Do-Mi-Sol-Mi-Do (major, chord-like). Major.",
+          "Phrase 4: Sing La-Do-Mi-Do-La (minor, settling on La). Minor.",
+          "Phrase 5: Sing Sol-Mi-Re-Do (major cadence, familiar). Major.",
+          "Phrase 6: Sing Mi-Re-Do-Ti-La (descending, settling on La). Minor.",
+          "After each round, confirm the answer calmly. If a child misidentifies, simply say: \"Let me sing it again — listen for where it settles at the end. Does it rest on Do or on La?\" Re-sing and move on. Do not linger on errors.",
+          "Final step: play La on the piano and ask both children to sing Ex. 19 from memory (without the page). This is the first memory test of a minor exercise.",
+        ],
+      },
+
+      formIA: "In the major/minor game, if Form IA is uncertain, give him a physical cue: touch your chest on 'major' (warm, open) and cross your arms slightly on 'minor' (inward, contemplative). Let him point instead of speaking if he prefers. The physical association helps.",
+      formIIA: "After the major/minor game, ask Form IIA: 'Could you tell the difference before the phrase ended, or only when it settled on the last note?' This builds metacognitive awareness of how the ear works. No wrong answer — it is a genuine question.",
+
+      sacredMusic: {
+        searchTerm: "Orthodox Holy Saturday Lamentations Byzantine",
+        label: "Holy Saturday Lamentations — return",
+        listenFor: "Play 60–90 seconds. Ask: \"Now that you have sung minor yourself — does this feel major or minor to you?\" (Minor.) \"Do you hear where it settles? What note feels like home?\" Do not require the correct answer — just the listening habit.",
+      },
+
+      journal: {
+        formIA: "Write or dictate one sentence: 'Minor sounds like ___.' (Child fills in the blank with his own word.) Then draw something that feels minor to him — a candle at night, a rainy window, whatever arises.",
+        formIIA: "Write: 'Major sounds like ___, minor sounds like ___.' Then write one sentence about the Lamentations: 'This music is sung on ___ because ___.' (Children fill in what they remember from the story in Session A.)",
+      },
+
+      closingRitual: "Play A on the piano. Everyone sings La. Play C. Everyone sings Do. Say: \"Two homes. We know them both now.\"",
+
+      teacherNotes: "The major/minor echo game is one of the most formative exercises in the course. Run it every Session B for the next two weeks — vary the phrases but keep the structure. Children who can reliably distinguish major from minor by ear at this stage have a musical intuition that will serve them for life. Do not hurry to notation; ear-first is correct here.",
+      shortenIt: "Skip the major/minor game. Do Ex. 19 review and journal only.",
+      stretchIt: "Sing a phrase and ask Form IIA to echo it back in the opposite mode. For example: teacher sings Do-Re-Mi-Re-Do (major), Form IIA echoes La-Ti-Do-Ti-La (minor — same shape, different home). This is challenging and delightful. Offer it only if Form IIA is bored, not if he is still working on the basic distinction.",
+      watchFor: "Children guessing on the major/minor game rather than listening. The tell is a quick answer with no pause. Slow the pace: 'Don't answer yet — let the last note ring. Now: which room?' Form IA losing La when singing Ex. 19 from memory (it will likely drift to Do — they are close neighbors).",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 14
+    // ─────────────────────────────────────────
+
+    {
+      id: "14A",
+      week: 14,
+      session: "A",
+      unit: "unit3",
+      title: "La as Home — Exercises 20–21",
+      duration: "25 min",
+      ladukhin: "Exercises 20–21",
+      materials: [
+        "Ladukhin Elementary Course, pp. 14–16 (Ex. 20–21)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Minor Scale Fluency + Ladukhin Ex. 20–21",
+        steps: [
+          "Find La on the piano. Everyone sings La. Say: \"Before we open the book, let's sing the minor scale from memory.\" Sing La-Ti-Do-Re-Mi-Fa-Sol-La together. Ascending and descending. No page. Repeat until easy.",
+          "Say: \"Exercises 20 and 21 live in La's room. Before we sing them, let's clap the rhythms first.\" Open to Ex. 20. Teacher claps the rhythm (using ta for quarter notes, ti-ti for eighth-note pairs, ta-a for half notes). Children echo clap. Repeat once.",
+          "Now sing Ex. 20 together on solfège. Teacher leads at a moderate pace. Form IIA follows notation; Form IA echoes by ear. Repeat 2–3 times.",
+          "Ask: \"Where does this exercise settle at the end?\" (On La.) \"Good. La is home — and the exercise knows it.\"",
+          "Move to Ex. 21. Clap the rhythm first (same method). Then sing together. Ex. 21 should be slightly more challenging rhythmically. If either child struggles, clap and sing together slowly once, then at normal pace.",
+          "Optional drill: sing Ex. 20 again, but this time both children keep the beat with their right fist — down on beat 1, up on beat 2 for 2/4; down-left-right-up for 4/4. Introduce this as a preview of what comes formally in Week 16.",
+        ],
+      },
+
+      formIA: "Form IA claps and echoes all exercises by ear. Do not require page-following. If Form IA can echo Ex. 20 accurately after two repetitions, that is full success for this session. The test is: can he sing it back without the teacher's voice? Try once at the end of the drill.",
+      formIIA: "Form IIA follows notation for both exercises and should be able to identify the time signature before singing. Before Ex. 21, ask: 'What is the time signature? How many beats in a measure?' Form IIA should also be able to name the tonal center (La) and identify the mode (minor) without prompting.",
+
+      sacredMusic: {
+        searchTerm: "Orthodox Holy Saturday Lamentations Byzantine",
+        label: "Holy Saturday Lamentations — third listening",
+        listenFor: "Play 90 seconds. This is the third time the children have heard this piece. Ask: \"Do you recognize it now? What do you notice that you didn't notice the first time?\" Say: \"The Church sings this music while walking around the tomb of Christ, carrying flowers. The whole congregation sings together. This is why we are learning to sing — so that when that moment comes at Holy Saturday, your voice is ready.\"",
+      },
+
+      journal: {
+        formIA: "Copy Ex. 20, measure 1, with the teacher writing the staff and Form IA copying the noteheads in. Or: write out the solfège syllables of Ex. 20 from memory (La Ti Do Re... etc.) as many as he can recall.",
+        formIIA: "Copy Ex. 20, measures 1–2, from the Ladukhin page. Write the solfège syllable name under each notehead. Circle every La — these are the home-note arrivals.",
+      },
+
+      closingRitual: "Play La on the piano. Everyone sings La. Hold it for four beats. Say: \"That is the sound of La's room. We're learning to live here.\"",
+
+      teacherNotes: "By this session, both children should be able to sing the A minor scale ascending and descending from memory without the piano. If either child cannot, run the scale at the start of every remaining Unit 3 session until it is effortless. This is not a speed test — it is a foundation.",
+      shortenIt: "Do only Ex. 20. Skip Ex. 21 and the journal.",
+      stretchIt: "After Ex. 21, ask Form IIA to sing Ex. 20 starting on the final note and going backward (Sol-Fa-Mi-Re-Do-Ti-La reading right to left). This tests whether the solfège syllables are truly internalized or just memorized in sequence.",
+      watchFor: "Form IA arriving on Do instead of La at the end of phrases — this is the most common error and shows that Do is still the dominant tonal center in the ear. Simply sing La clearly and move on. Over weeks, La will settle. Form IIA rushing Ex. 21 rhythmically — clap the rhythm again before re-singing.",
+    },
+
+    {
+      id: "14B",
+      week: 14,
+      session: "B",
+      unit: "unit3",
+      title: "The Minor Scale Game",
+      duration: "20–25 min",
+      ladukhin: "Exercises 19–21 review",
+      materials: [
+        "Ladukhin Elementary Course, pp. 14–16",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Minor Scale Completion Game + Ex. 19–21 Review",
+        steps: [
+          "Find La together. Sing La together.",
+          "Minor Scale Completion Game: Teacher sings the ascending scale but stops partway. Children complete it. Teacher: La-Ti-Do-Re— (stops). Children continue: Mi-Fa-Sol-La. Repeat with different stopping points: La-Ti— ; La-Ti-Do-Re-Mi-Fa— ; etc. Then do the same descending. This game builds the scale as an autonomous sequence in the ear.",
+          "After 6–8 rounds of the game, say: \"Now let's see if you can complete the descending scale when I start in the middle.\" Teacher: Sol-Fa-Mi— (stops). Children continue: Re-Do-Ti-La.",
+          "Sing Ex. 19, 20, and 21 straight through — one after another with no pause. Teacher leads at a consistent pace. This is a review run, not a teaching moment. Correct nothing; simply sing.",
+          "At the end of the run-through, ask each child individually: \"Which exercise do you know best?\" Have each child sing that exercise alone. Affirm the effort, name what was accurate.",
+        ],
+      },
+
+      formIA: "In the scale completion game, Form IA may need more starting material before he can continue. Start with stopping only one note from the end (La-Ti-Do-Re-Mi-Fa-Sol— → La), then two notes, working backward as confidence grows. The goal is the ear tracking the scale as a whole arc, not drilling syllables.",
+      formIIA: "After the review run-through, ask Form IIA to sight-read Ex. 21 again, but this time conducting his own beat with his hand as he sings. Right hand: down for beat 1, up for beat 2 (for 2/4). This adds a coordination layer and deepens rhythmic ownership.",
+
+      sacredMusic: {
+        searchTerm: "Orthodox Holy Saturday Lamentations Byzantine",
+        label: "Holy Saturday Lamentations — final hearing this unit",
+        listenFor: "This is the last session with this recording for Unit 3. Ask: \"Can you now hum any part of this from memory?\" Let children try. Even one phrase hummed correctly is a significant achievement at this stage. Say: \"You have heard this four times. Your ears have memorized more than you think. That is how the Church teaches music — by hearing the same holy things again and again until they become part of you.\"",
+      },
+
+      journal: {
+        formIA: "Free draw: draw something that reminds you of the minor scale. Label it 'Minor — La is home.'",
+        formIIA: "Write: 'Why does the Church sing in minor on Holy Saturday?' (One or two sentences in their own words, based on what was discussed this week.) Then write the A minor scale syllables from memory, ascending and descending.",
+      },
+
+      closingRitual: "Play La on the piano. Children sing La. Then ask: \"Without the piano — can you find La in your voice?\" Let them try. Play La to confirm. Say: \"Your ear is beginning to know where home is.\"",
+
+      teacherNotes: "The scale completion game is more valuable than it looks. It forces the child's ear to hold the scale as a continuous shape rather than a memorized sequence. By Week 15, both children should be able to complete the scale from any stopping point without hesitation. If one child cannot, add two more rounds of the game to the start of Week 15 Session A.",
+      shortenIt: "Skip the scale completion game. Do only the review run-through and the journal.",
+      stretchIt: "Run the scale completion game in reverse: teacher sings random interior notes of the scale (e.g., Mi) and asks: 'Which step is this? Count up from La.' Form IIA only.",
+      watchFor: "Children singing the scale completion as a rote recitation rather than actually tracking the pitch. Watch their faces — are they listening or just reciting? If reciting, slow down and play each note on the piano as they sing.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 15
+    // ─────────────────────────────────────────
+
+    {
+      id: "15A",
+      week: 15,
+      session: "A",
+      unit: "unit3",
+      title: "Major and Minor Side by Side — Exercises 22–24",
+      duration: "25 min",
+      ladukhin: "Exercises 22–24",
+      materials: [
+        "Ladukhin Elementary Course, pp. 16–18 (Ex. 22–24)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Mode Identification + Ladukhin Ex. 22–24",
+        steps: [
+          "Warm up with both scales back to back: sing Do-Re-Mi-Fa-Sol-La-Ti-Do together (major), then La-Ti-Do-Re-Mi-Fa-Sol-La (minor). Do each once. Say: \"Two scales, two homes. Major: bright. Minor: deep. Both are good. Both are real.\"",
+          "Say: \"Exercises 22–24 mix major and minor in the same session. Before we sing each one, I want you to tell me: major or minor? Look at the exercise. Where does it seem to settle?\" For Form IIA, this is a notation task: look for the final note. For Form IA, the teacher sings the first two bars and the child calls out the mode.",
+          "Open to Ex. 22. Teacher sings it once. Children call out: major or minor? Then sing together 2–3 times.",
+          "Ex. 23. Same process — identify first, then sing.",
+          "Ex. 24. Same process. Ex. 24 is likely longer and more rhythmically varied. If it is, clap the rhythm before singing.",
+          "After all three exercises: \"Let's sing 22, 23, and 24 in order — one straight run-through. No stopping.\" This consolidates the work and builds endurance.",
+        ],
+      },
+
+      formIA: "Form IA identifies the mode by ear (teacher sings two bars). He does not need to read the notation to participate in this exercise. When singing, Form IA echoes by ear — if he loses his place, the teacher re-sings the phrase and he echoes it. No correction mid-exercise.",
+      formIIA: "Form IIA identifies the mode by reading the notation: look at the final note of the exercise. Does it end on C (Do — major) or A (La — minor)? Before singing each exercise, Form IIA names the mode aloud. After singing, confirm: 'Did it feel the way you expected?' This builds the connection between reading and hearing.",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Agni Parthene — first hearing",
+        listenFor: "Play approximately 90 seconds. Say: \"This is one of the most beloved hymns in the Orthodox Church. It is a love song to the Mother of God. Listen: is it major or minor?\" (Major.) \"After all that minor music — does the major feel different now that you have lived in minor for two weeks?\" Let the children respond. This contrast is intentional and formative — the ear that knows minor hears major more vividly.",
+      },
+
+      journal: {
+        formIA: "Copy the solfège syllables of Ex. 22 from memory — as many as he can recall. Write them in a line: La Ti Do Re... etc. It is fine if the sequence is incomplete.",
+        formIIA: "Write the solfège syllables for the first four measures of Ex. 22 (work from the page). Then write: 'Ex. 22 is ___ (major/minor). I know because the last note is ___ (Do/La).'",
+      },
+
+      closingRitual: "Play A-C (La-Do) together on the piano — a minor third. Let it ring. Say: \"That gap between La and Do — that small distance — is part of what makes minor sound the way it does. Your ear knows it now.\" Then find Do alone. \"And here is home again.\"",
+
+      teacherNotes: "Agni Parthene is introduced here as a major-mode contrast after two weeks of minor immersion. The sequence is deliberate: children who have spent time in minor hear major differently. Do not introduce Agni Parthene as a 'better' sound — just a different one. Both are gifts of the Church.",
+      shortenIt: "Do only Ex. 22–23. Skip Ex. 24 and the journal.",
+      stretchIt: "After identifying the mode of each exercise, ask Form IIA: 'Can you sing Ex. 22 starting on La instead of wherever it starts? What mode would it be then?' This begins transposition thinking without naming it formally.",
+      watchFor: "Both children rushing to name the mode before listening carefully — the quick guess. Slow it down: 'Don't answer yet. Hear it again.' Form IIA may conflate key signature with mode (no sharps/flats = C major, but A natural minor also has no sharps/flats). If this comes up, address it simply: 'Both A minor and C major have no sharps or flats. The difference is where the music settles, not what it avoids.'",
+    },
+
+    {
+      id: "15B",
+      week: 15,
+      session: "B",
+      unit: "unit3",
+      title: "Dictation Lite — Hearing the Notes and Writing Them",
+      duration: "20–25 min",
+      ladukhin: "Exercises 22–24 review",
+      materials: [
+        "Ladukhin Elementary Course, pp. 16–18",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Solfège Dictation Game + Ex. 22–24 Review",
+        steps: [
+          "Begin with both scales as in Session A — major then minor, sung together once each.",
+          "Dictation Lite: Say: \"I am going to sing a short pattern — four notes. Echo it back to me on solfège. Then write the syllable letters in your journal.\" Use these abbreviations: D (Do), R (Re), M (Mi), F (Fa), S (Sol), L (La), T (Ti).",
+          "Pattern 1 (major): D-R-M-R. Children echo, then write: D R M R.",
+          "Pattern 2 (minor): L-T-D-T. Echo, then write: L T D T.",
+          "Pattern 3 (major): M-F-S-M. Echo, write: M F S M.",
+          "Pattern 4 (minor): D-L-S-L. Echo, write: D L S L. (Note: this starts on Do and descends to La — a minor arrival. Ask: 'Did that feel like it arrived at home?' Yes — La.)",
+          "Pattern 5 (teacher's choice): compose a 5-note pattern that ends on La. Children echo, write, then identify: major or minor?",
+          "After dictation, sing Ex. 22 and Ex. 23 as a review run-through. No teaching — just singing. Use this to assess how much has been retained since Session A.",
+        ],
+      },
+
+      formIA: "For the dictation, Form IA writes (or dictates) the syllable letters after echoing. If writing is slow, the teacher can write the letters in large print and Form IA circles the correct ones from a list. The ear work is primary; the writing is secondary. Four patterns is enough for Form IA. Stop before fatigue.",
+      formIIA: "Form IIA does all five patterns. After writing the letters, Form IIA reads them back aloud on solfège (not singing — just reading the syllables). This is the first step toward reading solfège without singing, a skill needed for sight-reading. If the syllable letters are wrong, re-sing the pattern slowly and ask: 'Which note did I start on? D, R, M, F, S, L, or T?'",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Agni Parthene — second hearing",
+        listenFor: "Play 90 seconds. This time, ask: \"Can you follow the melody going up or going down? Raise your hand when it goes up, put it on your lap when it goes down.\" This is the same up/down tracking from Unit 1, now applied to a full sacred piece. Children may laugh at themselves — that is fine. The body-engagement deepens the listening.",
+      },
+
+      journal: {
+        formIA: "Write the solfège syllable letters from Dictation Patterns 1–2. Draw a small picture next to each: Pattern 1 (major) gets a sun; Pattern 2 (minor) gets a moon.",
+        formIIA: "Write all five dictation patterns. Mark each one M (major) or m (minor). Then write one sentence about Agni Parthene: 'This hymn feels ___ because ___.'",
+      },
+
+      closingRitual: "Play La on the piano. Everyone sings La. Then: \"Without the piano — let's all find La by ear.\" Pause. Children hum or sing La internally, then voice it. Play La to confirm. Say: \"Your ear is learning. Good.\"",
+
+      teacherNotes: "Dictation Lite is introduced here at the simplest possible level: echoing and then writing syllable letters. This is not standard music dictation — it is a pre-notation literacy step, connecting what the ear hears to a symbol on the page. Do not introduce staff notation in dictation until Unit 4. For now, the letters are enough.",
+      shortenIt: "Three dictation patterns only. Skip the review run-through.",
+      stretchIt: "After the dictation, ask Form IIA to sing one of the patterns starting on a different note — for example, Pattern 1 (D-R-M-R) starting on Sol instead of Do: Sol-La-Ti-La. Write the new syllable letters. Ask: 'Same shape, different home?'",
+      watchFor: "Children writing dictation letters before they have accurately echoed the pattern. Sequence matters: echo first, hold the pattern in the ear, then write. If a child rushes to write, say: 'Sing it back to me first. Then write.' Form IIA may write confidently and sing inaccurately — check by asking him to sing from what he wrote.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 16
+    // ─────────────────────────────────────────
+
+    {
+      id: "16A",
+      week: 16,
+      session: "A",
+      unit: "unit3",
+      title: "Keeping the Beat — Exercises 25–26",
+      duration: "25 min",
+      ladukhin: "Exercises 25–26",
+      materials: [
+        "Ladukhin Elementary Course, pp. 18–20 (Ex. 25–26)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Beat-Keeping Introduction + Ladukhin Ex. 25–26",
+        steps: [
+          "Warm up with the minor scale — ascending and descending — sung together once.",
+          "Say: \"Exercises 25 and 26 are longer and have more rhythmic variety. Before we sing, we are going to learn how to keep the beat with our hand. This is what a conductor does — but simpler.\" Demonstrate: right fist, move down on beat 1, up on beat 2 for 2/4. Say: 'Down, up. Down, up.' Practice together, speaking 'down, up' aloud in time.",
+          "Now practice with quarter notes and half notes on Do: tap down-up and sing: Do (down) Do (up) Do (down) — — (up, held). Children follow. This connects the beat gesture to the rhythm.",
+          "Open to Ex. 25. Teacher sings it once while keeping the beat gesture. Children watch. Then everyone sings and keeps beat together. If the beat-keeping causes vocal stumbling, drop the gesture and sing first — add the gesture after two runs.",
+          "Ex. 26. Same approach. Clap the rhythm alone before adding pitch. Then sing with beat gesture.",
+          "At the end: sing Ex. 25 and 26 together without the beat gesture, relying on the internalized pulse. Ask: 'Did you feel the beat inside even when your hand was still?' This is the goal — internal pulse, not external gesture.",
+        ],
+      },
+
+      formIA: "Form IA keeps the beat gesture throughout. If he loses the gesture while singing, gently tap his fist with yours to restore the down-up motion. Do not stop the exercise. The coordination of singing and conducting takes weeks — begin it now and do not expect mastery. For Ex. 26, allow Form IA to echo phrase by phrase if the full exercise is too long.",
+      formIIA: "Form IIA keeps the beat gesture and follows notation simultaneously. Before Ex. 25, identify the time signature and the time value of each note type present. After singing, ask: 'Were there any places where your beat and your singing did not agree? Where?' This self-assessment habit is more valuable than the teacher identifying the error.",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Agni Parthene — learning the opening phrase",
+        listenFor: "Play 90 seconds. Say: \"This week we are going to learn the opening phrase by ear. Listen to just the first line. I will sing it with you after.\" Play the first phrase 2–3 times. Then teacher sings it slowly on solfège (best attempt — it is in a Byzantine mode, so approximation in fixed-do is acceptable). Children echo. Repeat until they can sing the opening phrase confidently. This is their first phrase of a full sacred melody memorized in this course.",
+      },
+
+      journal: {
+        formIA: "Draw the beat gesture: an arrow going down, then up. Label: 'Beat 1 = down, Beat 2 = up.' Write: 'I keep the beat with my ___.' (Hand.)",
+        formIIA: "Write the time signature of Ex. 25 and Ex. 26. Then write the opening phrase of Agni Parthene in solfège syllables as best as you can recall from the listening. (Approximation is fine — this is ear work, not accuracy work.)",
+      },
+
+      closingRitual: "Play La. Everyone sings La. Tap the beat together: down-up, down-up, four times in silence (just tapping). Say: \"The beat is always there — even when we can't hear it. Good singers feel it inside.\"",
+
+      teacherNotes: "Beat-keeping with the hand is formally introduced here. Do not expect it to be clean this week. The goal is the concept: there is a steady pulse underneath all music, and good singers feel it internally. The gesture is training wheels; the internal pulse is the destination. Some children find conducting and singing simultaneously very difficult — this is normal and will improve with repetition.",
+      shortenIt: "Skip the beat gesture entirely. Sing Ex. 25 and do the Agni Parthene phrase-learning. Drop Ex. 26.",
+      stretchIt: "Ask Form IIA to conduct a 4/4 beat (down-left-right-up) while singing. This is significantly harder and should only be attempted if the 2/4 beat is effortless.",
+      watchFor: "Beat gesture becoming a distraction — children watching their hand instead of listening to their voice. If this happens, stop the gesture and sing purely. The gesture can return next session. Form IA stopping singing to concentrate on the gesture — singing comes first. Form IIA rushing the beat when the notes get faster.",
+    },
+
+    {
+      id: "16B",
+      week: 16,
+      session: "B",
+      unit: "unit3",
+      title: "Beat Game — One Sings, One Conducts",
+      duration: "20–25 min",
+      ladukhin: "Exercises 25–26 review",
+      materials: [
+        "Ladukhin Elementary Course, pp. 18–20",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Beat-Keeping Partner Game + Ex. 25–26 Review",
+        steps: [
+          "Find La. Sing La together. Minor scale, once ascending.",
+          "Beat Partner Game: Assign roles. Form IIA keeps the beat with his hand (down-up for 2/4). Form IA sings Ex. 25. Switch roles. Then both sing while both keep the beat.",
+          "Repeat with Ex. 26. Switch roles again.",
+          "Discussion: Ask Form IIA: 'When you were keeping the beat and Form IA was singing — did his singing stay with your beat? Where did it wander?'",
+          "Ask Form IA: 'When Form IIA was keeping the beat for you — did it help or distract you?'",
+          "This conversation is genuinely interesting to children at this age. Let it breathe for a minute. It builds awareness of ensemble — how singers have to listen to each other, not just to their own voice.",
+          "Final run: both children sing Ex. 25 and Ex. 26 together with no gesture — purely by ear and internal pulse. Teacher keeps the beat internally. How together are they?",
+        ],
+      },
+
+      formIA: "Form IA's primary job is to keep a steady beat while the other child sings. This role reversal is important: he is not performing but serving. If his beat wanders, tap gently on his hand to restore it without speaking. After switching roles, affirm: 'You kept a very steady beat. That helped Form IIA know where to go.'",
+      formIIA: "Form IIA's beat gesture should be clean and deliberate — a real conductor's motion, not a vague waving. When Form IIA is singing while Form IA conducts, notice whether the conducting actually influences the singing. This is a lesson in ensemble dependence. Say afterward: 'A choir follows the conductor. The conductor follows the music. Nobody is in charge — they are all listening to the same thing.'",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Agni Parthene — review and deepen",
+        listenFor: "Play 90 seconds. Ask: 'Can you sing the opening phrase with the recording now?' Let them try. Even partial matching is success. Then ask: 'What does this hymn make you think of? What image comes to mind?' This is verbal narration about music — a Charlotte Mason mode applied to listening.",
+      },
+
+      journal: {
+        formIA: "Write: 'This hymn is about ___.' (His own words describing what he heard — the text, the feeling, an image.) Draw one thing.",
+        formIIA: "Write: 'This hymn is about ___.' Then write: 'When I keep the beat, the singer ___. When I sing, the beat ___.' (Completing these sentences from his experience of the partner game.)",
+      },
+
+      closingRitual: "Play La. Everyone sings La. Then: teacher begins a 2/4 beat gesture and both children join — tapping in silence together for eight beats. Say: \"Same beat. Two people. One pulse. That is what a choir is.\"",
+
+      teacherNotes: "The partner beat game introduces ensemble consciousness for the first time. This is not just rhythmic training — it is a formative lesson about what it means to sing with others. The child who learns to keep a steady beat for another singer is learning something the Church needs: a voice that holds its place so others can find theirs.",
+      shortenIt: "Skip the partner game. Do Ex. 25–26 review straight through and then the journal.",
+      stretchIt: "Ask Form IIA to conduct Ex. 26 from memory while Form IA sight-echoes it. Form IIA must keep the beat without looking at the page. This requires internalizing both the rhythm and the notation simultaneously.",
+      watchFor: "The partner game becoming competitive — one child trying to make the other stumble. If this happens, pause and say: 'We are not testing each other. We are helping each other. A choir is not a competition.' Form IA getting frustrated with the beat role and abandoning it. Keep the roles short and rotate quickly.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 17
+    // ─────────────────────────────────────────
+
+    {
+      id: "17A",
+      week: 17,
+      session: "A",
+      unit: "unit3",
+      title: "Two Voices Begin — Exercises 27–28 and the Drone",
+      duration: "25 min",
+      ladukhin: "Exercises 27–28",
+      materials: [
+        "Ladukhin Elementary Course, pp. 20–21 (Ex. 27–28)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Two-Part Introduction (Drone) + Ladukhin Ex. 27–28",
+        steps: [
+          "Minor scale warm-up: both children sing La-Ti-Do-Re-Mi-Fa-Sol-La together. Then keep the beat while singing. One run, steady, no rushing.",
+          "Say: \"Exercises 27 and 28 are the hardest exercises in Unit 3. We are going to take them slowly. But first, I want to try something new — two voices at the same time.\" Explain what a drone is: 'A drone is a note that holds steady while another voice moves. You hear it in Byzantine chant all the time. The lowest voice holds one note — La — while the melody moves above it. Today we will try this.'",
+          "Drone exercise: Form IA sings La and holds it (sustained, comfortable, easy forward tone). Teacher sings the A minor scale up and back down above that drone. Can Form IA hold La while the melody moves? Try 2–3 times.",
+          "Switch: Form IIA holds the drone on La while teacher sings Ex. 19 above it. Form IIA must hold the note without being pulled off by the moving voice. This is harder than it sounds.",
+          "Now open to Ex. 27. Teacher sings it once. Then everyone sings together with beat gesture. Repeat 2 times.",
+          "Ex. 28. Clap the rhythm first. Then sing together. If either child struggles significantly, sing phrase by phrase: teacher sings a phrase, children echo.",
+          "Optional two-part: if the drone was easy, try this: teacher sings Ex. 27 while Form IIA holds La throughout. The two voices will occasionally make a consonant interval (a fifth, a third) — this is beautiful. Name it: 'Did you hear how those two notes fit together? That is harmony.'",
+        ],
+      },
+
+      formIA: "Form IA's primary job in the two-part work is to hold the drone on La without wavering. This is a real musical challenge — most children are pulled off the drone by the moving voice. Do not correct mid-drone. After the exercise, say: 'You held it. That is what the bottom voice of a choir does: it holds so the melody has something to stand on.' If Form IA cannot hold the drone, skip the two-part and focus on Ex. 27–28 solo.",
+      formIIA: "Form IIA attempts the drone and also leads the melody in the two-part exchange. After the session, ask: 'When you were holding La and I was singing the scale — could you hear your own note, or did you lose it?' This is a real ensemble skill question. Affirm the effort regardless of the outcome.",
+
+      sacredMusic: {
+        searchTerm: "Orthodox Vespers Lord I Call Byzantine minor",
+        label: "Lord I Call at Vespers — minor preview",
+        listenFor: "Play 90 seconds. Say: 'This is a piece from Vespers — the evening prayer service. Listen for the mode: major or minor?' (It has a minor-inflected, modal character.) 'Does it sound like our minor scale, or something a little different?' This prepares the ear for Unit 4's modal work without naming the theory yet.",
+      },
+
+      journal: {
+        formIA: "Draw two voices: one holding a flat line (the drone) and one moving up and down above it (the melody). Label them: 'Drone' and 'Melody.' Write: 'The drone holds ___. The melody ___.'",
+        formIIA: "Write: 'A drone is ___.' Then copy Ex. 27, measures 1–2, from the page. Identify the tonal center (La).",
+      },
+
+      closingRitual: "Play La on the piano. Everyone sings La — hold it for six beats together. Let it ring. Say: \"That held note is the foundation of harmony. You held it well.\"",
+
+      teacherNotes: "The drone introduction is the first genuine two-part work in the course. It is deliberately simple — one voice is stationary — but it requires real musical independence. A child who can hold a drone while another voice moves is ready for actual two-part solfège in Unit 4. Do not push to full two-part if the drone is not yet secure. The drone is the prerequisite.",
+      shortenIt: "Skip the drone entirely. Sing Ex. 27 and Ex. 28 only, with the beat gesture. Skip the journal.",
+      stretchIt: "If the drone on La is easy for both children, try a drone on Mi (the fifth of La — a perfect fifth interval). Form IA holds Mi while teacher sings Ex. 19. The resulting harmony is richer. Ask: 'Does that sound like the Byzantine recordings we have heard?'",
+      watchFor: "Form IA drifting off the drone pitch within the first four beats — this is very common. The moving voice pulls the ear. Solution: play La quietly on the piano as a sustained reference tone while Form IA holds it and teacher sings the melody. Over several sessions the piano reference can be removed. Form IIA becoming so focused on holding his part that his tone becomes pressed or tight. Tension in the voice is always the wrong solution. Drop the volume and ease the tone.",
+    },
+
+    {
+      id: "17B",
+      week: 17,
+      session: "B",
+      unit: "unit3",
+      title: "Drone Practice and Minor Survey",
+      duration: "20–25 min",
+      ladukhin: "Exercises 19–28 — selected review",
+      materials: [
+        "Ladukhin Elementary Course, pp. 14–21",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Drone Repeat + Full Minor Survey",
+        steps: [
+          "Find La. Sing La together. Say: \"Before we do anything else — the drone. Let's try it again.\" Form IA holds La (sustained) while teacher sings the A minor scale. Then Form IIA holds La while teacher sings Ex. 19 above it.",
+          "Drone variation: both children hold La together as a double drone while teacher sings Ex. 22 (which they know well). Two drone voices holding La simultaneously creates a fuller, rounder sound. After: 'Did you feel that? Two voices holding La together — that's the bottom of a choir.'",
+          "Minor Survey: sing exercises from across Unit 3 in sequence — Ex. 19, 22, 25, 27. Not all of them; a curated selection. Teacher cues each one by playing its starting note on the piano and saying the exercise number. Children sing from memory or notation.",
+          "Between exercises, brief questions: 'Was that one easy now?' 'Where did you feel uncertain?' This builds metacognitive habit — the child who knows what he knows and what he doesn't is ready to self-correct.",
+          "End with the A minor scale ascending and descending, sung slowly and beautifully, as if offering it. Say: 'This is a scale we know now. It lives in you.'",
+        ],
+      },
+
+      formIA: "Form IA's participation in the survey should be active — he is not just following along but making real musical decisions about when to sing confidently and when to listen and correct. If a survey exercise is too hard, skip it and note it for review in Week 18. Do not push through material that has not been absorbed.",
+      formIIA: "Form IIA should be able to sing any exercise from the Unit 3 set cold with notation — no preparation. In the survey, ask Form IIA once to sight-read an exercise he hasn't seen in a week: open to Ex. 23 without singing it first. Can he read it? Where does he stumble? What does he need to prepare? This is the kind of honest self-assessment that Unit 4 will require.",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Agni Parthene — synthesis",
+        listenFor: "This is the final hearing of Agni Parthene in Unit 3. Play the opening phrase twice. Say: 'Sing with it.' Let both children join the recording on the opening phrase they have learned by ear over the past weeks. Even a rough match is success. Then play 60 more seconds. Say: 'You sang with a Byzantine recording. That is what this course is building toward — your voice joining that sound.'",
+      },
+
+      journal: {
+        formIA: "Free journal: draw or write anything from Unit 3. What was the hardest thing? What was the most beautiful thing?",
+        formIIA: "Write a brief summary of Unit 3: 'In Unit 3 we learned ___.' (At least three things listed.) Then write: 'The thing I want to keep practicing is ___.'",
+      },
+
+      closingRitual: "Play La. Everyone sings La. Hold it together for eight beats, quietly, like a prayer. Let it fade. Say nothing for a moment. Then: 'See you at the review.'",
+
+      teacherNotes: "Session B of Week 17 is a consolidation session in preparation for the mid-year assessment in Week 18. Do not introduce any new material. The goal is for both children to enter the assessment with confidence. If the survey reveals significant gaps in any exercise, note which ones for the Week 18A review.",
+      shortenIt: "Skip the drone variation. Do the survey (Ex. 19, 22, 25) and the journal only.",
+      stretchIt: "Ask Form IIA to teach Form IA the A minor scale — to sing it, explain where La is, and demonstrate the drone. Teaching consolidates knowledge more deeply than reviewing it. Monitor for accuracy without interrupting.",
+      watchFor: "Fatigue during the survey — this is a longer drill than usual. Watch body language: drooping posture and flat tone mean the child is tired. Shorten the survey immediately and go to the listening or journal. A fatigued voice is a voice that will sing badly and form bad habits. End before the wall.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 18
+    // ─────────────────────────────────────────
+
+    {
+      id: "18A",
+      week: 18,
+      session: "A",
+      unit: "unit3",
+      title: "Unit 3 Review and Mid-Year Assessment",
+      duration: "25–30 min",
+      ladukhin: "Exercises 19–28 — assessment",
+      materials: [
+        "Ladukhin Elementary Course, pp. 14–21",
+        "Piano",
+        "Assessment log (paper and pencil for teacher)",
+        "Music journals",
+      ],
+
+      story: "Before the assessment, say: \"Today is a review and assessment. I want to hear each of you sing so I know exactly where you are — not to grade you, but to know what we should work on next. There are no wrong notes on assessment day. There is only honest singing. The most important thing you can do is sing what you actually know, not what you think you should know. If you are not sure of a note, sing it anyway. That is truth, and truth is what we are practicing.\"",
+
+      drill: {
+        title: "Mid-Year Assessment Protocol",
+        steps: [
+          "WARM-UP (5 min): Sing the A minor scale together, ascending and descending. Sing Do major scale. Major/minor echo game: teacher sings two phrases, children identify. One round.",
+          "FORMAL ASSESSMENT — Form IIA (10 min): (1) Sight-sing Ex. 22 cold from notation — no preparation. Record pitch accuracy score (1–4). (2) Sight-sing Ex. 27 with one preparation run. Record pitch and rhythm. (3) Teacher plays a 4-note pattern (include at least one minor pattern). Form IIA writes the solfège letters. Record reading/writing accuracy. (4) Identify: teacher sings a phrase — minor or major? Three examples. Record recognition score.",
+          "FORMAL ASSESSMENT — Form IA (10 min): (1) Echo Ex. 19 phrase by phrase — teacher sings, child echoes. Record pitch accuracy. (2) Echo Ex. 22 opening phrase. Record. (3) Teacher plays C minor scale (not yet taught) — can Form IA identify: major or minor by sound alone? (4) Find La in his voice from a single C played on piano: can he find La without being given the note? (Challenging — if not achieved, it is simply noted, not penalized.)",
+          "Record scores in the assessment log. Use the 4-point rubric from the Parent Guide: pitch accuracy, rhythm accuracy, reading, sacred music recognition.",
+          "After both assessments, say: 'Thank you. That was honest singing. I heard some beautiful things and I know what we should work on next. We are ready for Unit 4.'",
+        ],
+      },
+
+      formIA: "Form IA's assessment is entirely oral and by ear. No notation reading required. The goal is to establish a baseline on pitch accuracy, melodic memory, and ear-based mode recognition. If Form IA scores 2 or below on pitch accuracy, plan to spend the first two weeks of Unit 4 with additional echo reinforcement before introducing new material.",
+      formIIA: "Form IIA's assessment includes notation reading. A score of 3 or above on both sight-singing exercises indicates readiness for Unit 4's new keys and rhythms. A score of 2 on sight-singing means the unit's material was learned by ear but not yet transferred to the page — plan additional notation work in Unit 4.",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Agni Parthene — assessment singing",
+        listenFor: "At the end of the assessment, play the opening phrase of Agni Parthene. Ask both children to sing it — not together, one at a time. This is the sacred music assessment: can they sing the melody they have heard across six sessions by ear? Record this informally. It is the most meaningful indicator of whether the sacred music listening has penetrated.",
+      },
+
+      journal: {
+        formIA: "Write or dictate: 'Today I sang ___.' (One thing he feels good about.) 'Next I want to learn ___.'",
+        formIIA: "Write: 'My strongest skill right now is ___. The skill I want to improve in Unit 4 is ___.' This self-assessment is kept in the journal and revisited at the end of Unit 4.",
+      },
+
+      closingRitual: "Play both La and Do on the piano together (a minor third). Let it ring. Say: \"You have learned two scales, two homes, two voices beginning to work together. Unit 4 is new landscapes. We will come back to this room — but now we know it.\"",
+
+      teacherNotes: "Record assessment scores in the teacher's log before ending the session — memory fades. The mid-year assessment is not high-stakes, but it is important data. If both children score 3–4 on pitch accuracy and 2–3 on reading, proceed with Unit 4 as written. If either child scores 1–2 on pitch accuracy, plan the first two Unit 4 sessions as review/reinforcement before introducing G major. The sacred music portion of the assessment — singing Agni Parthene from memory — often surprises teachers. Children absorb far more from listening than formal drill suggests.",
+      shortenIt: "Assess pitch accuracy and sacred music recognition only. Skip notation reading and written dictation.",
+      stretchIt: "For Form IIA: after the standard assessment, ask him to sight-sing a four-measure exercise from the Danhauser supplement (a book not yet used). This cold sight-reading from an unfamiliar source gives the truest measure of notation transfer.",
+      watchFor: "Assessment anxiety — some children freeze when told they are being assessed. If you see this, immediately reframe: 'This is not a test. I am listening to help you, not judge you.' Keep your own face neutral and encouraging throughout. Any honest singing is the correct response.",
+    },
+
+    {
+      id: "18B",
+      week: 18,
+      session: "B",
+      unit: "unit3",
+      title: "Celebration — Sing Everything You Love",
+      duration: "20–25 min",
+      ladukhin: "No new exercises — celebration and free singing",
+      materials: [
+        "Ladukhin Elementary Course (any pages the children want)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      story: "Begin: \"Today there are no drills and no requirements. We have spent six weeks in the minor room. Today we celebrate what you know and we sing for joy — not because it is assigned, but because singing is good.\" Let the children choose. Ask: \"What do you want to sing? Any exercise, any scale, anything we have learned since September.\" Follow their lead. If they choose hard things, sing them. If they choose easy things, sing them beautifully.",
+
+      drill: {
+        title: "Free Singing — Children Choose",
+        steps: [
+          "Ask each child: 'What do you want to sing?' Write down their requests.",
+          "Sing everything they request, in order. Teacher leads. No correction, no re-singing for improvement. Just singing.",
+          "If one child chooses and the other is less interested, draw the second child in naturally: 'Can you add the drone on La while Form IIA sings this one?'",
+          "End the free singing section with Agni Parthene — teacher sings the opening phrase, children join. This is the piece they have come to know over six sessions. Let them own it.",
+        ],
+      },
+
+      formIA: "Form IA may choose exercises that seem easy — Ex. 1 or Ex. 2 from Unit 1. This is perfectly correct. Celebration should feel like abundance, not challenge. Let him sing what he loves. Affirm the choice: 'That was one of our very first exercises. You sing it beautifully now.'",
+      formIIA: "Form IIA may choose harder things — he may even attempt something not yet formally taught. Allow it. If he struggles, sing alongside him. This is celebration; there is no failure today.",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Agni Parthene — full celebration hearing",
+        listenFor: "Play 2–3 minutes — more than usual. Say: \"Just listen. You have earned this.\" Let the music be a gift at the end of six weeks of work. Afterward, ask one question: \"Is there anything in this music you want to be able to sing perfectly someday?\" Let them answer. This is the seed of long-term aspiration.",
+      },
+
+      journal: {
+        formIA: "Free journal: draw or write anything. 'My favorite thing I learned in Unit 3.' No requirements on format or length.",
+        formIIA: "Free journal: write a paragraph titled 'What I know now that I didn't know six weeks ago.' This is the child's own narration of his learning — the most Charlotte Mason form of assessment.",
+      },
+
+      closingRitual: "Find La together. Find Do together. Then play both at once on the piano — A and C, held together. Say: \"Major and minor live in the same house. You know both rooms now. See you in Unit 4.\"",
+
+      teacherNotes: "The celebration lesson is not optional. Charlotte Mason understood that delight sustains the habit. A child who ends a unit with joy and choice will return to Unit 4 with greater willingness than one who ends with a test and a correction. Keep this session truly free — resist the urge to sneak in one more drill. The six weeks of work are complete. Celebrate them.",
+      shortenIt: "This session cannot be shortened. If time is truly limited, do only the free singing and the closing ritual. Skip the journal.",
+      stretchIt: "There is no stretch for a celebration lesson. If Form IIA specifically asks to be challenged, say: 'We start Unit 4 next week — it will challenge you. Today is for joy.'",
+      watchFor: "Using this session to squeeze in remediation for assessment gaps. Do not. Remediation belongs to the first sessions of Unit 4. This session is the close of Unit 3, and it must close with joy or the habit of showing up will erode.",
+    },
+
+  ], // end Unit 3 lessons
+}, // end Unit 3 object
       // ───────────────────────────────────────────────────────────────────────
       // UNIT 4: New Keys, New Landscapes (Weeks 19–27)
       // ───────────────────────────────────────────────────────────────────────
