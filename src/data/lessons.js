@@ -1292,7 +1292,7 @@ export const UNITS = [
       },
       {
         id: "5.8", week: 23, type: "READ & NARRATE",
-        resources: [
+        resources: [],
         title: "The Fossil Record",
         tagline: null,
         teacherPrep: "Read ahead in Lyell (Manual of Elementary Geology, PG #34350) — select passages on fossils and strata that illustrate his method and assumptions without requiring the full philosophical discussion (that comes in Week 24). Also read Darwin's Voyage of the Beagle chapter on Patagonia fossil mammals.",
