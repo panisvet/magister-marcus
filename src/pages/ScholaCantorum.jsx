@@ -11,7 +11,7 @@ const CSS = `
 .sc-root{
   display:flex;flex-direction:column;height:100vh;
   background:#09080a;color:#e8dfc8;
-  font-family:'Crimson Pro',Georgia,serif;overflow:hidden;
+  font-family:'Crimson Pro',Georgia,serif;font-size:16px;overflow:hidden;
 }
 .sc-body{display:flex;flex:1;overflow:hidden;margin-top:40px;}
 .sc-sidebar{
@@ -109,7 +109,7 @@ const CSS = `
 }
 .sc-oe-step{
   padding:6px 10px 6px 12px;border-left:2px solid #3a1a60;
-  margin-bottom:5px;font-size:12px;color:#b090c8;line-height:1.7;
+  margin-bottom:5px;font-size:15px;color:#b090c8;line-height:1.7;
 }
 .sc-oe-step:last-child{margin-bottom:0;}
 .sc-oe-syllables{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px;}
@@ -147,7 +147,7 @@ const CSS = `
   padding:5px 12px;font-family:'Cinzel',serif;font-size:8px;
   letter-spacing:.15em;text-transform:uppercase;color:#e8dfc8;
 }
-.sc-cbody{padding:10px 13px;font-size:13px;line-height:1.75;color:#c0a8d0;}
+.sc-cbody{padding:10px 13px;font-size:16px;line-height:1.8;color:#c0a8d0;}
 .sc-cbody p{white-space:pre-line;}
 .sc-story-card{background:#1a0e0a;border:1px solid #4a1f10;border-radius:3px;margin-bottom:10px;overflow:hidden;}
 .sc-story-hdr{
@@ -155,11 +155,11 @@ const CSS = `
   letter-spacing:.15em;text-transform:uppercase;
   color:#e8dfc8;background:#2a1208;border-bottom:1px solid #4a1f10;
 }
-.sc-story-body{padding:10px 13px;font-size:13px;line-height:1.8;color:#c8a870;white-space:pre-line;}
+.sc-story-body{padding:10px 13px;font-size:16px;line-height:1.8;color:#c8a870;white-space:pre-line;}
 .sc-steps{padding:10px 13px;}
 .sc-step{
   padding:7px 10px 7px 14px;border-left:2px solid #3a2a50;
-  margin-bottom:6px;font-size:13px;color:#b8a0c8;line-height:1.7;
+  margin-bottom:6px;font-size:16px;color:#b8a0c8;line-height:1.7;
 }
 .sc-step:last-child{margin-bottom:0;}
 .sc-step-num{
@@ -197,7 +197,7 @@ const CSS = `
 .sc-sbitem:last-child{border-bottom:none;}
 .sc-sblbl{font-family:'Cinzel',serif;font-size:7.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px;}
 .sc-sbitem p{font-size:12px;line-height:1.6;color:#8a7a9a;}
-.sc-mat-item{padding:3px 0;font-size:12px;color:#9a8aaa;display:flex;align-items:baseline;gap:6px;line-height:1.5;}
+.sc-mat-item{padding:3px 0;font-size:15px;color:#9a8aaa;display:flex;align-items:baseline;gap:6px;line-height:1.5;}
 .sc-mat-dot{color:#5a3a7e;font-size:.7rem;}
 .sc-bnav{
   display:flex;justify-content:space-between;align-items:center;
