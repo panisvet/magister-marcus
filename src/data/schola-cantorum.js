@@ -3208,3 +3208,7 @@ export const YEARS = [
     ],
   },
 ];
+
+export const ALL_LESSONS = YEARS.flatMap(year =>
+  year.units.flatMap(unit => unit.lessons || [])
+);
