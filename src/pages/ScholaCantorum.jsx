@@ -215,7 +215,8 @@ const CSS = `
 ::-webkit-scrollbar-track{background:rgba(10,8,12,.5);}
 ::-webkit-scrollbar-thumb{background:rgba(130,80,180,.25);border-radius:3px;}
 ::-webkit-scrollbar-thumb:hover{background:rgba(130,80,180,.5);}
-`const SESSION_COLORS = { A: '#2a1a3a', B: '#1a2a1a' }
+`
+const SESSION_COLORS = { A: '#2a1a3a', B: '#1a2a1a' }
 const SESSION_ACCENT = { A: '#a070d0', B: '#70c090' }
 
 const OE_TABS = [
