@@ -1525,490 +1525,926 @@ export const YEARS = [
       // ───────────────────────────────────────────────────────────────────────
       // UNIT 4: New Keys, New Landscapes (Weeks 19–27)
       // ───────────────────────────────────────────────────────────────────────
-      {
-        id: 'u4',
-        title: 'New Keys, New Landscapes',
-        subtitle: 'Weeks 19–27 · G major (one sharp) and F major (one flat) · Eighth notes introduced · Two-voice introduction',
-        icon: '🗝',
-        lessons: [
-          {
-            id: '19.A', week: 19, session: 'A', unit: 'u4',
-            title: 'G Major — One Sharp',
-            duration: '~25 minutes',
-            ladukhin: 'Exercise 29',
-            materials: ['Piano', 'Ladukhin pp. 20–21 (Exercise 29)', 'Music journals'],
-            openingRitual: 'Find Do (C). Sing C major scale. Then play G major scale: "Same shape, different start."',
-            story: null,
-            drill: {
-              title: 'Exercise 29 — G Major',
-              steps: [
-                'KEY SIGNATURE: Say: "G major has one sharp — Fa# (F#). On the page, the sharp sign appears on the Fa line at the beginning of each staff. That tells us: whenever we see Fa, we sing it slightly higher — Fa#."',
-                'Sing the G major scale: Sol-La-Ti-Do-Re-Mi-Fi-Sol (Fi = raised Fa). Note: in fixed-do, Fa# is called Fi.',
-                'Exercise 29: teacher sings first. Together 3 times.',
-                'Form IIA: identify the sharp (key signature) before singing.',
-              ],
-            },
-            formIA: 'He just sings. Teacher names the key before beginning: "We are in G major today. Sol is home." He does not need to understand the key signature.',
-            formIIA: 'Before singing Exercise 29, he locates the sharp in the key signature and names it: "This is G major. Fa is raised to Fa-sharp (Fi)."',
-            sacredMusic: {
-              searchTerm: 'Orthodox Vespers Lord I Call Byzantine',
-              label: 'Lord I Call — G major listening',
-              listenFor: 'Play ~90 seconds. "This piece has a bright, elevated character — like G major. Listen for the slow, expansive phrases moving by steps."',
-            },
-            journal: {
-              formIA: 'Draw the G major scale as a staircase. Label each step with a solfège name.',
-              formIIA: 'Copy the G major key signature (one sharp on Fa line). Write: "G major: Fa is raised to Fi (F#). Sol is home."',
-            },
-            closingRitual: 'Find Do (C). "Do never moves — but today we traveled to G major and came home."',
-            teacherNotes: 'In fixed-do, Fa# is called Fi. This is the chromatic alteration name from the Ladukhin tradition. Introduce it here without pressure — students will hear it many times.',
-            shortenIt: 'Just the scale and Exercise 29. Skip key signature explanation.',
-            stretchIt: 'Form IIA: transpose Exercise 1 (from Unit 1) into G major. Same solfège, but Sol is the starting note.',
-            watchFor: 'Students who forget Fi (Fa#) mid-exercise and revert to natural Fa. Do not stop — sing Fi clearly yourself and continue. Correct at the end.',
-          },
-          {
-            id: '19.B', week: 19, session: 'B', unit: 'u4',
-            title: 'G Major — Transpose Game',
-            duration: '~20 minutes',
-            ladukhin: 'Exercise 29 review',
-            materials: ['Piano', 'Music journals'],
-            openingRitual: 'Find Do. Sing G major scale.',
-            story: null,
-            drill: {
-              title: 'Transpose Game — Same Shape, Different Start',
-              steps: [
-                'Say: "We are going to sing Exercise 1 from Unit 1 — but starting on Sol (G) instead of Do (C). The solfège syllables are the same. The notes are different."',
-                'Sing Exercise 1 starting on Sol: Sol-La-Ti-Do-Re / Re-Do-Ti-La-Sol. Compare to Do-Re-Mi-Fa-Sol.',
-                'Ask: "What stayed the same? What changed?" Answers: the solfège stayed the same; the actual pitches changed.',
-                'Sing Exercise 29 from memory.',
-              ],
-            },
-            formIA: 'He sings both versions with teacher. He notices: "It sounds the same but different."',
-            formIIA: 'He leads the transposition. He also explains: "In G major, Sol is home. The scale shape is the same. But the actual notes are different from C major."',
-            sacredMusic: {
-              searchTerm: 'Orthodox Vespers Lord I Call Byzantine',
-              label: 'Lord I Call — echo phrase',
-              listenFor: 'Echo the opening phrase by ear. Teacher plays recording, pauses, sings the phrase, students echo.',
-            },
-            journal: {
-              formIA: 'Write: "G major has ___ sharp. It is on ___."',
-              formIIA: 'Write the same. Then: "Transposing means ___ . When we transposed Exercise 1 to G major, the solfège ___ but the notes ___."',
-            },
-            closingRitual: 'Find Do. Done.',
-            teacherNotes: 'The transpose game is a powerful conceptual lesson. It makes audible what otherwise remains abstract: the scale is a pattern, not a fixed set of pitches.',
-            shortenIt: 'Just sing Exercise 29. Skip the transpose game.',
-            stretchIt: 'Form IIA: try transposing Exercise 3 to G major.',
-            watchFor: 'Students confusing transposition with singing faster or louder. The only thing that changes is the starting pitch. Pitch, not energy.',
-          },
-          {
-            id: '20.A', week: 20, session: 'A', unit: 'u4',
-            title: 'G Major Continued — Exercises 30–31',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 30–31',
-            materials: ['Piano', 'Ladukhin pp. 21–22 (Exercises 30–31)', 'Music journals'],
-            openingRitual: 'Find Do. G major scale. Identify the sharp before beginning.',
-            story: null,
-            drill: {
-              title: 'Exercises 30–31 — G Major Consolidation',
-              steps: [
-                'Form IIA: identify key signature on both exercises before singing.',
-                'Exercise 30: together 3 times.',
-                'Exercise 31: teacher first, then together 3 times.',
-                'Ear training: teacher plays G major scale, C major scale, A minor scale in random order. Students name the key.',
-              ],
-            },
-            formIA: 'He sings with teacher. He identifies by ear: "Which key does this feel like?"',
-            formIIA: 'He reads from notation and identifies key signatures.',
-            sacredMusic: {
-              searchTerm: 'Te Deum Gregorian chant simple',
-              label: 'Te Deum — Gregorian Latin',
-              listenFor: 'Play ~90 seconds. "This is Latin. Te Deum laudamus — We praise you, O God. The Church has sung this since the 4th century. Listen for where the phrases end — the cadences."',
-            },
-            journal: {
-              formIA: 'Draw three musical houses: C major, G major, A minor. Label each.',
-              formIIA: 'Copy the G major key signature. Write the Latin: "Te Deum laudamus — We praise you, O God." Draw one phrase shape.',
-            },
-            closingRitual: 'Find Do. "Three keys known: C major, G major, A minor."',
-            teacherNotes: 'Key identification by ear is a cumulative skill. Do not expect instant mastery. The point is to build the habit of listening for tonal center.',
-            shortenIt: 'Just Exercises 30. Skip 31 and ear training.',
-            stretchIt: 'Form IIA: sight-sing Exercise 31 cold.',
-            watchFor: 'Students who can identify C major and A minor but not G major. G major is less common in their listening experience. More G major exposure in sacred music listening will help.',
-          },
-          {
-            id: '20.B', week: 20, session: 'B', unit: 'u4',
-            title: 'Eighth Notes Introduced',
-            duration: '~20 minutes',
-            ladukhin: 'Rhythm preparation for Exercises 32–33',
-            materials: ['Piano', 'Music journals'],
-            openingRitual: 'Find Do. Clap and sing Exercise 29.',
-            story: null,
-            drill: {
-              title: 'Eighth Notes — Ta-Ka',
-              steps: [
-                'Say: "We know quarter notes (1 beat) and half notes (2 beats). Now: eighth notes — two for the price of one. Two eighth notes = 1 beat." Clap: Ta-ka Ta-ka Ta-ka Ta-ka.',
-                'Clap eighth-note pairs with syllables: Ta-ka (two eighth notes in one beat).',
-                'Rhythm game: teacher claps a pattern using quarters, halves, and eighth pairs. Students echo.',
-                'Sing on Do using the same patterns.',
-              ],
-            },
-            formIA: 'He claps and echoes. He does not need to understand the notation — just the feel.',
-            formIIA: 'He draws eighth notes in his journal (two note heads connected by a beam). He writes the beat count: Ta-ka = 1 beat.',
-            sacredMusic: {
-              searchTerm: 'Te Deum Gregorian chant simple',
-              label: 'Te Deum — rhythm listening',
-              listenFor: 'Play 60 seconds. "Gregorian chant does not always have strict eighth notes and quarter notes. It breathes more freely. But can you feel the pulse beneath the chant?"',
-            },
-            journal: {
-              formIA: 'Draw a quarter note, a half note, and two eighth notes beamed together. Write how many beats each gets.',
-              formIIA: 'Same drawing. Write: "Quarter = 1 beat. Half = 2 beats. Two eighth notes = 1 beat (Ta-ka)."',
-            },
-            closingRitual: 'Find Do. Done.',
-            teacherNotes: 'Eighth notes are a significant rhythmic step. Take time to make sure the physical feel of Ta-ka is established before it appears in an exercise.',
-            shortenIt: 'Just introduce eighth notes by clapping. Skip the singing on Do.',
-            stretchIt: 'Form IIA: write a rhythm pattern in his journal that uses all three note values: half, quarter, and eighth pair.',
-            watchFor: 'Students who rush eighth notes — they feel fast, so students tend to sing them even faster. A pair of eighth notes should feel like two quick equal notes, not one fast smear.',
-          },
-          {
-            id: '21.A', week: 21, session: 'A', unit: 'u4',
-            title: 'Eighth Notes in Context — Exercises 32–33',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 32–33',
-            materials: ['Piano', 'Ladukhin pp. 22–23', 'Music journals'],
-            openingRitual: 'Find Do. Clap a rhythm with eighth notes. Sing it on Do.',
-            story: null,
-            drill: {
-              title: 'Exercises 32–33 — Eighth Notes in G Major',
-              steps: [
-                'Before each exercise: clap the rhythm first. Then sing on solfège.',
-                'Exercise 32: clap, then sing 3 times.',
-                'Exercise 33: clap, then sing 3 times.',
-                'Challenge: teacher claps the rhythm of Exercise 32 — students sing it without looking at the page.',
-              ],
-            },
-            formIA: 'He claps along while teacher sings first, then echoes phrases with eighth notes.',
-            formIIA: 'He claps the rhythm independently, then sings. He marks eighth-note pairs on the page before singing.',
-            sacredMusic: {
-              searchTerm: 'Veni Creator Spiritus Gregorian',
-              label: 'Veni Creator Spiritus — Gregorian',
-              listenFor: 'Play one verse. "Count the phrases in this stanza — this one stanza. How many?" (Answer: 4 phrases per stanza, 6 stanzas total.)',
-            },
-            journal: {
-              formIA: 'Copy a rhythm pattern from Exercise 32 (the first measure). Write beat counts below.',
-              formIIA: 'Copy the first measure of Exercise 32. Mark all eighth-note pairs with a bracket. Write beat counts.',
-            },
-            closingRitual: 'Find Do. "Eighth notes: Ta-ka. Two in one beat."',
-            teacherNotes: 'The "clap first, then sing" pattern for exercises with new rhythmic content is a discipline. Keep it. It trains students to process pitch and rhythm separately before combining them.',
-            shortenIt: 'Exercise 32 only.',
-            stretchIt: 'Form IIA: sight-sing Exercise 33 cold after only reading the rhythm first.',
-            watchFor: 'Students who lose pitch accuracy when eighth notes appear. The faster rhythm pulls attention away from pitch. Address pitch first: slow down to a crawl, find the pitches, then add the rhythm.',
-          },
-          {
-            id: '21.B', week: 21, session: 'B', unit: 'u4',
-            title: 'F Major — One Flat',
-            duration: '~20 minutes',
-            ladukhin: 'Exercise 34',
-            materials: ['Piano', 'Ladukhin p. 23', 'Music journals'],
-            openingRitual: 'Find Do. G major scale with sharp. "Now let\'s go somewhere new."',
-            story: null,
-            drill: {
-              title: 'Exercise 34 — F Major',
-              steps: [
-                'KEY SIGNATURE: Say: "F major has one flat — Te (Bb). On the page, the flat sign appears on the Ti line. That tells us: whenever we see Ti, we sing it slightly lower — Te."',
-                'Sing the F major scale: Fa-Sol-La-Te-Do-Re-Mi-Fa. Note: Te = flattened Ti.',
-                'COMPARE: Sing G major scale (one sharp — bright), C major scale (neutral), F major scale (one flat — warmer). "Can you hear the different colors?"',
-                'Exercise 34: together 3 times.',
-              ],
-            },
-            formIA: 'Teacher names the key: "F major today." He sings with teacher. He hears the character: warmer.',
-            formIIA: 'He identifies the flat in the key signature before singing. He names: "F major — Ti is lowered to Te (Bb)."',
-            sacredMusic: {
-              searchTerm: 'Veni Creator Spiritus Gregorian',
-              label: 'Veni Creator — warm key character',
-              listenFor: '"Veni Creator Spiritus is in a warm, F-like mode. Does it remind you of F major? Or does it feel different?" Sacred modes and major keys are cousins, not twins.',
-            },
-            journal: {
-              formIA: 'Draw three suns — one bright and sharp (G major), one clear and steady (C major), one warm (F major). Label each.',
-              formIIA: 'Copy the F major key signature (one flat on Ti line). Write: "F major: Ti is lowered to Te (Bb). Fa is home."',
-            },
-            closingRitual: 'Find Do. "Three major keys: C, G, F. We know them all."',
-            teacherNotes: 'The three major keys — C, G, F — cover the range of most sacred music the students will encounter. Mastery of these three is the Year 1 target.',
-            shortenIt: 'Just introduce F major. Skip Exercise 34.',
-            stretchIt: 'Form IIA: can he identify F major vs. G major vs. C major on the piano by key signature alone (count sharps/flats)?',
-            watchFor: 'Students confusing Te (Bb) with Ti. In fixed-do, Ti is B-natural; Te is B-flat. The names are similar — drill the distinction explicitly.',
-          },
-          {
-            id: '22.A', week: 22, session: 'A', unit: 'u4',
-            title: 'Mixed Keys — Identify Before Singing',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 35–38',
-            materials: ['Piano', 'Ladukhin pp. 23–25', 'Music journals'],
-            openingRitual: 'Find Do. Sing all three major scales in order: C, G, F.',
-            story: null,
-            drill: {
-              title: 'Exercises 35–38 — Three Keys Mixed',
-              steps: [
-                'Before each exercise: Form IIA identifies the key from the key signature. Teacher confirms for Form IA: "This is F major."',
-                'Sing the scale of the key before beginning the exercise.',
-                'Exercise 35: identify, scale, exercise. 3 repetitions.',
-                'Exercise 36, 37, 38: same process. Do not rush.',
-              ],
-            },
-            formIA: 'He sings with teacher in all keys. He identifies the character by ear when teacher plays a few notes.',
-            formIIA: 'He reads key signatures and sings from notation with minimal teacher support.',
-            sacredMusic: {
-              searchTerm: 'Veni Creator Spiritus Gregorian',
-              label: 'Veni Creator — learning Stanza 1',
-              listenFor: '"Veni Creator Spiritus — Come, Holy Spirit. The first word of each stanza tells you the subject. Listen for Veni (Come), Creator, and Spiritus. Each word is a prayer."',
-            },
-            journal: {
-              formIA: 'Copy opening phrase of Veni Creator (teacher dictates the solfège syllables).',
-              formIIA: 'Write: "Veni means ___, Creator means ___, Spiritus means ___. Together they pray: ___."',
-            },
-            closingRitual: 'Find Do. "We know three keys. We know three kinds of sacred music: Byzantine, Gregorian, Latin hymns."',
-            teacherNotes: 'The key identification step before singing is a discipline — do not let it become perfunctory. Every exercise should begin with the student actively naming the key, not just being told it.',
-            shortenIt: 'Exercises 35–36 only.',
-            stretchIt: 'Form IIA: after the exercise, name the key signature, the home note, and the chromatic alteration from memory.',
-            watchFor: 'Students who correctly identify the key but then lose the altered note mid-exercise. Build in a specific moment to name the alteration (Fi or Te) before beginning.',
-          },
-          {
-            id: '22.B', week: 22, session: 'B', unit: 'u4',
-            title: 'Sight-Reading Cold — New Exercise',
-            duration: '~20 minutes',
-            ladukhin: 'Exercises 35–38 review',
-            materials: ['Piano', 'Ladukhin pp. 23–25', 'Music journals'],
-            openingRitual: 'Find Do. Name today\'s key before singing. Sing the scale.',
-            story: null,
-            drill: {
-              title: 'Cold Sight-Reading',
-              steps: [
-                'Give Form IIA a new, short exercise (from Danhauser or teacher-composed). No preview.',
-                'He reads through it once silently, identifies the key, then sings it.',
-                'Observe: where does he pause? Where does he miss?',
-                'Form IA: teacher gives him a 4-note exercise by ear — no page. He echoes, then sings it back from memory.',
-              ],
-            },
-            formIA: 'Ear exercise without notation. Teacher sings 4 notes. He echoes. He sings it back 3 minutes later from memory.',
-            formIIA: 'Cold sight-reading: no preview, just the page.',
-            sacredMusic: {
-              searchTerm: 'Veni Creator Spiritus Gregorian',
-              label: 'Veni Creator — Stanza 1 by ear',
-              listenFor: 'Learn Stanza 1 completely by ear. Teacher sings phrase by phrase; students echo. Then play the recording and follow along.',
-            },
-            journal: {
-              formIA: 'Draw Veni Creator Spiritus — the Holy Spirit coming. Any image.',
-              formIIA: 'Write Stanza 1 in Latin from memory if possible. Write a translation beneath.',
-            },
-            closingRitual: 'Find Do. Done.',
-            teacherNotes: 'Cold sight-reading for Form IIA should reveal his actual reading level. Do not assist — observe. The goal is information, not performance.',
-            shortenIt: 'Skip cold sight-reading. Just review Exercises 35–38.',
-            stretchIt: 'Form IIA: after cold sight-reading, he marks every error he made and corrects them in the score.',
-            watchFor: 'Form IIA stopping cold when he makes an error. Teach him to keep going and mark the error. Stopping trains hesitation; continuing trains resilience.',
-          },
-          {
-            id: '23.A', week: 23, session: 'A', unit: 'u4',
-            title: 'Mixed Rhythms — Exercises 39–40',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 39–40',
-            materials: ['Piano', 'Ladukhin pp. 25–26', 'Music journals'],
-            openingRitual: 'Find Do. Clap and sing a rhythm combining all three note values: half, quarter, eighth pairs.',
-            story: null,
-            drill: {
-              title: 'Exercises 39–40 — Complex Rhythm',
-              steps: [
-                'These exercises mix all rhythmic values. Protocol: (1) Identify key. (2) Clap rhythm. (3) Sing on Do. (4) Sing on solfège.',
-                'Exercise 39: full protocol. 3 repetitions.',
-                'Exercise 40: full protocol. 3 repetitions.',
-              ],
-            },
-            formIA: 'He claps and echoes. Teacher slows the complex rhythms and exaggerates the gestures.',
-            formIIA: 'He applies the full four-step protocol independently.',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — return visit',
-              listenFor: '"We heard this first in Unit 3. How much more can you hear now — four months later? What do you notice that you did not notice before?"',
-            },
-            journal: {
-              formIA: 'Copy a rhythm pattern from Exercise 39 (teacher marks it). Write counts.',
-              formIIA: 'Copy the first two measures of Exercise 39 with full rhythm notation and beat counts.',
-            },
-            closingRitual: 'Find Do. "Rhythm and pitch together. Getting harder, getting better."',
-            teacherNotes: 'The four-step protocol (identify key → clap rhythm → sing on Do → sing on solfège) is the primary tool for all complex new exercises from here on. Establish it as a habit.',
-            shortenIt: 'Exercise 39 only.',
-            stretchIt: 'Form IIA: sight-sing Exercise 40 using the four-step protocol independently, without teacher walking him through each step.',
-            watchFor: 'Students who want to skip step 3 (sing on Do) and go straight to solfège. Step 3 isolates rhythm from pitch and is essential. Keep it in.',
-          },
-          {
-            id: '23.B', week: 23, session: 'B', unit: 'u4',
-            title: 'Two-Voice Introduction — Exercises 41–43',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 41–43, Two-Voice Solfeggi No. 1',
-            materials: ['Piano', 'Ladukhin pp. 26–27', 'Ladukhin 60 Solfeggi for 2 Voices — No. 1', 'Music journals'],
-            openingRitual: 'Find Do. Sing Exercises 39–40 from memory.',
-            story: null,
-            drill: {
-              title: 'Two-Voice First Attempt',
-              steps: [
-                'Say: "Today we begin singing two different things at the same time. I will sing one line; you will sing another."',
-                'Ladukhin 60 Solfeggi for 2 Voices, No. 1: Teacher sings upper voice; Form IIA sings lower. Form IA echoes either voice with teacher in Session B.',
-                'Practice same duet again. Switch voices.',
-                'If going well: both students sing different voices while teacher listens.',
-              ],
-            },
-            formIA: 'In Session B: he echoes either voice with teacher. He is not expected to hold an independent line yet.',
-            formIIA: 'He sings the lower voice of No. 1 while teacher sings upper. Then he sings the upper voice while teacher sings lower.',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — two-voice listening',
-              listenFor: '"Can you hear any two-voice moments in this recording? Some recordings use a drone. Does this one? Listen carefully for the lowest note."',
-            },
-            journal: {
-              formIA: 'Draw two voices as two lines — do they cross? Do they move together or apart?',
-              formIIA: 'Write: "What is harder about singing two voices than one? What do you have to do differently in your ear?"',
-            },
-            closingRitual: 'Find Do. "Two voices. One prayer."',
-            teacherNotes: 'Two-part singing is a major developmental step. Do not be discouraged if it does not work well on the first attempt. The goal today is exposure, not mastery. Return to it in Session B and again in Weeks 24–27.',
-            shortenIt: 'Do the two-voice exercise once (one pass). Do not repeat.',
-            stretchIt: 'If two-voice goes well: Form IIA sings upper voice alone while Form IA sings lower (with teacher support). All three voices present: teacher + both students.',
-            watchFor: 'Students who track the other voice instead of their own — they follow what they hear rather than reading their own line. This is normal. Train them to look at their own line and hold it, regardless of what they hear.',
-          },
-          {
-            id: '24.A', week: 24, session: 'A', unit: 'u4',
-            title: 'Two-Voice Exercises 41–43',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 41–43',
-            materials: ['Piano', 'Ladukhin pp. 26–27 (Exercises 41–43)', 'Two-Voice Solfeggi No. 1–2', 'Music journals'],
-            openingRitual: 'Find Do. Sing Two-Voice No. 1 together — teacher upper, Form IIA lower.',
-            story: null,
-            drill: {
-              title: 'Exercises 41–43 and Two-Voice No. 2',
-              steps: [
-                'Exercise 41: four-step protocol. 3 repetitions.',
-                'Exercise 42: same.',
-                'Exercise 43: same.',
-                'Two-Voice No. 2: teacher sings upper, Form IIA lower. Switch. Then try without teacher singing.',
-              ],
-            },
-            formIA: 'He sings Exercises 41–43 with teacher. In the two-voice work, he holds a sustained Do drone while teacher and Form IIA sing.',
-            formIIA: 'He sings Exercises 41–43 from notation. He holds his voice in the two-part work.',
-            sacredMusic: {
-              searchTerm: 'Byzantine Tone 6 Plagal chant',
-              label: 'Byzantine Tone 6 — minor flavor',
-              listenFor: '"This is Tone 6 (Plagal). Listen: does it sound major or minor? We will learn the eight tones in Year 2 — but just begin to notice them now."',
-            },
-            journal: {
-              formIA: 'Draw two voices as two different colored lines. Where do they move together? Where apart?',
-              formIIA: 'Write: "In two-voice singing, I have to ___ with my ear while also ___."',
-            },
-            closingRitual: 'Find Do. "Two voices getting stronger."',
-            teacherNotes: 'The drone (Form IA) is a legitimate two-voice role. It trains him to sustain his pitch against external musical input.',
-            shortenIt: 'Exercises 41–42 only. Skip 43 and two-voice.',
-            stretchIt: 'All three voices: Form IA drone on Do, Form IIA lower voice, teacher upper voice.',
-            watchFor: 'Form IIA losing his own voice when teacher drops out. This is the moment of truth for two-voice independence. Note how long he can sustain before drifting.',
-          },
-          {
-            id: '24.B', week: 24, session: 'B', unit: 'u4',
-            title: 'Return — Agni Parthene After Four Months',
-            duration: '~20 minutes',
-            ladukhin: 'Review session',
-            materials: ['Piano', 'Music journals'],
-            openingRitual: 'Find Do. Sing Exercises 29, 34, 41 — one from each new key.',
-            story: null,
-            drill: {
-              title: 'Reflection and Agni Parthene Return',
-              steps: [
-                'Say: "We first heard Agni Parthene in Unit 3, Week 16. We have been singing for over four months. Let\'s hear it again and see what you notice."',
-                'Play the recording. Students listen actively.',
-                'Ask: "What do you hear now that you did not hear in Unit 3? What has changed in your ears?"',
-                'Sing the first three phrases of Agni Parthene together from memory.',
-              ],
-            },
-            formIA: 'He listens and describes: "This sounds like ___ to me now."',
-            formIIA: 'He writes his observation in his journal before sharing it aloud.',
-            sacredMusic: {
-              searchTerm: 'Agni Parthene O Pure Virgin Byzantine',
-              label: 'Agni Parthene — return after four months',
-              listenFor: 'Full 2-minute listening. Then narrate aloud: what is different in your hearing?',
-            },
-            journal: {
-              formIA: 'Journal: "What I hear now in Agni Parthene that I didn\'t hear before."',
-              formIIA: 'Same, with at least two specific musical observations (e.g., "I hear the step from La to Ti now; I hear the phrases end on La").',
-            },
-            closingRitual: 'Find Do. Done.',
-            teacherNotes: 'The return listening is a Charlotte Mason principle: the same work, revisited with new ears. This moment shows the students how much they have learned. Do not rush it.',
-            shortenIt: 'Just the listening and journal. Skip the drill review.',
-            stretchIt: 'Form IIA: write out the solfège syllables of the first Agni Parthene phrase from memory.',
-            watchFor: 'Students who say "it sounds the same." Probe gently: "Can you hear the step from La to Ti at the beginning? Can you hear where the phrases end?" Give them specific things to listen for.',
-          },
-          {
-            id: '25.A', week: 25, session: 'A', unit: 'u4',
-            title: 'Unit 4 — Exercises 44–45 and Review',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 44–45',
-            materials: ['Piano', 'Ladukhin pp. 27–28', 'Music journals'],
-            openingRitual: 'Find Do. Sing all three major scales and A minor scale from memory.',
-            story: null,
-            drill: {
-              title: 'Exercises 44–45 — Mixed Keys and Rhythms',
-              steps: [
-                'Exercise 44: full protocol. New material.',
-                'Exercise 45: full protocol.',
-                'UNIT 4 ASSESSMENT PASS: teacher names exercises at random. Students sight-sing immediately.',
-              ],
-            },
-            formIA: 'He sings with teacher. Note his comfort across the three major keys.',
-            formIIA: 'He sight-sings with minimal teacher support. Cold reading.',
-            sacredMusic: {
-              searchTerm: 'Veni Creator Spiritus Gregorian',
-              label: 'Veni Creator — full first stanza',
-              listenFor: 'Sing Stanza 1 completely together with the recording.',
-            },
-            journal: {
-              formIA: 'Free journal.',
-              formIIA: 'Write: "What I need to improve in my sight-reading: ___."',
-            },
-            closingRitual: 'Find Do. "Unit 4 nearly complete. One unit left before the synthesis."',
-            teacherNotes: 'This is the second-to-last formal exercise unit. Take stock: what needs reinforcement before the synthesis?',
-            shortenIt: 'Exercises 44 only. Skip 45.',
-            stretchIt: 'Form IIA: sight-sing Exercise 45 cold using the full four-step protocol.',
-            watchFor: 'Students who are tired of the exercises and eager for "real" singing. Channel this: "The synthesis is coming. These exercises are how we get there."',
-          },
-          {
-            id: '25.B', week: 25, session: 'B', unit: 'u4',
-            title: 'Unit 4 Review and Assessment',
-            duration: '~25 minutes',
-            ladukhin: 'Exercises 29–45 assessment',
-            materials: ['Piano', 'Ladukhin pp. 20–28', 'Music journals'],
-            openingRitual: 'Find Do. Both students sing one exercise from each of the three major keys: C, G, F.',
-            story: null,
-            drill: {
-              title: 'Unit 4 Assessment',
-              steps: [
-                'Pitch: teacher sings a phrase in a specific key. Students identify the key and echo.',
-                'Rhythm: teacher claps a complex pattern with eighth notes. Students echo and notate.',
-                'Reading (Form IIA): sight-sing one exercise cold.',
-                'Two-voice (Form IIA): sing lower voice of Two-Voice No. 1 while teacher sings upper.',
-                'Sacred music: teacher plays 15 seconds each of Lord I Call, Te Deum, Veni Creator. Students identify: key character, tradition.',
-              ],
-            },
-            formIA: 'Assessment items 1 and 5 (pitch and sacred music). Note confidence across three keys.',
-            formIIA: 'Full assessment. Record on the unit log.',
-            sacredMusic: {
-              searchTerm: 'Veni Creator Spiritus Gregorian',
-              label: 'Veni Creator — celebration listening',
-              listenFor: 'After assessment: full recording. Celebrate.',
-            },
-            journal: {
-              formIA: 'Free journal: favorite moment from Unit 4.',
-              formIIA: 'Write: "Unit 4 complete. Three things I can do now that I could not do in Unit 1."',
-            },
-            closingRitual: 'Find Do. "Unit 4 complete. We go into the synthesis."',
-            teacherNotes: 'Record assessment results. This is the last formal unit assessment before the synthesis. Any gaps identified here should be addressed in the first two weeks of Unit 5.',
-            shortenIt: 'Items 1, 3, and 5 only.',
-            stretchIt: 'Form IIA: self-assess before teacher assessment. Compare results.',
-            watchFor: 'Students who are strong technically but disconnected from the sacred music. The synthesis will demand both. Make sure the formation dimension has not been sacrificed for drill efficiency.',
-          },
+    // UNIT 4 — New Keys, New Landscapes
+// Weeks 19–27 | 18 sessions | Ladukhin Ex. 29–45 | G major, F major | Eighth notes | Two-voice duets begin
+// Splice this object into the UNITS array as the fourth unit, replacing the existing thin Unit 4.
+
+{
+  id: "unit4",
+  title: "Unit 4: New Keys, New Landscapes",
+  weeks: "19–27",
+  ladukhin: "Exercises 29–45",
+  overview: "G major (one sharp) and F major (one flat). Eighth notes introduced with ta-ka syllables. Key signature reading for Form IIA. Two-voice singing begins with Ladukhin 60 Solfeggi for 2 Voices. Sacred music arc: Lord I Call (Byzantine) → Te Deum (Gregorian) → Veni Creator Spiritus (Gregorian) → two-voice Byzantine → Agni Parthene return.",
+  lessons: [
+
+    // ─────────────────────────────────────────
+    // WEEK 19
+    // ─────────────────────────────────────────
+
+    {
+      id: "19A",
+      week: 19,
+      session: "A",
+      unit: "unit4",
+      title: "G Major — Same Shape, New Home",
+      duration: "25 min",
+      ladukhin: "Exercise 29",
+      materials: [
+        "Ladukhin Elementary Course, p. 22 (Ex. 29)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      story: "Before the drill, say: \"For eighteen weeks we have lived in two houses: Do's house (C major) and La's house (A minor). Today we move to a third house — G major. Listen.\" Play the G major scale on the piano slowly, ascending and descending. Let it ring. Ask: \"How does that feel — major or minor?\" (Major.) \"Where does it settle — on Do or somewhere new?\" Let them describe it. Say: \"This is G major. The scale has the same shape as C major — the same steps and skips in the same order — but it begins on G. In our fixed-do system, G is always Sol. So this scale begins on Sol. But here is the thing: inside G major, G feels like home. It feels like Do. The scale shape is the same; only the starting place has moved.\" Play the C major scale, then the G major scale, back to back. \"Same shape. Different place. That is a new key.\"",
+
+      drill: {
+        title: "G Major Scale + Ladukhin Ex. 29",
+        steps: [
+          "Play G on the piano. Say: \"This is G — Sol in our system. In G major, Sol is home.\" Everyone sings Sol together on a comfortable breath.",
+          "Sing the G major scale ascending on fixed-do solfège syllables: Sol-La-Ti-Do-Re-Mi-Fi-Sol. Pause on Fi. Say: \"This note — F-sharp — is the one new thing in G major. In C major we sing Fa. In G major, Fa is raised by a half step to Fi. Listen.\" Play Fa (F natural) then Fi (F-sharp). \"Fa wants to go down to Mi. Fi wants to pull up to Sol even more strongly. That pull is what makes G major sound slightly brighter than C major.\"",
+          "Sing the scale again, all the way up and back down: Sol-La-Ti-Do-Re-Mi-Fi-Sol, Sol-Fi-Mi-Re-Do-Ti-La-Sol. Children echo. Repeat 3 times.",
+          "Open to Ex. 29. Teacher sings it once through. Then everyone sings together. Repeat 2–3 times.",
+          "Form IIA: before singing Ex. 29, identify the key signature. Say: \"One sharp on the staff — that sharp is always on the Fa line. It tells you: every Fa in this piece is Fi. That is how you know you are in G major.\" Point to the sharp on the page.",
+          "Form IA: follow the teacher's voice and echo. Do not require page-reading. Ask at the end: \"Did that feel like major or minor?\" (Major.) \"Did it feel like C major or a little different?\" Let him describe it in his own words.",
         ],
       },
 
+      formIA: "Echo the scale and Ex. 29 entirely by ear. Watch for Sol being sung flat — it sometimes drifts down toward Fa. Sing Sol clearly yourself each time and continue. The main success criterion for Form IA this week: can he sing the G major scale ascending from memory by the end of the session?",
+      formIIA: "Follow notation throughout. Before Ex. 29, name the key signature (one sharp = G major) and identify Fi on the staff. After singing, ask: \"Where did Fi appear in the exercise? Did you feel the pull toward Sol?\" Form IIA should be able to explain what a sharp does to a note before moving on.",
+
+      sacredMusic: {
+        searchTerm: "Orthodox Vespers Lord I Call Byzantine",
+        label: "Lord I Call at Vespers",
+        listenFor: "Play approximately 90 seconds. Say: \"This is Lord I Call — the great psalm of Vespers, sung every Saturday evening as the sun goes down. Listen for how slowly and expansively it moves. Count the long notes — the notes that hold for two or three beats.\" After listening: \"Did that feel major, minor, or something in between?\" The Byzantine modal character often produces ambiguous answers — all of them are honest and correct.",
+      },
+
+      journal: {
+        formIA: "Write: 'G major starts on ___.' (Sol.) Draw a piano keyboard and circle the G key. Label it Sol.",
+        formIIA: "Copy the G major key signature: treble clef, then the sharp on the Fa line. Write: 'G major has 1 sharp. The sharp is on Fa — it makes Fa into Fi.' Then write the G major scale ascending in solfège syllables: Sol-La-Ti-Do-Re-Mi-Fi-Sol.",
+      },
+
+      closingRitual: "Play G on the piano. Everyone sings Sol. Say: \"Sol is the new home this unit. Same feeling as Do — just a different room.\" Then play C. Sing Do. \"And Do is still here. Three homes now: Do, La, Sol.\"",
+
+      teacherNotes: "The introduction of a new key is a significant conceptual moment. The most important thing to convey is that the scale shape — the pattern of whole steps and half steps — is identical to C major. Only the starting pitch has moved. Children who grasp this will find all future key introductions easy. Children who think G major is a completely different thing will struggle. The Fi (F-sharp) is the one concrete novelty; everything else is the same.",
+      shortenIt: "Scale introduction and Ex. 29 only. Skip the story and journal.",
+      stretchIt: "After Ex. 29, ask Form IIA to sing the C major scale and then the G major scale back to back without stopping. Then ask: 'Which note is different between the two scales?' (Fa vs. Fi — F natural vs. F-sharp.)",
+      watchFor: "Both children singing Fi as Fa out of habit — the F-sharp is genuinely new and the ear defaults to the familiar F natural. Play Fi on the piano clearly before each run-through of the scale until the ear adjusts. Form IIA rushing to read the notation before understanding the key signature. Form IA singing the scale correctly ascending but drifting on the descent — the descending Fi-Mi step is tricky.",
+    },
+
+    {
+      id: "19B",
+      week: 19,
+      session: "B",
+      unit: "unit4",
+      title: "Key Signature Reading and Lord I Call",
+      duration: "20–25 min",
+      ladukhin: "Exercise 29 review",
+      materials: [
+        "Ladukhin Elementary Course, p. 22",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Key Signature Introduction (Form IIA) + Ex. 29 Review",
+        steps: [
+          "Find Sol on the piano. Everyone sings Sol. Then sing the G major scale together once, ascending and descending.",
+          "Key Signature Lesson — Form IIA: Open the Ladukhin page to Ex. 29. Point to the sharp. Say: \"This is the key signature. It sits right after the treble clef, before the time signature, at the beginning of every line. It applies to every note on that line or space throughout the entire piece — you don't re-read it every measure. So every Fa you see in this exercise is automatically Fi.\" Ask: \"What would happen if there were two sharps? Three?\" (More notes are raised.) \"Each major key has a specific number of sharps or flats. G major has one sharp — always on the Fa line.\"",
+          "Form IA: while Form IIA is working on key signatures, Form IA sings the G major scale from memory. Can he do it without the piano? Play G at the start and let him go. Affirm accuracy.",
+          "Review Ex. 29 together. Sing twice — once with the teacher leading, once with Form IIA leading the tempo while Form IA echoes.",
+          "New game — Scale Direction: teacher plays three notes on the piano in G major. Children identify: going up, going down, or staying the same (repeated note). Use these: Sol-La-Ti (up), Do-Ti-La (down), Mi-Mi-Sol (same then up), Fi-Sol-Fi (up then down). This reinforces the new key by ear.",
+        ],
+      },
+
+      formIA: "In the Scale Direction game, Form IA calls out up, down, or same. He does not need to name the solfège syllables — just the direction. This is ear training in the new key. After three rounds, ask him to echo one of the three-note patterns on solfège. Even a partial match is success.",
+      formIIA: "After the key signature lesson, Form IIA opens to any other exercise in the book and identifies: how many sharps or flats? What key is this in? (He only knows C major and G major so far — so every exercise is either zero sharps or one sharp.) This pattern-recognition habit is the foundation of all future key reading.",
+
+      sacredMusic: {
+        searchTerm: "Orthodox Vespers Lord I Call Byzantine",
+        label: "Lord I Call — second hearing",
+        listenFor: "Play 90 seconds. This time: \"Follow the melody with your hand — raise it when the melody goes up, lower it when it goes down. Don't think, just follow.\" After listening: \"Did the melody spend more time going up or going down?\" (It tends to move in long arching phrases — up and then back down.) \"Did you feel where it was heading?\"",
+      },
+
+      journal: {
+        formIA: "Draw a staircase of eight steps going up. Label the steps Sol-La-Ti-Do-Re-Mi-Fi-Sol from bottom to top. This is the G major scale as a picture.",
+        formIIA: "Draw the treble clef staff. Draw the G major key signature (sharp on the third line from the bottom — the Fa/B line). Write: 'This sharp means: every ___ in this piece is ___.' (Every Fa is Fi.)",
+      },
+
+      closingRitual: "Play Sol. Everyone sings Sol. Hold four beats. Say: \"Next week we go deeper into G major. Same home, new exercises.\"",
+
+      teacherNotes: "The key signature lesson for Form IIA is one of the most durable pieces of notation literacy in the course. Take time with it. The concept that a sharp at the beginning of the piece applies to every instance of that note throughout is not obvious — it requires the child to hold a rule in memory while reading. Repeat it in every G major session until it is automatic.",
+      shortenIt: "Skip the Scale Direction game. Do the key signature lesson, Ex. 29 review, and journal only.",
+      stretchIt: "Ask Form IIA to write the C major key signature (no sharps, no flats) next to the G major key signature in his journal. Label each. Ask: 'If C major has zero sharps and G major has one sharp, what do you predict D major might have?' (Two sharps — a genuine prediction he can confirm later.)",
+      watchFor: "Form IIA treating the key signature sharp as applying only to the first measure. Re-demonstrate: point to the sharp at the start of the line, then point to an Fa notehead three measures in. 'Does this sharp apply here?' (Yes — always.) Form IA losing Sol on the descending scale. Play Sol at the midpoint of the descent to re-anchor.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 20
+    // ─────────────────────────────────────────
+
+    {
+      id: "20A",
+      week: 20,
+      session: "A",
+      unit: "unit4",
+      title: "G Major Consolidation — Exercises 30–31",
+      duration: "25 min",
+      ladukhin: "Exercises 30–31",
+      materials: [
+        "Ladukhin Elementary Course, pp. 22–24 (Ex. 30–31)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "G Major Fluency + Ladukhin Ex. 30–31",
+        steps: [
+          "Warm up with the G major scale — ascending and descending — sung together once. No piano after the opening Sol is given.",
+          "Before Ex. 30: Form IIA identifies the key signature and names the key. Form IA listens as teacher sings the first two bars, then calls out: major or minor?",
+          "Sing Ex. 30 together. Teacher leads. Repeat 3 times. On the third repetition, teacher drops out for four bars and lets the children carry it. Re-enter if they drift.",
+          "Before Ex. 31: same key identification process. Then sing together. Repeat 2–3 times.",
+          "Fi check: after Ex. 31, ask both children to sing just the Fi-Sol pair — the raised seventh resolving to the octave. Play Fi on the piano, children sing Fi-Sol. Repeat 3 times. Say: \"That pull from Fi up to Sol is the sharpness of G major. It is slightly brighter than Ti-Do in C major — same function, just a little higher.\"",
+          "Run-through: sing Ex. 29, 30, 31 in sequence without stopping. Teacher keeps tempo. This is a fluency test as much as a drill.",
+        ],
+      },
+
+      formIA: "Form IA echoes all exercises by ear. The test this session: can he sing Ex. 29 from memory without any teacher support? Try it at the start of the run-through. If he can, it means the G major tonality has settled. If not, more echo work before moving to Ex. 32.",
+      formIIA: "Form IIA reads all exercises from notation. Before the run-through, he should be able to identify the key signature of each exercise independently. After the run-through, ask: 'In Ex. 30, how many times did Fi appear?' He must look back at the page and count. This builds active notation engagement rather than passive reading.",
+
+      sacredMusic: {
+        searchTerm: "Orthodox Vespers Lord I Call Byzantine",
+        label: "Lord I Call — phrase echo",
+        listenFor: "Play the opening phrase twice. Then teacher sings it slowly on solfège (approximate fixed-do rendering — the Byzantine mode won't map perfectly but the melodic shape will). Children echo. Repeat until both children can sing the opening phrase back. Say: \"This phrase has lived in the Church for over a thousand years. Now it lives in you too.\"",
+      },
+
+      journal: {
+        formIA: "Write the G major scale syllables from memory: Sol-La-Ti-Do-Re-Mi-Fi-Sol. Circle Fi. Write: 'Fi is sharp. It wants to go up to ___.' (Sol.)",
+        formIIA: "Copy the first four measures of Ex. 30 from the page. Write the solfège syllable name under every note. Circle every Fi.",
+      },
+
+      closingRitual: "Play Sol. Everyone sings Sol. Then sing Fi-Sol — the leading tone resolution. Say: \"Fi wants Sol. That is G major's signature.\"",
+
+      teacherNotes: "By the end of Week 20, both children should be able to sing the G major scale from memory and sing through Ex. 29–31 with reasonable accuracy. If Form IA is still uncertain on the scale, run it at the start of every session this week and next. The scale is the foundation; the exercises build on it.",
+      shortenIt: "Ex. 30 only. Skip Ex. 31 and the Fi check.",
+      stretchIt: "Ask Form IIA to sight-read Ex. 31 cold — no preview, no teacher singing first. He identifies the key, sets the tempo, and sings. Teacher listens and notes where he is accurate and where he stumbles. Discuss afterward without judgment.",
+      watchFor: "Both children defaulting to Fa instead of Fi in the middle of longer exercises — the F-sharp requires active attention and will slip under pressure. When it slips, do not stop mid-exercise. Complete the phrase, then replay the Fi-Sol pair on piano and re-sing that section.",
+    },
+
+    {
+      id: "20B",
+      week: 20,
+      session: "B",
+      unit: "unit4",
+      title: "Transpose Game — Same Exercise, New Key",
+      duration: "20–25 min",
+      ladukhin: "Exercises 29–31 review + transposition game",
+      materials: [
+        "Ladukhin Elementary Course, pp. 22–24",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Transposition Game + Ex. 29–31 Review",
+        steps: [
+          "Find Sol. Sing the G major scale together.",
+          "Transposition Game: Say: \"We are going to sing Exercise 1 — our very first exercise — but starting on Sol instead of Do. Same shape, same steps, but from a different starting place.\" Sing Ex. 1 (Do-Re-Mi-Fa-Sol) starting on Sol: Sol-La-Ti-Do-Re. Then back down.",
+          "Ask: \"What changed?\" (The starting note, and Fi instead of Fa when you hit the fourth step.) \"What stayed the same?\" (The shape — step-step-half-step-step.)",
+          "Repeat with Ex. 2 — the ascending and descending five-note scale. Start on Sol: Sol-La-Ti-Do-Re and back. Children echo.",
+          "Now sing the real Ex. 29 straight through. Ask: \"Does it feel similar to Ex. 1? Why?\" (Because the scale shape is the same — only the key has changed.)",
+          "Review Ex. 30 and 31 straight through. Then: key identification game — teacher plays a scale on the piano (either C major or G major). Children call out which key. Do this five times.",
+        ],
+      },
+
+      formIA: "In the transposition game, Form IA echoes by ear. He does not need to understand why the transposition works — just that the same shape produces the same feeling from a new starting point. Ask him: 'Does Sol-La-Ti-Do-Re feel like Do-Re-Mi-Fa-Sol?' (Yes.) 'Why?' (Because the steps are the same.) Accept any honest answer.",
+      formIIA: "After the transposition game, ask Form IIA to write Ex. 1 (Do-Re-Mi-Fa-Sol-Fa-Mi-Re-Do) in his journal, then write the transposed version (Sol-La-Ti-Do-Re-Do-Ti-La-Sol). Ask: 'Which note is different between the two versions?' (Fa becomes Fi in G major — but in the five-note scale, Fa doesn't appear, so actually nothing changes! Let him discover this. The full octave scale is where Fi appears.)",
+
+      sacredMusic: {
+        searchTerm: "Orthodox Vespers Lord I Call Byzantine",
+        label: "Lord I Call — sing along",
+        listenFor: "Play the opening phrase. Children sing along with the recording on the phrase they learned last session. Then play 60 more seconds — just listening. Ask: \"Does this music sound like it is in G major, C major, or something else?\" The honest answer is: something else — a Byzantine mode. Say: \"Byzantine chant does not always fit neatly into our major and minor boxes. That is something we will explore in Year 2. For now, just notice the feeling.\"",
+      },
+
+      journal: {
+        formIA: "Write: 'G major has ___ sharp. C major has ___ sharps.' (1 and 0.) Draw the two houses side by side — label one C major (no sharp) and one G major (1 sharp).",
+        formIIA: "Write: 'When I transpose Exercise 1 to G major, the shape ___ (stays the same / changes). The note that could change is ___, which becomes ___ in G major.' (Fa → Fi, but doesn't appear in the five-note scale.)",
+      },
+
+      closingRitual: "Play Do then Sol. Sing both. Say: \"Two major keys. Same family. We know them both.\"",
+
+      teacherNotes: "The transposition game is one of the most valuable exercises in the course. It demonstrates concretely that keys are not different systems — they are the same system starting from different places. A child who grasps this will have an easier time with all future key introductions, and ultimately with the moveable-do bridge in Year 2.",
+      shortenIt: "Transposition game with Ex. 1 only. Skip the review run-through.",
+      stretchIt: "Ask Form IIA: 'If we transposed Exercise 1 to A minor — starting on La — what would the five notes be?' (La-Ti-Do-Re-Mi.) 'Is that major or minor?' (Neither, strictly — it is the bottom five notes of the minor scale, which is the same as the top five notes of C major. Let him sit with the ambiguity.)",
+      watchFor: "Children finding the transposition game confusing rather than illuminating. If either child is lost, simplify: just sing Do-Re-Mi together, then Sol-La-Ti together. 'Same feeling?' Yes. That is transposition. Nothing more complex is needed this week.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 21
+    // ─────────────────────────────────────────
+
+    {
+      id: "21A",
+      week: 21,
+      session: "A",
+      unit: "unit4",
+      title: "Eighth Notes — Ta-Ka and the New Rhythm",
+      duration: "25 min",
+      ladukhin: "Exercises 32–33",
+      materials: [
+        "Ladukhin Elementary Course, pp. 24–26 (Ex. 32–33)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      story: "Before the drill, say: \"Everything we have clapped and sung so far has moved in quarter notes and half notes — ta and too-oo, one beat and two beats. Today we meet a faster value: the eighth note. Two eighth notes fit inside one beat. Their syllable is ta-ka. Say it with me: ta-ka, ta-ka, ta-ka.\" Everyone speaks ta-ka in a steady rhythm. Then: \"Ta-ka is one beat split in two. Like a heartbeat — two small pulses where one large one was.\" Clap: ta (one clap), ta-ka (two quick claps), ta (one clap), ta-ka. Let the children feel the subdivision before singing it.",
+
+      drill: {
+        title: "Eighth Note Introduction + Ladukhin Ex. 32–33",
+        steps: [
+          "Clap drill — rhythm only, no pitch: ta ta ta-ka ta / ta-ka ta ta ta / ta ta-ka ta-ka ta. Children echo clap each pattern. Repeat each 3 times. Do not rush. The rhythm must be clean before adding pitch.",
+          "Say: \"Now let's put pitch on ta-ka.\" Sing: Do-Do (ta-ta), Do-Re (ta-ka), Mi (ta-a — half note). Repeat this simple pattern 3 times, clapping while singing.",
+          "Open to Ex. 32. Teacher claps the rhythm of Ex. 32 straight through — solfège syllables spoken, not sung. Children echo clap. Repeat once.",
+          "Now sing Ex. 32 together with beat gesture (down-up for 2/4). Teacher leads at a moderate pace — not slow, but not rushed. Eighth notes need forward momentum or they drag. Repeat 3 times.",
+          "Ex. 33. Same process: clap rhythm first, then sing. Ex. 33 likely has more eighth notes. If a child stumbles on the rhythm, go back to clapping that measure alone before re-singing.",
+          "Form IIA: before Ex. 33, point to the eighth notes on the page. Ask: \"How many eighth notes are beamed together here?\" (Two.) \"And what is their collective value?\" (One beat — ta-ka.)",
+        ],
+      },
+
+      formIA: "Form IA claps and echoes all rhythm patterns and exercises by ear. Do not require him to read eighth note notation. If he can clap ta-ka accurately and echo Ex. 32 by ear, that is full success for this session. Watch for ta-ka becoming uneven — one syllable longer than the other. Both halves of ta-ka are equal.",
+      formIIA: "Form IIA reads from notation. Before Ex. 32, identify the beamed eighth notes on the page and speak their rhythm syllables aloud before singing. After singing, ask: 'In measure 3 of Ex. 32, is the ta-ka on beat 1 or beat 2?' This forces active tracking of where in the measure the eighth notes fall.",
+
+      sacredMusic: {
+        searchTerm: "Te Deum Gregorian chant simple",
+        label: "Te Deum — first hearing",
+        listenFor: "Play approximately 90 seconds. Say: \"This is the Te Deum — one of the oldest hymns of praise in the Church. It is in Latin. Te Deum laudamus means: 'We praise you, God.' Listen for where the phrases end — where the melody comes to rest. Raise your hand when you hear a resting place.\" After: \"How many resting places did you find?\"",
+      },
+
+      journal: {
+        formIA: "Draw four boxes in a row. In the first, draw one filled notehead (quarter note = ta). In the second, draw two filled noteheads beamed together (eighth notes = ta-ka). Write the syllables underneath. In the third and fourth boxes, draw ta and ta-ka again. This is the rhythm pattern of the day.",
+        formIIA: "Copy the rhythm of the first four measures of Ex. 32 — noteheads and beams only, no pitch. Write the Kodály syllables underneath each note: ta, ta-ka, too-oo, etc.",
+      },
+
+      closingRitual: "Clap together: ta ta-ka ta ta / ta-ka ta-ka ta ta. Say: \"Eighth notes are in you now. See you next session.\"",
+
+      teacherNotes: "Eighth notes are a genuine rhythmic leap. Do not underestimate the difficulty of the subdivision for Form IA. His natural pulse may be solid, but fitting two syllables into one beat requires a new kind of internal clock. If ta-ka is uneven after three sessions, slow the tempo significantly and clap while speaking — voice and hands together. The body learns before the page does.",
+      shortenIt: "Clap drill and Ex. 32 only. Skip Ex. 33.",
+      stretchIt: "Ask Form IIA to compose a four-beat rhythm using only ta and ta-ka (no half notes or whole notes). He writes it in his journal as note symbols or syllables, then claps it for Form IA to echo.",
+      watchFor: "Ta-ka becoming ta-KA — the second syllable getting longer than the first. Both are exactly equal. Clap at a slower tempo and exaggerate the equality: ta... ka... ta... ka... then speed up gradually. Form IIA trying to read and clap simultaneously before the rhythm is internalized — always clap first, read second.",
+    },
+
+    {
+      id: "21B",
+      week: 21,
+      session: "B",
+      unit: "unit4",
+      title: "Rhythm Dictation with Eighth Notes",
+      duration: "20–25 min",
+      ladukhin: "Exercises 32–33 review",
+      materials: [
+        "Ladukhin Elementary Course, pp. 24–26",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Rhythm Dictation + Ex. 32–33 Review",
+        steps: [
+          "Warm up: clap ta ta-ka ta ta together three times. Then: ta-ka ta-ka ta ta. Then: ta ta ta-ka too-oo. Say the syllables while clapping.",
+          "Rhythm Dictation: teacher claps a four-beat pattern. Children echo clap. Then Form IIA writes the syllables in his journal; Form IA draws long and short marks (long line = ta, two short lines together = ta-ka).",
+          "Pattern 1: ta ta-ka ta ta. Echo, write/draw.",
+          "Pattern 2: ta-ka ta ta-ka ta. Echo, write/draw.",
+          "Pattern 3: ta ta-ka ta-ka too-oo. Echo, write/draw.",
+          "Pattern 4: ta-ka ta-ka ta-ka ta. Echo, write/draw. (This one is all eighth notes plus a final quarter — fast and even.)",
+          "After dictation, review Ex. 32 and Ex. 33 straight through. Use the beat gesture. Teacher observes where the eighth notes are clean and where they drag.",
+          "Sing Ex. 32 on Do only — all pitches become Do, only the rhythm survives. This isolates the rhythm from the pitch and reveals where the rhythmic uncertainty actually lives.",
+        ],
+      },
+
+      formIA: "Form IA uses long and short marks for dictation — no syllable writing required. After each pattern, he claps his marks back to check. If his marks are wrong but his echo was right, the issue is notation, not rhythm — note this. The ear is ahead of the page, which is correct at this stage.",
+      formIIA: "Form IIA writes Kodály syllables for all four patterns. After writing, he reads the syllables back aloud (speaking, not clapping) to check. Then he claps from his written syllables — if it matches what the teacher clapped, it is correct. This builds the reading→clapping→checking loop.",
+
+      sacredMusic: {
+        searchTerm: "Te Deum Gregorian chant simple",
+        label: "Te Deum — phrase identification",
+        listenFor: "Play 90 seconds. This time: \"I want you to notice the rhythm of the chant. Does it move in even beats, or does it flow more freely?\" (Gregorian chant flows freely — it follows the natural rhythm of the Latin text rather than a strict beat.) \"This is different from our Ladukhin exercises, which have a strict meter. Sacred music sometimes counts differently.\" This is a gentle preview of free rhythm in chant.",
+      },
+
+      journal: {
+        formIA: "Write the four dictation patterns using long and short marks. Label each: 'Pattern 1: ___ _/_ ___ ___' etc. (Using his own mark system.)",
+        formIIA: "Write all four dictation patterns in Kodály syllables. Then write: 'Eighth notes are called ta-ka because ___.' (He explains in his own words — two equal pulses in one beat, the feel of a heartbeat, etc.)",
+      },
+
+      closingRitual: "Clap together: ta ta-ka ta ta — four times, getting quieter each time until the last repetition is barely audible. Say: \"The rhythm lives inside you even when you can't hear it.\"",
+
+      teacherNotes: "Singing Ex. 32 on Do only is a powerful diagnostic tool. If the rhythm falls apart when pitch is removed, the child has been using the pitch contour as a rhythmic crutch — following the shape of the melody rather than the beat. This is extremely common and not a failure; it just means more rhythmic drilling before adding pitch back.",
+      shortenIt: "Two dictation patterns only. Skip the Do-only run of Ex. 32.",
+      stretchIt: "Ask Form IIA to write a new four-beat rhythm using ta, ta-ka, and too-oo, then teach it to Form IA by clapping only — no speaking. Form IA echoes. Does Form IA's echo match? This is the first peer-teaching moment in the course.",
+      watchFor: "Dictation patterns being clapped back correctly but written incorrectly — this means the short-term memory is working but the symbol system is not yet automatic. Keep the symbol system simple for Form IA (long/short marks) until the patterns are fully internalized. Do not rush to standard notation.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 22
+    // ─────────────────────────────────────────
+
+    {
+      id: "22A",
+      week: 22,
+      session: "A",
+      unit: "unit4",
+      title: "F Major — The Warm Key",
+      duration: "25 min",
+      ladukhin: "Exercises 34–35",
+      materials: [
+        "Ladukhin Elementary Course, pp. 26–28 (Ex. 34–35)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      story: "Before the drill: \"We have lived in two major keys: C major (no sharps or flats) and G major (one sharp). Today we meet a third: F major. Listen.\" Play the F major scale on the piano. Let it ring. \"How does that feel compared to G major?\" (Slightly warmer, darker, rounder — children may describe it differently and all are valid.) \"F major has one flat instead of one sharp. The flat is on Ti — it lowers Ti by a half step to Ta.\" Play Ti (B natural) then Ta (B-flat). \"Ti wants to pull up to Do. Ta is lower — it pulls down toward La instead. That slight heaviness is why F major sounds warmer than G major.\" Play the G major scale, then the F major scale back to back. \"Bright — warm. Two different flavors of major.\"",
+
+      drill: {
+        title: "F Major Scale + Ladukhin Ex. 34–35",
+        steps: [
+          "Play F on the piano. Say: \"This is F — Fa in our system. In F major, Fa is home.\" Everyone sings Fa together.",
+          "Sing the F major scale ascending on fixed-do solfège: Fa-Sol-La-Ta-Do-Re-Mi-Fa. Pause on Ta. Say: \"Ta is B-flat — Ti lowered by a half step. In C major and G major, Ti pulls up to Do. In F major, Ta is lower — it has a gentler pull.\" Play Ti, then Ta. Children echo both.",
+          "Sing the scale ascending and descending: Fa-Sol-La-Ta-Do-Re-Mi-Fa, Fa-Mi-Re-Do-Ta-La-Sol-Fa. Echo 3 times.",
+          "Open to Ex. 34. Form IIA identifies the key signature (one flat on the Ti line — making every Ti into Ta). Teacher sings Ex. 34 once. Then everyone sings together. Repeat 3 times.",
+          "Ex. 35. Same process. If Ex. 35 includes eighth notes, clap the rhythm first.",
+          "Three-key comparison: sing the C major scale, then G major, then F major in sequence. Ask: \"Which feels brightest? Which feels warmest? Which feels most neutral?\" Accept all answers — the point is that the children notice a difference.",
+        ],
+      },
+
+      formIA: "Form IA echoes all scales and exercises by ear. His main task this session is to hear the difference between F major and G major. After the three-key comparison, ask him: 'Which one felt different from the others?' If he identifies F major as warmer or softer, he has heard the flat. That is the entire lesson.",
+      formIIA: "Form IIA identifies the F major key signature and names the flattened note before singing. After Ex. 35, ask: 'In F major, what happens to every Ti on the page?' (It becomes Ta — B-flat.) 'How do you know without looking at each note individually?' (The key signature at the beginning of each line tells you.)",
+
+      sacredMusic: {
+        searchTerm: "Te Deum Gregorian chant simple",
+        label: "Te Deum — Te Deum laudamus phrase",
+        listenFor: "Play the opening phrase. Teacher sings the text: \"Te Deum laudamus\" — three Latin words. Say: 'Te means you (formal), Deum means God, laudamus means we praise. Together: We praise you, God.' Sing it slowly together. Children echo. Play the phrase again from the recording and echo it once more. Three words, one phrase, in Latin — their first Latin sacred phrase.",
+      },
+
+      journal: {
+        formIA: "Draw three suns, each a different color: bright yellow (G major), white/neutral (C major), and warm orange (F major). Label each with the key name.",
+        formIIA: "Copy the F major key signature: treble clef, then the flat on the Ti line. Write: 'F major has 1 flat. The flat is on Ti — it makes Ti into Ta. Ta pulls ___ (up/down) toward ___.' (Down toward La.)",
+      },
+
+      closingRitual: "Play Fa on the piano. Everyone sings Fa. Then play Sol (G major home), then Do (C major home), then Fa again. \"Three major keys. Three different flavors of the same feeling.\"",
+
+      teacherNotes: "The introduction of a flat key is a mirror of the sharp key introduction. The key principle is the same: one altered note changes the color of the key. Ta (B-flat) is the new note. Make sure both children can sing it accurately — it is a half step lower than Ti, and children accustomed to Ti-Do will want to sing it too high.",
+      shortenIt: "F major scale and Ex. 34 only. Skip Ex. 35 and the three-key comparison.",
+      stretchIt: "After the three-key comparison, ask Form IIA: 'G major has one sharp on Fa (making it Fi). F major has one flat on Ti (making it Ta). What do you notice about which notes are altered in each key?' (G major alters the seventh; F major alters the fourth. These are symmetric positions in the scale.)",
+      watchFor: "Both children singing Ta too high — the B-flat sits uncomfortably for voices accustomed to the leading tone. Play Ta on the piano clearly and have them match it before each scale run. Form IIA confusing which line the flat sits on in the key signature — the flat is on the middle line of the treble staff (Ti/B), not the same position as the sharp (also on a Fa/F space but a different one). Point and confirm before each exercise.",
+    },
+
+    {
+      id: "22B",
+      week: 22,
+      session: "B",
+      unit: "unit4",
+      title: "Three Keys, One Melody — The Comparison Game",
+      duration: "20–25 min",
+      ladukhin: "Exercises 34–35 review",
+      materials: [
+        "Ladukhin Elementary Course, pp. 26–28",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Three-Key Comparison Game + Ex. 34–35 Review",
+        steps: [
+          "Find Fa. Sing the F major scale together once.",
+          "Three-Key Comparison Game: Sing a simple five-note melody — Do-Mi-Sol-Mi-Do — in C major. Everyone sings together. Then sing the same shape in G major: Sol-Ti-Re-Ti-Sol (starting on Sol). Then in F major: Fa-La-Do-La-Fa (starting on Fa). After each: 'Same shape. Different color.'",
+          "Ask: 'Which felt brightest?' (G major — the Fi gives it an edge.) 'Which felt warmest?' (F major — the Ta gives it roundness.) 'Which felt most balanced?' (C major — no sharps or flats.)",
+          "Repeat the same melody in all three keys once more, faster this time. The goal is the ear tracking the same pattern across three key areas.",
+          "Review Ex. 34 and Ex. 35 straight through. No teaching — just singing. Teacher observes accuracy.",
+          "Key identification game: teacher plays a scale on the piano — C major, G major, or F major. Children call out the key by name. Do this six times. The ear should now be able to distinguish the three by their color alone.",
+        ],
+      },
+
+      formIA: "In the three-key comparison game, Form IA echoes the melody in each key after the teacher sings it. He does not need to name the keys — just echo and listen. After all three, ask: 'Did they all sound the same?' (No.) 'What was different?' Any honest answer is correct.",
+      formIIA: "Form IIA sings the three-key comparison melody independently — teacher plays the starting note, he sings the melody in each key without teacher singing. After each key, he names it. This tests whether the solfège syllables are truly connecting to the ear, not just being recited.",
+
+      sacredMusic: {
+        searchTerm: "Te Deum Gregorian chant simple",
+        label: "Te Deum — phrase count",
+        listenFor: "Play 2 minutes. Ask both children to count the distinct phrases — places where the melody pauses and a new phrase begins. Compare counts afterward. Say: \"Te Deum is an ancient hymn of thanksgiving — it has been sung in the Church since the fourth century. Every time a cathedral was consecrated, a pope crowned, or a war ended in peace, the Church sang Te Deum. Now you know its opening words.\"",
+      },
+
+      journal: {
+        formIA: "Write: 'C major: ___ sharps/flats. G major: ___ sharp(s). F major: ___ flat(s).' (0, 1, 1.) Then draw the three keys as three different-colored doors.",
+        formIIA: "Write the three-key comparison melody in solfège for all three keys: 'C major: Do-Mi-Sol-Mi-Do. G major: ___-___-___-___-___. F major: ___-___-___-___-___.' Complete from memory.",
+      },
+
+      closingRitual: "Sing the five-note melody in all three keys one final time, very slowly and beautifully, as if offering each one. C major: Do-Mi-Sol-Mi-Do. G major: Sol-Ti-Re-Ti-Sol. F major: Fa-La-Do-La-Fa. \"Three rooms in the same house.\"",
+
+      teacherNotes: "The three-key comparison game is the culmination of Unit 4's first major arc. By the end of this session, both children should be able to feel the difference between the three major keys by ear — not by theory, but by sound. This is a significant musical achievement and worth naming: 'You now know three keys. A year ago you knew none.'",
+      shortenIt: "Three-key comparison once. Skip the key identification game. Do Ex. 34 review only.",
+      stretchIt: "Ask Form IIA to play the five-note melody on the piano in all three keys — one finger, slowly. He has enough scale knowledge to find the notes. This is the first keyboard work in the course and it is optional.",
+      watchFor: "Children naming the key by the starting note rather than the key signature — 'That was the Sol one' rather than 'That was G major.' Gently correct to the key name: 'Right — Sol is where G major starts. And G major has one sharp: Fi.' The vocabulary matters for Year 2.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 23
+    // ─────────────────────────────────────────
+
+    {
+      id: "23A",
+      week: 23,
+      session: "A",
+      unit: "unit4",
+      title: "Mixed Keys — Exercises 36–38",
+      duration: "25 min",
+      ladukhin: "Exercises 36–38",
+      materials: [
+        "Ladukhin Elementary Course, pp. 28–31 (Ex. 36–38)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Key Identification Before Singing + Ladukhin Ex. 36–38",
+        steps: [
+          "Warm up with all three scales back to back: C major (Do), G major (Sol), F major (Fa). One run each, ascending and descending. No pausing between keys.",
+          "Say: \"Exercises 36–38 are in different keys. Before singing each one, we identify the key from the notation.\" Open to Ex. 36. Form IIA: 'How many sharps or flats? What key?' Form IA: teacher plays the first note — 'major or minor? Which key does it feel like?'",
+          "Sing Ex. 36 together. Repeat twice.",
+          "Ex. 37: same key identification process. If the key is new — check whether it is C, G, or F major based on the key signature. Sing together twice.",
+          "Ex. 38: same process. If Ex. 38 has eighth notes, clap the rhythm first before adding pitch.",
+          "After all three: run-through — 36, 37, 38 in sequence without stopping. Teacher keeps tempo. This consolidates the key-switching.",
+        ],
+      },
+
+      formIA: "Teacher names the key for Form IA before each exercise. Form IA's task is to echo each exercise accurately and, by the third exercise, to anticipate the key's sound before the teacher names it. Ask: 'Before I tell you — what key do you think this is?' Let him listen to the teacher's starting pitch and call it. Any correct identification by ear is significant.",
+      formIIA: "Form IIA identifies the key independently from the key signature before each exercise. After the run-through, ask: 'Which key was the hardest to stay in? Why?' This builds self-awareness about which keys are still unstable. If he says G major (Fi is tricky) or F major (Ta is tricky), plan extra drill on that key next session.",
+
+      sacredMusic: {
+        searchTerm: "Veni Creator Spiritus Gregorian",
+        label: "Veni Creator Spiritus — first hearing",
+        listenFor: "Play approximately 90 seconds. Say: \"This is Veni Creator Spiritus — Come, Creator Spirit. It is one of the great hymns of Pentecost, when the Church celebrates the coming of the Holy Spirit. Veni means come. Creator means creator. Spiritus means spirit. Listen for how many phrases it has per stanza.\" After: 'How many?' (Four phrases per stanza.)",
+      },
+
+      journal: {
+        formIA: "Write: 'G major starts on ___ and has ___ sharp. F major starts on ___ and has ___ flat.' (Sol, 1, Fa, 1.) Draw a sharp and a flat symbol — large and clear.",
+        formIIA: "Write the key signatures of all three major keys from memory: 'C major: ___. G major: ___. F major: ___.' Then: 'When I see one sharp on the Fa line, I know the key is ___. When I see one flat on the Ti line, the key is ___.'",
+      },
+
+      closingRitual: "Sing the C major scale, G major scale, and F major scale in sequence — Do, Sol, Fa — one breath each. \"Three keys, one voice.\"",
+
+      teacherNotes: "Exercises 36–38 test whether the key learning has transferred from drill to independent application. If either child consistently misidentifies the key from the key signature, spend one additional session drilling key identification from notation before moving to Ex. 39–40. The key signature must be automatic before eighth notes and mixed rhythms are added to the complexity.",
+      shortenIt: "Ex. 36 and 37 only. Skip Ex. 38.",
+      stretchIt: "After the run-through, ask Form IIA to sing Ex. 37 again but stop at any point and call out the current solfège syllable before continuing. This tests whether he is tracking pitch in real time or just singing from melodic memory.",
+      watchFor: "Form IIA identifying the key correctly but singing the wrong accidental in the exercise — knowing what Fi or Ta is intellectually but not executing it in the moment. This gap between knowledge and execution is normal and closes with repetition. Note which specific notes are consistently wrong and isolate them for extra drill.",
+    },
+
+    {
+      id: "23B",
+      week: 23,
+      session: "B",
+      unit: "unit4",
+      title: "Key Identification Game and Veni Creator",
+      duration: "20–25 min",
+      ladukhin: "Exercises 36–38 review",
+      materials: [
+        "Ladukhin Elementary Course, pp. 28–31",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Key Identification Game by Ear + Ex. 36–38 Review",
+        steps: [
+          "Find Do. Warm up with one scale in each major key.",
+          "Key Identification Game by Ear: teacher plays a complete scale on the piano — C, G, or F major, in random order, without announcing which. Children listen and call out the key name. Do this eight times. Vary the tempo and register (same octave or different) to keep it from being too easy.",
+          "After the game, ask: 'How did you know? What were you listening for?' Form IA: 'the feel.' Form IIA: 'the sharp or flat.' Both answers are correct — the ear-based and the theory-based approach arrive at the same place.",
+          "Review Ex. 36, 37, 38 straight through. No teaching — just singing. Then: teacher calls out a key (G major) and asks both children to sing a scale in that key from memory. Then another key. Three rounds.",
+        ],
+      },
+
+      formIA: "In the key identification game, Form IA may want to call out the starting note rather than the key name. Accept both: 'That started on Sol — so what key is it?' (G major.) The bridge between the starting note and the key name is the lesson. By the end of this session, he should be saying the key name without prompting.",
+      formIIA: "Form IIA should be reliably identifying all three major keys by ear in this game. If he is, add a challenge: play the first five notes of a scale only, not the full octave. Can he identify the key from an incomplete scale? The key character is present in the first few notes.",
+
+      sacredMusic: {
+        searchTerm: "Veni Creator Spiritus Gregorian",
+        label: "Veni Creator — Stanza 1 by ear",
+        listenFor: "Play Stanza 1 three times slowly. Teacher sings along on the second and third playings. Then: 'Let's learn Stanza 1 together. I will sing a phrase; you echo.' Work through the four phrases of Stanza 1. This does not need to be perfect — approximate is fine. The goal is the melody in the ear, not polish.",
+      },
+
+      journal: {
+        formIA: "Write the three major keys and their starting solfège note: 'C major = Do. G major = ___. F major = ___.' (Sol, Fa.)",
+        formIIA: "Copy the opening phrase of Veni Creator in the journal (teacher sings it slowly; Form IIA writes the solfège syllables he hears). Then write: 'Veni means ___, Creator means ___, Spiritus means ___.'",
+      },
+
+      closingRitual: "Sing the opening phrase of Veni Creator together — what was learned in the session. Then find Do. \"A new hymn lives in us now.\"",
+
+      teacherNotes: "Veni Creator Spiritus is the second Latin sacred piece in the course (after Te Deum). Its modal character — Gregorian Mode VIII — is diatonic and accessible. Don't stress the modal theory; just let the children learn it by ear. The Latin text is simple and worth knowing: Veni Creator Spiritus is one of the most widely sung hymns in Western Christianity.",
+      shortenIt: "Key identification game only. Skip the Ex. 36–38 review and the Stanza 1 learning.",
+      stretchIt: "After learning Stanza 1, ask Form IIA to write the solfège syllables of all four phrases from memory. Compare to the recording on the next play. What did he remember accurately? What drifted?",
+      watchFor: "Children confusing F major and A minor in the key identification game — both have one flat, but F major is major and D minor is the relative minor. If this comes up, address it: 'The key signature alone doesn't always tell you major or minor — you need to hear where it settles.' This is a genuine and important observation.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 24
+    // ─────────────────────────────────────────
+
+    {
+      id: "24A",
+      week: 24,
+      session: "A",
+      unit: "unit4",
+      title: "Eighth Notes in Context — Exercises 39–40",
+      duration: "25 min",
+      ladukhin: "Exercises 39–40",
+      materials: [
+        "Ladukhin Elementary Course, pp. 31–33 (Ex. 39–40)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Mixed Rhythm and Key + Ladukhin Ex. 39–40",
+        steps: [
+          "Warm up: clap ta ta-ka ta ta / ta-ka ta-ka too-oo / ta ta ta-ka ta together. Clean and even.",
+          "Open to Ex. 39. Two things to check before singing: key signature (name the key) and eighth notes (find and clap them). Form IIA does both independently. Teacher guides Form IA.",
+          "Clap the rhythm of Ex. 39 straight through. Then sing together. Ex. 39 should combine eighth notes with the three-key vocabulary — this is the first exercise where both challenges appear simultaneously.",
+          "If Ex. 39 is manageable, move directly to Ex. 40. Same process: key + rhythm, then sing. If Ex. 39 was difficult, sing it twice more before moving on.",
+          "After both exercises: beat gesture. Sing Ex. 39 again with the full conducting beat (down-up for 2/4 or down-left-right-up for 4/4). The eighth notes must fit inside the beat, not expand it.",
+          "Ask Form IIA: 'In Ex. 39, which measure was hardest? Why?' Let him analyze his own difficulty.",
+        ],
+      },
+
+      formIA: "Form IA claps and echoes. The eighth notes in Ex. 39–40 will be challenging — allow him to echo phrase by phrase rather than the whole exercise at once if needed. Do not proceed to Ex. 40 if Ex. 39 is not yet accurate by ear. It is better to sing Ex. 39 three times correctly than to attempt Ex. 40 incorrectly once.",
+      formIIA: "Form IIA reads from notation with full attention to both key signature and rhythmic values. After Ex. 40, ask him to mark every eighth note in Ex. 39 with a small dot in pencil. Then count: how many eighth notes are in Ex. 39? This counting task deepens engagement with the notation.",
+
+      sacredMusic: {
+        searchTerm: "Veni Creator Spiritus Gregorian",
+        label: "Veni Creator — Stanza 1 consolidation",
+        listenFor: "Sing Stanza 1 together with the recording, quietly, supporting. This is the third contact with this piece. After singing: 'What do you notice about how the melody moves? Does it have eighth notes — fast pairs — or does it move more slowly?' (Gregorian chant generally moves in even values with textual rhythm, not metric rhythm.) 'Sacred music has its own time.'",
+      },
+
+      journal: {
+        formIA: "Draw a rhythm: four beats, each one a choice between ta (one line) or ta-ka (two short lines). Draw any combination you like. Then clap what you drew.",
+        formIIA: "Write the rhythm of the first four measures of Ex. 39 in Kodály syllables. Check against the page. Mark any errors with a small circle and correct them.",
+      },
+
+      closingRitual: "Clap ta ta-ka ta ta — together, once, cleanly. Say: \"Eighth notes are yours now. They live in you.\"",
+
+      teacherNotes: "Exercises 39–40 are the first exercises that combine all of Unit 4's challenges simultaneously: new keys, eighth notes, and longer phrase lengths. If either child is struggling with more than one layer at a time, isolate: sing the exercise on Do only (remove pitch, keep rhythm), then sing the correct pitches without eighth notes (remove rhythm complexity), then combine. This three-stage approach is always available.",
+      shortenIt: "Ex. 39 only. Sing it three times and stop.",
+      stretchIt: "After Ex. 40, ask Form IIA to compose an eight-beat melody in G major using only the notes Sol-La-Ti-Do-Re, with at least two ta-ka pairs. He writes it in his journal and then sings it. This is the first composition attempt in the course.",
+      watchFor: "The beat collapsing when eighth notes appear — children speeding up on ta-ka and slowing down on ta. The beat must be absolutely steady regardless of what is happening on the surface. Use the conducting beat gesture specifically to maintain the pulse through ta-ka pairs.",
+    },
+
+    {
+      id: "24B",
+      week: 24,
+      session: "B",
+      unit: "unit4",
+      title: "Cold Sight-Reading — First Attempt",
+      duration: "20–25 min",
+      ladukhin: "New short exercise — cold sight-reading",
+      materials: [
+        "Ladukhin Elementary Course (any unsung exercise)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Cold Sight-Reading Protocol + Veni Creator Stanza 1",
+        steps: [
+          "Warm up with the three major scales.",
+          "Cold Sight-Reading Introduction: say — 'Today we try something that professional singers do: sight-reading a piece we have never seen or sung before. No preview. No teacher singing first. Just the page, your eyes, and your voice.' This is Form IIA's task. Form IA listens.",
+          "Open to a Ladukhin exercise neither child has sung yet — choose one from the mid-range, clear key signature, mostly quarter and half notes. Give Form IIA 60 seconds to look at the page silently: identify key, scan for eighth notes, find where it starts and ends.",
+          "Form IIA sings cold. Teacher does not sing along. After: 'What went well? Where did you stumble?' Teacher adds observations.",
+          "Sing the same exercise together — teacher and both children — to hear the correct version. 'Did anything surprise you?'",
+          "Form IA: cold echo of a four-bar phrase. Teacher sings a phrase from the exercise; Form IA echoes it back cold — no preview. This is ear-based cold singing rather than notation-based.",
+        ],
+      },
+
+      formIA: "Form IA's cold echo is the ear-based equivalent of Form IIA's cold sight-reading. Both children are attempting something slightly beyond their current fluency — that is the point. Affirm the attempt regardless of accuracy: 'You sang what you heard. That is exactly right.'",
+      formIIA: "The cold sight-reading is a significant challenge. Do not prepare him by describing what is coming — the surprise is part of the exercise. Afterward, the discussion is as important as the performance: what was his preparation process? What would he do differently? This metacognitive habit is what turns a struggling sight-reader into a competent one.",
+
+      sacredMusic: {
+        searchTerm: "Veni Creator Spiritus Gregorian",
+        label: "Veni Creator — Stanza 1 full sing",
+        listenFor: "Sing Stanza 1 entirely from memory — no recording, just teacher and children together. Then play the recording and compare: 'How close were we?' No judgment — just listening. Say: 'You learned a Gregorian hymn by ear. That is exactly how monks learned it for a thousand years before notation was invented.'",
+      },
+
+      journal: {
+        formIA: "Write: 'Cold singing means ___.' (Singing something for the first time without hearing it first.) Draw an image of what it felt like.",
+        formIIA: "Write: 'When I sight-read cold, I first ___. Then I ___. The hardest part was ___.  Next time I will ___.' This four-sentence protocol becomes his standard sight-reading preparation checklist.",
+      },
+
+      closingRitual: "Sing Veni Creator Stanza 1 together, from memory, slowly. Say: \"This hymn is yours now. You learned it the old way — by listening and remembering.\"",
+
+      teacherNotes: "Cold sight-reading is introduced here as a concept and experience, not as a mastery test. Form IIA will almost certainly stumble — that is expected and valuable. The point is to establish the protocol: prepare (look), attempt (sing), reflect (discuss), correct (sing again). This protocol will be used throughout Year 2. Plant it now.",
+      shortenIt: "Skip the cold sight-reading. Do the Veni Creator memory sing and journal only.",
+      stretchIt: "After the cold sight-reading reflection, ask Form IIA to try the same exercise again — with his preparation notes in mind. Compare the first attempt to the second. Does it improve? Discuss why or why not.",
+      watchFor: "Form IIA becoming discouraged by the cold sight-reading. The purpose is not accuracy — it is exposure to the experience of reading under pressure. If he is visibly frustrated, normalize it immediately: 'Every cantor in the world stumbles on cold sight-reading. That is why they practice. You practiced today.'",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 25
+    // ─────────────────────────────────────────
+
+    {
+      id: "25A",
+      week: 25,
+      session: "A",
+      unit: "unit4",
+      title: "Two Voices — Ladukhin 60 Solfeggi No. 1",
+      duration: "25 min",
+      ladukhin: "60 Solfeggi for 2 Voices, No. 1",
+      materials: [
+        "Ladukhin 60 Solfeggi for 2 Voices, p. 1 (No. 1) — PDF from IMSLP",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      story: "Before the drill: \"We have been singing in one voice for nearly six months. Today we sing in two voices at the same time — two different melodies, happening simultaneously. This is how Orthodox choirs sing: multiple voices, each with its own line, all fitting together.\" Play two notes on the piano simultaneously — Do and Mi. Let it ring. \"Two different notes, at the same time, from the same instrument. They fit together — they are consonant. That is what two-part singing does with voices.\" Then play Do and Fi simultaneously — a dissonance. \"That one creates tension. Two-part singing uses both — consonance for rest, dissonance for movement. Today we begin with the consonant ones.\"",
+
+      drill: {
+        title: "Two-Voice Introduction — Ladukhin 60 Solfeggi No. 1",
+        steps: [
+          "Preparation: both children learn the upper voice of No. 1 together — teacher sings it, children echo phrase by phrase. Sing it twice through together.",
+          "Now teacher sings the lower voice alone. Children listen. Ask: 'How is this different from the upper voice?' (Lower pitch, different melody.)",
+          "Teacher sings lower voice; Form IIA sings upper voice simultaneously. This is the first genuine two-part singing. Form IA listens — his job right now is to hear what two voices sound like.",
+          "Repeat the duet. If Form IIA drifts toward the teacher's lower voice (very common), teacher sings lower voice louder and Form IIA sings upper voice softer — then reverse. Learning to hold your own line requires hearing the other voice without being pulled by it.",
+          "Switch: teacher sings upper voice; Form IIA attempts the lower voice. One run-through. It will be imperfect — accept this.",
+          "Form IA: teacher sings upper voice; Form IA echoes the same upper voice alongside — a unison, not a two-part. This gives Form IA the experience of singing alongside another voice without the independence demand.",
+        ],
+      },
+
+      formIA: "Form IA's role in two-part this week is unison with one voice — singing the upper voice alongside the teacher while Form IIA sings the lower voice. This is not less than two-part; it is two-part with training wheels. He hears the lower voice, sings his own part, and experiences harmony from the inside. Next week he may attempt more independence.",
+      formIIA: "Form IIA attempts both voices. The test is: can he hold his line when a different melody is sounding next to him? This is the hardest musical skill introduced so far in the course. Affirm every attempt. Even four bars of accurate independent singing is a genuine achievement.",
+
+      sacredMusic: {
+        searchTerm: "Byzantine two voice chant Orthodox",
+        label: "Two-voice Byzantine chant",
+        listenFor: "Play approximately 90 seconds. Say: 'Listen for two voices. Do they sing the same notes or different notes?' After: 'Did they fit together? Where did they seem to agree — to land on the same note? Where did they diverge?' This builds the vocabulary of consonance and independence that two-part singing requires.",
+      },
+
+      journal: {
+        formIA: "Draw two wavy lines — one higher, one lower — running parallel across the page. Label them 'Voice 1' and 'Voice 2.' Where they touch, write 'consonance.' This is a picture of two-part singing.",
+        formIIA: "Write: 'Two-part singing means ___. The hardest part is ___. When I heard the other voice, my voice ___.' (He finishes honestly.)",
+      },
+
+      closingRitual: "Teacher sings a simple two-note chord on the piano — Do and Sol (a fifth). Everyone sings Do together while teacher holds Sol on the piano. \"Two sounds, one harmony. That is what we are building.\"",
+
+      teacherNotes: "The introduction of two-part singing is one of the most significant moments in the course. Do not rush it and do not expect clean results this session. The concept — hold your line while another line sounds — requires a kind of musical independence that develops over weeks, not sessions. Plant the seed with joy, not pressure. The children will remember the first time they heard themselves make harmony.",
+      shortenIt: "Teacher sings lower voice, both children sing upper voice in unison. No role-switching. Just the experience of two parts.",
+      stretchIt: "After the duet work, teacher hums a sustained Do (tonic) drone while both children sing No. 1 upper voice together. The drone creates a third layer and forces the children to tune against a reference pitch.",
+      watchFor: "Form IIA abandoning his part and following the teacher's voice — the most common two-part failure. Do not correct mid-phrase. After the phrase, say: 'You moved to my voice. Let's try again — this time, when you hear my note, hold yours even more strongly.' The instinct to match the other voice is natural and will diminish with practice.",
+    },
+
+    {
+      id: "25B",
+      week: 25,
+      session: "B",
+      unit: "unit4",
+      title: "Two Voices — Switch and Repeat",
+      duration: "20–25 min",
+      ladukhin: "60 Solfeggi for 2 Voices, No. 1 — review and voice switch",
+      materials: [
+        "Ladukhin 60 Solfeggi for 2 Voices, p. 1",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Two-Voice Practice — Voice Switch",
+        steps: [
+          "Warm up: sing No. 1 upper voice from memory — both children, teacher silent. Can they do it without support?",
+          "Duet — standard configuration: teacher lower, Form IIA upper, Form IA in unison with Form IIA. One full run-through.",
+          "Switch: teacher upper, Form IIA lower. Form IA remains in unison with teacher's upper voice. One run-through.",
+          "Discussion: ask Form IIA — 'Which voice was harder to hold: upper or lower? Why?' Ask Form IA — 'When the other voice was singing, could you still hear your own?'",
+          "Final attempt: teacher steps back from one voice entirely for eight bars. Form IIA sings his assigned voice; teacher watches. Does he hold the line?",
+          "If successful: try four bars where both children sing their respective voices with no teacher at all. Teacher plays the opening note on piano, then steps back completely. Even two bars of genuine two-part from the children alone is a milestone.",
+        ],
+      },
+
+      formIA: "Form IA's task this session: sing the upper voice of No. 1 while being aware that Form IIA is singing something different. He does not need to sing a different line — he needs to notice and hold his line despite the other sound. Ask afterward: 'Did you hear Form IIA's voice? Did it pull you toward it?' This self-awareness is the first step toward eventual independence.",
+      formIIA: "Form IIA attempts both voices in rotation. After the session, ask: 'Do you think you could sing the lower voice alone — without me singing either part?' Let him try. Even a partial attempt is valuable data about where his independence currently sits.",
+
+      sacredMusic: {
+        searchTerm: "Byzantine two voice chant Orthodox",
+        label: "Two-voice Byzantine — sing along",
+        listenFor: "Play 90 seconds. Ask both children to sing along with one of the two voices — they choose which. 'Choose a voice and stay on it. Don't switch.' After: 'Did you stay? What made it hard?'",
+      },
+
+      journal: {
+        formIA: "Write: 'When I sang with two voices, I heard ___.' (His honest description of the experience — what he heard, how it felt.)",
+        formIIA: "Write: 'The upper voice goes: ___-___-___ (first three notes). The lower voice goes: ___-___-___ (first three notes).' Write the solfège syllables from memory. Check against the page.",
+      },
+
+      closingRitual: "Teacher sings Do. Form IIA sings Mi above it. Form IA sings Do with the teacher. Hold together for four beats. Say: \"Three voices, two notes, one harmony. That is a choir.\"",
+
+      teacherNotes: "Session B of Week 25 consolidates what Session A introduced. The goal is not polished two-part performance — it is the children beginning to hold their own line independently, even for brief moments. Note in your teacher log: how many bars did Form IIA hold his line without drifting? That number should increase each session. Four bars this week is success.",
+      shortenIt: "Standard configuration once, switch once, final four-bar attempt. Skip the discussion and journal.",
+      stretchIt: "Record the final four-bar attempt on your phone. Play it back. Ask: 'What do you hear? Does it sound like two voices or one?' Let the children evaluate their own two-part work from the outside.",
+      watchFor: "Both children unconsciously sliding toward unison even when assigned different voices — the ear naturally seeks agreement. This is beautiful instinct but wrong direction for now. When you hear them converging, play your assigned note on the piano as a reminder of where they should be.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 26
+    // ─────────────────────────────────────────
+
+    {
+      id: "26A",
+      week: 26,
+      session: "A",
+      unit: "unit4",
+      title: "Exercises 41–43 and Two-Voice Duets 2–3",
+      duration: "25 min",
+      ladukhin: "Exercises 41–43 (Elementary Course) + 60 Solfeggi Nos. 2–3",
+      materials: [
+        "Ladukhin Elementary Course, pp. 33–36 (Ex. 41–43)",
+        "Ladukhin 60 Solfeggi for 2 Voices, pp. 1–2 (Nos. 2–3)",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Solo Exercises 41–43 + Two-Voice Duets 2–3 Preview",
+        steps: [
+          "Warm up: three major scales, one breath each. Then No. 1 from 60 Solfeggi — upper voice from memory.",
+          "Solo exercises: open to Ex. 41. Key identification, then sing together. Repeat once. Ex. 42: same. Ex. 43: same. These should move at a brisk pace — the solo work is consolidation this session, not new teaching.",
+          "Transition: say 'Now to two voices.' Open to No. 2 of 60 Solfeggi. Both children learn the upper voice by ear — teacher sings, they echo. Two runs.",
+          "Teacher sings lower voice of No. 2 while Form IIA sings upper voice. One run-through.",
+          "If time permits: open to No. 3. Just learn the upper voice. No two-part attempt on No. 3 this session.",
+        ],
+      },
+
+      formIA: "Form IA sings the upper voice in unison with Form IIA throughout the two-part work. For Ex. 41–43, Form IA echoes by ear — key identification is done verbally by teacher. No page-reading required. His primary task this session is to sing all exercises accurately without drifting pitch.",
+      formIIA: "Form IIA reads Ex. 41–43 from notation independently — teacher does not sing first. These are review exercises and Form IIA should be able to approach them cold with only the key identification step as preparation. After Ex. 43, ask: 'Which of these three keys was easiest for you? Which is still uncertain?'",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Agni Parthene — return after Unit 3",
+        listenFor: "Play approximately 90 seconds. This is the first time hearing Agni Parthene since Unit 3. Ask: 'How much more can you hear now than when we listened to this six weeks ago?' Let both children respond. 'What do you notice now that you didn't notice before?' This question has no wrong answer — any observation shows growth.",
+      },
+
+      journal: {
+        formIA: "Write: 'I have been singing for ___ weeks.' (26.) 'The piece I know best is ___.' (His choice.) 'Something I can do now that I couldn't do at the beginning is ___.'",
+        formIIA: "Write: 'When I listen to Agni Parthene now, I hear ___. When I first heard it in Week 15, I noticed ___. What changed is ___.' Three sentences — a before-and-after observation.",
+      },
+
+      closingRitual: "Sing Agni Parthene's opening phrase — from memory, together. \"This phrase has been with us since Unit 3. It belongs to us now.\"",
+
+      teacherNotes: "The return of Agni Parthene at Week 26 is one of the course's most rewarding moments. Children who have been through the full Year 1 arc will genuinely hear more in the recording — the major/minor distinction, the phrase structure, the modal character, the vocal quality. Let them name what they hear. Their observations are evidence of everything the course has built.",
+      shortenIt: "Ex. 41 and No. 2 duet only. Skip Ex. 42–43 and No. 3.",
+      stretchIt: "After No. 2 duet, ask Form IIA to sight-read No. 3 upper voice cold — no preparation. Then teacher sings lower voice of No. 3 while Form IIA sight-reads upper. Cold two-part sight-reading is an advanced skill and should only be attempted if No. 2 was clean.",
+      watchFor: "Fatigue from the combined solo and two-part work — this is a full session. If either child is flagging, cut the two-part work short and spend the last five minutes on the Agni Parthene listening. Quality singing matters more than completing the plan.",
+    },
+
+    {
+      id: "26B",
+      week: 26,
+      session: "B",
+      unit: "unit4",
+      title: "Two-Voice Duet Practice — Building Confidence",
+      duration: "20–25 min",
+      ladukhin: "60 Solfeggi Nos. 1–3 — duet practice",
+      materials: [
+        "Ladukhin 60 Solfeggi for 2 Voices, pp. 1–2",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Duet Consolidation — Nos. 1–3",
+        steps: [
+          "Warm up: both children sing the upper voice of No. 1 from memory, teacher silent.",
+          "Duet No. 1: teacher lower, Form IIA upper, Form IA in unison with Form IIA. One run.",
+          "Duet No. 2: same configuration. One run.",
+          "Switch voices on No. 1: teacher upper, Form IIA lower. One run.",
+          "Attempt: four bars of No. 1 with children only — no teacher voice. Teacher plays opening note, steps back. Both children hold their assigned lines. If clean: extend to eight bars. If not: teacher re-enters and identifies the drift point.",
+          "Preview No. 3: both children learn upper voice. Teacher sings lower voice alone so they hear the full duet. 'We'll sing No. 3 together next week.'",
+        ],
+      },
+
+      formIA: "This week, offer Form IA a new challenge: instead of singing in unison with Form IIA, ask him to hold a sustained Do (tonic drone) while Form IIA and teacher sing No. 1. This is a genuine independent line — simpler than a duet melody but harmonically active. If he can hold Do for eight bars while the two-part happens above him, he is ready for actual two-part work in Unit 5.",
+      formIIA: "Form IIA consolidates both voices of No. 1 and No. 2 this session. By the end of this session, he should be able to state clearly which voice is more stable for him. That voice becomes his primary assignment in Unit 5's duet work; the weaker voice gets more practice.",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Agni Parthene — multi-phrase sing-along",
+        listenFor: "Play 2 minutes. Both children sing along with whatever phrases they know — there should be several by now. No correction. Just singing. After: 'How many phrases do you know?' Count together. Say: 'You learned this entire melody by ear, one phrase at a time, over many weeks. That is how the tradition passes — singer to singer, generation to generation.'",
+      },
+
+      journal: {
+        formIA: "Write: 'In two-part singing, my job is ___. When I hear the other voice, I ___.' (His own honest words.)",
+        formIIA: "Write: 'In No. 1, the upper voice starts on ___. The lower voice starts on ___. They first sing the same note at ___.' (He identifies the first unison in the duet from memory or from the page.)",
+      },
+
+      closingRitual: "Teacher sings the lower voice of No. 1; both children sing the upper voice. Hold the final note together — three voices, two parts. Let it ring for four beats. Say: \"That is the sound we are building toward. Remember it.\"",
+
+      teacherNotes: "By the end of Week 26, the duet work should feel familiar rather than frightening. Neither child will have mastered two-part independence — that is a Year 2 goal — but they should be able to attempt it without anxiety. The journey from the drone work in Unit 3 to genuine two-part in Unit 4 has been gradual and intentional. Acknowledge the arc to them.",
+      shortenIt: "Duet No. 1 in standard configuration, four-bar children-only attempt, Agni Parthene sing-along. Skip Nos. 2–3.",
+      stretchIt: "All three of you — teacher + both children — attempt No. 2 in full three-part: teacher lower, Form IIA upper, Form IA drone on Do. This is a genuine three-part texture and will sound beautiful if the drone is held. Do not force it — offer it.",
+      watchFor: "The children-only duet attempt collapsing immediately. If both children lose their lines within two bars, the issue is likely that the lower voice is not yet internalized enough to be held independently. Return to having one child sing while teacher sings the other — independence comes later.",
+    },
+
+    // ─────────────────────────────────────────
+    // WEEK 27
+    // ─────────────────────────────────────────
+
+    {
+      id: "27A",
+      week: 27,
+      session: "A",
+      unit: "unit4",
+      title: "Unit 4 Review — Three Keys, Eighth Notes, Two Voices",
+      duration: "25 min",
+      ladukhin: "Exercises 29–43 — selected review",
+      materials: [
+        "Ladukhin Elementary Course, pp. 22–36",
+        "Ladukhin 60 Solfeggi for 2 Voices, pp. 1–2",
+        "Piano",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Unit 4 Survey — All Skills",
+        steps: [
+          "Three major scales warm-up: C, G, F — one breath each. No piano after opening notes.",
+          "Solo review — curated selection: Ex. 29 (G major, simple), Ex. 34 (F major, simple), Ex. 39 (mixed keys, eighth notes). Sing each once. Teacher observes without comment.",
+          "Sight-reading review: open to Ex. 41. Form IIA sings cold, first attempt. Form IA echoes back each phrase after Form IIA sings it. Two-voice echo — one reads, one echoes by ear.",
+          "Two-voice work: No. 1 of 60 Solfeggi. Children-only attempt for the full piece — teacher plays opening notes, steps back, observes. Note where they hold and where they drift.",
+          "Key identification by ear: teacher plays six scales (C, G, F, C minor preview, G major, F major — two repeats). Children call out the key. The C minor preview is a teaser: 'We have heard minor. Does this sound like C major or something else?' (C minor — something else.)",
+        ],
+      },
+
+      formIA: "Form IA's review tasks: G major scale from memory (no piano), echo Ex. 29 accurately after one teacher hearing, participate in the two-voice No. 1 (upper voice in unison with Form IIA), and identify at least four of the six scales by ear. Success on four out of six is a strong Unit 4 outcome for Form IA.",
+      formIIA: "Form IIA's review tasks: sight-read Ex. 41 cold with key identification; hold his assigned voice in No. 1 children-only attempt for at least eight bars; identify all six scales including the C minor teaser. Record results in your teacher log. Compare to the Unit 3 mid-year assessment scores.",
+
+      sacredMusic: {
+        searchTerm: "Veni Creator Spiritus Gregorian",
+        label: "Veni Creator — review listening",
+        listenFor: "Play 90 seconds. Sing Stanza 1 along with the recording from memory. After: 'We have learned this piece over four weeks. You know it now — not because you were taught, but because you listened and remembered. That is how the Church has always taught its music.'",
+      },
+
+      journal: {
+        formIA: "Free journal entry: 'The thing I am most proud of from Unit 4 is ___.' Draw one thing he learned.",
+        formIIA: "Write three headings: 'G Major,' 'F Major,' 'Two-Voice Singing.' Under each, write two things he knows and one thing he is still working on. This is honest self-assessment.",
+      },
+
+      closingRitual: "Sing the Veni Creator opening phrase together from memory. Then find Do. \"Unit 4 is almost complete. One more session.\"",
+
+      teacherNotes: "The Unit 4 review is a consolidation session, not a new-material session. Use it to identify gaps before the assessment in Session B. The key identification teaser (C minor preview) is intentional — it introduces Unit 5's modal work without naming it. Note the children's reactions to C minor: curiosity is a good sign.",
+      shortenIt: "Three scales, Ex. 29 and 34, No. 1 children-only attempt, journal. Skip the cold sight-reading and key identification game.",
+      stretchIt: "After the No. 1 children-only attempt, try No. 2 children-only — both children, no teacher voice, for eight bars. This requires both to hold independent lines simultaneously with no safety net.",
+      watchFor: "The children-only duet attempt improving significantly compared to Week 25 — it should. If it has not improved, note this in the log. Independence in two-part is the central new skill of Unit 4 and the foundation of all Year 2 choral work.",
+    },
+
+    {
+      id: "27B",
+      week: 27,
+      session: "B",
+      unit: "unit4",
+      title: "Unit 4 Assessment — Cold Sight-Reading and Survey Listening",
+      duration: "25 min",
+      ladukhin: "Exercises 29–43 — assessment",
+      materials: [
+        "Ladukhin Elementary Course and 60 Solfeggi",
+        "Piano",
+        "Assessment log",
+        "Music journals and pencils",
+      ],
+
+      drill: {
+        title: "Unit 4 Assessment Protocol",
+        steps: [
+          "WARM-UP (3 min): Three major scales, one clap pattern with eighth notes.",
+          "ASSESSMENT — Form IIA (10 min): (1) Cold sight-read one exercise in G major (chosen by teacher — unseen by student). Record accuracy: pitch and rhythm. (2) Cold sight-read one exercise in F major. Record. (3) Two-part: teacher sings lower voice of No. 1; Form IIA sings upper voice. Record independence score (how many bars before drifting). (4) Key identification: teacher plays four scales; Form IIA names each. Record.",
+          "ASSESSMENT — Form IA (8 min): (1) Sing G major scale from memory — no piano. Record pitch accuracy. (2) Echo Ex. 29 phrase by phrase after one hearing. Record. (3) Two-part: sing upper voice of No. 1 in unison while teacher sings lower voice. Record whether he stays on his part. (4) Key identification by ear: three scales. Record.",
+          "After both assessments: celebrate. Say: 'You have learned three major keys, eighth note rhythms, and the beginning of two-part singing. That is nine weeks of work. It is solid.'",
+        ],
+      },
+
+      formIA: "Form IA's assessment is entirely ear-based. A strong Unit 4 outcome for Form IA: G major scale accurate from memory, Ex. 29 accurately echoed, two-part attempt holds for at least four bars, two of three key identifications correct. Any outcome at or above this baseline means he is ready for Unit 5.",
+      formIIA: "Form IIA's assessment includes cold notation reading. Compare scores to Unit 3 mid-year assessment. A strong Unit 4 outcome: cold sight-reading in both G and F major showing accurate key signature application, two-part independence for at least eight bars, all four key identifications correct. If cold sight-reading is still weak, plan additional notation drill at the start of Unit 5.",
+
+      sacredMusic: {
+        searchTerm: "Agni Parthene O Pure Virgin Byzantine chant",
+        label: "Survey — children choose their favorite",
+        listenFor: "Ask each child: 'What is your favorite piece we have listened to this year?' Find it on YouTube and play it. No analysis, no questions. Just the gift of music they love. This is the Unit 4 close.",
+      },
+
+      journal: {
+        formIA: "Free journal: 'My favorite thing about music this year is ___.' Any format.",
+        formIIA: "Write the Unit 4 self-assessment from Session A: G Major (two things I know, one I'm working on), F Major (same), Two-Voice Singing (same). Then compare to what you wrote in the Unit 3 assessment. 'What changed?'",
+      },
+
+      closingRitual: "Teacher plays a two-note chord on the piano — Sol and Re (a fifth in G major). Both children find their voice on Sol. Teacher moves to the lower note. Both children hold Sol. Say: \"You hold your note. Another voice is below you. That is what a choir is — each person holding their part so the whole can sound.\"",
+
+      teacherNotes: "Record all assessment scores before the session ends. Unit 5 (Weeks 28–36) moves immediately into synthesis preparation — the children will be choosing and learning a specific sacred piece for a cappella performance. Readiness for Unit 5 requires: solid major key ear in at least C and G major, basic eighth note rhythm accuracy, and willingness to attempt two-part singing. All three should be present by now.",
+      shortenIt: "Assess pitch accuracy and two-part independence only. Skip cold sight-reading and key identification.",
+      stretchIt: "After the formal assessment, ask each child to teach the other one thing they learned in Unit 4. The teacher listens. What they choose to teach reveals what they value and what they truly own.",
+      watchFor: "Assessment scores lower than Unit 3 mid-year — this would indicate that the complexity of Unit 4 (new keys, eighth notes, two-part simultaneously) has temporarily overloaded one or both children. If this happens, begin Unit 5 with two additional review sessions before starting synthesis preparation. Do not push into new material over an unstable foundation.",
+    },
+
+  ], // end Unit 4 lessons
+}, // end Unit 4 object
       // ───────────────────────────────────────────────────────────────────────
       // UNIT 5: First Synthesis (Weeks 28–36)
       // ───────────────────────────────────────────────────────────────────────
