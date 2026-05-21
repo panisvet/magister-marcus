@@ -465,7 +465,7 @@ export default function ScholaCantorum() {
                       <div style={{ marginBottom: '6px', fontSize: '12px', fontStyle: 'italic', color: '#b0c8d8' }}>
                         {l.sacredMusic.label}
                       </div>
-                      
+                      <a
                         className="sc-search-chip"
                         href={`https://www.youtube.com/results?search_query=${encodeURIComponent(l.sacredMusic.searchTerm)}`}
                         target="_blank"
