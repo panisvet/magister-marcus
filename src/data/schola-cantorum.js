@@ -1522,12 +1522,6 @@ export const YEARS = [
 
   ], // end Unit 3 lessons
 }, // end Unit 3 object
-      // ───────────────────────────────────────────────────────────────────────
-      // UNIT 4: New Keys, New Landscapes (Weeks 19–27)
-      // ───────────────────────────────────────────────────────────────────────
-    // UNIT 4 — New Keys, New Landscapes
-// Weeks 19–27 | 18 sessions | Ladukhin Ex. 29–45 | G major, F major | Eighth notes | Two-voice duets begin
-// Splice this object into the UNITS array as the fourth unit, replacing the existing thin Unit 4.
 
 {
   id: "unit4",
@@ -2445,13 +2439,6 @@ export const YEARS = [
 
   ], // end Unit 4 lessons
 }, // end Unit 4 object
-      // ───────────────────────────────────────────────────────────────────────
-      // UNIT 5: First Synthesis (Weeks 28–36)
-      // ───────────────────────────────────────────────────────────────────────
-// UNIT 5 — First Synthesis
-// Weeks 28–36 | 18 sessions | Ladukhin Ex. 44–55 | Synthesis piece preparation and performance
-// The arc: consolidation → preparation → offering → celebration → Year 2 preview
-// Splice this object into the UNITS array in schola-cantorum.js, replacing the existing thin Unit 5 object.
 
 {
   id: "unit5",
@@ -3218,4 +3205,6 @@ export const YEARS = [
 
   ], // end Unit 5 lessons
 }, // end Unit 5 object
+    ],
+  },
 ];
