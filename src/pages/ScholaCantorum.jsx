@@ -216,6 +216,7 @@ const CSS = `
 ::-webkit-scrollbar-thumb{background:rgba(130,80,180,.25);border-radius:3px;}
 ::-webkit-scrollbar-thumb:hover{background:rgba(130,80,180,.5);}
 `
+
 const SESSION_COLORS = { A: '#2a1a3a', B: '#1a2a1a' }
 const SESSION_ACCENT = { A: '#a070d0', B: '#70c090' }
 
@@ -326,6 +327,7 @@ function Sidebar({ ci, setCi }) {
     </div>
   )
 }
+
 export default function ScholaCantorum() {
   const [ci, setCi] = useState(0)
   const [form, setForm] = useState('both')
