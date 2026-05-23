@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chant Master — Schola Cantorum Domestica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #8B6914;
+  --gold-light: #C9A84C;
+  --gold-bg: #FDF6E3;
+  --ink: #1A1205;
+  --parchment: #F5EDD8;
+  --parchment-mid: #EDE0C4;
+  --parchment-dark: #D9C9A8;
+  --red: #8B1A1A;
+  --blue: #1A3A5C;
+  --green: #1A4A2A;
+  --border: rgba(100,70,10,0.3);
+  --white: #FFFFFF;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Crimson Pro', Georgia, serif; background: var(--parchment); color: var(--ink); min-height: 100vh; }
+
+/* HEADER */
+header { background: var(--blue); color: #E8D8B0; padding: 14px 20px 10px; border-bottom: 3px solid var(--gold); display: flex; align-items: flex-start; justify-content: space-between; }
+header h1 { font-family: 'IM Fell English', serif; font-size: 22px; font-weight: 400; }
+header .sub { font-size: 12px; color: #7AABCC; font-style: italic; margin-top: 3px; line-height: 1.5; }
+header .sub strong { color: var(--gold-light); font-style: normal; }
+header .fixed-do { font-size: 12px; color: #9ABACC; text-align: right; }
+header .fixed-do span { font-family: 'IM Fell English', serif; color: var(--gold-light); font-size: 15px; display: block; }
+
+/* TABS */
+nav { background: #162D47; border-bottom: 2px solid var(--gold); display: flex; overflow-x: auto; }
+nav button { flex: 1; min-width: 80px; padding: 10px 6px 8px; background: transparent; border: none; border-right: 0.5px solid rgba(255,255,255,0.08); color: #7ABACC; font-family: 'Crimson Pro', serif; font-size: 13px; cursor: pointer; text-align: center; line-height: 1.3; transition: all 0.15s; }
+nav button .ico { font-size: 20px; display: block; margin-bottom: 2px; }
+nav button:hover { color: #E8D8B0; background: rgba(255,255,255,0.05); }
+nav button.active { color: var(--gold-light); background: rgba(201,168,76,0.13); border-bottom: 2px solid var(--gold-light); }
+
+/* PANELS */
+.panel { display: none; padding: 16px; }
+.panel.active { display: block; }
+
+/* SECTION TITLES */
+.sec { font-family: 'IM Fell English', serif; font-size: 15px; color: var(--red); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.sec::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, var(--border), transparent); }
+
+/* CARDS */
+.card { background: #FFFDF5; border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin-bottom: 14px; }
+
+/* FORM ELEMENTS — all with dark text on light bg */
+label { font-size: 13px; color: var(--ink); font-style: italic; display: block; margin-bottom: 5px; }
+select {
+  font-family: 'Crimson Pro', serif; font-size: 14px; color: var(--ink);
+  background: #FFFDF5; border: 1px solid var(--border); border-radius: 5px;
+  padding: 6px 8px; width: 100%; margin-bottom: 10px; cursor: pointer;
+}
+input[type=range] { width: 100%; margin-bottom: 4px; accent-color: var(--gold); cursor: pointer; }
+.range-val { font-size: 14px; font-weight: 600; color: var(--blue); min-width: 40px; display: inline-block; }
+
+/* BUTTONS */
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 6px; font-family: 'IM Fell English', serif; font-size: 14px; cursor: pointer; transition: all 0.15s; border: 1px solid; }
+.btn-blue { background: var(--blue); color: #E8D8B0; border-color: var(--gold); }
+.btn-blue:hover { background: #1E4A70; }
+.btn-red { background: var(--red); color: #F5E8E0; border-color: #B03030; }
+.btn-red:hover { background: #A01515; }
+.btn-green { background: var(--green); color: #D8F0E0; border-color: #2A6A3A; }
+.btn-green:hover { background: #1A5A30; }
+.btn-gold { background: var(--gold-bg); color: var(--ink); border-color: var(--gold); }
+.btn-gold:hover { background: var(--parchment-mid); }
+.btn-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+
+/* TWO-COL */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 520px) { .two-col { grid-template-columns: 1fr; } }
+
+/* STATUS */
+.status { font-size: 13px; font-style: italic; color: #555; min-height: 22px; text-align: center; padding: 4px 0; }
+
+/* ===== RHYTHM ===== */
+.beat-grid { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.beat-cell {
+  width: 64px; height: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: #FFFDF5; border: 2px solid var(--parchment-dark); border-radius: 8px;
+  cursor: pointer; font-size: 13px; font-family: 'Crimson Pro', serif; font-weight: 600;
+  color: var(--ink); transition: all 0.1s; user-select: none; gap: 2px;
+}
+.beat-cell .sym { font-size: 18px; line-height: 1; }
+.beat-cell .lbl { font-size: 11px; color: #666; font-style: italic; }
+.beat-cell.rest { opacity: 0.35; background: var(--parchment-mid); }
+.beat-cell.current { border-color: var(--gold); background: #FFF8E0; transform: scale(1.1); box-shadow: 0 0 0 3px rgba(139,105,20,0.3); }
+.beat-cell.accent { border-color: var(--red); background: #FFF0F0; }
+.metro { font-family: 'IM Fell English', serif; font-size: 40px; color: var(--blue); text-align: center; padding: 8px; min-height: 56px; }
+
+/* ===== PITCH / TUNER ===== */
+.pitch-big {
+  font-family: 'IM Fell English', serif; font-size: 52px; color: var(--blue);
+  background: #FFFDF5; border: 1px solid var(--border); border-radius: 8px;
+  text-align: center; padding: 14px; min-height: 88px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  margin-bottom: 10px;
+}
+.pitch-cents { font-size: 14px; font-style: italic; color: var(--red); font-family: 'Crimson Pro', serif; margin-top: 4px; }
+.tuner-bar { position: relative; height: 16px; background: var(--parchment-mid); border-radius: 8px; margin: 6px 0 2px; overflow: hidden; border: 1px solid var(--border); }
+.tuner-fill { position: absolute; left: 0; top: 0; height: 100%; width: 50%; border-radius: 8px; background: var(--green); transition: width 0.08s linear, background 0.08s linear; }
+.tuner-center-mark { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--gold); transform: translateX(-50%); z-index: 2; }
+.tuner-labels { display: flex; justify-content: space-between; font-size: 11px; color: #777; font-style: italic; margin-bottom: 10px; }
+
+/* Interval drill buttons */
+.interval-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-bottom: 10px; }
+
+/* Waveform */
+canvas.wave { width: 100%; height: 60px; background: #FFFDF5; border: 1px solid var(--border); border-radius: 6px; display: block; }
+
+/* ===== SOLFÈGE ===== */
+.do-mode { display: flex; background: var(--parchment-mid); border-radius: 8px; padding: 3px; margin-bottom: 14px; }
+.do-mode button { flex: 1; padding: 8px; border: none; background: transparent; font-family: 'IM Fell English', serif; font-size: 14px; cursor: pointer; border-radius: 6px; color: var(--ink); transition: all 0.15s; }
+.do-mode button.active { background: var(--blue); color: #E8D8B0; }
+.sol-grid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 5px; margin-bottom: 14px; }
+.sol-key {
+  padding: 10px 4px; font-family: 'IM Fell English', serif; font-size: 15px; text-align: center;
+  background: #FFFDF5; border: 1px solid var(--border); border-radius: 6px; cursor: pointer;
+  color: var(--ink); transition: all 0.12s; line-height: 1.3;
+}
+.sol-key small { display: block; font-size: 10px; color: #666; font-family: 'Crimson Pro', serif; font-style: italic; }
+.sol-key:hover { background: var(--gold-bg); border-color: var(--gold); }
+.sol-key.lit { background: var(--blue); color: #E8D8B0; border-color: var(--gold); }
+
+/* ===== 8 TONES ===== */
+.tone-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin-bottom: 12px; }
+.tone-btn {
+  background: #FFFDF5; border: 1px solid var(--border); border-radius: 6px; padding: 10px 4px;
+  cursor: pointer; font-family: 'IM Fell English', serif; font-size: 15px; color: var(--ink);
+  text-align: center; transition: all 0.15s; line-height: 1.4;
+}
+.tone-btn small { display: block; font-size: 10px; color: #666; font-family: 'Crimson Pro', serif; font-style: italic; }
+.tone-btn:hover { background: var(--gold-bg); border-color: var(--gold); }
+.tone-btn.active { background: var(--blue); color: #E8D8B0; border-color: var(--gold); }
+.tone-btn.active small { color: #9ABACC; }
+
+.cat-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.cat-btn { padding: 6px 14px; font-family: 'IM Fell English', serif; font-size: 13px; border-radius: 6px; cursor: pointer; border: 1px solid var(--border); background: #FFFDF5; color: var(--ink); transition: all 0.15s; }
+.cat-btn:hover { background: var(--gold-bg); }
+.cat-btn.active { background: var(--blue); color: #E8D8B0; border-color: var(--gold); }
+
+.tone-info { background: var(--gold-bg); border: 1px solid var(--border); border-radius: 6px; padding: 10px 14px; margin-bottom: 12px; font-size: 13px; line-height: 1.8; }
+.tone-info strong { color: var(--red); }
+.tone-info em { color: var(--blue); }
+
+.melody-canvas { width: 100%; height: 110px; background: #FFFDF5; border: 1px solid var(--border); border-radius: 8px; display: block; }
+
+.prok-item { background: #FFFDF5; border: 1px solid var(--border); border-radius: 6px; padding: 10px 14px; margin-bottom: 8px; cursor: pointer; transition: background 0.12s; display: flex; gap: 12px; align-items: flex-start; }
+.prok-item:hover { background: var(--gold-bg); }
+.prok-num { font-family: 'IM Fell English', serif; font-size: 22px; color: var(--blue); min-width: 26px; }
+.prok-body { flex: 1; }
+.prok-text { font-size: 14px; margin-bottom: 3px; }
+.prok-notes { font-size: 12px; color: var(--gold); font-style: italic; }
+.prok-list { max-height: 300px; overflow-y: auto; }
+
+/* ===== KEYBOARD ===== */
+.kb-wrap { background: #1E1E1E; border-radius: 10px; padding: 10px; overflow-x: auto; margin: 10px 0; }
+.kb { display: flex; position: relative; height: 110px; min-width: 400px; }
+.wkey {
+  flex: 1; min-width: 28px; height: 100%; background: #FEFCF5; border: 1px solid #AAA; border-radius: 0 0 5px 5px;
+  cursor: pointer; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 5px;
+  font-size: 9px; color: #444; font-family: 'Crimson Pro', serif; text-align: center; line-height: 1.2;
+  position: relative; transition: background 0.06s; user-select: none;
+}
+.wkey:hover { background: #FFF8D8; }
+.wkey.playing { background: #FFE88A; }
+.bkey {
+  position: absolute; top: 0; width: 14px; height: 62px; background: #1A1005; border-radius: 0 0 4px 4px;
+  cursor: pointer; z-index: 2; transition: background 0.06s; user-select: none;
+}
+.bkey:hover { background: #3A2A10; }
+.bkey.playing { background: #5A4A20; }
+
+.drone-section { margin-top: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>☩ Chant Master</h1>
+    <div class="sub">
+      Schola Cantorum Domestica<br>
+      After <strong>Regent Nikolay Ladukhin</strong> — OCA Obikhod
+    </div>
+  </div>
+  <div class="fixed-do">
+    Fixed-Do<span>Do = C</span>
+  </div>
+</header>
+
+<nav>
+  <button class="active" onclick="showTab('rhythm')" id="tab-rhythm">
+    <span class="ico">𝄞</span>Rhythm
+  </button>
+  <button onclick="showTab('pitch')" id="tab-pitch">
+    <span class="ico">🎤</span>Pitch Ear
+  </button>
+  <button onclick="showTab('solfege')" id="tab-solfege">
+    <span class="ico">𝄢</span>Solfège
+  </button>
+  <button onclick="showTab('tones')" id="tab-tones">
+    <span class="ico">♪</span>8 Tones
+  </button>
+  <button onclick="showTab('keyboard')" id="tab-keyboard">
+    <span class="ico">🎹</span>Keyboard
+  </button>
+</nav>
+
+<!-- ==================== RHYTHM ==================== -->
+<div class="panel active" id="panel-rhythm">
+  <div class="sec">Kodály Rhythm Practice</div>
+  <div class="two-col" style="margin-bottom:14px">
+    <div>
+      <label>Time Signature</label>
+      <select id="time-sig" onchange="setTimeSig(this.value)">
+        <option value="4">4/4</option>
+        <option value="3">3/4</option>
+        <option value="2">2/4</option>
+      </select>
+    </div>
+    <div>
+      <label>Tempo — <span class="range-val" id="bpm-display">72</span> BPM</label>
+      <input type="range" min="40" max="160" value="72" id="bpm-range" oninput="setBPM(this.value)">
+    </div>
+  </div>
+
+  <div class="sec">Pattern Library</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin-bottom:14px">
+    <button class="btn btn-blue" onclick="loadPattern('quarters')">Quarter Notes (ta)</button>
+    <button class="btn btn-blue" onclick="loadPattern('eighths')">Eighth Pairs (ti-ti)</button>
+    <button class="btn btn-blue" onclick="loadPattern('halves')">Half Notes (ta-a)</button>
+    <button class="btn btn-blue" onclick="loadPattern('mixed1')">Mixed: ta ti-ti ta ta</button>
+    <button class="btn btn-blue" onclick="loadPattern('mixed2')">Syncopation (ti ta-i ti)</button>
+    <button class="btn btn-blue" onclick="loadPattern('dotted')">Dotted (ta-i ti)</button>
+    <button class="btn btn-green" onclick="loadPattern('random')">⚄ Random Pattern</button>
+  </div>
+
+  <div class="card">
+    <div id="beat-grid" class="beat-grid"></div>
+    <div class="metro" id="metro-num">—</div>
+    <div class="status" id="rhythm-status">Load a pattern and press Play</div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn btn-blue" id="play-btn" onclick="togglePlay()">▶ Play</button>
+    <button class="btn btn-red" onclick="stopPlay()">■ Stop</button>
+  </div>
+</div>
+
+<!-- ==================== PITCH ==================== -->
+<div class="panel" id="panel-pitch">
+  <div class="sec">Live Pitch Tuner</div>
+  <div id="pitch-big" class="pitch-big">
+    <span id="pitch-note-display">—</span>
+    <span class="pitch-cents" id="pitch-cents-display"></span>
+  </div>
+  <div class="tuner-bar">
+    <div id="tuner-fill" class="tuner-fill"></div>
+    <div class="tuner-center-mark"></div>
+  </div>
+  <div class="tuner-labels"><span>♭ Flat</span><span>In tune</span><span>Sharp ♯</span></div>
+  <canvas class="wave" id="wave-canvas" width="800" height="60"></canvas>
+
+  <div class="card" style="margin-top:12px">
+    <div class="two-col">
+      <div>
+        <label>Target Note (sing this)</label>
+        <select id="target-note">
+          <option value="261.63">Do — C4</option>
+          <option value="293.66">Re — D4</option>
+          <option value="329.63">Mi — E4</option>
+          <option value="349.23">Fa — F4</option>
+          <option value="392.00">Sol — G4</option>
+          <option value="440.00">La — A4</option>
+          <option value="493.88">Ti — B4</option>
+          <option value="523.25">Do — C5</option>
+        </select>
+      </div>
+      <div>
+        <label>Reference Pitch</label>
+        <button class="btn btn-blue" onclick="playRef()" style="width:100%">♪ Sound It</button>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-blue" id="mic-btn" onclick="toggleMic()">🎤 Start Listening</button>
+      <button class="btn btn-green" onclick="randomNote()">⚄ Random Target</button>
+    </div>
+    <div class="status" id="pitch-status">Press Start Listening, then sing</div>
+  </div>
+
+  <div class="sec" style="margin-top:14px">Interval Drills</div>
+  <p style="font-size:13px;font-style:italic;color:#555;margin-bottom:10px">Press a button — hear the interval, then sing back both notes.</p>
+  <div class="interval-grid">
+    <button class="btn btn-gold" onclick="playInterval('scale_up')">Scale ↑</button>
+    <button class="btn btn-gold" onclick="playInterval('scale_down')">Scale ↓</button>
+    <button class="btn btn-gold" onclick="playInterval('third_up')">Third ↑ (Do–Mi)</button>
+    <button class="btn btn-gold" onclick="playInterval('third_down')">Third ↓ (Mi–Do)</button>
+    <button class="btn btn-gold" onclick="playInterval('fourth_up')">Fourth ↑ (Do–Fa)</button>
+    <button class="btn btn-gold" onclick="playInterval('fourth_down')">Fourth ↓ (Sol–Re)</button>
+    <button class="btn btn-gold" onclick="playInterval('fifth_up')">Fifth ↑ (Do–Sol)</button>
+    <button class="btn btn-gold" onclick="playInterval('fifth_down')">Fifth ↓ (Sol–Do)</button>
+    <button class="btn btn-gold" onclick="playInterval('octave_up')">Octave ↑</button>
+    <button class="btn btn-gold" onclick="playInterval('octave_down')">Octave ↓</button>
+  </div>
+  <div class="status" id="interval-status"></div>
+</div>
+
+<!-- ==================== SOLFÈGE ==================== -->
+<div class="panel" id="panel-solfege">
+  <div class="sec">Solfège — Fixed & Moveable Do</div>
+  <div class="do-mode">
+    <button class="active" id="fixed-btn" onclick="setDoMode('fixed')">Fixed Do — Do = C always</button>
+    <button id="moveable-btn" onclick="setDoMode('moveable')">Moveable Do</button>
+  </div>
+
+  <div id="fixed-info" class="tone-info">
+    <strong>Fixed-Do:</strong> Do is always C. Re is always D. The syllable names the absolute pitch.<br>
+    <em>This is the native system for Byzantine chant and Ladukhin's method.</em>
+  </div>
+  <div id="moveable-info" class="tone-info" style="display:none">
+    <strong>Moveable-Do:</strong> Do follows the tonic of the key.<br>
+    <label style="display:inline;margin-right:8px">Key:</label>
+    <select id="key-sel" onchange="buildSolfege()" style="width:auto;display:inline-block;margin-bottom:0">
+      <option value="C">C major</option>
+      <option value="G">G major</option>
+      <option value="F">F major</option>
+      <option value="D">D major</option>
+      <option value="Bb">B♭ major</option>
+      <option value="Am">A natural minor</option>
+    </select>
+  </div>
+
+  <div class="sol-grid" id="sol-grid"></div>
+
+  <div class="card">
+    <div class="sec">Scales & Arpeggios</div>
+    <div class="btn-row">
+      <button class="btn btn-blue" onclick="playScaleDrill(true)">↑ Scale ascending</button>
+      <button class="btn btn-blue" onclick="playScaleDrill(false)">↓ Scale descending</button>
+      <button class="btn btn-blue" onclick="playScaleDrill(true); setTimeout(()=>playScaleDrill(false),3200)">↑↓ Both</button>
+      <button class="btn btn-gold" onclick="playArpDrill()">Arpeggio Do–Mi–Sol–Do</button>
+    </div>
+    <div class="status" id="sol-status">Click a syllable or drill button above</div>
+  </div>
+</div>
+
+<!-- ==================== 8 TONES ==================== -->
+<div class="panel" id="panel-tones">
+  <div class="sec">The Eight Tones — OCA Obikhod</div>
+  <div class="tone-grid" id="tone-grid"></div>
+
+  <div class="cat-row">
+    <button class="cat-btn active" id="cat-tropar" onclick="setCat('tropar')">Troparion</button>
+    <button class="cat-btn" id="cat-stichera" onclick="setCat('stichera')">Sticheron</button>
+    <button class="cat-btn" id="cat-prok" onclick="setCat('prok')">Prokeimenon</button>
+  </div>
+
+  <div class="tone-info" id="tone-info-box">Select a tone above.</div>
+
+  <div class="sec">Melody Contour</div>
+  <canvas class="melody-canvas" id="melody-canvas" width="800" height="110"></canvas>
+  <div class="btn-row">
+    <button class="btn btn-blue" onclick="playMelody()">▶ Play Melody</button>
+    <button class="btn btn-red" onclick="stopToneAudio()">■ Stop</button>
+  </div>
+  <div class="status" id="tone-status">Select a tone and category</div>
+
+  <div class="sec" style="margin-top:14px">Prokeimenon Texts</div>
+  <div class="prok-list" id="prok-list"></div>
+</div>
+
+<!-- ==================== KEYBOARD ==================== -->
+<div class="panel" id="panel-keyboard">
+  <div class="sec">Keyboard — Fixed-Do Solfège Reference</div>
+  <div class="two-col" style="margin-bottom:12px">
+    <div>
+      <label>Starting Octave</label>
+      <select id="kb-start" onchange="buildKb()">
+        <option value="3">C3 — low voice</option>
+        <option value="4" selected>C4 — middle (middle C)</option>
+        <option value="5">C5 — upper</option>
+      </select>
+    </div>
+    <div>
+      <label>Range</label>
+      <select id="kb-range" onchange="buildKb()">
+        <option value="8">One octave (8 notes)</option>
+        <option value="12" selected>One octave + a fifth (12 notes)</option>
+        <option value="15">One octave + an octave (15 notes)</option>
+      </select>
+    </div>
+  </div>
+  <div>
+    <label>Key Labels</label>
+    <select id="kb-labels" onchange="buildKb()">
+      <option value="sol">Solfège (Fixed-Do)</option>
+      <option value="note">Note names</option>
+      <option value="both" selected>Both</option>
+      <option value="none">None</option>
+    </select>
+  </div>
+  <div class="kb-wrap">
+    <div class="kb" id="kb"></div>
+  </div>
+  <div class="status" id="kb-status">Click any key to play</div>
+
+  <div class="card drone-section">
+    <div class="sec">Drone Generator</div>
+    <p style="font-size:13px;font-style:italic;color:#555;margin-bottom:10px">For Byzantine chant practice — sustain a pitch while singing above it.</p>
+    <div class="two-col">
+      <div>
+        <label>Drone Pitch</label>
+        <select id="drone-pitch">
+          <option value="130.81">C3 — Do (bass)</option>
+          <option value="146.83">D3 — Re</option>
+          <option value="164.81">E3 — Mi</option>
+          <option value="174.61">F3 — Fa</option>
+          <option value="196.00">G3 — Sol</option>
+          <option value="220.00">A3 — La</option>
+          <option value="261.63" selected>C4 — Do (mid)</option>
+          <option value="293.66">D4 — Re</option>
+        </select>
+      </div>
+      <div>
+        <label>Volume — <span class="range-val" id="drone-vol-display">40</span>%</label>
+        <input type="range" min="0" max="100" value="40" id="drone-vol" oninput="setDroneVol(this.value)">
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-blue" id="drone-btn" onclick="toggleDrone()">~ Start Drone</button>
+      <button class="btn btn-red" onclick="stopDrone()">■ Stop Drone</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ======================================================
+//  AUDIO ENGINE
+// ======================================================
+let AC = null;
+function ac() { if (!AC || AC.state === 'closed') AC = new (window.AudioContext || window.webkitAudioContext)(); if (AC.state === 'suspended') AC.resume(); return AC; }
+
+function tone(freq, dur, vol = 0.35, delay = 0, type = 'sine') {
+  const ctx = ac();
+  const osc = ctx.createOscillator();
+  const g = ctx.createGain();
+  osc.connect(g); g.connect(ctx.destination);
+  osc.type = type; osc.frequency.value = freq;
+  const t = ctx.currentTime + delay;
+  g.gain.setValueAtTime(0, t);
+  g.gain.linearRampToValueAtTime(vol, t + 0.015);
+  g.gain.exponentialRampToValueAtTime(0.001, t + dur - 0.02);
+  osc.start(t); osc.stop(t + dur);
+}
+
+function click(accent) {
+  const ctx = ac();
+  const buf = ctx.createBuffer(1, Math.floor(ctx.sampleRate * 0.04), ctx.sampleRate);
+  const d = buf.getChannelData(0);
+  for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / d.length, 4);
+  const src = ctx.createBufferSource();
+  const g = ctx.createGain();
+  src.buffer = buf; src.connect(g); g.connect(ctx.destination);
+  g.gain.value = accent ? 0.7 : 0.3;
+  src.start(ctx.currentTime);
+}
+
+// ======================================================
+//  NOTES & CONSTANTS
+// ======================================================
+const CHROMATIC = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+const SOL_FIXED = { C:'Do', 'C#':'Di', D:'Re', 'D#':'Ri', E:'Mi', F:'Fa', 'F#':'Fi', G:'Sol', 'G#':'Si', A:'La', 'A#':'Li', B:'Ti' };
+const SCALE_C4 = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25];
+const SOL_NAMES = ['Do','Re','Mi','Fa','Sol','La','Ti','Do'];
+
+function midiToFreq(m) { return 440 * Math.pow(2, (m - 69) / 12); }
+function noteFreq(name, oct) {
+  const i = CHROMATIC.indexOf(name);
+  return midiToFreq(i + (oct + 1) * 12);
+}
+
+// ======================================================
+//  TABS
+// ======================================================
+function showTab(id) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  document.getElementById('tab-' + id).classList.add('active');
+  if (id === 'tones') { buildToneGrid(); renderMelodyCanvas(); buildProkList(); }
+  if (id === 'keyboard') buildKb();
+  if (id === 'solfege') buildSolfege();
+}
+
+// ======================================================
+//  RHYTHM
+// ======================================================
+const BEAT_TYPES = {
+  quarters: [
+    {sym:'♩', lbl:'ta', dur:1}, {sym:'♩', lbl:'ta', dur:1},
+    {sym:'♩', lbl:'ta', dur:1}, {sym:'♩', lbl:'ta', dur:1}
+  ],
+  eighths: [
+    {sym:'♪♪', lbl:'ti-ti', dur:0.5}, {sym:'♪♪', lbl:'ti-ti', dur:0.5},
+    {sym:'♩', lbl:'ta', dur:1},
+    {sym:'♪♪', lbl:'ti-ti', dur:0.5}, {sym:'♪♪', lbl:'ti-ti', dur:0.5},
+    {sym:'♩', lbl:'ta', dur:1}
+  ],
+  halves: [
+    {sym:'𝅗𝅥', lbl:'ta-a', dur:2}, {sym:'𝅗𝅥', lbl:'ta-a', dur:2}
+  ],
+  mixed1: [
+    {sym:'♩', lbl:'ta', dur:1},
+    {sym:'♪♪', lbl:'ti-ti', dur:0.5}, {sym:'♪♪', lbl:'ti-ti', dur:0.5},
+    {sym:'♩', lbl:'ta', dur:1},
+    {sym:'♩', lbl:'ta', dur:1}
+  ],
+  mixed2: [
+    {sym:'♪', lbl:'ti', dur:0.5}, {sym:'♩', lbl:'ta-i', dur:1}, {sym:'♪', lbl:'ti', dur:0.5},
+    {sym:'♪', lbl:'ti', dur:0.5}, {sym:'♩', lbl:'ta-i', dur:1}, {sym:'♪', lbl:'ti', dur:0.5}
+  ],
+  dotted: [
+    {sym:'♩.', lbl:'ta-i', dur:1.5}, {sym:'♪', lbl:'ti', dur:0.5},
+    {sym:'♩.', lbl:'ta-i', dur:1.5}, {sym:'♪', lbl:'ti', dur:0.5}
+  ]
+};
+
+let curPattern = [];
+let rPlaying = false;
+let rBeat = 0;
+let rTimer = null;
+let bpm = 72;
+let timeSig = 4;
+
+function loadPattern(name) {
+  stopPlay();
+  if (name === 'random') {
+    const pool = [
+      {sym:'♩', lbl:'ta', dur:1},
+      {sym:'♪♪', lbl:'ti-ti', dur:0.5},
+      {sym:'♪♪', lbl:'ti-ti', dur:0.5},
+      {sym:'𝅗𝅥', lbl:'ta-a', dur:2},
+      {sym:'♩', lbl:'ta', dur:1}
+    ];
+    curPattern = Array.from({length: timeSig === 3 ? 6 : 8}, () => ({...pool[Math.floor(Math.random() * pool.length)], rest: false}));
+  } else {
+    curPattern = BEAT_TYPES[name].map(b => ({...b, rest: false}));
+  }
+  renderBeats();
+  document.getElementById('rhythm-status').textContent = 'Pattern loaded — press Play';
+}
+
+function renderBeats() {
+  const grid = document.getElementById('beat-grid');
+  grid.innerHTML = '';
+  curPattern.forEach((b, i) => {
+    const el = document.createElement('div');
+    el.className = 'beat-cell' + (b.rest ? ' rest' : '');
+    el.id = 'bc' + i;
+    el.innerHTML = `<span class="sym">${b.sym}</span><span class="lbl">${b.lbl}</span>`;
+    el.onclick = () => { b.rest = !b.rest; el.classList.toggle('rest'); };
+    grid.appendChild(el);
+  });
+}
+
+function setTimeSig(v) { timeSig = parseInt(v); }
+function setBPM(v) { bpm = parseInt(v); document.getElementById('bpm-display').textContent = v; }
+
+function togglePlay() {
+  if (rPlaying) pausePlay();
+  else startPlay();
+}
+function startPlay() {
+  if (!curPattern.length) loadPattern('quarters');
+  rPlaying = true;
+  document.getElementById('play-btn').textContent = '⏸ Pause';
+  step();
+}
+function pausePlay() {
+  rPlaying = false;
+  clearTimeout(rTimer);
+  document.getElementById('play-btn').textContent = '▶ Play';
+}
+function stopPlay() {
+  rPlaying = false;
+  clearTimeout(rTimer);
+  rBeat = 0;
+  document.getElementById('play-btn').textContent = '▶ Play';
+  document.getElementById('metro-num').textContent = '—';
+  document.querySelectorAll('.beat-cell').forEach(c => c.classList.remove('current'));
+  document.getElementById('rhythm-status').textContent = 'Stopped';
+}
+function step() {
+  if (!rPlaying) return;
+  document.querySelectorAll('.beat-cell').forEach(c => c.classList.remove('current'));
+  const idx = rBeat % curPattern.length;
+  const el = document.getElementById('bc' + idx);
+  if (el) el.classList.add('current');
+  const b = curPattern[idx];
+  if (b && !b.rest) click(idx === 0);
+  document.getElementById('metro-num').textContent = (idx + 1);
+  document.getElementById('rhythm-status').textContent = 'Beat ' + (idx + 1) + ' of ' + curPattern.length + '  |  ' + bpm + ' BPM';
+  rBeat++;
+  rTimer = setTimeout(step, (b ? b.dur : 1) * (60000 / bpm));
+}
+
+// ======================================================
+//  PITCH TUNER
+// ======================================================
+let micActive = false;
+let micStream = null;
+let analyser = null;
+let pitchRAF = null;
+
+async function toggleMic() {
+  if (micActive) stopMic();
+  else await startMic();
+}
+async function startMic() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+    micStream = stream;
+    const ctx = ac();
+    const src = ctx.createMediaStreamSource(stream);
+    analyser = ctx.createAnalyser();
+    analyser.fftSize = 8192;
+    analyser.smoothingTimeConstant = 0.8;
+    src.connect(analyser);
+    micActive = true;
+    document.getElementById('mic-btn').textContent = '🔇 Stop Listening';
+    document.getElementById('pitch-status').textContent = 'Listening — sing a note!';
+    pitchLoop();
+  } catch (e) {
+    document.getElementById('pitch-status').textContent = 'Microphone denied — check browser permissions.';
+  }
+}
+function stopMic() {
+  if (micStream) micStream.getTracks().forEach(t => t.stop());
+  micActive = false;
+  if (pitchRAF) cancelAnimationFrame(pitchRAF);
+  document.getElementById('mic-btn').textContent = '🎤 Start Listening';
+  document.getElementById('pitch-note-display').textContent = '—';
+  document.getElementById('pitch-cents-display').textContent = '';
+  document.getElementById('tuner-fill').style.width = '50%';
+  document.getElementById('tuner-fill').style.background = 'var(--green)';
+}
+function pitchLoop() {
+  if (!micActive) return;
+  const buf = new Float32Array(analyser.fftSize);
+  analyser.getFloatTimeDomainData(buf);
+  const freq = autoCorrelate(buf, AC.sampleRate);
+
+  if (freq > 50 && freq < 2000) {
+    const midi = 12 * Math.log2(freq / 440) + 69;
+    const midiR = Math.round(midi);
+    const cents = Math.round((midi - midiR) * 100);
+    const noteName = CHROMATIC[((midiR % 12) + 12) % 12];
+    const oct = Math.floor(midiR / 12) - 1;
+    const sol = SOL_FIXED[noteName] || noteName;
+
+    document.getElementById('pitch-note-display').textContent = sol + ' (' + noteName + oct + ')';
+    document.getElementById('pitch-cents-display').textContent = (cents > 0 ? '+' : '') + cents + ' cents';
+
+    // tuner needle: 0 = flat end, 100 = sharp end
+    const pct = 50 + (cents / 50) * 45;
+    const fill = document.getElementById('tuner-fill');
+    fill.style.width = Math.max(2, Math.min(98, pct)) + '%';
+    fill.style.background = Math.abs(cents) < 10 ? 'var(--green)' : Math.abs(cents) < 25 ? 'var(--gold)' : 'var(--red)';
+
+    // check target
+    const target = parseFloat(document.getElementById('target-note').value);
+    const diff = Math.abs(freq - target) / target;
+    if (diff < 0.015) document.getElementById('pitch-status').textContent = '✓ In tune!';
+    else if (freq < target) document.getElementById('pitch-status').textContent = 'Sing higher ↑';
+    else document.getElementById('pitch-status').textContent = 'Sing lower ↓';
+  }
+
+  drawWave(buf);
+  pitchRAF = requestAnimationFrame(pitchLoop);
+}
+
+function autoCorrelate(buf, sr) {
+  const N = buf.length;
+  let rms = 0;
+  for (let i = 0; i < N; i++) rms += buf[i] * buf[i];
+  rms = Math.sqrt(rms / N);
+  if (rms < 0.008) return -1;
+
+  let r1 = 0, r2 = N - 1;
+  for (let i = 0; i < N / 2; i++) { if (Math.abs(buf[i]) < 0.2) { r1 = i; break; } }
+  for (let i = 1; i < N / 2; i++) { if (Math.abs(buf[N - i]) < 0.2) { r2 = N - i; break; } }
+  const trimmed = buf.slice(r1, r2);
+  const L = trimmed.length;
+
+  const c = new Float32Array(L);
+  for (let lag = 0; lag < L; lag++) {
+    let sum = 0;
+    for (let j = 0; j < L - lag; j++) sum += trimmed[j] * trimmed[j + lag];
+    c[lag] = sum;
+  }
+
+  let d = 0;
+  while (d < L - 1 && c[d] > c[d + 1]) d++;
+  let maxVal = -Infinity, maxPos = d;
+  for (let i = d; i < L; i++) { if (c[i] > maxVal) { maxVal = c[i]; maxPos = i; } }
+  if (maxPos === 0) return -1;
+
+  let T0 = maxPos;
+  if (T0 > 0 && T0 < L - 1) {
+    const a = (c[T0-1] + c[T0+1] - 2*c[T0]) / 2;
+    const b = (c[T0+1] - c[T0-1]) / 2;
+    if (a) T0 -= b / (2 * a);
+  }
+  return sr / T0;
+}
+
+function drawWave(buf) {
+  const canvas = document.getElementById('wave-canvas');
+  const ctx2 = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  ctx2.fillStyle = '#FFFDF5';
+  ctx2.fillRect(0, 0, W, H);
+  ctx2.strokeStyle = '#8B6914';
+  ctx2.lineWidth = 1.5;
+  ctx2.beginPath();
+  const step = Math.ceil(buf.length / W);
+  for (let i = 0; i < W; i++) {
+    const v = buf[i * step] || 0;
+    const y = (v * 0.85 + 1) / 2 * H;
+    i === 0 ? ctx2.moveTo(i, y) : ctx2.lineTo(i, y);
+  }
+  ctx2.stroke();
+}
+
+function playRef() {
+  const f = parseFloat(document.getElementById('target-note').value);
+  tone(f, 1.5, 0.4);
+}
+
+const PITCH_NAMES_EAR = [
+  {f:261.63,n:'Do (C4)'},{f:293.66,n:'Re (D4)'},{f:329.63,n:'Mi (E4)'},
+  {f:349.23,n:'Fa (F4)'},{f:392.00,n:'Sol (G4)'},{f:440.00,n:'La (A4)'},
+  {f:493.88,n:'Ti (B4)'},{f:523.25,n:'Do (C5)'}
+];
+function randomNote() {
+  const pick = PITCH_NAMES_EAR[Math.floor(Math.random() * PITCH_NAMES_EAR.length)];
+  document.getElementById('target-note').value = pick.f;
+  tone(pick.f, 1.5, 0.4);
+  document.getElementById('pitch-status').textContent = 'Heard it? Sing: ' + pick.n;
+}
+
+const INTERVAL_DATA = {
+  scale_up:    { notes: SCALE_C4, label: 'Scale ascending: Do Re Mi Fa Sol La Ti Do' },
+  scale_down:  { notes: [...SCALE_C4].reverse(), label: 'Scale descending: Do Ti La Sol Fa Mi Re Do' },
+  third_up:    { notes: [261.63, 329.63], label: 'Major third up: Do → Mi' },
+  third_down:  { notes: [329.63, 261.63], label: 'Major third down: Mi → Do' },
+  fourth_up:   { notes: [261.63, 349.23], label: 'Perfect fourth up: Do → Fa' },
+  fourth_down: { notes: [392.00, 293.66], label: 'Perfect fourth down: Sol → Re' },
+  fifth_up:    { notes: [261.63, 392.00], label: 'Perfect fifth up: Do → Sol' },
+  fifth_down:  { notes: [392.00, 261.63], label: 'Perfect fifth down: Sol → Do' },
+  octave_up:   { notes: [261.63, 523.25], label: 'Octave up: Do → Do' },
+  octave_down: { notes: [523.25, 261.63], label: 'Octave down: Do → Do' }
+};
+function playInterval(key) {
+  const data = INTERVAL_DATA[key];
+  if (!data) return;
+  data.notes.forEach((f, i) => tone(f, 0.6, 0.38, i * 0.7));
+  document.getElementById('interval-status').textContent = data.label;
+}
+
+// ======================================================
+//  SOLFÈGE
+// ======================================================
+let doMode = 'fixed';
+
+const MOVEABLE_ROOTS = { C: 261.63, G: 392.00, F: 349.23, D: 293.66, Bb: 233.08, Am: 220.00 };
+const MAJOR_OFFSETS = [0,2,4,5,7,9,11,12];
+const MINOR_OFFSETS = [0,2,3,5,7,8,10,12];
+
+function setDoMode(m) {
+  doMode = m;
+  document.getElementById('fixed-btn').classList.toggle('active', m === 'fixed');
+  document.getElementById('moveable-btn').classList.toggle('active', m === 'moveable');
+  document.getElementById('fixed-info').style.display = m === 'fixed' ? 'block' : 'none';
+  document.getElementById('moveable-info').style.display = m === 'moveable' ? 'block' : 'none';
+  buildSolfege();
+}
+
+function getSolFreqs() {
+  if (doMode === 'fixed') return SCALE_C4;
+  const key = document.getElementById('key-sel').value;
+  const root = MOVEABLE_ROOTS[key] || 261.63;
+  const offsets = key === 'Am' ? MINOR_OFFSETS : MAJOR_OFFSETS;
+  return offsets.map(o => root * Math.pow(2, o / 12));
+}
+
+function buildSolfege() {
+  const grid = document.getElementById('sol-grid');
+  grid.innerHTML = '';
+  const freqs = getSolFreqs();
+  const noteNames = ['C','D','E','F','G','A','B','C'];
+  SOL_NAMES.forEach((syl, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'sol-key';
+    btn.innerHTML = syl + (doMode === 'fixed' ? '<small>' + noteNames[i] + '</small>' : '');
+    const f = freqs[i];
+    btn.onclick = () => {
+      tone(f, 0.65, 0.4);
+      document.getElementById('sol-status').textContent = 'Singing: ' + syl;
+      btn.classList.add('lit');
+      setTimeout(() => btn.classList.remove('lit'), 500);
+    };
+    grid.appendChild(btn);
+  });
+}
+
+function playScaleDrill(asc) {
+  const freqs = getSolFreqs();
+  const seq = asc ? freqs : [...freqs].reverse();
+  seq.forEach((f, i) => tone(f, 0.42, 0.35, i * 0.48));
+  document.getElementById('sol-status').textContent = asc ? '▲ Ascending scale...' : '▼ Descending scale...';
+}
+
+function playArpDrill() {
+  const freqs = getSolFreqs();
+  [0, 2, 4, 7].forEach((idx, i) => tone(freqs[idx], 0.5, 0.38, i * 0.52));
+  document.getElementById('sol-status').textContent = 'Arpeggio: Do – Mi – Sol – Do';
+}
+
+buildSolfege();
+
+// ======================================================
+//  8 TONES — transcribed from OCA Obikhod scores
+// ======================================================
+// Soprano melody transcribed directly from OCA Obikhod scores (L'vov/Bakhmetev arr.)
+// Fixed-do (Do=C). Key signatures:
+//   Bb key (1 flat): C=Do D=Re Eb=Me F=Fa G=Sol A=La Bb=Tib (B-natural=Ti, needs accidental)
+//   G major (1 sharp): G=Sol A=La B=Ti C=Do D=Re E=Mi F#=Fi
+// Each solfège array = characteristic structural pitches of the soprano line.
+
+const TONES = {
+  1: {
+    name: 'Tone 1', key: 'Bb / F major',
+    reciting: 'Fa (F) — Tropar & Prok; Sol (G) — Lord I Call',
+    intonation: 'Re–Fa', cadence: 'Re–Do',
+    tropar: {
+      solfege: ['Si','Si','Tib','Do','Si','Si','Tib','Do','Di','Di','Do','Do','Do','Do','Do','Do','Do','Do','Tib','Si','Si','Tib','Tib','Do','Do','Tib','Do','Do','Do','Do','Di','Di','Do','Do','Tib','Tib','Si','Si','Tib','Tib','Do','Do','Si','Si','Si','Si','Si','Si','Si','Si','Si','Di','Di','Di','Di','Do','Do','Do','Do','Do','Do','Tib','Tib','Si','Si','Tib','Do','Do','Do','Di','Di','Tib','Tib','Do','Do','Di','Di','Di','Di','Di','Di','Do','Do','Tib','Tib','Si'],
+      midi: [56,56,58,60,56,56,58,60,61,61,60,60,60,60,60,60,60,60,58,56,56,58,58,60,60,58,60,60,60,60,61,61,60,60,58,58,56,56,58,58,60,60,56,56,56,56,56,56,56,56,56,61,61,61,61,60,60,60,60,60,60,58,58,56,56,58,60,60,60,61,61,58,58,60,60,61,61,61,61,61,61,60,60,58,58,56],
+      desc: 'Troparion T1 (Obikhod, sung in Bb). Reciting on Do (C). Upper neighbor Di (Db). Characteristic Si–Tib–Do–Di arc. Cadence Si–Si. "When the stone had been sealed by the Jews..."',
+    },
+    stichera: {
+      solfege: ['Fa','Fa','Sol','Sol','Fa','Sol','Sol','Fa','Fa','Sol','Sol','Fa','Me','Re','Do'],
+      desc: 'Lord I Call T1 (Obikhod). Opens on Fa. Reciting tone rises to Sol (G) — higher than Troparion. Extended Sol reciting. Cadence Fa–Me–Re–Do. "Lord, I call upon Thee, hear me!"',
+    },
+    prok: {
+      solfege: ['Re','Re','Fa','Fa','Re','Fa','Fa','Re','Do'],
+      desc: 'Prokeimenon T1 (Obikhod). Simple shape: Re–Fa–Re–Do. Reciting on Fa. Shorter than Troparion. "Let Your mercy, O Lord, be upon us." (Ps 32/33:22)',
+    }
+  },
+  2: {
+    name: 'Tone 2', key: 'Bb / F major',
+    reciting: 'Fa (F) — Tropar & Prok; Sol (G) — Lord I Call',
+    intonation: 'Re–Fa', cadence: 'Re–Do',
+    tropar: {
+      solfege: ['Re','Fa','Re','Fa','Fa','Tib','Re','Fa','Fa','Re','Fa','Re','Do'],
+      desc: 'Troparion T2 (Obikhod). Opens Re–Fa. Characteristic Tib (Bb) at inner phrase boundary distinguishes T2 from T1. Reciting Fa. Cadence Re–Do. "When Thou didst descend to death..."',
+    },
+    stichera: {
+      solfege: ['Re','Fa','Fa','Sol','Sol','Sol','Fa','Sol','Fa','Me','Re','Do'],
+      desc: 'Lord I Call T2 (Obikhod). Opens Re–Fa then rises to Sol reciting tone. Characteristic Sol–Fa–Sol motion. Cadence Fa–Me–Re–Do. "Lord, I call upon Thee, hear me!"',
+    },
+    prok: {
+      solfege: ['Re','Re','Fa','Fa','Fa','Fa','Sol','Fa','Fa','Re','Do'],
+      desc: 'Prokeimenon T2 (Obikhod). Recites on Fa; reaches Sol once at center phrase. Cadence Re–Do. "The Lord is my strength and my song, He has become my salvation." (Ps 117/118:4)',
+    }
+  },
+  3: {
+    name: 'Tone 3', key: 'G major (1♯) Tropar / Bb Lord I Call & Prok',
+    reciting: 'Ti (B) — Tropar; Sol (G) — Lord I Call & Prok',
+    intonation: 'Sol–La–Ti (Tropar); Re–Sol (LIC)', cadence: 'La–Sol (Tropar); Me–Re–Do (LIC)',
+    tropar: {
+      solfege: ['Sol','La','Ti','Ti','La','Ti','La','Sol','La','Ti','La','Sol'],
+      desc: 'Troparion T3 (Obikhod, G major). Intonation Sol–La–Ti. Reciting on Ti (B). Characteristic Ti–La–Sol–La–Ti melodic arc. Cadence La–Sol. "Let the heavens rejoice! Let the earth be glad!"',
+    },
+    stichera: {
+      solfege: ['Re','Fa','Sol','Sol','Sol','Fa','Sol','Sol','Me','Re','Do'],
+      desc: 'Lord I Call T3 (Obikhod, Bb key). Opens Re–Fa. Reciting on Sol. Cadence Me–Re–Do — same Lord I Call cadence as Tones 1 and 2. "Lord, I call upon Thee, hear me."',
+    },
+    prok: {
+      solfege: ['Re','Re','Sol','Sol','Sol','Sol','Re','Fa','Re','Do'],
+      desc: 'Prokeimenon T3 (Obikhod, Bb key). Opens Re–Sol; recites Sol; cadence Fa–Re–Do. "Sing praises to our God, sing praises, sing praises to our King." (Ps 46/47:6)',
+    }
+  },
+  4: {
+    name: 'Tone 4', key: 'Bb / F major',
+    reciting: 'Sol (G)',
+    intonation: 'Re–Fa–Sol', cadence: 'Fi–Sol (Tropar); Me–Re–Do (LIC)',
+    tropar: {
+      solfege: ['Re','Fa','Sol','Sol','Sol','Sol','Fi','Sol','Sol','Sol','Fi','Sol'],
+      desc: 'Troparion T4 (Obikhod). Opens Re–Fa–Sol. Reciting on Sol. Characteristic Fi (F#/B-natural) at inner and final cadence — the tone\'s identifying marker. Ends on Sol. "When the women disciples of the Lord..."',
+    },
+    stichera: {
+      solfege: ['Re','Sol','Sol','Sol','Sol','Sol','Fa','Sol','Sol','Fa','Me','Re','Do'],
+      desc: 'Lord I Call T4 (Obikhod). Opens directly on Sol. Recites Sol. Stepwise descending cadence Fa–Me–Re–Do. "Lord, I call upon Thee, hear me!"',
+    },
+    prok: {
+      solfege: ['Re','Re','Sol','Sol','Sol','Sol','Re','Fa','Re','Do'],
+      desc: 'Prokeimenon T4 (Obikhod). Re–Sol then reciting Sol. Cadence Fa–Re–Do. "O Lord, how manifold are Your works; in wisdom have You made them all." (Ps 103/104:24)',
+    }
+  },
+  5: {
+    name: 'Tone 5', key: 'G major (1♯) Tropar / Bb Lord I Call & Prok',
+    reciting: 'La (A) — Tropar; Sol (G) — Lord I Call & Prok',
+    intonation: 'Re–Sol–La (Tropar); Fa–Sol (LIC)', cadence: 'Re–Sol (Tropar); Me–Re–Do (LIC)',
+    tropar: {
+      solfege: ['Re','Re','Sol','La','Sol','La','Sol','La','Ti','La','Sol','La','Re','Sol'],
+      desc: 'Troparion T5 (Imperial Court Chant, G major). Opens Re–Sol then rises to La reciting. Ti (B) appears as passing tone. Long elaborate melody. Cadence Re–Sol. "Let us, the faithful, praise and worship the Word..."',
+    },
+    stichera: {
+      solfege: ['Fa','Sol','Sol','Sol','Sol','Sol','Sol','Fa','Sol','Me','Re','Do'],
+      desc: 'Lord I Call T5 (Obikhod, Bb key). Opens Fa–Sol. Reciting on Sol. Standard Lord I Call cadence Me–Re–Do. "Lord, I call upon Thee, hear me!"',
+    },
+    prok: {
+      solfege: ['Re','Re','Sol','Sol','Sol','Sol','Sol','Sol','Re','Do'],
+      desc: 'Prokeimenon T5 (Obikhod, Bb key). Re–Sol; sustained Sol reciting; simple cadence Re–Do. "You, O Lord, shall protect us and preserve us from this generation forever." (Ps 11/12:7)',
+    }
+  },
+  6: {
+    name: 'Tone 6', key: 'Bb Tropar & Prok / G major (1♯) Lord I Call',
+    reciting: 'Sol (G)',
+    intonation: 'Re–Fa–Sol (Tropar & Prok); Sol–La (LIC)', cadence: 'Fi–Sol (Tropar & LIC); Tib–Re–Do (Prok)',
+    tropar: {
+      solfege: ['Re','Fa','Sol','Sol','Sol','Fi','Sol','Sol','Sol','Fi','Sol','Re','Do'],
+      desc: 'Troparion T6 (Obikhod, Bb key). Opens Re–Fa–Sol. Reciting Sol. Characteristic Fi (B-natural in Bb key = F# in G) at inner and outer cadence. Ends on Re–Do. "The Angelic Powers were at Thy tomb..."',
+    },
+    stichera: {
+      solfege: ['Sol','La','Fi','Sol','Sol','La','Fi','Sol','Sol','La','Fi','Sol'],
+      desc: 'Lord I Call T6 (Obikhod, G major 1♯). Opens Sol–La. Characteristic Fi (F#) at each phrase cadence — Tone 6\'s most distinctive feature. Reciting Sol. Ends Sol. "Lord, I call upon Thee, hear me!"',
+    },
+    prok: {
+      solfege: ['Re','Re','Sol','Sol','Sol','Sol','Tib','Re','Do'],
+      desc: 'Prokeimenon T6 (Obikhod, Bb key). Re–Sol; recites Sol; Tib (Bb) leads to Re–Do cadence. Short and compact. "O Lord, save Your people and bless Your inheritance." (Ps 27/28:9)',
+    }
+  },
+  7: {
+    name: 'Tone 7', key: 'Bb / F major',
+    reciting: 'Sol (G)',
+    intonation: 'Re–Fa–Sol', cadence: 'Fa–Re–Do (Tropar); Me–Re–Do (LIC)',
+    tropar: {
+      solfege: ['Re','Fa','Sol','Sol','Fa','Sol','Sol','Sol','Fa','Re','Do'],
+      desc: 'Troparion T7 (Obikhod). Opens Re–Fa–Sol. Reciting Sol. Inner Fa–Sol motion distinguishes T7 from T4 which has Fi. Cadence Fa–Re–Do. "By Thy Cross Thou didst destroy death..."',
+    },
+    stichera: {
+      solfege: ['Fa','Sol','Sol','Sol','Sol','Sol','Sol','Fa','Sol','Fa','Me','Re','Do'],
+      desc: 'Lord I Call T7 (Obikhod). Opens Fa–Sol. Reciting Sol. Extended Sol reciting phrase. Cadence Fa–Me–Re–Do. "Lord, I call upon Thee, hear me!"',
+    },
+    prok: {
+      solfege: ['Re','Fa','Sol','Sol','Sol','Sol','Sol','Sol','Re','Do'],
+      desc: 'Prokeimenon T7 (Obikhod). Re–Fa–Sol; extended Sol reciting; cadence Re–Do. "The Lord shall give strength to His people; the Lord shall bless His people with peace." (Ps 28/29:11)',
+    }
+  },
+  8: {
+    name: 'Tone 8', key: 'G major (1♯) Tropar / Bb Lord I Call & Prok',
+    reciting: 'Sol (G)',
+    intonation: 'Re–Sol (all categories)', cadence: 'Re–Sol (Tropar); Me–Re–Do (LIC); Fa–Re–Do (Prok)',
+    tropar: {
+      solfege: ['Re','Re','Re','Sol','Sol','Sol','Sol','Sol','Ti','La','Sol','Re','Sol'],
+      desc: 'Troparion T8 (Obikhod, G major). Opens Re–Re–Re–Sol (long intonation on Re). Reciting Sol. Ti (B) and La (A) appear in middle phrase. Cadence Re–Sol. "Thou didst descend from on high, O Merciful One!"',
+    },
+    stichera: {
+      solfege: ['Fa','Sol','Sol','Sol','Sol','Sol','Sol','Fa','Sol','Me','Re','Do'],
+      desc: 'Lord I Call T8 (Obikhod, Bb key). Opens Fa–Sol. Reciting Sol. Cadence Me–Re–Do. "Lord, I call upon Thee, hear me!"',
+    },
+    prok: {
+      solfege: ['Re','Fa','Sol','Sol','Sol','Sol','Sol','Fa','Re','Do'],
+      desc: 'Prokeimenon T8 (Obikhod, Bb key). Re–Fa–Sol; reciting Sol; cadence Fa–Re–Do. "Pray and make your vows before the Lord our God." (Ps 75/76:11)',
+    }
+  }
+};
+const PROK_TEXTS = [
+  {
+    t:1,
+    text: 'Let Your mercy, O Lord, be upon us, as we have set our hope on You.',
+    notes: 'Do Re Me Re Do — Me Re Do',
+    ps: 'Ps 32/33:22'
+  },
+  {
+    t:2,
+    text: 'The Lord is my strength and my song; He has become my salvation.',
+    notes: 'Do Re Me Fa — Me Re Do',
+    ps: 'Ps 117/118:4'
+  },
+  {
+    t:3,
+    text: 'Sing praises to our God, sing praises; sing praises to our King, sing praises.',
+    notes: 'Sol La Ti Do — Ti La Sol',
+    ps: 'Ps 46/47:6'
+  },
+  {
+    t:4,
+    text: 'O Lord, how manifold are Your works; in wisdom have You made them all.',
+    notes: 'Do Re Me Fa — Me Re Do',
+    ps: 'Ps 103/104:24'
+  },
+  {
+    t:5,
+    text: 'You, O Lord, shall protect us and preserve us from this generation forever.',
+    notes: 'Sol La Ti — La Sol',
+    ps: 'Ps 11/12:7'
+  },
+  {
+    t:6,
+    text: 'O Lord, save Your people and bless Your inheritance.',
+    notes: 'Sol La Sol — Fi Sol',
+    ps: 'Ps 27/28:9'
+  },
+  {
+    t:7,
+    text: 'The Lord shall give strength to His people; the Lord shall bless His people with peace.',
+    notes: 'Do Re Me Fa — Me Re Do',
+    ps: 'Ps 28/29:11'
+  },
+  {
+    t:8,
+    text: 'Pray and make your vows before the Lord our God.',
+    notes: 'Do Re Sol — Mi Re Do',
+    ps: 'Ps 75/76:11'
+  },
+];
+
+let selTone = 1;
+let selCat = 'tropar';
+
+function buildToneGrid() {
+  const grid = document.getElementById('tone-grid');
+  grid.innerHTML = '';
+  for (let i = 1; i <= 8; i++) {
+    const btn = document.createElement('button');
+    btn.className = 'tone-btn' + (i === selTone ? ' active' : '');
+    btn.id = 'tb' + i;
+    btn.innerHTML = 'Tone ' + i + '<small>' + TONES[i].key + '</small>';
+    btn.title = TONES[i].tropar.desc.split('.')[0];
+    btn.onclick = () => selectTone(i);
+    grid.appendChild(btn);
+  }
+}
+
+function selectTone(n) {
+  selTone = n;
+  document.querySelectorAll('.tone-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tb' + n).classList.add('active');
+  updateToneInfo();
+  renderMelodyCanvas();
+  buildProkList();
+}
+
+function setCat(c) {
+  selCat = c;
+  ['tropar','stichera','prok'].forEach(x => {
+    document.getElementById('cat-'+x).classList.toggle('active', x === c);
+  });
+  updateToneInfo();
+  renderMelodyCanvas();
+  buildProkList();
+}
+
+function updateToneInfo() {
+  const t = TONES[selTone];
+  const catData = t[selCat];
+  const catLabel = selCat === 'tropar' ? 'Troparion' : selCat === 'stichera' ? 'Lord I Call (Sticheron)' : 'Prokeimenon';
+  document.getElementById('tone-info-box').innerHTML =
+    '<strong>' + t.name + '</strong> &mdash; ' + catLabel + ' &mdash; <em>' + t.key + '</em><br>' +
+    'Reciting tone: <em>' + t.reciting + '</em> &nbsp;|&nbsp; ' +
+    'Intonation: <em>' + t.intonation + '</em> &nbsp;|&nbsp; ' +
+    'Cadence: <em>' + t.cadence + '</em><br>' +
+    catData.desc;
+}
+
+// Semitone offsets from C4 for each solfège syllable (including chromatics)
+const SOL_SEMI = {
+  Do:0, Di:1, Re:2, Ri:3, Me:3, Mi:4, Fa:5, Fi:6,
+  Sol:7, Si:8, La:9, Li:10, Tib:10, Ti:11
+};
+// Vertical position 0=Do(bottom)..6=Ti(top), chromatics at .5 intervals
+const SOL_POS = {
+  Do:0, Di:0.5, Me:0.5, Re:1, Mi:2, Fa:3, Fi:3.5, Sol:4, Si:4.5, La:5, Tib:5.5, Ti:6
+};
+const SOL_IDX = {
+  Do:0, Re:1, Me:1, Mi:2, Fa:3, Fi:3, Sol:4, La:5, Tib:5, Ti:6
+};
+function solFreq(name) {
+  const semi = SOL_SEMI[name];
+  return semi !== undefined ? midiToFreq(60 + semi) : SCALE_C4[0];
+}
+
+function renderMelodyCanvas() {
+  const canvas = document.getElementById('melody-canvas');
+  if (!canvas) return;
+  const ctx2 = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  ctx2.clearRect(0,0,W,H);
+  ctx2.fillStyle = '#FFFDF5';
+  ctx2.fillRect(0,0,W,H);
+
+  const t = TONES[selTone];
+  const catData = t[selCat];
+  const syls = catData.solfege;
+  const n = syls.length;
+
+  // Diatonic pitch rows: 0=Do at BOTTOM, 6=Ti at TOP
+  // Y coords: staffBottom to staffTop
+  const staffBottom = H - 18, staffTop = 14;
+  const staffH = staffBottom - staffTop;
+  // lyRow[i] = y coordinate for pitch row i (0=Do=bottom)
+  const lyRow = Array.from({length:7}, (_,i) => Math.round(staffBottom - (i/6)*staffH));
+
+  // Staff lines
+  ctx2.strokeStyle = 'rgba(139,105,20,0.18)';
+  ctx2.lineWidth = 0.5;
+  lyRow.forEach(y => { ctx2.beginPath(); ctx2.moveTo(32, y); ctx2.lineTo(W - 6, y); ctx2.stroke(); });
+
+  // Row labels on left
+  ctx2.font = '9px Crimson Pro, serif';
+  ctx2.fillStyle = 'rgba(100,70,10,0.6)';
+  ['Do','Re','Mi','Fa','Sol','La','Ti'].forEach((s,i) => ctx2.fillText(s, 2, lyRow[i] + 3));
+
+  // Compute y for each note using SOL_POS with sub-diatonic interpolation
+  function noteY(name) {
+    const pos = SOL_POS[name];
+    if (pos === undefined) return lyRow[0];
+    const lo = Math.floor(pos), hi = Math.ceil(pos), frac = pos - lo;
+    const yLo = lyRow[Math.min(lo, 6)];
+    const yHi = lyRow[Math.min(hi, 6)];
+    return yLo + (yHi - yLo) * frac;
+  }
+
+  const xMargin = 36;
+  const xStep = (W - xMargin - 12) / Math.max(n - 1, 1);
+
+  const points = syls.map((s, i) => ({ x: xMargin + i * xStep, y: noteY(s), s: s }));
+
+  // Connect line
+  ctx2.strokeStyle = '#1A3A5C';
+  ctx2.lineWidth = 2;
+  ctx2.lineJoin = 'round';
+  ctx2.lineCap = 'round';
+  ctx2.beginPath();
+  points.forEach((p, i) => i === 0 ? ctx2.moveTo(p.x, p.y) : ctx2.lineTo(p.x, p.y));
+  ctx2.stroke();
+
+  // Dots
+  points.forEach(p => {
+    ctx2.beginPath();
+    ctx2.arc(p.x, p.y, 4, 0, Math.PI*2);
+    ctx2.fillStyle = '#1A3A5C';
+    ctx2.fill();
+  });
+
+  // Labels above dots (stagger alternating up/down to avoid overlap)
+  ctx2.font = 'bold 9px Crimson Pro, serif';
+  ctx2.textAlign = 'center';
+  points.forEach((p, i) => {
+    ctx2.fillStyle = (p.s === 'Me' || p.s === 'Fi' || p.s === 'Tib') ? '#8B6914' : '#8B1A1A';
+    const offset = (i % 2 === 0) ? -10 : 16;
+    ctx2.fillText(p.s, p.x, p.y + offset);
+  });
+  ctx2.textAlign = 'left';
+
+  const catLabel = selCat === 'tropar' ? 'Troparion' : selCat === 'stichera' ? 'Lord I Call' : 'Prokeimenon';
+  document.getElementById('tone-status').textContent = t.name + ' – ' + catLabel + ': ' + syls.join(' ');
+}
+
+let toneAudioNodes = [];
+function playMelody() {
+  stopToneAudio();
+  const t = TONES[selTone];
+  const catData = t[selCat];
+  const syls = catData.solfege;
+  const midis = catData.midi;
+  syls.forEach((s, i) => {
+    const freq = midis ? midiToFreq(midis[i]) : solFreq(s);
+    tone(freq, 0.55, 0.38, i * 0.55);
+  });
+  const catLabel = selCat === 'tropar' ? 'Troparion' : selCat === 'stichera' ? 'Lord I Call' : 'Prokeimenon';
+  document.getElementById('tone-status').textContent = 'Playing ' + t.name + ' ' + catLabel + '...';
+}
+
+function stopToneAudio() {
+  // Notes use self-stopping oscillators; just update status
+  document.getElementById('tone-status').textContent = 'Stopped';
+}
+
+function buildProkList() {
+  const list = document.getElementById('prok-list');
+  list.innerHTML = '';
+  const items = PROK_TEXTS.filter(p => p.t === selTone);
+  if (!items.length) {
+    list.innerHTML = '<p style="font-style:italic;color:#777;padding:10px">No prokeimenon data for this tone yet.</p>';
+    return;
+  }
+  items.forEach(p => {
+    const div = document.createElement('div');
+    div.className = 'prok-item';
+    div.innerHTML = '<span class="prok-num">' + p.t + '</span><div class="prok-body"><div class="prok-text">' + p.text + '</div><div class="prok-notes">' + p.notes + (p.ps ? ' &nbsp;(' + p.ps + ')' : '') + '</div></div>';
+    div.onclick = () => {
+      p.notes.split(' ').forEach((s, i) => {
+        const idx = SOL_IDX[s] !== undefined ? SOL_IDX[s] : 0;
+        tone(SCALE_C4[idx], 0.55, 0.38, i * 0.6);
+      });
+    };
+    list.appendChild(div);
+  });
+}
+
+// Init tones panel
+buildToneGrid();
+updateToneInfo();
+buildProkList();
+
+// ======================================================
+//  KEYBOARD
+// ======================================================
+let droneOsc = null, droneGainNode = null, droneOn = false;
+
+const WHITE_ORDER = ['C','D','E','F','G','A','B'];
+// black key positions between whites: C#(0-1), D#(1-2), F#(3-4), G#(4-5), A#(5-6)
+const BLACK_BETWEEN = [0, 1, null, 3, 4, 5]; // index = between white[i] and white[i+1], null = no black
+
+function buildKb() {
+  const startOct = parseInt(document.getElementById('kb-start').value);
+  const range = parseInt(document.getElementById('kb-range').value);
+  const labelMode = document.getElementById('kb-labels').value;
+  const kb = document.getElementById('kb');
+  kb.innerHTML = '';
+
+  // Build note sequence
+  const notes = [];
+  let oct = startOct;
+  let wi = 0; // white note index within octave
+  while (notes.length < range) {
+    const name = WHITE_ORDER[wi];
+    const freq = noteFreq(name, oct);
+    const sol = SOL_FIXED[name] || name;
+    let lbl = '';
+    if (labelMode === 'sol') lbl = sol;
+    else if (labelMode === 'note') lbl = name + oct;
+    else if (labelMode === 'both') lbl = sol + '\n' + name + oct;
+    notes.push({ name, oct, freq, sol, lbl, type: 'white' });
+    wi++;
+    if (wi >= 7) { wi = 0; oct++; }
+  }
+
+  // Determine total white keys to set layout
+  const totalWhites = notes.length;
+  const kbEl = document.getElementById('kb');
+  // Set kb width dynamically
+  kbEl.style.minWidth = (totalWhites * 32) + 'px';
+
+  // Place white keys
+  notes.forEach((n, idx) => {
+    const wk = document.createElement('div');
+    wk.className = 'wkey';
+    wk.style.left = (idx / totalWhites * 100) + '%';
+    if (n.lbl) {
+      wk.innerHTML = '<span style="font-size:9px;text-align:center;white-space:pre;line-height:1.2">' + n.lbl + '</span>';
+    }
+    wk.onclick = () => {
+      tone(n.freq, 0.65, 0.4);
+      document.getElementById('kb-status').textContent = 'Playing: ' + n.sol + ' (' + n.name + n.oct + ') — ' + n.freq.toFixed(1) + ' Hz';
+      wk.classList.add('playing');
+      setTimeout(() => wk.classList.remove('playing'), 350);
+    };
+    kb.appendChild(wk);
+  });
+
+  // Place black keys
+  // We walk the white notes and insert black keys between appropriate pairs
+  notes.forEach((n, idx) => {
+    if (idx >= notes.length - 1) return;
+    const wi2 = WHITE_ORDER.indexOf(n.name);
+    // black key exists if not E-F or B-C boundary
+    const hasBlack = !(n.name === 'E' || n.name === 'B');
+    if (!hasBlack) return;
+
+    const blackName = n.name + '#';
+    const blackFreq = noteFreq(n.name, n.oct) * Math.pow(2, 1/12);
+    const blackSol = SOL_FIXED[blackName] || blackName;
+    const bk = document.createElement('div');
+    bk.className = 'bkey';
+    // Position: center between white key idx and idx+1
+    const pct = ((idx + 0.65) / totalWhites) * 100;
+    bk.style.left = 'calc(' + pct + '% - 7px)';
+    bk.onclick = (e) => {
+      e.stopPropagation();
+      tone(blackFreq, 0.5, 0.38);
+      document.getElementById('kb-status').textContent = 'Playing: ' + blackSol + ' (' + blackName + n.oct + ') — ' + blackFreq.toFixed(1) + ' Hz';
+      bk.classList.add('playing');
+      setTimeout(() => bk.classList.remove('playing'), 280);
+    };
+    kb.appendChild(bk);
+  });
+}
+
+function toggleDrone() {
+  if (droneOn) stopDrone();
+  else startDrone();
+}
+function startDrone() {
+  const freq = parseFloat(document.getElementById('drone-pitch').value);
+  const vol = parseInt(document.getElementById('drone-vol').value) / 100 * 0.45;
+  const ctx = ac();
+  droneOsc = ctx.createOscillator();
+  droneGainNode = ctx.createGain();
+  droneOsc.connect(droneGainNode);
+  droneGainNode.connect(ctx.destination);
+  droneOsc.type = 'sine';
+  droneOsc.frequency.value = freq;
+  droneGainNode.gain.value = vol;
+  droneOsc.start();
+  droneOn = true;
+  document.getElementById('drone-btn').textContent = '~ Drone Playing';
+  document.getElementById('drone-btn').style.background = 'var(--green)';
+}
+function stopDrone() {
+  if (droneOsc) { try { droneOsc.stop(); } catch(e){} droneOsc = null; }
+  droneOn = false;
+  document.getElementById('drone-btn').textContent = '~ Start Drone';
+  document.getElementById('drone-btn').style.background = 'var(--blue)';
+}
+function setDroneVol(v) {
+  document.getElementById('drone-vol-display').textContent = v;
+  if (droneGainNode) droneGainNode.gain.value = parseInt(v) / 100 * 0.45;
+}
+
+buildKb();
+</script>
+</body>
+</html>
