@@ -2,5 +2,6 @@
 # All non-file requests fall through to index.html
 # so React Router handles /latin, /math, etc. on hard refresh
 
-/api/*  /api/:splat  200
-/*      /index.html  200
+/api/*         /api/:splat               200
+/chant-master  /chant-master-fixed.html  200
+/*             /index.html               200

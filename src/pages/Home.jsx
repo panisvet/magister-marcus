@@ -228,6 +228,17 @@ const TOOLS = [
     tag: 'Active',
   },
   {
+    id: 'chant-master',
+    icon: '🎼',
+    title: 'Chant Master',
+    subtitle: 'Schola Cantorum Domestica · Practice Tool',
+    desc: 'Interactive chant practice and pronunciation companion — sister to Schola Cantorum Domestica.',
+    accent: '#a070d0',
+    href: '/chant-master',
+    status: 'active',
+    tag: 'Active',
+  },
+  {
     id: 'math',
     icon: '📐',
     title: 'Coming Soon',
