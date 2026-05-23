@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/latin" element={<Latin />} />
         <Route path="/magister-natura" element={<MagisterNatura />} />
-        <Route path="/wonders of the created world" element={<LessonViewer />} />
+        <Route path="/lesson-viewer" element={<LessonViewer />} />
         <Route path="/schola-cantorum" element={<ScholaCantorum />} />
         {/* Add future subjects here:
         <Route path="/math"    element={<Math />} />
