@@ -8,7 +8,7 @@
 // Route: /schola-cantorum
 // ─────────────────────────────────────────────────────────────────────────────
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { YEARS, ALL_LESSONS } from "../data/schola-cantorum.js";
 import { CLOSING_EXERCISES } from "../data/closingExercises.js";
@@ -69,6 +69,7 @@ export default function ScholaCantorum() {
   const [form, setForm]             = useState("both");      // "both" | "I" | "II"
   const [collapsed, setCollapsed]   = useState({});
   const [activeTab, setActiveTab]   = useState("lesson");    // "lesson" | "scores"
+  const [iconModal, setIconModal]   = useState(null);        // iconData object or null
 
   const lesson = useMemo(
     () => ALL_LESSONS.find(l => l.id === selectedId) || null,
@@ -156,7 +157,8 @@ export default function ScholaCantorum() {
                           src={iconData.src}
                           alt={iconData.saint}
                           className="sc-unit-icon-img"
-                          title={iconData.saint}
+                          title={`${iconData.saint} — click to enlarge`}
+                          onClick={(e) => { e.stopPropagation(); setIconModal(iconData); }}
                         />
                       ) : (
                         <span className="sc-unit-icon">{u.icon}</span>
@@ -215,6 +217,51 @@ export default function ScholaCantorum() {
           )}
         </main>
 
+      </div>
+
+      {iconModal && (
+        <IconModal iconData={iconModal} onClose={() => setIconModal(null)} />
+      )}
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+function IconModal({ iconData, onClose }) {
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  const printIcon = () => {
+    const html = document.documentElement;
+    html.classList.add("sc-printing-icon");
+    const cleanup = () => {
+      html.classList.remove("sc-printing-icon");
+      window.removeEventListener("afterprint", cleanup);
+    };
+    window.addEventListener("afterprint", cleanup);
+    window.print();
+  };
+
+  return (
+    <div className="sc-icon-modal" onClick={onClose} role="dialog" aria-modal="true">
+      <div className="sc-icon-modal-content" onClick={(e) => e.stopPropagation()}>
+        <img
+          src={iconData.src}
+          alt={iconData.saint}
+          className="sc-icon-modal-img"
+        />
+        <div className="sc-icon-modal-name">{iconData.saint}</div>
+        <button className="sc-icon-modal-print-btn" onClick={printIcon}>
+          PRINT
+        </button>
+        <button
+          className="sc-icon-modal-close"
+          onClick={onClose}
+          aria-label="Close"
+        >✕</button>
       </div>
     </div>
   );
@@ -600,6 +647,12 @@ const SC_STYLES = `
   border-radius: 3px;
   border: 1px solid var(--sc-rule-strong);
   flex-shrink: 0;
+  cursor: zoom-in;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.sc-unit-icon-img:hover {
+  border-color: var(--sc-gold);
+  transform: scale(1.06);
 }
 .sc-unit-icon { font-size: 22px; line-height: 1; }
 .sc-unit-text { flex: 1; }
@@ -959,6 +1012,72 @@ const SC_STYLES = `
   font-style: italic; color: var(--sc-parch-dim); max-width: 480px;
 }
 
+.sc-icon-modal {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex; align-items: center; justify-content: center;
+  padding: 32px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+.sc-icon-modal-content {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center;
+  gap: 18px;
+  cursor: default;
+  max-width: 100%;
+}
+.sc-icon-modal-img {
+  max-width: min(80vw, 640px);
+  max-height: 75vh;
+  object-fit: contain;
+  border: 2px solid var(--sc-gold);
+  border-radius: 4px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  background: var(--sc-bg);
+}
+.sc-icon-modal-name {
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  color: var(--sc-gold-2);
+  letter-spacing: 0.08em;
+  text-align: center;
+  padding: 0 12px;
+}
+.sc-icon-modal-print-btn {
+  background: transparent;
+  color: var(--sc-parch);
+  border: 1px solid var(--sc-gold);
+  padding: 8px 22px;
+  font-family: "Cinzel", serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.15s;
+}
+.sc-icon-modal-print-btn:hover {
+  background: var(--sc-gold);
+  color: var(--sc-bg);
+}
+.sc-icon-modal-close {
+  position: absolute;
+  top: -10px; right: -10px;
+  background: var(--sc-bg);
+  color: var(--sc-parch-mute);
+  border: 1px solid var(--sc-rule-strong);
+  border-radius: 50%;
+  width: 32px; height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.15s;
+}
+.sc-icon-modal-close:hover {
+  color: var(--sc-parch);
+  border-color: var(--sc-gold);
+}
+
 @media print {
   .sc-app {
     position: static; background: white; color: black;
@@ -978,6 +1097,29 @@ const SC_STYLES = `
   .sc-closing-exercise-header { background: #f0f7ee; }
   .sc-closing-exercise-h2, .sc-closing-exercise-badge { color: #3a7a30; border-color: #3a7a30; }
   .sc-scores, .sc-pdf-frame { display: none !important; }
+  .sc-icon-modal { display: none !important; }
   @page { margin: 0.7in; }
+
+  /* When the modal's own Print button is used, root gets .sc-printing-icon:
+     hide the lesson, show only the saint icon + name. */
+  html.sc-printing-icon .sc-app > .sc-body,
+  html.sc-printing-icon .sc-app > .sc-topbar { display: none !important; }
+  html.sc-printing-icon .sc-icon-modal {
+    display: flex !important;
+    position: static;
+    background: white !important;
+    backdrop-filter: none;
+    padding: 0;
+  }
+  html.sc-printing-icon .sc-icon-modal-img {
+    border: 1px solid #888;
+    box-shadow: none;
+    background: white;
+    max-height: 8in;
+    max-width: 6.5in;
+  }
+  html.sc-printing-icon .sc-icon-modal-name { color: #1a1a1a !important; }
+  html.sc-printing-icon .sc-icon-modal-print-btn,
+  html.sc-printing-icon .sc-icon-modal-close { display: none !important; }
 }
 `;
