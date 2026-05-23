@@ -449,6 +449,12 @@ export default function RegentNikolay() {
     setMsgs(prev => [...prev, { role: 'assistant', content: 'typing' }]);
 
     try {
+      // Anthropic requires the conversation to start with a user message.
+      // Drop the UI-only welcome (and any other leading assistant turns).
+      const clean = newMsgs.filter(m => m.content !== 'typing');
+      const firstUser = clean.findIndex(m => m.role === 'user');
+      const payloadMsgs = firstUser >= 0 ? clean.slice(firstUser) : clean;
+
       const resp = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -456,13 +462,16 @@ export default function RegentNikolay() {
           model: 'claude-sonnet-4-5',
           max_tokens: 1024,
           system: buildSystem(stage, voicePart, activeScore),
-          messages: newMsgs.filter(m => m.content !== 'typing'),
+          messages: payloadMsgs,
         }),
       });
       const data = await resp.json();
       setMsgs(prev => {
         const filtered = prev.filter(m => m.content !== 'typing');
-        if (data.error) return [...filtered, { role: 'assistant', content: `Forgive me — error: ${data.error.message}` }];
+        if (!resp.ok || data.error) {
+          const msg = data?.error?.message || `HTTP ${resp.status}`;
+          return [...filtered, { role: 'assistant', content: `Forgive me — error: ${msg}` }];
+        }
         const reply = data?.content?.[0]?.text || 'Forgive me — I have no answer.';
         return [...filtered, { role: 'assistant', content: reply }];
       });
