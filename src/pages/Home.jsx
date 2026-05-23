@@ -239,6 +239,17 @@ const TOOLS = [
     tag: 'Active',
   },
   {
+    id: 'regent-nikolay',
+    icon: '🪶',
+    title: 'Regent Nikolay',
+    subtitle: 'Регент Николай · Choral Tutor',
+    desc: 'A Russian Orthodox choir director who teaches the eight tones, Obikhod chant, and solfège. Chat with him, load a score, hear your starting pitch.',
+    accent: '#1A3A5C',
+    href: '/regent-nikolay',
+    status: 'active',
+    tag: 'Active',
+  },
+  {
     id: 'math',
     icon: '📐',
     title: 'Coming Soon',
