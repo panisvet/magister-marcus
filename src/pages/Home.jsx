@@ -217,6 +217,17 @@ const TOOLS = [
     tag: 'Active',
   },
   {
+    id: 'schola-cantorum',
+    icon: '🎵',
+    title: 'Schola Cantorum Domestica',
+    subtitle: 'Sacred Music & Solfège',
+    desc: 'A two-year course in sacred music and solfège. Ladukhin exercises, saint stories, opening rituals, and Form IA / Form IIA differentiation across 72 lessons.',
+    accent: '#a070d0',
+    href: '/schola-cantorum',
+    status: 'active',
+    tag: 'Active',
+  },
+  {
     id: 'math',
     icon: '📐',
     title: 'Coming Soon',
