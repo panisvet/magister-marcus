@@ -293,6 +293,21 @@ const STYLES = `
 .rn-send:hover:not(:disabled){background:linear-gradient(135deg,#fce5a8,var(--rn-gold2));transform:translateY(-1px);}
 .rn-send:disabled{opacity:.45;cursor:not-allowed;transform:none;}
 
+.rn-mic{
+  font-size:1.05rem;height:38px;width:42px;
+  background:#0e1a2844;color:var(--rn-gold2);
+  border:1px solid #c9a84c44;border-radius:2px;
+  cursor:pointer;transition:all .14s;
+  display:flex;align-items:center;justify-content:center;
+}
+.rn-mic:hover{background:#c9a84c1a;border-color:var(--rn-gold);}
+.rn-mic.on{
+  background:var(--rn-red);color:var(--rn-parch);
+  border-color:var(--rn-red);
+  animation:rnPulse 1.1s ease-in-out infinite;
+}
+@keyframes rnPulse{0%,100%{box-shadow:0 0 0 0 #8b1a1a88;}50%{box-shadow:0 0 0 6px #8b1a1a00;}}
+
 /* ─── Conductor's stand (right) ─── */
 .rn-stand{
   grid-area:stand;
@@ -402,7 +417,9 @@ export default function RegentNikolay() {
   const [playingSyl, setPlayingSyl] = useState(null);
   const [octave, setOctave] = useState(0); // -1, 0, +1
   const [log, setLog] = useState([]);
+  const [listening, setListening] = useState(false);
   const chatRef = useRef(null);
+  const recogRef = useRef(null);
 
   // Welcome on first render
   useEffect(() => {
@@ -490,6 +507,48 @@ export default function RegentNikolay() {
     setPlayingSyl(syl);
     setTimeout(() => setPlayingSyl(null), 900);
     addLog(`Pitch: ${syl}${octave > 0 ? '↑' : octave < 0 ? '↓' : ''}`);
+  }
+
+  function toggleMic() {
+    const SR = typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition);
+    if (!SR) {
+      addLog('Voice input not supported in this browser. Try Chrome.');
+      return;
+    }
+    if (listening && recogRef.current) {
+      recogRef.current.stop();
+      return;
+    }
+    const r = new SR();
+    r.lang = 'en-US';
+    r.interimResults = true;
+    r.continuous = false;
+    let finalText = '';
+    r.onresult = (e) => {
+      let interim = '';
+      for (let i = e.resultIndex; i < e.results.length; i++) {
+        const t = e.results[i][0].transcript;
+        if (e.results[i].isFinal) finalText += t;
+        else interim += t;
+      }
+      setInput((finalText + interim).trim());
+    };
+    r.onerror = (e) => {
+      addLog(`Mic error: ${e.error}`);
+      setListening(false);
+    };
+    r.onend = () => {
+      setListening(false);
+      const t = finalText.trim();
+      if (t) {
+        setInput('');
+        send(t);
+      }
+    };
+    recogRef.current = r;
+    setListening(true);
+    addLog('Listening…');
+    try { r.start(); } catch (err) { addLog(`Mic start failed: ${err.message}`); setListening(false); }
   }
 
   function playScale() {
@@ -607,7 +666,7 @@ export default function RegentNikolay() {
               <textarea
                 className="rn-inp"
                 value={input}
-                placeholder="Ask Regent Nikolay…"
+                placeholder="Ask Regent Nikolay… or press the mic to speak"
                 rows={1}
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={e => {
@@ -617,7 +676,15 @@ export default function RegentNikolay() {
                   }
                 }}
               />
-              <button className="rn-send" onClick={() => send()} disabled={busy || !input.trim()}>
+              <button
+                className={`rn-mic${listening ? ' on' : ''}`}
+                onClick={toggleMic}
+                title={listening ? 'Stop listening' : 'Speak to the Regent'}
+                type="button"
+              >
+                {listening ? '◉' : '🎤'}
+              </button>
+              <button className="rn-send" onClick={() => send()} disabled={busy} type="button">
                 SING ▶
               </button>
             </div>
