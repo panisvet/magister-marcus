@@ -355,27 +355,40 @@ const STYLES = `
 // ── Web Audio pitch player ───────────────────────────────────────────────────
 let audioCtx = null;
 function getCtx() {
-  if (!audioCtx && typeof window !== 'undefined') {
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (typeof window === 'undefined') return null;
+  if (!audioCtx) {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return null;
+    audioCtx = new AC();
+  }
+  // Browsers start the context suspended until a user gesture.
+  if (audioCtx.state === 'suspended') {
+    audioCtx.resume().catch(() => {});
   }
   return audioCtx;
 }
 function playPitch(freq, durationMs = 900) {
   const ctx = getCtx();
   if (!ctx) return;
-  const osc = ctx.createOscillator();
-  const gain = ctx.createGain();
-  osc.type = 'triangle';
-  osc.frequency.value = freq;
-  gain.gain.value = 0;
-  osc.connect(gain).connect(ctx.destination);
-  const now = ctx.currentTime;
-  gain.gain.setValueAtTime(0, now);
-  gain.gain.linearRampToValueAtTime(0.25, now + 0.04);
-  gain.gain.linearRampToValueAtTime(0.18, now + (durationMs / 1000) - 0.1);
-  gain.gain.linearRampToValueAtTime(0, now + (durationMs / 1000));
-  osc.start(now);
-  osc.stop(now + (durationMs / 1000));
+  const start = () => {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'triangle';
+    osc.frequency.value = freq;
+    osc.connect(gain).connect(ctx.destination);
+    const now = ctx.currentTime;
+    gain.gain.setValueAtTime(0, now);
+    gain.gain.linearRampToValueAtTime(0.25, now + 0.04);
+    gain.gain.linearRampToValueAtTime(0.18, now + Math.max(0.05, (durationMs / 1000) - 0.1));
+    gain.gain.linearRampToValueAtTime(0, now + (durationMs / 1000));
+    osc.start(now);
+    osc.stop(now + (durationMs / 1000) + 0.02);
+  };
+  if (ctx.state === 'suspended') {
+    ctx.resume().then(start).catch(() => {});
+  } else {
+    start();
+  }
 }
 
 // ── Component ────────────────────────────────────────────────────────────────
