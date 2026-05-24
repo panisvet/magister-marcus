@@ -368,43 +368,25 @@ const STYLES = `
 `;
 
 // ── Web Audio pitch player ───────────────────────────────────────────────────
+// Must run SYNCHRONOUSLY inside a user-gesture event handler. No await before
+// resume() / oscillator.start() or Safari refuses to unlock the context.
 let audioCtx = null;
-function freshCtx() {
+function getCtx() {
   if (typeof window === 'undefined') return null;
   const AC = window.AudioContext || window.webkitAudioContext;
   if (!AC) return null;
-  try { return new AC(); } catch { return null; }
-}
-function getCtx() {
-  // Recreate if closed (some browsers close the context after long idle / sleep)
   if (!audioCtx || audioCtx.state === 'closed') {
-    audioCtx = freshCtx();
+    try { audioCtx = new AC(); } catch { return null; }
   }
   return audioCtx;
 }
-async function ensureRunning(ctx) {
-  if (!ctx) return false;
-  if (ctx.state === 'running') return true;
-  // 'suspended' or 'interrupted' — both can be resumed from a user gesture
-  try {
-    await ctx.resume();
-    return ctx.state === 'running';
-  } catch {
-    return false;
-  }
-}
-async function playPitch(freq, durationMs = 900) {
-  let ctx = getCtx();
+function playPitch(freq, durationMs = 900) {
+  const ctx = getCtx();
   if (!ctx) return;
-  let ok = await ensureRunning(ctx);
-  // If resume failed, throw the context away and try once more
-  if (!ok) {
-    try { ctx.close(); } catch {}
-    audioCtx = freshCtx();
-    ctx = audioCtx;
-    if (!ctx) return;
-    ok = await ensureRunning(ctx);
-    if (!ok) return;
+  // Fire-and-forget resume — does NOT block. Safari unlocks because this call
+  // is happening synchronously inside the click handler that called us.
+  if (ctx.state !== 'running') {
+    ctx.resume().catch(() => {});
   }
   try {
     const osc = ctx.createOscillator();
@@ -422,7 +404,7 @@ async function playPitch(freq, durationMs = 900) {
     osc.stop(now + dur + 0.02);
     osc.onended = () => { try { osc.disconnect(); gain.disconnect(); } catch {} };
   } catch {
-    // If the node graph errored, nuke the context so the next click rebuilds
+    // Node graph failed — drop context so the next click rebuilds it
     try { ctx.close(); } catch {}
     audioCtx = null;
   }
