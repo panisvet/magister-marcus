@@ -369,40 +369,62 @@ const STYLES = `
 
 // ── Web Audio pitch player ───────────────────────────────────────────────────
 let audioCtx = null;
-function getCtx() {
+function freshCtx() {
   if (typeof window === 'undefined') return null;
-  if (!audioCtx) {
-    const AC = window.AudioContext || window.webkitAudioContext;
-    if (!AC) return null;
-    audioCtx = new AC();
-  }
-  // Browsers start the context suspended until a user gesture.
-  if (audioCtx.state === 'suspended') {
-    audioCtx.resume().catch(() => {});
+  const AC = window.AudioContext || window.webkitAudioContext;
+  if (!AC) return null;
+  try { return new AC(); } catch { return null; }
+}
+function getCtx() {
+  // Recreate if closed (some browsers close the context after long idle / sleep)
+  if (!audioCtx || audioCtx.state === 'closed') {
+    audioCtx = freshCtx();
   }
   return audioCtx;
 }
-function playPitch(freq, durationMs = 900) {
-  const ctx = getCtx();
+async function ensureRunning(ctx) {
+  if (!ctx) return false;
+  if (ctx.state === 'running') return true;
+  // 'suspended' or 'interrupted' — both can be resumed from a user gesture
+  try {
+    await ctx.resume();
+    return ctx.state === 'running';
+  } catch {
+    return false;
+  }
+}
+async function playPitch(freq, durationMs = 900) {
+  let ctx = getCtx();
   if (!ctx) return;
-  const start = () => {
+  let ok = await ensureRunning(ctx);
+  // If resume failed, throw the context away and try once more
+  if (!ok) {
+    try { ctx.close(); } catch {}
+    audioCtx = freshCtx();
+    ctx = audioCtx;
+    if (!ctx) return;
+    ok = await ensureRunning(ctx);
+    if (!ok) return;
+  }
+  try {
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
     osc.type = 'triangle';
     osc.frequency.value = freq;
     osc.connect(gain).connect(ctx.destination);
     const now = ctx.currentTime;
+    const dur = durationMs / 1000;
     gain.gain.setValueAtTime(0, now);
     gain.gain.linearRampToValueAtTime(0.25, now + 0.04);
-    gain.gain.linearRampToValueAtTime(0.18, now + Math.max(0.05, (durationMs / 1000) - 0.1));
-    gain.gain.linearRampToValueAtTime(0, now + (durationMs / 1000));
+    gain.gain.linearRampToValueAtTime(0.18, now + Math.max(0.05, dur - 0.1));
+    gain.gain.linearRampToValueAtTime(0, now + dur);
     osc.start(now);
-    osc.stop(now + (durationMs / 1000) + 0.02);
-  };
-  if (ctx.state === 'suspended') {
-    ctx.resume().then(start).catch(() => {});
-  } else {
-    start();
+    osc.stop(now + dur + 0.02);
+    osc.onended = () => { try { osc.disconnect(); gain.disconnect(); } catch {} };
+  } catch {
+    // If the node graph errored, nuke the context so the next click rebuilds
+    try { ctx.close(); } catch {}
+    audioCtx = null;
   }
 }
 
@@ -442,6 +464,21 @@ export default function RegentNikolay() {
       addLog(`Settings: ${STAGES.find(s => s.key === stage)?.label} · ${voicePart}`);
     }
   }, [stage, voicePart]);
+
+  // Keep audio alive when returning to the tab
+  useEffect(() => {
+    const wake = () => {
+      if (audioCtx && audioCtx.state !== 'running' && audioCtx.state !== 'closed') {
+        audioCtx.resume().catch(() => {});
+      }
+    };
+    document.addEventListener('visibilitychange', wake);
+    window.addEventListener('focus', wake);
+    return () => {
+      document.removeEventListener('visibilitychange', wake);
+      window.removeEventListener('focus', wake);
+    };
+  }, []);
 
   function addLog(line) {
     setLog(prev => [...prev, { t: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), line }].slice(-12));
@@ -515,39 +552,50 @@ export default function RegentNikolay() {
       addLog('Voice input not supported in this browser. Try Chrome.');
       return;
     }
+    // Stop if already listening
     if (listening && recogRef.current) {
-      recogRef.current.stop();
+      recogRef.current._userStop = true;
+      try { recogRef.current.stop(); } catch {}
       return;
     }
     const r = new SR();
     r.lang = 'en-US';
     r.interimResults = true;
-    r.continuous = false;
-    let finalText = '';
+    r.continuous = true;          // keep listening through pauses
+    r.maxAlternatives = 1;
+    r._userStop = false;
+    r._finalText = '';
+
     r.onresult = (e) => {
       let interim = '';
       for (let i = e.resultIndex; i < e.results.length; i++) {
         const t = e.results[i][0].transcript;
-        if (e.results[i].isFinal) finalText += t;
+        if (e.results[i].isFinal) r._finalText += t + ' ';
         else interim += t;
       }
-      setInput((finalText + interim).trim());
+      setInput((r._finalText + interim).replace(/\s+/g, ' ').trim());
     };
+
     r.onerror = (e) => {
-      addLog(`Mic error: ${e.error}`);
-      setListening(false);
-    };
-    r.onend = () => {
-      setListening(false);
-      const t = finalText.trim();
-      if (t) {
-        setInput('');
-        send(t);
+      // 'no-speech' and 'aborted' are common and recoverable — don't log noise
+      if (e.error !== 'no-speech' && e.error !== 'aborted') {
+        addLog(`Mic error: ${e.error}`);
       }
+      // For no-speech, let onend restart it (if user hasn't stopped)
     };
+
+    r.onend = () => {
+      // Auto-restart if user didn't explicitly stop (Chrome cuts after ~60s of silence)
+      if (!r._userStop) {
+        try { r.start(); return; } catch {}
+      }
+      setListening(false);
+      addLog(r._finalText.trim() ? 'Mic stopped — review and press SING' : 'Mic stopped');
+    };
+
     recogRef.current = r;
     setListening(true);
-    addLog('Listening…');
+    addLog('Listening… click mic again to stop');
     try { r.start(); } catch (err) { addLog(`Mic start failed: ${err.message}`); setListening(false); }
   }
 
