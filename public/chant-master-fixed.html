@@ -1617,11 +1617,13 @@ function buildToneGrid() {
   const grid = document.getElementById('tone-grid');
   grid.innerHTML = '';
   for (let i = 1; i <= 8; i++) {
+    const t = TONES[i];
+    const keyStr = selCat === 'tropar' ? t.troparKey : selCat === 'stichera' ? t.sticheraKey : t.prokKey;
     const btn = document.createElement('button');
     btn.className = 'tone-btn' + (i === selTone ? ' active' : '');
     btn.id = 'tb' + i;
-    btn.innerHTML = 'Tone ' + i + '<small>' + TONES[i].key + '</small>';
-    btn.title = TONES[i].tropar.desc.split('.')[0];
+    btn.innerHTML = 'Tone ' + i + '<small>' + keyStr + '</small>';
+    btn.title = t.tropar.desc.split('.')[0];
     btn.onclick = () => selectTone(i);
     grid.appendChild(btn);
   }
@@ -1641,6 +1643,7 @@ function setCat(c) {
   ['tropar','stichera','prok'].forEach(x => {
     document.getElementById('cat-'+x).classList.toggle('active', x === c);
   });
+  buildToneGrid();
   updateToneInfo();
   renderMelodyCanvas();
   buildProkList();
@@ -1854,7 +1857,8 @@ async function toggleTonesPiano() {
 function askToneCharacter() {
   const t = TONES[selTone];
   const catLabel = selCat === 'tropar' ? 'Troparion' : selCat === 'stichera' ? 'Lord I Call (Sticheron)' : 'Prokeimenon';
-  const prompt = `[Context: Student is studying Tone ${selTone} (${t.key}), ${catLabel}]
+  const keyStr = selCat === 'tropar' ? t.troparKey : selCat === 'stichera' ? t.sticheraKey : t.prokKey;
+  const prompt = `[Context: Student is studying Tone ${selTone} (${keyStr}), ${catLabel}]
 
 Please explain the spiritual character and liturgical use of Tone ${selTone} in the Octoechos. What mood or feeling does it express? When does it appear in the liturgical year? What makes its melody distinctive compared to other tones?`;
   showTab('nikolay');
