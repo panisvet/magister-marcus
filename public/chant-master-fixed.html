@@ -992,24 +992,46 @@ function addNikolayBubble(type, text, label) {
 }
 
 function handleNikolaySingCommand(responseText) {
-  const jsonMatch = responseText.match(/\{\s*"sing"\s*:\s*"[^"]+"\s*,\s*"tone"\s*:\s*\d+\s*\}/);
-  if (!jsonMatch) return false;
-  try {
-    const cmd = JSON.parse(jsonMatch[0]);
-    if (!cmd.sing || !cmd.tone) return false;
-    const toneNum = parseInt(cmd.tone);
-    const cat = cmd.sing; // 'tropar' | 'stichera' | 'prok'
-    if (!TONES[toneNum] || !['tropar','stichera','prok'].includes(cat)) return false;
-
-    // Switch to 8 Tones tab and set tone/category
-    showTab('tones');
-    selectTone(toneNum);
-    setCat(cat);
-
-    // Play melody after TTS has had time to speak
-    setTimeout(() => playMelody(), 1200);
-    return true;
-  } catch(e) {}
+  // Try loose JSON match first
+  const jsonMatch = responseText.match(/\{[\s\S]*?"sing"[\s\S]*?\}/);
+  if (jsonMatch) {
+    try {
+      const cmd = JSON.parse(jsonMatch[0]);
+      if (cmd.sing && cmd.tone !== undefined) {
+        const toneNum = parseInt(cmd.tone, 10);
+        const cat = cmd.sing;
+        if (TONES[toneNum] && ['tropar','stichera','prok'].includes(cat)) {
+          console.log('Nikolay sings:', cat, 'tone', toneNum);
+          showTab('tones');
+          selectTone(toneNum);
+          setCat(cat);
+          setTimeout(() => playMelody(), 1200);
+          return true;
+        }
+      }
+    } catch(e) { console.warn('sing JSON parse failed:', e); }
+  }
+  // Keyword fallback if JSON parsing fails
+  const lower = responseText.toLowerCase();
+  const hasMelody = lower.includes('tropar') || lower.includes('stichera') ||
+                    lower.includes('prokeimenon') || lower.includes('lord i call');
+  if (hasMelody) {
+    const toneMatch = lower.match(/tone\s*(\d)/);
+    if (toneMatch) {
+      const toneNum = parseInt(toneMatch[1], 10);
+      if (toneNum >= 1 && toneNum <= 8) {
+        console.log('Nikolay keyword fallback: tone', toneNum);
+        showTab('tones');
+        selectTone(toneNum);
+        const cat = lower.includes('tropar') ? 'tropar'
+                  : (lower.includes('stichera') || lower.includes('lord i call')) ? 'stichera'
+                  : 'prok';
+        setCat(cat);
+        setTimeout(() => playMelody(), 1200);
+        return true;
+      }
+    }
+  }
   return false;
 }
 
