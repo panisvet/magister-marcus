@@ -611,7 +611,7 @@ canvas.wave { width: 100%; height: 60px; background: #FFFDF5; border: 1px solid 
       <button class="btn btn-gold" onclick="clearNikolayChat()">Clear</button>
     </div>
     <details class="api-settings">
-      <summary>⚙ API Settings</summary>
+      <summary>⚙ API Settings <span id="api-key-status" style="color:var(--green);font-style:normal;margin-left:6px;font-size:11px"></span></summary>
       <div class="api-key-row">
         <input type="password" class="api-key-input" id="grok-api-key" placeholder="Paste your xAI Grok API key here…">
         <select class="api-model-sel" id="grok-model">
@@ -725,7 +725,16 @@ function saveApiKey() {
 // Load saved key on init
 window.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('grok_api_key');
-  if (saved) document.getElementById('grok-api-key').value = saved;
+  if (saved) {
+    document.getElementById('grok-api-key').value = saved;
+    // Show confirmation without opening the details panel
+    const statusEl = document.getElementById('api-key-status');
+    if (statusEl) statusEl.textContent = '✓ API key loaded';
+  } else {
+    // No key yet — open the settings panel so user sees where to paste it
+    const details = document.querySelector('.api-settings');
+    if (details) details.open = true;
+  }
   const savedVoice = localStorage.getItem('grok_voice');
   if (savedVoice) { const sel = document.getElementById('grok-voice'); if (sel) sel.value = savedVoice; }
   initNikolayWelcome();
