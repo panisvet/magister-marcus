@@ -697,7 +697,11 @@ You are teaching using:
 - The full chromatic solfège: Di Ri Fi Si Li (raised), Ra Me Se Le Te (lowered), and the Obikhod Tib (B-flat)
 - The spiritual theology of Byzantine and Slavonic chant — St. John Chrysostom, St. Romanos the Melodist, and the patristic tradition
 
-You have full awareness of the current lesson context: which tab the student is on, which tone they are studying, and what they just practiced. When this context is given to you, incorporate it naturally and specifically — do not speak in generalities when you know what they are working on.
+You have full awareness of the current lesson context: which tab the student is on, which tone they are studying, and what they just practiced. When this context is given to you, incorporate it naturally and specifically.
+
+When you wish to demonstrate or play a melody example, end your spoken response with this exact JSON on its own line — nothing after it:
+{"sing": "tropar", "tone": 1}
+Use "tropar", "stichera", or "prok" for the type, and 1–8 for the tone number. Use this only when it genuinely aids the lesson. Never mention JSON or code to the student.
 
 Speak in short, warm sentences suitable for voice. Do not use markdown, bullet points, or formatting — only spoken prose. End most responses with a short blessing, encouragement, or a word from the Fathers on sacred music. Vary these — never formulaic.
 
@@ -890,6 +894,28 @@ function addNikolayBubble(type, text, label) {
   if (type === 'nikolay') speakNikolay(text);
 }
 
+function handleNikolaySingCommand(responseText) {
+  const jsonMatch = responseText.match(/\{\s*"sing"\s*:\s*"[^"]+"\s*,\s*"tone"\s*:\s*\d+\s*\}/);
+  if (!jsonMatch) return false;
+  try {
+    const cmd = JSON.parse(jsonMatch[0]);
+    if (!cmd.sing || !cmd.tone) return false;
+    const toneNum = parseInt(cmd.tone);
+    const cat = cmd.sing; // 'tropar' | 'stichera' | 'prok'
+    if (!TONES[toneNum] || !['tropar','stichera','prok'].includes(cat)) return false;
+
+    // Switch to 8 Tones tab and set tone/category
+    showTab('tones');
+    selectTone(toneNum);
+    setCat(cat);
+
+    // Play melody after TTS has had time to speak
+    setTimeout(() => playMelody(), 1200);
+    return true;
+  } catch(e) {}
+  return false;
+}
+
 async function sendToNikolay(overrideMsg) {
   const key = getNikolayKey();
   if (!key) {
@@ -926,10 +952,14 @@ async function sendToNikolay(overrideMsg) {
       throw new Error(err.error?.message || 'HTTP ' + resp.status);
     }
     const data = await resp.json();
-    const reply = data.choices?.[0]?.message?.content || '(No response)';
-    nikolayHistory.push({ role: 'assistant', content: reply });
+    const rawReply = data.choices?.[0]?.message?.content || '(No response)';
+    // Strip the sing command JSON from the spoken/displayed text
+    const displayReply = rawReply.replace(/\{\s*"sing"\s*:\s*"[^"]+"\s*,\s*"tone"\s*:\s*\d+\s*\}/g, '').trim();
+    nikolayHistory.push({ role: 'assistant', content: displayReply });
     thinking.classList.remove('visible');
-    addNikolayBubble('nikolay', reply, 'Regent Nikolay');
+    addNikolayBubble('nikolay', displayReply, 'Regent Nikolay');
+    // Trigger melody playback if command present (after TTS starts)
+    setTimeout(() => handleNikolaySingCommand(rawReply), 400);
   } catch (e) {
     thinking.classList.remove('visible');
     addNikolayBubble('nikolay',
