@@ -855,7 +855,10 @@ async function speakNikolay(text) {
         output_format: { codec: 'mp3', sample_rate: 24000, bit_rate: 128000 }
       })
     });
-    if (!resp.ok) throw new Error('TTS HTTP ' + resp.status);
+    if (!resp.ok) {
+      const errBody = await resp.text().catch(() => '');
+      throw new Error('TTS HTTP ' + resp.status + ' — ' + errBody);
+    }
     const blob = await resp.blob();
     const url = URL.createObjectURL(blob);
     const audio = new Audio(url);
