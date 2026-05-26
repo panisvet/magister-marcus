@@ -657,7 +657,7 @@ canvas.wave { width: 100%; height: 60px; background: #FFFDF5; border: 1px solid 
     <details class="api-settings">
       <summary>⚙ API Settings <span id="api-key-status" style="color:var(--green);font-style:normal;margin-left:6px;font-size:11px"></span></summary>
       <div class="api-key-row">
-        <input type="password" class="api-key-input" id="grok-api-key" placeholder="Paste your xAI Grok API key here…">
+        <input type="password" class="api-key-input" id="grok-api-key" placeholder="Paste your xAI Grok API key here…" onchange="saveApiKey()" onpaste="setTimeout(saveApiKey,100)">
         <select class="api-model-sel" id="grok-model">
           <option value="grok-3-mini">grok-3-mini (fast)</option>
           <option value="grok-3">grok-3 (full)</option>
