@@ -1,19 +1,46 @@
 // src/components/ChantPlayer.jsx
-// Web Audio API chant melody player for Schola Cantorum
+// Bell-tone chant melody player for Schola Cantorum
 
 import { useState, useRef, useEffect } from "react";
 import { TONES } from "../data/tones.js";
 
-const BEAT_DURATION = 0.45; // seconds per beat unit
+const BEAT_DURATION = 0.55;
 
 function midiToFreq(midi) {
   return 440 * Math.pow(2, (midi - 69) / 12);
 }
 
+function playBellNote(ctx, freq, duration, startTime) {
+  const gain = ctx.createGain();
+  gain.connect(ctx.destination);
+
+  // Bell has multiple harmonics
+  const harmonics = [1, 2, 3, 4.2, 5.4, 6.8];
+  const gains     = [1, 0.5, 0.25, 0.12, 0.06, 0.03];
+
+  harmonics.forEach((h, i) => {
+    const osc = ctx.createOscillator();
+    const hGain = ctx.createGain();
+    osc.connect(hGain);
+    hGain.connect(gain);
+    osc.type = "sine";
+    osc.frequency.setValueAtTime(freq * h, startTime);
+    hGain.gain.setValueAtTime(gains[i] * 0.4, startTime);
+    hGain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration * 2.5);
+    osc.start(startTime);
+    osc.stop(startTime + duration * 2.5);
+  });
+
+  // Overall envelope — bell attack + long decay
+  gain.gain.setValueAtTime(0, startTime);
+  gain.gain.linearRampToValueAtTime(0.6, startTime + 0.008);
+  gain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration * 2.5);
+}
+
 export function useChantPlayer() {
   const [playing, setPlaying] = useState(false);
-  const [current, setCurrent] = useState(null); // { tone, sing }
-  const [noteIndex, setNoteIndex] = useState(0);
+  const [current, setCurrent] = useState(null);
+  const [noteIndex, setNoteIndex] = useState(-1);
   const ctxRef = useRef(null);
   const timeoutsRef = useRef([]);
 
@@ -21,7 +48,7 @@ export function useChantPlayer() {
     timeoutsRef.current.forEach(clearTimeout);
     timeoutsRef.current = [];
     setPlaying(false);
-    setNoteIndex(0);
+    setNoteIndex(-1);
   }
 
   function play(sing, tone) {
@@ -42,50 +69,30 @@ export function useChantPlayer() {
     setPlaying(true);
     setNoteIndex(0);
 
-    let time = ctx.currentTime + 0.1;
+    let time = ctx.currentTime + 0.15;
     const newTimeouts = [];
 
     midi.forEach((m, i) => {
       const dur = (rhythm[i] || 1) * BEAT_DURATION;
       const freq = midiToFreq(m);
+      playBellNote(ctx, freq, dur, time);
 
-      // Schedule oscillator note
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.connect(gain);
-      gain.connect(ctx.destination);
-
-      osc.type = "sine";
-      osc.frequency.setValueAtTime(freq, time);
-      gain.gain.setValueAtTime(0, time);
-      gain.gain.linearRampToValueAtTime(0.3, time + 0.02);
-      gain.gain.setValueAtTime(0.3, time + dur - 0.06);
-      gain.gain.linearRampToValueAtTime(0, time + dur);
-
-      osc.start(time);
-      osc.stop(time + dur);
-
-      // Update note index for UI highlighting
-      const t = time;
+      const delay = Math.max(0, (time - ctx.currentTime) * 1000);
       const idx = i;
-      const delay = (t - ctx.currentTime) * 1000;
       newTimeouts.push(setTimeout(() => setNoteIndex(idx), delay));
-
       time += dur;
     });
 
-    // Done
     const totalDur = (time - ctx.currentTime) * 1000;
     newTimeouts.push(setTimeout(() => {
       setPlaying(false);
-      setNoteIndex(0);
+      setNoteIndex(-1);
     }, totalDur));
 
     timeoutsRef.current = newTimeouts;
   }
 
   useEffect(() => () => stop(), []);
-
   return { play, stop, playing, current, noteIndex };
 }
 
