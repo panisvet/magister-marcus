@@ -8,7 +8,7 @@
 // Route: /schola-cantorum
 // ─────────────────────────────────────────────────────────────────────────────
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { YEARS, ALL_LESSONS } from "../data/schola-cantorum.js";
 import { CLOSING_EXERCISES } from "../data/closingExercises.js";
@@ -111,8 +111,8 @@ export default function ScholaCantorum() {
               >{label}</button>
             ))}
           </div>
-          {lesson && (
-            <div className="sc-tab-toggle">
+          <div className="sc-tab-toggle">
+            {lesson && (<>
               <button
                 className={activeTab === "lesson" ? "sc-active" : ""}
                 onClick={() => setActiveTab("lesson")}
@@ -121,8 +121,12 @@ export default function ScholaCantorum() {
                 className={activeTab === "scores" ? "sc-active" : ""}
                 onClick={() => setActiveTab("scores")}
               >SCORES</button>
-            </div>
-          )}
+            </>)}
+            <button
+              className={activeTab === "nikolay" ? "sc-active sc-nikolay-active" : "sc-nikolay-tab"}
+              onClick={() => setActiveTab("nikolay")}
+            >&#10013; REGENT</button>
+          </div>
           <button
             className="sc-btn"
             onClick={() => {
@@ -214,6 +218,9 @@ export default function ScholaCantorum() {
           )}
           {lesson && activeTab === "scores" && unit && (
             <Scores unit={unit} />
+          )}
+          {activeTab === "nikolay" && (
+            <NikolayChat context={lesson && unit ? { unit, lesson } : null} />
           )}
         </main>
 
@@ -519,6 +526,157 @@ function Scores({ unit }) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+
+// ─────────────────────────────────────────────────────────────────────────────
+// NikolayChat
+// ─────────────────────────────────────────────────────────────────────────────
+const NIKOLAY_SYSTEM = `You are Regent Nikolay Ladukhin, wise, patient, and reverent choir director of the imperial conservatory tradition. You are teaching Schola Cantorum Domestica - the two-year sacred music and solfege course for the Christian home based on my own Ladukhin exercises, Fixed-Do method, Kodaly rhythm, and Charlotte Mason principles.
+You have full knowledge of the entire curriculum:
+- Year 1: Foundation (Do is Home, Minor, New Keys, First Synthesis)
+- Year 2: Chromatics, The Eight Tones (Octoechos), Gregorian Chant, Two Voices, Final Synthesis
+When the student asks you to sing, demonstrate, play, show, or teach any Troparion, Stichera, Prokeimenon, or exercise, you MUST:
+1. Give a short warm encouraging introduction in character.
+2. End your reply with EXACTLY this JSON on its own line and nothing else after it:
+{ "sing": "tropar", "tone": 1 }
+(where sing is tropar, stichera, or prok, and tone is 1-8)
+You are NEVER allowed to say imagine it or describe the melody instead of the JSON.
+Stay in character. Tie everything back to prayer and the beauty of the Church song.`;
+
+function parseSingCommand(text) {
+  const match = text.match(/\{[\s\S]*?"sing"[\s\S]*?\}/);
+  if (!match) return null;
+  try {
+    const parsed = JSON.parse(match[0]);
+    if (parsed.sing && parsed.tone) return parsed;
+  } catch(e) {}
+  return null;
+}
+
+function stripSingJson(text) {
+  return text.replace(/\{[\s\S]*?"sing"[\s\S]*?\}/, "").trimEnd();
+}
+
+function NikolayChat({ context }) {
+  const [history, setHistory] = React.useState([{
+    role: "assistant",
+    content: "Glory to God! Welcome, dear young singers. I am Regent Nikolay. We shall work together in the tradition of the holy Obikhod, using the Fixed-Do method where Do is always C.\n\nChoose a lesson on the left and come to me with any questions.\n\nChrist is in our midst.",
+    singCmd: null,
+  }]);
+  const [input, setInput] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
+  const [apiKey, setApiKey] = React.useState(() => localStorage.getItem("grok_api_key") || "");
+  const [showSettings, setShowSettings] = React.useState(!localStorage.getItem("grok_api_key"));
+  const chatEndRef = React.useRef(null);
+
+  React.useEffect(() => {
+    chatEndRef.current && chatEndRef.current.scrollIntoView({ behavior: "smooth" });
+  }, [history, loading]);
+
+  function saveKey() {
+    localStorage.setItem("grok_api_key", apiKey);
+    setShowSettings(false);
+  }
+
+  async function send(overrideMsg) {
+    const msg = overrideMsg || input.trim();
+    if (!msg) return;
+    if (!apiKey) { setShowSettings(true); return; }
+    const contextNote = context
+      ? "[Current lesson: " + context.unit.title + " - " + context.lesson.title + " (" + context.lesson.id + ")]"
+      : "[No lesson selected]";
+    const userContent = contextNote + "\n\n" + msg;
+    const newHistory = [...history, { role: "user", content: msg, singCmd: null }];
+    setHistory(newHistory);
+    setInput("");
+    setLoading(true);
+    const apiMessages = newHistory.map((m, i) => ({
+      role: m.role,
+      content: i === newHistory.length - 1 && m.role === "user" ? userContent : m.content,
+    }));
+    try {
+      const resp = await fetch("https://api.x.ai/v1/chat/completions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + apiKey },
+        body: JSON.stringify({ model: "grok-3-mini", max_tokens: 600, system: NIKOLAY_SYSTEM, messages: apiMessages }),
+      });
+      if (!resp.ok) { const e = await resp.json().catch(() => ({})); throw new Error(e.error && e.error.message ? e.error.message : "HTTP " + resp.status); }
+      const data = await resp.json();
+      const raw = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || "(No response)";
+      const singCmd = parseSingCommand(raw);
+      const displayText = singCmd ? stripSingJson(raw) : raw;
+      setHistory(function(h) { return [...h, { role: "assistant", content: displayText, singCmd: singCmd }]; });
+    } catch(e) {
+      setHistory(function(h) { return [...h, { role: "assistant", content: "Connection interrupted. (" + e.message + ") Check your API key in Settings above.", singCmd: null }]; });
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const quickPrompts = context ? [
+    "Introduce today\'s lesson: " + context.lesson.title,
+    "Sing the Troparion of Tone 1.",
+    "Sing the Stichera of Tone 5.",
+    "What is the spiritual significance of what we are learning?",
+  ] : [
+    "Sing the Troparion of Tone 1.",
+    "Sing the Troparion of Tone 5.",
+    "Tell us about the eight tones of the Octoechos.",
+    "What is Fixed-Do solfege?",
+  ];
+
+  return (
+    React.createElement("div", { className: "sc-nikolay" },
+      React.createElement("div", { className: "sc-nik-settings-bar" },
+        React.createElement("button", { className: "sc-nik-settings-toggle", onClick: function() { setShowSettings(function(s) { return !s; }); } },
+          "Settings " + (showSettings ? "▲" : "▼")),
+        !apiKey && React.createElement("span", { className: "sc-nik-no-key" }, "No API key - enter your xAI key to activate Regent Nikolay"),
+        apiKey && !showSettings && React.createElement("span", { className: "sc-nik-key-ok" }, "API key set")
+      ),
+      showSettings && React.createElement("div", { className: "sc-nik-settings-panel" },
+        React.createElement("label", { className: "sc-nik-settings-label" }, "xAI API Key"),
+        React.createElement("div", { className: "sc-nik-settings-row" },
+          React.createElement("input", { type: "password", className: "sc-nik-key-input", placeholder: "xai-...", value: apiKey, onChange: function(e) { setApiKey(e.target.value); }, onKeyDown: function(e) { if (e.key === "Enter") saveKey(); } }),
+          React.createElement("button", { className: "sc-btn", onClick: saveKey }, "SAVE")
+        )
+      ),
+      React.createElement("div", { className: "sc-nik-chat" },
+        history.map(function(m, i) {
+          return React.createElement("div", { key: i, className: "sc-nik-bubble sc-nik-" + m.role },
+            React.createElement("div", { className: "sc-nik-bubble-label" }, m.role === "assistant" ? "Regent Nikolay" : "You"),
+            React.createElement("div", { className: "sc-nik-bubble-text" },
+              m.content.split("\n").map(function(line, j, arr) {
+                return React.createElement(React.Fragment, { key: j }, line, j < arr.length - 1 && React.createElement("br", null));
+              })
+            ),
+            m.singCmd && React.createElement("button", { className: "sc-nik-play-btn", onClick: function() { console.log("Play:", m.singCmd); } },
+              "Play Tone " + m.singCmd.tone + " " + (m.singCmd.sing === "tropar" ? "Troparion" : m.singCmd.sing === "stichera" ? "Stichera" : "Prokeimenon")
+            )
+          );
+        }),
+        loading && React.createElement("div", { className: "sc-nik-bubble sc-nik-assistant sc-nik-thinking" },
+          React.createElement("div", { className: "sc-nik-bubble-label" }, "Regent Nikolay"),
+          React.createElement("div", { className: "sc-nik-bubble-text sc-nik-dots" },
+            React.createElement("span", null, "."), React.createElement("span", null, "."), React.createElement("span", null, ".")
+          )
+        ),
+        React.createElement("div", { ref: chatEndRef })
+      ),
+      React.createElement("div", { className: "sc-nik-quick" },
+        quickPrompts.map(function(p, i) {
+          return React.createElement("button", { key: i, className: "sc-nik-quick-btn", onClick: function() { send(p); } }, p);
+        })
+      ),
+      React.createElement("div", { className: "sc-nik-input-area" },
+        React.createElement("textarea", { className: "sc-nik-textarea", placeholder: "Ask Regent Nikolay...", value: input, onChange: function(e) { setInput(e.target.value); }, onKeyDown: function(e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }, rows: 3 }),
+        React.createElement("div", { className: "sc-nik-input-row" },
+          React.createElement("button", { className: "sc-btn", onClick: function() { send(); }, disabled: loading || !input.trim() }, loading ? "..." : "SEND"),
+          React.createElement("button", { className: "sc-nik-clear", onClick: function() { setHistory([{ role: "assistant", content: "Glory to God. What would you ask?", singCmd: null }]); } }, "CLEAR")
+        )
+      )
+    )
+  );
+}
+
 const SC_STYLES = `
 .sc-app {
   --sc-bg: #0e0b07;
@@ -1122,4 +1280,40 @@ const SC_STYLES = `
   html.sc-printing-icon .sc-icon-modal-print-btn,
   html.sc-printing-icon .sc-icon-modal-close { display: none !important; }
 }
+.sc-nikolay-tab { color: var(--sc-parch-dim); }
+.sc-nikolay-active { background: var(--sc-gold); color: var(--sc-bg); }
+.sc-nikolay { display: flex; flex-direction: column; height: 100%; background: var(--sc-bg-2); }
+.sc-nik-settings-bar { flex-shrink:0; display:flex; align-items:center; gap:12px; padding:8px 24px; background:var(--sc-bg-3); border-bottom:1px solid var(--sc-rule); font-size:13px; }
+.sc-nik-settings-toggle { background:transparent; border:1px solid var(--sc-rule-strong); border-radius:3px; padding:4px 10px; font-size:11px; letter-spacing:0.10em; color:var(--sc-parch-dim); cursor:pointer; }
+.sc-nik-settings-toggle:hover { color:var(--sc-parch); border-color:var(--sc-gold); }
+.sc-nik-no-key { color:#c97a3f; font-style:italic; }
+.sc-nik-key-ok { color:var(--sc-listen); }
+.sc-nik-settings-panel { flex-shrink:0; padding:12px 24px 14px; background:var(--sc-bg-3); border-bottom:1px solid var(--sc-rule); }
+.sc-nik-settings-label { display:block; font-size:13px; color:var(--sc-parch-dim); margin-bottom:8px; font-style:italic; }
+.sc-nik-settings-row { display:flex; gap:10px; align-items:center; }
+.sc-nik-key-input { flex:1; max-width:440px; font-family:monospace; font-size:13px; padding:6px 10px; background:var(--sc-bg); border:1px solid var(--sc-rule-strong); border-radius:3px; color:var(--sc-parch); outline:none; }
+.sc-nik-key-input:focus { border-color:var(--sc-gold); }
+.sc-nik-chat { flex:1; overflow-y:auto; padding:20px 28px; display:flex; flex-direction:column; gap:16px; }
+.sc-nik-bubble { max-width:780px; border-radius:6px; padding:14px 18px; }
+.sc-nik-assistant { background:rgba(201,144,42,0.08); border:1px solid rgba(201,144,42,0.2); align-self:flex-start; }
+.sc-nik-user { background:rgba(118,145,184,0.10); border:1px solid rgba(118,145,184,0.2); align-self:flex-end; }
+.sc-nik-bubble-label { font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:var(--sc-parch-mute); margin-bottom:6px; }
+.sc-nik-user .sc-nik-bubble-label { color:var(--sc-sing); }
+.sc-nik-bubble-text { font-size:16px; line-height:1.6; color:var(--sc-parch); }
+.sc-nik-thinking .sc-nik-dots span { display:inline-block; animation:sc-nik-pulse 1.2s ease-in-out infinite; font-size:22px; color:var(--sc-gold); margin:0 2px; }
+.sc-nik-thinking .sc-nik-dots span:nth-child(2) { animation-delay:0.2s; }
+.sc-nik-thinking .sc-nik-dots span:nth-child(3) { animation-delay:0.4s; }
+@keyframes sc-nik-pulse { 0%,100%{opacity:0.2} 50%{opacity:1} }
+.sc-nik-play-btn { display:inline-block; margin-top:10px; background:rgba(201,144,42,0.15); border:1px solid var(--sc-gold); border-radius:4px; padding:6px 14px; font-size:12px; letter-spacing:0.10em; color:var(--sc-gold); cursor:pointer; }
+.sc-nik-play-btn:hover { background:var(--sc-gold); color:var(--sc-bg); }
+.sc-nik-quick { flex-shrink:0; display:flex; flex-wrap:wrap; gap:8px; padding:10px 24px; border-top:1px solid var(--sc-rule); background:var(--sc-bg-3); }
+.sc-nik-quick-btn { background:transparent; border:1px solid var(--sc-rule-strong); border-radius:20px; padding:5px 12px; font-size:13px; color:var(--sc-parch-dim); cursor:pointer; }
+.sc-nik-quick-btn:hover { border-color:var(--sc-gold); color:var(--sc-gold); }
+.sc-nik-input-area { flex-shrink:0; padding:12px 24px 16px; border-top:1px solid var(--sc-rule); background:var(--sc-bg-3); display:flex; flex-direction:column; gap:8px; }
+.sc-nik-textarea { width:100%; resize:vertical; font-size:15px; color:var(--sc-parch); background:var(--sc-bg); border:1px solid var(--sc-rule-strong); border-radius:4px; padding:10px 12px; outline:none; min-height:64px; box-sizing:border-box; }
+.sc-nik-textarea:focus { border-color:var(--sc-gold); }
+.sc-nik-input-row { display:flex; gap:10px; align-items:center; }
+.sc-nik-clear { background:transparent; border:1px solid var(--sc-rule-strong); border-radius:3px; padding:7px 14px; font-size:11px; letter-spacing:0.10em; color:var(--sc-parch-mute); cursor:pointer; }
+.sc-nik-clear:hover { border-color:#c97a3f; color:#c97a3f; }
+
 `;
