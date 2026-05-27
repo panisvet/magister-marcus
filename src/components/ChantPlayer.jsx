@@ -1,13 +1,12 @@
 // src/components/ChantPlayer.jsx
 // Harp sampler chant melody player using Tone.js
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import * as Tone from "tone";
 import { TONES } from "../data/tones.js";
 
-const BEAT_DURATION = 0.55; // seconds per beat unit
+const BEAT_DURATION = 0.55;
 
-// Harp samples from nbrosowsky/tonejs-instruments (CC0)
 const HARP_SAMPLES = {
   "C5": "https://nbrosowsky.github.io/tonejs-instruments/samples/harp/C5.mp3",
   "D5": "https://nbrosowsky.github.io/tonejs-instruments/samples/harp/D5.mp3",
@@ -19,34 +18,48 @@ const HARP_SAMPLES = {
   "C6": "https://nbrosowsky.github.io/tonejs-instruments/samples/harp/C6.mp3",
 };
 
-// MIDI to Tone.js note name
+// Module-level sampler — created once, shared across all instances
+let globalSampler = null;
+let globalSamplerLoaded = false;
+let globalSamplerLoading = false;
+const loadCallbacks = [];
+
+function getOrCreateSampler(onReady) {
+  if (globalSamplerLoaded && globalSampler) {
+    onReady(globalSampler);
+    return;
+  }
+  loadCallbacks.push(onReady);
+  if (globalSamplerLoading) return;
+  globalSamplerLoading = true;
+  globalSampler = new Tone.Sampler({
+    urls: HARP_SAMPLES,
+    onload: () => {
+      console.log("Harp samples ready");
+      globalSamplerLoaded = true;
+      loadCallbacks.forEach(cb => cb(globalSampler));
+      loadCallbacks.length = 0;
+    },
+    onerror: (e) => console.warn("Harp load error:", e),
+  }).toDestination();
+}
+
 function midiToNote(midi) {
   const notes = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
-  const oct = Math.floor(midi / 12) - 1;
-  const note = notes[midi % 12];
-  return note + oct;
+  return notes[midi % 12] + (Math.floor(midi / 12) - 1);
 }
 
 export function useChantPlayer() {
   const [playing, setPlaying] = useState(false);
-  const [current, setCurrent] = useState(null);
   const [noteIndex, setNoteIndex] = useState(-1);
-  const [loaded, setLoaded] = useState(false);
-  const samplerRef = useRef(null);
+  const [loaded, setLoaded] = useState(globalSamplerLoaded);
   const timeoutsRef = useRef([]);
   const partRef = useRef(null);
 
   useEffect(() => {
-    const sampler = new Tone.Sampler({
-      urls: HARP_SAMPLES,
-      onload: () => setLoaded(true),
-      onerror: (err) => console.warn("Harp sample load error:", err),
-    }).toDestination();
-    samplerRef.current = sampler;
-    return () => {
-      stop();
-      sampler.dispose();
-    };
+    if (!globalSamplerLoaded) {
+      getOrCreateSampler(() => setLoaded(true));
+    }
   }, []);
 
   function stop() {
@@ -66,19 +79,17 @@ export function useChantPlayer() {
   async function play(sing, tone) {
     stop();
     const toneData = TONES[parseInt(tone)];
-    if (!toneData || !toneData[sing]) return;
+    if (!toneData || !toneData[sing] || !globalSampler) return;
 
     await Tone.start();
 
     const melody = toneData[sing];
     const { midi, rhythm } = melody;
 
-    setCurrent({ tone, sing });
     setPlaying(true);
     setNoteIndex(0);
 
-    const transport = Tone.getTransport();
-    transport.bpm.value = 60;
+    Tone.getTransport().bpm.value = 60;
 
     let timeAccum = 0;
     const events = midi.map((m, i) => {
@@ -89,10 +100,8 @@ export function useChantPlayer() {
     });
 
     const part = new Tone.Part((time, event) => {
-      if (samplerRef.current) {
-        const note = midiToNote(event.midi);
-        samplerRef.current.triggerAttackRelease(note, event.dur * 0.9, time);
-      }
+      const note = midiToNote(event.midi);
+      globalSampler.triggerAttackRelease(note, event.dur * 0.85, time);
       const delay = Math.max(0, (time - Tone.now()) * 1000);
       timeoutsRef.current.push(
         setTimeout(() => setNoteIndex(event.index), delay)
@@ -101,27 +110,27 @@ export function useChantPlayer() {
 
     part.start(0);
     partRef.current = part;
+    Tone.getTransport().start();
 
-    transport.start();
-
-    const totalDur = timeAccum * 1000;
-    timeoutsRef.current.push(setTimeout(() => {
-      stop();
-    }, totalDur + 500));
+    timeoutsRef.current.push(setTimeout(() => stop(), timeAccum * 1000 + 800));
   }
 
-  return { play, stop, playing, current, noteIndex, loaded };
+  return { play, stop, playing, noteIndex, loaded };
 }
 
 export default function ChantPlayer({ sing, tone, onClose }) {
   const { play, stop, playing, noteIndex, loaded } = useChantPlayer();
   const toneData = TONES[parseInt(tone)];
   const melody = toneData?.[sing];
+  const hasPlayed = useRef(false);
 
   useEffect(() => {
-    if (melody && loaded) play(sing, tone);
+    if (melody && loaded && !hasPlayed.current) {
+      hasPlayed.current = true;
+      play(sing, tone);
+    }
     return () => stop();
-  }, [sing, tone, loaded]);
+  }, [loaded]);
 
   if (!melody) return null;
 
