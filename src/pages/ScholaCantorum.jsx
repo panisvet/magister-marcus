@@ -628,7 +628,15 @@ function NikolayChat({ context }) {
       console.log("TTS blob size:", blob.size);
       const url = URL.createObjectURL(blob);
       const audio = new Audio(url);
-      audio.play();
+      audio.volume = 1.0;
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(e => {
+          console.warn("Audio play blocked:", e);
+          // Retry on next user interaction
+          document.addEventListener("click", () => audio.play(), { once: true });
+        });
+      }
       audio.onended = () => URL.revokeObjectURL(url);
     } catch(e) {
       console.warn("TTS fetch error:", e);
