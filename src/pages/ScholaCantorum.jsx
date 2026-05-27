@@ -12,6 +12,7 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { YEARS, ALL_LESSONS } from "../data/schola-cantorum.js";
 import { CLOSING_EXERCISES } from "../data/closingExercises.js";
+import ChantPlayer from "../components/ChantPlayer.jsx";
 
 // ── Saint icons keyed by unit id (matches the ids in schola-cantorum.js) ────
 const UNIT_ICONS = {
@@ -580,6 +581,7 @@ function NikolayChat({ context }) {
     content: "Glory to God! Welcome, dear young singers. I am Regent Nikolay. We shall work together in the tradition of the holy Obikhod, using the Fixed-Do method where Do is always C.\n\nChoose a lesson on the left and come to me with any questions.\n\nChrist is in our midst.",
     singCmd: null,
   }]);
+  const [activePlayer, setActivePlayer] = useState(null);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("grok_api_key") || "");
@@ -677,7 +679,7 @@ function NikolayChat({ context }) {
               ))}
             </div>
             {m.singCmd && (
-              <button className="sc-nik-play-btn" onClick={() => console.log("Play:", m.singCmd)}>
+              <button className="sc-nik-play-btn" onClick={() => setActivePlayer(m.singCmd)}>
                 ▶ Play Tone {m.singCmd.tone} {m.singCmd.sing === "tropar" ? "Troparion" : m.singCmd.sing === "stichera" ? "Stichera" : "Prokeimenon"}
               </button>
             )}
@@ -693,6 +695,13 @@ function NikolayChat({ context }) {
         )}
         <div ref={chatEndRef} />
       </div>
+      {activePlayer && (
+        <ChantPlayer
+          sing={activePlayer.sing}
+          tone={activePlayer.tone}
+          onClose={() => setActivePlayer(null)}
+        />
+      )}
       <div className="sc-nik-quick">
         {quickPrompts.map((p, i) => (
           <button key={i} className="sc-nik-quick-btn" onClick={() => send(p)}>{p}</button>
@@ -1358,5 +1367,19 @@ const SC_STYLES = `
 .sc-nik-input-row { display:flex; gap:10px; align-items:center; }
 .sc-nik-clear { background:transparent; border:1px solid var(--sc-rule-strong); border-radius:3px; padding:7px 14px; font-size:11px; letter-spacing:0.10em; color:var(--sc-parch-mute); cursor:pointer; }
 .sc-nik-clear:hover { border-color:#c97a3f; color:#c97a3f; }
+
+/* ── ChantPlayer ────────────────────────────────────────────────────── */
+.cp-panel { background: var(--sc-bg-3); border: 1px solid var(--sc-gold); border-radius: 6px; padding: 14px 18px; margin: 0 0 8px 0; }
+.cp-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.cp-title { font-family:Cinzel,serif; font-size:13px; letter-spacing:0.12em; color:var(--sc-gold); }
+.cp-close { background:transparent; border:none; color:var(--sc-parch-mute); font-size:16px; cursor:pointer; padding:0 4px; }
+.cp-close:hover { color:var(--sc-parch); }
+.cp-notes { display:flex; flex-wrap:wrap; gap:4px; margin-bottom:12px; }
+.cp-note { font-family:Cinzel,serif; font-size:12px; padding:3px 6px; border-radius:3px; background:rgba(201,144,42,0.08); border:1px solid rgba(201,144,42,0.15); color:var(--sc-parch-dim); transition:all 0.1s; }
+.cp-note.cp-active { background:var(--sc-gold); color:var(--sc-bg); border-color:var(--sc-gold); transform:scale(1.15); }
+.cp-controls { display:flex; align-items:center; gap:14px; }
+.cp-btn { background:var(--sc-gold); border:none; border-radius:4px; padding:6px 16px; font-family:Cinzel,serif; font-size:12px; letter-spacing:0.10em; color:var(--sc-bg); cursor:pointer; }
+.cp-btn:hover { opacity:0.85; }
+.cp-desc { font-size:12px; color:var(--sc-parch-mute); font-style:italic; }
 
 `;
