@@ -557,18 +557,18 @@ function stripSingJson(text) {
 }
 
 function NikolayChat({ context }) {
-  const [history, setHistory] = React.useState([{
+  const [history, setHistory] = useState([{
     role: "assistant",
     content: "Glory to God! Welcome, dear young singers. I am Regent Nikolay. We shall work together in the tradition of the holy Obikhod, using the Fixed-Do method where Do is always C.\n\nChoose a lesson on the left and come to me with any questions.\n\nChrist is in our midst.",
     singCmd: null,
   }]);
-  const [input, setInput] = React.useState("");
-  const [loading, setLoading] = React.useState(false);
-  const [apiKey, setApiKey] = React.useState(() => localStorage.getItem("grok_api_key") || "");
-  const [showSettings, setShowSettings] = React.useState(!localStorage.getItem("grok_api_key"));
-  const chatEndRef = React.useRef(null);
+  const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [apiKey, setApiKey] = useState(() => localStorage.getItem("grok_api_key") || "");
+  const [showSettings, setShowSettings] = useState(!localStorage.getItem("grok_api_key"));
+  const chatEndRef = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     chatEndRef.current && chatEndRef.current.scrollIntoView({ behavior: "smooth" });
   }, [history, loading]);
 
