@@ -668,7 +668,9 @@ function NikolayChat({ context }) {
       if (!resp.ok) { const e = await resp.json().catch(() => ({})); throw new Error(e.error && e.error.message ? e.error.message : "HTTP " + resp.status); }
       const data = await resp.json();
       const raw = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || "(No response)";
+      console.log("RAW REPLY:", raw);
       const singCmd = parseSingCommand(raw);
+      console.log("SING CMD:", singCmd);
       const displayText = singCmd ? stripSingJson(raw) : raw;
       setHistory(function(h) { return [...h, { role: "assistant", content: displayText, singCmd: singCmd }]; });
       speakReply(displayText);
