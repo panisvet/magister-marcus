@@ -606,8 +606,10 @@ function NikolayChat({ context }) {
   }
 
   async function speakReply(text) {
+    console.log("speakReply called, ttsEnabled:", ttsEnabled, "apiKey:", !!apiKey);
     if (!ttsEnabled || !apiKey) return;
     try {
+      console.log("Calling xAI TTS...");
       const resp = await fetch("https://api.x.ai/v1/tts", {
         method: "POST",
         headers: {
@@ -616,14 +618,20 @@ function NikolayChat({ context }) {
         },
         body: JSON.stringify({ text, voice_id: "leo", language: "en" }),
       });
-      if (!resp.ok) return;
+      console.log("TTS response status:", resp.status);
+      if (!resp.ok) {
+        const err = await resp.text();
+        console.warn("TTS error response:", err);
+        return;
+      }
       const blob = await resp.blob();
+      console.log("TTS blob size:", blob.size);
       const url = URL.createObjectURL(blob);
       const audio = new Audio(url);
       audio.play();
       audio.onended = () => URL.revokeObjectURL(url);
     } catch(e) {
-      console.warn("TTS error:", e);
+      console.warn("TTS fetch error:", e);
     }
   }
 
