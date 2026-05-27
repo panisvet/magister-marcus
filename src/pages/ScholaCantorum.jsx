@@ -675,7 +675,8 @@ function NikolayChat({ context }) {
       console.log("SING CMD:", singCmd);
       const displayText = singCmd ? stripSingJson(raw) : raw;
       setHistory(function(h) { return [...h, { role: "assistant", content: displayText, singCmd: singCmd }]; });
-      const ttsText = displayText.split("\n")[0].replace(/\b(Do|Re|Mi|Fa|Sol|La|Ti|Si)[-–—].*$/i, "").replace(/Solfège.*$/i, "").replace(/Fixed-Do.*$/i, "").trim();
+      // Speak first paragraph, max 300 chars
+      const ttsText = displayText.split("\n\n")[0].slice(0, 300).trim();
       if (ttsText.length > 10) speakReply(ttsText);
     } catch(e) {
       setHistory(function(h) { return [...h, { role: "assistant", content: "Connection interrupted. (" + e.message + ") Check your API key in Settings above.", singCmd: null }]; });
