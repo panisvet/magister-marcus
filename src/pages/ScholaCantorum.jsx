@@ -663,6 +663,7 @@ function NikolayChat({ context }) {
       const singCmd = parseSingCommand(raw);
       const displayText = singCmd ? stripSingJson(raw) : raw;
       setHistory(function(h) { return [...h, { role: "assistant", content: displayText, singCmd: singCmd }]; });
+      speakReply(displayText);
     } catch(e) {
       setHistory(function(h) { return [...h, { role: "assistant", content: "Connection interrupted. (" + e.message + ") Check your API key in Settings above.", singCmd: null }]; });
     } finally {
