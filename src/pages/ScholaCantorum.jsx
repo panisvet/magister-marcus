@@ -597,6 +597,36 @@ function NikolayChat({ context }) {
     setShowSettings(false);
   }
 
+  const [ttsEnabled, setTtsEnabled] = useState(() => localStorage.getItem("nikolay_tts") !== "off");
+
+  function toggleTts() {
+    const next = !ttsEnabled;
+    setTtsEnabled(next);
+    localStorage.setItem("nikolay_tts", next ? "on" : "off");
+  }
+
+  async function speakReply(text) {
+    if (!ttsEnabled || !apiKey) return;
+    try {
+      const resp = await fetch("https://api.x.ai/v1/tts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + apiKey,
+        },
+        body: JSON.stringify({ text, voice_id: "leo", language: "en" }),
+      });
+      if (!resp.ok) return;
+      const blob = await resp.blob();
+      const url = URL.createObjectURL(blob);
+      const audio = new Audio(url);
+      audio.play();
+      audio.onended = () => URL.revokeObjectURL(url);
+    } catch(e) {
+      console.warn("TTS error:", e);
+    }
+  }
+
   async function send(overrideMsg) {
     const msg = overrideMsg || input.trim();
     if (!msg) return;
@@ -652,6 +682,9 @@ function NikolayChat({ context }) {
         </button>
         {!apiKey && <span className="sc-nik-no-key">No API key — enter your xAI key to activate Regent Nikolay</span>}
         {apiKey && !showSettings && <span className="sc-nik-key-ok">✓ API key set</span>}
+        <button className="sc-nik-tts-toggle" onClick={toggleTts} title="Toggle Nikolay voice">
+          {ttsEnabled ? "🔊 Voice on" : "🔇 Voice off"}
+        </button>
       </div>
       {showSettings && (
         <div className="sc-nik-settings-panel">
@@ -1381,5 +1414,8 @@ const SC_STYLES = `
 .cp-btn { background:var(--sc-gold); border:none; border-radius:4px; padding:6px 16px; font-family:Cinzel,serif; font-size:12px; letter-spacing:0.10em; color:var(--sc-bg); cursor:pointer; }
 .cp-btn:hover { opacity:0.85; }
 .cp-desc { font-size:12px; color:var(--sc-parch-mute); font-style:italic; }
+
+.sc-nik-tts-toggle { background:transparent; border:1px solid var(--sc-rule-strong); border-radius:12px; padding:3px 10px; font-size:12px; color:var(--sc-parch-dim); cursor:pointer; margin-left:auto; }
+.sc-nik-tts-toggle:hover { border-color:var(--sc-gold); color:var(--sc-gold); }
 
 `;
