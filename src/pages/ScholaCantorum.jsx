@@ -610,11 +610,11 @@ function NikolayChat({ context }) {
     if (!ttsEnabled || !apiKey) return;
     try {
       console.log("Calling xAI TTS...");
-      const resp = await fetch("https://api.x.ai/v1/tts", {
+      const resp = await fetch("/tts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Bearer " + apiKey,
+          "X-API-Key": apiKey,
         },
         body: JSON.stringify({ text, voice_id: "leo", language: "en" }),
       });
