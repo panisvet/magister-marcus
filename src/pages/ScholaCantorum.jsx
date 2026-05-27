@@ -625,55 +625,80 @@ function NikolayChat({ context }) {
   ];
 
   return (
-    React.createElement("div", { className: "sc-nikolay" },
-      React.createElement("div", { className: "sc-nik-settings-bar" },
-        React.createElement("button", { className: "sc-nik-settings-toggle", onClick: function() { setShowSettings(function(s) { return !s; }); } },
-          "Settings " + (showSettings ? "▲" : "▼")),
-        !apiKey && React.createElement("span", { className: "sc-nik-no-key" }, "No API key - enter your xAI key to activate Regent Nikolay"),
-        apiKey && !showSettings && React.createElement("span", { className: "sc-nik-key-ok" }, "API key set")
-      ),
-      showSettings && React.createElement("div", { className: "sc-nik-settings-panel" },
-        React.createElement("label", { className: "sc-nik-settings-label" }, "xAI API Key"),
-        React.createElement("div", { className: "sc-nik-settings-row" },
-          React.createElement("input", { type: "password", className: "sc-nik-key-input", placeholder: "xai-...", value: apiKey, onChange: function(e) { setApiKey(e.target.value); }, onKeyDown: function(e) { if (e.key === "Enter") saveKey(); } }),
-          React.createElement("button", { className: "sc-btn", onClick: saveKey }, "SAVE")
-        )
-      ),
-      React.createElement("div", { className: "sc-nik-chat" },
-        history.map(function(m, i) {
-          return React.createElement("div", { key: i, className: "sc-nik-bubble sc-nik-" + m.role },
-            React.createElement("div", { className: "sc-nik-bubble-label" }, m.role === "assistant" ? "Regent Nikolay" : "You"),
-            React.createElement("div", { className: "sc-nik-bubble-text" },
-              m.content.split("\n").map(function(line, j, arr) {
-                return React.createElement(React.Fragment, { key: j }, line, j < arr.length - 1 && React.createElement("br", null));
-              })
-            ),
-            m.singCmd && React.createElement("button", { className: "sc-nik-play-btn", onClick: function() { console.log("Play:", m.singCmd); } },
-              "Play Tone " + m.singCmd.tone + " " + (m.singCmd.sing === "tropar" ? "Troparion" : m.singCmd.sing === "stichera" ? "Stichera" : "Prokeimenon")
-            )
-          );
-        }),
-        loading && React.createElement("div", { className: "sc-nik-bubble sc-nik-assistant sc-nik-thinking" },
-          React.createElement("div", { className: "sc-nik-bubble-label" }, "Regent Nikolay"),
-          React.createElement("div", { className: "sc-nik-bubble-text sc-nik-dots" },
-            React.createElement("span", null, "."), React.createElement("span", null, "."), React.createElement("span", null, ".")
-          )
-        ),
-        React.createElement("div", { ref: chatEndRef })
-      ),
-      React.createElement("div", { className: "sc-nik-quick" },
-        quickPrompts.map(function(p, i) {
-          return React.createElement("button", { key: i, className: "sc-nik-quick-btn", onClick: function() { send(p); } }, p);
-        })
-      ),
-      React.createElement("div", { className: "sc-nik-input-area" },
-        React.createElement("textarea", { className: "sc-nik-textarea", placeholder: "Ask Regent Nikolay...", value: input, onChange: function(e) { setInput(e.target.value); }, onKeyDown: function(e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }, rows: 3 }),
-        React.createElement("div", { className: "sc-nik-input-row" },
-          React.createElement("button", { className: "sc-btn", onClick: function() { send(); }, disabled: loading || !input.trim() }, loading ? "..." : "SEND"),
-          React.createElement("button", { className: "sc-nik-clear", onClick: function() { setHistory([{ role: "assistant", content: "Glory to God. What would you ask?", singCmd: null }]); } }, "CLEAR")
-        )
-      )
-    )
+    <div className="sc-nikolay">
+      <div className="sc-nik-settings-bar">
+        <button className="sc-nik-settings-toggle" onClick={() => setShowSettings(s => !s)}>
+          Settings {showSettings ? "▲" : "▼"}
+        </button>
+        {!apiKey && <span className="sc-nik-no-key">No API key — enter your xAI key to activate Regent Nikolay</span>}
+        {apiKey && !showSettings && <span className="sc-nik-key-ok">✓ API key set</span>}
+      </div>
+      {showSettings && (
+        <div className="sc-nik-settings-panel">
+          <label className="sc-nik-settings-label">xAI API Key — get yours at console.x.ai</label>
+          <div className="sc-nik-settings-row">
+            <input
+              type="password"
+              className="sc-nik-key-input"
+              placeholder="xai-..."
+              value={apiKey}
+              onChange={e => setApiKey(e.target.value)}
+              onKeyDown={e => e.key === "Enter" && saveKey()}
+            />
+            <button className="sc-btn" onClick={saveKey}>SAVE</button>
+          </div>
+        </div>
+      )}
+      <div className="sc-nik-chat">
+        {history.map((m, i) => (
+          <div key={i} className={`sc-nik-bubble sc-nik-${m.role}`}>
+            <div className="sc-nik-bubble-label">{m.role === "assistant" ? "Regent Nikolay" : "You"}</div>
+            <div className="sc-nik-bubble-text">
+              {m.content.split("\n").map((line, j, arr) => (
+                <span key={j}>{line}{j < arr.length - 1 && <br />}</span>
+              ))}
+            </div>
+            {m.singCmd && (
+              <button className="sc-nik-play-btn" onClick={() => console.log("Play:", m.singCmd)}>
+                ▶ Play Tone {m.singCmd.tone} {m.singCmd.sing === "tropar" ? "Troparion" : m.singCmd.sing === "stichera" ? "Stichera" : "Prokeimenon"}
+              </button>
+            )}
+          </div>
+        ))}
+        {loading && (
+          <div className="sc-nik-bubble sc-nik-assistant sc-nik-thinking">
+            <div className="sc-nik-bubble-label">Regent Nikolay</div>
+            <div className="sc-nik-bubble-text sc-nik-dots">
+              <span>·</span><span>·</span><span>·</span>
+            </div>
+          </div>
+        )}
+        <div ref={chatEndRef} />
+      </div>
+      <div className="sc-nik-quick">
+        {quickPrompts.map((p, i) => (
+          <button key={i} className="sc-nik-quick-btn" onClick={() => send(p)}>{p}</button>
+        ))}
+      </div>
+      <div className="sc-nik-input-area">
+        <textarea
+          className="sc-nik-textarea"
+          placeholder="Ask Regent Nikolay..."
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }}
+          rows={3}
+        />
+        <div className="sc-nik-input-row">
+          <button className="sc-btn" onClick={() => send()} disabled={loading || !input.trim()}>
+            {loading ? "..." : "SEND ✝"}
+          </button>
+          <button className="sc-nik-clear" onClick={() => setHistory([{
+            role: "assistant", content: "Glory to God. What would you ask?", singCmd: null
+          }])}>CLEAR</button>
+        </div>
+      </div>
+    </div>
   );
 }
 
