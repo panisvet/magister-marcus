@@ -670,13 +670,25 @@ function NikolayChat({ context }) {
       if (!resp.ok) { const e = await resp.json().catch(() => ({})); throw new Error(e.error && e.error.message ? e.error.message : "HTTP " + resp.status); }
       const data = await resp.json();
       const raw = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || "(No response)";
-      console.log("RAW REPLY:", raw);
-      const singCmd = parseSingCommand(raw);
-      console.log("SING CMD:", singCmd);
-      const displayText = singCmd ? stripSingJson(raw) : raw;
+      let displayText = raw;
+      let singCmd = null;
+      try {
+        const parsed = JSON.parse(raw);
+        displayText = parsed.spoken_text || raw;
+        if (parsed.command && parsed.command.sing && parsed.command.tone) {
+          singCmd = { sing: parsed.command.sing, tone: parsed.command.tone };
+        }
+      } catch(e) {
+        singCmd = parseSingCommand(raw);
+        displayText = singCmd ? stripSingJson(raw) : raw;
+      }
+      console.log("DISPLAY:", displayText, "CMD:", singCmd);
       setHistory(function(h) { return [...h, { role: "assistant", content: displayText, singCmd: singCmd }]; });
-      // Speak first paragraph, max 300 chars
-      const ttsText = displayText.split("\n\n")[0].slice(0, 300).trim();
+      const phoneticMap = { "Do": "Doe", "Re": "Ray", "Mi": "Mee", "Fa": "Fah", "Sol": "Sole", "La": "Lah", "Ti": "Tee" };
+      let ttsText = displayText;
+      Object.keys(phoneticMap).forEach(k => {
+        ttsText = ttsText.replace(new RegExp("\\b" + k + "\\b", "g"), phoneticMap[k]);
+      });
       if (ttsText.length > 10) speakReply(ttsText);
     } catch(e) {
       setHistory(function(h) { return [...h, { role: "assistant", content: "Connection interrupted. (" + e.message + ") Check your API key in Settings above.", singCmd: null }]; });
