@@ -93,7 +93,7 @@ Both forms cover **identical content**. Never simplify the ideas for Form IA —
 - If a session's files are too large to complete, finish the ones started and note clearly what remains.
 
 ### File transfer (user's responsibility between sessions):
-The user manually moves completed files from the Claude outputs folder to their local desktop folder **"Hillsdale American History and Civics"** and from there commits to the GitHub repo at `Users/svetlanabirthisel/github-repos/magister-marcus`. Claude does not need to manage this transfer — just produce clean files in `/mnt/user-data/outputs/`.
+The user manually moves completed files from the Claude outputs folder to their local desktop folder **"Hillsdale American History and Civics"** and from there commits to the GitHub repo at `github.com/panisvet/magister-marcus/magister-historia`. Claude does not need to manage this transfer — just produce clean files in `/mnt/user-data/outputs/`.
 
 ### At the end of every session:
 - List every file completed with its filename.
