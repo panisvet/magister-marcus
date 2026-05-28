@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.local
+.dev.vars
+*.local
+.DS_Store
+vite.config.*.timestamp-*
+*.bak
