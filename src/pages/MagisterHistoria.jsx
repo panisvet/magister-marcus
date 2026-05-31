@@ -121,7 +121,7 @@ export default function MagisterHistoria() {
           <div className="mh-nb-grid">
             {nbPages.map((p) => (
               <div key={p.id} className="mh-nb-card">
-                <div className="mh-nb-img-wrap">
+                <div className="mh-nb-img-wrap" style={{height: "220px", minHeight: "220px", flexShrink: "0"}}>
                   <img src={`/images/notebooking/${p.file}`} alt={p.title} className="mh-nb-img" />
                 </div>
                 <div className="mh-nb-body">
