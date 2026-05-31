@@ -1,0 +1,109 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Level 1, Week 3, Lesson 13
+%  Topic: Numbers 0–5 Review — Before, After, Between
+%  10 problems | No speed drill
+%  Compile with XeLaTeX
+% ============================================================
+\documentclass[12pt,letterpaper]{article}
+\usepackage{../sd_style}
+
+\renewcommand{\lessonnum}{13}
+\renewcommand{\lessonweek}{3}
+
+\begin{document}
+
+\lessonheader{3}{13}{Before, After, and Between — Numbers 0–5}
+
+\begin{instructbox}
+\noindent\textbf{\color{sd-blue}Instruction} \textit{(read aloud):}\\[4pt]
+On the number line, every number has neighbors.
+The number \textbf{before} is one less.
+The number \textbf{after} is one more.
+The number \textbf{between} two numbers sits in the middle.
+\end{instructbox}
+
+\vspace{6pt}
+\begin{center}
+\begin{tikzpicture}
+  \draw[sd-blue, very thick, ->] (-0.3,0) -- (5.8,0);
+  \foreach \n in {0,...,5}{
+    \draw[sd-blue, thick] (\n, -0.15) -- (\n, 0.15);
+    \node[below] at (\n, -0.25) {\textbf{\n}};
+  }
+\end{tikzpicture}
+\end{center}
+
+\goldrule
+\noindent\textbf{\color{sd-blue}Practice}
+\vspace{6pt}
+
+\prob What number comes \textbf{after} 2? \quad\ansblank
+
+\vspace{8pt}
+\prob What number comes \textbf{before} 4? \quad\ansblank
+
+\vspace{8pt}
+\prob What number is \textbf{between} 1 and 3? \quad\ansblank
+
+\vspace{8pt}
+\prob What number comes \textbf{after} 0? \quad\ansblank
+
+\vspace{8pt}
+\prob What number comes \textbf{before} 1? \quad\ansblank
+
+\vspace{8pt}
+\prob What number is \textbf{between} 3 and 5? \quad\ansblank
+
+\vspace{8pt}
+\prob Fill in the blanks:\\[6pt]
+\hspace{1cm}\ansblank \quad 2 \quad \ansblank\\[8pt]
+\hspace{1cm}\ansblank \quad 4 \quad \ansblank\\[8pt]
+\hspace{1cm}\ansblank \quad 0 \quad \ansblank
+
+\vspace{8pt}
+\prob \textit{(Teacher reads)} Three rabbits were hopping in a row.
+The middle rabbit is between the first and the last.
+If the first is rabbit number 1 and the last is rabbit number 3,
+what number is the middle rabbit? \quad\ansblank
+
+\vspace{8pt}
+\prob Circle the number that is \textbf{between} 2 and 4:\\[6pt]
+\hspace{2cm}{\Large 1 \quad 3 \quad 5}
+
+\vspace{8pt}
+\prob Write all the numbers from 0 to 5 in order:\\[6pt]
+\hspace{1cm}\ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank
+
+\goldrule
+
+\begin{checkbox}
+\noindent\textbf{\color{sd-green}Knowledge Check}\\[4pt]
+\setcounter{probnum}{0}
+\prob What number comes after 3? \quad\ansblank\\[8pt]
+\prob What number comes before 5? \quad\ansblank\\[8pt]
+\prob What number is between 0 and 2? \quad\ansblank
+\end{checkbox}
+
+\vfill
+\noindent{\color{sd-blue}$\bigstar$ \textbf{Enrichment — Tally Marks Review:}}\\[4pt]
+\begin{tabular}{ccccc}
+\begin{tikzpicture}[baseline=0]\draw[sd-blue,very thick](0,0)--(0,0.7);\end{tikzpicture} &
+\begin{tikzpicture}[baseline=0]\foreach\x in{0,0.3}\draw[sd-blue,very thick](\x,0)--(\x,0.7);\end{tikzpicture} &
+\begin{tikzpicture}[baseline=0]\foreach\x in{0,0.3,0.6}\draw[sd-blue,very thick](\x,0)--(\x,0.7);\end{tikzpicture} &
+\begin{tikzpicture}[baseline=0]\foreach\x in{0,0.3,0.6,0.9}\draw[sd-blue,very thick](\x,0)--(\x,0.7);\end{tikzpicture} &
+\begin{tikzpicture}[baseline=0]
+  \foreach\x in{0,0.3,0.6,0.9}\draw[sd-blue,very thick](\x,0)--(\x,0.7);
+  \draw[sd-blue,very thick,rotate around={-70:(0.45,0.35)}](0,0.35)--(0.9,0.35);
+\end{tikzpicture}\\[4pt]
+1 & 2 & 3 & 4 & 5
+\end{tabular}\\[6pt]
+Write the tally marks for 3 and for 5 in the boxes:\\[4pt]
+\fbox{\rule{0pt}{1.2cm}\hspace{2cm}}\quad 3 \hspace{2cm}
+\fbox{\rule{0pt}{1.2cm}\hspace{2cm}}\quad 5
+
+\vspace{4pt}\hrule\vspace{3pt}
+{\footnotesize\color{gray}\textit{Teacher note: "Before, after, between" language builds the mental number line
+  that underpins all future arithmetic. If needed, use a printed number line
+  as a physical reference the student can touch.}}
+
+\end{document}
