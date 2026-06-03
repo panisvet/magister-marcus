@@ -8,6 +8,7 @@ import LessonViewer from './pages/LessonViewer.jsx'
 import ScholaCantorum from './pages/ScholaCantorum.jsx'
 import RegentNikolay from './pages/RegentNikolay.jsx'
 import MagisterHistoria from "./pages/MagisterHistoria"
+import MagisterArtis from "./pages/MagisterArtis.jsx"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/schola-cantorum" element={<ScholaCantorum />} />
         <Route path="/regent-nikolay" element={<RegentNikolay />} />
         <Route path="/history" element={<MagisterHistoria />} />
+        <Route path="/magister-artis" element={<MagisterArtis />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
