@@ -1,0 +1,227 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Magister Mathematica
+%  Level 1 | Week 8 | Day 1
+%  Topic: Introduction to Subtraction — Taking Away (−1, −2)
+%  Enrichment: Finger counting strategies
+% ============================================================
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mdframed}
+\usepackage{fancyhdr}
+
+\definecolor{scholared}{RGB}{160,30,30}
+\definecolor{scholagold}{RGB}{180,140,40}
+\definecolor{scholacream}{RGB}{253,248,235}
+\definecolor{scholagreen}{RGB}{50,110,60}
+\definecolor{scholablue}{RGB}{40,80,140}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.6pt}
+\fancyhead[L]{\small\textcolor{scholared}{\textbf{Schola Domestica — Magister Mathematica}}}
+\fancyhead[R]{\small\textcolor{scholared}{Level 1 · Week 8 · Day 1}}
+\fancyfoot[C]{\small\textcolor{gray}{— \thepage\ —}}
+
+\newcommand{\answerline}{\underline{\hspace{2.5cm}}}
+\newcommand{\biganswerline}{\underline{\hspace{4cm}}}
+\newcommand{\numbox}{\fbox{\hspace{0.6cm}\vphantom{0}}}
+
+\newmdenv[
+  backgroundcolor=scholacream,
+  linecolor=scholared,
+  linewidth=1.5pt,
+  roundcorner=6pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt
+]{lessonbox}
+
+\newmdenv[
+  backgroundcolor=white,
+  linecolor=scholablue,
+  linewidth=1pt,
+  roundcorner=4pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+  innerleftmargin=8pt,
+  innerrightmargin=8pt
+]{storybox}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\textbf{\textcolor{scholared}{Introduction to Subtraction}}}\\[4pt]
+  {\Large\textcolor{scholagold}{\textit{Taking Away (−1 and −2)}}}\\[6pt]
+  {\small Name: \biganswerline \hspace{1cm} Date: \answerline}
+\end{center}
+
+\vspace{4pt}
+\noindent\textcolor{scholared}{\rule{\linewidth}{1pt}}
+\vspace{4pt}
+
+% IMAGE PROMPT (Beatrix Potter watercolour style):
+% A squirrel sitting beneath an oak tree with 7 acorns in front of her. She picks up 2 acorns
+% and holds them. The remaining 5 are visible on the ground. A subtle crossed-out feeling
+% (faint X marks) over the 2 lifted acorns. Warm watercolour, autumn orange and brown tones.
+% No numerals.
+
+\begin{lessonbox}
+\textbf{What is Subtraction?}\\[4pt]
+Subtraction means \textbf{taking away} from a group to find how many \textit{are left}.\\[6pt]
+We use the sign \textbf{−} to mean ``minus'' or ``take away.''\\[8pt]
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  % start: 6 dots
+  \foreach \i in {1,...,6}{\filldraw[scholablue](\i*0.5,0.1)circle(0.18cm);}
+  % cross out first 2
+  \foreach \i in {1,2}{
+    \draw[very thick, scholared](\i*0.5-0.18,-0.1) -- (\i*0.5+0.18,0.32);
+    \draw[very thick, scholared](\i*0.5-0.18,0.32) -- (\i*0.5+0.18,-0.1);
+  }
+  \node at (3.9,0.1){\Huge\textcolor{scholared}{$-$}};
+  \node[above=2pt] at (4.8,0.18){\Large 2};
+  \node at (5.7,0.1){\Huge\textcolor{scholared}{$=$}};
+  \foreach \i in {1,...,4}{\filldraw[scholablue](\i*0.5+6.1,0.1)circle(0.18cm);}
+\end{tikzpicture}
+\end{center}
+\begin{center}
+  \Large $6 \;-\; 2 \;=\; 4$
+\end{center}
+\medskip
+\noindent We say: \textit{``Six minus two equals four.''}
+\end{lessonbox}
+
+\bigskip
+
+% ===== PART I: CROSS OUT AND COUNT — −1 =====
+\noindent\textcolor{scholared}{\large\textbf{Part I — Take Away One (−1)}} \hfill \textit{(Problems 1–4)}
+
+\medskip
+\noindent\textit{Cross out \textbf{1} circle. Count how many are left. Write the subtraction sentence.}
+
+\bigskip
+
+\noindent\textbf{1.} \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,5}{\draw[thick, scholablue](\i*0.5,0) circle(0.18cm);}
+\end{tikzpicture}
+\hfill $5 - 1 = $ \numbox
+
+\bigskip
+\noindent\textbf{2.} \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,7}{\draw[thick, scholagreen](\i*0.5,0) circle(0.18cm);}
+\end{tikzpicture}
+\hfill $7 - 1 = $ \numbox
+
+\bigskip
+\noindent\textbf{3.} \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,9}{\draw[thick, scholared](\i*0.5,0) circle(0.18cm);}
+\end{tikzpicture}
+\hfill $9 - 1 = $ \numbox
+
+\bigskip
+\noindent\textbf{4.} \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,10}{\draw[thick, scholablue](\i*0.5,0) circle(0.18cm);}
+\end{tikzpicture}
+\hfill $10 - 1 = $ \numbox
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== PART II: TAKE AWAY TWO − 2 =====
+\noindent\textcolor{scholared}{\large\textbf{Part II — Take Away Two (−2)}} \hfill \textit{(Problems 5–8)}
+
+\medskip
+\noindent\textit{Cross out \textbf{2} circles. Write the answer.}
+
+\bigskip
+
+\noindent\textbf{5.} \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,6}{\draw[thick, scholagold](\i*0.5,0) circle(0.18cm);}
+\end{tikzpicture}
+\hfill $6 - 2 = $ \numbox
+
+\bigskip
+\noindent\textbf{6.} \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,8}{\draw[thick, scholablue](\i*0.5,0) circle(0.18cm);}
+\end{tikzpicture}
+\hfill $8 - 2 = $ \numbox
+
+\bigskip
+\noindent\textbf{7.} \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,9}{\draw[thick, scholagreen](\i*0.5,0) circle(0.18cm);}
+\end{tikzpicture}
+\hfill $9 - 2 = $ \numbox
+
+\bigskip
+\noindent\textbf{8.} \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,10}{\draw[thick, scholared](\i*0.5,0) circle(0.18cm);}
+\end{tikzpicture}
+\hfill $10 - 2 = $ \numbox
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== PART III: STORY PROBLEMS =====
+\noindent\textcolor{scholared}{\large\textbf{Part III — Story Problems}} \hfill \textit{(Problems 9–12)}
+
+\bigskip
+
+\begin{storybox}
+\textbf{9.} Mrs. Tiggy-Winkle had 8 hedgehog-apples. She gave 1 to a friend.\\
+How many does she have left?\\[6pt]
+\hspace{1em} $8 - 1 = $ \numbox
+\end{storybox}
+
+\bigskip
+
+\begin{storybox}
+\textbf{10.} There were 7 butterflies on a flower. 2 flew away.\\
+How many butterflies are left?\\[6pt]
+\hspace{1em} $7 - 2 = $ \numbox
+\end{storybox}
+
+\bigskip
+\noindent\textbf{11.} $5 - 1 = $ \numbox \hspace{2cm} \textbf{12.} $9 - 2 = $ \numbox
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== ENRICHMENT =====
+\begin{lessonbox}
+\textcolor{scholared}{\textbf{Enrichment — Finger Counting Strategies}}\\[6pt]
+\noindent\textbf{How to subtract on your fingers:}\\[4pt]
+For $7 - 2$: Hold up 7 fingers. Fold down 2. Count the fingers still up.\\[4pt]
+\noindent\textit{Try these with your fingers and write the answer:}
+
+\medskip
+$6 - 1 = $ \numbox \hspace{1cm}
+$8 - 2 = $ \numbox \hspace{1cm}
+$5 - 2 = $ \numbox \hspace{1cm}
+$10 - 1 = $ \numbox
+
+\medskip
+\noindent\textit{Bonus: Can you subtract with your fingers without looking at your hands?}
+\end{lessonbox}
+
+\end{document}

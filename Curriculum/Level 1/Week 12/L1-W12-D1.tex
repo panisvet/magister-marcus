@@ -1,0 +1,233 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Magister Mathematica
+%  Level 1 | Week 12 | Day 1
+%  Topic: Subtraction Facts — −0 and −1 from 6 and Under
+% ============================================================
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mdframed}
+\usepackage{fancyhdr}
+
+\definecolor{scholared}{RGB}{160,30,30}
+\definecolor{scholagold}{RGB}{180,140,40}
+\definecolor{scholacream}{RGB}{253,248,235}
+\definecolor{scholagreen}{RGB}{50,110,60}
+\definecolor{scholablue}{RGB}{40,80,140}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.6pt}
+\fancyhead[L]{\small\textcolor{scholared}{\textbf{Schola Domestica — Magister Mathematica}}}
+\fancyhead[R]{\small\textcolor{scholared}{Level 1 · Week 12 · Day 1}}
+\fancyfoot[C]{\small\textcolor{gray}{— \thepage\ —}}
+
+\newcommand{\answerline}{\underline{\hspace{2.5cm}}}
+\newcommand{\biganswerline}{\underline{\hspace{4cm}}}
+\newcommand{\numbox}{\tikz{\draw[scholablue,thick](0,0)rectangle(1.2cm,0.85cm);}}
+
+% crossed-out dot
+\newcommand{\xdot}{%
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \filldraw[scholared!40] (0,0) circle (0.14cm);
+    \draw[scholared, thick] (-0.12,-0.12) -- (0.12,0.12);
+    \draw[scholared, thick] (-0.12,0.12) -- (0.12,-0.12);
+  \end{tikzpicture}%
+}
+% plain dot
+\newcommand{\odot}{\begin{tikzpicture}[baseline=-0.5ex]\filldraw[scholablue](0,0)circle(0.14cm);\end{tikzpicture}}
+
+\newmdenv[
+  backgroundcolor=scholacream,
+  linecolor=scholared,
+  linewidth=1.5pt,
+  roundcorner=6pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt
+]{lessonbox}
+
+\newmdenv[
+  backgroundcolor={rgb,255:red,235;green,245;blue,235},
+  linecolor=scholagreen,
+  linewidth=1.2pt,
+  roundcorner=4pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+  innerleftmargin=8pt,
+  innerrightmargin=8pt
+]{enrichbox}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\textbf{\textcolor{scholared}{Subtraction Facts:}}}\\[4pt]
+  {\Large\textcolor{scholagold}{\textit{Taking Away Zero and One}}}\\[6pt]
+  {\small Name: \biganswerline \hspace{1cm} Date: \answerline}
+\end{center}
+
+\vspace{4pt}
+\noindent\textcolor{scholared}{\rule{\linewidth}{1pt}}
+\vspace{4pt}
+
+% IMAGE PROMPT (Beatrix Potter watercolour style):
+% A little wren removes one shiny pebble from a row of five on a mossy log and tucks it under
+% its wing. Soft green forest light, the remaining four pebbles glisten. No text, white background.
+
+\begin{lessonbox}
+\textbf{Subtraction} means \emph{taking away}. We use the $-$ sign.\\[6pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=4pt]
+  \item \textbf{$-0$}: take away nothing — the number stays the same.\\
+    \hspace{1em} $5 - 0 = 5$ \quad (nothing leaves)
+  \item \textbf{$-1$}: count back one — one fewer.\\
+    \hspace{1em} $5 - 1 = 4$ \quad (start at 5, go back 1: \textit{four})
+\end{itemize}
+\medskip
+\noindent\textit{To show subtraction with dots: draw the whole group, then \textbf{cross out} the ones taken away.}
+\end{lessonbox}
+
+\bigskip
+
+% ===== PART I: −0 FACTS =====
+\noindent\textcolor{scholared}{\large\textbf{Part I — Taking Away Zero}} \hfill \textit{(Problems 1–4)}
+
+\medskip
+\noindent\textit{Cross out zero dots. Count what remains. Write the difference.}
+
+\bigskip
+
+\noindent
+\begin{tabular}{@{}p{7.2cm} p{7.2cm}@{}}
+% 1: 4−0=4
+\textbf{1.}\quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,4} { \filldraw[scholablue](\i*0.42,0)circle(0.14cm); }
+\end{tikzpicture}
+\quad $4 - 0 =$ \numbox
+&
+% 2: 6−0=6
+\textbf{2.}\quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,6} { \filldraw[scholablue](\i*0.38,0)circle(0.13cm); }
+\end{tikzpicture}
+\quad $6 - 0 =$ \numbox \\[16pt]
+% 3: 3−0=3
+\textbf{3.}\quad $3 - 0 =$ \numbox
+&
+% 4: 5−0=5
+\textbf{4.}\quad $5 - 0 =$ \numbox
+\end{tabular}
+
+\bigskip\bigskip
+
+% ===== PART II: −1 WITH CROSS-OUT =====
+\noindent\textcolor{scholared}{\large\textbf{Part II — Taking Away One}} \hfill \textit{(Problems 5–10)}
+
+\medskip
+\noindent\textit{Cross out one dot (marked in red). Count what is left. Write the difference.}
+
+\bigskip
+
+\noindent
+\begin{tabular}{@{}p{7.2cm} p{7.2cm}@{}}
+% 5: 2−1=1
+\textbf{5.}\quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \filldraw[scholablue](0.42,0)circle(0.14cm);
+  % crossed-out dot
+  \filldraw[scholared!40](0.9,0)circle(0.14cm);
+  \draw[scholared,thick](0.77,-0.13)--(1.03,0.13);
+  \draw[scholared,thick](0.77,0.13)--(1.03,-0.13);
+\end{tikzpicture}
+\quad $2 - 1 =$ \numbox
+&
+% 6: 3−1=2
+\textbf{6.}\quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,2} { \filldraw[scholablue](\i*0.42,0)circle(0.14cm); }
+  \filldraw[scholared!40](1.32,0)circle(0.14cm);
+  \draw[scholared,thick](1.19,-0.13)--(1.45,0.13);
+  \draw[scholared,thick](1.19,0.13)--(1.45,-0.13);
+\end{tikzpicture}
+\quad $3 - 1 =$ \numbox \\[18pt]
+
+% 7: 4−1=3
+\textbf{7.}\quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,2,3} { \filldraw[scholablue](\i*0.42,0)circle(0.14cm); }
+  \filldraw[scholared!40](1.74,0)circle(0.14cm);
+  \draw[scholared,thick](1.61,-0.13)--(1.87,0.13);
+  \draw[scholared,thick](1.61,0.13)--(1.87,-0.13);
+\end{tikzpicture}
+\quad $4 - 1 =$ \numbox
+&
+% 8: 5−1=4
+\textbf{8.}\quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,4} { \filldraw[scholablue](\i*0.42,0)circle(0.14cm); }
+  \filldraw[scholared!40](2.16,0)circle(0.14cm);
+  \draw[scholared,thick](2.03,-0.13)--(2.29,0.13);
+  \draw[scholared,thick](2.03,0.13)--(2.29,-0.13);
+\end{tikzpicture}
+\quad $5 - 1 =$ \numbox \\[18pt]
+
+% 9: 6−1=5
+\textbf{9.}\quad $6 - 1 =$ \numbox
+&
+% 10: 1−1=0
+\textbf{10.}\quad $1 - 1 =$ \numbox \quad \textit{(what is left?)}
+\end{tabular}
+
+\bigskip\bigskip
+
+% ===== PART III: NUMBER LINE SUBTRACTION =====
+\noindent\textcolor{scholared}{\large\textbf{Part III — Count Back on the Number Line}} \hfill \textit{(Problems 11–14)}
+
+\medskip
+\noindent\textit{Start at the first number. Hop \textbf{left} (back). Write the difference.}
+
+\bigskip
+
+\noindent
+\begin{tikzpicture}
+  \draw[thick, scholablue] (0,0) -- (7.8,0);
+  \foreach \n in {0,...,6} {
+    \draw[thick] (\n*1.2+0.3,-0.12)--(\n*1.2+0.3,0.12);
+    \node[below] at (\n*1.2+0.3,-0.18) {\small\textbf{\n}};
+  }
+\end{tikzpicture}
+
+\bigskip
+
+\noindent
+\begin{tabular}{@{}p{3.5cm} p{3.5cm} p{3.5cm} p{3.5cm}@{}}
+\textbf{11.}\; $5 - 1 =$ \numbox &
+\textbf{12.}\; $4 - 0 =$ \numbox &
+\textbf{13.}\; $6 - 1 =$ \numbox &
+\textbf{14.}\; $3 - 1 =$ \numbox
+\end{tabular}
+
+\bigskip
+
+\begin{enrichbox}
+\textbf{\textcolor{scholagreen}{Addition and Subtraction are related!}}\\[3pt]
+If $4 + 1 = 5$, then $5 - 1 = 4$.\\
+If $3 + 0 = 3$, then $3 - 0 = 3$.\\[3pt]
+\textit{Every addition fact has a subtraction partner. This week we will find them all!}
+\end{enrichbox}
+
+\vspace{0.3cm}
+\noindent\textcolor{gray}{\small\textit{Ray's Primary Arithmetic — subtraction as the inverse of addition.}}
+
+\end{document}

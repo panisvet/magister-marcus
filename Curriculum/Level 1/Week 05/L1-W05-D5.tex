@@ -1,0 +1,195 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Magister Mathematica
+%  Level 1 | Week 5 | Day 5
+%  Topic: Week 5 Review & Assessment — Numbers 6–10
+%  (Comparing, Ordering, < > =, Roman VI–X)
+% ============================================================
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mdframed}
+\usepackage{fancyhdr}
+
+\definecolor{scholared}{RGB}{160,30,30}
+\definecolor{scholagold}{RGB}{180,140,40}
+\definecolor{scholacream}{RGB}{253,248,235}
+\definecolor{scholagreen}{RGB}{50,110,60}
+\definecolor{scholablue}{RGB}{40,80,140}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.6pt}
+\fancyhead[L]{\small\textcolor{scholared}{\textbf{Schola Domestica — Magister Mathematica}}}
+\fancyhead[R]{\small\textcolor{scholared}{Level 1 · Week 5 · Day 5 (Review)}}
+\fancyfoot[C]{\small\textcolor{gray}{— \thepage\ —}}
+
+\newcommand{\answerline}{\underline{\hspace{2.5cm}}}
+\newcommand{\biganswerline}{\underline{\hspace{4cm}}}
+\newcommand{\symbox}{\fbox{\hspace{0.7cm}}}
+\newcommand{\numbox}{\fbox{\hspace{0.6cm}\vphantom{0}}}
+
+\newmdenv[
+  backgroundcolor=scholacream,
+  linecolor=scholared,
+  linewidth=1.5pt,
+  roundcorner=6pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt
+]{lessonbox}
+
+\newmdenv[
+  backgroundcolor=white,
+  linecolor=scholagold,
+  linewidth=2pt,
+  roundcorner=6pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt
+]{scorebox}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\textbf{\textcolor{scholared}{Week 5 Review}}}\\[4pt]
+  {\Large\textcolor{scholagold}{\textit{Numbers 6–10: Comparing, Ordering, Roman Numerals}}}\\[6pt]
+  {\small Name: \biganswerline \hspace{1cm} Date: \answerline}
+\end{center}
+
+\vspace{4pt}
+\noindent\textcolor{scholared}{\rule{\linewidth}{1pt}}
+\vspace{4pt}
+
+% IMAGE PROMPT (Beatrix Potter watercolour style):
+% Ten small koi fish swimming in a round garden pond, viewed from above. Each fish is a different
+% warm colour — orange, white, gold, red, black-and-white. Water lily pads with one pink bloom.
+% Soft watercolour, dappled sunlight effect. No text.
+
+% ===== PART I: COUNT AND COMPARE =====
+\noindent\textcolor{scholared}{\large\textbf{Part I — Count and Compare}} \hfill \textit{(Problems 1–4, 1 pt each)}
+
+\medskip
+\noindent\textit{Count each row of dots. Write the numbers. Then write $<$, $>$, or $=$.}
+
+\bigskip
+
+\noindent\textbf{1.}
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,6}{\filldraw[scholablue](\i*0.4,0)circle(0.13cm);}
+\end{tikzpicture}
+\quad \answerline \quad \symbox \quad \answerline \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,9}{\filldraw[scholared](\i*0.4,0)circle(0.13cm);}
+\end{tikzpicture}
+
+\bigskip
+\noindent\textbf{2.}
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,8}{\filldraw[scholagreen](\i*0.4,0)circle(0.13cm);}
+\end{tikzpicture}
+\quad \answerline \quad \symbox \quad \answerline \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,8}{\filldraw[scholagold](\i*0.4,0)circle(0.13cm);}
+\end{tikzpicture}
+
+\bigskip
+\noindent\textbf{3.}
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,10}{\filldraw[scholablue](\i*0.4,0)circle(0.13cm);}
+\end{tikzpicture}
+\quad \answerline \quad \symbox \quad \answerline \quad
+\begin{tikzpicture}[baseline=-0.5ex]
+  \foreach \i in {1,...,7}{\filldraw[scholared](\i*0.4,0)circle(0.13cm);}
+\end{tikzpicture}
+
+\bigskip
+\noindent\textbf{4.} \quad $7$ \quad \symbox \quad $6$ \hspace{3cm}
+Write the \textbf{greater} number: \answerline
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== PART II: BEFORE / AFTER / BETWEEN =====
+\noindent\textcolor{scholared}{\large\textbf{Part II — Before, After, Between}} \hfill \textit{(Problems 5–8, 1 pt each)}
+
+\bigskip
+\noindent\textbf{5.} Just before 8: \hfill \answerline
+
+\noindent\textbf{6.} Just after 9: \hfill \answerline
+
+\noindent\textbf{7.} Between 7 and 9: \hfill \answerline
+
+\noindent\textbf{8.} Between 5 and 7: \hfill \answerline
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== PART III: ORDER =====
+\noindent\textcolor{scholared}{\large\textbf{Part III — Write in Order}} \hfill \textit{(Problems 9–10, 2 pts each)}
+
+\bigskip
+\noindent\textbf{9.} Least to greatest: \quad 10 \; 6 \; 8 \; 9 \; 7
+
+\medskip
+\hspace{2em} \numbox \; $<$ \; \numbox \; $<$ \; \numbox \; $<$ \; \numbox \; $<$ \; \numbox
+
+\bigskip
+\noindent\textbf{10.} Greatest to least: \quad 7 \; 10 \; 6 \; 9 \; 8
+
+\medskip
+\hspace{2em} \numbox \; $>$ \; \numbox \; $>$ \; \numbox \; $>$ \; \numbox \; $>$ \; \numbox
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== PART IV: ROMAN NUMERALS =====
+\noindent\textcolor{scholared}{\large\textbf{Part IV — Roman Numerals VI–X}} \hfill \textit{(Problems 11–14, 1 pt each)}
+
+\bigskip
+\begin{multicols}{2}
+\noindent\textbf{11.} What is VIII in our numbers? \hfill \answerline\\[12pt]
+\noindent\textbf{12.} What is IX in our numbers? \hfill \answerline
+
+\columnbreak
+
+\noindent\textbf{13.} Write 10 in Roman numerals. \hfill \answerline\\[12pt]
+\noindent\textbf{14.} Write 6 in Roman numerals. \hfill \answerline
+\end{multicols}
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== PART V: WORD PROBLEM =====
+\noindent\textcolor{scholared}{\large\textbf{Part V — Word Problem}} \hfill \textit{(Problem 15, 2 pts)}
+
+\bigskip
+\noindent\textbf{15.} Peter found 7 mushrooms in the morning and 9 mushrooms in the afternoon.\\[6pt]
+\hspace{1.5em}Which time did he find \textbf{more}? \hfill \answerline\\[10pt]
+\hspace{1.5em}Write a comparison with $>$ or $<$: \quad $7$ \quad \symbox \quad $9$
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== SCORE BOX =====
+\begin{scorebox}
+\begin{center}
+\textbf{Score: \answerline / 16} \hspace{2cm}
+\textbf{Parent/Teacher Initial: \answerline}\\[6pt]
+\textit{\small (Mastery = 13/16 or above. If below, repeat Week 5 before continuing.)}
+\end{center}
+\end{scorebox}
+
+\end{document}

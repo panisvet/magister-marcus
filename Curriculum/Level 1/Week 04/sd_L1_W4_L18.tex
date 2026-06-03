@@ -1,0 +1,116 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Level 1, Week 4, Lesson 18
+%  Topic: Ordering Numbers 0–10 (least to greatest & greatest to least)
+%  10 problems | No speed drill
+%  Compile with XeLaTeX
+% ============================================================
+\documentclass[12pt,letterpaper]{article}
+\usepackage{sd_style}
+
+\renewcommand{\lessonnum}{18}
+\renewcommand{\lessonweek}{4}
+
+\begin{document}
+
+\lessonheader{4}{18}{Ordering Numbers 0–10}
+
+\begin{instructbox}
+\noindent\textbf{\color{sd-blue}Instruction} \textit{(read aloud):}\\[4pt]
+We can put numbers in order from \textbf{least to greatest} (small to big)
+or from \textbf{greatest to least} (big to small).
+The number line always goes least to greatest from left to right.
+\end{instructbox}
+
+\vspace{6pt}
+\begin{center}
+\begin{tikzpicture}
+  \draw[sd-blue, very thick, ->] (-0.3,0) -- (11.3,0);
+  \foreach \n in {0,...,10}{
+    \draw[sd-blue, thick] (\n, -0.15) -- (\n, 0.15);
+    \node[below] at (\n, -0.25) {\textbf{\n}};
+  }
+  \node[above] at (2, 0.4) {\color{sd-gold}\small least};
+  \node[above] at (9, 0.4) {\color{sd-gold}\small greatest};
+  \draw[sd-gold, ->] (2.5,0.35) -- (8.5,0.35);
+\end{tikzpicture}
+\end{center}
+
+\goldrule
+\noindent\textbf{\color{sd-blue}Practice}
+\vspace{6pt}
+
+\prob Order from \textbf{least to greatest}.\\[6pt]
+\hspace{1cm}{\Large 5 \quad 2 \quad 8} \quad$\longrightarrow$\quad
+\ansblank\quad\ansblank\quad\ansblank
+
+\vspace{10pt}
+\prob Order from \textbf{least to greatest}.\\[6pt]
+\hspace{1cm}{\Large 10 \quad 3 \quad 7 \quad 1} \quad$\longrightarrow$\quad
+\ansblank\quad\ansblank\quad\ansblank\quad\ansblank
+
+\vspace{10pt}
+\prob Order from \textbf{greatest to least}.\\[6pt]
+\hspace{1cm}{\Large 4 \quad 9 \quad 6} \quad$\longrightarrow$\quad
+\ansblank\quad\ansblank\quad\ansblank
+
+\vspace{10pt}
+\prob Order from \textbf{greatest to least}.\\[6pt]
+\hspace{1cm}{\Large 0 \quad 5 \quad 8 \quad 3} \quad$\longrightarrow$\quad
+\ansblank\quad\ansblank\quad\ansblank\quad\ansblank
+
+\vspace{10pt}
+\prob Write these numbers in order from least to greatest:\\[6pt]
+\hspace{1cm}{\Large 9 \quad 0 \quad 6 \quad 4 \quad 2 \quad 7} \quad$\longrightarrow$\quad
+\ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank
+
+\vspace{10pt}
+\prob Which set is in correct order least to greatest? Circle it.\\[6pt]
+\hspace{1cm}\textbf{A:} 3, 7, 5, 9 \hspace{2cm} \textbf{B:} 2, 4, 6, 8
+
+\vspace{10pt}
+\prob \textit{(Teacher reads)} Five children measured their bean plants.
+The heights were 3, 7, 1, 9, and 5 centimeters.
+Write them in order from shortest to tallest:\\[6pt]
+\hspace{1cm}\ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank
+
+\vspace{10pt}
+\prob Fill in the missing numbers to complete the sequence least to greatest:\\[6pt]
+\hspace{1cm}2, \ansblank, 6, \ansblank, 10
+
+\vspace{10pt}
+\prob Fill in the missing numbers to complete the sequence greatest to least:\\[6pt]
+\hspace{1cm}9, \ansblank, 7, \ansblank, 5
+
+\vspace{10pt}
+\prob Write any five numbers between 0 and 10, then put them in order.\\[6pt]
+My numbers: \ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank\\[6pt]
+In order: \ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank
+
+\goldrule
+
+\begin{checkbox}
+\noindent\textbf{\color{sd-green}Knowledge Check}\\[4pt]
+\setcounter{probnum}{0}
+\prob Order least to greatest: 8, 3, 6 \quad$\longrightarrow$\quad\ansblank\quad\ansblank\quad\ansblank\\[8pt]
+\prob Order greatest to least: 1, 7, 4 \quad$\longrightarrow$\quad\ansblank\quad\ansblank\quad\ansblank
+\end{checkbox}
+
+\vfill
+\noindent{\color{sd-blue}$\bigstar$ \textbf{Enrichment — Mayan Numbers 6–10:}}\\[4pt]
+The Maya used dots ($\bullet$ = 1) and bars (\rule{0.7cm}{2pt} = 5).\\[4pt]
+\begin{tabular}{ccccc}
+\rule{0.7cm}{2pt}$\bullet$ &
+\rule{0.7cm}{2pt}$\bullet\bullet$ &
+\rule{0.7cm}{2pt}$\bullet\bullet\bullet$ &
+\rule{0.7cm}{2pt}$\bullet\bullet\bullet\bullet$ &
+\rule{0.7cm}{2pt}\rule{0.7cm}{2pt}\\[2pt]
+6 & 7 & 8 & 9 & 10
+\end{tabular}\\[4pt]
+Order these Mayan numbers from least to greatest and write the Hindu-Arabic numerals below.
+
+\vspace{4pt}\hrule\vspace{3pt}
+{\footnotesize\color{gray}\textit{Teacher note: Ordering numbers is a prerequisite for understanding
+  the number line as a measurement tool. Mastery target: student can correctly
+  order any set of numbers 0–10 in either direction without the number line.}}
+
+\end{document}

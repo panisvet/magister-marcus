@@ -1,0 +1,185 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Magister Mathematica
+%  Level 1 | Week 11 | Day 4
+%  Topic: Addition Facts to 10 — Addition Table & Word Problems
+% ============================================================
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mdframed}
+\usepackage{fancyhdr}
+
+\definecolor{scholared}{RGB}{160,30,30}
+\definecolor{scholagold}{RGB}{180,140,40}
+\definecolor{scholacream}{RGB}{253,248,235}
+\definecolor{scholagreen}{RGB}{50,110,60}
+\definecolor{scholablue}{RGB}{40,80,140}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.6pt}
+\fancyhead[L]{\small\textcolor{scholared}{\textbf{Schola Domestica — Magister Mathematica}}}
+\fancyhead[R]{\small\textcolor{scholared}{Level 1 · Week 11 · Day 4}}
+\fancyfoot[C]{\small\textcolor{gray}{— \thepage\ —}}
+
+\newcommand{\answerline}{\underline{\hspace{2.5cm}}}
+\newcommand{\biganswerline}{\underline{\hspace{4cm}}}
+\newcommand{\numbox}{\tikz{\draw[scholablue,thick](0,0)rectangle(1.2cm,0.85cm);}}
+
+\newmdenv[
+  backgroundcolor=scholacream,
+  linecolor=scholared,
+  linewidth=1.5pt,
+  roundcorner=6pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt
+]{lessonbox}
+
+\newmdenv[
+  backgroundcolor={rgb,255:red,235;green,245;blue,235},
+  linecolor=scholagreen,
+  linewidth=1.2pt,
+  roundcorner=4pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+  innerleftmargin=8pt,
+  innerrightmargin=8pt
+]{enrichbox}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\textbf{\textcolor{scholared}{The Addition Table:}}}\\[4pt]
+  {\Large\textcolor{scholagold}{\textit{Patterns in our Facts}}}\\[6pt]
+  {\small Name: \biganswerline \hspace{1cm} Date: \answerline}
+\end{center}
+
+\vspace{4pt}
+\noindent\textcolor{scholared}{\rule{\linewidth}{1pt}}
+\vspace{4pt}
+
+% IMAGE PROMPT (Miyazaki watercolour style):
+% An elderly tanuki sits before a large stone tablet carved with numbers in neat rows, tracing
+% them with one claw. Firefly light illuminates the carvings. Night forest, soft glowing palette,
+% white paper background, no text.
+
+\begin{lessonbox}
+\textbf{An addition table} shows all the sums in one place.
+Read across the top row to find the first addend.
+Read down the left column to find the second addend.
+Where they meet is the \textbf{sum}.\\[4pt]
+\noindent The \textbf{diagonal} (top-left to bottom-right) shows the \emph{doubles}.
+\end{lessonbox}
+
+\bigskip
+
+% ===== ADDITION TABLE (partial, 0–5 × 0–5) =====
+\noindent\textcolor{scholared}{\large\textbf{Part I — Complete the Addition Table}} \hfill \textit{(20 cells)}
+
+\medskip
+\noindent\textit{Fill in every empty cell with the sum. The first row and column are done for you.}
+
+\bigskip
+
+\noindent
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|>{\columncolor{scholacream}}c|c|c|c|c|c|c|}
+\hline
+\rowcolor{scholacream}
+\textbf{$+$} & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\
+\hline
+\textbf{0} & 0 & 1 & 2 & 3 & 4 & 5 \\
+\hline
+\textbf{1} & 1 & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} \\
+\hline
+\textbf{2} & 2 & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} \\
+\hline
+\textbf{3} & 3 & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} \\
+\hline
+\textbf{4} & 4 & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} \\
+\hline
+\textbf{5} & 5 & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} & \phantom{0}\underline{\hspace{0.6cm}} \\
+\hline
+\end{tabular}
+\renewcommand{\arraystretch}{1}
+
+\medskip
+\noindent\textit{\small Colour the diagonal (doubles row) in yellow when you have finished.}
+
+\bigskip\bigskip
+
+% ===== PART II: USE THE TABLE =====
+\noindent\textcolor{scholared}{\large\textbf{Part II — Use Your Table}} \hfill \textit{(Problems 1–8)}
+
+\medskip
+\noindent\textit{Find each fact in the table. Write the sum.}
+
+\bigskip
+
+\noindent
+\begin{tabular}{@{}p{3.3cm} p{3.3cm} p{3.3cm} p{3.3cm}@{}}
+\textbf{1.}\; $4 + 5 =$ \numbox &
+\textbf{2.}\; $3 + 4 =$ \numbox &
+\textbf{3.}\; $5 + 3 =$ \numbox &
+\textbf{4.}\; $2 + 5 =$ \numbox \\[12pt]
+\textbf{5.}\; $5 + 4 =$ \numbox &
+\textbf{6.}\; $3 + 3 =$ \numbox &
+\textbf{7.}\; $4 + 4 =$ \numbox &
+\textbf{8.}\; $5 + 5 =$ \numbox
+\end{tabular}
+
+\bigskip\bigskip
+
+% ===== PART III: WORD PROBLEMS =====
+\noindent\textcolor{scholared}{\large\textbf{Part III — Story Problems}} \hfill \textit{(Problems 9–12)}
+
+\medskip
+
+\noindent\textbf{9.} Five children sit on one bench; four sit on another. How many children in all?
+
+\medskip\noindent\hspace{2em} $\numbox + \numbox = \numbox$ children
+
+\bigskip
+
+\noindent\textbf{10.} A baker made \textbf{8} rolls and \textbf{2} loaves. How many baked goods in all?
+
+\medskip\noindent\hspace{2em} $\numbox + \numbox = \numbox$ baked goods
+
+\bigskip
+
+\noindent\textbf{11.} Tom has \textbf{3} blue marbles and \textbf{7} red marbles. How many marbles altogether?
+
+\medskip\noindent\hspace{2em} $\numbox + \numbox = \numbox$ marbles
+
+\bigskip
+
+\noindent\textbf{12.} Write your own problem with a sum of 10:
+
+\medskip\noindent\hspace{2em}\underline{\hspace{9cm}}
+
+\medskip\noindent\hspace{2em} $\numbox + \numbox = 10$
+
+\bigskip
+
+\begin{enrichbox}
+\textbf{\textcolor{scholagreen}{Pattern: The table is symmetric!}}\\[3pt]
+Look at $3 + 4$ and $4 + 3$ in your table. Are they the same? \quad$\square$\,Yes \; $\square$\,No\\[3pt]
+\textit{This shows the turn-around rule (commutative property) at work for every fact!}
+\end{enrichbox}
+
+\vspace{0.3cm}
+\noindent\textcolor{gray}{\small\textit{Ray's Primary Arithmetic — the complete addition table.}}
+
+\end{document}

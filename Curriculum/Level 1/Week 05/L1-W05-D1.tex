@@ -1,0 +1,257 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Magister Mathematica
+%  Level 1 | Week 5 | Day 1
+%  Topic: Numbers 6–10 — More, Fewer, or the Same?
+%  Enrichment: Roman Numerals VI–X
+% ============================================================
+\documentclass[12pt, letterpaper]{article}
+
+% ---------- packages ----------
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mdframed}
+\usepackage{fancyhdr}
+\usepackage{calc}
+
+% ---------- colours ----------
+\definecolor{scholared}{RGB}{160,30,30}
+\definecolor{scholagold}{RGB}{180,140,40}
+\definecolor{scholacream}{RGB}{253,248,235}
+\definecolor{scholagreen}{RGB}{50,110,60}
+\definecolor{scholablue}{RGB}{40,80,140}
+
+% ---------- page style ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.6pt}
+\fancyhead[L]{\small\textcolor{scholared}{\textbf{Schola Domestica — Magister Mathematica}}}
+\fancyhead[R]{\small\textcolor{scholared}{Level 1 · Week 5 · Day 1}}
+\fancyfoot[C]{\small\textcolor{gray}{— \thepage\ —}}
+
+% ---------- custom commands ----------
+\newcommand{\dotbox}[1]{%
+  \tikz[baseline=-0.5ex]{\draw[scholablue, thick] (0,0) rectangle (#1 cm, 0.9cm);}%
+}
+\newcommand{\answerline}{\underline{\hspace{2.5cm}}}
+\newcommand{\biganswerline}{\underline{\hspace{4cm}}}
+
+% draw a row of circles (filled) to represent objects
+\newcommand{\dots}[1]{%
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \foreach \i in {1,...,#1} {
+      \filldraw[scholablue] (\i*0.45-0.4, 0) circle (0.15cm);
+    }
+  \end{tikzpicture}%
+}
+
+% ---------- section box ----------
+\newmdenv[
+  backgroundcolor=scholacream,
+  linecolor=scholared,
+  linewidth=1.5pt,
+  roundcorner=6pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt
+]{lessonbox}
+
+\begin{document}
+
+% ===== TITLE =====
+\begin{center}
+  {\LARGE\textbf{\textcolor{scholared}{Numbers 6–10:}}}\\[4pt]
+  {\Large\textcolor{scholagold}{\textit{More, Fewer, or the Same?}}}\\[6pt]
+  {\small Name: \biganswerline \hspace{1cm} Date: \answerline}
+\end{center}
+
+\vspace{4pt}
+\noindent\textcolor{scholared}{\rule{\linewidth}{1pt}}
+\vspace{4pt}
+
+% ===== PICTURE INSTRUCTION =====
+% IMAGE PROMPT (Beatrix Potter watercolour style):
+% Two groups of animals facing each other: on the left, 7 small brown field mice sitting upright;
+% on the right, 4 golden acorns arranged in a row. Soft watercolour wash, warm autumn palette,
+% white paper background, no text. Proportions suitable for a half-page illustration.
+
+\begin{lessonbox}
+\textbf{Remember:}\\[4pt]
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+  \item \textbf{More} means a bigger group. 
+  \item \textbf{Fewer} means a smaller group.
+  \item \textbf{Same} means both groups are equal.
+\end{itemize}
+\medskip
+\noindent To compare, \emph{match one object from each group}. The group with leftover objects has \textbf{more}.
+\end{lessonbox}
+
+\bigskip
+
+% ===== SECTION 1: COUNT & COMPARE =====
+\noindent\textcolor{scholared}{\large\textbf{Part I — Count and Compare}} \hfill \textit{(Problems 1–4)}
+
+\medskip
+\noindent\textit{Count each group. Write the number. Circle the word.}
+
+\bigskip
+
+% Problem 1
+\noindent
+\begin{tabular}{@{}p{5.5cm}@{\hspace{0.5cm}}p{5.5cm}@{}}
+  \textbf{1.} Left group: \quad
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \foreach \i in {1,...,6} { \filldraw[scholablue] (\i*0.38, 0) circle (0.13cm); }
+  \end{tikzpicture}
+  &
+  Right group: \quad
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \foreach \i in {1,...,8} { \filldraw[scholagreen] (\i*0.38, 0) circle (0.13cm); }
+  \end{tikzpicture}
+\end{tabular}
+
+\medskip
+\hspace{1.5em}Left: \answerline \quad Right: \answerline
+
+\medskip
+\hspace{1.5em}The left group has \quad \textbf{MORE} \quad / \quad \textbf{FEWER} \quad / \quad \textbf{THE SAME} \quad as the right group.
+
+\bigskip\bigskip
+
+% Problem 2
+\noindent
+\begin{tabular}{@{}p{5.5cm}@{\hspace{0.5cm}}p{5.5cm}@{}}
+  \textbf{2.} Left group: \quad
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \foreach \i in {1,...,7} { \filldraw[scholared] (\i*0.38, 0) circle (0.13cm); }
+  \end{tikzpicture}
+  &
+  Right group: \quad
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \foreach \i in {1,...,7} { \filldraw[scholagold] (\i*0.38, 0) circle (0.13cm); }
+  \end{tikzpicture}
+\end{tabular}
+
+\medskip
+\hspace{1.5em}Left: \answerline \quad Right: \answerline
+
+\medskip
+\hspace{1.5em}The left group has \quad \textbf{MORE} \quad / \quad \textbf{FEWER} \quad / \quad \textbf{THE SAME} \quad as the right group.
+
+\bigskip\bigskip
+
+% Problem 3
+\noindent
+\begin{tabular}{@{}p{5.5cm}@{\hspace{0.5cm}}p{5.5cm}@{}}
+  \textbf{3.} Left group: \quad
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \foreach \i in {1,...,9} { \filldraw[scholablue] (\i*0.38, 0) circle (0.13cm); }
+  \end{tikzpicture}
+  &
+  Right group: \quad
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \foreach \i in {1,...,6} { \filldraw[scholagreen] (\i*0.38, 0) circle (0.13cm); }
+  \end{tikzpicture}
+\end{tabular}
+
+\medskip
+\hspace{1.5em}Left: \answerline \quad Right: \answerline
+
+\medskip
+\hspace{1.5em}The left group has \quad \textbf{MORE} \quad / \quad \textbf{FEWER} \quad / \quad \textbf{THE SAME} \quad as the right group.
+
+\bigskip\bigskip
+
+% Problem 4
+\noindent
+\begin{tabular}{@{}p{5.5cm}@{\hspace{0.5cm}}p{5.5cm}@{}}
+  \textbf{4.} Left group: \quad
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \foreach \i in {1,...,10} { \filldraw[scholared] (\i*0.38, 0) circle (0.13cm); }
+  \end{tikzpicture}
+  &
+  Right group: \quad
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \foreach \i in {1,...,8} { \filldraw[scholagold] (\i*0.38, 0) circle (0.13cm); }
+  \end{tikzpicture}
+\end{tabular}
+
+\medskip
+\hspace{1.5em}Left: \answerline \quad Right: \answerline
+
+\medskip
+\hspace{1.5em}The left group has \quad \textbf{MORE} \quad / \quad \textbf{FEWER} \quad / \quad \textbf{THE SAME} \quad as the right group.
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== SECTION 2: ORDERING =====
+\noindent\textcolor{scholared}{\large\textbf{Part II — Put in Order}} \hfill \textit{(Problems 5–8)}
+
+\medskip
+\noindent\textit{Write these numbers from \textbf{least to greatest} (smallest to largest).}
+
+\bigskip
+\noindent\textbf{5.} \quad 9 \quad 6 \quad 8 \quad 7 \hspace{2cm}
+  \answerline \; $<$ \; \answerline \; $<$ \; \answerline \; $<$ \; \answerline
+
+\bigskip
+\noindent\textbf{6.} \quad 10 \quad 6 \quad 9 \quad 7 \hspace{1.5cm}
+  \answerline \; $<$ \; \answerline \; $<$ \; \answerline \; $<$ \; \answerline
+
+\bigskip
+\noindent\textbf{7.} \quad 8 \quad 10 \quad 6 \quad 9 \hspace{1.5cm}
+  \answerline \; $<$ \; \answerline \; $<$ \; \answerline \; $<$ \; \answerline
+
+\bigskip
+\noindent\textit{Write these numbers from \textbf{greatest to least} (largest to smallest).}
+
+\bigskip
+\noindent\textbf{8.} \quad 6 \quad 10 \quad 8 \quad 7 \hspace{1.5cm}
+  \answerline \; $>$ \; \answerline \; $>$ \; \answerline \; $>$ \; \answerline
+
+\bigskip
+\noindent\textcolor{scholared}{\rule{\linewidth}{0.4pt}}
+
+% ===== ENRICHMENT =====
+\begin{lessonbox}
+\textcolor{scholared}{\textbf{Enrichment — Roman Numerals VI through X}}\\[6pt]
+The Romans wrote 6–10 like this:\\[6pt]
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{VI} & \textbf{VII} & \textbf{VIII} & \textbf{IX} & \textbf{X} \\
+\hline
+6 & 7 & 8 & 9 & 10 \\
+\hline
+\end{tabular}
+\end{center}
+\medskip
+\noindent \textit{Trace and copy each Roman numeral once:}
+
+\medskip
+VI \quad \dotbox{1.5} \hspace{0.5cm}
+VII \quad \dotbox{1.5} \hspace{0.5cm}
+VIII \quad \dotbox{1.5} \hspace{0.5cm}
+IX \quad \dotbox{1.5} \hspace{0.5cm}
+X \quad \dotbox{1.5}
+
+\medskip
+\noindent\textit{What Roman numeral means 8?} \quad \answerline \qquad
+\textit{What does IX mean?} \quad \answerline
+\end{lessonbox}
+
+\end{document}
