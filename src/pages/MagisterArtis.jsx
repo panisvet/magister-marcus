@@ -175,7 +175,7 @@ export default function MagisterArtis() {
       <style>{CSS}</style>
       {lightbox && (
         <div className="ma-lightbox" onClick={() => setLightbox(false)}>
-          <img src={l.workUrl} alt={l.work} />
+          <img src={l.workUrl ? `/img?url=${encodeURIComponent(l.workUrl)}` : ""} alt={l.work} />
         </div>
       )}
       <div className="ma-root">
@@ -218,7 +218,7 @@ export default function MagisterArtis() {
                 {/* Painting image */}
                 {l.workUrl && (
                   <div className="ma-img-wrap">
-                    <img className="ma-img" src={l.workUrl} alt={l.work} onClick={() => setLightbox(true)} title="Click to enlarge" />
+                    <img className="ma-img" src={l.workUrl ? `/img?url=${encodeURIComponent(l.workUrl)}` : ""} alt={l.work} onClick={() => setLightbox(true)} title="Click to enlarge" />
                     <div className="ma-img-cap">{l.work} — {l.artist} · Click to enlarge</div>
                   </div>
                 )}
