@@ -125,7 +125,7 @@ function groupByWeek(lessons) {
 export default function MagisterArtis() {
   const [ci, setCi] = useState(0)
   const [age, setAge] = useState('both')
-  const [lightbox, setLightbox] = useState(false)
+  const [lightbox, setLightbox] = useState(null)
 
   const l = ALL[ci]
   const tc = TYPE_COLORS[l.type] || '#2a1f14'
@@ -218,18 +218,18 @@ export default function MagisterArtis() {
                 {/* Painting image(s) */}
                 {l.workUrl && !l.workUrl2 && (
                   <div className="ma-img-wrap">
-                    <img className="ma-img" src={`/img?url=${encodeURIComponent(l.workUrl)}`} alt={l.work} onClick={() => setLightbox(true)} title="Click to enlarge" />
+                    <img className="ma-img" src={`/img?url=${encodeURIComponent(l.workUrl)}`} alt={l.work} onClick={() => setLightbox(l.workUrl)} title="Click to enlarge" />
                     <div className="ma-img-cap">{l.work} — {l.artist} · Click to enlarge</div>
                   </div>
                 )}
                 {l.workUrl && l.workUrl2 && (
                   <div style={{display:'flex',gap:'10px',marginBottom:'12px'}}>
                     <div className="ma-img-wrap" style={{flex:1,margin:0}}>
-                      <img className="ma-img" src={`/img?url=${encodeURIComponent(l.workUrl)}`} alt={l.work} onClick={() => setLightbox(true)} title="Click to enlarge" />
+                      <img className="ma-img" src={`/img?url=${encodeURIComponent(l.workUrl)}`} alt={l.work} onClick={() => setLightbox(l.workUrl)} title="Click to enlarge" />
                       <div className="ma-img-cap">{l.work}</div>
                     </div>
                     <div className="ma-img-wrap" style={{flex:1,margin:0}}>
-                      <img className="ma-img" src={`/img?url=${encodeURIComponent(l.workUrl2)}`} alt={l.work2} onClick={() => setLightbox(true)} title="Click to enlarge" />
+                      <img className="ma-img" src={`/img?url=${encodeURIComponent(l.workUrl2)}`} alt={l.work2} onClick={() => setLightbox(l.workUrl2)} title="Click to enlarge" />
                       <div className="ma-img-cap">{l.work2}</div>
                     </div>
                   </div>
