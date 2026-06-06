@@ -175,7 +175,7 @@ export default function MagisterArtis() {
       <style>{CSS}</style>
       {lightbox && (
         <div className="ma-lightbox" onClick={() => setLightbox(false)}>
-          <img src={l.workUrl ? `/img?url=${encodeURIComponent(l.workUrl)}` : ""} alt={l.work} />
+          <img src={typeof lightbox === "string" ? `/img?url=${encodeURIComponent(lightbox)}` : ""} alt="" />
         </div>
       )}
       <div className="ma-root">
