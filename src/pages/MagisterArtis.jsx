@@ -215,11 +215,23 @@ export default function MagisterArtis() {
             <div className="ma-cols">
               <div className="ma-lcol">
 
-                {/* Painting image */}
-                {l.workUrl && (
+                {/* Painting image(s) */}
+                {l.workUrl && !l.workUrl2 && (
                   <div className="ma-img-wrap">
-                    <img className="ma-img" src={l.workUrl ? `/img?url=${encodeURIComponent(l.workUrl)}` : ""} alt={l.work} onClick={() => setLightbox(true)} title="Click to enlarge" />
+                    <img className="ma-img" src={`/img?url=${encodeURIComponent(l.workUrl)}`} alt={l.work} onClick={() => setLightbox(true)} title="Click to enlarge" />
                     <div className="ma-img-cap">{l.work} — {l.artist} · Click to enlarge</div>
+                  </div>
+                )}
+                {l.workUrl && l.workUrl2 && (
+                  <div style={{display:'flex',gap:'10px',marginBottom:'12px'}}>
+                    <div className="ma-img-wrap" style={{flex:1,margin:0}}>
+                      <img className="ma-img" src={`/img?url=${encodeURIComponent(l.workUrl)}`} alt={l.work} onClick={() => setLightbox(true)} title="Click to enlarge" />
+                      <div className="ma-img-cap">{l.work}</div>
+                    </div>
+                    <div className="ma-img-wrap" style={{flex:1,margin:0}}>
+                      <img className="ma-img" src={`/img?url=${encodeURIComponent(l.workUrl2)}`} alt={l.work2} onClick={() => setLightbox(true)} title="Click to enlarge" />
+                      <div className="ma-img-cap">{l.work2}</div>
+                    </div>
                   </div>
                 )}
 
