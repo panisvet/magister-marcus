@@ -145,7 +145,7 @@ export default function ReadingApp() {
         </button>
         <button
           className="lr-btn lr-btn--ghost"
-          onClick={() => speak(word.word, { slow: true })}
+          onClick={async () => { for (const s of sounds) { speak(SAY[s] ?? glyph(s), { slow: true }); await new Promise(r => setTimeout(r, 700)); } }}
         >
           Say it slow
         </button>
@@ -186,8 +186,8 @@ export default function ReadingApp() {
 
 const css = `
 .lr{
-  --g:var(--gold,#c9902a); --g2:var(--gold2,#e8b84b);
-  --p:var(--parch,#f7edcc); --bg:var(--bg,#0e0b07);
+  --g:#c9902a; --g2:#e8b84b;
+  --p:#f7edcc; --bg:#0e0b07;
   max-width:48rem;margin:0 auto;padding:1.5rem 1.25rem 3rem;
   color:var(--p);font-family:"Crimson Pro",Georgia,serif;
 }
