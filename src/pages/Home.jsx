@@ -195,17 +195,6 @@ const TOOLS = [
     tag: 'Active',
   },
   {
-    id: 'sounds',
-    icon: '🔤',
-    title: 'Sounds Practice',
-    subtitle: 'Phonics — Lessons 1 to 8',
-    desc: 'Tap each letter to hear its sound. Free practice board plus per-lesson sets that follow the book.',
-    accent: '#c9902a',
-    href: '/sounds',
-    status: 'active',
-    tag: 'Active',
-  },
-  {
     id: 'latin',
     icon: '🏛',
     title: 'Magister Marcus',
