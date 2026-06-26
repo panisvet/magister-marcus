@@ -184,6 +184,17 @@ body{background:#0a0804;overflow-x:hidden;}
 
 const TOOLS = [
   {
+    id: 'read',
+    icon: '📖',
+    title: 'Learn to Read',
+    subtitle: 'Sound it out — 100 Easy Lessons',
+    desc: 'Tap through each sound and blend the whole word. Gentle phonics with spoken pronunciation, built for the youngest readers.',
+    accent: '#c9902a',
+    href: '/read',
+    status: 'active',
+    tag: 'Active',
+  },
+  {
     id: 'latin',
     icon: '🏛',
     title: 'Magister Marcus',

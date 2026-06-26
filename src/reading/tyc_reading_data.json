@@ -1,0 +1,208 @@
+{
+  "_meta": {
+    "source": "Teach Your Child to Read in 100 Easy Lessons (sound symbols & phoneme segmentation only; no lesson scripts reproduced)",
+    "extractedRange": "Lessons 1-23 (decodable word lists + stories). Phoneme inventory covers all sounds through Lesson 89.",
+    "notation": "Each word is an array of taught sound-symbols. Long vowels carry a macron (e,a,o,i,u,y). 'th','sh','ch','ng','ar','er','oo','ea','ai','ou','wh','qu' are single joined sounds. Doubled letters in print that map to one sound (e.g. 'tt' in mitt) are one segment.",
+    "segmentationNote": "Segmentations marked verified were read directly from the book's dotted-arrow markings. The app blends the final tap into the whole word."
+  },
+
+  "phonemeInventory": [
+    { "symbol": "m",  "say": "mmm",    "asIn": "man",     "voiced": true,  "lesson": 1 },
+    { "symbol": "s",  "say": "sss",    "asIn": "sat",     "voiced": false, "lesson": 1 },
+    { "symbol": "a",  "say": "aaa",    "asIn": "and",     "voiced": true,  "lesson": 3 },
+    { "symbol": "e",  "say": "eee",    "asIn": "eat",     "voiced": true,  "lesson": 5,  "long": true },
+    { "symbol": "t",  "say": "t",      "asIn": "cat",     "voiced": false, "lesson": 7 },
+    { "symbol": "r",  "say": "rrr",    "asIn": "run",     "voiced": true,  "lesson": 9 },
+    { "symbol": "d",  "say": "d",      "asIn": "mad",     "voiced": true,  "lesson": 12 },
+    { "symbol": "i",  "say": "iii",    "asIn": "if",      "voiced": true,  "lesson": 14 },
+    { "symbol": "th", "say": "ththth", "asIn": "this",    "voiced": true,  "lesson": 16 },
+    { "symbol": "c",  "say": "c",      "asIn": "tack",    "voiced": false, "lesson": 19 },
+    { "symbol": "o",  "say": "ooo",    "asIn": "ox",      "voiced": true,  "lesson": 21 },
+    { "symbol": "n",  "say": "nnn",    "asIn": "no",      "voiced": true,  "lesson": 23 },
+    { "symbol": "f",  "say": "fff",    "asIn": "fun",     "voiced": false, "lesson": 25 },
+    { "symbol": "u",  "say": "uuu",    "asIn": "under",   "voiced": true,  "lesson": 27 },
+    { "symbol": "l",  "say": "lll",    "asIn": "late",    "voiced": true,  "lesson": 29 },
+    { "symbol": "w",  "say": "wooo",   "asIn": "we",      "voiced": true,  "lesson": 31 },
+    { "symbol": "g",  "say": "g",      "asIn": "tag",     "voiced": true,  "lesson": 33 },
+    { "symbol": "I",  "say": "I",      "asIn": "I (word)","voiced": true,  "lesson": 34 },
+    { "symbol": "sh", "say": "shshsh", "asIn": "she",     "voiced": false, "lesson": 35 },
+    { "symbol": "a-", "say": "aaa",    "asIn": "ate",     "voiced": true,  "lesson": 37, "long": true, "display": "\u0101" },
+    { "symbol": "h",  "say": "h",      "asIn": "hat",     "voiced": false, "lesson": 39 },
+    { "symbol": "k",  "say": "k",      "asIn": "tack",    "voiced": false, "lesson": 41 },
+    { "symbol": "o-", "say": "ooo",    "asIn": "over",    "voiced": true,  "lesson": 43, "long": true, "display": "\u014d" },
+    { "symbol": "v",  "say": "vvv",    "asIn": "very",    "voiced": true,  "lesson": 45 },
+    { "symbol": "p",  "say": "p",      "asIn": "tap",     "voiced": false, "lesson": 48 },
+    { "symbol": "ar", "say": "arrr",   "asIn": "arm",     "voiced": true,  "lesson": 49 },
+    { "symbol": "ch", "say": "ch",     "asIn": "touch",   "voiced": false, "lesson": 50 },
+    { "symbol": "e-short", "say": "eee","asIn": "end",    "voiced": true,  "lesson": 52, "display": "e" },
+    { "symbol": "ing","say": "iiing",  "asIn": "sing",    "voiced": true,  "lesson": 56 },
+    { "symbol": "i-", "say": "iii",    "asIn": "ice",     "voiced": true,  "lesson": 58, "long": true, "display": "\u012b" },
+    { "symbol": "y",  "say": "yeee",   "asIn": "yes",     "voiced": true,  "lesson": 60 },
+    { "symbol": "er", "say": "urrr",   "asIn": "brother", "voiced": true,  "lesson": 62 },
+    { "symbol": "b",  "say": "b",      "asIn": "grab",    "voiced": true,  "lesson": 64 },
+    { "symbol": "oo", "say": "oooooo",  "asIn": "moon",    "voiced": true,  "lesson": 65 },
+    { "symbol": "j",  "say": "j",      "asIn": "judge",   "voiced": true,  "lesson": 67 },
+    { "symbol": "wh", "say": "wooo",   "asIn": "why",     "voiced": false, "lesson": 69 },
+    { "symbol": "y-", "say": "iii",    "asIn": "my",      "voiced": true,  "lesson": 71, "long": true, "display": "\u0233" },
+    { "symbol": "u-", "say": "uuu",    "asIn": "use",     "voiced": true,  "lesson": 74, "long": true, "display": "\u016b" },
+    { "symbol": "qu", "say": "kooo",   "asIn": "quick",   "voiced": true,  "lesson": 74 },
+    { "symbol": "x",  "say": "ksss",   "asIn": "ox",      "voiced": false, "lesson": 75 },
+    { "symbol": "z",  "say": "zzz",    "asIn": "buzz",    "voiced": true,  "lesson": 75 },
+    { "symbol": "ea", "say": "eee",    "asIn": "eat",     "voiced": true,  "lesson": 79 },
+    { "symbol": "ai", "say": "aaa",    "asIn": "rain",    "voiced": true,  "lesson": 88 },
+    { "symbol": "ou", "say": "owww",   "asIn": "loud",    "voiced": true,  "lesson": 89 }
+  ],
+
+  "lessons": [
+    { "lesson": 1,  "newSound": "m, s",         "decodableWords": [] },
+    { "lesson": 2,  "newSound": null,           "decodableWords": [] },
+    { "lesson": 3,  "newSound": "a",            "decodableWords": [] },
+    { "lesson": 4,  "newSound": null,           "blends": [["s","a"],["m","a"]], "decodableWords": [] },
+    { "lesson": 5,  "newSound": "e",            "decodableWords": [] },
+    { "lesson": 6,  "newSound": null,           "decodableWords": [] },
+    { "lesson": 7,  "newSound": "t",            "decodableWords": [] },
+    { "lesson": 8,  "newSound": null,           "decodableWords": [] },
+    { "lesson": 9,  "newSound": "r",
+      "decodableWords": [
+        { "word": "am",  "sounds": ["a","m"],     "verified": true },
+        { "word": "mat", "sounds": ["m","a","t"], "verified": true },
+        { "word": "sat", "sounds": ["s","a","t"], "verified": true }
+      ] },
+    { "lesson": 10, "newSound": null,
+      "decodableWords": [
+        { "word": "am",  "sounds": ["a","m"],     "verified": true },
+        { "word": "sat", "sounds": ["s","a","t"], "verified": true }
+      ] },
+    { "lesson": 11, "newSound": null,
+      "decodableWords": [
+        { "word": "sat", "sounds": ["s","a","t"], "verified": true },
+        { "word": "am",  "sounds": ["a","m"],     "verified": true }
+      ] },
+    { "lesson": 12, "newSound": "d",
+      "decodableWords": [
+        { "word": "me",   "sounds": ["m","e"],         "verified": true },
+        { "word": "see",  "sounds": ["s","e","e"],     "verified": true },
+        { "word": "seed", "sounds": ["s","e","e","d"], "verified": true },
+        { "word": "sam",  "sounds": ["s","a","m"],     "verified": true },
+        { "word": "rat",  "sounds": ["r","a","t"],     "verified": true }
+      ] },
+    { "lesson": 13, "newSound": null,
+      "decodableWords": [
+        { "word": "am",   "sounds": ["a","m"],         "verified": true },
+        { "word": "eat",  "sounds": ["e","a","t"],     "verified": true },
+        { "word": "ram",  "sounds": ["r","a","m"],     "verified": true },
+        { "word": "see",  "sounds": ["s","e","e"],     "verified": true },
+        { "word": "rat",  "sounds": ["r","a","t"],     "verified": true },
+        { "word": "at",   "sounds": ["a","t"],         "verified": true },
+        { "word": "sat",  "sounds": ["s","a","t"],     "verified": true },
+        { "word": "seat", "sounds": ["s","e","a","t"], "verified": true }
+      ],
+      "story": { "text": "see me eat", "words": ["see","me","eat"] } },
+    { "lesson": 14, "newSound": "i",
+      "decodableWords": [
+        { "word": "mad",  "sounds": ["m","a","d"],     "verified": true },
+        { "word": "eat",  "sounds": ["e","a","t"],     "verified": true },
+        { "word": "meat", "sounds": ["m","e","a","t"], "verified": true },
+        { "word": "read", "sounds": ["r","e","a","d"], "verified": true },
+        { "word": "am",   "sounds": ["a","m"],         "verified": true },
+        { "word": "ram",  "sounds": ["r","a","m"],     "verified": true },
+        { "word": "me",   "sounds": ["m","e"],         "verified": true },
+        { "word": "sad",  "sounds": ["s","a","d"],     "verified": true },
+        { "word": "ear",  "sounds": ["e","ar"],        "verified": true, "note": "book prints joined e+ar before ar is formally introduced" }
+      ],
+      "story": { "text": "see me read", "words": ["see","me","read"] } },
+    { "lesson": 15, "newSound": null,
+      "decodableWords": [
+        { "word": "it",   "sounds": ["i","t"],         "verified": true },
+        { "word": "sit",  "sounds": ["s","i","t"],     "verified": true },
+        { "word": "ear",  "sounds": ["e","ar"],        "verified": true },
+        { "word": "seed", "sounds": ["s","e","e","d"], "verified": true },
+        { "word": "rat",  "sounds": ["r","a","t"],     "verified": true },
+        { "word": "meet", "sounds": ["m","e","e","t"], "verified": true },
+        { "word": "mad",  "sounds": ["m","a","d"],     "verified": true }
+      ],
+      "story": { "text": "mad at me", "words": ["mad","at","me"] } },
+    { "lesson": 16, "newSound": "th",
+      "decodableWords": [
+        { "word": "it",   "sounds": ["i","t"],         "verified": true },
+        { "word": "sat",  "sounds": ["s","a","t"],     "verified": true },
+        { "word": "ear",  "sounds": ["e","ar"],        "verified": true },
+        { "word": "meet", "sounds": ["m","e","e","t"], "verified": true },
+        { "word": "seem", "sounds": ["s","e","e","m"], "verified": true },
+        { "word": "read", "sounds": ["r","e","a","d"], "verified": true },
+        { "word": "is",   "sounds": ["i","s"],         "verified": true }
+      ],
+      "story": { "text": "read it", "words": ["read","it"] } },
+    { "lesson": 17, "newSound": null,
+      "decodableWords": [
+        { "word": "this", "sounds": ["th","i","s"],    "verified": true },
+        { "word": "that", "sounds": ["th","a","t"],    "verified": true },
+        { "word": "ram",  "sounds": ["r","a","m"],     "verified": true },
+        { "word": "ear",  "sounds": ["e","ar"],        "verified": true },
+        { "word": "seem", "sounds": ["s","e","e","m"], "verified": true },
+        { "word": "sit",  "sounds": ["s","i","t"],     "verified": true }
+      ],
+      "story": { "text": "that rat is sad", "words": ["that","rat","is","sad"] } },
+    { "lesson": 18, "newSound": null,
+      "decodableWords": [
+        { "word": "me",   "sounds": ["m","e"],         "verified": true },
+        { "word": "the",  "sounds": ["th","e"],        "verified": true },
+        { "word": "this", "sounds": ["th","i","s"],    "verified": true },
+        { "word": "that", "sounds": ["th","a","t"],    "verified": true },
+        { "word": "rat",  "sounds": ["r","a","t"],     "verified": true },
+        { "word": "sam",  "sounds": ["s","a","m"],     "verified": true }
+      ],
+      "story": { "text": "sam is mad at me", "words": ["sam","is","mad","at","me"] } },
+    { "lesson": 19, "newSound": "c",
+      "decodableWords": [
+        { "word": "at",   "sounds": ["a","t"],         "verified": true },
+        { "word": "that", "sounds": ["th","a","t"],    "verified": true },
+        { "word": "the",  "sounds": ["th","e"],        "verified": true },
+        { "word": "ear",  "sounds": ["e","ar"],        "verified": true },
+        { "word": "mitt", "sounds": ["m","i","tt"],    "verified": true },
+        { "word": "rid",  "sounds": ["r","i","d"],     "verified": true },
+        { "word": "is",   "sounds": ["i","s"],         "verified": true }
+      ],
+      "story": { "text": "see the ram sit", "words": ["see","the","ram","sit"] } },
+    { "lesson": 20, "newSound": null,
+      "decodableWords": [
+        { "word": "at",   "sounds": ["a","t"],         "verified": true },
+        { "word": "mad",  "sounds": ["m","a","d"],     "verified": true },
+        { "word": "sat",  "sounds": ["s","a","t"],     "verified": true },
+        { "word": "sack", "sounds": ["s","a","c","k"], "verified": true },
+        { "word": "rat",  "sounds": ["r","a","t"],     "verified": true },
+        { "word": "this", "sounds": ["th","i","s"],    "verified": true },
+        { "word": "cat",  "sounds": ["c","a","t"],     "verified": true }
+      ],
+      "story": { "text": "the ram is sad", "words": ["the","ram","is","sad"] } },
+    { "lesson": 21, "newSound": "o",
+      "decodableWords": [
+        { "word": "sick", "sounds": ["s","i","c","k"], "verified": true },
+        { "word": "rack", "sounds": ["r","a","c","k"], "verified": true },
+        { "word": "this", "sounds": ["th","i","s"],    "verified": true },
+        { "word": "am",   "sounds": ["a","m"],         "verified": true },
+        { "word": "mad",  "sounds": ["m","a","d"],     "verified": true },
+        { "word": "meet", "sounds": ["m","e","e","t"], "verified": true },
+        { "word": "cat",  "sounds": ["c","a","t"],     "verified": true },
+        { "word": "that", "sounds": ["th","a","t"],    "verified": true }
+      ],
+      "story": { "text": "this cat is sad", "words": ["this","cat","is","sad"] } },
+    { "lesson": 22, "newSound": null,
+      "decodableWords": [
+        { "word": "mom",  "sounds": ["m","o","m"],     "verified": true },
+        { "word": "rod",  "sounds": ["r","o","d"],     "verified": true },
+        { "word": "cat",  "sounds": ["c","a","t"],     "verified": true },
+        { "word": "rat",  "sounds": ["r","a","t"],     "verified": true },
+        { "word": "sock", "sounds": ["s","o","c","k"], "verified": true },
+        { "word": "rock", "sounds": ["r","o","c","k"], "verified": true }
+      ],
+      "story": { "text": "that is a seed. see a ram eat it.", "words": ["that","is","a","seed","see","a","ram","eat","it"] } },
+    { "lesson": 23, "newSound": "n",
+      "decodableWords": [
+        { "word": "rock", "sounds": ["r","o","c","k"], "verified": true },
+        { "word": "rod",  "sounds": ["r","o","d"],     "verified": true },
+        { "word": "sack", "sounds": ["s","a","c","k"], "verified": true }
+      ],
+      "story": { "text": "this is a rock. sam is at the rock.", "words": ["this","is","a","rock","sam","is","at","the","rock"] } }
+  ]
+}

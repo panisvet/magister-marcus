@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ReadingApp from './reading/ReadingApp.jsx'
 import Home from './pages/Home.jsx'
 import Latin from './pages/Latin.jsx'
 import MagisterNatura from './pages/MagisterNatura.jsx'
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/read" element={<ReadingApp />} />
         <Route path="/latin" element={<Latin />} />
         <Route path="/magister-natura" element={<MagisterNatura />} />
         <Route path="/lesson-viewer" element={<LessonViewer />} />
