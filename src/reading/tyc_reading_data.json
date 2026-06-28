@@ -1,7 +1,7 @@
 {
  "_meta": {
   "source": "Teach Your Child to Read in 100 Easy Lessons (sound symbols & phoneme segmentation only; no lesson scripts reproduced)",
-  "extractedRange": "Lessons 1-87; units Option A; wh,uu,oy,ea,ee,oa,ai,ou,ear,qu; capitals introduced L81; qu decodable L86; ai/ay pre-L88 flagged; -ed words fall back to sounds; L74-76 stories reread L69-71.",
+  "extractedRange": "Lessons 1-94; units Option A; ai/ay formal L88, ou/ow formal L89 (earlier pre-intro flags flipped to verified); qu decodable L86; capitals L81; -ed words fall back to sounds; L74-76 stories reread L69-71.",
   "notation": "Each word is an array of taught sound-symbols. Long vowels carry a macron (e,a,o,i,u,y). 'th','sh','ch','ng','ar','er','oo','ea','ai','ou','wh','qu' are single joined sounds. Doubled letters in print that map to one sound (e.g. 'tt' in mitt) are one segment.",
   "segmentationNote": "Segmentations marked verified were read directly from the book's dotted-arrow markings. The app blends the final tap into the whole word."
  },
@@ -6004,8 +6004,7 @@
       "ai",
       "l"
      ],
-     "verified": false,
-     "note": "ai = joined long-a; printed before formal intro at L89",
+     "verified": true,
      "units": [
       {
        "g": "t",
@@ -6285,8 +6284,7 @@
       "n",
       "ou"
      ],
-     "verified": false,
-     "note": "ow = /ou/; printed before formal intro at L89",
+     "verified": true,
      "units": [
       {
        "g": "n",
@@ -6305,8 +6303,7 @@
       "w",
       "ou"
      ],
-     "verified": false,
-     "note": "ow = /ou/; printed before formal intro at L89",
+     "verified": true,
      "units": [
       {
        "g": "w",
@@ -6325,8 +6322,7 @@
       "c",
       "ou"
      ],
-     "verified": false,
-     "note": "ow = /ou/; printed before formal intro at L89",
+     "verified": true,
      "units": [
       {
        "g": "c",
@@ -6704,7 +6700,7 @@
       "c",
       "ou"
      ],
-     "verified": false,
+     "verified": true,
      "units": [
       {
        "g": "c",
@@ -7189,7 +7185,7 @@
       "c",
       "ou"
      ],
-     "verified": false,
+     "verified": true,
      "units": [
       {
        "g": "c",
@@ -7957,7 +7953,7 @@
       "c",
       "ou"
      ],
-     "verified": false,
+     "verified": true,
      "units": [
       {
        "g": "c",
@@ -8478,7 +8474,7 @@
       "c",
       "ou"
      ],
-     "verified": false,
+     "verified": true,
      "units": [
       {
        "g": "c",
@@ -13184,7 +13180,6 @@
       "n"
      ],
      "verified": true,
-     "note": "ow = /ou/",
      "units": [
       {
        "g": "d",
@@ -14761,8 +14756,7 @@
       "n",
       "ou"
      ],
-     "verified": false,
-     "note": "ow = /ou/",
+     "verified": true,
      "units": [
       {
        "g": "n",
@@ -14782,7 +14776,6 @@
       "ou"
      ],
      "verified": true,
-     "note": "ow = /ou/",
      "units": [
       {
        "g": "h",
@@ -17775,8 +17768,7 @@
       "ai",
       "l"
      ],
-     "verified": false,
-     "note": "ai joined long-a",
+     "verified": true,
      "units": [
       {
        "g": "t",
@@ -23750,7 +23742,7 @@
       "ai",
       "l"
      ],
-     "verified": false,
+     "verified": true,
      "units": [
       {
        "g": "t",
@@ -23765,8 +23757,7 @@
        "g": "l",
        "s": "l"
       }
-     ],
-     "note": "ai = joined long-a; printed before formal intro at L89"
+     ]
     },
     {
      "word": "eagles",
@@ -23848,8 +23839,7 @@
        "g": "n",
        "s": "n"
       }
-     ],
-     "note": "ow = /ou/"
+     ]
     }
    ],
    "story": {
@@ -25319,8 +25309,7 @@
        "g": "n",
        "s": "n"
       }
-     ],
-     "note": "ow = /ou/"
+     ]
     },
     {
      "word": "sick",
@@ -28062,8 +28051,7 @@
       "n",
       "ou"
      ],
-     "verified": false,
-     "note": "ow = /ou/; printed before formal intro at L89",
+     "verified": true,
      "units": [
       {
        "g": "n",
@@ -29542,7 +29530,7 @@
       "t",
       "ai"
      ],
-     "verified": false,
+     "verified": true,
      "units": [
       {
        "g": "s",
@@ -29557,8 +29545,7 @@
        "s": "ai",
        "style": "long"
       }
-     ],
-     "note": "ay = long a; formal intro at L88"
+     ]
     },
     {
      "word": "they",
@@ -30902,6 +30889,3336 @@
      "she",
      "went",
      "Stop"
+    ]
+   }
+  },
+  {
+   "lesson": 88,
+   "newSound": "ai / ay (formal intro)",
+   "decodableWords": [
+    {
+     "word": "picked",
+     "sounds": [
+      "p",
+      "i",
+      "k",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /t/"
+    },
+    {
+     "word": "hunting",
+     "sounds": [
+      "h",
+      "u",
+      "n",
+      "t",
+      "ing"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "u",
+       "s": "u"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "ing",
+       "s": "ing",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "stopped",
+     "sounds": [
+      "s",
+      "t",
+      "o",
+      "p",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /t/; doubled p"
+    },
+    {
+     "word": "into",
+     "sounds": [
+      "i",
+      "n",
+      "t",
+      "o-"
+     ],
+     "verified": false,
+     "note": "irregular, says /in-too/",
+     "units": [
+      {
+       "g": "i",
+       "s": "i"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "started",
+     "sounds": [
+      "s",
+      "t",
+      "ar",
+      "t",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /id/"
+    },
+    {
+     "word": "fly",
+     "sounds": [
+      "f",
+      "l",
+      "y-"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "f",
+       "s": "f"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "ȳ",
+       "s": "y-",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "yelling",
+     "sounds": [
+      "y",
+      "e-short",
+      "l",
+      "ing"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "y",
+       "s": "y"
+      },
+      {
+       "g": "e",
+       "s": "e-short"
+      },
+      {
+       "g": "ll",
+       "s": "l",
+       "style": "double"
+      },
+      {
+       "g": "ing",
+       "s": "ing",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "home",
+     "sounds": [
+      "h",
+      "o-",
+      "m"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "good",
+     "sounds": [
+      "g",
+      "uu",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "oo",
+       "s": "uu",
+       "style": "digraph"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ],
+     "note": "oo = short /oo/"
+    },
+    {
+     "word": "from",
+     "sounds": [
+      "f",
+      "r",
+      "o",
+      "m"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "f",
+       "s": "f"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      }
+     ],
+     "note": "o says /u/; says /frum/"
+    },
+    {
+     "word": "rain",
+     "sounds": [
+      "r",
+      "ai",
+      "n"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "āi",
+       "s": "ai",
+       "style": "long"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      }
+     ]
+    },
+    {
+     "word": "rail",
+     "sounds": [
+      "r",
+      "ai",
+      "l"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "āi",
+       "s": "ai",
+       "style": "long"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      }
+     ]
+    },
+    {
+     "word": "tail",
+     "sounds": [
+      "t",
+      "ai",
+      "l"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "āi",
+       "s": "ai",
+       "style": "long"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      }
+     ]
+    }
+   ],
+   "story": {
+    "text": "A beagle was hunting for something good. The dog went to the top of a hill. When she got to the top of the hill she stopped. She did not see a deer. She did not see a ram, or a duck, or a cow. There was a big eagle on top of the hill. \"Boooo,\" Biff yelled at the eagle. The eagle smiled and said, \"I will not run from you and I will not fly from you. But if you do not stop yelling, I will pick you up and take you back to your home.\" Biff looked at the eagle and said, \"Boooo, boooo, boooo.\" The eagle said, \"Here you go.\" The eagle picked up the dog and started to fly up, up, up. The dog did not stop going \"Boooo.\" Soon, the eagle let the dog down in her yard. That beagle did not go hunting. That dog went into her home. That dog did not go \"Boooo, boooo.\" That dog went \"Zzzz, zzzz.\" The End",
+    "words": [
+     "A",
+     "beagle",
+     "was",
+     "hunting",
+     "for",
+     "something",
+     "good",
+     "The",
+     "dog",
+     "went",
+     "to",
+     "the",
+     "top",
+     "of",
+     "a",
+     "hill",
+     "When",
+     "she",
+     "got",
+     "to",
+     "the",
+     "top",
+     "of",
+     "the",
+     "hill",
+     "she",
+     "stopped",
+     "She",
+     "did",
+     "not",
+     "see",
+     "a",
+     "deer",
+     "She",
+     "did",
+     "not",
+     "see",
+     "a",
+     "ram",
+     "or",
+     "a",
+     "duck",
+     "or",
+     "a",
+     "cow",
+     "There",
+     "was",
+     "a",
+     "big",
+     "eagle",
+     "on",
+     "top",
+     "of",
+     "the",
+     "hill",
+     "Boooo",
+     "Biff",
+     "yelled",
+     "at",
+     "the",
+     "eagle",
+     "The",
+     "eagle",
+     "smiled",
+     "and",
+     "said",
+     "I",
+     "will",
+     "not",
+     "run",
+     "from",
+     "you",
+     "and",
+     "I",
+     "will",
+     "not",
+     "fly",
+     "from",
+     "you",
+     "But",
+     "if",
+     "you",
+     "do",
+     "not",
+     "stop",
+     "yelling",
+     "I",
+     "will",
+     "pick",
+     "you",
+     "up",
+     "and",
+     "take",
+     "you",
+     "back",
+     "to",
+     "your",
+     "home",
+     "Biff",
+     "looked",
+     "at",
+     "the",
+     "eagle",
+     "and",
+     "said",
+     "Boooo",
+     "boooo",
+     "boooo",
+     "The",
+     "eagle",
+     "said",
+     "Here",
+     "you",
+     "go",
+     "The",
+     "eagle",
+     "picked",
+     "up",
+     "the",
+     "dog",
+     "and",
+     "started",
+     "to",
+     "fly",
+     "up",
+     "up",
+     "up",
+     "The",
+     "dog",
+     "did",
+     "not",
+     "stop",
+     "going",
+     "Boooo",
+     "Soon",
+     "the",
+     "eagle",
+     "let",
+     "the",
+     "dog",
+     "down",
+     "in",
+     "her",
+     "yard",
+     "That",
+     "beagle",
+     "did",
+     "not",
+     "go",
+     "hunting",
+     "That",
+     "dog",
+     "went",
+     "into",
+     "her",
+     "home",
+     "That",
+     "dog",
+     "did",
+     "not",
+     "go",
+     "Boooo",
+     "boooo",
+     "That",
+     "dog",
+     "went",
+     "Zzzz",
+     "zzzz",
+     "The",
+     "End"
+    ]
+   }
+  },
+  {
+   "lesson": 89,
+   "newSound": "ou / ow (formal intro)",
+   "decodableWords": [
+    {
+     "word": "lived",
+     "sounds": [
+      "l",
+      "i",
+      "v",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /d/; silent e"
+    },
+    {
+     "word": "wet",
+     "sounds": [
+      "w",
+      "e-short",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "w",
+       "s": "w"
+      },
+      {
+       "g": "e",
+       "s": "e-short"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "gets",
+     "sounds": [
+      "g",
+      "e-short",
+      "t",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "e",
+       "s": "e-short"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    },
+    {
+     "word": "pick",
+     "sounds": [
+      "p",
+      "i",
+      "k"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "i",
+       "s": "i"
+      },
+      {
+       "g": "ck",
+       "s": "k",
+       "style": "ck"
+      }
+     ]
+    },
+    {
+     "word": "ant",
+     "sounds": [
+      "a",
+      "n",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "cold",
+     "sounds": [
+      "c",
+      "o-",
+      "l",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "c",
+       "s": "c"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "comes",
+     "sounds": [
+      "c",
+      "o",
+      "m",
+      "s"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "c",
+       "s": "c"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ],
+     "note": "o says /u/; says /kumz/"
+    },
+    {
+     "word": "our",
+     "sounds": [
+      "ou",
+      "r"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      }
+     ]
+    },
+    {
+     "word": "out",
+     "sounds": [
+      "ou",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "loud",
+     "sounds": [
+      "l",
+      "ou",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "sound",
+     "sounds": [
+      "s",
+      "ou",
+      "n",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "stay",
+     "sounds": [
+      "s",
+      "t",
+      "ai"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "āy",
+       "s": "ai",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "rain",
+     "sounds": [
+      "r",
+      "ai",
+      "n"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "āi",
+       "s": "ai",
+       "style": "long"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      }
+     ]
+    },
+    {
+     "word": "from",
+     "sounds": [
+      "f",
+      "r",
+      "o",
+      "m"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "f",
+       "s": "f"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      }
+     ],
+     "note": "o says /u/; says /frum/"
+    }
+   ],
+   "story": {
+    "text": "An ant lived in a hole. The ant said, \"This hole is no good. When it rains, the rain comes in this hole. And I get wet. When the days are hot, the hole gets hot. When the hole gets hot, I get hot.\" But when the days got cold, the hole did not get hot. The hole got cold. And so did that ant. The ant said, \"This hole gets hot and this hole gets cold. And when it rains, this hole gets wet. I will leave this hole.\" So the ant did that. The ant went up the hill to the home of an eagle. \"Can I stay in this home?\" the ant said. The eagle did not say a thing. The eagle picked up the ant and said, \"I will take you from this hill. Do not come back. Go dig a hole and live like other ants.\" But the ant did not dig a hole. That ant went to the home of a ram. \"Can I live in this home?\" the ant said. The ram said, \"We do not like ants. Go dig a hole and live like other ants.\" Not the End",
+    "words": [
+     "An",
+     "ant",
+     "lived",
+     "in",
+     "a",
+     "hole",
+     "The",
+     "ant",
+     "said",
+     "This",
+     "hole",
+     "is",
+     "no",
+     "good",
+     "When",
+     "it",
+     "rains",
+     "the",
+     "rain",
+     "comes",
+     "in",
+     "this",
+     "hole",
+     "And",
+     "I",
+     "get",
+     "wet",
+     "When",
+     "the",
+     "days",
+     "are",
+     "hot",
+     "the",
+     "hole",
+     "gets",
+     "hot",
+     "When",
+     "the",
+     "hole",
+     "gets",
+     "hot",
+     "I",
+     "get",
+     "hot",
+     "But",
+     "when",
+     "the",
+     "days",
+     "got",
+     "cold",
+     "the",
+     "hole",
+     "did",
+     "not",
+     "get",
+     "hot",
+     "The",
+     "hole",
+     "got",
+     "cold",
+     "And",
+     "so",
+     "did",
+     "that",
+     "ant",
+     "The",
+     "ant",
+     "said",
+     "This",
+     "hole",
+     "gets",
+     "hot",
+     "and",
+     "this",
+     "hole",
+     "gets",
+     "cold",
+     "And",
+     "when",
+     "it",
+     "rains",
+     "this",
+     "hole",
+     "gets",
+     "wet",
+     "I",
+     "will",
+     "leave",
+     "this",
+     "hole",
+     "So",
+     "the",
+     "ant",
+     "did",
+     "that",
+     "The",
+     "ant",
+     "went",
+     "up",
+     "the",
+     "hill",
+     "to",
+     "the",
+     "home",
+     "of",
+     "an",
+     "eagle",
+     "Can",
+     "I",
+     "stay",
+     "in",
+     "this",
+     "home",
+     "the",
+     "ant",
+     "said",
+     "The",
+     "eagle",
+     "did",
+     "not",
+     "say",
+     "a",
+     "thing",
+     "The",
+     "eagle",
+     "picked",
+     "up",
+     "the",
+     "ant",
+     "and",
+     "said",
+     "I",
+     "will",
+     "take",
+     "you",
+     "from",
+     "this",
+     "hill",
+     "Do",
+     "not",
+     "come",
+     "back",
+     "Go",
+     "dig",
+     "a",
+     "hole",
+     "and",
+     "live",
+     "like",
+     "other",
+     "ants",
+     "But",
+     "the",
+     "ant",
+     "did",
+     "not",
+     "dig",
+     "a",
+     "hole",
+     "That",
+     "ant",
+     "went",
+     "to",
+     "the",
+     "home",
+     "of",
+     "a",
+     "ram",
+     "Can",
+     "I",
+     "live",
+     "in",
+     "this",
+     "home",
+     "the",
+     "ant",
+     "said",
+     "The",
+     "ram",
+     "said",
+     "We",
+     "do",
+     "not",
+     "like",
+     "ants",
+     "Go",
+     "dig",
+     "a",
+     "hole",
+     "and",
+     "live",
+     "like",
+     "other",
+     "ants",
+     "Not",
+     "the",
+     "End"
+    ]
+   }
+  },
+  {
+   "lesson": 90,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "sleep",
+     "sounds": [
+      "s",
+      "l",
+      "ee",
+      "p"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "ēē",
+       "s": "ee",
+       "style": "long"
+      },
+      {
+       "g": "p",
+       "s": "p"
+      }
+     ]
+    },
+    {
+     "word": "sheep",
+     "sounds": [
+      "sh",
+      "ee",
+      "p"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "sh",
+       "s": "sh",
+       "style": "digraph"
+      },
+      {
+       "g": "ēē",
+       "s": "ee",
+       "style": "long"
+      },
+      {
+       "g": "p",
+       "s": "p"
+      }
+     ]
+    },
+    {
+     "word": "chick",
+     "sounds": [
+      "ch",
+      "i",
+      "k"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ch",
+       "s": "ch",
+       "style": "digraph"
+      },
+      {
+       "g": "i",
+       "s": "i"
+      },
+      {
+       "g": "ck",
+       "s": "k",
+       "style": "ck"
+      }
+     ]
+    },
+    {
+     "word": "logs",
+     "sounds": [
+      "l",
+      "o",
+      "g",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    },
+    {
+     "word": "rocks",
+     "sounds": [
+      "r",
+      "o",
+      "k",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "ck",
+       "s": "k",
+       "style": "ck"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    },
+    {
+     "word": "lived",
+     "sounds": [
+      "l",
+      "i",
+      "v",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /d/; silent e"
+    },
+    {
+     "word": "shouted",
+     "sounds": [
+      "sh",
+      "ou",
+      "t",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /id/"
+    },
+    {
+     "word": "outside",
+     "sounds": [
+      "ou",
+      "t",
+      "s",
+      "i-",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "our",
+     "sounds": [
+      "ou",
+      "r"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      }
+     ]
+    },
+    {
+     "word": "out",
+     "sounds": [
+      "ou",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "loud",
+     "sounds": [
+      "l",
+      "ou",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "sound",
+     "sounds": [
+      "s",
+      "ou",
+      "n",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    }
+   ],
+   "story": {
+    "text": "An ant was looking for a good home. An eagle made the ant leave and a ram made the ant leave. But that ant did not give up. So the ant went to the home of a cow. That home was a big barn. The ant said, \"I will be a good ant if you let me live here.\" The cow said, \"A horse can live here and sheep can live here. We will let a chick live here and a pig live here. But no ants can live in this barn. So go dig a hole and live like other ants.\" \"No,\" the ant said. \"I like barns. And I will make an ant barn.\" So the ant got logs and rocks. Then the ant made a barn. It was a good barn. It was too little for cows, and pigs, and dogs, and deers. But it was not too little for rats. So a rat came to the barn and said, \"Can I live in this barn with you?\" The ant looked at the rat and said, \"Go dig a hole and live like other rats.\" The End",
+    "words": [
+     "An",
+     "ant",
+     "was",
+     "looking",
+     "for",
+     "a",
+     "good",
+     "home",
+     "An",
+     "eagle",
+     "made",
+     "the",
+     "ant",
+     "leave",
+     "and",
+     "a",
+     "ram",
+     "made",
+     "the",
+     "ant",
+     "leave",
+     "But",
+     "that",
+     "ant",
+     "did",
+     "not",
+     "give",
+     "up",
+     "So",
+     "the",
+     "ant",
+     "went",
+     "to",
+     "the",
+     "home",
+     "of",
+     "a",
+     "cow",
+     "That",
+     "home",
+     "was",
+     "a",
+     "big",
+     "barn",
+     "The",
+     "ant",
+     "said",
+     "I",
+     "will",
+     "be",
+     "a",
+     "good",
+     "ant",
+     "if",
+     "you",
+     "let",
+     "me",
+     "live",
+     "here",
+     "The",
+     "cow",
+     "said",
+     "A",
+     "horse",
+     "can",
+     "live",
+     "here",
+     "and",
+     "sheep",
+     "can",
+     "live",
+     "here",
+     "We",
+     "will",
+     "let",
+     "a",
+     "chick",
+     "live",
+     "here",
+     "and",
+     "a",
+     "pig",
+     "live",
+     "here",
+     "But",
+     "no",
+     "ants",
+     "can",
+     "live",
+     "in",
+     "this",
+     "barn",
+     "So",
+     "go",
+     "dig",
+     "a",
+     "hole",
+     "and",
+     "live",
+     "like",
+     "other",
+     "ants",
+     "No",
+     "the",
+     "ant",
+     "said",
+     "I",
+     "like",
+     "barns",
+     "And",
+     "I",
+     "will",
+     "make",
+     "an",
+     "ant",
+     "barn",
+     "So",
+     "the",
+     "ant",
+     "got",
+     "logs",
+     "and",
+     "rocks",
+     "Then",
+     "the",
+     "ant",
+     "made",
+     "a",
+     "barn",
+     "It",
+     "was",
+     "a",
+     "good",
+     "barn",
+     "It",
+     "was",
+     "too",
+     "little",
+     "for",
+     "cows",
+     "and",
+     "pigs",
+     "and",
+     "dogs",
+     "and",
+     "deers",
+     "But",
+     "it",
+     "was",
+     "not",
+     "too",
+     "little",
+     "for",
+     "rats",
+     "So",
+     "a",
+     "rat",
+     "came",
+     "to",
+     "the",
+     "barn",
+     "and",
+     "said",
+     "Can",
+     "I",
+     "live",
+     "in",
+     "this",
+     "barn",
+     "with",
+     "you",
+     "The",
+     "ant",
+     "looked",
+     "at",
+     "the",
+     "rat",
+     "and",
+     "said",
+     "Go",
+     "dig",
+     "a",
+     "hole",
+     "and",
+     "live",
+     "like",
+     "other",
+     "rats",
+     "The",
+     "End"
+    ]
+   }
+  },
+  {
+   "lesson": 91,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "say",
+     "sounds": [
+      "s",
+      "ai"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "āy",
+       "s": "ai",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "stay",
+     "sounds": [
+      "s",
+      "t",
+      "ai"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "āy",
+       "s": "ai",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "away",
+     "sounds": [
+      "a",
+      "w",
+      "ai"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "w",
+       "s": "w"
+      },
+      {
+       "g": "āy",
+       "s": "ai",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "play",
+     "sounds": [
+      "p",
+      "l",
+      "ai"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "āy",
+       "s": "ai",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "day",
+     "sounds": [
+      "d",
+      "ai"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "āy",
+       "s": "ai",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "hear",
+     "sounds": [
+      "h",
+      "ear"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ear",
+       "s": "ear",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "soon",
+     "sounds": [
+      "s",
+      "oo",
+      "n"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "oo",
+       "s": "oo",
+       "style": "digraph"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      }
+     ]
+    },
+    {
+     "word": "moon",
+     "sounds": [
+      "m",
+      "oo",
+      "n"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "oo",
+       "s": "oo",
+       "style": "digraph"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      }
+     ]
+    },
+    {
+     "word": "seat",
+     "sounds": [
+      "s",
+      "ea",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ēa",
+       "s": "ea",
+       "style": "long"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "note",
+     "sounds": [
+      "n",
+      "o-",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "outside",
+     "sounds": [
+      "ou",
+      "t",
+      "s",
+      "i-",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "playing",
+     "sounds": [
+      "p",
+      "l",
+      "ai",
+      "ing"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "āy",
+       "s": "ai",
+       "style": "long"
+      },
+      {
+       "g": "ing",
+       "s": "ing",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "oh",
+     "sounds": [
+      "o-"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "oh",
+       "s": "o-",
+       "style": "long"
+      }
+     ],
+     "note": "oh = /ō/ (h silent)"
+    },
+    {
+     "word": "want",
+     "sounds": [
+      "w",
+      "a",
+      "n",
+      "t"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "w",
+       "s": "w"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ],
+     "note": "a says /o/; says /wont/"
+    }
+   ],
+   "story": {
+    "text": "An old man lived with a little girl. The old man did not hear well. The little girl said to that man, \"I will see you soon.\" The man did not hear her. He said, \"No, I do not see the moon.\" The girl said, \"I did not say that. I told you when we will meet.\" The man said, \"No, I am not on my seat.\" The girl said, \"If you can read, I will make a note.\" And she did. Here is that note: \"I will see you soon.\" The old man said, \"I can not see well. You will have to talk to me.\" The girl said, \"But he can not hear me when I talk as loud as I can.\" Then she shouted to the old man, \"I am going in a car.\" The old man said, \"No, I will not go far.\" \"Not far,\" the girl shouted. \"Car, car.\" Then the girl took the hand of the old man and went outside. She went to the car and said, \"Look. Car. I will go in our car. I will not walk.\" The old man said, \"If you will not talk, how can I hear you?\" \"Not talk,\" the girl said. \"Walk, walk, walk.\" \"Oh,\" the old man said. \"You are playing like you are a duck. And you are talking in duck talk.\" This Is Not the End",
+    "words": [
+     "An",
+     "old",
+     "man",
+     "lived",
+     "with",
+     "a",
+     "little",
+     "girl",
+     "The",
+     "old",
+     "man",
+     "did",
+     "not",
+     "hear",
+     "well",
+     "The",
+     "little",
+     "girl",
+     "said",
+     "to",
+     "that",
+     "man",
+     "I",
+     "will",
+     "see",
+     "you",
+     "soon",
+     "The",
+     "man",
+     "did",
+     "not",
+     "hear",
+     "her",
+     "He",
+     "said",
+     "No",
+     "I",
+     "do",
+     "not",
+     "see",
+     "the",
+     "moon",
+     "The",
+     "girl",
+     "said",
+     "I",
+     "did",
+     "not",
+     "say",
+     "that",
+     "I",
+     "told",
+     "you",
+     "when",
+     "we",
+     "will",
+     "meet",
+     "The",
+     "man",
+     "said",
+     "No",
+     "I",
+     "am",
+     "not",
+     "on",
+     "my",
+     "seat",
+     "The",
+     "girl",
+     "said",
+     "If",
+     "you",
+     "can",
+     "read",
+     "I",
+     "will",
+     "make",
+     "a",
+     "note",
+     "And",
+     "she",
+     "did",
+     "Here",
+     "is",
+     "that",
+     "note:",
+     "I",
+     "will",
+     "see",
+     "you",
+     "soon",
+     "The",
+     "old",
+     "man",
+     "said",
+     "I",
+     "can",
+     "not",
+     "see",
+     "well",
+     "You",
+     "will",
+     "have",
+     "to",
+     "talk",
+     "to",
+     "me",
+     "The",
+     "girl",
+     "said",
+     "But",
+     "he",
+     "can",
+     "not",
+     "hear",
+     "me",
+     "when",
+     "I",
+     "talk",
+     "as",
+     "loud",
+     "as",
+     "I",
+     "can",
+     "Then",
+     "she",
+     "shouted",
+     "to",
+     "the",
+     "old",
+     "man",
+     "I",
+     "am",
+     "going",
+     "in",
+     "a",
+     "car",
+     "The",
+     "old",
+     "man",
+     "said",
+     "No",
+     "I",
+     "will",
+     "not",
+     "go",
+     "far",
+     "Not",
+     "far",
+     "the",
+     "girl",
+     "shouted",
+     "Car",
+     "car",
+     "Then",
+     "the",
+     "girl",
+     "took",
+     "the",
+     "hand",
+     "of",
+     "the",
+     "old",
+     "man",
+     "and",
+     "went",
+     "outside",
+     "She",
+     "went",
+     "to",
+     "the",
+     "car",
+     "and",
+     "said",
+     "Look",
+     "Car",
+     "I",
+     "will",
+     "go",
+     "in",
+     "our",
+     "car",
+     "I",
+     "will",
+     "not",
+     "walk",
+     "The",
+     "old",
+     "man",
+     "said",
+     "If",
+     "you",
+     "will",
+     "not",
+     "talk",
+     "how",
+     "can",
+     "I",
+     "hear",
+     "you",
+     "Not",
+     "talk",
+     "the",
+     "girl",
+     "said",
+     "Walk",
+     "walk",
+     "walk",
+     "Oh",
+     "the",
+     "old",
+     "man",
+     "said",
+     "You",
+     "are",
+     "playing",
+     "like",
+     "you",
+     "are",
+     "a",
+     "duck",
+     "And",
+     "you",
+     "are",
+     "talking",
+     "in",
+     "duck",
+     "talk",
+     "This",
+     "Is",
+     "Not",
+     "the",
+     "End"
+    ]
+   }
+  },
+  {
+   "lesson": 92,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "hid",
+     "sounds": [
+      "h",
+      "i",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "i",
+       "s": "i"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "hide",
+     "sounds": [
+      "h",
+      "i-",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "line",
+     "sounds": [
+      "l",
+      "i-",
+      "n"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "there",
+     "sounds": [
+      "th",
+      "e-short",
+      "r"
+     ],
+     "verified": false,
+     "note": "sight word; says /ther/",
+     "units": [
+      {
+       "g": "th",
+       "s": "th",
+       "style": "digraph"
+      },
+      {
+       "g": "e",
+       "s": "e-short"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "gave",
+     "sounds": [
+      "g",
+      "a-",
+      "v"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "ā",
+       "s": "a-",
+       "style": "long"
+      },
+      {
+       "g": "v",
+       "s": "v"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "notes",
+     "sounds": [
+      "n",
+      "o-",
+      "t",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    },
+    {
+     "word": "shouted",
+     "sounds": [
+      "sh",
+      "ou",
+      "t",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /id/"
+    },
+    {
+     "word": "thing",
+     "sounds": [
+      "th",
+      "ing"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "th",
+       "s": "th",
+       "style": "digraph"
+      },
+      {
+       "g": "ing",
+       "s": "ing",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "something",
+     "sounds": [
+      "s",
+      "o",
+      "m",
+      "th",
+      "ing"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      },
+      {
+       "g": "th",
+       "s": "th",
+       "style": "digraph"
+      },
+      {
+       "g": "ing",
+       "s": "ing",
+       "style": "digraph"
+      }
+     ],
+     "note": "o says /u/; says /sum-thing/"
+    },
+    {
+     "word": "want",
+     "sounds": [
+      "w",
+      "a",
+      "n",
+      "t"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "w",
+       "s": "w"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ],
+     "note": "a says /o/; says /wont/"
+    }
+   ],
+   "story": {
+    "text": "A girl was talking to an old man. That man did not hear the things she said. The girl got mad and she shouted, \"I will be back soon.\" The old man went fishing. He came to a lake and sat on a log. Then he started to fish. Soon he got a fish on his line. He took the fish from the lake. The fish said, \"I have to swim. Can you let me go back in the lake?\" The old man said, \"No, I don't have any cake.\" The fish said, \"If you let me go I will get big. Then I will get on your line and you will have a big fish. Let me get big.\" Then the old man said, \"If you are a pig, I will have to let you go.\" So the old man let the fish go. He went back home. When he got there, the little girl had something for him. The old man liked the thing the girl gave him. Now the old man can read her notes. This Is the End",
+    "words": [
+     "A",
+     "girl",
+     "was",
+     "talking",
+     "to",
+     "an",
+     "old",
+     "man",
+     "That",
+     "man",
+     "did",
+     "not",
+     "hear",
+     "the",
+     "things",
+     "she",
+     "said",
+     "The",
+     "girl",
+     "got",
+     "mad",
+     "and",
+     "she",
+     "shouted",
+     "I",
+     "will",
+     "be",
+     "back",
+     "soon",
+     "The",
+     "old",
+     "man",
+     "went",
+     "fishing",
+     "He",
+     "came",
+     "to",
+     "a",
+     "lake",
+     "and",
+     "sat",
+     "on",
+     "a",
+     "log",
+     "Then",
+     "he",
+     "started",
+     "to",
+     "fish",
+     "Soon",
+     "he",
+     "got",
+     "a",
+     "fish",
+     "on",
+     "his",
+     "line",
+     "He",
+     "took",
+     "the",
+     "fish",
+     "from",
+     "the",
+     "lake",
+     "The",
+     "fish",
+     "said",
+     "I",
+     "have",
+     "to",
+     "swim",
+     "Can",
+     "you",
+     "let",
+     "me",
+     "go",
+     "back",
+     "in",
+     "the",
+     "lake",
+     "The",
+     "old",
+     "man",
+     "said",
+     "No",
+     "I",
+     "dont",
+     "have",
+     "any",
+     "cake",
+     "The",
+     "fish",
+     "said",
+     "If",
+     "you",
+     "let",
+     "me",
+     "go",
+     "I",
+     "will",
+     "get",
+     "big",
+     "Then",
+     "I",
+     "will",
+     "get",
+     "on",
+     "your",
+     "line",
+     "and",
+     "you",
+     "will",
+     "have",
+     "a",
+     "big",
+     "fish",
+     "Let",
+     "me",
+     "get",
+     "big",
+     "Then",
+     "the",
+     "old",
+     "man",
+     "said",
+     "If",
+     "you",
+     "are",
+     "a",
+     "pig",
+     "I",
+     "will",
+     "have",
+     "to",
+     "let",
+     "you",
+     "go",
+     "So",
+     "the",
+     "old",
+     "man",
+     "let",
+     "the",
+     "fish",
+     "go",
+     "He",
+     "went",
+     "back",
+     "home",
+     "When",
+     "he",
+     "got",
+     "there",
+     "the",
+     "little",
+     "girl",
+     "had",
+     "something",
+     "for",
+     "him",
+     "The",
+     "old",
+     "man",
+     "liked",
+     "the",
+     "thing",
+     "the",
+     "girl",
+     "gave",
+     "him",
+     "Now",
+     "the",
+     "old",
+     "man",
+     "can",
+     "read",
+     "her",
+     "notes",
+     "This",
+     "Is",
+     "the",
+     "End"
+    ]
+   }
+  },
+  {
+   "lesson": 93,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "hid",
+     "sounds": [
+      "h",
+      "i",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "i",
+       "s": "i"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "hide",
+     "sounds": [
+      "h",
+      "i-",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "hard",
+     "sounds": [
+      "h",
+      "ar",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ar",
+       "s": "ar",
+       "style": "digraph"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "side",
+     "sounds": [
+      "s",
+      "i-",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "tail",
+     "sounds": [
+      "t",
+      "ai",
+      "l"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "āi",
+       "s": "ai",
+       "style": "long"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      }
+     ]
+    },
+    {
+     "word": "legs",
+     "sounds": [
+      "l",
+      "e-short",
+      "g",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "e",
+       "s": "e-short"
+      },
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    }
+   ],
+   "story": {
+    "text": "There was a pig that liked to hide. But this pig was so big that it had a hard time to hide. The other pigs did not have a hard time seeing that big, fat pig. When the big pig hid in back of a tree, the other pigs said, \"We see part of you.\" When the big pig hid in back of a car, the other pigs said, \"We see your side,\" or \"We see your back,\" or \"We see your legs.\" When the big pig hid in back of a barn, the other pigs said, \"There you are. We see a fat tail.\" The other pigs were good at hiding. Five of these little pigs hid in back of a tree. The big pig did not see them. Nine of these little pigs hid in back of a car. \"I do not see them,\" the big pig said. Ten little pigs and a horse hid in back of the barn. The big pig looked but she did not find the pigs or the horse. The big pig said, \"They can hide but I can not hide. I need something big.\" So the big pig looked and looked for something very big. Not the End",
+    "words": [
+     "There",
+     "was",
+     "a",
+     "pig",
+     "that",
+     "liked",
+     "to",
+     "hide",
+     "But",
+     "this",
+     "pig",
+     "was",
+     "so",
+     "big",
+     "that",
+     "it",
+     "had",
+     "a",
+     "hard",
+     "time",
+     "to",
+     "hide",
+     "The",
+     "other",
+     "pigs",
+     "did",
+     "not",
+     "have",
+     "a",
+     "hard",
+     "time",
+     "seeing",
+     "that",
+     "big",
+     "fat",
+     "pig",
+     "When",
+     "the",
+     "big",
+     "pig",
+     "hid",
+     "in",
+     "back",
+     "of",
+     "a",
+     "tree",
+     "the",
+     "other",
+     "pigs",
+     "said",
+     "We",
+     "see",
+     "part",
+     "of",
+     "you",
+     "When",
+     "the",
+     "big",
+     "pig",
+     "hid",
+     "in",
+     "back",
+     "of",
+     "a",
+     "car",
+     "the",
+     "other",
+     "pigs",
+     "said",
+     "We",
+     "see",
+     "your",
+     "side",
+     "or",
+     "We",
+     "see",
+     "your",
+     "back",
+     "or",
+     "We",
+     "see",
+     "your",
+     "legs",
+     "When",
+     "the",
+     "big",
+     "pig",
+     "hid",
+     "in",
+     "back",
+     "of",
+     "a",
+     "barn",
+     "the",
+     "other",
+     "pigs",
+     "said",
+     "There",
+     "you",
+     "are",
+     "We",
+     "see",
+     "a",
+     "fat",
+     "tail",
+     "The",
+     "other",
+     "pigs",
+     "were",
+     "good",
+     "at",
+     "hiding",
+     "Five",
+     "of",
+     "these",
+     "little",
+     "pigs",
+     "hid",
+     "in",
+     "back",
+     "of",
+     "a",
+     "tree",
+     "The",
+     "big",
+     "pig",
+     "did",
+     "not",
+     "see",
+     "them",
+     "Nine",
+     "of",
+     "these",
+     "little",
+     "pigs",
+     "hid",
+     "in",
+     "back",
+     "of",
+     "a",
+     "car",
+     "I",
+     "do",
+     "not",
+     "see",
+     "them",
+     "the",
+     "big",
+     "pig",
+     "said",
+     "Ten",
+     "little",
+     "pigs",
+     "and",
+     "a",
+     "horse",
+     "hid",
+     "in",
+     "back",
+     "of",
+     "the",
+     "barn",
+     "The",
+     "big",
+     "pig",
+     "looked",
+     "but",
+     "she",
+     "did",
+     "not",
+     "find",
+     "the",
+     "pigs",
+     "or",
+     "the",
+     "horse",
+     "The",
+     "big",
+     "pig",
+     "said",
+     "They",
+     "can",
+     "hide",
+     "but",
+     "I",
+     "can",
+     "not",
+     "hide",
+     "I",
+     "need",
+     "something",
+     "big",
+     "So",
+     "the",
+     "big",
+     "pig",
+     "looked",
+     "and",
+     "looked",
+     "for",
+     "something",
+     "very",
+     "big",
+     "Not",
+     "the",
+     "End"
+    ]
+   }
+  },
+  {
+   "lesson": 94,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "don't",
+     "sounds": [
+      "d",
+      "o-",
+      "n",
+      "t"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ],
+     "note": "contraction; says /dōnt/"
+    },
+    {
+     "word": "green",
+     "sounds": [
+      "g",
+      "r",
+      "ee",
+      "n"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "ēē",
+       "s": "ee",
+       "style": "long"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      }
+     ]
+    },
+    {
+     "word": "pail",
+     "sounds": [
+      "p",
+      "ai",
+      "l"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "āi",
+       "s": "ai",
+       "style": "long"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      }
+     ]
+    },
+    {
+     "word": "pain",
+     "sounds": [
+      "p",
+      "ai",
+      "n"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "āi",
+       "s": "ai",
+       "style": "long"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      }
+     ]
+    },
+    {
+     "word": "paint",
+     "sounds": [
+      "p",
+      "ai",
+      "n",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "āi",
+       "s": "ai",
+       "style": "long"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    }
+   ],
+   "story": {
+    "text": "There was a pig that was too big to hide. That pig was looking for something big. The pig went to the lake. \"No,\" the pig said. \"A lake is big, but I can not hide in back of a lake.\" The pig went to a park. \"No,\" the pig said. \"A park is big, but I can not hide in back of a park.\" Then that pig went to a hill. \"No,\" the pig said. \"That hill is big, but if those little pigs go to the top of the hill, they will see me on the other side.\" An eagle said to the pig, \"You don't need a hill. You are a hill. Get some green paint and make every part of you green. Then you will look like a hill and you can hide.\" So the pig got cans and cans of green paint. The pig started painting. Soon every part of that pig was green. The pig went back to the farm and sat down near the barn. \"I am hiding,\" the pig shouted. \"Come and get me.\" The little pigs looked and looked. But they did not find the big pig. A little pig said, \"I see a farm and I see a barn and I see a big green hill. But I do not see a fat pig.\" The End",
+    "words": [
+     "There",
+     "was",
+     "a",
+     "pig",
+     "that",
+     "was",
+     "too",
+     "big",
+     "to",
+     "hide",
+     "That",
+     "pig",
+     "was",
+     "looking",
+     "for",
+     "something",
+     "big",
+     "The",
+     "pig",
+     "went",
+     "to",
+     "the",
+     "lake",
+     "No",
+     "the",
+     "pig",
+     "said",
+     "A",
+     "lake",
+     "is",
+     "big",
+     "but",
+     "I",
+     "can",
+     "not",
+     "hide",
+     "in",
+     "back",
+     "of",
+     "a",
+     "lake",
+     "The",
+     "pig",
+     "went",
+     "to",
+     "a",
+     "park",
+     "No",
+     "the",
+     "pig",
+     "said",
+     "A",
+     "park",
+     "is",
+     "big",
+     "but",
+     "I",
+     "can",
+     "not",
+     "hide",
+     "in",
+     "back",
+     "of",
+     "a",
+     "park",
+     "Then",
+     "that",
+     "pig",
+     "went",
+     "to",
+     "a",
+     "hill",
+     "No",
+     "the",
+     "pig",
+     "said",
+     "That",
+     "hill",
+     "is",
+     "big",
+     "but",
+     "if",
+     "those",
+     "little",
+     "pigs",
+     "go",
+     "to",
+     "the",
+     "top",
+     "of",
+     "the",
+     "hill",
+     "they",
+     "will",
+     "see",
+     "me",
+     "on",
+     "the",
+     "other",
+     "side",
+     "An",
+     "eagle",
+     "said",
+     "to",
+     "the",
+     "pig",
+     "You",
+     "dont",
+     "need",
+     "a",
+     "hill",
+     "You",
+     "are",
+     "a",
+     "hill",
+     "Get",
+     "some",
+     "green",
+     "paint",
+     "and",
+     "make",
+     "every",
+     "part",
+     "of",
+     "you",
+     "green",
+     "Then",
+     "you",
+     "will",
+     "look",
+     "like",
+     "a",
+     "hill",
+     "and",
+     "you",
+     "can",
+     "hide",
+     "So",
+     "the",
+     "pig",
+     "got",
+     "cans",
+     "and",
+     "cans",
+     "of",
+     "green",
+     "paint",
+     "The",
+     "pig",
+     "started",
+     "painting",
+     "Soon",
+     "every",
+     "part",
+     "of",
+     "that",
+     "pig",
+     "was",
+     "green",
+     "The",
+     "pig",
+     "went",
+     "back",
+     "to",
+     "the",
+     "farm",
+     "and",
+     "sat",
+     "down",
+     "near",
+     "the",
+     "barn",
+     "I",
+     "am",
+     "hiding",
+     "the",
+     "pig",
+     "shouted",
+     "Come",
+     "and",
+     "get",
+     "me",
+     "The",
+     "little",
+     "pigs",
+     "looked",
+     "and",
+     "looked",
+     "But",
+     "they",
+     "did",
+     "not",
+     "find",
+     "the",
+     "big",
+     "pig",
+     "A",
+     "little",
+     "pig",
+     "said",
+     "I",
+     "see",
+     "a",
+     "farm",
+     "and",
+     "I",
+     "see",
+     "a",
+     "barn",
+     "and",
+     "I",
+     "see",
+     "a",
+     "big",
+     "green",
+     "hill",
+     "But",
+     "I",
+     "do",
+     "not",
+     "see",
+     "a",
+     "fat",
+     "pig",
+     "The",
+     "End"
     ]
    }
   }
