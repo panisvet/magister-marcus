@@ -226,10 +226,11 @@
     },
     {
       "symbol": "y",
-      "say": "yeee",
+      "say": "yuh",
       "asIn": "yes",
       "voiced": true,
-      "lesson": 60
+      "lesson": 60,
+      "note": "consonant /y/ (yes, you) - short clipped onset"
     },
     {
       "symbol": "er",
