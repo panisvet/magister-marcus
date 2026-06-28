@@ -8,3 +8,4 @@ dist/
 vite.config.*.timestamp-*
 *.bak
 .dev.vars # never commit it
+.wrangler/
