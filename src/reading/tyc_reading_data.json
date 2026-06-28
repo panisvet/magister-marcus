@@ -1,7 +1,7 @@
 {
  "_meta": {
   "source": "Teach Your Child to Read in 100 Easy Lessons (sound symbols & phoneme segmentation only; no lesson scripts reproduced)",
-  "extractedRange": "Lessons 1-94; units Option A; ai/ay formal L88, ou/ow formal L89 (earlier pre-intro flags flipped to verified); qu decodable L86; capitals L81; -ed words fall back to sounds; L74-76 stories reread L69-71.",
+  "extractedRange": "Lessons 1-100 (COMPLETE). Units Option A; ck/silent-e/doubled/digraph single-tap; ai/ay formal L88, ou/ow L89; qu decodable L86; capitals L81; irregulars verified:false with notes; -ed words fall back to sounds; L74-76 stories reread L69-71.",
   "notation": "Each word is an array of taught sound-symbols. Long vowels carry a macron (e,a,o,i,u,y). 'th','sh','ch','ng','ar','er','oo','ea','ai','ou','wh','qu' are single joined sounds. Doubled letters in print that map to one sound (e.g. 'tt' in mitt) are one segment.",
   "segmentationNote": "Segmentations marked verified were read directly from the book's dotted-arrow markings. The app blends the final tap into the whole word."
  },
@@ -34219,6 +34219,3234 @@
      "pig",
      "The",
      "End"
+    ]
+   }
+  },
+  {
+   "lesson": 95,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "fog",
+     "sounds": [
+      "f",
+      "o",
+      "g"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "f",
+       "s": "f"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "g",
+       "s": "g"
+      }
+     ]
+    },
+    {
+     "word": "frog",
+     "sounds": [
+      "f",
+      "r",
+      "o",
+      "g"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "f",
+       "s": "f"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "g",
+       "s": "g"
+      }
+     ]
+    },
+    {
+     "word": "spots",
+     "sounds": [
+      "s",
+      "p",
+      "o",
+      "t",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    },
+    {
+     "word": "blap",
+     "sounds": [
+      "b",
+      "l",
+      "a",
+      "p"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "p",
+       "s": "p"
+      }
+     ]
+    },
+    {
+     "word": "ruck",
+     "sounds": [
+      "r",
+      "u",
+      "k"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "u",
+       "s": "u"
+      },
+      {
+       "g": "ck",
+       "s": "k",
+       "style": "ck"
+      }
+     ]
+    },
+    {
+     "word": "ding",
+     "sounds": [
+      "d",
+      "ing"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "ing",
+       "s": "ing",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "green",
+     "sounds": [
+      "g",
+      "r",
+      "ee",
+      "n"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "ēē",
+       "s": "ee",
+       "style": "long"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      }
+     ]
+    },
+    {
+     "word": "these",
+     "sounds": [
+      "th",
+      "e",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "th",
+       "s": "th",
+       "style": "digraph"
+      },
+      {
+       "g": "ē",
+       "s": "e",
+       "style": "long"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "those",
+     "sounds": [
+      "th",
+      "o-",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "th",
+       "s": "th",
+       "style": "digraph"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "deep",
+     "sounds": [
+      "d",
+      "ee",
+      "p"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "ēē",
+       "s": "ee",
+       "style": "long"
+      },
+      {
+       "g": "p",
+       "s": "p"
+      }
+     ]
+    },
+    {
+     "word": "teeth",
+     "sounds": [
+      "t",
+      "ee",
+      "th"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "ēē",
+       "s": "ee",
+       "style": "long"
+      },
+      {
+       "g": "th",
+       "s": "th",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "here",
+     "sounds": [
+      "h",
+      "e",
+      "r"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ē",
+       "s": "e",
+       "style": "long"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ],
+     "note": "says /heer/"
+    }
+   ],
+   "story": {
+    "text": "There was a little frog with green spots. That frog made very big sounds. The other frogs in the lake made very big sounds. Some got on the shore and made sounds. Some went, \"Ding, ding, ding.\" Some of the big frogs made deep sounds: \"Ruck, ruck, ruck.\" But the little frog with green spots made this sound: \"Blap, blap, blap.\" The sound was very loud. Frogs like to sing with each other. They ding and ruck and ding. But the frogs that ding and ruck did not like the sounds that the little frog made. When he went, \"Blap, blap, blap,\" they said, \"Stop that blap, blap. Those sounds are too loud. How can we sing if you make loud sounds?\" Then these frogs said, \"Yes, stop blapping and start singing.\" Soon one of the other frogs said, \"Let's dive in the lake and get out of here.\" And they did. The little frog had a mother. She said, \"You make sounds that are like big teeth. They bite my ears.\" The little frog with green spots was sad. He said, \"I do not like to make those big sounds. But I can not sing the way the other frogs sing.\" More to Come",
+    "words": [
+     "There",
+     "was",
+     "a",
+     "little",
+     "frog",
+     "with",
+     "green",
+     "spots",
+     "That",
+     "frog",
+     "made",
+     "very",
+     "big",
+     "sounds",
+     "The",
+     "other",
+     "frogs",
+     "in",
+     "the",
+     "lake",
+     "made",
+     "very",
+     "big",
+     "sounds",
+     "Some",
+     "got",
+     "on",
+     "the",
+     "shore",
+     "and",
+     "made",
+     "sounds",
+     "Some",
+     "went",
+     "Ding",
+     "ding",
+     "ding",
+     "Some",
+     "of",
+     "the",
+     "big",
+     "frogs",
+     "made",
+     "deep",
+     "sounds:",
+     "Ruck",
+     "ruck",
+     "ruck",
+     "But",
+     "the",
+     "little",
+     "frog",
+     "with",
+     "green",
+     "spots",
+     "made",
+     "this",
+     "sound:",
+     "Blap",
+     "blap",
+     "blap",
+     "The",
+     "sound",
+     "was",
+     "very",
+     "loud",
+     "Frogs",
+     "like",
+     "to",
+     "sing",
+     "with",
+     "each",
+     "other",
+     "They",
+     "ding",
+     "and",
+     "ruck",
+     "and",
+     "ding",
+     "But",
+     "the",
+     "frogs",
+     "that",
+     "ding",
+     "and",
+     "ruck",
+     "did",
+     "not",
+     "like",
+     "the",
+     "sounds",
+     "that",
+     "the",
+     "little",
+     "frog",
+     "made",
+     "When",
+     "he",
+     "went",
+     "Blap",
+     "blap",
+     "blap",
+     "they",
+     "said",
+     "Stop",
+     "that",
+     "blap",
+     "blap",
+     "Those",
+     "sounds",
+     "are",
+     "too",
+     "loud",
+     "How",
+     "can",
+     "we",
+     "sing",
+     "if",
+     "you",
+     "make",
+     "loud",
+     "sounds",
+     "Then",
+     "these",
+     "frogs",
+     "said",
+     "Yes",
+     "stop",
+     "blapping",
+     "and",
+     "start",
+     "singing",
+     "Soon",
+     "one",
+     "of",
+     "the",
+     "other",
+     "frogs",
+     "said",
+     "Lets",
+     "dive",
+     "in",
+     "the",
+     "lake",
+     "and",
+     "get",
+     "out",
+     "of",
+     "here",
+     "And",
+     "they",
+     "did",
+     "The",
+     "little",
+     "frog",
+     "had",
+     "a",
+     "mother",
+     "She",
+     "said",
+     "You",
+     "make",
+     "sounds",
+     "that",
+     "are",
+     "like",
+     "big",
+     "teeth",
+     "They",
+     "bite",
+     "my",
+     "ears",
+     "The",
+     "little",
+     "frog",
+     "with",
+     "green",
+     "spots",
+     "was",
+     "sad",
+     "He",
+     "said",
+     "I",
+     "do",
+     "not",
+     "like",
+     "to",
+     "make",
+     "those",
+     "big",
+     "sounds",
+     "But",
+     "I",
+     "can",
+     "not",
+     "sing",
+     "the",
+     "way",
+     "the",
+     "other",
+     "frogs",
+     "sing",
+     "More",
+     "to",
+     "Come"
+    ]
+   }
+  },
+  {
+   "lesson": 96,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "room",
+     "sounds": [
+      "r",
+      "oo",
+      "m"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "oo",
+       "s": "oo",
+       "style": "digraph"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      }
+     ]
+    },
+    {
+     "word": "frogs",
+     "sounds": [
+      "f",
+      "r",
+      "o",
+      "g",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "f",
+       "s": "f"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    },
+    {
+     "word": "sounds",
+     "sounds": [
+      "s",
+      "ou",
+      "n",
+      "d",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    },
+    {
+     "word": "biggest",
+     "sounds": [
+      "b",
+      "i",
+      "g",
+      "e-short",
+      "s",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "i",
+       "s": "i"
+      },
+      {
+       "g": "gg",
+       "s": "g",
+       "style": "double"
+      },
+      {
+       "g": "e",
+       "s": "e-short"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "kick",
+     "sounds": [
+      "k",
+      "i",
+      "k"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "k",
+       "s": "k"
+      },
+      {
+       "g": "i",
+       "s": "i"
+      },
+      {
+       "g": "ck",
+       "s": "k",
+       "style": "ck"
+      }
+     ]
+    },
+    {
+     "word": "spring",
+     "sounds": [
+      "s",
+      "p",
+      "r",
+      "ing"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "ing",
+       "s": "ing",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "around",
+     "sounds": [
+      "a",
+      "r",
+      "ou",
+      "n",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "found",
+     "sounds": [
+      "f",
+      "ou",
+      "n",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "f",
+       "s": "f"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "proud",
+     "sounds": [
+      "p",
+      "r",
+      "ou",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "house",
+     "sounds": [
+      "h",
+      "ou",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "mouse",
+     "sounds": [
+      "m",
+      "ou",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "big",
+     "sounds": [
+      "b",
+      "i",
+      "g"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "i",
+       "s": "i"
+      },
+      {
+       "g": "g",
+       "s": "g"
+      }
+     ]
+    },
+    {
+     "word": "loud",
+     "sounds": [
+      "l",
+      "ou",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "ate",
+     "sounds": [
+      "a-",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ā",
+       "s": "a-",
+       "style": "long"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    }
+   ],
+   "story": {
+    "text": "A little frog with green spots made big sounds. The other frogs in the lake did not like those sounds. On a spring day a big fog came over the lake. The frogs said, \"We can not see in this fog, but we can sit on the shore and sing.\" The fog was so bad that the sound of the frogs was not loud. Then a big frog said, \"I hear a ship. That ship can not see where it is going. It will run up on the shore if we do not stop it.\" Another frog said, \"We will make big sounds so the ship will hear us.\" So these frogs made the biggest sounds they had ever made, \"Ruck, ding, ding, ruck.\" But the fog ate up the sounds. Then a big frog said to the little frog with green spots, \"Can you make sounds that a ship can hear?\" The little frog shouted, \"Blap, blap, blap.\" These sounds were so loud that the other frogs jumped into the lake. They said, \"That sound is like a kick in the ears.\" But the ship did not run into the shore. A big frog said, \"They can hear that loud sound.\" So now the other frogs like the little frog. When there is a big fog, go to the shore of a lake. You may hear that frog going, \"Blap, blap.\" This Is the End",
+    "words": [
+     "A",
+     "little",
+     "frog",
+     "with",
+     "green",
+     "spots",
+     "made",
+     "big",
+     "sounds",
+     "The",
+     "other",
+     "frogs",
+     "in",
+     "the",
+     "lake",
+     "did",
+     "not",
+     "like",
+     "those",
+     "sounds",
+     "On",
+     "a",
+     "spring",
+     "day",
+     "a",
+     "big",
+     "fog",
+     "came",
+     "over",
+     "the",
+     "lake",
+     "The",
+     "frogs",
+     "said",
+     "We",
+     "can",
+     "not",
+     "see",
+     "in",
+     "this",
+     "fog",
+     "but",
+     "we",
+     "can",
+     "sit",
+     "on",
+     "the",
+     "shore",
+     "and",
+     "sing",
+     "The",
+     "fog",
+     "was",
+     "so",
+     "bad",
+     "that",
+     "the",
+     "sound",
+     "of",
+     "the",
+     "frogs",
+     "was",
+     "not",
+     "loud",
+     "Then",
+     "a",
+     "big",
+     "frog",
+     "said",
+     "I",
+     "hear",
+     "a",
+     "ship",
+     "That",
+     "ship",
+     "can",
+     "not",
+     "see",
+     "where",
+     "it",
+     "is",
+     "going",
+     "It",
+     "will",
+     "run",
+     "up",
+     "on",
+     "the",
+     "shore",
+     "if",
+     "we",
+     "do",
+     "not",
+     "stop",
+     "it",
+     "Another",
+     "frog",
+     "said",
+     "We",
+     "will",
+     "make",
+     "big",
+     "sounds",
+     "so",
+     "the",
+     "ship",
+     "will",
+     "hear",
+     "us",
+     "So",
+     "these",
+     "frogs",
+     "made",
+     "the",
+     "biggest",
+     "sounds",
+     "they",
+     "had",
+     "ever",
+     "made",
+     "Ruck",
+     "ding",
+     "ding",
+     "ruck",
+     "But",
+     "the",
+     "fog",
+     "ate",
+     "up",
+     "the",
+     "sounds",
+     "Then",
+     "a",
+     "big",
+     "frog",
+     "said",
+     "to",
+     "the",
+     "little",
+     "frog",
+     "with",
+     "green",
+     "spots",
+     "Can",
+     "you",
+     "make",
+     "sounds",
+     "that",
+     "a",
+     "ship",
+     "can",
+     "hear",
+     "The",
+     "little",
+     "frog",
+     "shouted",
+     "Blap",
+     "blap",
+     "blap",
+     "These",
+     "sounds",
+     "were",
+     "so",
+     "loud",
+     "that",
+     "the",
+     "other",
+     "frogs",
+     "jumped",
+     "into",
+     "the",
+     "lake",
+     "They",
+     "said",
+     "That",
+     "sound",
+     "is",
+     "like",
+     "a",
+     "kick",
+     "in",
+     "the",
+     "ears",
+     "But",
+     "the",
+     "ship",
+     "did",
+     "not",
+     "run",
+     "into",
+     "the",
+     "shore",
+     "A",
+     "big",
+     "frog",
+     "said",
+     "They",
+     "can",
+     "hear",
+     "that",
+     "loud",
+     "sound",
+     "So",
+     "now",
+     "the",
+     "other",
+     "frogs",
+     "like",
+     "the",
+     "little",
+     "frog",
+     "When",
+     "there",
+     "is",
+     "a",
+     "big",
+     "fog",
+     "go",
+     "to",
+     "the",
+     "shore",
+     "of",
+     "a",
+     "lake",
+     "You",
+     "may",
+     "hear",
+     "that",
+     "frog",
+     "going",
+     "Blap",
+     "blap",
+     "This",
+     "Is",
+     "the",
+     "End"
+    ]
+   }
+  },
+  {
+   "lesson": 97,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "mouse",
+     "sounds": [
+      "m",
+      "ou",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "house",
+     "sounds": [
+      "h",
+      "ou",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "proud",
+     "sounds": [
+      "p",
+      "r",
+      "ou",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "found",
+     "sounds": [
+      "f",
+      "ou",
+      "n",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "f",
+       "s": "f"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "grass",
+     "sounds": [
+      "g",
+      "r",
+      "a",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "ss",
+       "s": "s",
+       "style": "double"
+      }
+     ]
+    },
+    {
+     "word": "shine",
+     "sounds": [
+      "sh",
+      "i-",
+      "n"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "sh",
+       "s": "sh",
+       "style": "digraph"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "room",
+     "sounds": [
+      "r",
+      "oo",
+      "m"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "oo",
+       "s": "oo",
+       "style": "digraph"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      }
+     ]
+    },
+    {
+     "word": "dust",
+     "sounds": [
+      "d",
+      "u",
+      "s",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "u",
+       "s": "u"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "out",
+     "sounds": [
+      "ou",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    }
+   ],
+   "story": {
+    "text": "A mouse had a house that shined. Every day, that mouse got a rag and went from room to room. The mouse picked up every bit of dust. The mouse was very proud. \"This is how I like my house.\" But on a cold day that mouse found something bad. The mouse was going to dust in the bed room. The mouse looked at the bed and said, \"I see bugs in that bed.\" There were ten red bugs in the bed. \"Get out of that bed,\" the mouse yelled. \"No,\" a bug said. \"We must stay in a bed. We are bed bugs.\" \"My house shines,\" the mouse said. \"I can not have bugs in here.\" A bug came near the mouse. That bug said, \"If we are bed bugs, we must live in beds. We are not grass bugs, so we can not live in the grass. We are not barn bugs, so we can not live in a barn.\" Stop",
+    "words": [
+     "A",
+     "mouse",
+     "had",
+     "a",
+     "house",
+     "that",
+     "shined",
+     "Every",
+     "day",
+     "that",
+     "mouse",
+     "got",
+     "a",
+     "rag",
+     "and",
+     "went",
+     "from",
+     "room",
+     "to",
+     "room",
+     "The",
+     "mouse",
+     "picked",
+     "up",
+     "every",
+     "bit",
+     "of",
+     "dust",
+     "The",
+     "mouse",
+     "was",
+     "very",
+     "proud",
+     "This",
+     "is",
+     "how",
+     "I",
+     "like",
+     "my",
+     "house",
+     "But",
+     "on",
+     "a",
+     "cold",
+     "day",
+     "that",
+     "mouse",
+     "found",
+     "something",
+     "bad",
+     "The",
+     "mouse",
+     "was",
+     "going",
+     "to",
+     "dust",
+     "in",
+     "the",
+     "bed",
+     "room",
+     "The",
+     "mouse",
+     "looked",
+     "at",
+     "the",
+     "bed",
+     "and",
+     "said",
+     "I",
+     "see",
+     "bugs",
+     "in",
+     "that",
+     "bed",
+     "There",
+     "were",
+     "ten",
+     "red",
+     "bugs",
+     "in",
+     "the",
+     "bed",
+     "Get",
+     "out",
+     "of",
+     "that",
+     "bed",
+     "the",
+     "mouse",
+     "yelled",
+     "No",
+     "a",
+     "bug",
+     "said",
+     "We",
+     "must",
+     "stay",
+     "in",
+     "a",
+     "bed",
+     "We",
+     "are",
+     "bed",
+     "bugs",
+     "My",
+     "house",
+     "shines",
+     "the",
+     "mouse",
+     "said",
+     "I",
+     "can",
+     "not",
+     "have",
+     "bugs",
+     "in",
+     "here",
+     "A",
+     "bug",
+     "came",
+     "near",
+     "the",
+     "mouse",
+     "That",
+     "bug",
+     "said",
+     "If",
+     "we",
+     "are",
+     "bed",
+     "bugs",
+     "we",
+     "must",
+     "live",
+     "in",
+     "beds",
+     "We",
+     "are",
+     "not",
+     "grass",
+     "bugs",
+     "so",
+     "we",
+     "can",
+     "not",
+     "live",
+     "in",
+     "the",
+     "grass",
+     "We",
+     "are",
+     "not",
+     "barn",
+     "bugs",
+     "so",
+     "we",
+     "can",
+     "not",
+     "live",
+     "in",
+     "a",
+     "barn",
+     "Stop"
+    ]
+   }
+  },
+  {
+   "lesson": 98,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "other",
+     "sounds": [
+      "o",
+      "th",
+      "er"
+     ],
+     "verified": false,
+     "note": "o says /u/; says /uther/",
+     "units": [
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "th",
+       "s": "th",
+       "style": "digraph"
+      },
+      {
+       "g": "er",
+       "s": "er",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "another",
+     "sounds": [
+      "a",
+      "n",
+      "o",
+      "th",
+      "er"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "th",
+       "s": "th",
+       "style": "digraph"
+      },
+      {
+       "g": "er",
+       "s": "er",
+       "style": "digraph"
+      }
+     ],
+     "note": "schwa; says /a-nuth-er/"
+    },
+    {
+     "word": "around",
+     "sounds": [
+      "a",
+      "r",
+      "ou",
+      "n",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "bite",
+     "sounds": [
+      "b",
+      "i-",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "dust",
+     "sounds": [
+      "d",
+      "u",
+      "s",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "d",
+       "s": "d"
+      },
+      {
+       "g": "u",
+       "s": "u"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "from",
+     "sounds": [
+      "f",
+      "r",
+      "o",
+      "m"
+     ],
+     "verified": false,
+     "units": [
+      {
+       "g": "f",
+       "s": "f"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      }
+     ],
+     "note": "o says /u/; says /frum/"
+    },
+    {
+     "word": "too",
+     "sounds": [
+      "t",
+      "oo"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "oo",
+       "s": "oo",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "smiled",
+     "sounds": [
+      "s",
+      "m",
+      "i-",
+      "l",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /d/; silent e"
+    },
+    {
+     "word": "bug",
+     "sounds": [
+      "b",
+      "u",
+      "g"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "u",
+       "s": "u"
+      },
+      {
+       "g": "g",
+       "s": "g"
+      }
+     ]
+    },
+    {
+     "word": "bed",
+     "sounds": [
+      "b",
+      "e-short",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "e",
+       "s": "e-short"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "grass",
+     "sounds": [
+      "g",
+      "r",
+      "a",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "ss",
+       "s": "s",
+       "style": "double"
+      }
+     ]
+    },
+    {
+     "word": "biting",
+     "sounds": [
+      "b",
+      "i-",
+      "t",
+      "ing"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "ing",
+       "s": "ing",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "room",
+     "sounds": [
+      "r",
+      "oo",
+      "m"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "oo",
+       "s": "oo",
+       "style": "digraph"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      }
+     ]
+    }
+   ],
+   "story": {
+    "text": "A mouse found bed bugs in the bed. That mouse was very mad, but the bugs said that they had to live in beds. The mouse said, \"Get out of this room or I will hit you with a dust rag.\" \"We are too fast for you,\" a bug said. The mouse hit the bed with the rag. But the rag did not hit bugs. It hit the bed. The bugs were on another part of the bed. They said, \"If you do that, we will bite. And bed bugs are good at biting.\" \"This is bad,\" the mouse said. The mouse walked from the bed room. \"I must do something,\" the mouse said. Soon the mouse came back into the bed room. The mouse was holding a little bed. That bed was made from a dish and a dust rag. The mouse said to the bugs, \"You are bed bugs. And this is a little bed. So hop out of my bed and get into this bed.\" The bugs smiled. Then, hop, jump, they got into the little bed. They ran around on the dust rag. Then a bug looked at the mouse and said, \"This is a good bed. But a bed needs a bed room and a bed room needs a house.\" So the mouse had to make a house with a bed room. And now the bug bed is in the bed room and the bed bugs are in the bug bed. The End",
+    "words": [
+     "A",
+     "mouse",
+     "found",
+     "bed",
+     "bugs",
+     "in",
+     "the",
+     "bed",
+     "That",
+     "mouse",
+     "was",
+     "very",
+     "mad",
+     "but",
+     "the",
+     "bugs",
+     "said",
+     "that",
+     "they",
+     "had",
+     "to",
+     "live",
+     "in",
+     "beds",
+     "The",
+     "mouse",
+     "said",
+     "Get",
+     "out",
+     "of",
+     "this",
+     "room",
+     "or",
+     "I",
+     "will",
+     "hit",
+     "you",
+     "with",
+     "a",
+     "dust",
+     "rag",
+     "We",
+     "are",
+     "too",
+     "fast",
+     "for",
+     "you",
+     "a",
+     "bug",
+     "said",
+     "The",
+     "mouse",
+     "hit",
+     "the",
+     "bed",
+     "with",
+     "the",
+     "rag",
+     "But",
+     "the",
+     "rag",
+     "did",
+     "not",
+     "hit",
+     "bugs",
+     "It",
+     "hit",
+     "the",
+     "bed",
+     "The",
+     "bugs",
+     "were",
+     "on",
+     "another",
+     "part",
+     "of",
+     "the",
+     "bed",
+     "They",
+     "said",
+     "If",
+     "you",
+     "do",
+     "that",
+     "we",
+     "will",
+     "bite",
+     "And",
+     "bed",
+     "bugs",
+     "are",
+     "good",
+     "at",
+     "biting",
+     "This",
+     "is",
+     "bad",
+     "the",
+     "mouse",
+     "said",
+     "The",
+     "mouse",
+     "walked",
+     "from",
+     "the",
+     "bed",
+     "room",
+     "I",
+     "must",
+     "do",
+     "something",
+     "the",
+     "mouse",
+     "said",
+     "Soon",
+     "the",
+     "mouse",
+     "came",
+     "back",
+     "into",
+     "the",
+     "bed",
+     "room",
+     "The",
+     "mouse",
+     "was",
+     "holding",
+     "a",
+     "little",
+     "bed",
+     "That",
+     "bed",
+     "was",
+     "made",
+     "from",
+     "a",
+     "dish",
+     "and",
+     "a",
+     "dust",
+     "rag",
+     "The",
+     "mouse",
+     "said",
+     "to",
+     "the",
+     "bugs",
+     "You",
+     "are",
+     "bed",
+     "bugs",
+     "And",
+     "this",
+     "is",
+     "a",
+     "little",
+     "bed",
+     "So",
+     "hop",
+     "out",
+     "of",
+     "my",
+     "bed",
+     "and",
+     "get",
+     "into",
+     "this",
+     "bed",
+     "The",
+     "bugs",
+     "smiled",
+     "Then",
+     "hop",
+     "jump",
+     "they",
+     "got",
+     "into",
+     "the",
+     "little",
+     "bed",
+     "They",
+     "ran",
+     "around",
+     "on",
+     "the",
+     "dust",
+     "rag",
+     "Then",
+     "a",
+     "bug",
+     "looked",
+     "at",
+     "the",
+     "mouse",
+     "and",
+     "said",
+     "This",
+     "is",
+     "a",
+     "good",
+     "bed",
+     "But",
+     "a",
+     "bed",
+     "needs",
+     "a",
+     "bed",
+     "room",
+     "and",
+     "a",
+     "bed",
+     "room",
+     "needs",
+     "a",
+     "house",
+     "So",
+     "the",
+     "mouse",
+     "had",
+     "to",
+     "make",
+     "a",
+     "house",
+     "with",
+     "a",
+     "bed",
+     "room",
+     "And",
+     "now",
+     "the",
+     "bug",
+     "bed",
+     "is",
+     "in",
+     "the",
+     "bed",
+     "room",
+     "and",
+     "the",
+     "bed",
+     "bugs",
+     "are",
+     "in",
+     "the",
+     "bug",
+     "bed",
+     "The",
+     "End"
+    ]
+   }
+  },
+  {
+   "lesson": 99,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "hear",
+     "sounds": [
+      "h",
+      "ear"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ear",
+       "s": "ear",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "near",
+     "sounds": [
+      "n",
+      "ear"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "ear",
+       "s": "ear",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "take",
+     "sounds": [
+      "t",
+      "a-",
+      "k"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "ā",
+       "s": "a-",
+       "style": "long"
+      },
+      {
+       "g": "k",
+       "s": "k"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "shot",
+     "sounds": [
+      "sh",
+      "o",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "sh",
+       "s": "sh",
+       "style": "digraph"
+      },
+      {
+       "g": "o",
+       "s": "o"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "blam",
+     "sounds": [
+      "b",
+      "l",
+      "a",
+      "m"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "l",
+       "s": "l"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      }
+     ]
+    },
+    {
+     "word": "tiger",
+     "sounds": [
+      "t",
+      "i-",
+      "g",
+      "er"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "g",
+       "s": "g"
+      },
+      {
+       "g": "er",
+       "s": "er",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "mouse",
+     "sounds": [
+      "m",
+      "ou",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "stopped",
+     "sounds": [
+      "s",
+      "t",
+      "o",
+      "p",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /t/; doubled p"
+    },
+    {
+     "word": "picked",
+     "sounds": [
+      "p",
+      "i",
+      "k",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /t/"
+    }
+   ],
+   "story": {
+    "text": "The old man said, \"I need a tiger coat. So I will find a tiger. I will take him cake for a coat.\" The girl said, \"But you can not see. How can you hunt for a tiger?\" The old man said, \"I can hear. Tigers make sounds. I will hear the sounds and bring this cake to him.\" The girl said, \"This tiger may eat you, not the cake.\" \"No,\" the old man said. \"When I hear tiger sounds I will take him the cake he will love. And I will get a good tiger coat.\" So the man went out. He did not see well. So he fell over a log. \"Blap.\" Then he fell over a rock. \"Blam.\" Then he walked up a hill. When he got to the top he stopped. \"I hear something,\" he said. \"I hear a tiger.\" He did hear sounds of a tiger. It was a big tiger. It was very near. The old man got out the cake and ran fast. He ran into a nut tree. \"Blap.\" A nut fell on a mouse. The mouse yelled, \"Stop hitting me with nuts.\" This Is Not the End",
+    "words": [
+     "The",
+     "old",
+     "man",
+     "said",
+     "I",
+     "need",
+     "a",
+     "tiger",
+     "coat",
+     "So",
+     "I",
+     "will",
+     "find",
+     "a",
+     "tiger",
+     "I",
+     "will",
+     "take",
+     "him",
+     "cake",
+     "for",
+     "a",
+     "coat",
+     "The",
+     "girl",
+     "said",
+     "But",
+     "you",
+     "can",
+     "not",
+     "see",
+     "How",
+     "can",
+     "you",
+     "hunt",
+     "for",
+     "a",
+     "tiger",
+     "The",
+     "old",
+     "man",
+     "said",
+     "I",
+     "can",
+     "hear",
+     "Tigers",
+     "make",
+     "sounds",
+     "I",
+     "will",
+     "hear",
+     "the",
+     "sounds",
+     "and",
+     "bring",
+     "this",
+     "cake",
+     "to",
+     "him",
+     "The",
+     "girl",
+     "said",
+     "This",
+     "tiger",
+     "may",
+     "eat",
+     "you",
+     "not",
+     "the",
+     "cake",
+     "No",
+     "the",
+     "old",
+     "man",
+     "said",
+     "When",
+     "I",
+     "hear",
+     "tiger",
+     "sounds",
+     "I",
+     "will",
+     "take",
+     "him",
+     "the",
+     "cake",
+     "he",
+     "will",
+     "love",
+     "And",
+     "I",
+     "will",
+     "get",
+     "a",
+     "good",
+     "tiger",
+     "coat",
+     "So",
+     "the",
+     "man",
+     "went",
+     "out",
+     "He",
+     "did",
+     "not",
+     "see",
+     "well",
+     "So",
+     "he",
+     "fell",
+     "over",
+     "a",
+     "log",
+     "Blap",
+     "Then",
+     "he",
+     "fell",
+     "over",
+     "a",
+     "rock",
+     "Blam",
+     "Then",
+     "he",
+     "walked",
+     "up",
+     "a",
+     "hill",
+     "When",
+     "he",
+     "got",
+     "to",
+     "the",
+     "top",
+     "he",
+     "stopped",
+     "I",
+     "hear",
+     "something",
+     "he",
+     "said",
+     "I",
+     "hear",
+     "a",
+     "tiger",
+     "He",
+     "did",
+     "hear",
+     "sounds",
+     "of",
+     "a",
+     "tiger",
+     "It",
+     "was",
+     "a",
+     "big",
+     "tiger",
+     "It",
+     "was",
+     "very",
+     "near",
+     "The",
+     "old",
+     "man",
+     "got",
+     "out",
+     "the",
+     "cake",
+     "and",
+     "ran",
+     "fast",
+     "He",
+     "ran",
+     "into",
+     "a",
+     "nut",
+     "tree",
+     "Blap",
+     "A",
+     "nut",
+     "fell",
+     "on",
+     "a",
+     "mouse",
+     "The",
+     "mouse",
+     "yelled",
+     "Stop",
+     "hitting",
+     "me",
+     "with",
+     "nuts",
+     "This",
+     "Is",
+     "Not",
+     "the",
+     "End"
+    ]
+   }
+  },
+  {
+   "lesson": 100,
+   "newSound": null,
+   "decodableWords": [
+    {
+     "word": "sing",
+     "sounds": [
+      "s",
+      "ing"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ing",
+       "s": "ing",
+       "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "back",
+     "sounds": [
+      "b",
+      "a",
+      "k"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "ck",
+       "s": "k",
+       "style": "ck"
+      }
+     ]
+    },
+    {
+     "word": "shouted",
+     "sounds": [
+      "sh",
+      "ou",
+      "t",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /id/"
+    },
+    {
+     "word": "sand",
+     "sounds": [
+      "s",
+      "a",
+      "n",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "thank",
+     "sounds": [
+      "th",
+      "a",
+      "n",
+      "k"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "th",
+       "s": "th",
+       "style": "digraph"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "k",
+       "s": "k"
+      }
+     ]
+    },
+    {
+     "word": "kept",
+     "sounds": [
+      "k",
+      "e-short",
+      "p",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "k",
+       "s": "k"
+      },
+      {
+       "g": "e",
+       "s": "e-short"
+      },
+      {
+       "g": "p",
+       "s": "p"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "licked",
+     "sounds": [
+      "l",
+      "i",
+      "k",
+      "d"
+     ],
+     "verified": false,
+     "note": "-ed = /t/"
+    },
+    {
+     "word": "nose",
+     "sounds": [
+      "n",
+      "o-",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "noses",
+     "sounds": [
+      "n",
+      "o-",
+      "s",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "n",
+       "s": "n"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    },
+    {
+     "word": "home",
+     "sounds": [
+      "h",
+      "o-",
+      "m"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ō",
+       "s": "o-",
+       "style": "long"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "bite",
+     "sounds": [
+      "b",
+      "i-",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "b",
+       "s": "b"
+      },
+      {
+       "g": "ī",
+       "s": "i-",
+       "style": "long"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "tame",
+     "sounds": [
+      "t",
+      "a-",
+      "m"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "t",
+       "s": "t"
+      },
+      {
+       "g": "ā",
+       "s": "a-",
+       "style": "long"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    },
+    {
+     "word": "house",
+     "sounds": [
+      "h",
+      "ou",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "h",
+       "s": "h"
+      },
+      {
+       "g": "ou",
+       "s": "ou",
+       "style": "digraph"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "e",
+       "s": null,
+       "style": "silent"
+      }
+     ]
+    }
+   ],
+   "story": {
+    "text": "The old man said, \"I will find a tiger and take him a cake for a coat.\" The old man did not see, but he did hear sounds. A tiger was sitting and singing at the top of the hill. The old man ran to the sounds. He hit a big rock and made it jump. A bug in back of that rock shouted, \"Stop making this rock jump.\" But the old man did not stop running. He fell in a sand hole and broke the cake into ten bits. An ant said, \"Thank you for the cake bits, but this is my ant home. Get out.\" Then the tiger kept singing, and the man kept running. Then the man stopped. He said, \"I am out of cake for the tiger, so I must stop hunting.\" Then the tiger came over and licked the old man on the nose. The old man said, \"I do not have cake for you. Will you eat me?\" The tiger said, \"No, I am a tame tiger. I love to lick noses, and I love to sing.\" The old man said, \"I love to sing, but I can not see. I need to go home. Can you take me home? We can sing all the way.\" The tiger said, \"I will take you home, and we can sing, if you will give me that good coat.\" So, now the tiger has a tiger coat and a coat from the old man. The old man has no coats, but he had a good, good time singing with the tiger. This Is the Last Ending",
+    "words": [
+     "The",
+     "old",
+     "man",
+     "said",
+     "I",
+     "will",
+     "find",
+     "a",
+     "tiger",
+     "and",
+     "take",
+     "him",
+     "a",
+     "cake",
+     "for",
+     "a",
+     "coat",
+     "The",
+     "old",
+     "man",
+     "did",
+     "not",
+     "see",
+     "but",
+     "he",
+     "did",
+     "hear",
+     "sounds",
+     "A",
+     "tiger",
+     "was",
+     "sitting",
+     "and",
+     "singing",
+     "at",
+     "the",
+     "top",
+     "of",
+     "the",
+     "hill",
+     "The",
+     "old",
+     "man",
+     "ran",
+     "to",
+     "the",
+     "sounds",
+     "He",
+     "hit",
+     "a",
+     "big",
+     "rock",
+     "and",
+     "made",
+     "it",
+     "jump",
+     "A",
+     "bug",
+     "in",
+     "back",
+     "of",
+     "that",
+     "rock",
+     "shouted",
+     "Stop",
+     "making",
+     "this",
+     "rock",
+     "jump",
+     "But",
+     "the",
+     "old",
+     "man",
+     "did",
+     "not",
+     "stop",
+     "running",
+     "He",
+     "fell",
+     "in",
+     "a",
+     "sand",
+     "hole",
+     "and",
+     "broke",
+     "the",
+     "cake",
+     "into",
+     "ten",
+     "bits",
+     "An",
+     "ant",
+     "said",
+     "Thank",
+     "you",
+     "for",
+     "the",
+     "cake",
+     "bits",
+     "but",
+     "this",
+     "is",
+     "my",
+     "ant",
+     "home",
+     "Get",
+     "out",
+     "Then",
+     "the",
+     "tiger",
+     "kept",
+     "singing",
+     "and",
+     "the",
+     "man",
+     "kept",
+     "running",
+     "Then",
+     "the",
+     "man",
+     "stopped",
+     "He",
+     "said",
+     "I",
+     "am",
+     "out",
+     "of",
+     "cake",
+     "for",
+     "the",
+     "tiger",
+     "so",
+     "I",
+     "must",
+     "stop",
+     "hunting",
+     "Then",
+     "the",
+     "tiger",
+     "came",
+     "over",
+     "and",
+     "licked",
+     "the",
+     "old",
+     "man",
+     "on",
+     "the",
+     "nose",
+     "The",
+     "old",
+     "man",
+     "said",
+     "I",
+     "do",
+     "not",
+     "have",
+     "cake",
+     "for",
+     "you",
+     "Will",
+     "you",
+     "eat",
+     "me",
+     "The",
+     "tiger",
+     "said",
+     "No",
+     "I",
+     "am",
+     "a",
+     "tame",
+     "tiger",
+     "I",
+     "love",
+     "to",
+     "lick",
+     "noses",
+     "and",
+     "I",
+     "love",
+     "to",
+     "sing",
+     "The",
+     "old",
+     "man",
+     "said",
+     "I",
+     "love",
+     "to",
+     "sing",
+     "but",
+     "I",
+     "can",
+     "not",
+     "see",
+     "I",
+     "need",
+     "to",
+     "go",
+     "home",
+     "Can",
+     "you",
+     "take",
+     "me",
+     "home",
+     "We",
+     "can",
+     "sing",
+     "all",
+     "the",
+     "way",
+     "The",
+     "tiger",
+     "said",
+     "I",
+     "will",
+     "take",
+     "you",
+     "home",
+     "and",
+     "we",
+     "can",
+     "sing",
+     "if",
+     "you",
+     "will",
+     "give",
+     "me",
+     "that",
+     "good",
+     "coat",
+     "So",
+     "now",
+     "the",
+     "tiger",
+     "has",
+     "a",
+     "tiger",
+     "coat",
+     "and",
+     "a",
+     "coat",
+     "from",
+     "the",
+     "old",
+     "man",
+     "The",
+     "old",
+     "man",
+     "has",
+     "no",
+     "coats",
+     "but",
+     "he",
+     "had",
+     "a",
+     "good",
+     "good",
+     "time",
+     "singing",
+     "with",
+     "the",
+     "tiger",
+     "This",
+     "Is",
+     "the",
+     "Last",
+     "Ending"
     ]
    }
   }
