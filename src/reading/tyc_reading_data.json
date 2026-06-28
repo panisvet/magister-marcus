@@ -114,10 +114,11 @@
     },
     {
       "symbol": "w",
-      "say": "wooo",
+      "say": "wuh",
       "asIn": "we",
       "voiced": true,
-      "lesson": 31
+      "lesson": 31,
+      "note": "consonant /w/ (we, will) - short clipped onset"
     },
     {
       "symbol": "g",
@@ -15796,23 +15797,19 @@
           "word": "you",
           "sounds": [
             "y",
-            "o",
-            "u"
+            "oo"
           ],
           "verified": false,
-          "note": "irregular, says /yoo/",
+          "note": "ou says /oo/ here (oo sound, not the later /ow/); part sight word",
           "units": [
             {
               "g": "y",
               "s": "y"
             },
             {
-              "g": "o",
-              "s": "o"
-            },
-            {
-              "g": "u",
-              "s": "u"
+              "g": "ou",
+              "s": "oo",
+              "style": "digraph"
             }
           ]
         },
@@ -16304,8 +16301,7 @@
           "word": "you",
           "sounds": [
             "y",
-            "o",
-            "u"
+            "oo"
           ],
           "verified": false,
           "units": [
@@ -16314,14 +16310,12 @@
               "s": "y"
             },
             {
-              "g": "o",
-              "s": "o"
-            },
-            {
-              "g": "u",
-              "s": "u"
+              "g": "ou",
+              "s": "oo",
+              "style": "digraph"
             }
-          ]
+          ],
+          "note": "ou says /oo/ here (oo sound, not the later /ow/); part sight word"
         },
         {
           "word": "into",
@@ -16892,8 +16886,7 @@
           "word": "you",
           "sounds": [
             "y",
-            "o",
-            "u"
+            "oo"
           ],
           "verified": false,
           "units": [
@@ -16902,14 +16895,12 @@
               "s": "y"
             },
             {
-              "g": "o",
-              "s": "o"
-            },
-            {
-              "g": "u",
-              "s": "u"
+              "g": "ou",
+              "s": "oo",
+              "style": "digraph"
             }
-          ]
+          ],
+          "note": "ou says /oo/ here (oo sound, not the later /ow/); part sight word"
         },
         {
           "word": "other",
@@ -17940,8 +17931,7 @@
           "word": "you",
           "sounds": [
             "y",
-            "o",
-            "u"
+            "oo"
           ],
           "verified": false,
           "units": [
@@ -17950,14 +17940,12 @@
               "s": "y"
             },
             {
-              "g": "o",
-              "s": "o"
-            },
-            {
-              "g": "u",
-              "s": "u"
+              "g": "ou",
+              "s": "oo",
+              "style": "digraph"
             }
-          ]
+          ],
+          "note": "ou says /oo/ here (oo sound, not the later /ow/); part sight word"
         },
         {
           "word": "over",
