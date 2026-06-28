@@ -3,101 +3,153 @@ import { Link } from "react-router-dom";
 
 /**
  * Schola Domestica - Sounds Practice
- * Phoneme drill covering every sound in the reader (lessons 1-100). Tap a big
- * letter to hear it in your recorded voice.
+ * Phoneme + spelling reference for the reader (lessons 1-100), filled out to
+ * cover the real English sounds TYC's word lists use or gloss over. Tap a tile
+ * to hear it in the recorded voice.
  *
- * "Show" filters by type: Consonants, Short vowels, Long vowels, Digraphs,
- * Vowel teams, R-controlled - or "All sounds".
+ * Organized by SOUND: each vowel sound shows every spelling that makes it, so a
+ * child sees "all the ways to write long A," etc. Spellings not drilled in the
+ * reader are still real English and play the correct recorded clip.
  *
- * Audio: self-contained resolver tries /audio/s-<say>.m4a, then .mp3, then the
- * server TTS proxy. say = clip key -> /audio/s-<say>.(m4a|mp3)
+ * say = clip key -> /audio/s-<say>.(m4a|mp3); falls back to server TTS.
  */
 const SOUNDS = [
-  // --- Consonants ---
-  { glyph: "m", say: "mmm",  keyword: "man",   type: "cons" },
-  { glyph: "s", say: "sss",  keyword: "sat",   type: "cons" },
-  { glyph: "t", say: "t",    keyword: "ten",   type: "cons" },
-  { glyph: "r", say: "rrr",  keyword: "run",   type: "cons" },
-  { glyph: "d", say: "d",    keyword: "mad",   type: "cons" },
-  { glyph: "c", say: "c",    keyword: "cat",   type: "cons" },
-  { glyph: "n", say: "nnn",  keyword: "no",    type: "cons" },
-  { glyph: "f", say: "fff",  keyword: "fun",   type: "cons" },
-  { glyph: "l", say: "lll",  keyword: "late",  type: "cons" },
-  { glyph: "w", say: "wuh",  keyword: "we",    type: "cons" },
-  { glyph: "g", say: "g",    keyword: "tag",   type: "cons" },
-  { glyph: "h", say: "h",    keyword: "hat",   type: "cons" },
-  { glyph: "k", say: "k",    keyword: "tack",  type: "cons" },
-  { glyph: "v", say: "vvv",  keyword: "very",  type: "cons" },
-  { glyph: "p", say: "p",    keyword: "tap",   type: "cons" },
-  { glyph: "b", say: "b",    keyword: "grab",  type: "cons" },
-  { glyph: "j", say: "j",    keyword: "judge", type: "cons" },
-  { glyph: "x", say: "ksss", keyword: "fox",   type: "cons" },
-  { glyph: "z", say: "zzz",  keyword: "buzz",  type: "cons" },
+  // ---- Consonants ----
+  { glyph: "m",  say: "mmm",    keyword: "man",   type: "cons" },
+  { glyph: "s",  say: "sss",    keyword: "sat",   type: "cons" },
+  { glyph: "t",  say: "t",      keyword: "ten",   type: "cons" },
+  { glyph: "r",  say: "rrr",    keyword: "run",   type: "cons" },
+  { glyph: "d",  say: "d",      keyword: "mad",   type: "cons" },
+  { glyph: "c",  say: "c",      keyword: "cat",   type: "cons" },
+  { glyph: "n",  say: "nnn",    keyword: "no",    type: "cons" },
+  { glyph: "f",  say: "fff",    keyword: "fun",   type: "cons" },
+  { glyph: "l",  say: "lll",    keyword: "late",  type: "cons" },
+  { glyph: "w",  say: "wuh",    keyword: "we",    type: "cons" },
+  { glyph: "g",  say: "g",      keyword: "tag",   type: "cons" },
+  { glyph: "h",  say: "h",      keyword: "hat",   type: "cons" },
+  { glyph: "k",  say: "k",      keyword: "tack",  type: "cons" },
+  { glyph: "v",  say: "vvv",    keyword: "very",  type: "cons" },
+  { glyph: "p",  say: "p",      keyword: "tap",   type: "cons" },
+  { glyph: "b",  say: "b",      keyword: "grab",  type: "cons" },
+  { glyph: "j",  say: "j",      keyword: "judge", type: "cons" },
+  { glyph: "x",  say: "ksss",   keyword: "fox",   type: "cons" },
+  { glyph: "z",  say: "zzz",    keyword: "buzz",  type: "cons" },
+  { glyph: "th", say: "ththth", keyword: "this",  type: "cons" }, // voiced
+  { glyph: "th", say: "thh",    keyword: "thin",  type: "cons" }, // voiceless
+  { glyph: "sh", say: "shshsh", keyword: "she",   type: "cons" },
+  { glyph: "ch", say: "ch",     keyword: "touch", type: "cons" },
+  { glyph: "ing",say: "iiing",  keyword: "sing",  type: "cons" },
+  { glyph: "wh", say: "wuh",    keyword: "why",   type: "cons" },
+  { glyph: "qu", say: "kooo",   keyword: "quick", type: "cons" },
 
-  // --- Short vowels (a e i o u, and sometimes y) ---
+  // ---- Short vowels (a e i o u, and sometimes y) ----
   { glyph: "a", say: "aaa", keyword: "and", type: "short" },
   { glyph: "e", say: "ehh", keyword: "end", type: "short" },
   { glyph: "i", say: "iii", keyword: "if",  type: "short" },
   { glyph: "o", say: "ooo", keyword: "ox",  type: "short" },
   { glyph: "u", say: "uuu", keyword: "up",  type: "short" },
-  { glyph: "y", say: "yuh", keyword: "yes", type: "short" }, // y plays its /y/ clip
+  { glyph: "y", say: "yuh", keyword: "yes", type: "short" },
 
-  // --- Long vowels (macron) ---
-  { glyph: "\u0113", say: "eee", keyword: "eat",  type: "long" },  // e-macron
-  { glyph: "\u0101", say: "ay",  keyword: "ate",  type: "long" },  // a-macron
-  { glyph: "\u012b", say: "I",   keyword: "ice",  type: "long" },  // i-macron
-  { glyph: "\u014d", say: "oh",  keyword: "over", type: "long" },  // o-macron
-  { glyph: "\u016b", say: "yoo", keyword: "use",  type: "long" },  // u-macron
-  { glyph: "\u0233", say: "I",   keyword: "my",   type: "long" },  // y-macron
-  { glyph: "I",      say: "I",   keyword: "I",     type: "long" },  // the word "I"
+  // ---- Long A ----
+  { glyph: "\u0101", say: "ay", keyword: "ate",  type: "longA" }, // a-e
+  { glyph: "ai",     say: "ay", keyword: "rain", type: "longA" },
+  { glyph: "ay",     say: "ay", keyword: "play", type: "longA" },
 
-  // --- Digraphs (two letters, one sound) ---
-  { glyph: "th",  say: "ththth", keyword: "this",  type: "digraphs" },
-  { glyph: "sh",  say: "shshsh", keyword: "she",   type: "digraphs" },
-  { glyph: "ch",  say: "ch",     keyword: "touch", type: "digraphs" },
-  { glyph: "ing", say: "iiing",  keyword: "sing",  type: "digraphs" },
-  { glyph: "wh",  say: "wuh",    keyword: "why",   type: "digraphs" },
-  { glyph: "qu",  say: "kooo",   keyword: "quick", type: "digraphs" },
+  // ---- Long E ----
+  { glyph: "\u0113", say: "eee", keyword: "me",   type: "longE" }, // e
+  { glyph: "ee",     say: "eee", keyword: "see",  type: "longE" },
+  { glyph: "ea",     say: "eee", keyword: "eat",  type: "longE" },
+  { glyph: "y",      say: "eee", keyword: "very", type: "longE" }, // final y
 
-  // --- Vowel teams / diphthongs ---
-  { glyph: "ee", say: "eee",    keyword: "see",  type: "teams" },
-  { glyph: "ea", say: "eee",    keyword: "leaf", type: "teams" },
-  { glyph: "oo", say: "oooooo", keyword: "moon", type: "teams" },
-  { glyph: "oo", say: "uu",     keyword: "book", type: "teams" },  // short oo
-  { glyph: "ai", say: "ay",     keyword: "rain", type: "teams" },
-  { glyph: "oa", say: "oh",     keyword: "boat", type: "teams" },
-  { glyph: "ou", say: "owww",   keyword: "loud", type: "teams" },
-  { glyph: "ow", say: "owww",   keyword: "cow",  type: "teams" },  // ow = /ou/
-  { glyph: "oy", say: "oy",     keyword: "boy",  type: "teams" },
-  { glyph: "oi", say: "oy",     keyword: "coin", type: "teams" },  // oi = /oy/
+  // ---- Long I ----
+  { glyph: "\u012b", say: "I", keyword: "bite", type: "longI" }, // i-e
+  { glyph: "ie",     say: "I", keyword: "pie",  type: "longI" },
+  { glyph: "\u0233", say: "I", keyword: "my",   type: "longI" }, // y
+  { glyph: "I",      say: "I", keyword: "I",     type: "longI" },
 
-  // --- R-controlled ---
-  { glyph: "ar",  say: "arrr", keyword: "arm",     type: "r" },
-  { glyph: "er",  say: "urrr", keyword: "brother", type: "r" },
-  { glyph: "ir",  say: "urrr", keyword: "girl",    type: "r" },  // ir = /er/
-  { glyph: "or",  say: "or",   keyword: "corn",    type: "r" },
-  { glyph: "ear", say: "eer",  keyword: "ear",     type: "r" },
+  // ---- Long O ----
+  { glyph: "\u014d", say: "oh", keyword: "nose", type: "longO" }, // o-e
+  { glyph: "oa",     say: "oh", keyword: "boat", type: "longO" },
+  { glyph: "o",      say: "oh", keyword: "go",   type: "longO" },
+
+  // ---- Long U ----
+  { glyph: "\u016b", say: "yoo", keyword: "use", type: "longU" }, // u-e
+
+  // ---- /ou/ ----
+  { glyph: "ou", say: "owww", keyword: "loud", type: "ou" },
+  { glyph: "ow", say: "owww", keyword: "cow",  type: "ou" },
+
+  // ---- /oy/ ----
+  { glyph: "oy", say: "oy", keyword: "boy",  type: "oy" },
+  { glyph: "oi", say: "oy", keyword: "coin", type: "oy" },
+
+  // ---- /aw/ ----
+  { glyph: "aw", say: "aw", keyword: "saw",  type: "aw" },
+  { glyph: "au", say: "aw", keyword: "haul", type: "aw" },
+
+  // ---- /ar/ ----
+  { glyph: "ar", say: "arrr", keyword: "arm", type: "ar" },
+
+  // ---- /er/ ----
+  { glyph: "er", say: "urrr", keyword: "her",  type: "er" },
+  { glyph: "ir", say: "urrr", keyword: "girl", type: "er" },
+  { glyph: "ur", say: "urrr", keyword: "turn", type: "er" },
+
+  // ---- /or/ ----
+  { glyph: "or",  say: "or", keyword: "corn", type: "or" },
+  { glyph: "ore", say: "or", keyword: "more", type: "or" },
+
+  // ---- /air/ ----
+  { glyph: "air", say: "air", keyword: "hair", type: "air" },
+  { glyph: "are", say: "air", keyword: "care", type: "air" },
+  { glyph: "ear", say: "air", keyword: "bear",  type: "air" },
+  { glyph: "ere", say: "air", keyword: "there", type: "air" },
+
+  // ---- /eer/ ----
+  { glyph: "ear", say: "eer", keyword: "hear", type: "eer" },
+  { glyph: "eer", say: "eer", keyword: "deer", type: "eer" },
+  { glyph: "ere", say: "eer", keyword: "here", type: "eer" },
+
+  // ---- oo ----
+  { glyph: "oo", say: "uu",     keyword: "book", type: "ooShort" },
+  { glyph: "oo", say: "oooooo", keyword: "moon", type: "ooLong" },
 ];
 
 const GROUPS = [
-  { id: "cons",     label: "Consonants" },
-  { id: "short",    label: "Short vowels" },
-  { id: "long",     label: "Long vowels" },
-  { id: "digraphs", label: "Digraphs" },
-  { id: "teams",    label: "Vowel teams" },
-  { id: "r",        label: "R-controlled" },
+  { id: "cons",    label: "Consonants" },
+  { id: "short",   label: "Short vowels" },
+  { id: "longA",   label: "Long A" },
+  { id: "longE",   label: "Long E" },
+  { id: "longI",   label: "Long I" },
+  { id: "longO",   label: "Long O" },
+  { id: "longU",   label: "Long U" },
+  { id: "ou",      label: "/ou/ (loud)" },
+  { id: "oy",      label: "/oy/ (boy)" },
+  { id: "aw",      label: "/aw/ (saw)" },
+  { id: "ar",      label: "ar (arm)" },
+  { id: "er",      label: "er (her)" },
+  { id: "or",      label: "or (corn)" },
+  { id: "air",     label: "air (hair)" },
+  { id: "eer",     label: "eer (hear)" },
+  { id: "ooShort", label: "oo (book)" },
+  { id: "ooLong",  label: "oo (moon)" },
 ];
 
-const VIEWS = [{ id: "all", label: "All sounds" }, ...GROUPS];
+// Convenience super-views so the dropdown isn't overwhelming.
+const VOWEL_SOUND_IDS = ["longA","longE","longI","longO","longU","ou","oy","aw","ar","er","or","air","eer","ooShort","ooLong"];
+const VIEWS = [
+  { id: "all",    label: "All sounds" },
+  { id: "cons",   label: "Consonants" },
+  { id: "short",  label: "Short vowels" },
+  { id: "vowels", label: "Vowel sounds (all)" },
+  ...GROUPS.filter((g) => VOWEL_SOUND_IDS.includes(g.id)),
+];
 
-// Self-contained phoneme player: /audio/s-<say>.m4a -> .mp3 -> server TTS.
+// Self-contained player: /audio/s-<say>.m4a -> .mp3 -> server TTS.
 function usePhoneme() {
   const audioRef = useRef(null);
   const stop = () => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-    }
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
   };
   return useCallback((say) => {
     if (!say) return;
@@ -110,12 +162,7 @@ function usePhoneme() {
         body: JSON.stringify({ text: say, slow: true }),
       })
         .then((r) => (r.ok ? r.blob() : Promise.reject(new Error("tts"))))
-        .then((b) => {
-          stop();
-          const a = new Audio(URL.createObjectURL(b));
-          audioRef.current = a;
-          a.play().catch(() => {});
-        })
+        .then((b) => { stop(); const a = new Audio(URL.createObjectURL(b)); audioRef.current = a; a.play().catch(() => {}); })
         .catch(() => console.warn("No audio for", say));
     };
     const tryNext = () => {
@@ -134,20 +181,24 @@ export default function SoundsBoard() {
   const play = usePhoneme();
   const [view, setView] = useState("all");
 
-  const Tile = (s) => (
+  const Tile = (s, k) => (
     <button
-      key={`${s.type}-${s.glyph}-${s.keyword}`}
+      key={`${s.type}-${s.glyph}-${k}`}
       className="sb-tile"
       onClick={() => play(s.say)}
-      aria-label={`Sound ${s.glyph} as in ${s.keyword}. Tap to hear it.`}
+      aria-label={`${s.glyph} as in ${s.keyword}. Tap to hear it.`}
     >
       <span className="sb-glyph">{s.glyph}</span>
       <span className="sb-key">{s.keyword}</span>
     </button>
   );
 
-  const groupsToShow =
-    view === "all" ? GROUPS : GROUPS.filter((g) => g.id === view);
+  let groupsToShow;
+  if (view === "all") groupsToShow = GROUPS;
+  else if (view === "vowels") groupsToShow = GROUPS.filter((g) => VOWEL_SOUND_IDS.includes(g.id));
+  else groupsToShow = GROUPS.filter((g) => g.id === view);
+
+  const showHeaders = view === "all" || view === "vowels";
 
   return (
     <div className="sb">
@@ -173,10 +224,11 @@ export default function SoundsBoard() {
       <main>
         {groupsToShow.map((g) => {
           const items = SOUNDS.filter((s) => s.type === g.id);
+          if (!items.length) return null;
           return (
             <section className="sb-section" key={g.id}>
-              {view === "all" && <h2>{g.label}</h2>}
-              <div className="sb-grid">{items.map(Tile)}</div>
+              {showHeaders && <h2>{g.label}</h2>}
+              <div className="sb-grid">{items.map((s, k) => Tile(s, k))}</div>
             </section>
           );
         })}
