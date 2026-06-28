@@ -1,4 +1,5 @@
 import { useState, useMemo, useRef, useCallback, useEffect } from "react";
+import { Link } from "react-router-dom";
 import data from "./tyc_reading_data.json";
 
 /**
@@ -185,6 +186,10 @@ export default function ReadingApp() {
       <style>{css}</style>
 
       <header className="lr-head">
+        <nav className="lr-nav">
+          <Link to="/sounds">Sounds &rsaquo;</Link>
+          <Link to="/">Home</Link>
+        </nav>
         <p className="lr-eyebrow">Schola Domestica</p>
         <h1 className="lr-title">Learn to Read</h1>
         <label className="lr-lesson">
@@ -313,7 +318,10 @@ const css = `
   max-width:48rem;margin:0 auto;padding:1.5rem 1.25rem 3rem;
   color:var(--p);font-family:"Crimson Pro",Georgia,serif;
 }
-.lr-head{text-align:center;margin-bottom:1.5rem}
+.lr-head{text-align:center;margin-bottom:1.5rem;position:relative}
+.lr-nav{display:flex;justify-content:center;gap:1.25rem;margin-bottom:.75rem}
+.lr-nav a{font-family:"Cinzel",serif;font-size:.8rem;letter-spacing:.04em;color:var(--g2);text-decoration:none;border:1px solid var(--g);border-radius:.5rem;padding:.35rem .8rem}
+.lr-nav a:hover{background:var(--g2);color:var(--bg)}
 .lr-eyebrow{margin:0;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--g)}
 .lr-title{margin:.15rem 0 1rem;font-family:"Cinzel",serif;font-weight:600;font-size:2rem;color:var(--g2)}
 .lr-lesson{display:inline-flex;align-items:center;gap:.5rem;font-size:.95rem;color:var(--p)}
