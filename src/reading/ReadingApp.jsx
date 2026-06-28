@@ -24,6 +24,11 @@ const GLYPH = {
 };
 const glyph = (s) => GLYPH[s] || s;
 
+// Sounds introduced per lesson (drives the lessons 1-8 sound-practice cards).
+const INV = data.phonemeInventory
+  .filter((p) => p.lesson != null)
+  .map((p) => ({ sym: p.symbol, say: p.say, key: p.asIn, lesson: p.lesson }));
+
 function useTts() {
   const cache = useRef(new Map()); // base -> blob URL | "miss"
   const audioRef = useRef(null);
@@ -136,7 +141,10 @@ function useTts() {
 
 export default function ReadingApp() {
   const playable = useMemo(
-    () => data.lessons.filter((l) => l.decodableWords.length || l.story),
+    () =>
+      data.lessons.filter(
+        (l) => l.decodableWords.length || l.story || l.newSound || l.lesson <= 8
+      ),
     []
   );
   const [li, setLi] = useState(0);
@@ -146,10 +154,15 @@ export default function ReadingApp() {
 
   const lesson = playable[li];
   const words = lesson.decodableWords;
+  const isSound = words.length === 0;                 // lessons 1-8: sounds only
+  const learned = INV.filter((p) => p.lesson <= lesson.lesson);
+  const newSyms = new Set(
+    INV.filter((p) => p.lesson === lesson.lesson).map((p) => p.sym)
+  );
   const word = words[wi];
   // Render from per-word `units` when present (grapheme display + silent/ck/double/long
   // styling); fall back to raw `sounds` for any word that has no units yet.
-  const units = word.units ?? word.sounds.map((s) => ({ g: glyph(s), s }));
+  const units = word ? (word.units ?? word.sounds.map((s) => ({ g: glyph(s), s }))) : [];
   const taps = units.filter((u) => u.s != null); // tappable sounds (silent e excluded)
   const sounds = taps.map((u) => u.s);           // audio / blend / step source
   const blended = step > sounds.length; // past the last sound = whole word
@@ -208,6 +221,31 @@ export default function ReadingApp() {
         </label>
       </header>
 
+      {isSound ? (
+        <section className="lr-soundcard">
+          <p className="lr-soundhead">
+            {newSyms.size ? (
+              <>New sound{newSyms.size > 1 ? "s" : ""}: <strong>{lesson.newSound}</strong> — tap the rest to review</>
+            ) : (
+              "Review — tap each sound"
+            )}
+          </p>
+          <div className="lr-soundgrid">
+            {learned.map((p) => (
+              <button
+                key={p.sym}
+                className={"lr-stile" + (newSyms.has(p.sym) ? " is-new" : "")}
+                onClick={() => playSound(p.say)}
+                aria-label={`Sound ${glyph(p.sym)} as in ${p.key}. Tap to hear it.`}
+              >
+                <span className="lr-sglyph">{glyph(p.sym)}</span>
+                {p.key && <span className="lr-skey">{p.key}</span>}
+              </button>
+            ))}
+          </div>
+        </section>
+      ) : (
+        <>
       <main
         className="lr-card"
         role="button"
@@ -307,6 +345,8 @@ export default function ReadingApp() {
           </button>
         </section>
       )}
+        </>
+      )}
     </div>
   );
 }
@@ -387,7 +427,26 @@ const css = `
 .lr-story-read{margin-top:1.25rem}
 .lr-storyword:hover,.lr-storyword:focus-visible{color:var(--g2);border-bottom-color:var(--g);outline:none}
 
+.lr-soundcard{
+  background:var(--p);color:var(--bg);border:2px solid var(--g);border-radius:1rem;
+  padding:1.75rem 1.25rem 2rem;box-shadow:0 10px 30px rgba(0,0,0,.45);text-align:center;
+}
+.lr-soundhead{margin:0 0 1.25rem;font-size:1.05rem;color:#6b5320}
+.lr-soundhead strong{color:var(--g);font-family:"Cinzel",serif}
+.lr-soundgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(5.5rem,1fr));gap:.9rem}
+.lr-stile{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;
+  aspect-ratio:1/1;cursor:pointer;background:#fff7e0;color:var(--bg);
+  border:2px solid var(--g);border-radius:.9rem;box-shadow:0 4px 12px rgba(0,0,0,.25);
+  transition:transform .12s ease;-webkit-tap-highlight-color:transparent;
+}
+.lr-stile:hover{transform:translateY(-3px)}
+.lr-stile:focus-visible{outline:3px solid var(--g2);outline-offset:3px}
+.lr-stile.is-new{border-color:var(--g2);box-shadow:0 0 0 3px rgba(232,184,75,.4),0 4px 12px rgba(0,0,0,.25)}
+.lr-sglyph{font-family:"IM Fell English","Crimson Pro",serif;font-size:clamp(2rem,8vw,2.8rem);line-height:1}
+.lr-skey{font-size:.85rem;color:#6b5320}
+
 @media (prefers-reduced-motion:reduce){
-  .lr-sound,.lr-arrow{transition:none}
+  .lr-sound,.lr-arrow,.lr-stile{transition:none}
 }
 `;
