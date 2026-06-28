@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "Teach Your Child to Read in 100 Easy Lessons (sound symbols & phoneme segmentation only; no lesson scripts reproduced)",
-    "extractedRange": "Lessons 1-50 (decodable word lists + stories). Phoneme inventory covers all sounds through Lesson 89. Per-word 'units' (grapheme->phoneme display: long/silent/ck/double/digraph) added; ck = single /k/.",
+    "extractedRange": "Lessons 1-50 (decodable word lists + stories). Phoneme inventory covers all sounds through Lesson 89. Per-word 'units'; ck=single /k/; vowel digraphs (ea/ee/oa/ai/ear/or) = single tap reusing long-vowel clips (Option A).",
     "notation": "Each word is an array of taught sound-symbols. Long vowels carry a macron (e,a,o,i,u,y). 'th','sh','ch','ng','ar','er','oo','ea','ai','ou','wh','qu' are single joined sounds. Doubled letters in print that map to one sound (e.g. 'tt' in mitt) are one segment.",
     "segmentationNote": "Segmentations marked verified were read directly from the book's dotted-arrow markings. The app blends the final tap into the whole word."
   },
@@ -325,6 +325,26 @@
       "asIn": "loud",
       "voiced": true,
       "lesson": 89
+    },
+    {
+      "symbol": "ee",
+      "say": "eee",
+      "note": "long e digraph (see, feet)"
+    },
+    {
+      "symbol": "oa",
+      "say": "oh",
+      "note": "long o digraph (goat, road)"
+    },
+    {
+      "symbol": "ear",
+      "say": "eer",
+      "note": "r-controlled (hear, near)"
+    },
+    {
+      "symbol": "or",
+      "say": "or",
+      "note": "r-controlled (for, more)"
     }
   ],
   "lessons": [
@@ -569,8 +589,7 @@
           "word": "see",
           "sounds": [
             "s",
-            "e",
-            "e"
+            "ee"
           ],
           "verified": true,
           "units": [
@@ -579,13 +598,8 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             }
           ]
@@ -594,8 +608,7 @@
           "word": "seed",
           "sounds": [
             "s",
-            "e",
-            "e",
+            "ee",
             "d"
           ],
           "verified": true,
@@ -605,13 +618,8 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -693,20 +701,15 @@
         {
           "word": "eat",
           "sounds": [
-            "e",
-            "a",
+            "ea",
             "t"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ē",
-              "s": "e",
+              "g": "ēa",
+              "s": "ea",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -741,8 +744,7 @@
           "word": "see",
           "sounds": [
             "s",
-            "e",
-            "e"
+            "ee"
           ],
           "verified": true,
           "units": [
@@ -751,13 +753,8 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             }
           ]
@@ -830,8 +827,7 @@
           "word": "seat",
           "sounds": [
             "s",
-            "e",
-            "a",
+            "ea",
             "t"
           ],
           "verified": true,
@@ -841,13 +837,9 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
+              "g": "ēa",
+              "s": "ea",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -895,20 +887,15 @@
         {
           "word": "eat",
           "sounds": [
-            "e",
-            "a",
+            "ea",
             "t"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ē",
-              "s": "e",
+              "g": "ēa",
+              "s": "ea",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -920,8 +907,7 @@
           "word": "meat",
           "sounds": [
             "m",
-            "e",
-            "a",
+            "ea",
             "t"
           ],
           "verified": true,
@@ -931,13 +917,9 @@
               "s": "m"
             },
             {
-              "g": "ē",
-              "s": "e",
+              "g": "ēa",
+              "s": "ea",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -949,8 +931,7 @@
           "word": "read",
           "sounds": [
             "r",
-            "e",
-            "a",
+            "ea",
             "d"
           ],
           "verified": true,
@@ -960,13 +941,9 @@
               "s": "r"
             },
             {
-              "g": "ē",
-              "s": "e",
+              "g": "ēa",
+              "s": "ea",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "d",
@@ -1060,20 +1037,14 @@
         {
           "word": "ear",
           "sounds": [
-            "e",
-            "ar"
+            "ear"
           ],
           "verified": true,
           "note": "book prints joined e+ar before ar is formally introduced",
           "units": [
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ar",
-              "s": "ar",
+              "g": "ear",
+              "s": "ear",
               "style": "digraph"
             }
           ]
@@ -1136,19 +1107,13 @@
         {
           "word": "ear",
           "sounds": [
-            "e",
-            "ar"
+            "ear"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ar",
-              "s": "ar",
+              "g": "ear",
+              "s": "ear",
               "style": "digraph"
             }
           ]
@@ -1157,8 +1122,7 @@
           "word": "seed",
           "sounds": [
             "s",
-            "e",
-            "e",
+            "ee",
             "d"
           ],
           "verified": true,
@@ -1168,13 +1132,8 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -1210,8 +1169,7 @@
           "word": "meet",
           "sounds": [
             "m",
-            "e",
-            "e",
+            "ee",
             "t"
           ],
           "verified": true,
@@ -1221,13 +1179,8 @@
               "s": "m"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -1317,19 +1270,13 @@
         {
           "word": "ear",
           "sounds": [
-            "e",
-            "ar"
+            "ear"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ar",
-              "s": "ar",
+              "g": "ear",
+              "s": "ear",
               "style": "digraph"
             }
           ]
@@ -1338,8 +1285,7 @@
           "word": "meet",
           "sounds": [
             "m",
-            "e",
-            "e",
+            "ee",
             "t"
           ],
           "verified": true,
@@ -1349,13 +1295,8 @@
               "s": "m"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -1368,8 +1309,7 @@
           "word": "seem",
           "sounds": [
             "s",
-            "e",
-            "e",
+            "ee",
             "m"
           ],
           "verified": true,
@@ -1379,13 +1319,8 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -1398,8 +1333,7 @@
           "word": "read",
           "sounds": [
             "r",
-            "e",
-            "a",
+            "ea",
             "d"
           ],
           "verified": true,
@@ -1409,13 +1343,9 @@
               "s": "r"
             },
             {
-              "g": "ē",
-              "s": "e",
+              "g": "ēa",
+              "s": "ea",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "d",
@@ -1528,19 +1458,13 @@
         {
           "word": "ear",
           "sounds": [
-            "e",
-            "ar"
+            "ear"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ar",
-              "s": "ar",
+              "g": "ear",
+              "s": "ear",
               "style": "digraph"
             }
           ]
@@ -1549,8 +1473,7 @@
           "word": "seem",
           "sounds": [
             "s",
-            "e",
-            "e",
+            "ee",
             "m"
           ],
           "verified": true,
@@ -1560,13 +1483,8 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -1827,19 +1745,13 @@
         {
           "word": "ear",
           "sounds": [
-            "e",
-            "ar"
+            "ear"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ar",
-              "s": "ar",
+              "g": "ear",
+              "s": "ear",
               "style": "digraph"
             }
           ]
@@ -2217,8 +2129,7 @@
           "word": "meet",
           "sounds": [
             "m",
-            "e",
-            "e",
+            "ee",
             "t"
           ],
           "verified": true,
@@ -2228,13 +2139,8 @@
               "s": "m"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -2966,8 +2872,7 @@
           "word": "feet",
           "sounds": [
             "f",
-            "e",
-            "e",
+            "ee",
             "t"
           ],
           "verified": true,
@@ -2977,13 +2882,8 @@
               "s": "f"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -3250,20 +3150,15 @@
         {
           "word": "eat",
           "sounds": [
-            "e",
-            "a",
+            "ea",
             "t"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ē",
-              "s": "e",
+              "g": "ēa",
+              "s": "ea",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -3575,8 +3470,7 @@
           "word": "feed",
           "sounds": [
             "f",
-            "e",
-            "e",
+            "ee",
             "d"
           ],
           "verified": true,
@@ -3586,13 +3480,8 @@
               "s": "f"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -3673,8 +3562,7 @@
           "word": "feet",
           "sounds": [
             "f",
-            "e",
-            "e",
+            "ee",
             "t"
           ],
           "verified": true,
@@ -3684,13 +3572,8 @@
               "s": "f"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -3703,8 +3586,7 @@
           "word": "seed",
           "sounds": [
             "s",
-            "e",
-            "e",
+            "ee",
             "d"
           ],
           "verified": true,
@@ -3714,13 +3596,8 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -4523,8 +4400,7 @@
           "word": "feel",
           "sounds": [
             "f",
-            "e",
-            "e",
+            "ee",
             "l"
           ],
           "verified": true,
@@ -4534,13 +4410,8 @@
               "s": "f"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -5851,8 +5722,7 @@
           "word": "feel",
           "sounds": [
             "f",
-            "e",
-            "e",
+            "ee",
             "l"
           ],
           "verified": true,
@@ -5862,13 +5732,8 @@
               "s": "f"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -6022,8 +5887,7 @@
           "word": "seat",
           "sounds": [
             "s",
-            "e",
-            "a",
+            "ea",
             "t"
           ],
           "verified": true,
@@ -6033,13 +5897,9 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
+              "g": "ēa",
+              "s": "ea",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -6805,8 +6665,7 @@
           "word": "feel",
           "sounds": [
             "f",
-            "e",
-            "e",
+            "ee",
             "l"
           ],
           "verified": true,
@@ -6816,13 +6675,8 @@
               "s": "f"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -7271,8 +7125,7 @@
           "word": "feel",
           "sounds": [
             "f",
-            "e",
-            "e",
+            "ee",
             "l"
           ],
           "verified": true,
@@ -7282,13 +7135,8 @@
               "s": "f"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -8137,8 +7985,7 @@
           "word": "teeth",
           "sounds": [
             "t",
-            "e",
-            "e",
+            "ee",
             "th"
           ],
           "verified": true,
@@ -8148,13 +7995,8 @@
               "s": "t"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -8443,8 +8285,7 @@
           "word": "teeth",
           "sounds": [
             "t",
-            "e",
-            "e",
+            "ee",
             "th"
           ],
           "verified": true,
@@ -8454,13 +8295,8 @@
               "s": "t"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -9602,8 +9438,7 @@
           "word": "for",
           "sounds": [
             "f",
-            "o-",
-            "r"
+            "or"
           ],
           "verified": true,
           "note": "book renders 'or' as long-o + r",
@@ -9613,33 +9448,24 @@
               "s": "f"
             },
             {
-              "g": "ō",
-              "s": "o-",
-              "style": "long"
-            },
-            {
-              "g": "r",
-              "s": "r"
+              "g": "or",
+              "s": "or",
+              "style": "digraph"
             }
           ]
         },
         {
           "word": "or",
           "sounds": [
-            "o-",
-            "r"
+            "or"
           ],
           "verified": true,
           "note": "book renders 'or' as long-o + r",
           "units": [
             {
-              "g": "ō",
-              "s": "o-",
-              "style": "long"
-            },
-            {
-              "g": "r",
-              "s": "r"
+              "g": "or",
+              "s": "or",
+              "style": "digraph"
             }
           ]
         },
@@ -9647,8 +9473,7 @@
           "word": "goat",
           "sounds": [
             "g",
-            "o-",
-            "a",
+            "oa",
             "t"
           ],
           "verified": true,
@@ -9658,13 +9483,9 @@
               "s": "g"
             },
             {
-              "g": "ō",
-              "s": "o-",
+              "g": "ōa",
+              "s": "oa",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -9676,8 +9497,7 @@
           "word": "coat",
           "sounds": [
             "c",
-            "o-",
-            "a",
+            "oa",
             "t"
           ],
           "verified": true,
@@ -9687,13 +9507,9 @@
               "s": "c"
             },
             {
-              "g": "ō",
-              "s": "o-",
+              "g": "ōa",
+              "s": "oa",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -9705,8 +9521,7 @@
           "word": "need",
           "sounds": [
             "n",
-            "e",
-            "e",
+            "ee",
             "d"
           ],
           "verified": true,
@@ -9716,13 +9531,8 @@
               "s": "n"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ē",
-              "s": "e",
+              "g": "ēē",
+              "s": "ee",
               "style": "long"
             },
             {
@@ -10090,8 +9900,7 @@
           "word": "goats",
           "sounds": [
             "g",
-            "o-",
-            "a",
+            "oa",
             "t",
             "s"
           ],
@@ -10102,13 +9911,9 @@
               "s": "g"
             },
             {
-              "g": "ō",
-              "s": "o-",
+              "g": "ōa",
+              "s": "oa",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -10124,8 +9929,7 @@
           "word": "coats",
           "sounds": [
             "c",
-            "o-",
-            "a",
+            "oa",
             "t",
             "s"
           ],
@@ -10136,13 +9940,9 @@
               "s": "c"
             },
             {
-              "g": "ō",
-              "s": "o-",
+              "g": "ōa",
+              "s": "oa",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -10186,19 +9986,14 @@
         {
           "word": "or",
           "sounds": [
-            "o-",
-            "r"
+            "or"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ō",
-              "s": "o-",
-              "style": "long"
-            },
-            {
-              "g": "r",
-              "s": "r"
+              "g": "or",
+              "s": "or",
+              "style": "digraph"
             }
           ]
         },
@@ -10206,8 +10001,7 @@
           "word": "for",
           "sounds": [
             "f",
-            "o-",
-            "r"
+            "or"
           ],
           "verified": true,
           "units": [
@@ -10216,13 +10010,9 @@
               "s": "f"
             },
             {
-              "g": "ō",
-              "s": "o-",
-              "style": "long"
-            },
-            {
-              "g": "r",
-              "s": "r"
+              "g": "or",
+              "s": "or",
+              "style": "digraph"
             }
           ]
         },
@@ -10692,20 +10482,14 @@
         {
           "word": "ears",
           "sounds": [
-            "e",
-            "ar",
+            "ear",
             "s"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ar",
-              "s": "ar",
+              "g": "ear",
+              "s": "ear",
               "style": "digraph"
             },
             {
@@ -10859,8 +10643,7 @@
           "word": "goat",
           "sounds": [
             "g",
-            "o-",
-            "a",
+            "oa",
             "t"
           ],
           "verified": true,
@@ -10870,13 +10653,9 @@
               "s": "g"
             },
             {
-              "g": "ō",
-              "s": "o-",
+              "g": "ōa",
+              "s": "oa",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -10990,8 +10769,7 @@
           "word": "seat",
           "sounds": [
             "s",
-            "e",
-            "a",
+            "ea",
             "t"
           ],
           "verified": true,
@@ -11001,13 +10779,9 @@
               "s": "s"
             },
             {
-              "g": "ē",
-              "s": "e",
+              "g": "ēa",
+              "s": "ea",
               "style": "long"
-            },
-            {
-              "g": "a",
-              "s": "a"
             },
             {
               "g": "t",
@@ -11019,8 +10793,7 @@
           "word": "hear",
           "sounds": [
             "h",
-            "e",
-            "ar"
+            "ear"
           ],
           "verified": true,
           "units": [
@@ -11029,13 +10802,8 @@
               "s": "h"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ar",
-              "s": "ar",
+              "g": "ear",
+              "s": "ear",
               "style": "digraph"
             }
           ]
@@ -11306,8 +11074,7 @@
           "word": "near",
           "sounds": [
             "n",
-            "e",
-            "ar"
+            "ear"
           ],
           "verified": true,
           "units": [
@@ -11316,13 +11083,8 @@
               "s": "n"
             },
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ar",
-              "s": "ar",
+              "g": "ear",
+              "s": "ear",
               "style": "digraph"
             }
           ]
@@ -11330,20 +11092,14 @@
         {
           "word": "ears",
           "sounds": [
-            "e",
-            "ar",
+            "ear",
             "s"
           ],
           "verified": true,
           "units": [
             {
-              "g": "ē",
-              "s": "e",
-              "style": "long"
-            },
-            {
-              "g": "ar",
-              "s": "ar",
+              "g": "ear",
+              "s": "ear",
               "style": "digraph"
             },
             {
