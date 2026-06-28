@@ -74,10 +74,13 @@ function useTts() {
         speak(say, { slow: true });
         return;
       }
+      // Human clips exist as either .m4a (new) or .mp3 (original 13). Try each;
+      // only fall back to TTS if no format loads. play() can reject with
+      // AbortError when a new tap interrupts it — that is NOT a miss.
       const exts = ["m4a", "mp3"];
       const tryExt = (i) => {
         if (i >= exts.length) {
-          cache.current.set(key, false); // no clip in any format
+          cache.current.set(key, false);
           speak(say, { slow: true });
           return;
         }
@@ -87,10 +90,9 @@ function useTts() {
         }
         const a = new Audio(`/audio/s-${say}.${exts[i]}`);
         audioRef.current = a;
-        a.onerror = () => tryExt(i + 1);          // missing/undecodable -> next ext
+        a.onerror = () => tryExt(i + 1);
         a.play().catch((err) => {
           if (err && err.name === "NotSupportedError") tryExt(i + 1);
-          // AbortError (interrupted by a new tap) -> ignore, clip is fine
         });
       };
       tryExt(0);
@@ -266,17 +268,13 @@ export default function ReadingApp() {
       {lesson.story && (
         <section className="lr-story">
           <h2>Story</h2>
-          <p>
-            {lesson.story.words.map((w, i) => (
-              <button
-                key={i}
-                className="lr-storyword"
-                onClick={() => speak(w, { slow: false })}
-              >
-                {w}
-              </button>
-            ))}
-          </p>
+          <p className="lr-storytext">{lesson.story.text}</p>
+          <button
+            className="lr-btn lr-btn--ghost lr-story-read"
+            onClick={() => speak(lesson.story.text, { slow: false })}
+          >
+            Read story
+          </button>
         </section>
       )}
     </div>
@@ -314,7 +312,7 @@ const css = `
   font-size:clamp(3rem,14vw,5.5rem);line-height:1;
 }
 .lr-word.is-blended{gap:0}
-.lr-sound{position:relative;opacity:.22;transition:opacity .25s ease,transform .25s ease}
+.lr-sound{position:relative;opacity:.4;transition:opacity .25s ease,transform .25s ease}
 .lr-sound.is-shown{opacity:1}
 .lr-sound.is-active{color:var(--g);transform:translateY(-2px)}
 .lr-sound.is-joined{opacity:1;color:var(--bg)}
@@ -346,13 +344,14 @@ const css = `
 .lr-btn:focus-visible{outline:2px solid var(--g2);outline-offset:2px}
 .lr-progress{text-align:center;font-size:.85rem;color:var(--g);margin:.25rem 0 0}
 
-.lr-story{margin-top:2rem;text-align:center}
-.lr-story h2{font-family:"Cinzel",serif;color:var(--g2);font-size:1.1rem;margin:0 0 .5rem}
-.lr-storyword{
-  font-family:"IM Fell English",serif;font-size:1.5rem;color:var(--p);
-  background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;
-  margin:0 .15rem;padding:0 .1rem;
+.lr-story{margin-top:2.5rem;text-align:center}
+.lr-story h2{font-family:"Cinzel",serif;color:var(--g2);font-size:1.1rem;margin:0 0 .75rem}
+.lr-storytext{
+  font-family:"IM Fell English",serif;font-size:1.4rem;line-height:1.95;
+  color:#2a2008;            /* dark ink, high contrast on white */
+  text-align:left;max-width:34rem;margin:0 auto;
 }
+.lr-story-read{margin-top:1.25rem}
 .lr-storyword:hover,.lr-storyword:focus-visible{color:var(--g2);border-bottom-color:var(--g);outline:none}
 
 @media (prefers-reduced-motion:reduce){
