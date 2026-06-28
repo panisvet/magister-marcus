@@ -24,88 +24,113 @@ const GLYPH = {
 const glyph = (s) => GLYPH[s] || s;
 
 function useTts() {
-  const cache = useRef(new Map());
+  const cache = useRef(new Map()); // base -> blob URL | "miss"
   const audioRef = useRef(null);
 
-  const playUrl = useCallback(async (url) => {
+  const playUrl = (url) => {
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
     }
     const a = new Audio(url);
     audioRef.current = a;
-    await a.play();
-  }, []);
+    return a.play();
+  };
 
-  // Whole-word / fallback pronunciation via the TTS proxy.
-  const speak = useCallback(async (text, { slow = false } = {}) => {
-    if (!text) return;
-    const key = `${slow ? "s:" : "f:"}${text}`;
+  // Server TTS fallback (used only when no static clip exists).
+  const tts = useCallback(async (text, slow) => {
+    const key = `tts:${slow ? "s" : "f"}:${text}`;
     try {
       let url = cache.current.get(key);
-      if (!url) {
+      if (!url || url === "miss") {
         const res = await fetch("/api/tts", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text, slow }),
         });
         if (!res.ok) throw new Error(`tts ${res.status}`);
-        const blob = await res.blob();
-        url = URL.createObjectURL(blob);
+        url = URL.createObjectURL(await res.blob());
         cache.current.set(key, url);
       }
       await playUrl(url);
     } catch (e) {
-      // Audio is an enhancement; reading still works if it fails.
       console.warn("Pronunciation unavailable:", e.message);
     }
-  }, [playUrl]);
+  }, []);
 
-  // Individual phonemes use the human recordings at /audio/s-<say>.m4a
-  // (e.g. s-ay, s-ehh, s-nnn). We play the file directly; if it is missing
-  // the browser fires an error (note: dev servers may return index.html with
-  // a 200, which also fails to decode) and we fall back to TTS so the child
-  // always hears the sound. Known misses are cached so we go straight to TTS.
-  const playSound = useCallback(
-    (say) => {
-      if (!say) return;
-      const key = `clip:${say}`;
-      if (cache.current.get(key) === false) {
-        speak(say, { slow: true });
-        return;
-      }
-      // Human clips exist as either .m4a (new) or .mp3 (original 13). Try each;
-      // only fall back to TTS if no format loads. play() can reject with
-      // AbortError when a new tap interrupts it — that is NOT a miss.
-      const exts = ["m4a", "mp3"];
-      const tryExt = (i) => {
-        if (i >= exts.length) {
-          cache.current.set(key, false);
-          speak(say, { slow: true });
-          return;
-        }
-        if (audioRef.current) {
-          audioRef.current.pause();
-          audioRef.current.currentTime = 0;
-        }
-        const a = new Audio(`/audio/s-${say}.${exts[i]}`);
+  // Try a static clip at /audio/<base>.(m4a|mp3). Resolves true if it played,
+  // false if no format loaded. Misses are cached so we skip straight to TTS.
+  const playClip = useCallback((base) => {
+    return new Promise((resolve) => {
+      if (cache.current.get(`miss:${base}`)) return resolve(false);
+      const exts = ["mp3", "m4a"];
+      let i = 0;
+      let settled = false;
+      const done = (v) => { if (!settled) { settled = true; resolve(v); } };
+      const tryNext = () => {
+        if (i >= exts.length) { cache.current.set(`miss:${base}`, true); return done(false); }
+        if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
+        const a = new Audio(`/audio/${base}.${exts[i]}`);
         audioRef.current = a;
-        a.onerror = () => tryExt(i + 1);
-        a.play().catch((err) => {
-          if (err && err.name === "NotSupportedError") tryExt(i + 1);
-        });
+        a.onerror = () => { i += 1; tryNext(); };       // missing/undecodable -> next ext
+        a.play().then(
+          () => done(true),
+          (err) => { if (err && err.name === "AbortError") done(true); } // interrupted: clip is fine
+        );
       };
-      tryExt(0);
-    },
-    [speak]
-  );
+      tryNext();
+    });
+  }, []);
+
+  // Whole word: prefer baked clip (f-<word> fast / s-<word> slow); else TTS.
+  // This avoids xAI spelling short words (e.g. "am" -> "ay em"). Sentences (with
+  // spaces) skip the clip lookup and go straight to TTS.
+  const speak = useCallback(async (text, { slow = false } = {}) => {
+    if (!text) return;
+    if (!/\s/.test(text)) {
+      const ok = await playClip(`${slow ? "s" : "f"}-${text}`);
+      if (ok) return;
+    }
+    await tts(text, slow);
+  }, [playClip, tts]);
+
+  // Single phoneme: human recording at /audio/s-<say>; else TTS (slow).
+  const playSound = useCallback(async (say) => {
+    if (!say) return;
+    const ok = await playClip(`s-${say}`);
+    if (!ok) await tts(say, true);
+  }, [playClip, tts]);
+
+  // "Say it slow": play each phoneme clip in order, waiting for each to finish
+  // (e.g. sat -> /sss/ /aaa/ /t/). Falls back to TTS for any missing clip.
+  const playSequence = useCallback(async (says, gap = 140) => {
+    for (const say of says) {
+      if (!say) continue;
+      await new Promise((resolve) => {
+        const exts = ["mp3", "m4a"];
+        let i = 0;
+        let settled = false;
+        const done = () => { if (!settled) { settled = true; setTimeout(resolve, gap); } };
+        const tryNext = () => {
+          if (i >= exts.length) { tts(say, true).then(done, done); return; }
+          if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
+          const a = new Audio(`/audio/s-${say}.${exts[i]}`);
+          audioRef.current = a;
+          a.onerror = () => { i += 1; tryNext(); };
+          a.onended = done;
+          a.play().catch(() => {}); // onerror handles real failures
+        };
+        tryNext();
+      });
+    }
+  }, [tts]);
 
   useEffect(
     () => () =>
-      cache.current.forEach((u) => u && URL.revokeObjectURL(u)),
+      cache.current.forEach((u) => typeof u === "string" && u.startsWith("blob:") && URL.revokeObjectURL(u)),
     []
   );
-  return { speak, playSound };
+  return { speak, playSound, playSequence };
 }
 
 export default function ReadingApp() {
@@ -116,7 +141,7 @@ export default function ReadingApp() {
   const [li, setLi] = useState(0);
   const [wi, setWi] = useState(0);
   const [step, setStep] = useState(0); // sounds revealed so far
-  const { speak, playSound } = useTts();
+  const { speak, playSound, playSequence } = useTts();
 
   const lesson = playable[li];
   const words = lesson.decodableWords;
@@ -246,7 +271,7 @@ export default function ReadingApp() {
         </button>
         <button
           className="lr-btn lr-btn--ghost"
-          onClick={() => speak(word.word, { slow: true })}
+          onClick={() => playSequence(sounds.map((s) => SAY[s] ?? glyph(s)))}
         >
           Say it slow
         </button>
@@ -284,7 +309,7 @@ export default function ReadingApp() {
 const css = `
 .lr{
   --g:var(--gold,#c9902a); --g2:var(--gold2,#e8b84b);
-  --p:var(--parch,#f7edcc); --bg:var(--bg,#0e0b07);
+  --p:var(--parch,#f7edcc); --bg:#0e0b07;  /* literal: must not self-reference / inherit page --bg */
   max-width:48rem;margin:0 auto;padding:1.5rem 1.25rem 3rem;
   color:var(--p);font-family:"Crimson Pro",Georgia,serif;
 }
