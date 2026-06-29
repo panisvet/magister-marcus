@@ -24,6 +24,16 @@ const GLYPH = {
 };
 const glyph = (s) => GLYPH[s] || s;
 
+// Fisher–Yates shuffle (returns a new array; never mutates the source).
+const shuffle = (arr) => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+
 // Sounds introduced per lesson (drives the lessons 1-8 sound-practice cards).
 const INV = data.phonemeInventory
   .filter((p) => p.lesson != null)
@@ -150,6 +160,8 @@ export default function ReadingApp() {
   const [li, setLi] = useState(0);
   const [wi, setWi] = useState(0);
   const [step, setStep] = useState(0); // sounds revealed so far
+  const [soundOrder, setSoundOrder] = useState(null); // shuffled sound syms, or null = book order
+  const [wordOrder, setWordOrder] = useState(null);   // shuffled word indices, or null = book order
   const { speak, playSound, playSequence } = useTts();
 
   const lesson = playable[li];
@@ -159,7 +171,15 @@ export default function ReadingApp() {
   const newSyms = new Set(
     INV.filter((p) => p.lesson === lesson.lesson).map((p) => p.sym)
   );
-  const word = words[wi];
+  // Apply shuffle if active; fall back to book order. filter(Boolean) guards a
+  // stale order after a lesson change (reset in goLesson keeps this clean).
+  const orderedSounds = soundOrder
+    ? soundOrder.map((s) => learned.find((p) => p.sym === s)).filter(Boolean)
+    : learned;
+  const orderedWords = wordOrder
+    ? wordOrder.map((i) => words[i]).filter(Boolean)
+    : words;
+  const word = orderedWords[wi];
   // Render from per-word `units` when present (grapheme display + silent/ck/double/long
   // styling); fall back to raw `sounds` for any word that has no units yet.
   const units = word ? (word.units ?? word.sounds.map((s) => ({ g: glyph(s), s }))) : [];
@@ -174,6 +194,15 @@ export default function ReadingApp() {
   };
   const goLesson = (i) => {
     setLi(i);
+    setWi(0);
+    reset();
+    setSoundOrder(null);
+    setWordOrder(null);
+  };
+
+  const shuffleSounds = () => setSoundOrder(shuffle(learned.map((p) => p.sym)));
+  const shuffleWords = () => {
+    setWordOrder(shuffle(words.map((_, i) => i)));
     setWi(0);
     reset();
   };
@@ -221,22 +250,28 @@ export default function ReadingApp() {
         </label>
       </header>
 
-      {isSound ? (
-        <section className="lr-soundcard">
-          <p className="lr-soundhead">
-            {newSyms.size ? (
-              <>New sound{newSyms.size > 1 ? "s" : ""}: <strong>{lesson.newSound}</strong> — tap the rest to review</>
-            ) : (
-              "Review — tap each sound"
+      <section className={"lr-soundcard" + (isSound ? "" : " lr-soundcard--mini")}>
+          <div className="lr-soundtop">
+            <p className="lr-soundhead">
+              {newSyms.size ? (
+                <>New sound{newSyms.size > 1 ? "s" : ""}: <strong>{lesson.newSound}</strong> — tap any letter to hear it</>
+              ) : (
+                "Sounds so far — tap each to hear it"
+              )}
+            </p>
+            {orderedSounds.length > 1 && (
+              <button className="lr-shuf" onClick={shuffleSounds} aria-label="Shuffle the letters">
+                ⤮ Mix letters
+              </button>
             )}
-          </p>
+          </div>
           <div className="lr-soundgrid">
-            {learned.map((p) => (
+            {orderedSounds.map((p) => (
               <button
                 key={p.sym}
                 className={"lr-stile" + (newSyms.has(p.sym) ? " is-new" : "")}
                 onClick={() => playSound(p.say)}
-                aria-label={`Sound ${glyph(p.sym)} as in ${p.key}. Tap to hear it.`}
+                aria-label={`Sound ${glyph(p.sym)}${p.key ? ` as in ${p.key}` : ""}. Tap to hear it.`}
               >
                 <span className="lr-sglyph">{glyph(p.sym)}</span>
                 {p.key && <span className="lr-skey">{p.key}</span>}
@@ -244,8 +279,17 @@ export default function ReadingApp() {
             ))}
           </div>
         </section>
-      ) : (
+
+      {!isSound && (
         <>
+      <div className="lr-readrow">
+        <p className="lr-readlabel">Now read these words</p>
+        {words.length > 1 && (
+          <button className="lr-shuf" onClick={shuffleWords} aria-label="Shuffle the words">
+            ⤮ Mix words
+          </button>
+        )}
+      </div>
       <main
         className="lr-card"
         role="button"
@@ -445,6 +489,26 @@ const css = `
 .lr-stile.is-new{border-color:var(--g2);box-shadow:0 0 0 3px rgba(232,184,75,.4),0 4px 12px rgba(0,0,0,.25)}
 .lr-sglyph{font-family:"IM Fell English","Crimson Pro",serif;font-size:clamp(2rem,8vw,2.8rem);line-height:1}
 .lr-skey{font-size:.85rem;color:#6b5320}
+.lr-soundcard--mini{padding:1rem 1rem 1.1rem;margin-bottom:1.25rem;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.lr-soundcard--mini .lr-soundhead{margin:0 0 .8rem;font-size:.95rem}
+.lr-soundcard--mini .lr-soundgrid{grid-template-columns:repeat(auto-fill,minmax(3.4rem,1fr));gap:.5rem}
+.lr-soundcard--mini .lr-stile{border-radius:.6rem;border-width:1.5px;box-shadow:0 2px 6px rgba(0,0,0,.2);gap:.15rem}
+.lr-soundcard--mini .lr-sglyph{font-size:1.6rem}
+.lr-soundcard--mini .lr-skey{font-size:.62rem}
+.lr-readlabel{text-align:center;font-family:"Cinzel",serif;color:var(--g);font-size:.8rem;letter-spacing:.04em;margin:0 0 .6rem}
+
+/* shuffle / mix controls */
+.lr-soundtop{display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap;margin-bottom:.4rem}
+.lr-soundtop .lr-soundhead{margin:0;text-align:left;flex:1 1 auto}
+.lr-readrow{display:flex;align-items:center;justify-content:center;gap:.75rem;flex-wrap:wrap;margin:0 0 .6rem}
+.lr-readrow .lr-readlabel{margin:0}
+.lr-shuf{
+  flex:0 0 auto;font-family:"Cinzel",serif;font-size:.72rem;letter-spacing:.03em;cursor:pointer;
+  color:var(--bg);background:var(--g2);border:none;border-radius:.5rem;padding:.4rem .7rem;white-space:nowrap;
+}
+.lr-shuf:hover{background:var(--g)}
+.lr-shuf:focus-visible{outline:2px solid var(--g2);outline-offset:2px}
+.lr-soundcard--mini .lr-shuf{font-size:.66rem;padding:.3rem .55rem}
 
 @media (prefers-reduced-motion:reduce){
   .lr-sound,.lr-arrow,.lr-stile{transition:none}
