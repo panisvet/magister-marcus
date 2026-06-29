@@ -504,82 +504,6 @@
      ]
     },
     {
-     "word": "sat",
-     "sounds": [
-      "s",
-      "a",
-      "t"
-     ],
-     "verified": true,
-     "units": [
-      {
-       "g": "s",
-       "s": "s"
-      },
-      {
-       "g": "a",
-       "s": "a"
-      },
-      {
-       "g": "t",
-       "s": "t"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "lesson": 11,
-   "newSound": null,
-   "decodableWords": [
-    {
-     "word": "sat",
-     "sounds": [
-      "s",
-      "a",
-      "t"
-     ],
-     "verified": true,
-     "units": [
-      {
-       "g": "s",
-       "s": "s"
-      },
-      {
-       "g": "a",
-       "s": "a"
-      },
-      {
-       "g": "t",
-       "s": "t"
-      }
-     ]
-    },
-    {
-     "word": "am",
-     "sounds": [
-      "a",
-      "m"
-     ],
-     "verified": true,
-     "units": [
-      {
-       "g": "a",
-       "s": "a"
-      },
-      {
-       "g": "m",
-       "s": "m"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "lesson": 12,
-   "newSound": "d",
-   "decodableWords": [
-    {
      "word": "me",
      "sounds": [
       "m",
@@ -618,64 +542,17 @@
      ]
     },
     {
-     "word": "seed",
+     "word": "sat",
      "sounds": [
       "s",
-      "ee",
-      "d"
-     ],
-     "verified": true,
-     "units": [
-      {
-       "g": "s",
-       "s": "s"
-      },
-      {
-       "g": "ēē",
-       "s": "ee",
-       "style": "long"
-      },
-      {
-       "g": "d",
-       "s": "d"
-      }
-     ]
-    },
-    {
-     "word": "sam",
-     "sounds": [
-      "s",
-      "a",
-      "m"
-     ],
-     "verified": true,
-     "units": [
-      {
-       "g": "s",
-       "s": "s"
-      },
-      {
-       "g": "a",
-       "s": "a"
-      },
-      {
-       "g": "m",
-       "s": "m"
-      }
-     ]
-    },
-    {
-     "word": "rat",
-     "sounds": [
-      "r",
       "a",
       "t"
      ],
      "verified": true,
      "units": [
       {
-       "g": "r",
-       "s": "r"
+       "g": "s",
+       "s": "s"
       },
       {
        "g": "a",
@@ -690,7 +567,7 @@
    ]
   },
   {
-   "lesson": 13,
+   "lesson": 11,
    "newSound": null,
    "decodableWords": [
     {
@@ -835,6 +712,120 @@
        "s": "t"
       }
      ]
+    }
+   ]
+  },
+  {
+   "lesson": 12,
+   "newSound": "d",
+   "decodableWords": [
+    {
+     "word": "seed",
+     "sounds": [
+      "s",
+      "ee",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ēē",
+       "s": "ee",
+       "style": "long"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "sam",
+     "sounds": [
+      "s",
+      "a",
+      "m"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      }
+     ]
+    },
+    {
+     "word": "rat",
+     "sounds": [
+      "r",
+      "a",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "me",
+     "sounds": [
+      "m",
+      "e"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "ē",
+       "s": "e",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "eat",
+     "sounds": [
+      "ea",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ēa",
+       "s": "ea",
+       "style": "long"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
     },
     {
      "word": "seat",
@@ -860,19 +851,11 @@
       }
      ]
     }
-   ],
-   "story": {
-    "text": "see me eat",
-    "words": [
-     "see",
-     "me",
-     "eat"
-    ]
-   }
+   ]
   },
   {
-   "lesson": 14,
-   "newSound": "i",
+   "lesson": 13,
+   "newSound": null,
    "decodableWords": [
     {
      "word": "mad",
@@ -1046,6 +1029,128 @@
        "s": "d"
       }
      ]
+    }
+   ],
+   "story": {
+    "text": "see me eat",
+    "words": [
+     "see",
+     "me",
+     "eat"
+    ]
+   }
+  },
+  {
+   "lesson": 14,
+   "newSound": "i",
+   "decodableWords": [
+    {
+     "word": "read",
+     "sounds": [
+      "r",
+      "ea",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "ēa",
+       "s": "ea",
+       "style": "long"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "see",
+     "sounds": [
+      "s",
+      "ee"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ēē",
+       "s": "ee",
+       "style": "long"
+      }
+     ]
+    },
+    {
+     "word": "mad",
+     "sounds": [
+      "m",
+      "a",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "m",
+       "s": "m"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "am",
+     "sounds": [
+      "a",
+      "m"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "m",
+       "s": "m"
+      }
+     ]
+    },
+    {
+     "word": "seed",
+     "sounds": [
+      "s",
+      "ee",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "ēē",
+       "s": "ee",
+       "style": "long"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
     },
     {
      "word": "ear",
@@ -1059,6 +1164,89 @@
        "g": "ear",
        "s": "ear",
        "style": "digraph"
+      }
+     ]
+    },
+    {
+     "word": "sad",
+     "sounds": [
+      "s",
+      "a",
+      "d"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "s",
+       "s": "s"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "d",
+       "s": "d"
+      }
+     ]
+    },
+    {
+     "word": "rat",
+     "sounds": [
+      "r",
+      "a",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "r",
+       "s": "r"
+      },
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "eat",
+     "sounds": [
+      "ea",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "ēa",
+       "s": "ea",
+       "style": "long"
+      },
+      {
+       "g": "t",
+       "s": "t"
+      }
+     ]
+    },
+    {
+     "word": "at",
+     "sounds": [
+      "a",
+      "t"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "a",
+       "s": "a"
+      },
+      {
+       "g": "t",
+       "s": "t"
       }
      ]
     }
@@ -1240,6 +1428,24 @@
    "newSound": "th",
    "decodableWords": [
     {
+     "word": "is",
+     "sounds": [
+      "i",
+      "s"
+     ],
+     "verified": true,
+     "units": [
+      {
+       "g": "i",
+       "s": "i"
+      },
+      {
+       "g": "s",
+       "s": "s"
+      }
+     ]
+    },
+    {
      "word": "it",
      "sounds": [
       "i",
@@ -1286,6 +1492,7 @@
       "ear"
      ],
      "verified": true,
+     "note": "book prints joined e+ar before ar is formally introduced",
      "units": [
       {
        "g": "ear",
@@ -1365,7 +1572,20 @@
        "s": "d"
       }
      ]
-    },
+    }
+   ],
+   "story": {
+    "text": "read it",
+    "words": [
+     "read",
+     "it"
+    ]
+   }
+  },
+  {
+   "lesson": 17,
+   "newSound": null,
+   "decodableWords": [
     {
      "word": "is",
      "sounds": [
@@ -1383,20 +1603,7 @@
        "s": "s"
       }
      ]
-    }
-   ],
-   "story": {
-    "text": "read it",
-    "words": [
-     "read",
-     "it"
-    ]
-   }
-  },
-  {
-   "lesson": 17,
-   "newSound": null,
-   "decodableWords": [
+    },
     {
      "word": "this",
      "sounds": [
@@ -1474,6 +1681,7 @@
       "ear"
      ],
      "verified": true,
+     "note": "book prints joined e+ar before ar is formally introduced",
      "units": [
       {
        "g": "ear",
