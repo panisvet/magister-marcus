@@ -24,6 +24,14 @@ const GLYPH = {
 };
 const glyph = (s) => GLYPH[s] || s;
 
+// TTS pronunciation overrides for English homographs whose spelling does not
+// tell the synthesizer which reading to use. Keyed by lowercase word; value is a
+// respelling sent to TTS only (clip filenames still use the real spelling). A
+// per-word `speakAs` field in the data takes precedence over this map.
+const SPEAK_AS = {
+  read: "reed",
+};
+
 // Fisher–Yates shuffle (returns a new array; never mutates the source).
 const shuffle = (arr) => {
   const a = [...arr];
@@ -74,40 +82,55 @@ function useTts() {
     }
   }, []);
 
-  // Try a static clip at /audio/<base>.(m4a|mp3). Resolves true if it played,
-  // false if no format loaded. Misses are cached so we skip straight to TTS.
-  const playClip = useCallback((base) => {
-    return new Promise((resolve) => {
-      if (cache.current.get(`miss:${base}`)) return resolve(false);
-      const exts = ["mp3", "m4a"];
-      let i = 0;
-      let settled = false;
-      const done = (v) => { if (!settled) { settled = true; resolve(v); } };
-      const tryNext = () => {
-        if (i >= exts.length) { cache.current.set(`miss:${base}`, true); return done(false); }
-        if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
-        const a = new Audio(`/audio/${base}.${exts[i]}`);
-        audioRef.current = a;
-        a.onerror = () => { i += 1; tryNext(); };       // missing/undecodable -> next ext
-        a.play().then(
-          () => done(true),
-          (err) => { if (err && err.name === "AbortError") done(true); } // interrupted: clip is fine
-        );
-      };
-      tryNext();
-    });
+  // Resolve a static clip at /audio/<base>.(mp3|m4a) to a playable blob URL, or
+  // null if none exists. We fetch and check the content-type instead of trusting
+  // <audio>: a missing file on Cloudflare Pages returns the SPA index.html with
+  // HTTP 200, which <audio>.play() can falsely report as success (silently
+  // skipping TTS). Anything that is HTML (or not OK) is treated as a miss.
+  // Results are cached: blob URL on hit, "miss" on miss.
+  const clipUrl = useCallback(async (base) => {
+    const cached = cache.current.get(`clip:${base}`);
+    if (cached === "miss") return null;
+    if (cached) return cached;
+    for (const ext of ["mp3", "m4a"]) {
+      try {
+        const res = await fetch(`/audio/${base}.${ext}`);
+        const type = res.headers.get("content-type") || "";
+        if (res.ok && !/text\/html/i.test(type)) {
+          const url = URL.createObjectURL(await res.blob());
+          cache.current.set(`clip:${base}`, url);
+          return url;
+        }
+      } catch (e) { /* network error: try next ext */ }
+    }
+    cache.current.set(`clip:${base}`, "miss");
+    return null;
   }, []);
+
+  // Play a static clip. Resolves true if a real clip played, false otherwise
+  // (so callers fall through to TTS).
+  const playClip = useCallback(async (base) => {
+    const url = await clipUrl(base);
+    if (!url) return false;
+    try { await playUrl(url); return true; }
+    catch (err) { return !!(err && err.name === "AbortError"); } // interrupted: clip is fine
+  }, [clipUrl]);
 
   // Whole word: prefer baked clip (f-<word> fast / s-<word> slow); else TTS.
   // This avoids xAI spelling short words (e.g. "am" -> "ay em"). Sentences (with
   // spaces) skip the clip lookup and go straight to TTS.
-  const speak = useCallback(async (text, { slow = false } = {}) => {
+  // `as` is a pronunciation override for the TTS fallback only (the clip filename
+  // still uses the real spelling). Needed for homographs like "read" (/reed/ vs
+  // /red/), which xAI otherwise guesses wrong. Source: word.speakAs in the data,
+  // falling back to the small SPEAK_AS map below.
+  const speak = useCallback(async (text, { slow = false, as } = {}) => {
     if (!text) return;
     if (!/\s/.test(text)) {
       const ok = await playClip(`${slow ? "s" : "f"}-${text}`);
       if (ok) return;
     }
-    await tts(text, slow);
+    const spoken = as || SPEAK_AS[text.toLowerCase()] || text;
+    await tts(spoken, slow);
   }, [playClip, tts]);
 
   // Single phoneme: human recording at /audio/s-<say>; else TTS (slow).
@@ -118,28 +141,28 @@ function useTts() {
   }, [playClip, tts]);
 
   // "Say it slow": play each phoneme clip in order, waiting for each to finish
-  // (e.g. sat -> /sss/ /aaa/ /t/). Falls back to TTS for any missing clip.
+  // (e.g. sat -> /sss/ /aaa/ /t/). Uses the same content-type-aware lookup as
+  // playClip; falls back to TTS for any missing clip.
   const playSequence = useCallback(async (says, gap = 140) => {
     for (const say of says) {
       if (!say) continue;
-      await new Promise((resolve) => {
-        const exts = ["mp3", "m4a"];
-        let i = 0;
-        let settled = false;
-        const done = () => { if (!settled) { settled = true; setTimeout(resolve, gap); } };
-        const tryNext = () => {
-          if (i >= exts.length) { tts(say, true).then(done, done); return; }
+      const url = await clipUrl(`s-${say}`);
+      if (url) {
+        await new Promise((resolve) => {
           if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
-          const a = new Audio(`/audio/s-${say}.${exts[i]}`);
+          const a = new Audio(url);
           audioRef.current = a;
-          a.onerror = () => { i += 1; tryNext(); };
+          const done = () => setTimeout(resolve, gap);
           a.onended = done;
-          a.play().catch(() => {}); // onerror handles real failures
-        };
-        tryNext();
-      });
+          a.onerror = done;
+          a.play().catch(done);
+        });
+      } else {
+        await tts(say, true);
+        await new Promise((r) => setTimeout(r, gap));
+      }
     }
-  }, [tts]);
+  }, [clipUrl, tts]);
 
   useEffect(
     () => () =>
@@ -215,7 +238,7 @@ export default function ReadingApp() {
       playSound(SAY[sounds[next - 1]] ?? glyph(sounds[next - 1]));
     } else if (!blended) {
       setStep(sounds.length + 1);
-      speak(word.word, { slow: false });
+      speak(word.word, { slow: false, as: word.speakAs });
     } else {
       reset();
     }
@@ -364,7 +387,7 @@ export default function ReadingApp() {
         </button>
         <button
           className="lr-btn lr-btn--ghost"
-          onClick={() => speak(word.word, { slow: false })}
+          onClick={() => speak(word.word, { slow: false, as: word.speakAs })}
         >
           Say it fast
         </button>
