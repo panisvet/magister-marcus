@@ -25,7 +25,7 @@ const json = (obj, status = 200) =>
   });
 
 export async function onRequestPost({ request, env }) {
-  const apiKey = env.XAI_API_KEY || env.GROK_API_KEY || env.XAI_KEY;
+  const apiKey = env["tts-mm2"] || env.XAI_API_KEY || env.GROK_API_KEY || env.XAI_KEY;
   if (!apiKey) {
     return json({ error: "Server missing XAI_API_KEY binding" }, 500);
   }
