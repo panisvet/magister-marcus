@@ -15,7 +15,7 @@
  */
 
 const XAI_TTS_URL = "https://api.x.ai/v1/tts";
-const DEFAULT_VOICE = "eve";
+const DEFAULT_VOICE = "leo";
 const DEFAULT_LANGUAGE = "en";
 
 const json = (obj, status = 200) =>
@@ -25,13 +25,7 @@ const json = (obj, status = 200) =>
   });
 
 export async function onRequestPost({ request, env }) {
-  // TEMP DEBUG: GET/POST /api/tts?debug=keys returns binding NAMES only (no
-  // values) so we can confirm the exact env var name. Remove after fixing.
-  if (new URL(request.url).searchParams.get("debug") === "keys") {
-    return json({ keys: Object.keys(env) });
-  }
-
-  const apiKey = env["tts-mm2"] || env.XAI_API_KEY || env.GROK_API_KEY || env.XAI_KEY;
+  const apiKey = env.XAI_API_KEY || env["tts-mm2"] || env.GROK_API_KEY || env.XAI_KEY;
   if (!apiKey) {
     return json({ error: "Server missing XAI_API_KEY binding" }, 500);
   }
@@ -91,10 +85,7 @@ export async function onRequestPost({ request, env }) {
 }
 
 // Friendly response for non-POST probes.
-export async function onRequest({ request, env }) {
+export async function onRequest({ request }) {
   if (request.method === "POST") return; // handled by onRequestPost
-  if (new URL(request.url).searchParams.get("debug") === "keys") {
-    return json({ keys: Object.keys(env) });
-  }
   return json({ error: "Use POST with { text, slow? }" }, 405);
 }

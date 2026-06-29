@@ -61,7 +61,8 @@ function useTts() {
     return a.play();
   };
 
-  // Server TTS fallback (used only when no static clip exists).
+  // Server TTS fallback (used only when no static clip exists). Voice (leo) is
+  // configured server-side in functions/api/tts.js.
   const tts = useCallback(async (text, slow) => {
     const key = `tts:${slow ? "s" : "f"}:${text}`;
     try {
