@@ -1,0 +1,1596 @@
+{
+  "meta": {
+    "book": "Prima Latina",
+    "edition": "2nd",
+    "publisher": "Memoria Press",
+    "version": "1.0.0",
+    "total_lessons": 25,
+    "total_review_lessons": 5,
+    "status": "complete"
+  },
+
+  "pronunciation_rules": [
+    {
+      "id": "vowel-a",
+      "category": "vowel",
+      "symbol": "A",
+      "sound": "ah",
+      "example_latin": "ambulo",
+      "english_hint": "as in father"
+    },
+    {
+      "id": "vowel-e",
+      "category": "vowel",
+      "symbol": "E",
+      "sound": "ay",
+      "example_latin": "deus",
+      "english_hint": "as in they"
+    },
+    {
+      "id": "vowel-i",
+      "category": "vowel",
+      "symbol": "I",
+      "sound": "ee",
+      "example_latin": "via",
+      "english_hint": "as in machine"
+    },
+    {
+      "id": "vowel-o",
+      "category": "vowel",
+      "symbol": "O",
+      "sound": "oh",
+      "example_latin": "toga",
+      "english_hint": "as in no"
+    },
+    {
+      "id": "vowel-u",
+      "category": "vowel",
+      "symbol": "U",
+      "sound": "oo",
+      "example_latin": "luna",
+      "english_hint": "as in boo"
+    },
+    {
+      "id": "team-ae",
+      "category": "vowel_team",
+      "symbol": "ae",
+      "sound": "ay",
+      "example_latin": "caelum",
+      "english_hint": "like e in they (ay)"
+    },
+    {
+      "id": "team-oe",
+      "category": "vowel_team",
+      "symbol": "oe",
+      "sound": "ay",
+      "example_latin": "proelium",
+      "english_hint": "like e in they (ay)"
+    },
+    {
+      "id": "diphthong-au",
+      "category": "diphthong",
+      "symbol": "au",
+      "sound": "ow",
+      "example_latin": "nauta",
+      "english_hint": "like ow in cow"
+    },
+    {
+      "id": "consonant-c-soft",
+      "category": "consonant",
+      "symbol": "c",
+      "condition": "before e, i, ae, oe",
+      "sound": "ch",
+      "example_latin": "caelum",
+      "english_hint": "as in charity"
+    },
+    {
+      "id": "consonant-c-hard",
+      "category": "consonant",
+      "symbol": "c",
+      "condition": "before all other letters",
+      "sound": "k",
+      "example_latin": "clamo, corona",
+      "english_hint": "as in cat"
+    },
+    {
+      "id": "consonant-g-soft",
+      "category": "consonant",
+      "symbol": "g",
+      "condition": "before e, i, ae, oe",
+      "sound": "j",
+      "example_latin": "regina, gemini",
+      "english_hint": "as in germ"
+    },
+    {
+      "id": "consonant-g-hard",
+      "category": "consonant",
+      "symbol": "g",
+      "condition": "before all other letters",
+      "sound": "g",
+      "example_latin": "gloria",
+      "english_hint": "as in good"
+    },
+    {
+      "id": "consonant-j",
+      "category": "consonant",
+      "symbol": "j",
+      "condition": null,
+      "sound": "y",
+      "example_latin": "Jesus, judico",
+      "english_hint": "as in yes"
+    },
+    {
+      "id": "consonant-s",
+      "category": "consonant",
+      "symbol": "s",
+      "condition": null,
+      "sound": "s",
+      "example_latin": "specto",
+      "english_hint": "as in soup (never z)"
+    },
+    {
+      "id": "consonant-t-ts",
+      "category": "consonant",
+      "symbol": "t",
+      "condition": "when followed by i and a vowel",
+      "sound": "ts",
+      "example_latin": "etiam",
+      "english_hint": "like ts"
+    }
+  ],
+
+  "lessons": [
+    {
+      "id": 1,
+      "type": "lesson",
+      "title": "The Alphabet",
+      "focus": "Latin alphabet; vowel sounds A E I O U",
+      "practical_latin": [
+        { "latin": "Salve!", "english": "Hello! (to one person)" },
+        { "latin": "Salvete!", "english": "Hello! (to more than one person)" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-1-1", "latin": "ambulo", "english": "I walk",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "ambulo",
+          "derivatives": [
+            { "english": "ambulance", "gloss": "a vehicle to carry those who cannot walk to the hospital (n.)" }
+          ]
+        },
+        {
+          "id": "pl-1-2", "latin": "via", "english": "road",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "via",
+          "derivatives": [
+            { "english": "viaduct", "gloss": "a roadway or bridge on piers (n.)" }
+          ]
+        },
+        {
+          "id": "pl-1-3", "latin": "Deus", "english": "God",
+          "pos": "noun", "gender": "m", "declension": 2,
+          "audio_key": "deus",
+          "derivatives": [
+            { "english": "deity", "gloss": "a god (n.)" }
+          ]
+        },
+        {
+          "id": "pl-1-4", "latin": "toga", "english": "toga",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "toga",
+          "derivatives": []
+        },
+        {
+          "id": "pl-1-5", "latin": "luna", "english": "moon",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "luna",
+          "derivatives": [
+            { "english": "lunar", "gloss": "having to do with the moon (adj.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "oremus",
+        "title": "Oremus",
+        "latin": "Oremus.",
+        "english": "Let us pray.",
+        "type": "motto",
+        "audio_key": "oremus",
+        "new_portion": "Oremus.",
+        "note": "Say this before each prayer."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 2,
+      "type": "lesson",
+      "title": "Consonants and Vowel Teams",
+      "focus": "Consonant sounds; vowel teams ae, oe, au",
+      "practical_latin": [
+        { "latin": "Magister", "english": "Teacher (male)" },
+        { "latin": "Magistra", "english": "Teacher (female)" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-2-1", "latin": "gloria", "english": "glory",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "gloria",
+          "derivatives": [
+            { "english": "glorious", "gloss": "wonderful (adj.)" },
+            { "english": "glorify", "gloss": "to exalt, worship, or honor (v.)" }
+          ]
+        },
+        {
+          "id": "pl-2-2", "latin": "Jesus", "english": "Jesus",
+          "pos": "noun", "gender": "m", "declension": null,
+          "audio_key": "jesus",
+          "derivatives": []
+        },
+        {
+          "id": "pl-2-3", "latin": "laudo", "english": "I praise",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "laudo",
+          "derivatives": [
+            { "english": "laudatory", "gloss": "the art of public speaking (n.)" }
+          ]
+        },
+        {
+          "id": "pl-2-4", "latin": "clamo", "english": "I shout",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "clamo",
+          "derivatives": [
+            { "english": "proclamation", "gloss": "an official announcement (n.)" }
+          ]
+        },
+        {
+          "id": "pl-2-5", "latin": "caelum", "english": "heaven",
+          "pos": "noun", "gender": "n", "declension": 2,
+          "audio_key": "caelum",
+          "derivatives": [
+            { "english": "celestial", "gloss": "heavenly (adj.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "sanctus",
+        "title": "The Sanctus",
+        "latin_full": "Sanctus, Sanctus, Sanctus, Dominus Deus Sabaoth, pleni sunt caeli et terra gloria Tua. Hosanna in excelsis. Benedictus qui venit in nomine Domini. Hosanna in excelsis.",
+        "english_full": "Holy, Holy, Holy, Lord God of Hosts, heaven and earth are full of Thy glory. Hosanna in the highest. Blessed is He who comes in the name of the Lord. Hosanna in the highest.",
+        "type": "prayer",
+        "audio_key": "sanctus",
+        "new_portion_latin": "Sanctus, Sanctus, Sanctus, Dominus Deus Sabaoth.",
+        "new_portion_english": "Holy, Holy, Holy, Lord God of Hosts.",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 3,
+      "type": "lesson",
+      "title": "Verbs",
+      "focus": "Action words; Verb-Finder Sentence (Can I ___?)",
+      "practical_latin": [
+        { "latin": "Surge!", "english": "Stand up! (to one person)" },
+        { "latin": "Surgite!", "english": "Stand up! (to more than one person)" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-3-1", "latin": "navigo", "english": "I sail",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "navigo",
+          "derivatives": [
+            { "english": "navigate", "gloss": "to steer a ship or plane (v.)" },
+            { "english": "navy", "gloss": "a nation's ships or a dark blue color (n.)" }
+          ]
+        },
+        {
+          "id": "pl-3-2", "latin": "porto", "english": "I carry",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "porto",
+          "derivatives": [
+            { "english": "portable", "gloss": "able to be carried (adj.)" },
+            { "english": "airport", "gloss": "a place where aircraft land and take off (n.)" }
+          ]
+        },
+        {
+          "id": "pl-3-3", "latin": "oro", "english": "I pray",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "oro",
+          "derivatives": [
+            { "english": "oral", "gloss": "spoken or having to do with the mouth (adj.)" },
+            { "english": "oratory", "gloss": "the art of public speaking (n.)" }
+          ]
+        },
+        {
+          "id": "pl-3-4", "latin": "laboro", "english": "I work",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "laboro",
+          "derivatives": [
+            { "english": "laboratory", "gloss": "a place for scientific work or research (n.)" },
+            { "english": "labor", "gloss": "work; physical or mental exertion (n.)" }
+          ]
+        },
+        {
+          "id": "pl-3-5", "latin": "specto", "english": "I look at",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "specto",
+          "derivatives": [
+            { "english": "spectacle", "gloss": "a remarkable sight (n.)" },
+            { "english": "spectacular", "gloss": "remarkable, unusual (adj.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "sanctus",
+        "title": "The Sanctus",
+        "latin_full": "Sanctus, Sanctus, Sanctus, Dominus Deus Sabaoth, pleni sunt caeli et terra gloria Tua. Hosanna in excelsis. Benedictus qui venit in nomine Domini. Hosanna in excelsis.",
+        "english_full": "Holy, Holy, Holy, Lord God of Hosts, heaven and earth are full of Thy glory. Hosanna in the highest. Blessed is He who comes in the name of the Lord. Hosanna in the highest.",
+        "type": "prayer",
+        "audio_key": "sanctus",
+        "new_portion_latin": "pleni sunt caeli et terra gloria Tua. Hosanna in excelsis.",
+        "new_portion_english": "heaven and earth are full of Thy glory. Hosanna in the highest.",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 4,
+      "type": "lesson",
+      "title": "Invisible Verbs",
+      "focus": "Invisible (mental/emotional) action verbs; all Latin verbs in this book end in -o",
+      "practical_latin": [
+        { "latin": "Vale!", "english": "Good-bye! (to one person)" },
+        { "latin": "Valete!", "english": "Good-bye! (to more than one person)" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-4-1", "latin": "amo", "english": "I love",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "amo",
+          "derivatives": [
+            { "english": "amorous", "gloss": "full of love (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-4-2", "latin": "adoro", "english": "I adore",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "adoro",
+          "derivatives": [
+            { "english": "adoration", "gloss": "great love or devotion (n.)" },
+            { "english": "adorable", "gloss": "lovable (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-4-3", "latin": "habito", "english": "I live in",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "habito",
+          "derivatives": [
+            { "english": "habitat", "gloss": "a place where something or someone lives (n.)" }
+          ]
+        },
+        {
+          "id": "pl-4-4", "latin": "judico", "english": "I judge",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "judico",
+          "derivatives": [
+            { "english": "judicial", "gloss": "having to do with judges, courts, and laws (adj.)" },
+            { "english": "judgment", "gloss": "a decision or opinion (n.)" }
+          ]
+        },
+        {
+          "id": "pl-4-5", "latin": "paro", "english": "I prepare",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "paro",
+          "derivatives": [
+            { "english": "parachute", "gloss": "a device used to slow the speed of someone jumping from an airplane (n.)" },
+            { "english": "preparation", "gloss": "getting ready or making something in advance (n.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "sanctus",
+        "title": "The Sanctus",
+        "latin_full": "Sanctus, Sanctus, Sanctus, Dominus Deus Sabaoth, pleni sunt caeli et terra gloria Tua. Hosanna in excelsis. Benedictus qui venit in nomine Domini. Hosanna in excelsis.",
+        "english_full": "Holy, Holy, Holy, Lord God of Hosts, heaven and earth are full of Thy glory. Hosanna in the highest. Blessed is He who comes in the name of the Lord. Hosanna in the highest.",
+        "type": "prayer",
+        "audio_key": "sanctus",
+        "new_portion_latin": "Benedictus qui venit in nomine Domini.",
+        "new_portion_english": "Blessed is He who comes in the name of the Lord.",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 5,
+      "type": "lesson",
+      "title": "Latin Verbs",
+      "focus": "Latin verbs end in -o in dictionary form; recognizing verbs by ending",
+      "practical_latin": [
+        { "latin": "discipulus", "english": "student (one)" },
+        { "latin": "discipuli", "english": "students (many)" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-5-1", "latin": "libero", "english": "I free",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "libero",
+          "derivatives": [
+            { "english": "liberty", "gloss": "freedom (n.)" }
+          ]
+        },
+        {
+          "id": "pl-5-2", "latin": "narro", "english": "I tell",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "narro",
+          "derivatives": [
+            { "english": "narrate", "gloss": "to tell about a story or event (v.)" },
+            { "english": "narrator", "gloss": "the person telling a story or event (n.)" }
+          ]
+        },
+        {
+          "id": "pl-5-3", "latin": "pugno", "english": "I fight",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "pugno",
+          "derivatives": [
+            { "english": "pugnacious", "gloss": "in a fighting spirit (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-5-4", "latin": "supero", "english": "I conquer",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "supero",
+          "derivatives": [
+            { "english": "superior", "gloss": "excellent (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-5-5", "latin": "voco", "english": "I call",
+          "pos": "verb", "conjugation": 1,
+          "audio_key": "voco",
+          "derivatives": [
+            { "english": "vocal", "gloss": "having to do with speaking or singing (adj.)" },
+            { "english": "vocabulary", "gloss": "a list of words (n.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "sanctus",
+        "title": "The Sanctus",
+        "latin_full": "Sanctus, Sanctus, Sanctus, Dominus Deus Sabaoth, pleni sunt caeli et terra gloria Tua. Hosanna in excelsis. Benedictus qui venit in nomine Domini. Hosanna in excelsis.",
+        "english_full": "Holy, Holy, Holy, Lord God of Hosts, heaven and earth are full of Thy glory. Hosanna in the highest. Blessed is He who comes in the name of the Lord. Hosanna in the highest.",
+        "type": "prayer",
+        "audio_key": "sanctus",
+        "new_portion_latin": "Hosanna in excelsis.",
+        "new_portion_english": "Hosanna in the highest.",
+        "note": "Final line — the full Sanctus is now complete."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": "R1",
+      "type": "review",
+      "title": "Review Lesson 1 (Lessons 1–5)",
+      "reviews_lessons": [1, 2, 3, 4, 5],
+      "prayer_id": "sanctus",
+      "latin_song": {
+        "title": "Dona Nobis Pacem",
+        "latin": "Dona Nobis Pacem",
+        "english": "Grant us Peace",
+        "source": "Lingua Angelica CD"
+      }
+    },
+
+    {
+      "id": 6,
+      "type": "lesson",
+      "title": "Nouns",
+      "focus": "Nouns are persons, places, or things; simple Latin nouns end in -a",
+      "practical_latin": [
+        { "latin": "Deo gratias", "english": "Thanks be to God" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-6-1", "latin": "regina", "english": "queen",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "regina",
+          "derivatives": [
+            { "english": "regal", "gloss": "like a king or queen; befitting royalty (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-6-2", "latin": "stella", "english": "star",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "stella",
+          "derivatives": [
+            { "english": "stellar", "gloss": "having to do with a star; outstanding (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-6-3", "latin": "silva", "english": "forest",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "silva",
+          "derivatives": [
+            { "english": "Pennsylvania", "gloss": "a state of the Northeast U.S. (proper noun)" }
+          ]
+        },
+        {
+          "id": "pl-6-4", "latin": "terra", "english": "earth",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "terra",
+          "derivatives": [
+            { "english": "territory", "gloss": "an area of land (n.)" }
+          ]
+        },
+        {
+          "id": "pl-6-5", "latin": "unda", "english": "wave",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "unda",
+          "derivatives": [
+            { "english": "undulate", "gloss": "to move in a wave-like motion (v.)" }
+          ]
+        },
+        {
+          "id": "pl-6-6", "latin": "vita", "english": "life",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "vita",
+          "derivatives": [
+            { "english": "vital", "gloss": "extremely important (adj.)" },
+            { "english": "vitamin", "gloss": "a natural substance that is essential to health (n.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "gloria-patri",
+        "title": "Gloria Patri",
+        "latin_full": "Gloria Patri et Filio et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula saeculorum. Amen.",
+        "english_full": "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+        "type": "prayer",
+        "audio_key": "gloria-patri",
+        "new_portion_latin": "Gloria Patri",
+        "new_portion_english": "Glory be to the Father,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 7,
+      "type": "lesson",
+      "title": "Latin Nouns",
+      "focus": "Latin nouns end in -a; five groups (declensions)",
+      "practical_latin": [
+        { "latin": "mea culpa", "english": "my fault" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-7-1", "latin": "aqua", "english": "water",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "aqua",
+          "derivatives": [
+            { "english": "aquarium", "gloss": "a tank for keeping water animals (n.)" },
+            { "english": "aquatic", "gloss": "relating to or being in water (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-7-2", "latin": "cena", "english": "dinner",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "cena",
+          "derivatives": []
+        },
+        {
+          "id": "pl-7-3", "latin": "corona", "english": "crown",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "corona",
+          "derivatives": [
+            { "english": "coronation", "gloss": "the crowning of a king/queen (n.)" }
+          ]
+        },
+        {
+          "id": "pl-7-4", "latin": "mensa", "english": "table",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "mensa",
+          "derivatives": [
+            { "english": "Mesa Verde", "gloss": "a place in the Western U.S. where land is raised off the ground (proper noun)" }
+          ]
+        },
+        {
+          "id": "pl-7-5", "latin": "patria", "english": "country, fatherland",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "patria",
+          "derivatives": [
+            { "english": "patriot", "gloss": "someone who loves his/her country (n.)" },
+            { "english": "patriotic", "gloss": "showing love for one's country (adj.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "gloria-patri",
+        "title": "Gloria Patri",
+        "latin_full": "Gloria Patri et Filio et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula saeculorum. Amen.",
+        "english_full": "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+        "type": "prayer",
+        "audio_key": "gloria-patri",
+        "new_portion_latin": "et Filio et Spiritui Sancto,",
+        "new_portion_english": "and to the Son, and to the Holy Spirit,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 8,
+      "type": "lesson",
+      "title": "Derivatives",
+      "focus": "English derivatives: English words that come from Latin root words",
+      "practical_latin": [
+        { "latin": "amicus", "english": "friend (one)" },
+        { "latin": "amici", "english": "friends (many)" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-8-1", "latin": "herba", "english": "plant",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "herba",
+          "derivatives": [
+            { "english": "herb", "gloss": "leaves of a plant used as medicine or in cooking (n.)" }
+          ]
+        },
+        {
+          "id": "pl-8-2", "latin": "injuria", "english": "injury",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "injuria",
+          "derivatives": [
+            { "english": "injury", "gloss": "a harm done (n.)" }
+          ]
+        },
+        {
+          "id": "pl-8-3", "latin": "femina", "english": "woman",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "femina",
+          "derivatives": [
+            { "english": "female", "gloss": "of or having to do with the female gender (adj.)" },
+            { "english": "feminine", "gloss": "having the qualities of a female person (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-8-4", "latin": "nauta", "english": "sailor",
+          "pos": "noun", "gender": "m", "declension": 1,
+          "audio_key": "nauta",
+          "derivatives": [
+            { "english": "nautical", "gloss": "having to do with seafaring (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-8-5", "latin": "fortuna", "english": "fortune",
+          "pos": "noun", "gender": "f", "declension": 1,
+          "audio_key": "fortuna",
+          "derivatives": [
+            { "english": "fortune", "gloss": "luck; great wealth (n.)" },
+            { "english": "fortunate", "gloss": "lucky (adj.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "gloria-patri",
+        "title": "Gloria Patri",
+        "latin_full": "Gloria Patri et Filio et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula saeculorum. Amen.",
+        "english_full": "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+        "type": "prayer",
+        "audio_key": "gloria-patri",
+        "new_portion_latin": "sicut erat in principio",
+        "new_portion_english": "as it was in the beginning,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 9,
+      "type": "lesson",
+      "title": "Numbers 1–5",
+      "focus": "Latin cardinal numbers one through five",
+      "practical_latin": [
+        { "latin": "Sedete", "english": "Sit down (to many)" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-9-1", "latin": "unus", "english": "one (1)",
+          "pos": "number",
+          "audio_key": "unus",
+          "derivatives": [
+            { "english": "unite", "gloss": "to join or make one (v.)" },
+            { "english": "unicorn", "gloss": "a mythical creature with one horn (n.)" }
+          ]
+        },
+        {
+          "id": "pl-9-2", "latin": "duo", "english": "two (2)",
+          "pos": "number",
+          "audio_key": "duo",
+          "derivatives": [
+            { "english": "dual", "gloss": "double (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-9-3", "latin": "tres", "english": "three (3)",
+          "pos": "number",
+          "audio_key": "tres",
+          "derivatives": [
+            { "english": "tertiary", "gloss": "third (adj.)" },
+            { "english": "trio", "gloss": "a group of three (n.)" }
+          ]
+        },
+        {
+          "id": "pl-9-4", "latin": "quattuor", "english": "four (4)",
+          "pos": "number",
+          "audio_key": "quattuor",
+          "derivatives": [
+            { "english": "quartet", "gloss": "a group of four (n.)" },
+            { "english": "quarter", "gloss": "a fourth of something (n.)" }
+          ]
+        },
+        {
+          "id": "pl-9-5", "latin": "quinque", "english": "five (5)",
+          "pos": "number",
+          "audio_key": "quinque",
+          "derivatives": [
+            { "english": "quintuplets", "gloss": "five babies born at the same time from the same mother (n.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "gloria-patri",
+        "title": "Gloria Patri",
+        "latin_full": "Gloria Patri et Filio et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula saeculorum. Amen.",
+        "english_full": "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+        "type": "prayer",
+        "audio_key": "gloria-patri",
+        "new_portion_latin": "et nunc et semper",
+        "new_portion_english": "is now, and ever shall be,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 10,
+      "type": "lesson",
+      "title": "Numbers 6–10",
+      "focus": "Latin cardinal numbers six through ten; connection to English month names",
+      "practical_latin": [
+        { "latin": "Anno Domini, A.D.", "english": "In the year of our Lord" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-10-1", "latin": "sex", "english": "six (6)",
+          "pos": "number",
+          "audio_key": "sex",
+          "derivatives": [
+            { "english": "semester", "gloss": "historically a six-month term of school (n.)" }
+          ]
+        },
+        {
+          "id": "pl-10-2", "latin": "septem", "english": "seven (7)",
+          "pos": "number",
+          "audio_key": "septem",
+          "derivatives": [
+            { "english": "September", "gloss": "the seventh month of the Roman calendar (n.)" }
+          ]
+        },
+        {
+          "id": "pl-10-3", "latin": "octo", "english": "eight (8)",
+          "pos": "number",
+          "audio_key": "octo",
+          "derivatives": [
+            { "english": "October", "gloss": "the eighth month of the Roman calendar (n.)" },
+            { "english": "octagon", "gloss": "an eight-sided figure (n.)" }
+          ]
+        },
+        {
+          "id": "pl-10-4", "latin": "novem", "english": "nine (9)",
+          "pos": "number",
+          "audio_key": "novem",
+          "derivatives": [
+            { "english": "November", "gloss": "the ninth month of the Roman calendar (n.)" }
+          ]
+        },
+        {
+          "id": "pl-10-5", "latin": "decem", "english": "ten (10)",
+          "pos": "number",
+          "audio_key": "decem",
+          "derivatives": [
+            { "english": "December", "gloss": "the tenth month of the Roman calendar (n.)" },
+            { "english": "decimal", "gloss": "based on the number 10 (adj.); a number in the decimal system (n.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "gloria-patri",
+        "title": "Gloria Patri",
+        "latin_full": "Gloria Patri et Filio et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula saeculorum. Amen.",
+        "english_full": "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+        "type": "prayer",
+        "audio_key": "gloria-patri",
+        "new_portion_latin": "et in saecula saeculorum. Amen.",
+        "new_portion_english": "world without end. Amen.",
+        "note": "Final line — the full Gloria Patri is now complete."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": "R2",
+      "type": "review",
+      "title": "Review Lesson 2 (Lessons 6–10)",
+      "reviews_lessons": [6, 7, 8, 9, 10],
+      "prayer_id": "gloria-patri",
+      "latin_song": {
+        "title": "Christus Vincit",
+        "lines": [
+          { "latin": "Christus vincit", "english": "Christ conquers" },
+          { "latin": "Christus regnat", "english": "Christ reigns" },
+          { "latin": "Christus imperat", "english": "Christ rules" }
+        ],
+        "source": "Lingua Angelica CD"
+      }
+    },
+
+    {
+      "id": 11,
+      "type": "lesson",
+      "title": "Proper Nouns",
+      "focus": "Proper nouns name a specific person, place, or thing; identified by capital letter",
+      "practical_latin": [
+        { "latin": "Veni, vidi, vici", "english": "I came, I saw, I conquered (Julius Caesar)" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-11-1", "latin": "Roma", "english": "Rome",
+          "pos": "noun", "gender": "f", "declension": 1, "proper": true,
+          "audio_key": "roma",
+          "derivatives": [
+            { "english": "Roman", "gloss": "having to do with Rome (adj.); a person of Rome (n.)" }
+          ]
+        },
+        {
+          "id": "pl-11-2", "latin": "Italia", "english": "Italy",
+          "pos": "noun", "gender": "f", "declension": 1, "proper": true,
+          "audio_key": "italia",
+          "derivatives": [
+            { "english": "Italian", "gloss": "having to do with Italy (adj.); a person of Italy (n.)" }
+          ]
+        },
+        {
+          "id": "pl-11-3", "latin": "Maria", "english": "Mary",
+          "pos": "noun", "gender": "f", "declension": 1, "proper": true,
+          "audio_key": "maria",
+          "derivatives": []
+        },
+        {
+          "id": "pl-11-4", "latin": "Marcus", "english": "Mark",
+          "pos": "noun", "gender": "m", "declension": 2, "proper": true,
+          "audio_key": "marcus",
+          "derivatives": []
+        },
+        {
+          "id": "pl-11-5", "latin": "Hispania", "english": "Spain",
+          "pos": "noun", "gender": "f", "declension": 1, "proper": true,
+          "audio_key": "hispania",
+          "derivatives": [
+            { "english": "Spanish", "gloss": "having to do with Spain (adj.)" },
+            { "english": "Spaniard", "gloss": "a person of Spain (n.)" },
+            { "english": "Hispanic", "gloss": "of or relating to Latin-America or Spain (adj.); a person of Latin-America or Spain (n.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "table-blessing",
+        "title": "The Table Blessing",
+        "latin_full": "Benedic, Domine, nos et haec Tua dona, quae de Tua largitate sumus sumpturi, per Christum Dominum nostrum. Amen.",
+        "english_full": "Bless us, O Lord, and these Thy gifts, which from Thy bounty we are about to receive, through Christ our Lord. Amen.",
+        "type": "prayer",
+        "audio_key": "table-blessing",
+        "new_portion_latin": "Benedic, Domine, nos",
+        "new_portion_english": "Bless us, O Lord,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 12,
+      "type": "lesson",
+      "title": "Prepositions",
+      "focus": "Prepositions show relationship or location between two words",
+      "practical_latin": [
+        { "latin": "Quo vadis?", "english": "Where are you going?" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-12-1", "latin": "inter", "english": "between",
+          "pos": "preposition",
+          "audio_key": "inter",
+          "derivatives": [
+            { "english": "interrupt", "gloss": "to make a break in conversation or action (v.)" },
+            { "english": "intermediate", "gloss": "in the middle (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-12-2", "latin": "sub", "english": "under",
+          "pos": "preposition",
+          "audio_key": "sub",
+          "derivatives": [
+            { "english": "submarine", "gloss": "underwater ship (n.)" },
+            { "english": "subway", "gloss": "underground railway (n.)" }
+          ]
+        },
+        {
+          "id": "pl-12-3", "latin": "supra", "english": "above",
+          "pos": "preposition",
+          "audio_key": "supra",
+          "derivatives": [
+            { "english": "superb", "gloss": "above average; excellent (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-12-4", "latin": "ex", "english": "out of",
+          "pos": "preposition",
+          "audio_key": "ex",
+          "derivatives": [
+            { "english": "exit", "gloss": "a way out (n.); to leave (v.)" },
+            { "english": "extraordinary", "gloss": "out of the ordinary; very unusual (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-12-5", "latin": "contra", "english": "against",
+          "pos": "preposition",
+          "audio_key": "contra",
+          "derivatives": [
+            { "english": "contrast", "gloss": "to compare unlike things (v.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "table-blessing",
+        "title": "The Table Blessing",
+        "latin_full": "Benedic, Domine, nos et haec Tua dona, quae de Tua largitate sumus sumpturi, per Christum Dominum nostrum. Amen.",
+        "english_full": "Bless us, O Lord, and these Thy gifts, which from Thy bounty we are about to receive, through Christ our Lord. Amen.",
+        "type": "prayer",
+        "audio_key": "table-blessing",
+        "new_portion_latin": "et haec Tua dona,",
+        "new_portion_english": "and these Thy gifts,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+    {
+      "id": 13,
+      "type": "lesson",
+      "title": "Pronouns",
+      "focus": "Pronouns replace nouns; Latin verb endings (pronoun letters) indicate person and number",
+      "practical_latin": [
+        { "latin": "alma mater", "english": "nurturing mother" }
+      ],
+      "vocab": [
+        { "id": "pl-13-1", "latin": "o", "english": "I", "pos": "verb_ending", "person": "1sg", "audio_key": "ending-o" },
+        { "id": "pl-13-2", "latin": "s", "english": "you (s.)", "pos": "verb_ending", "person": "2sg", "audio_key": "ending-s" },
+        { "id": "pl-13-3", "latin": "t", "english": "he, she, it", "pos": "verb_ending", "person": "3sg", "audio_key": "ending-t" },
+        { "id": "pl-13-4", "latin": "mus", "english": "we", "pos": "verb_ending", "person": "1pl", "audio_key": "ending-mus" },
+        { "id": "pl-13-5", "latin": "tis", "english": "you (pl.)", "pos": "verb_ending", "person": "2pl", "audio_key": "ending-tis" },
+        { "id": "pl-13-6", "latin": "nt", "english": "they", "pos": "verb_ending", "person": "3pl", "audio_key": "ending-nt" }
+      ],
+      "prayer": {
+        "id": "table-blessing",
+        "title": "The Table Blessing",
+        "latin_full": "Benedic, Domine, nos et haec Tua dona, quae de Tua largitate sumus sumpturi, per Christum Dominum nostrum. Amen.",
+        "english_full": "Bless us, O Lord, and these Thy gifts, which from Thy bounty we are about to receive, through Christ our Lord. Amen.",
+        "type": "prayer",
+        "audio_key": "table-blessing",
+        "new_portion_latin": "quae de Tua largitate",
+        "new_portion_english": "which from Thy bounty",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": [
+        {
+          "id": "present-verb-endings",
+          "label": "Present Tense Verb Endings",
+          "type": "verb_endings",
+          "rows": [
+            { "person": "1sg", "ending": "o", "pronoun": "I" },
+            { "person": "2sg", "ending": "s", "pronoun": "you (s.)" },
+            { "person": "3sg", "ending": "t", "pronoun": "he, she, it" },
+            { "person": "1pl", "ending": "mus", "pronoun": "we" },
+            { "person": "2pl", "ending": "tis", "pronoun": "you (pl.)" },
+            { "person": "3pl", "ending": "nt", "pronoun": "they" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 14,
+      "type": "lesson",
+      "title": "Adjectives",
+      "focus": "Adjectives modify (describe) nouns and pronouns",
+      "practical_latin": [
+        { "latin": "stupor mundi", "english": "wonder of the world" }
+      ],
+      "vocab": [
+        {
+          "id": "pl-14-1", "latin": "altus", "english": "high, deep",
+          "pos": "adjective", "audio_key": "altus",
+          "derivatives": [
+            { "english": "altitude", "gloss": "height (n.)" }
+          ]
+        },
+        {
+          "id": "pl-14-2", "latin": "multus", "english": "much, many",
+          "pos": "adjective", "audio_key": "multus",
+          "derivatives": [
+            { "english": "multiply", "gloss": "to increase (v.)" }
+          ]
+        },
+        {
+          "id": "pl-14-3", "latin": "bonus", "english": "good",
+          "pos": "adjective", "audio_key": "bonus",
+          "derivatives": [
+            { "english": "bonus", "gloss": "a new invention (n.)" }
+          ]
+        },
+        {
+          "id": "pl-14-4", "latin": "longus", "english": "long",
+          "pos": "adjective", "audio_key": "longus",
+          "derivatives": [
+            { "english": "longitude", "gloss": "imaginary lines that run vertically on a globe (n.)" }
+          ]
+        },
+        {
+          "id": "pl-14-5", "latin": "novus", "english": "new",
+          "pos": "adjective", "audio_key": "novus",
+          "derivatives": [
+            { "english": "novice", "gloss": "a beginner (n.)" },
+            { "english": "novel", "gloss": "new and unusual (adj.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "table-blessing",
+        "title": "The Table Blessing",
+        "latin_full": "Benedic, Domine, nos et haec Tua dona, quae de Tua largitate sumus sumpturi, per Christum Dominum nostrum. Amen.",
+        "english_full": "Bless us, O Lord, and these Thy gifts, which from Thy bounty we are about to receive, through Christ our Lord. Amen.",
+        "type": "prayer",
+        "audio_key": "table-blessing",
+        "new_portion_latin": "sumus sumpturi,",
+        "new_portion_english": "we are about to receive,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 15,
+      "type": "lesson",
+      "title": "Adverbs",
+      "focus": "Adverbs modify verbs; describe how, where, when, or why",
+      "practical_latin": [
+        { "latin": "nunc aut numquam", "english": "now or never" }
+      ],
+      "vocab": [
+        { "id": "pl-15-1", "latin": "clam", "english": "secretly", "pos": "adverb", "audio_key": "clam", "derivatives": [] },
+        { "id": "pl-15-2", "latin": "numquam", "english": "never", "pos": "adverb", "audio_key": "numquam", "derivatives": [] },
+        { "id": "pl-15-3", "latin": "nunc", "english": "now", "pos": "adverb", "audio_key": "nunc", "derivatives": [] },
+        { "id": "pl-15-4", "latin": "saepe", "english": "often", "pos": "adverb", "audio_key": "saepe", "derivatives": [] },
+        { "id": "pl-15-5", "latin": "semper", "english": "always", "pos": "adverb", "audio_key": "semper", "derivatives": [] }
+      ],
+      "prayer": {
+        "id": "table-blessing",
+        "title": "The Table Blessing",
+        "latin_full": "Benedic, Domine, nos et haec Tua dona, quae de Tua largitate sumus sumpturi, per Christum Dominum nostrum. Amen.",
+        "english_full": "Bless us, O Lord, and these Thy gifts, which from Thy bounty we are about to receive, through Christ our Lord. Amen.",
+        "type": "prayer",
+        "audio_key": "table-blessing",
+        "new_portion_latin": "per Christum Dominum nostrum. Amen.",
+        "new_portion_english": "through Christ our Lord. Amen.",
+        "note": "Final line — the full Table Blessing is now complete."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": "R3",
+      "type": "review",
+      "title": "Review Lesson 3 (Lessons 11–15)",
+      "reviews_lessons": [11, 12, 13, 14, 15],
+      "prayer_id": "table-blessing",
+      "latin_song": {
+        "title": "Adeste Fideles (Refrain)",
+        "lines": [
+          { "latin": "Venite adoremus", "english": "O come let us adore Him" },
+          { "latin": "Venite adoremus", "english": "O come let us adore Him" },
+          { "latin": "Venite adoremus", "english": "O come let us adore Him" },
+          { "latin": "Dominum", "english": "Christ the Lord" }
+        ],
+        "source": "Lingua Angelica CD"
+      }
+    },
+
+    {
+      "id": 16,
+      "type": "lesson",
+      "title": "Constellations",
+      "focus": "Constellations are groups of stars that form pictures in the sky",
+      "practical_latin": [
+        { "latin": "Semper Fidelis", "english": "Always Faithful (Marine Corps motto)" }
+      ],
+      "vocab": [
+        { "id": "pl-16-1", "latin": "Aquarius", "english": "water carrier", "pos": "noun", "proper": true, "constellation": true, "audio_key": "aquarius", "derivatives": [] },
+        { "id": "pl-16-2", "latin": "Aries", "english": "ram", "pos": "noun", "proper": true, "constellation": true, "audio_key": "aries", "derivatives": [] },
+        { "id": "pl-16-3", "latin": "Cancer", "english": "crab", "pos": "noun", "proper": true, "constellation": true, "audio_key": "cancer", "derivatives": [] },
+        { "id": "pl-16-4", "latin": "Capricornus", "english": "goat", "pos": "noun", "proper": true, "constellation": true, "audio_key": "capricornus", "derivatives": [], "note": "Capricornus is the constellation; Capricorn is a sign of the zodiac" },
+        { "id": "pl-16-5", "latin": "Gemini", "english": "twins", "pos": "noun", "proper": true, "constellation": true, "audio_key": "gemini", "derivatives": [] },
+        { "id": "pl-16-6", "latin": "Virgo", "english": "maiden, virgin", "pos": "noun", "proper": true, "constellation": true, "audio_key": "virgo", "derivatives": [] }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "Pater Noster, qui es in caelis,",
+        "new_portion_english": "Our Father, who art in heaven,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 17,
+      "type": "lesson",
+      "title": "More Constellations",
+      "focus": "More constellation names from Greek and Roman mythology",
+      "practical_latin": [
+        { "latin": "Repetite", "english": "Repeat (to many)" }
+      ],
+      "vocab": [
+        { "id": "pl-17-1", "latin": "Leo", "english": "lion", "pos": "noun", "proper": true, "constellation": true, "audio_key": "leo", "derivatives": [] },
+        { "id": "pl-17-2", "latin": "Libra", "english": "scales of justice", "pos": "noun", "proper": true, "constellation": true, "audio_key": "libra", "derivatives": [] },
+        { "id": "pl-17-3", "latin": "Pisces", "english": "fish", "pos": "noun", "proper": true, "constellation": true, "audio_key": "pisces", "derivatives": [] },
+        { "id": "pl-17-4", "latin": "Sagittarius", "english": "archer", "pos": "noun", "proper": true, "constellation": true, "audio_key": "sagittarius", "derivatives": [] },
+        { "id": "pl-17-5", "latin": "Scorpius", "english": "scorpion", "pos": "noun", "proper": true, "constellation": true, "audio_key": "scorpius", "derivatives": [], "note": "Scorpius is the constellation; Scorpio is the zodiac sign" },
+        { "id": "pl-17-6", "latin": "Taurus", "english": "bull", "pos": "noun", "proper": true, "constellation": true, "audio_key": "taurus", "derivatives": [] }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "sanctificetur nomen Tuum.",
+        "new_portion_english": "hallowed be Thy name.",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 18,
+      "type": "lesson",
+      "title": "To Be Verb",
+      "focus": "The verb 'to be' (esse) is the most common verb; it shows existence, not action",
+      "practical_latin": [
+        { "latin": "Quid agis?", "english": "How are you?" }
+      ],
+      "vocab": [
+        { "id": "pl-18-1", "latin": "sum", "english": "I am", "pos": "verb_esse", "person": "1sg", "audio_key": "sum", "derivatives": [] },
+        { "id": "pl-18-2", "latin": "es", "english": "you (s.) are", "pos": "verb_esse", "person": "2sg", "audio_key": "es", "derivatives": [] },
+        { "id": "pl-18-3", "latin": "est", "english": "he, she, it is", "pos": "verb_esse", "person": "3sg", "audio_key": "est", "derivatives": [] },
+        { "id": "pl-18-4", "latin": "sumus", "english": "we are", "pos": "verb_esse", "person": "1pl", "audio_key": "sumus", "derivatives": [] },
+        { "id": "pl-18-5", "latin": "estis", "english": "you (pl.) are", "pos": "verb_esse", "person": "2pl", "audio_key": "estis", "derivatives": [] },
+        { "id": "pl-18-6", "latin": "sunt", "english": "they are", "pos": "verb_esse", "person": "3pl", "audio_key": "sunt", "derivatives": [] }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "Adveniat regnum Tuum.",
+        "new_portion_english": "Thy kingdom come.",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": [
+        {
+          "id": "esse-present",
+          "label": "To Be Verb (esse) — Present Tense",
+          "type": "conjugation",
+          "rows": [
+            { "person": "1sg", "latin": "sum", "english": "I am" },
+            { "person": "2sg", "latin": "es", "english": "you (s.) are" },
+            { "person": "3sg", "latin": "est", "english": "he, she, it is" },
+            { "person": "1pl", "latin": "sumus", "english": "we are" },
+            { "person": "2pl", "latin": "estis", "english": "you (pl.) are" },
+            { "person": "3pl", "latin": "sunt", "english": "they are" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 19,
+      "type": "lesson",
+      "title": "To Be Able To / I Can",
+      "focus": "The verb posse (to be able to / I can) is a special verb like esse",
+      "practical_latin": [
+        { "latin": "satis bene", "english": "very well" }
+      ],
+      "vocab": [
+        { "id": "pl-19-1", "latin": "possum", "english": "I can", "pos": "verb_posse", "person": "1sg", "audio_key": "possum", "derivatives": [{ "english": "possible", "gloss": "can be (adj.)" }] },
+        { "id": "pl-19-2", "latin": "potes", "english": "you (s.) can", "pos": "verb_posse", "person": "2sg", "audio_key": "potes", "derivatives": [] },
+        { "id": "pl-19-3", "latin": "potest", "english": "he, she, it can", "pos": "verb_posse", "person": "3sg", "audio_key": "potest", "derivatives": [] },
+        { "id": "pl-19-4", "latin": "possumus", "english": "we can", "pos": "verb_posse", "person": "1pl", "audio_key": "possumus", "derivatives": [] },
+        { "id": "pl-19-5", "latin": "potestis", "english": "you (pl.) can", "pos": "verb_posse", "person": "2pl", "audio_key": "potestis", "derivatives": [] },
+        { "id": "pl-19-6", "latin": "possunt", "english": "they can", "pos": "verb_posse", "person": "3pl", "audio_key": "possunt", "derivatives": [] }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "Fiat voluntas Tua",
+        "new_portion_english": "Thy will be done",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": [
+        {
+          "id": "posse-present",
+          "label": "To Be Able To (posse) — Present Tense",
+          "type": "conjugation",
+          "rows": [
+            { "person": "1sg", "latin": "possum", "english": "I can" },
+            { "person": "2sg", "latin": "potes", "english": "you (s.) can" },
+            { "person": "3sg", "latin": "potest", "english": "he, she, it can" },
+            { "person": "1pl", "latin": "possumus", "english": "we can" },
+            { "person": "2pl", "latin": "potestis", "english": "you (pl.) can" },
+            { "person": "3pl", "latin": "possunt", "english": "they can" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 20,
+      "type": "lesson",
+      "title": "Future Tense",
+      "focus": "Future tense endings added to verbs to show something will happen",
+      "practical_latin": [
+        { "latin": "Romanus civis sum", "english": "I am a citizen of Rome" }
+      ],
+      "vocab": [
+        { "id": "pl-20-1", "latin": "bo", "english": "I will", "pos": "verb_ending_future", "person": "1sg", "audio_key": "ending-bo" },
+        { "id": "pl-20-2", "latin": "bis", "english": "you (s.) will", "pos": "verb_ending_future", "person": "2sg", "audio_key": "ending-bis" },
+        { "id": "pl-20-3", "latin": "bit", "english": "he, she, or it will", "pos": "verb_ending_future", "person": "3sg", "audio_key": "ending-bit" },
+        { "id": "pl-20-4", "latin": "bimus", "english": "we will", "pos": "verb_ending_future", "person": "1pl", "audio_key": "ending-bimus" },
+        { "id": "pl-20-5", "latin": "bitis", "english": "you (pl.) will", "pos": "verb_ending_future", "person": "2pl", "audio_key": "ending-bitis" },
+        { "id": "pl-20-6", "latin": "bunt", "english": "they will", "pos": "verb_ending_future", "person": "3pl", "audio_key": "ending-bunt" }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "sicut in caelo et in terra.",
+        "new_portion_english": "on earth as it is in heaven.",
+        "note": "The first half of the Pater Noster is now complete."
+      },
+      "paradigms": [
+        {
+          "id": "future-tense-endings",
+          "label": "Future Tense Verb Endings",
+          "type": "verb_endings",
+          "rows": [
+            { "person": "1sg", "ending": "bo", "english": "I will" },
+            { "person": "2sg", "ending": "bis", "english": "you (s.) will" },
+            { "person": "3sg", "ending": "bit", "english": "he, she, it will" },
+            { "person": "1pl", "ending": "bimus", "english": "we will" },
+            { "person": "2pl", "ending": "bitis", "english": "you (pl.) will" },
+            { "person": "3pl", "ending": "bunt", "english": "they will" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "R4",
+      "type": "review",
+      "title": "Review Lesson 4 (Lessons 16–20)",
+      "reviews_lessons": [16, 17, 18, 19, 20],
+      "prayer_id": "pater-noster",
+      "latin_song": {
+        "title": "Resonet in Laudibus (Refrain)",
+        "lines": [
+          { "latin": "Gaudete", "english": "Rejoice" },
+          { "latin": "Gaudete", "english": "Rejoice" }
+        ],
+        "source": "Lingua Angelica CD"
+      }
+    },
+    {
+      "id": 21,
+      "type": "lesson",
+      "title": "Other Words",
+      "focus": "Conjunctions and particles — small words that connect or modify ideas",
+      "practical_latin": [
+        { "latin": "E pluribus unum", "english": "One out of many" }
+      ],
+      "vocab": [
+        { "id": "pl-21-1", "latin": "sed", "english": "but", "pos": "conjunction", "audio_key": "sed", "derivatives": [] },
+        { "id": "pl-21-2", "latin": "sicut", "english": "as", "pos": "conjunction", "audio_key": "sicut", "derivatives": [] },
+        { "id": "pl-21-3", "latin": "non", "english": "not", "pos": "particle", "audio_key": "non", "derivatives": [] },
+        { "id": "pl-21-4", "latin": "etiam", "english": "also", "pos": "conjunction", "audio_key": "etiam", "derivatives": [] },
+        { "id": "pl-21-5", "latin": "et", "english": "and", "pos": "conjunction", "audio_key": "et", "derivatives": [] }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra. Panem nostrum cotidianum da nobis hodie, et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also forgive our debtors. And lead us not into temptation, but deliver us from evil. Amen.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "Panem nostrum cotidianum da nobis hodie,",
+        "new_portion_english": "Give us this day our daily bread,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+
+    {
+      "id": 22,
+      "type": "lesson",
+      "title": "Question Words",
+      "focus": "Question words (interrogatives) introduce questions and always appear with a question mark",
+      "practical_latin": [
+        { "latin": "Ego amo te.", "english": "I love you." }
+      ],
+      "vocab": [
+        {
+          "id": "pl-22-1", "latin": "quis", "english": "who?",
+          "pos": "interrogative", "audio_key": "quis",
+          "derivatives": [
+            { "english": "inquisitive", "gloss": "questioning (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-22-2", "latin": "quid", "english": "what?",
+          "pos": "interrogative", "audio_key": "quid",
+          "derivatives": []
+        },
+        {
+          "id": "pl-22-3", "latin": "ubi", "english": "where?",
+          "pos": "interrogative", "audio_key": "ubi",
+          "derivatives": [
+            { "english": "ubiquitous", "gloss": "seemingly everywhere (adj.)" }
+          ]
+        },
+        {
+          "id": "pl-22-4", "latin": "cur", "english": "why?",
+          "pos": "interrogative", "audio_key": "cur",
+          "derivatives": [
+            { "english": "query", "gloss": "question (n.); to question someone or something (v.)" },
+            { "english": "curious", "gloss": "eager to know (adj.)" }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra. Panem nostrum cotidianum da nobis hodie, et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also forgive our debtors. And lead us not into temptation, but deliver us from evil. Amen.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "et dimitte nobis debita nostra,",
+        "new_portion_english": "and forgive us our debts,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": []
+    },
+    {
+      "id": 23,
+      "type": "lesson",
+      "title": "The First Declension",
+      "focus": "Declensions are groups of nouns with the same endings; there are five in Latin",
+      "practical_latin": [
+        { "latin": "Optime!", "english": "Excellent!" }
+      ],
+      "vocab": [],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra. Panem nostrum cotidianum da nobis hodie, et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also forgive our debtors. And lead us not into temptation, but deliver us from evil. Amen.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "sicut et nos dimittimus debitoribus nostris.",
+        "new_portion_english": "as we also forgive our debtors.",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": [
+        {
+          "id": "decl1-singular",
+          "label": "First Declension Singular Endings",
+          "type": "noun_declension",
+          "number": "singular",
+          "note": "ae has the long A sound",
+          "rows": [
+            { "case": "nominative", "ending": "a" },
+            { "case": "genitive",   "ending": "ae" },
+            { "case": "dative",     "ending": "ae" },
+            { "case": "accusative", "ending": "am" },
+            { "case": "ablative",   "ending": "a" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 24,
+      "type": "lesson",
+      "title": "Declensions",
+      "focus": "First Declension plural endings; completing the full 1st declension paradigm",
+      "practical_latin": [
+        { "latin": "Pessime!", "english": "Very bad!" }
+      ],
+      "vocab": [],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra. Panem nostrum cotidianum da nobis hodie, et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also forgive our debtors. And lead us not into temptation, but deliver us from evil. Amen.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "Et ne nos inducas in tentationem,",
+        "new_portion_english": "And lead us not into temptation,",
+        "note": "Each week, learn the bold portion of the prayer and add it to what you know."
+      },
+      "paradigms": [
+        {
+          "id": "decl1-plural",
+          "label": "First Declension Plural Endings",
+          "type": "noun_declension",
+          "number": "plural",
+          "note": "ae has the long A sound",
+          "rows": [
+            { "case": "nominative", "ending": "ae" },
+            { "case": "genitive",   "ending": "arum" },
+            { "case": "dative",     "ending": "is" },
+            { "case": "accusative", "ending": "as" },
+            { "case": "ablative",   "ending": "is" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 25,
+      "type": "lesson",
+      "title": "First Conjugation",
+      "focus": "Conjugations are verb groups; 1st conjugation verbs are conjugated by adding pronoun endings to the stem",
+      "practical_latin": [
+        { "latin": "Finis!", "english": "The end!" }
+      ],
+      "vocab": [
+        { "id": "pl-25-1", "latin": "amo",    "english": "I love",           "pos": "verb_conj1", "person": "1sg", "audio_key": "amo",    "derivatives": [] },
+        { "id": "pl-25-2", "latin": "amas",   "english": "you (s.) love",    "pos": "verb_conj1", "person": "2sg", "audio_key": "amas",   "derivatives": [] },
+        { "id": "pl-25-3", "latin": "amat",   "english": "he, she, it loves","pos": "verb_conj1", "person": "3sg", "audio_key": "amat",   "derivatives": [] },
+        { "id": "pl-25-4", "latin": "amamus", "english": "we love",          "pos": "verb_conj1", "person": "1pl", "audio_key": "amamus", "derivatives": [] },
+        { "id": "pl-25-5", "latin": "amatis", "english": "you (pl.) love",   "pos": "verb_conj1", "person": "2pl", "audio_key": "amatis", "derivatives": [] },
+        { "id": "pl-25-6", "latin": "amant",  "english": "they love",        "pos": "verb_conj1", "person": "3pl", "audio_key": "amant",  "derivatives": [] }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "The Our Father (Lord's Prayer)",
+        "latin_full": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra. Panem nostrum cotidianum da nobis hodie, et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.",
+        "english_full": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also forgive our debtors. And lead us not into temptation, but deliver us from evil. Amen.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "sed libera nos a malo. Amen.",
+        "new_portion_english": "but deliver us from evil. Amen.",
+        "note": "Final line — the full Pater Noster is now complete."
+      },
+      "paradigms": [
+        {
+          "id": "amare-present",
+          "label": "First Conjugation — amo (to love), Present Tense",
+          "type": "conjugation",
+          "model_verb": "amare",
+          "rows": [
+            { "person": "1sg", "latin": "amo",    "english": "I love" },
+            { "person": "2sg", "latin": "amas",   "english": "you (s.) love" },
+            { "person": "3sg", "latin": "amat",   "english": "he, she, it loves" },
+            { "person": "1pl", "latin": "amamus", "english": "we love" },
+            { "person": "2pl", "latin": "amatis", "english": "you (pl.) love" },
+            { "person": "3pl", "latin": "amant",  "english": "they love" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "R5",
+      "type": "review",
+      "title": "Review Lesson 5 (Lessons 21–25)",
+      "reviews_lessons": [21, 22, 23, 24, 25],
+      "prayer_id": "pater-noster",
+      "latin_song": {
+        "title": "Resonet in Laudibus (More of Refrain)",
+        "lines": [
+          { "latin": "Christus natus hodie", "english": "Christ is born today" }
+        ],
+        "source": "Lingua Angelica CD"
+      }
+    }
+  ],
+
+  "prayers": {
+    "oremus": {
+      "id": "oremus",
+      "title": "Oremus",
+      "latin": "Oremus.",
+      "english": "Let us pray.",
+      "type": "motto",
+      "audio_key": "oremus",
+      "introduced_lesson": 1
+    },
+    "sanctus": {
+      "id": "sanctus",
+      "title": "The Sanctus",
+      "latin": "Sanctus, Sanctus, Sanctus, Dominus Deus Sabaoth, pleni sunt caeli et terra gloria Tua. Hosanna in excelsis. Benedictus qui venit in nomine Domini. Hosanna in excelsis.",
+      "english": "Holy, Holy, Holy, Lord God of Hosts, heaven and earth are full of Thy glory. Hosanna in the highest. Blessed is He who comes in the name of the Lord. Hosanna in the highest.",
+      "type": "prayer",
+      "audio_key": "sanctus",
+      "introduced_lesson": 2,
+      "completed_lesson": 5
+    },
+    "gloria-patri": {
+      "id": "gloria-patri",
+      "title": "Gloria Patri",
+      "latin": "Gloria Patri et Filio et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula saeculorum. Amen.",
+      "english": "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "type": "prayer",
+      "audio_key": "gloria-patri",
+      "introduced_lesson": 6,
+      "completed_lesson": 10
+    },
+    "table-blessing": {
+      "id": "table-blessing",
+      "title": "The Table Blessing",
+      "latin": "Benedic, Domine, nos et haec Tua dona, quae de Tua largitate sumus sumpturi, per Christum Dominum nostrum. Amen.",
+      "english": "Bless us, O Lord, and these Thy gifts, which from Thy bounty we are about to receive, through Christ our Lord. Amen.",
+      "type": "prayer",
+      "audio_key": "table-blessing",
+      "introduced_lesson": 11,
+      "completed_lesson": 15
+    },
+    "pater-noster": {
+      "id": "pater-noster",
+      "title": "The Our Father (Lord's Prayer)",
+      "latin": "Pater Noster, qui es in caelis, sanctificetur nomen Tuum. Adveniat regnum Tuum. Fiat voluntas Tua sicut in caelo et in terra. Panem nostrum cotidianum da nobis hodie, et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.",
+      "english": "Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also forgive our debtors. And lead us not into temptation, but deliver us from evil. Amen.",
+      "type": "prayer",
+      "audio_key": "pater-noster",
+      "introduced_lesson": 16,
+      "completed_lesson": 25,
+      "note": "Second half learned across L21–25; full prayer complete at L25"
+    }
+  }
+}

@@ -199,7 +199,7 @@ const TOOLS = [
     icon: '🏛',
     title: 'Magister Marcus',
     subtitle: 'Via Latina — The Latin Way',
-    desc: 'Read Caesar, Virgil, Cicero, and the Vulgate. Classical pronunciation, pronunciation drills, and 4 student profiles.',
+    desc: 'Via Latina: Gradus I (Prima Latina) + Gradus II (Latina Christiana from screenshots) + authentic texts (Caesar to Virgil). Structured lessons, flashcards, quizzes, classical TTS (Leo + overrides), drills & chat with Magister.',
     accent: '#c9902a',
     href: '/latin',
     status: 'active',

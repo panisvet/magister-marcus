@@ -280,9 +280,9 @@ npm install -g wrangler
 
 # Copy the example secrets file
 cp .dev.vars.example .dev.vars
-# Edit .dev.vars and add your real ANTHROPIC_API_KEY
+# Edit .dev.vars and add your real ANTHROPIC_API_KEY and XAI_API_KEY (for TTS / Grok Voice Leo)
 
-# Terminal 1 — run the Pages Functions (API proxy) on port 8788
+# Terminal 1 — run the Pages Functions (API proxy, including /api/tts) on port 8788
 npx wrangler pages dev dist --port 8788
 
 # Terminal 2 — run Vite dev server (proxies /api/* to wrangler)

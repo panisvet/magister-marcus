@@ -1,6 +1,11 @@
 # Copy this file to .dev.vars for local development
 # .dev.vars is gitignored — never commit your actual key
 #
+# For chat (Anthropic):
 # Get your key at: https://console.anthropic.com/settings/keys
-
 ANTHROPIC_API_KEY=sk-ant-your-key-here
+
+# For TTS (xAI Grok Voice):
+# Get your key at: https://console.grok.x.ai/ or https://x.ai/api
+XAI_API_KEY=sk-your-xai-key-here
+# Optional: XAI_TTS_VOICE=leo  (default in code)

@@ -13,7 +13,7 @@ import MagisterHistoria from "./pages/MagisterHistoria"
 import MagisterArtis from "./pages/MagisterArtis.jsx"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/read" element={<ReadingApp />} />

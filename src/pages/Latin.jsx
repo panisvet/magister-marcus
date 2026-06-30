@@ -1,5 +1,7 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import TopNav from "../components/TopNav.jsx";
+import primaLatinaData from "../data/prima-latina.json";
+import latinaChristianaData from "../data/latina-christiana.json";
 
 // ── Styles injected once ──────────────────────────────────────────────────────
 const STYLES = `
@@ -20,7 +22,7 @@ const STYLES = `
   grid-template-columns:240px 1fr;grid-template-rows:auto auto 1fr auto;
   grid-template-areas:"sb sbar""sb tbar""sb chat""sb ibar";}
 
-/* Sidebar */
+/* ── Sidebar ─────────────────────────────────────────────────────────────────── */
 .mm-sb{grid-area:sb;background:linear-gradient(180deg,#1a1005,#120c04);border-right:1px solid #c9902a33;display:flex;flex-direction:column;overflow:hidden;}
 .mm-brand{padding:14px 14px 11px;border-bottom:1px solid #c9902a22;text-align:center;}
 .mm-brand-icon{font-family:'Cinzel Decorative',serif;font-size:1.7rem;color:var(--gold2);text-shadow:0 0 18px rgba(232,184,75,.4);line-height:1;}
@@ -39,13 +41,31 @@ const STYLES = `
 .mm-drill-btn:hover{border-color:var(--gold);background:#c9902a0d;color:var(--parch2);}
 .mm-drill-btn .dn{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.1em;display:block;text-transform:uppercase;}
 .mm-drill-btn .dd{font-size:.68rem;font-style:italic;display:block;margin-top:1px;}
-.mm-corpus{padding:9px 11px 5px;flex:1;overflow-y:auto;border-bottom:1px solid #c9902a18;}
-.mm-corpus::-webkit-scrollbar{width:3px;}
-.mm-corpus::-webkit-scrollbar-thumb{background:#c9902a44;}
+
+/* Scrollable sidebar area — wraps corpus + curriculum sections */
+.mm-sb-scroll{flex:1;overflow-y:auto;}
+.mm-sb-scroll::-webkit-scrollbar{width:3px;}
+.mm-sb-scroll::-webkit-scrollbar-thumb{background:#c9902a44;}
+
+.mm-corpus{padding:9px 11px 5px;border-bottom:1px solid #c9902a18;}
 .mm-cb{display:block;width:100%;text-align:left;padding:5px 8px;margin-bottom:3px;background:transparent;border:none;border-left:2px solid transparent;cursor:pointer;color:var(--stone);font-family:'Crimson Pro',serif;font-size:.8rem;line-height:1.3;transition:all .15s;border-radius:0 2px 2px 0;}
 .mm-cb:hover{color:var(--parch2);border-left-color:var(--gold);background:#c9902a0d;}
 .mm-cb .auth{font-family:'Cinzel',serif;font-size:.53rem;letter-spacing:.1em;color:var(--gold);display:block;text-transform:uppercase;}
-.mm-sb-foot{padding:7px 11px;font-size:.66rem;color:var(--stone);font-style:italic;border-top:1px solid #c9902a18;}
+
+/* Curriculum collapsible sections */
+.mm-curr-section{border-bottom:1px solid #c9902a18;}
+.mm-curr-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;padding:9px 11px 7px;background:transparent;border:none;cursor:pointer;transition:background .15s;}
+.mm-curr-toggle:hover{background:#c9902a0a;}
+.mm-curr-chevron{font-size:.75rem;color:var(--stone);line-height:1;flex-shrink:0;}
+.mm-curr-lessons{padding:0 11px 6px;}
+.mm-curr-btn{display:flex;align-items:baseline;gap:6px;width:100%;text-align:left;padding:4px 7px;margin-bottom:2px;background:transparent;border:none;border-left:2px solid transparent;cursor:pointer;color:var(--stone);transition:all .14s;border-radius:0 2px 2px 0;}
+.mm-curr-btn:hover{color:var(--parch2);border-left-color:var(--gold);background:#c9902a0d;}
+.mm-curr-btn.active{color:var(--gold2);border-left-color:var(--gold2);background:#c9902a14;}
+.mm-curr-num{font-family:'Cinzel',serif;font-size:.5rem;letter-spacing:.08em;color:var(--gold);flex-shrink:0;min-width:20px;}
+.mm-curr-btn.active .mm-curr-num{color:var(--gold2);}
+.mm-curr-title{font-family:'Crimson Pro',serif;font-size:.76rem;line-height:1.3;font-style:italic;}
+
+.mm-sb-foot{padding:7px 11px;font-size:.66rem;color:var(--stone);font-style:italic;border-top:1px solid #c9902a18;flex-shrink:0;}
 .mm-speed-section{padding:9px 11px 8px;border-bottom:1px solid #c9902a18;}
 .mm-speed-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;}
 .mm-speed-label{font-family:'Cinzel',serif;font-size:.54rem;letter-spacing:.15em;color:var(--stone);text-transform:uppercase;}
@@ -56,7 +76,7 @@ input[type=range].mm-slider{width:100%;height:3px;-webkit-appearance:none;appear
 input[type=range].mm-slider::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;border-radius:50%;background:var(--gold2);border:2px solid var(--gold);box-shadow:0 0 6px rgba(201,144,42,.5);cursor:pointer;}
 input[type=range].mm-slider::-moz-range-thumb{width:13px;height:13px;border-radius:50%;background:var(--gold2);border:2px solid var(--gold);cursor:pointer;}
 
-/* Student bar */
+/* ── Student bar ─────────────────────────────────────────────────────────────── */
 .mm-sbar{grid-area:sbar;border-bottom:1px solid #c9902a44;padding:6px 16px;display:flex;align-items:center;gap:6px;}
 .mm-sbar-lbl{font-family:'Cinzel',serif;font-size:.54rem;letter-spacing:.18em;color:var(--stone);text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
 .mm-tabs{display:flex;gap:5px;flex:1;}
@@ -68,13 +88,13 @@ input[type=range].mm-slider::-moz-range-thumb{width:13px;height:13px;border-radi
 .mm-tab.active .mm-tab-lvl{color:var(--gold);}
 .mm-name-inp{font-family:'Cinzel',serif;font-size:.66rem;letter-spacing:.08em;background:transparent;border:none;border-bottom:1px solid var(--gold);color:var(--gold2);outline:none;width:82px;text-align:center;padding:0;}
 
-/* Top bar */
+/* ── Top bar ─────────────────────────────────────────────────────────────────── */
 .mm-tbar{grid-area:tbar;padding:6px 20px 5px;border-bottom:1px solid #c9902a1a;display:flex;align-items:center;justify-content:space-between;gap:10px;}
 .mm-tbar-title{font-family:'Cinzel',serif;font-size:.76rem;letter-spacing:.1em;color:var(--gold2);}
 .mm-tbar-meta{font-size:.7rem;color:var(--stone);font-style:italic;margin-top:1px;}
 .mm-badge{font-family:'Cinzel',serif;font-size:.56rem;letter-spacing:.15em;padding:3px 9px;border:1px solid var(--gold);border-radius:1px;color:var(--gold2);text-transform:uppercase;background:#c9902a11;white-space:nowrap;}
 
-/* Chat */
+/* ── Chat ────────────────────────────────────────────────────────────────────── */
 .mm-chat{grid-area:chat;overflow-y:auto;padding:14px 22px;display:flex;flex-direction:column;gap:13px;scroll-behavior:smooth;}
 .mm-chat::-webkit-scrollbar{width:4px;}
 .mm-chat::-webkit-scrollbar-thumb{background:#c9902a33;border-radius:3px;}
@@ -104,7 +124,7 @@ input[type=range].mm-slider::-moz-range-thumb{width:13px;height:13px;border-radi
 .mm-dots span:nth-child(3){animation-delay:.4s;}
 @keyframes mmBounce{0%,80%,100%{transform:scale(0)}40%{transform:scale(1)}}
 
-/* Input bar */
+/* ── Input bar ───────────────────────────────────────────────────────────────── */
 .mm-ibar{grid-area:ibar;padding:8px 18px 11px;border-top:1px solid #c9902a22;display:flex;flex-direction:column;gap:5px;}
 .mm-sugg{display:flex;flex-wrap:wrap;gap:4px;}
 .mm-sug{font-family:'Crimson Pro',serif;font-size:.78rem;color:var(--stone);background:#c9902a0d;border:1px solid #c9902a2a;border-radius:2px;padding:2px 8px;cursor:pointer;transition:all .14s;font-style:italic;}
@@ -121,7 +141,7 @@ input[type=range].mm-slider::-moz-range-thumb{width:13px;height:13px;border-radi
 .mm-send:hover:not(:disabled){background:linear-gradient(135deg,#fce080,var(--gold2));transform:translateY(-1px);}
 .mm-send:disabled{opacity:.45;cursor:not-allowed;transform:none;}
 
-/* Drill modal */
+/* ── Drill modal ─────────────────────────────────────────────────────────────── */
 .mm-drill-modal{position:fixed;inset:0;z-index:200;background:rgba(8,6,3,.9);display:flex;align-items:center;justify-content:center;}
 .mm-drill-box{background:linear-gradient(135deg,#1e160f,#140e07);border:1px solid var(--gold);border-radius:4px;padding:28px 32px;max-width:500px;width:90%;box-shadow:0 12px 50px rgba(0,0,0,.7);display:flex;flex-direction:column;gap:15px;}
 .mm-drill-title{font-family:'Cinzel',serif;font-size:.95rem;letter-spacing:.15em;color:var(--gold2);text-transform:uppercase;text-align:center;}
@@ -143,6 +163,43 @@ input[type=range].mm-slider::-moz-range-thumb{width:13px;height:13px;border-radi
 .mm-db.next:hover{border-color:var(--laurel2);}
 .mm-db.cls{color:var(--stone);background:transparent;border-color:#44332255;}
 .mm-db.cls:hover{border-color:var(--stone);color:var(--parch2);}
+
+/* ── Curriculum lesson view (main area) ─────────────────────────────────────── */
+.mm-clv-wrap{grid-column:2/3;grid-row:1/5;overflow-y:auto;background:var(--bg);}
+.mm-clv-wrap::-webkit-scrollbar{width:4px;}
+.mm-clv-wrap::-webkit-scrollbar-thumb{background:#c9902a33;border-radius:3px;}
+.mm-clv-topbar{display:flex;align-items:center;gap:14px;padding:10px 20px;border-bottom:1px solid #c9902a22;position:sticky;top:0;background:var(--bg);z-index:10;}
+.mm-clv-back{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);background:transparent;border:1px solid #c9902a33;border-radius:2px;padding:5px 11px;cursor:pointer;transition:all .15s;flex-shrink:0;}
+.mm-clv-back:hover{color:var(--gold2);border-color:#c9902a66;}
+.mm-clv-breadcrumb{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.14em;color:var(--stone);text-transform:uppercase;}
+.mm-clv-study{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.12em;font-weight:600;color:var(--ink);background:linear-gradient(135deg,var(--gold3),var(--gold));border:none;border-radius:2px;padding:5px 13px;cursor:pointer;white-space:nowrap;margin-left:auto;transition:all .14s;}
+.mm-clv-study:hover{background:linear-gradient(135deg,#fce080,var(--gold2));transform:translateY(-1px);}
+.mm-clv-body{max-width:720px;margin:0 auto;padding:2rem 1.5rem 3rem;}
+.mm-clv-title{font-family:'Cinzel Decorative',serif;font-size:clamp(1.2rem,3vw,1.8rem);font-weight:400;color:var(--gold2);margin-bottom:.4rem;line-height:1.3;}
+.mm-clv-type{font-family:'IM Fell English',serif;font-style:italic;font-size:.9rem;color:var(--stone);margin-bottom:1.8rem;}
+.mm-clv-sec{margin-bottom:1.8rem;}
+.mm-clv-sec-label{font-family:'Cinzel',serif;font-size:.54rem;letter-spacing:.24em;color:var(--stone);text-transform:uppercase;margin-bottom:.65rem;}
+.mm-clv-pl{background:linear-gradient(135deg,#1e160f,#14100700);border:1px solid #c9902a2a;border-radius:3px;padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:5px;}
+.mm-clv-pl-row{display:flex;gap:1.5rem;font-size:.95rem;}
+.mm-clv-latin{color:var(--gold2);font-weight:600;}
+.mm-clv-eng{color:var(--stone);}
+.mm-clv-vocab{display:flex;flex-wrap:wrap;gap:7px;}
+.mm-clv-chip{background:#1e160f;border:1px solid #c9902a22;border-radius:2px;padding:4px 10px;font-size:.88rem;}
+.mm-clv-chip-lat{color:var(--gold2);}
+.mm-clv-chip-sep{color:#4a3f2e;margin:0 5px;}
+.mm-clv-chip-eng{color:var(--stone);}
+.mm-clv-chip-pos{font-family:'Cinzel',serif;font-size:.48rem;letter-spacing:.1em;color:#c9902a88;text-transform:uppercase;margin-left:5px;}
+.mm-clv-paradigm{margin-bottom:1.2rem;}
+.mm-clv-para-title{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin-bottom:.5rem;}
+.mm-clv-table{width:100%;border-collapse:collapse;font-size:.9rem;}
+.mm-clv-table th{font-family:'Cinzel',serif;font-size:.52rem;letter-spacing:.12em;color:var(--stone);text-transform:uppercase;padding:5px 10px;border-bottom:1px solid #c9902a33;text-align:left;}
+.mm-clv-table td{padding:5px 10px;border-bottom:1px solid #c9902a11;}
+.mm-clv-td-case{color:var(--stone);font-style:italic;font-size:.82rem;}
+.mm-clv-td-form{color:var(--gold3);font-family:'IM Fell English',serif;font-style:italic;}
+.mm-clv-prayer{background:#c9902a08;border:1px solid #c9902a22;border-left:3px solid var(--gold);border-radius:0 3px 3px 0;padding:1rem 1.2rem;}
+.mm-clv-prayer-name{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin-bottom:.6rem;}
+.mm-clv-prayer-text{font-family:'IM Fell English',serif;font-style:italic;font-size:1rem;color:var(--gold3);line-height:1.8;white-space:pre-line;}
+.mm-clv-empty{font-family:'IM Fell English',serif;font-style:italic;color:var(--stone);font-size:.9rem;line-height:1.6;padding:1rem 1.2rem;border:1px solid #c9902a18;border-radius:3px;}
 `;
 
 // ── Corpus ────────────────────────────────────────────────────────────────────
@@ -234,7 +291,7 @@ if (typeof window !== 'undefined' && window.speechSynthesis) {
 function classicPhonetic(t) {
   return t.replace(/ae/gi, m=>m[0]==='A'?'Ai':'ai').replace(/oe/gi,m=>m[0]==='O'?'Oi':'oi').replace(/\bv/gi,m=>m==='V'?'W':'w');
 }
-let ttsRate = 0.55; // global speed — mutated by slider
+let ttsRate = 0.55;
 
 function speakLatin(text, onEnd) {
   if (!window.speechSynthesis) return;
@@ -415,7 +472,7 @@ function DrillModal({level, onClose}) {
   );
 }
 
-// ── Main component ────────────────────────────────────────────────────────────
+// ── Speed Slider ──────────────────────────────────────────────────────────────
 function SpeedSlider() {
   const STEPS = [
     {rate:0.35, label:'Lentissime'},
@@ -424,15 +481,13 @@ function SpeedSlider() {
     {rate:0.80, label:'Celeriter'},
     {rate:1.00, label:'Celerrime'},
   ];
-  const [stepIdx, setStepIdx] = useState(1); // default: Lente (0.50)
-  // sync global ttsRate whenever step changes
+  const [stepIdx, setStepIdx] = useState(1);
   useEffect(()=>{ ttsRate = STEPS[stepIdx].rate; },[stepIdx]);
 
   function handleChange(e) {
     const i = parseInt(e.target.value);
     setStepIdx(i);
     ttsRate = STEPS[i].rate;
-    // Update CSS gradient fill
     e.target.style.setProperty('--pct', (i / (STEPS.length-1) * 100)+'%');
   }
   const pct = (stepIdx/(STEPS.length-1)*100)+'%';
@@ -454,23 +509,170 @@ function SpeedSlider() {
   );
 }
 
+// ── Curriculum Lesson Viewer ──────────────────────────────────────────────────
+function CurriculumLessonView({ lesson, book, onBack, onStudyWithMarcus }) {
+  const bookLabel = book === 'pl' ? 'Prima Latina' : 'Latina Christiana';
+  const isReview = lesson.type === 'review';
+  const lessonRef = isReview
+    ? `Review ${String(lesson.id).replace('R', '')}`
+    : `Lesson ${lesson.id}`;
+
+  const hasContent = (lesson.practical_latin?.length > 0) ||
+    (lesson.vocab?.length > 0) ||
+    (lesson.paradigms?.length > 0) ||
+    lesson.prayer;
+
+  return (
+    <div className="mm-clv-wrap">
+      {/* Sticky top bar */}
+      <div className="mm-clv-topbar">
+        <button className="mm-clv-back" onClick={onBack}>← Magister Marcus</button>
+        <span className="mm-clv-breadcrumb">{bookLabel} · {lessonRef}</span>
+        <button className="mm-clv-study" onClick={onStudyWithMarcus}>
+          Study with Magister →
+        </button>
+      </div>
+
+      <div className="mm-clv-body">
+        <h2 className="mm-clv-title">{lesson.title}</h2>
+        <div className="mm-clv-type">
+          {isReview
+            ? `Reviews: ${lesson.reviews_lessons?.join(', ') || ''}`
+            : bookLabel}
+        </div>
+
+        {/* Empty lesson notice */}
+        {!hasContent && (
+          <div className="mm-clv-empty">
+            This lesson's content is still being prepared. Use <em>Study with Magister →</em> above
+            to have Magister Marcus teach this material through conversation.
+          </div>
+        )}
+
+        {/* Practical Latin */}
+        {lesson.practical_latin?.length > 0 && (
+          <div className="mm-clv-sec">
+            <div className="mm-clv-sec-label">Practical Latin</div>
+            <div className="mm-clv-pl">
+              {lesson.practical_latin.map((pl, i) => (
+                <div key={i} className="mm-clv-pl-row">
+                  <span className="mm-clv-latin">{pl.latin}</span>
+                  <span className="mm-clv-eng">{pl.english}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Vocabulary */}
+        {lesson.vocab?.length > 0 && (
+          <div className="mm-clv-sec">
+            <div className="mm-clv-sec-label">
+              Vocabulary — {lesson.vocab.length} word{lesson.vocab.length !== 1 ? 's' : ''}
+            </div>
+            <div className="mm-clv-vocab">
+              {lesson.vocab.map((v, i) => (
+                <div key={v.id || i} className="mm-clv-chip">
+                  <span className="mm-clv-chip-lat">{v.latin}</span>
+                  <span className="mm-clv-chip-sep">·</span>
+                  <span className="mm-clv-chip-eng">{v.english}</span>
+                  {v.part_of_speech && (
+                    <span className="mm-clv-chip-pos">{v.part_of_speech}</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Paradigm tables */}
+        {lesson.paradigms?.length > 0 && (
+          <div className="mm-clv-sec">
+            <div className="mm-clv-sec-label">Grammar</div>
+            {lesson.paradigms.map((p, pi) => (
+              <div key={pi} className="mm-clv-paradigm">
+                <div className="mm-clv-para-title">{p.title}</div>
+                <table className="mm-clv-table">
+                  {p.headers?.length > 0 && (
+                    <thead>
+                      <tr>
+                        {p.headers.map((h, hi) => <th key={hi}>{h}</th>)}
+                      </tr>
+                    </thead>
+                  )}
+                  <tbody>
+                    {p.rows?.map((row, ri) => (
+                      <tr key={ri}>
+                        {row.cells?.map((cell, ci) => (
+                          <td key={ci} className={ci === 0 ? 'mm-clv-td-case' : 'mm-clv-td-form'}>
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Prayer */}
+        {lesson.prayer && (
+          <div className="mm-clv-sec">
+            <div className="mm-clv-sec-label">Prayer</div>
+            <div className="mm-clv-prayer">
+              <div className="mm-clv-prayer-name">{lesson.prayer.name}</div>
+              <div className="mm-clv-prayer-text">{lesson.prayer.latin_text}</div>
+            </div>
+          </div>
+        )}
+
+        {/* Latin song (review lessons) */}
+        {isReview && lesson.latin_song && (
+          <div className="mm-clv-sec">
+            <div className="mm-clv-sec-label">Latin Song</div>
+            <div className="mm-clv-prayer">
+              <div className="mm-clv-prayer-name">{lesson.latin_song.title}</div>
+              <div className="mm-clv-prayer-text" style={{fontStyle:'normal',color:'var(--parch2)',fontSize:'.9rem'}}>
+                {lesson.latin_song.english}
+                {lesson.latin_song.source && (
+                  <span style={{display:'block',marginTop:'4px',color:'var(--stone)',fontSize:'.8rem'}}>
+                    {lesson.latin_song.source}
+                  </span>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Main component ────────────────────────────────────────────────────────────
 export default function MagisterMarcus() {
   const SRCtor = (typeof window !== 'undefined' && (window.SpeechRecognition||window.webkitSpeechRecognition)) || null;
   const [students, setStudents] = useState(DEFAULTS.map(mkStudent));
   const [activeIdx, setActiveIdx] = useState(0);
-  // Per-student chat messages: array of arrays
   const [allMsgs, setAllMsgs] = useState([[], [], [], []]);
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
   const [drillOpen, setDrillOpen] = useState(false);
   const [listening, setListening] = useState(false);
+
+  // Curriculum viewer state
+  const [currLesson, setCurrLesson] = useState(null);
+  const [currBook, setCurrBook] = useState(null);   // 'pl' | 'lc'
+  const [plOpen, setPlOpen] = useState(false);
+  const [lcOpen, setLcOpen] = useState(false);
+
   const chatRef = useRef(null);
   const recRef = useRef(null);
 
   const student = students[activeIdx];
   const msgs = allMsgs[activeIdx];
 
-  // Welcome on first visit per student — read from latest state to avoid stale closure
   useEffect(()=>{
     let shouldWelcome = false;
     setStudents(prev=>{
@@ -507,21 +709,17 @@ export default function MagisterMarcus() {
     setBusy(true);
     const s = students[idx];
     if(!silent) addUserMsg(idx, userText);
-    // Build history from current messages + new user message
     const historyMsgs = allMsgs[idx]
       .filter(m=>m.content!=='welcome'&&m.content!=='typing')
       .map(m=>({role:m.role, content:m.content}));
     historyMsgs.push({role:'user',content:userText});
 
-    // Add typing indicator
     setAllMsgs(prev=>{const n=prev.map(a=>[...a]);n[idx]=[...n[idx],{role:'assistant',content:'typing'}];return n;});
 
     try {
       const resp = await fetch('/api/chat',{
         method:'POST',
-        headers:{
-          'Content-Type':'application/json',
-        },
+        headers:{'Content-Type':'application/json'},
         body:JSON.stringify({
           max_tokens:1024,
           system:buildSystem(s),
@@ -529,7 +727,6 @@ export default function MagisterMarcus() {
         })
       });
       const data = await resp.json();
-      // Remove typing indicator
       setAllMsgs(prev=>{const n=prev.map(a=>[...a]);n[idx]=n[idx].filter(m=>m.content!=='typing');return n;});
       if(data.error) {
         addAssistantMsg(idx,`ERROR: ${data.error.message}`);
@@ -548,6 +745,8 @@ export default function MagisterMarcus() {
     const corpus = CORPUS[key];
     if(!corpus) return;
     stopSpeaking();
+    setCurrLesson(null);
+    setCurrBook(null);
     setStudents(prev=>{
       const n=[...prev];
       n[activeIdx]={...n[activeIdx],textKey:key,textTitle:corpus.title,textMeta:corpus.meta};
@@ -599,20 +798,45 @@ export default function MagisterMarcus() {
     recRef.current=r; r.start();
   }
 
-  function handleSpeak(latin, onEnd) {
-    speakLatin(latin, onEnd);
-  }
+  function handleSpeak(latin, onEnd) { speakLatin(latin, onEnd); }
 
   function getInitials(name) {
     return name.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()||'S';
+  }
+
+  // Open a curriculum lesson without leaving the page
+  function openLesson(lesson, book) {
+    stopSpeaking();
+    if(recRef.current){try{recRef.current.stop();}catch(e){}}
+    setListening(false);
+    setCurrLesson(lesson);
+    setCurrBook(book);
+  }
+
+  // Back to chat, lesson viewer closed
+  function closeLesson() {
+    setCurrLesson(null);
+    setCurrBook(null);
+  }
+
+  // Close viewer AND send lesson context to the AI tutor
+  function studyWithMarcus(lesson, book) {
+    const bookName = book === 'pl' ? 'Prima Latina' : 'Latina Christiana';
+    const isRev = lesson.type === 'review';
+    const ref = isRev ? `Review ${String(lesson.id).replace('R','')}` : `Lesson ${lesson.id}`;
+    const vocabSample = lesson.vocab?.slice(0,6).map(v=>`${v.latin} (${v.english})`).join(', ') || '';
+    const prompt = `Please teach me ${bookName} ${ref}: "${lesson.title}".${vocabSample ? ` Key vocabulary: ${vocabSample}.` : ''} Walk me through this material step by step at my current level.`;
+    closeLesson();
+    // Slight delay so the chat renders before API call
+    setTimeout(() => callAPI(prompt, activeIdx), 50);
   }
 
   function WelcomeMessage({name}) {
     return (<>
       <p><strong>Salve, {name}!</strong> Welcome to <em>Via Latina</em> — the Latin Way.</p>
       <p>I am Magister Marcus. Together we will read <strong>Virgil's poetry</strong>, <strong>Caesar's dispatches from Gaul</strong>, <strong>Cicero's speeches</strong>, <strong>Seneca's letters</strong>, and Holy Scripture in the words of St. Jerome.</p>
-      <p>Look for the <strong>▶ RECITA</strong> button on Latin passages to hear them spoken aloud. Use the 🎤 microphone to speak your answers. Open <strong>Pronunciation Drill</strong> to practice speaking Latin phrases.</p>
-      <p><em>Festina lente.</em> Make haste slowly. Choose a <strong>level</strong> and a <strong>text</strong> to begin. <em>Quid vis discere hodie?</em></p>
+      <p>Use the sidebar to choose a <strong>level</strong>, open a <strong>text</strong>, or browse the structured curricula — <em>Prima Latina</em> and <em>Latina Christiana</em>. Press <strong>Study with Magister →</strong> on any lesson to bring it here as a live conversation.</p>
+      <p><em>Festina lente.</em> Make haste slowly. <em>Quid vis discere hodie?</em></p>
     </>);
   }
 
@@ -624,7 +848,7 @@ export default function MagisterMarcus() {
         <TopNav current="/latin"/>
         <div className="mm-shell">
 
-          {/* SIDEBAR */}
+          {/* ── SIDEBAR (always visible) ───────────────────────────────────── */}
           <aside className="mm-sb">
             <div className="mm-brand">
               <div className="mm-brand-icon">M</div>
@@ -637,7 +861,8 @@ export default function MagisterMarcus() {
             <div className="mm-lv-section">
               <div className="mm-sec-label">Curriculum Level</div>
               {Object.entries(LP).map(([lv,lp])=>(
-                <button key={lv} className={`mm-lv-btn${student.level===lv?' active':''}`} onClick={()=>setLevel(lv)}>
+                <button key={lv} className={`mm-lv-btn${student.level===lv?' active':''}`}
+                  onClick={()=>{ closeLesson(); setLevel(lv); }}>
                   <span className="mm-lv-name">{lp.name}</span>
                   <span className="mm-lv-desc">{lv==='I'?'First words & phrases':lv==='II'?'Sentences & grammar':lv==='III'?'Stories & fables':lv==='IV'?'Adapted classical prose':'Poetry & original texts'}</span>
                 </button>
@@ -647,97 +872,162 @@ export default function MagisterMarcus() {
             <div className="mm-drill-section">
               <button className="mm-drill-btn" onClick={()=>setDrillOpen(true)}>
                 <span style={{fontSize:'1rem'}}>🎙</span>
-                <span className="mm-dt-text">
+                <span>
                   <span className="dn">Pronunciation Drill</span>
                   <span className="dd">Listen · Speak · Repeat</span>
                 </span>
               </button>
             </div>
 
-            <div className="mm-corpus">
-              <div className="mm-sec-label">Texts &amp; Passages</div>
-              {Object.entries(CORPUS).map(([key,c])=>(
-                <button key={key} className="mm-cb" onClick={()=>loadText(key)}>
-                  <span className="auth">{c.meta.split('·')[0].trim()}</span>
-                  {c.title}
+            {/* Scrollable area: texts + curriculum */}
+            <div className="mm-sb-scroll">
+
+              <div className="mm-corpus">
+                <div className="mm-sec-label">Texts &amp; Passages</div>
+                {Object.entries(CORPUS).map(([key,c])=>(
+                  <button key={key} className="mm-cb" onClick={()=>loadText(key)}>
+                    <span className="auth">{c.meta.split('·')[0].trim()}</span>
+                    {c.title}
+                  </button>
+                ))}
+              </div>
+
+              {/* Prima Latina */}
+              <div className="mm-curr-section">
+                <button className="mm-curr-toggle" onClick={()=>setPlOpen(o=>!o)}>
+                  <div className="mm-sec-label" style={{marginBottom:0}}>Gradus I · Prima Latina</div>
+                  <span className="mm-curr-chevron">{plOpen?'▾':'▸'}</span>
                 </button>
-              ))}
-            </div>
+                {plOpen && (
+                  <div className="mm-curr-lessons">
+                    {primaLatinaData.lessons.map(l=>{
+                      const isRev = l.type === 'review';
+                      const label = isRev ? String(l.id) : `L${l.id}`;
+                      const isActive = currLesson?.id === l.id && currBook === 'pl';
+                      return (
+                        <button key={l.id}
+                          className={`mm-curr-btn${isActive?' active':''}`}
+                          onClick={()=>openLesson(l,'pl')}>
+                          <span className="mm-curr-num">{label}</span>
+                          <span className="mm-curr-title">{l.title}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+
+              {/* Latina Christiana */}
+              <div className="mm-curr-section">
+                <button className="mm-curr-toggle" onClick={()=>setLcOpen(o=>!o)}>
+                  <div className="mm-sec-label" style={{marginBottom:0}}>Gradus II · Latina Christiana</div>
+                  <span className="mm-curr-chevron">{lcOpen?'▾':'▸'}</span>
+                </button>
+                {lcOpen && (
+                  <div className="mm-curr-lessons">
+                    {latinaChristianaData.lessons.map(l=>{
+                      const isActive = currLesson?.id === l.id && currBook === 'lc';
+                      return (
+                        <button key={l.id}
+                          className={`mm-curr-btn${isActive?' active':''}`}
+                          onClick={()=>openLesson(l,'lc')}>
+                          <span className="mm-curr-num">L{l.id}</span>
+                          <span className="mm-curr-title">{l.title}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+
+            </div>{/* end mm-sb-scroll */}
 
             <div className="mm-sb-foot">Each student's history &amp; level saved separately.</div>
           </aside>
 
-          {/* STUDENT BAR */}
-          <div className="mm-sbar">
-            <span className="mm-sbar-lbl">Discipuli</span>
-            <div className="mm-tabs">
-              {students.map((s,i)=>(
-                <button key={i} className={`mm-tab${i===activeIdx?' active':''}`} onClick={()=>switchStudent(i)}>
-                  {i===activeIdx
-                    ? <input className="mm-name-inp" value={s.name} maxLength={16}
-                        onChange={e=>{const v=e.target.value;setStudents(prev=>{const n=[...prev];n[i]={...n[i],name:v||DEFAULTS[i]};return n;});}}
-                        onClick={e=>e.stopPropagation()}
-                        onKeyDown={e=>{if(e.key==='Enter')e.target.blur();e.stopPropagation();}}
-                      />
-                    : <span className="mm-tab-name">{s.name}</span>
-                  }
-                  <span className="mm-tab-lvl">{LP[s.level].badge}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* TOP BAR */}
-          <div className="mm-tbar">
-            <div>
-              <div className="mm-tbar-title">{student.textTitle}</div>
-              <div className="mm-tbar-meta">{student.textMeta}</div>
-            </div>
-            <div className="mm-badge">{LP[student.level].badge}</div>
-          </div>
-
-          {/* CHAT */}
-          <div className="mm-chat" ref={chatRef}>
-            {msgs.map((msg,i)=>(
-              <div key={i} className={`mm-msg ${msg.role}`}>
-                <div className="mm-av">{msg.role==='assistant'?'MM':getInitials(student.name)}</div>
-                <div className="mm-bub">
-                  <span className="mm-lbl">{msg.role==='assistant'?'Magister Marcus':student.name}</span>
-                  {msg.content==='welcome'
-                    ? <WelcomeMessage name={student.name}/>
-                    : msg.content==='typing'
-                    ? <div className="mm-dots"><span/><span/><span/></div>
-                    : msg.role==='assistant'
-                    ? <ParsedResponse text={msg.content} onSpeak={handleSpeak}/>
-                    : <p>{msg.content}</p>
-                  }
+          {/* ── MAIN AREA — lesson viewer OR chat ─────────────────────────── */}
+          {currLesson ? (
+            <CurriculumLessonView
+              lesson={currLesson}
+              book={currBook}
+              onBack={closeLesson}
+              onStudyWithMarcus={()=>studyWithMarcus(currLesson, currBook)}
+            />
+          ) : (
+            <>
+              {/* STUDENT BAR */}
+              <div className="mm-sbar">
+                <span className="mm-sbar-lbl">Discipuli</span>
+                <div className="mm-tabs">
+                  {students.map((s,i)=>(
+                    <button key={i} className={`mm-tab${i===activeIdx?' active':''}`} onClick={()=>switchStudent(i)}>
+                      {i===activeIdx
+                        ? <input className="mm-name-inp" value={s.name} maxLength={16}
+                            onChange={e=>{const v=e.target.value;setStudents(prev=>{const n=[...prev];n[i]={...n[i],name:v||DEFAULTS[i]};return n;});}}
+                            onClick={e=>e.stopPropagation()}
+                            onKeyDown={e=>{if(e.key==='Enter')e.target.blur();e.stopPropagation();}}
+                          />
+                        : <span className="mm-tab-name">{s.name}</span>
+                      }
+                      <span className="mm-tab-lvl">{LP[s.level].badge}</span>
+                    </button>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
 
-          {/* INPUT BAR */}
-          <div className="mm-ibar">
-            <div className="mm-sugg">
-              {(SUGG[student.level]||[]).map((s,i)=>(
-                <button key={i} className="mm-sug" onClick={()=>send(s)}>{s}</button>
-              ))}
-            </div>
-            <div className="mm-input-row">
-              <textarea className="mm-inp" value={input} placeholder="Scribe hic… or use 🎤 to speak…" rows={1}
-                onChange={e=>setInput(e.target.value)}
-                onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send();}}}
-                style={{height:'auto'}}
-              />
-              <button className={`mm-mic${!SRCtor?' off':listening?' listening':''}`}
-                onClick={toggleMic} title={!SRCtor?'Speech recognition requires Chrome or Edge':'Speak Latin'}>
-                🎤
-              </button>
-              <button className="mm-send" onClick={()=>send()} disabled={busy||!input.trim()}>
-                MITTE ▶
-              </button>
-            </div>
-          </div>
+              {/* TOP BAR */}
+              <div className="mm-tbar">
+                <div>
+                  <div className="mm-tbar-title">{student.textTitle}</div>
+                  <div className="mm-tbar-meta">{student.textMeta}</div>
+                </div>
+                <div className="mm-badge">{LP[student.level].badge}</div>
+              </div>
+
+              {/* CHAT */}
+              <div className="mm-chat" ref={chatRef}>
+                {msgs.map((msg,i)=>(
+                  <div key={i} className={`mm-msg ${msg.role}`}>
+                    <div className="mm-av">{msg.role==='assistant'?'MM':getInitials(student.name)}</div>
+                    <div className="mm-bub">
+                      <span className="mm-lbl">{msg.role==='assistant'?'Magister Marcus':student.name}</span>
+                      {msg.content==='welcome'
+                        ? <WelcomeMessage name={student.name}/>
+                        : msg.content==='typing'
+                        ? <div className="mm-dots"><span/><span/><span/></div>
+                        : msg.role==='assistant'
+                        ? <ParsedResponse text={msg.content} onSpeak={handleSpeak}/>
+                        : <p>{msg.content}</p>
+                      }
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* INPUT BAR */}
+              <div className="mm-ibar">
+                <div className="mm-sugg">
+                  {(SUGG[student.level]||[]).map((s,i)=>(
+                    <button key={i} className="mm-sug" onClick={()=>send(s)}>{s}</button>
+                  ))}
+                </div>
+                <div className="mm-input-row">
+                  <textarea className="mm-inp" value={input} placeholder="Scribe hic… or use 🎤 to speak…" rows={1}
+                    onChange={e=>setInput(e.target.value)}
+                    onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send();}}}
+                    style={{height:'auto'}}
+                  />
+                  <button className={`mm-mic${!SRCtor?' off':listening?' listening':''}`}
+                    onClick={toggleMic} title={!SRCtor?'Speech recognition requires Chrome or Edge':'Speak Latin'}>
+                    🎤
+                  </button>
+                  <button className="mm-send" onClick={()=>send()} disabled={busy||!input.trim()}>
+                    MITTE ▶
+                  </button>
+                </div>
+              </div>
+            </>
+          )}
 
         </div>
 
