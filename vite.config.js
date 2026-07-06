@@ -2,30 +2,19 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { execSync } from 'child_process'
 
-const gitHash = (() => {
-  try { return execSync('git rev-parse --short HEAD').toString().trim() }
-  catch { return 'dev' }
-})()
+let buildHash = 'dev'
+let buildDate = new Date().toISOString().split('T')[0]
 
-const buildDate = new Date().toISOString().slice(0, 10)
+try {
+  buildHash = execSync('git rev-parse --short HEAD').toString().trim()
+} catch (_) {
+  buildHash = Math.random().toString(36).slice(2, 8)
+}
 
 export default defineConfig({
+  plugins: [react()],
   define: {
-    __BUILD_HASH__: JSON.stringify(gitHash),
+    __BUILD_HASH__: JSON.stringify(buildHash),
     __BUILD_DATE__: JSON.stringify(buildDate),
   },
-  plugins: [react()],
-  server: {
-    proxy: {
-      // During local dev: forwards /api/* to wrangler dev server (port 8788)
-      '/api': {
-        target: 'http://localhost:8788',
-        changeOrigin: true,
-      }
-    }
-  },
-  build: {
-    outDir: 'dist',
-    sourcemap: false,
-  }
 })

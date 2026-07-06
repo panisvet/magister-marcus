@@ -1,3 +1,1 @@
 /api/* /api/:splat 200
-/via-latina /index.html 200
-/lesson/* /index.html 200

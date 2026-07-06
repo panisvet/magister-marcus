@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "source": "Bennett, Easy Latin Stories for Beginners — Fabellae Pars Prima",
+    "level": "Latina Christiana",
+    "description": "Short moral tales from Bennett's Easy Latin Stories, Part 1 (public domain). Used for Latina Christiana Lectio tab.",
+    "license": "public domain"
+  },
+  "passages": [
+    {
+      "id": "fabellae-1",
+      "title": "De Asino et Leone",
+      "latin": "Asinus et leo per silvam ambulabant. Subito leo timuit et fugit. Asinus iratus dixit: 'Leo magnus est, sed ego non timeo.' Alii animales asinum laudaverunt. Sed leo rediit et asinum cepit.",
+      "english": "A donkey and a lion were walking through the forest. Suddenly the lion was afraid and fled. The donkey said angrily: 'The lion is great, but I am not afraid.' The other animals praised the donkey. But the lion returned and seized the donkey.",
+      "source_story": "Fabella I",
+      "notes": "Moral: Do not boast of the cowardice of others. Note imperfect (ambulabant) and perfect (fugit, dixit, rediit, cepit) tenses.",
+      "vocab_hints": ["asinus = donkey", "subito = suddenly", "fugit = fled", "iratus = angry", "alii = other", "animales = animals", "rediit = returned", "cepit = seized"]
+    },
+    {
+      "id": "fabellae-2",
+      "title": "De Corvo et Urna",
+      "latin": "Corvus sitiebat. Aquam in urna vidit. Sed corvus aquam petere non poterat quod urna alta erat et aqua parva. Tum corvus calculos in urnam iecit. Aqua surrexit. Corvus bibit et laetus abiit.",
+      "english": "A crow was thirsty. He saw water in a jar. But the crow could not reach the water because the jar was tall and the water was low. Then the crow threw pebbles into the jar. The water rose. The crow drank and went away happy.",
+      "source_story": "Fabella II",
+      "notes": "The famous Aesop fable. Introduces quod (because) as a conjunction, and the ablative of cause.",
+      "vocab_hints": ["corvus = crow", "sitiebat = was thirsty", "urna = jar", "petere = to reach, seek", "quod = because", "calculos = pebbles (acc.pl.)", "iecit = threw", "surrexit = rose up", "laetus = happy", "abiit = went away"]
+    },
+    {
+      "id": "fabellae-3",
+      "title": "De Formicis et Cicada",
+      "latin": "Aestate formica laborabat et cibum parabat. Cicada autem cantabat et ludebat. Hiems venit. Cicada esuriebat. Ad formicas venit et auxilium petivit. Formica dixit: 'Aestate lusisti; hieme esuriebis.'",
+      "english": "In summer a certain ant was working and preparing food. But the cricket was singing and playing. Winter came. The cricket was hungry. She came to the ants and sought help. The ant said: 'You played in summer; you will be hungry in winter.'",
+      "source_story": "Fabella III",
+      "notes": "The Ant and the Grasshopper. Introduces ablative of time (aestate, hieme).",
+      "vocab_hints": ["aestate = in summer (abl.)", "formica = ant", "cibum = food (acc.)", "cicada = cricket, grasshopper", "autem = however, but", "cantabat = was singing", "ludebat = was playing", "hiems = winter", "esuriebat = was hungry", "lusisti = you played (perf.)", "esuriebis = you will be hungry"]
+    },
+    {
+      "id": "fabellae-4",
+      "title": "De Cane et Umbra",
+      "latin": "Canis carnem in ore portabat et pontem transiit. In aqua imaginem suam vidit. Putavit aliam canem carnem habere. Itaque carnem dimisit et in aquam salivit. Carnem amisit. Stultus canis erat.",
+      "english": "A dog was carrying meat in his mouth and crossed a bridge. In the water he saw his own reflection. He thought another dog had meat. And so he let go of the meat and leapt into the water. He lost the meat. He was a foolish dog.",
+      "source_story": "Fabella IV",
+      "notes": "The Dog and His Shadow. Introduces imaginem suam (his own image) and indirect statement.",
+      "vocab_hints": ["canis = dog", "carnem = meat (acc.)", "ore = mouth (abl.)", "pontem = bridge (acc.)", "transiit = crossed", "imaginem = image, reflection (acc.)", "suam = his own", "putavit = thought", "dimisit = let go", "salivit = leapt", "amisit = lost", "stultus = foolish"]
+    },
+    {
+      "id": "fabellae-5",
+      "title": "De Lupo et Grue",
+      "latin": "Lupus os in gutture habebat et dolebat. Grui multam pecuniam promisit si os eximeret. Gruis longum collum et os exemit. Tum mercedem petiit. Lupus iratus respondit: 'Mercedem habes: caput tuum salvum ex ore meo extulisti.'",
+      "english": "A wolf had a bone in his throat and was in pain. He promised the crane much money if she would remove the bone. The crane put her long neck in and removed the bone. Then she asked for her pay. The wolf replied angrily: 'You have your pay: you drew your head out of my mouth safely.'",
+      "source_story": "Fabella V",
+      "notes": "The Wolf and the Crane. Moral: do not expect gratitude from the wicked. Introduces indirect command with si.",
+      "vocab_hints": ["os = bone", "gutture = throat (abl.)", "dolebat = was in pain", "grui = to the crane (dat.)", "pecuniam = money (acc.)", "promisit = promised", "eximeret = might remove (subj.)", "collum = neck", "exemit = removed", "mercedem = pay, reward (acc.)", "salvum = safe (acc.)", "extulisti = you drew out (perf.)"]
+    }
+  ]
+}

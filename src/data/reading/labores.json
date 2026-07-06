@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "source": "Bennett, Easy Latin Stories for Beginners — Labores Herculis",
+    "level": "First Form Latin",
+    "description": "The Twelve Labors of Hercules from Bennett's Easy Latin Stories (public domain). Used for First Form Latin Lectio tab.",
+    "license": "public domain"
+  },
+  "passages": [
+    {
+      "id": "labores-1",
+      "title": "I. Prooemium: Hercules",
+      "latin": "Hercules erat vir clarissimus. Pater eius erat Iuppiter, rex deorum. Hercules erat fortissimus omnium Graecorum. Iuno autem, uxor Iovis, Herculem non amabat. Itaque Hercules multos labores perficere debuit.",
+      "english": "Hercules was a very famous man. His father was Jupiter, king of the gods. Hercules was the bravest of all the Greeks. But Juno, the wife of Jupiter, did not love Hercules. And so Hercules had to complete many labors.",
+      "source_story": "Labores Herculis: Introduction",
+      "notes": "Introduction to the Hercules cycle. Note the superlatives (clarissimus, fortissimus) and genitive of the whole (omnium Graecorum).",
+      "vocab_hints": ["clarissimus = very famous", "eius = his", "fortissimus = bravest", "omnium = of all (gen.pl.)", "autem = however", "uxor = wife", "labores = labors (acc.pl.)", "perficere = to complete", "debuit = had to, owed"]
+    },
+    {
+      "id": "labores-2",
+      "title": "II. Leo Nemaeus",
+      "latin": "Primus labor erat leo Nemaeus. Hic leo in montibus Graeciae habitabat et agricolas devorabat. Eurystheus Herculi iussit leonem interficere. Hercules ad montes ivit. Leonem sagittis petivit sed frustra: pellis leonis dura erat. Tum Hercules leonem manibus suis strangulāvit. Pellem leonis secum portavit.",
+      "english": "The first labor was the Nemean lion. This lion lived in the mountains of Greece and was devouring the farmers. Eurystheus ordered Hercules to kill the lion. Hercules went to the mountains. He attacked the lion with arrows but in vain: the lion's hide was tough. Then Hercules strangled the lion with his own hands. He carried the lion's hide with him.",
+      "source_story": "Labores Herculis I",
+      "notes": "Labor I. Introduces iussit + infinitive (indirect command), dative of agent (Herculi), and the ablative of means (manibus suis, sagittis).",
+      "vocab_hints": ["primus = first", "hic = this", "agricolas = farmers (acc.pl.)", "devorabat = was devouring", "iussit = ordered", "interficere = to kill", "sagittis = arrows (abl.)", "frustra = in vain", "pellis = hide, skin", "dura = tough, hard", "manibus = hands (abl.pl.)", "strangulāvit = strangled", "secum = with himself"]
+    },
+    {
+      "id": "labores-3",
+      "title": "III. Hydra Lernaea",
+      "latin": "Secundus labor erat Hydra Lernaea. Hydra erat serpens novem capitibus. Hydra in palude prope Lernam habitabat. Hercules ad paludem accessit et sagittis igni accensis Hydram ex latebris excitavit. Iolaus, socius Herculis, ubi Hercules caput abscidit, igni caudem vulneravit. Sic Hydra tandem superāta est.",
+      "english": "The second labor was the Lernaean Hydra. The Hydra was a serpent with nine heads. The Hydra lived in a swamp near Lerna. Hercules approached the swamp and with arrows lit with fire drove the Hydra from its lair. Iolaus, the companion of Hercules, whenever Hercules cut off a head, burned the stump with fire. Thus the Hydra was at last overcome.",
+      "source_story": "Labores Herculis II",
+      "notes": "Labor II. Introduces the ablative absolute (sagittis igni accensis) and ubi as a temporal conjunction.",
+      "vocab_hints": ["secundus = second", "serpens = serpent", "novem = nine", "capitibus = heads (abl.pl.)", "palude = swamp (abl.)", "accessit = approached", "igni = fire (abl.)", "accensis = lit, set on fire", "latebris = lair, hiding place (abl.pl.)", "excitavit = drove out", "socius = companion", "caput = head", "abscidit = cut off", "caudem = stump (acc.)", "vulneravit = wounded, burned", "tandem = at last", "superāta est = was overcome"]
+    },
+    {
+      "id": "labores-4",
+      "title": "IV. Cerva Aurea et Aper Erymanthius",
+      "latin": "Tertius labor erat cerva aurea Dianae. Cerva cornua aurea habebat et Diana eam amabat. Hercules cervam vivo capere debebat, non interficere. Per totum annum cervam secutus est. Tandem cervam sagittā vulneravit et ad Eurystheum portavit. Quartus labor erat aper saevus in monte Erymantho. Hunc Hercules in nive cepit et ad Eurystheum in humeris portavit. Eurystheus tam territus est ut in dolium se abderet.",
+      "english": "The third labor was the golden hind of Diana. The hind had golden horns and Diana loved her. Hercules had to capture the hind alive, not kill her. For a whole year he followed the hind. At last he wounded the hind with an arrow and brought her to Eurystheus. The fourth labor was a fierce boar on Mount Erymanthus. Hercules captured this one in the snow and brought it to Eurystheus on his shoulders. Eurystheus was so terrified that he hid himself in a jar.",
+      "source_story": "Labores Herculis III-IV",
+      "notes": "Labors III and IV combined. Introduces secutus est (deponent perfect) and result clause (tam... ut).",
+      "vocab_hints": ["cerva = hind, doe", "aurea = golden", "cornua = horns (acc.pl.)", "vivo = alive (abl.)", "capere = to capture", "debebat = had to", "per totum annum = for a whole year", "secutus est = followed (deponent)", "sagittā = with an arrow (abl.)", "aper = boar", "saevus = fierce, savage", "nive = snow (abl.)", "humeris = shoulders (abl.pl.)", "tam... ut = so... that", "dolium = large jar", "abderet = hid (subj.)"]
+    }
+  ]
+}

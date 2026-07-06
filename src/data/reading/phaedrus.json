@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "source": "Phaedrus, Fabulae Aesopiae (adapted)",
+    "level": "Prima Latina",
+    "description": "Short moral sentences and adapted fable lines for beginning students",
+    "license": "public domain"
+  },
+  "passages": [
+    {
+      "id": "phaedrus-1",
+      "title": "Vita Brevis",
+      "latin": "Vita brevis est, ars longa.",
+      "english": "Life is short, art is long.",
+      "notes": "Adapted from Hippocrates via Latin tradition. Ars here means 'skill' or 'craft'.",
+      "vocab_hints": ["vita = life", "brevis = short", "ars = art, skill", "longa = long"]
+    },
+    {
+      "id": "phaedrus-2",
+      "title": "Aquila et Vulpes",
+      "latin": "Aquila in alta arbore sedet. Vulpes in terra ambulat. Aquila vocat; vulpes non respondet.",
+      "english": "An eagle sits in a tall tree. A fox walks on the ground. The eagle calls; the fox does not answer.",
+      "notes": "Adapted from Phaedrus I.28. Note the simple present tense throughout.",
+      "vocab_hints": ["aquila = eagle", "alta = tall, high", "arbore = tree (abl.)", "sedet = sits", "vulpes = fox", "ambulat = walks", "vocat = calls", "respondet = answers"]
+    },
+    {
+      "id": "phaedrus-3",
+      "title": "Lupus et Agnus",
+      "latin": "Lupus et agnus ad rivum veniunt. Lupus agnum spectat. Agnus timet. Lupus malus est.",
+      "english": "A wolf and a lamb come to a stream. The wolf looks at the lamb. The lamb is afraid. The wolf is evil.",
+      "notes": "Adapted from Phaedrus I.1 (The Wolf and the Lamb). Classic moral fable.",
+      "vocab_hints": ["lupus = wolf", "agnus = lamb", "rivum = stream (acc.)", "veniunt = they come", "spectat = looks at", "timet = fears", "malus = evil, bad"]
+    },
+    {
+      "id": "phaedrus-4",
+      "title": "Cornix et Hydria",
+      "latin": "Cornix aquam videt sed aquam non potest bibere. Cornix lapides in hydriam mittit. Aqua surgit. Cornix bibit.",
+      "english": "A crow sees water but cannot drink the water. The crow puts stones into the jar. The water rises. The crow drinks.",
+      "notes": "Adapted from Phaedrus. Demonstrates resourcefulness — a classic Aesop theme.",
+      "vocab_hints": ["cornix = crow", "lapides = stones", "hydriam = jar (acc.)", "mittit = puts, sends", "surgit = rises", "bibit = drinks"]
+    },
+    {
+      "id": "phaedrus-5",
+      "title": "Labor et Sapientia",
+      "latin": "Labor salutem dat. Sapientia viam monstrat. Qui laborat et sapit beatus est.",
+      "english": "Work gives safety. Wisdom shows the way. He who works and is wise is blessed.",
+      "notes": "Original composition in Phaedran style for review lesson.",
+      "vocab_hints": ["salutem = safety, health (acc.)", "dat = gives", "sapientia = wisdom", "monstrat = shows", "qui = who", "beatus = blessed, happy"]
+    }
+  ]
+}

@@ -1,11 +1,5 @@
-node_modules/
-dist/
+node_modules
+dist
+.dev.vars
 .env
 .env.local
-.dev.vars
-*.local
-.DS_Store
-vite.config.*.timestamp-*
-*.bak
-.dev.vars # never commit it
-.wrangler/
