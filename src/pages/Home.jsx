@@ -453,19 +453,9 @@ function SpqrScrollSvg() {
 
 function ToolCard({tool}) {
   const isActive = tool.status === 'active';
-  const KID_SAFE = ['/read', '/sounds'];   // open with no PIN
-  const PARENT_PIN = '2580';               // <-- CHANGE to your own 4 digits
-
-  const handleClick = (e) => {
-    if (!isActive) return;
-    if (KID_SAFE.includes(tool.href)) return;
-    e.preventDefault();
-    const entry = window.prompt('Parent PIN');
-    if (entry === PARENT_PIN && tool.href) window.location.href = tool.href;
-  };
 
   const Tag = isActive ? 'a' : 'div';
-  const props = isActive ? {href: tool.href, onClick: handleClick} : {};
+  const props = isActive ? {href: tool.href} : {};
 
   return (
     <Tag className={`hp-card${isActive ? '' : ' coming-soon'}`} {...props}>
