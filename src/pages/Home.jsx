@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import TopNav from '../components/TopNav.jsx';
 
 const PASSWORD = 'deus_caritas_est';
@@ -454,19 +455,45 @@ function SpqrScrollSvg() {
 function ToolCard({tool}) {
   const isActive = tool.status === 'active';
 
-  const Tag = isActive ? 'a' : 'div';
-  const props = isActive ? {href: tool.href} : {};
+  if (!isActive) {
+    return (
+      <div className="hp-card coming-soon">
+        <div className="hp-card-accent" style={{'--accent': tool.accent}}/>
+        <span className="hp-card-icon">{tool.icon}</span>
+        <div className="hp-card-title">{tool.title}</div>
+        <div className="hp-card-subtitle">{tool.subtitle}</div>
+        <div className="hp-card-desc">{tool.desc}</div>
+        <span className={`hp-card-tag ${tool.status}`}>{tool.tag}</span>
+      </div>
+    );
+  }
+
+  const isExternal = tool.href && (tool.href.startsWith('http') || tool.href.endsWith('.html'));
+
+  if (isExternal) {
+    return (
+      <a className="hp-card" href={tool.href} target={tool.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
+        <div className="hp-card-accent" style={{'--accent': tool.accent}}/>
+        <span className="hp-card-icon">{tool.icon}</span>
+        <div className="hp-card-title">{tool.title}</div>
+        <div className="hp-card-subtitle">{tool.subtitle}</div>
+        <div className="hp-card-desc">{tool.desc}</div>
+        <span className={`hp-card-tag ${tool.status}`}>{tool.tag}</span>
+        <span className="hp-card-arrow">→</span>
+      </a>
+    );
+  }
 
   return (
-    <Tag className={`hp-card${isActive ? '' : ' coming-soon'}`} {...props}>
+    <Link className="hp-card" to={tool.href}>
       <div className="hp-card-accent" style={{'--accent': tool.accent}}/>
       <span className="hp-card-icon">{tool.icon}</span>
       <div className="hp-card-title">{tool.title}</div>
       <div className="hp-card-subtitle">{tool.subtitle}</div>
       <div className="hp-card-desc">{tool.desc}</div>
       <span className={`hp-card-tag ${tool.status}`}>{tool.tag}</span>
-      {isActive && <span className="hp-card-arrow">→</span>}
-    </Tag>
+      <span className="hp-card-arrow">→</span>
+    </Link>
   );
 }
 
