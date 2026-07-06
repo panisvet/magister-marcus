@@ -1,0 +1,3071 @@
+{
+  "meta": {
+    "book": "First Form Latin",
+    "publisher": "Memoria Press",
+    "version": "1.0.0",
+    "total_lessons": 25,
+    "total_review_lessons": 5,
+    "status": "complete"
+  },
+  "lessons": [
+    {
+      "id": 1,
+      "unit": 1,
+      "type": "lesson",
+      "title": "Nouns; 1st Declension Singular",
+      "focus": "Latin nouns; the 1st declension; nominative and accusative singular",
+      "practical_latin": [
+        {
+          "latin": "Semper fidelis",
+          "english": "Always faithful"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-1-1",
+          "latin": "puella, puellae",
+          "english": "girl",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "puella"
+        },
+        {
+          "id": "ff-1-2",
+          "latin": "femina, feminae",
+          "english": "woman",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "femina"
+        },
+        {
+          "id": "ff-1-3",
+          "latin": "terra, terrae",
+          "english": "earth, land",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "terra"
+        },
+        {
+          "id": "ff-1-4",
+          "latin": "aqua, aquae",
+          "english": "water",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "aqua"
+        },
+        {
+          "id": "ff-1-5",
+          "latin": "vita, vitae",
+          "english": "life",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "vita"
+        },
+        {
+          "id": "ff-1-6",
+          "latin": "via, viae",
+          "english": "road, way",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "via"
+        },
+        {
+          "id": "ff-1-7",
+          "latin": "silva, silvae",
+          "english": "forest, woods",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "silva"
+        },
+        {
+          "id": "ff-1-8",
+          "latin": "patria, patriae",
+          "english": "fatherland, homeland",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "patria"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "1st-decl-sg",
+          "label": "1st Declension Singular",
+          "type": "noun_declension",
+          "rows": [
+            {
+              "case": "Nominative",
+              "ending": "-a",
+              "example": "puella",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive",
+              "ending": "-ae",
+              "example": "puellae",
+              "use": "possession (of)"
+            },
+            {
+              "case": "Dative",
+              "ending": "-ae",
+              "example": "puellae",
+              "use": "indirect object (to/for)"
+            },
+            {
+              "case": "Accusative",
+              "ending": "-am",
+              "example": "puellam",
+              "use": "direct object"
+            },
+            {
+              "case": "Ablative",
+              "ending": "-ā",
+              "example": "puellā",
+              "use": "by/with/from"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-1"
+    },
+    {
+      "id": 2,
+      "unit": 1,
+      "type": "lesson",
+      "title": "1st Declension Plural",
+      "focus": "1st declension plural endings; all five cases",
+      "practical_latin": [
+        {
+          "latin": "Terra firma",
+          "english": "Solid ground"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-2-1",
+          "latin": "luna, lunae",
+          "english": "moon",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "luna"
+        },
+        {
+          "id": "ff-2-2",
+          "latin": "stella, stellae",
+          "english": "star",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "stella"
+        },
+        {
+          "id": "ff-2-3",
+          "latin": "hora, horae",
+          "english": "hour",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "hora"
+        },
+        {
+          "id": "ff-2-4",
+          "latin": "gloria, gloriae",
+          "english": "glory",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "gloria"
+        },
+        {
+          "id": "ff-2-5",
+          "latin": "memoria, memoriae",
+          "english": "memory",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "memoria"
+        },
+        {
+          "id": "ff-2-6",
+          "latin": "nauta, nautae",
+          "english": "sailor",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 1,
+          "audio_key": "nauta",
+          "note": "masculine exception"
+        },
+        {
+          "id": "ff-2-7",
+          "latin": "Roma, Romae",
+          "english": "Rome",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "roma"
+        },
+        {
+          "id": "ff-2-8",
+          "latin": "corona, coronae",
+          "english": "crown, wreath",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "corona"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "1st-decl-pl",
+          "label": "1st Declension Plural",
+          "type": "noun_declension",
+          "rows": [
+            {
+              "case": "Nominative",
+              "ending": "-ae",
+              "example": "puellae",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive",
+              "ending": "-ārum",
+              "example": "puellarum",
+              "use": "possession (of)"
+            },
+            {
+              "case": "Dative",
+              "ending": "-īs",
+              "example": "puellis",
+              "use": "indirect object (to/for)"
+            },
+            {
+              "case": "Accusative",
+              "ending": "-ās",
+              "example": "puellas",
+              "use": "direct object"
+            },
+            {
+              "case": "Ablative",
+              "ending": "-īs",
+              "example": "puellis",
+              "use": "by/with/from"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-2"
+    },
+    {
+      "id": 3,
+      "unit": 1,
+      "type": "lesson",
+      "title": "1st Conjugation; Present Active Indicative",
+      "focus": "The first conjugation; present tense active voice; principal parts",
+      "practical_latin": [
+        {
+          "latin": "Amo, amas, amat",
+          "english": "I love, you love, he loves"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-3-1",
+          "latin": "amo, amare, amavi, amatum",
+          "english": "to love",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "amo"
+        },
+        {
+          "id": "ff-3-2",
+          "latin": "porto, portare, portavi, portatum",
+          "english": "to carry",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "porto"
+        },
+        {
+          "id": "ff-3-3",
+          "latin": "laudo, laudare, laudavi, laudatum",
+          "english": "to praise",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "laudo"
+        },
+        {
+          "id": "ff-3-4",
+          "latin": "voco, vocare, vocavi, vocatum",
+          "english": "to call",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "voco"
+        },
+        {
+          "id": "ff-3-5",
+          "latin": "laboro, laborare, laboravi, laboratum",
+          "english": "to work",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "laboro"
+        },
+        {
+          "id": "ff-3-6",
+          "latin": "paro, parare, paravi, paratum",
+          "english": "to prepare",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "paro"
+        },
+        {
+          "id": "ff-3-7",
+          "latin": "nato, natare, natavi, natatum",
+          "english": "to swim",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "nato"
+        },
+        {
+          "id": "ff-3-8",
+          "latin": "navigo, navigare, navigavi, navigatum",
+          "english": "to sail",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "navigo"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "1st-conj-present",
+          "label": "1st Conjugation Present Active",
+          "type": "verb_conjugation",
+          "stem": "ama-",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "amo",
+              "english": "I love"
+            },
+            {
+              "person": "2sg",
+              "form": "amas",
+              "english": "you love"
+            },
+            {
+              "person": "3sg",
+              "form": "amat",
+              "english": "he/she/it loves"
+            },
+            {
+              "person": "1pl",
+              "form": "amamus",
+              "english": "we love"
+            },
+            {
+              "person": "2pl",
+              "form": "amatis",
+              "english": "you (pl.) love"
+            },
+            {
+              "person": "3pl",
+              "form": "amant",
+              "english": "they love"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "phaedrus-1"
+    },
+    {
+      "id": 4,
+      "unit": 1,
+      "type": "lesson",
+      "title": "Sentences; Subject and Predicate",
+      "focus": "Forming Latin sentences; subject (nominative) vs. direct object (accusative)",
+      "practical_latin": [
+        {
+          "latin": "Puella aquam portat.",
+          "english": "The girl carries water."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-4-1",
+          "latin": "clamo, clamare, clamavi, clamatum",
+          "english": "to shout, cry out",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "clamo"
+        },
+        {
+          "id": "ff-4-2",
+          "latin": "erro, errare, erravi, erratum",
+          "english": "to wander, err",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "erro"
+        },
+        {
+          "id": "ff-4-3",
+          "latin": "specto, spectare, spectavi, spectatum",
+          "english": "to look at, watch",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "specto"
+        },
+        {
+          "id": "ff-4-4",
+          "latin": "servo, servare, servavi, servatum",
+          "english": "to save, guard",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "servo"
+        },
+        {
+          "id": "ff-4-5",
+          "latin": "mensa, mensae",
+          "english": "table",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "mensa"
+        },
+        {
+          "id": "ff-4-6",
+          "latin": "casa, casae",
+          "english": "house, cottage",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "casa"
+        },
+        {
+          "id": "ff-4-7",
+          "latin": "cena, cenae",
+          "english": "dinner, meal",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "cena"
+        },
+        {
+          "id": "ff-4-8",
+          "latin": "fama, famae",
+          "english": "fame, report, rumor",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "fama"
+        }
+      ],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "phaedrus-2"
+    },
+    {
+      "id": 5,
+      "unit": 1,
+      "type": "lesson",
+      "title": "Latin Sayings; Reading Passage",
+      "focus": "Review of Unit I; Phaedrus reading; Latin phrases in English",
+      "practical_latin": [
+        {
+          "latin": "In aqua scribis.",
+          "english": "You are writing in water. (It is useless.)"
+        },
+        {
+          "latin": "Via est vita.",
+          "english": "Life is a journey."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-5-1",
+          "latin": "aquila, aquilae",
+          "english": "eagle",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "aquila"
+        },
+        {
+          "id": "ff-5-2",
+          "latin": "causa, causae",
+          "english": "cause, reason",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "causa"
+        },
+        {
+          "id": "ff-5-3",
+          "latin": "cura, curae",
+          "english": "care, concern",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "cura"
+        },
+        {
+          "id": "ff-5-4",
+          "latin": "ira, irae",
+          "english": "anger, wrath",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "ira"
+        },
+        {
+          "id": "ff-5-5",
+          "latin": "dono, donare, donavi, donatum",
+          "english": "to give, donate",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "dono"
+        },
+        {
+          "id": "ff-5-6",
+          "latin": "pugno, pugnare, pugnavi, pugnatum",
+          "english": "to fight",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "pugno"
+        },
+        {
+          "id": "ff-5-7",
+          "latin": "supero, superare, superavi, superatum",
+          "english": "to overcome, surpass",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "supero"
+        },
+        {
+          "id": "ff-5-8",
+          "latin": "oppugno, oppugnare, oppugnavi, oppugnatum",
+          "english": "to attack",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "oppugno"
+        }
+      ],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "phaedrus-3"
+    },
+    {
+      "id": "R1",
+      "unit": 1,
+      "type": "review",
+      "title": "Review — Unit I",
+      "focus": "Review: 1st declension, 1st conjugation present active, basic sentence structure",
+      "practical_latin": [],
+      "vocab": [],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "vulgate-ff-r1"
+    },
+    {
+      "id": 7,
+      "unit": 2,
+      "type": "lesson",
+      "title": "2nd Declension Masculine Singular",
+      "focus": "2nd declension masculine nouns; -us and -er stems",
+      "practical_latin": [
+        {
+          "latin": "Dominus illuminatio mea",
+          "english": "The Lord is my light"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-7-1",
+          "latin": "servus, servi",
+          "english": "slave, servant",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "servus"
+        },
+        {
+          "id": "ff-7-2",
+          "latin": "dominus, domini",
+          "english": "lord, master",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "dominus"
+        },
+        {
+          "id": "ff-7-3",
+          "latin": "filius, filii",
+          "english": "son",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "filius"
+        },
+        {
+          "id": "ff-7-4",
+          "latin": "amicus, amici",
+          "english": "friend",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "amicus"
+        },
+        {
+          "id": "ff-7-5",
+          "latin": "puer, pueri",
+          "english": "boy",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "puer"
+        },
+        {
+          "id": "ff-7-6",
+          "latin": "magister, magistri",
+          "english": "teacher, master",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "magister"
+        },
+        {
+          "id": "ff-7-7",
+          "latin": "vir, viri",
+          "english": "man, hero",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "vir"
+        },
+        {
+          "id": "ff-7-8",
+          "latin": "Deus, Dei",
+          "english": "God",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "deus"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "2nd-decl-m-sg",
+          "label": "2nd Declension Masculine Singular (servus)",
+          "type": "noun_declension",
+          "rows": [
+            {
+              "case": "Nominative",
+              "ending": "-us",
+              "example": "servus",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive",
+              "ending": "-ī",
+              "example": "servi",
+              "use": "possession (of)"
+            },
+            {
+              "case": "Dative",
+              "ending": "-ō",
+              "example": "servo",
+              "use": "indirect object (to/for)"
+            },
+            {
+              "case": "Accusative",
+              "ending": "-um",
+              "example": "servum",
+              "use": "direct object"
+            },
+            {
+              "case": "Ablative",
+              "ending": "-ō",
+              "example": "servo",
+              "use": "by/with/from"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-7"
+    },
+    {
+      "id": 8,
+      "unit": 2,
+      "type": "lesson",
+      "title": "2nd Declension Masculine Plural; 2nd Declension Neuter",
+      "focus": "2nd declension plural; neuter nouns (-um); neuter rule",
+      "practical_latin": [
+        {
+          "latin": "Bellum omnium pater",
+          "english": "War is the father of all things"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-8-1",
+          "latin": "bellum, belli",
+          "english": "war",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "bellum"
+        },
+        {
+          "id": "ff-8-2",
+          "latin": "oppidum, oppidi",
+          "english": "town",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "oppidum"
+        },
+        {
+          "id": "ff-8-3",
+          "latin": "verbum, verbi",
+          "english": "word",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "verbum"
+        },
+        {
+          "id": "ff-8-4",
+          "latin": "periculum, periculi",
+          "english": "danger",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "periculum"
+        },
+        {
+          "id": "ff-8-5",
+          "latin": "regnum, regni",
+          "english": "kingdom, reign",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "regnum"
+        },
+        {
+          "id": "ff-8-6",
+          "latin": "templum, templi",
+          "english": "temple",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "templum"
+        },
+        {
+          "id": "ff-8-7",
+          "latin": "caelum, caeli",
+          "english": "sky, heaven",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "caelum"
+        },
+        {
+          "id": "ff-8-8",
+          "latin": "auxilium, auxilii",
+          "english": "help, aid",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "auxilium"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "2nd-decl-m-pl",
+          "label": "2nd Declension Masculine Plural (servi)",
+          "type": "noun_declension",
+          "rows": [
+            {
+              "case": "Nominative",
+              "ending": "-ī",
+              "example": "servi",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive",
+              "ending": "-ōrum",
+              "example": "servorum",
+              "use": "possession (of)"
+            },
+            {
+              "case": "Dative",
+              "ending": "-īs",
+              "example": "servis",
+              "use": "indirect object (to/for)"
+            },
+            {
+              "case": "Accusative",
+              "ending": "-ōs",
+              "example": "servos",
+              "use": "direct object"
+            },
+            {
+              "case": "Ablative",
+              "ending": "-īs",
+              "example": "servis",
+              "use": "by/with/from"
+            }
+          ]
+        },
+        {
+          "id": "2nd-decl-n",
+          "label": "2nd Declension Neuter (bellum)",
+          "type": "noun_declension",
+          "rows": [
+            {
+              "case": "Nominative sg.",
+              "ending": "-um",
+              "example": "bellum",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive sg.",
+              "ending": "-ī",
+              "example": "belli",
+              "use": "possession"
+            },
+            {
+              "case": "Accusative sg.",
+              "ending": "-um",
+              "example": "bellum",
+              "use": "direct object"
+            },
+            {
+              "case": "Nominative pl.",
+              "ending": "-a",
+              "example": "bella",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive pl.",
+              "ending": "-ōrum",
+              "example": "bellorum",
+              "use": "possession"
+            },
+            {
+              "case": "Accusative pl.",
+              "ending": "-a",
+              "example": "bella",
+              "use": "direct object"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-8"
+    },
+    {
+      "id": 9,
+      "unit": 2,
+      "type": "lesson",
+      "title": "Imperfect Active Indicative",
+      "focus": "Imperfect tense: ongoing/repeated action in the past; -ba- sign",
+      "practical_latin": [
+        {
+          "latin": "Puellae in silva ambulabant.",
+          "english": "The girls were walking in the forest."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-9-1",
+          "latin": "do, dare, dedi, datum",
+          "english": "to give",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "do"
+        },
+        {
+          "id": "ff-9-2",
+          "latin": "sto, stare, steti, statum",
+          "english": "to stand",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "sto"
+        },
+        {
+          "id": "ff-9-3",
+          "latin": "porto, portare, portavi, portatum",
+          "english": "to carry",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "porto"
+        },
+        {
+          "id": "ff-9-4",
+          "latin": "habito, habitare, habitavi, habitatum",
+          "english": "to live, dwell",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "habito"
+        },
+        {
+          "id": "ff-9-5",
+          "latin": "forum, fori",
+          "english": "marketplace, forum",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "forum"
+        },
+        {
+          "id": "ff-9-6",
+          "latin": "studium, studii",
+          "english": "eagerness, study",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "studium"
+        },
+        {
+          "id": "ff-9-7",
+          "latin": "gladius, gladii",
+          "english": "sword",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "gladius"
+        },
+        {
+          "id": "ff-9-8",
+          "latin": "scutum, scuti",
+          "english": "shield",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "scutum"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "1st-conj-imperfect",
+          "label": "1st Conjugation Imperfect Active (amabam)",
+          "type": "verb_conjugation",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "amabam",
+              "english": "I was loving / I loved"
+            },
+            {
+              "person": "2sg",
+              "form": "amabas",
+              "english": "you were loving"
+            },
+            {
+              "person": "3sg",
+              "form": "amabat",
+              "english": "he/she/it was loving"
+            },
+            {
+              "person": "1pl",
+              "form": "amabamus",
+              "english": "we were loving"
+            },
+            {
+              "person": "2pl",
+              "form": "amabatis",
+              "english": "you (pl.) were loving"
+            },
+            {
+              "person": "3pl",
+              "form": "amabant",
+              "english": "they were loving"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-9"
+    },
+    {
+      "id": 10,
+      "unit": 2,
+      "type": "lesson",
+      "title": "Future Active Indicative",
+      "focus": "Future tense: action that will happen; -bi-/-bo-/-bu- sign",
+      "practical_latin": [
+        {
+          "latin": "Vincit qui se vincit.",
+          "english": "He conquers who conquers himself."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-10-1",
+          "latin": "vinco, vincere, vici, victum",
+          "english": "to conquer, win",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "vinco"
+        },
+        {
+          "id": "ff-10-2",
+          "latin": "narro, narrare, narravi, narratum",
+          "english": "to tell, narrate",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "narro"
+        },
+        {
+          "id": "ff-10-3",
+          "latin": "canto, cantare, cantavi, cantatum",
+          "english": "to sing",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "canto"
+        },
+        {
+          "id": "ff-10-4",
+          "latin": "ambulo, ambulare, ambulavi, ambulatum",
+          "english": "to walk",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "ambulo"
+        },
+        {
+          "id": "ff-10-5",
+          "latin": "porta, portae",
+          "english": "gate, door",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "porta"
+        },
+        {
+          "id": "ff-10-6",
+          "latin": "murus, muri",
+          "english": "wall",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "murus"
+        },
+        {
+          "id": "ff-10-7",
+          "latin": "victoria, victoriae",
+          "english": "victory",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "victoria"
+        },
+        {
+          "id": "ff-10-8",
+          "latin": "praeda, praedae",
+          "english": "booty, plunder, prey",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "praeda"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "1st-conj-future",
+          "label": "1st Conjugation Future Active (amabo)",
+          "type": "verb_conjugation",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "amabo",
+              "english": "I will love"
+            },
+            {
+              "person": "2sg",
+              "form": "amabis",
+              "english": "you will love"
+            },
+            {
+              "person": "3sg",
+              "form": "amabit",
+              "english": "he/she/it will love"
+            },
+            {
+              "person": "1pl",
+              "form": "amabimus",
+              "english": "we will love"
+            },
+            {
+              "person": "2pl",
+              "form": "amabitis",
+              "english": "you (pl.) will love"
+            },
+            {
+              "person": "3pl",
+              "form": "amabunt",
+              "english": "they will love"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "fabellae-1"
+    },
+    {
+      "id": 11,
+      "unit": 2,
+      "type": "lesson",
+      "title": "Latin Sayings; Reading Passage",
+      "focus": "Review of Unit II; Latin phrases in English; Phaedrus reading",
+      "practical_latin": [
+        {
+          "latin": "Veni, vidi, vici.",
+          "english": "I came, I saw, I conquered."
+        },
+        {
+          "latin": "Aquila non capit muscas.",
+          "english": "An eagle does not catch flies."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-11-1",
+          "latin": "navis, navis",
+          "english": "ship",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "navis"
+        },
+        {
+          "id": "ff-11-2",
+          "latin": "villa, villae",
+          "english": "country house, farm",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "villa"
+        },
+        {
+          "id": "ff-11-3",
+          "latin": "signum, signi",
+          "english": "sign, signal, standard",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "signum"
+        },
+        {
+          "id": "ff-11-4",
+          "latin": "fossa, fossae",
+          "english": "ditch, trench",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "fossa"
+        },
+        {
+          "id": "ff-11-5",
+          "latin": "nuntio, nuntiare, nuntiavi, nuntiatum",
+          "english": "to announce, report",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "nuntio"
+        },
+        {
+          "id": "ff-11-6",
+          "latin": "occupo, occupare, occupavi, occupatum",
+          "english": "to seize, occupy",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "occupo"
+        },
+        {
+          "id": "ff-11-7",
+          "latin": "propero, properare, properavi, properatum",
+          "english": "to hurry",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "propero"
+        },
+        {
+          "id": "ff-11-8",
+          "latin": "vulnero, vulnerare, vulneravi, vulneratum",
+          "english": "to wound",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "vulnero"
+        }
+      ],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "fabellae-2"
+    },
+    {
+      "id": "R2",
+      "unit": 2,
+      "type": "review",
+      "title": "Review — Unit II",
+      "focus": "Review: 2nd declension, imperfect tense, future tense",
+      "practical_latin": [],
+      "vocab": [],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "vulgate-ff-r2"
+    },
+    {
+      "id": 13,
+      "unit": 3,
+      "type": "lesson",
+      "title": "3rd Declension Masculine/Feminine Singular",
+      "focus": "3rd declension nouns; finding the stem from the genitive; variable nominative",
+      "practical_latin": [
+        {
+          "latin": "Rex regum",
+          "english": "King of kings"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-13-1",
+          "latin": "rex, regis",
+          "english": "king",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "rex"
+        },
+        {
+          "id": "ff-13-2",
+          "latin": "pater, patris",
+          "english": "father",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "pater"
+        },
+        {
+          "id": "ff-13-3",
+          "latin": "mater, matris",
+          "english": "mother",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "mater"
+        },
+        {
+          "id": "ff-13-4",
+          "latin": "homo, hominis",
+          "english": "man, person, human being",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "homo"
+        },
+        {
+          "id": "ff-13-5",
+          "latin": "miles, militis",
+          "english": "soldier",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "miles"
+        },
+        {
+          "id": "ff-13-6",
+          "latin": "pax, pacis",
+          "english": "peace",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "pax"
+        },
+        {
+          "id": "ff-13-7",
+          "latin": "lux, lucis",
+          "english": "light",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "lux"
+        },
+        {
+          "id": "ff-13-8",
+          "latin": "vox, vocis",
+          "english": "voice",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "vox"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "3rd-decl-mf-sg",
+          "label": "3rd Declension Masculine/Feminine Singular (rex)",
+          "type": "noun_declension",
+          "rows": [
+            {
+              "case": "Nominative",
+              "ending": "---",
+              "example": "rex",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive",
+              "ending": "-is",
+              "example": "regis",
+              "use": "possession (of)"
+            },
+            {
+              "case": "Dative",
+              "ending": "-ī",
+              "example": "regi",
+              "use": "indirect object (to/for)"
+            },
+            {
+              "case": "Accusative",
+              "ending": "-em",
+              "example": "regem",
+              "use": "direct object"
+            },
+            {
+              "case": "Ablative",
+              "ending": "-e",
+              "example": "rege",
+              "use": "by/with/from"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-13"
+    },
+    {
+      "id": 14,
+      "unit": 3,
+      "type": "lesson",
+      "title": "3rd Declension Plural; 3rd Declension Neuter",
+      "focus": "3rd declension plural endings; neuter nouns of the 3rd declension",
+      "practical_latin": [
+        {
+          "latin": "Tempora mutantur.",
+          "english": "Times are changing."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-14-1",
+          "latin": "tempus, temporis",
+          "english": "time",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 3,
+          "audio_key": "tempus"
+        },
+        {
+          "id": "ff-14-2",
+          "latin": "corpus, corporis",
+          "english": "body",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 3,
+          "audio_key": "corpus"
+        },
+        {
+          "id": "ff-14-3",
+          "latin": "opus, operis",
+          "english": "work, deed",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 3,
+          "audio_key": "opus"
+        },
+        {
+          "id": "ff-14-4",
+          "latin": "nomen, nominis",
+          "english": "name",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 3,
+          "audio_key": "nomen"
+        },
+        {
+          "id": "ff-14-5",
+          "latin": "dux, ducis",
+          "english": "leader, general",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "dux"
+        },
+        {
+          "id": "ff-14-6",
+          "latin": "princeps, principis",
+          "english": "chief, emperor, first citizen",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "princeps"
+        },
+        {
+          "id": "ff-14-7",
+          "latin": "amor, amoris",
+          "english": "love",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "amor"
+        },
+        {
+          "id": "ff-14-8",
+          "latin": "iter, itineris",
+          "english": "journey, route, march",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 3,
+          "audio_key": "iter"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "3rd-decl-mf-pl",
+          "label": "3rd Declension Masculine/Feminine Plural",
+          "type": "noun_declension",
+          "rows": [
+            {
+              "case": "Nominative",
+              "ending": "-ēs",
+              "example": "reges",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive",
+              "ending": "-um",
+              "example": "regum",
+              "use": "possession (of)"
+            },
+            {
+              "case": "Dative",
+              "ending": "-ibus",
+              "example": "regibus",
+              "use": "indirect object"
+            },
+            {
+              "case": "Accusative",
+              "ending": "-ēs",
+              "example": "reges",
+              "use": "direct object"
+            },
+            {
+              "case": "Ablative",
+              "ending": "-ibus",
+              "example": "regibus",
+              "use": "by/with/from"
+            }
+          ]
+        },
+        {
+          "id": "3rd-decl-n",
+          "label": "3rd Declension Neuter (tempus)",
+          "type": "noun_declension",
+          "rows": [
+            {
+              "case": "Nominative sg.",
+              "ending": "---",
+              "example": "tempus",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive sg.",
+              "ending": "-is",
+              "example": "temporis",
+              "use": "possession"
+            },
+            {
+              "case": "Accusative sg.",
+              "ending": "---",
+              "example": "tempus",
+              "use": "direct object"
+            },
+            {
+              "case": "Nominative pl.",
+              "ending": "-a",
+              "example": "tempora",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive pl.",
+              "ending": "-um",
+              "example": "temporum",
+              "use": "possession"
+            },
+            {
+              "case": "Accusative pl.",
+              "ending": "-a",
+              "example": "tempora",
+              "use": "direct object"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-14"
+    },
+    {
+      "id": 15,
+      "unit": 3,
+      "type": "lesson",
+      "title": "2nd Conjugation; Present, Imperfect, Future Active",
+      "focus": "The second conjugation (-ēre); all three tenses active indicative",
+      "practical_latin": [
+        {
+          "latin": "Video, ergo sum.",
+          "english": "I see, therefore I am."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-15-1",
+          "latin": "video, videre, vidi, visum",
+          "english": "to see",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "video"
+        },
+        {
+          "id": "ff-15-2",
+          "latin": "teneo, tenere, tenui, tentum",
+          "english": "to hold, keep",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "teneo"
+        },
+        {
+          "id": "ff-15-3",
+          "latin": "habeo, habere, habui, habitum",
+          "english": "to have, hold",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "habeo"
+        },
+        {
+          "id": "ff-15-4",
+          "latin": "moveo, movere, movi, motum",
+          "english": "to move",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "moveo"
+        },
+        {
+          "id": "ff-15-5",
+          "latin": "moneo, monere, monui, monitum",
+          "english": "to warn, advise",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "moneo"
+        },
+        {
+          "id": "ff-15-6",
+          "latin": "debeo, debere, debui, debitum",
+          "english": "to owe; ought, must",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "debeo"
+        },
+        {
+          "id": "ff-15-7",
+          "latin": "timeo, timere, timui",
+          "english": "to fear",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "timeo"
+        },
+        {
+          "id": "ff-15-8",
+          "latin": "maneo, manere, mansi, mansum",
+          "english": "to remain, stay",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "maneo"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "2nd-conj-present",
+          "label": "2nd Conjugation Present Active (video)",
+          "type": "verb_conjugation",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "video",
+              "english": "I see"
+            },
+            {
+              "person": "2sg",
+              "form": "vides",
+              "english": "you see"
+            },
+            {
+              "person": "3sg",
+              "form": "videt",
+              "english": "he/she/it sees"
+            },
+            {
+              "person": "1pl",
+              "form": "videmus",
+              "english": "we see"
+            },
+            {
+              "person": "2pl",
+              "form": "videtis",
+              "english": "you (pl.) see"
+            },
+            {
+              "person": "3pl",
+              "form": "vident",
+              "english": "they see"
+            }
+          ]
+        },
+        {
+          "id": "2nd-conj-imperfect",
+          "label": "2nd Conjugation Imperfect Active (videbam)",
+          "type": "verb_conjugation",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "videbam",
+              "english": "I was seeing"
+            },
+            {
+              "person": "2sg",
+              "form": "videbas",
+              "english": "you were seeing"
+            },
+            {
+              "person": "3sg",
+              "form": "videbat",
+              "english": "he/she/it was seeing"
+            },
+            {
+              "person": "1pl",
+              "form": "videbamus",
+              "english": "we were seeing"
+            },
+            {
+              "person": "2pl",
+              "form": "videbatis",
+              "english": "you (pl.) were seeing"
+            },
+            {
+              "person": "3pl",
+              "form": "videbant",
+              "english": "they were seeing"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-15"
+    },
+    {
+      "id": 16,
+      "unit": 3,
+      "type": "lesson",
+      "title": "Sum, Esse — To Be",
+      "focus": "The irregular verb sum, esse; present, imperfect, future; predicate nominative",
+      "practical_latin": [
+        {
+          "latin": "Cogito, ergo sum.",
+          "english": "I think, therefore I am."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-16-1",
+          "latin": "sum, esse, fui, futurus",
+          "english": "to be",
+          "pos": "verb",
+          "conjugation": null,
+          "audio_key": "sum",
+          "note": "irregular"
+        },
+        {
+          "id": "ff-16-2",
+          "latin": "hostis, hostis",
+          "english": "enemy (of the state)",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "hostis"
+        },
+        {
+          "id": "ff-16-3",
+          "latin": "finis, finis",
+          "english": "end, border, boundary",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "finis"
+        },
+        {
+          "id": "ff-16-4",
+          "latin": "pons, pontis",
+          "english": "bridge",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "pons"
+        },
+        {
+          "id": "ff-16-5",
+          "latin": "flumen, fluminis",
+          "english": "river",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 3,
+          "audio_key": "flumen"
+        },
+        {
+          "id": "ff-16-6",
+          "latin": "castra, castrorum",
+          "english": "camp (military)",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "castra",
+          "note": "plural only"
+        },
+        {
+          "id": "ff-16-7",
+          "latin": "mons, montis",
+          "english": "mountain",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "mons"
+        },
+        {
+          "id": "ff-16-8",
+          "latin": "silva, silvae",
+          "english": "forest",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "silva"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "sum-present",
+          "label": "Sum: Present, Imperfect, Future",
+          "type": "verb_conjugation",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "sum / eram / ero",
+              "english": "I am / was / will be"
+            },
+            {
+              "person": "2sg",
+              "form": "es / eras / eris",
+              "english": "you are / were / will be"
+            },
+            {
+              "person": "3sg",
+              "form": "est / erat / erit",
+              "english": "he/she/it is / was / will be"
+            },
+            {
+              "person": "1pl",
+              "form": "sumus / eramus / erimus",
+              "english": "we are / were / will be"
+            },
+            {
+              "person": "2pl",
+              "form": "estis / eratis / eritis",
+              "english": "you (pl.) are / were / will be"
+            },
+            {
+              "person": "3pl",
+              "form": "sunt / erant / erunt",
+              "english": "they are / were / will be"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "fabellae-3"
+    },
+    {
+      "id": 17,
+      "unit": 3,
+      "type": "lesson",
+      "title": "Latin Sayings; Reading Passage",
+      "focus": "Review of Unit III; Bennett reading; Latin words in English",
+      "practical_latin": [
+        {
+          "latin": "Dum spiro, spero.",
+          "english": "While I breathe, I hope."
+        },
+        {
+          "latin": "In hoc signo vinces.",
+          "english": "In this sign you will conquer."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-17-1",
+          "latin": "spiro, spirare, spiravi, spiratum",
+          "english": "to breathe",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "spiro"
+        },
+        {
+          "id": "ff-17-2",
+          "latin": "spero, sperare, speravi, speratum",
+          "english": "to hope",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "spero"
+        },
+        {
+          "id": "ff-17-3",
+          "latin": "libero, liberare, liberavi, liberatum",
+          "english": "to free, liberate",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "libero"
+        },
+        {
+          "id": "ff-17-4",
+          "latin": "iubeo, iubere, iussi, iussum",
+          "english": "to order, command",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "iubeo"
+        },
+        {
+          "id": "ff-17-5",
+          "latin": "lux, lucis",
+          "english": "light",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "lux"
+        },
+        {
+          "id": "ff-17-6",
+          "latin": "spes, spei",
+          "english": "hope",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 5,
+          "audio_key": "spes"
+        },
+        {
+          "id": "ff-17-7",
+          "latin": "legio, legionis",
+          "english": "legion",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "legio"
+        },
+        {
+          "id": "ff-17-8",
+          "latin": "urbs, urbis",
+          "english": "city",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "urbs"
+        }
+      ],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "labores-1"
+    },
+    {
+      "id": "R3",
+      "unit": 3,
+      "type": "review",
+      "title": "Review — Unit III",
+      "focus": "Review: 3rd declension, 2nd conjugation, sum",
+      "practical_latin": [],
+      "vocab": [],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "vulgate-ff-r3"
+    },
+    {
+      "id": 19,
+      "unit": 4,
+      "type": "lesson",
+      "title": "1st-2nd Declension Adjectives",
+      "focus": "Adjectives agree with nouns in gender, number, case; -us/-a/-um pattern",
+      "practical_latin": [
+        {
+          "latin": "Magna est veritas.",
+          "english": "Truth is great."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-19-1",
+          "latin": "bonus, bona, bonum",
+          "english": "good",
+          "pos": "adjective",
+          "audio_key": "bonus"
+        },
+        {
+          "id": "ff-19-2",
+          "latin": "malus, mala, malum",
+          "english": "bad, evil",
+          "pos": "adjective",
+          "audio_key": "malus"
+        },
+        {
+          "id": "ff-19-3",
+          "latin": "magnus, magna, magnum",
+          "english": "great, large",
+          "pos": "adjective",
+          "audio_key": "magnus"
+        },
+        {
+          "id": "ff-19-4",
+          "latin": "parvus, parva, parvum",
+          "english": "small, little",
+          "pos": "adjective",
+          "audio_key": "parvus"
+        },
+        {
+          "id": "ff-19-5",
+          "latin": "multus, multa, multum",
+          "english": "much, many",
+          "pos": "adjective",
+          "audio_key": "multus"
+        },
+        {
+          "id": "ff-19-6",
+          "latin": "novus, nova, novum",
+          "english": "new",
+          "pos": "adjective",
+          "audio_key": "novus"
+        },
+        {
+          "id": "ff-19-7",
+          "latin": "pulcher, pulchra, pulchrum",
+          "english": "beautiful, handsome",
+          "pos": "adjective",
+          "audio_key": "pulcher"
+        },
+        {
+          "id": "ff-19-8",
+          "latin": "liber, libera, liberum",
+          "english": "free",
+          "pos": "adjective",
+          "audio_key": "liber"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "adj-1st-2nd",
+          "label": "1st-2nd Declension Adjective (bonus, -a, -um)",
+          "type": "adjective",
+          "rows": [
+            {
+              "case": "Nom. sg.",
+              "m": "bonus",
+              "f": "bona",
+              "n": "bonum"
+            },
+            {
+              "case": "Gen. sg.",
+              "m": "boni",
+              "f": "bonae",
+              "n": "boni"
+            },
+            {
+              "case": "Dat. sg.",
+              "m": "bono",
+              "f": "bonae",
+              "n": "bono"
+            },
+            {
+              "case": "Acc. sg.",
+              "m": "bonum",
+              "f": "bonam",
+              "n": "bonum"
+            },
+            {
+              "case": "Abl. sg.",
+              "m": "bono",
+              "f": "bona",
+              "n": "bono"
+            },
+            {
+              "case": "Nom. pl.",
+              "m": "boni",
+              "f": "bonae",
+              "n": "bona"
+            },
+            {
+              "case": "Gen. pl.",
+              "m": "bonorum",
+              "f": "bonarum",
+              "n": "bonorum"
+            },
+            {
+              "case": "Acc. pl.",
+              "m": "bonos",
+              "f": "bonas",
+              "n": "bona"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-19"
+    },
+    {
+      "id": 20,
+      "unit": 4,
+      "type": "lesson",
+      "title": "Personal Pronouns; Is, Ea, Id",
+      "focus": "Latin personal pronouns; is, ea, id as pronoun and adjective",
+      "practical_latin": [
+        {
+          "latin": "Ego et tu",
+          "english": "I and you (you and I)"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-20-1",
+          "latin": "ego",
+          "english": "I",
+          "pos": "pronoun",
+          "audio_key": "ego"
+        },
+        {
+          "id": "ff-20-2",
+          "latin": "tu",
+          "english": "you (singular)",
+          "pos": "pronoun",
+          "audio_key": "tu"
+        },
+        {
+          "id": "ff-20-3",
+          "latin": "nos",
+          "english": "we",
+          "pos": "pronoun",
+          "audio_key": "nos"
+        },
+        {
+          "id": "ff-20-4",
+          "latin": "vos",
+          "english": "you (plural)",
+          "pos": "pronoun",
+          "audio_key": "vos"
+        },
+        {
+          "id": "ff-20-5",
+          "latin": "is, ea, id",
+          "english": "he, she, it; that",
+          "pos": "pronoun",
+          "audio_key": "is-ea-id"
+        },
+        {
+          "id": "ff-20-6",
+          "latin": "clarus, clara, clarum",
+          "english": "famous, clear, bright",
+          "pos": "adjective",
+          "audio_key": "clarus"
+        },
+        {
+          "id": "ff-20-7",
+          "latin": "sanctus, sancta, sanctum",
+          "english": "holy, sacred",
+          "pos": "adjective",
+          "audio_key": "sanctus"
+        },
+        {
+          "id": "ff-20-8",
+          "latin": "verus, vera, verum",
+          "english": "true",
+          "pos": "adjective",
+          "audio_key": "verus"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "pronoun-1st-2nd",
+          "label": "1st and 2nd Person Pronouns",
+          "type": "pronoun",
+          "rows": [
+            {
+              "case": "Nominative",
+              "1sg": "ego",
+              "2sg": "tu",
+              "1pl": "nos",
+              "2pl": "vos"
+            },
+            {
+              "case": "Genitive",
+              "1sg": "mei",
+              "2sg": "tui",
+              "1pl": "nostri",
+              "2pl": "vestri"
+            },
+            {
+              "case": "Dative",
+              "1sg": "mihi",
+              "2sg": "tibi",
+              "1pl": "nobis",
+              "2pl": "vobis"
+            },
+            {
+              "case": "Accusative",
+              "1sg": "me",
+              "2sg": "te",
+              "1pl": "nos",
+              "2pl": "vos"
+            },
+            {
+              "case": "Ablative",
+              "1sg": "me",
+              "2sg": "te",
+              "1pl": "nobis",
+              "2pl": "vobis"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-20"
+    },
+    {
+      "id": 21,
+      "unit": 4,
+      "type": "lesson",
+      "title": "Perfect Active Indicative — 1st Conjugation",
+      "focus": "The perfect tense; completed action; perfect stem from 3rd principal part",
+      "practical_latin": [
+        {
+          "latin": "Veni, vidi, vici.",
+          "english": "I came, I saw, I conquered."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-21-1",
+          "latin": "pugno, pugnare, pugnavi, pugnatum",
+          "english": "to fight",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "pugno"
+        },
+        {
+          "id": "ff-21-2",
+          "latin": "supero, superare, superavi, superatum",
+          "english": "to overcome, surpass",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "supero"
+        },
+        {
+          "id": "ff-21-3",
+          "latin": "appello, appellare, appellavi, appellatum",
+          "english": "to call, name",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "appello"
+        },
+        {
+          "id": "ff-21-4",
+          "latin": "expecto, expectare, expectavi, expectatum",
+          "english": "to wait for, expect",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "expecto"
+        },
+        {
+          "id": "ff-21-5",
+          "latin": "longus, longa, longum",
+          "english": "long",
+          "pos": "adjective",
+          "audio_key": "longus"
+        },
+        {
+          "id": "ff-21-6",
+          "latin": "altus, alta, altum",
+          "english": "high, deep, tall",
+          "pos": "adjective",
+          "audio_key": "altus"
+        },
+        {
+          "id": "ff-21-7",
+          "latin": "latus, lata, latum",
+          "english": "wide, broad",
+          "pos": "adjective",
+          "audio_key": "latus"
+        },
+        {
+          "id": "ff-21-8",
+          "latin": "tutus, tuta, tutum",
+          "english": "safe",
+          "pos": "adjective",
+          "audio_key": "tutus"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "perfect-active",
+          "label": "Perfect Active Indicative (amavi)",
+          "type": "verb_conjugation",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "amavi",
+              "english": "I loved / I have loved"
+            },
+            {
+              "person": "2sg",
+              "form": "amavisti",
+              "english": "you loved / you have loved"
+            },
+            {
+              "person": "3sg",
+              "form": "amavit",
+              "english": "he/she/it loved"
+            },
+            {
+              "person": "1pl",
+              "form": "amavimus",
+              "english": "we loved"
+            },
+            {
+              "person": "2pl",
+              "form": "amavistis",
+              "english": "you (pl.) loved"
+            },
+            {
+              "person": "3pl",
+              "form": "amaverunt",
+              "english": "they loved"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "labores-2"
+    },
+    {
+      "id": 22,
+      "unit": 4,
+      "type": "lesson",
+      "title": "Perfect Active — 2nd Conjugation; More Adjectives",
+      "focus": "Perfect tense of 2nd conjugation verbs; 3rd declension adjectives",
+      "practical_latin": [
+        {
+          "latin": "Fortis fortuna adiuvat.",
+          "english": "Fortune favors the brave."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-22-1",
+          "latin": "fortis, forte",
+          "english": "brave, strong",
+          "pos": "adjective",
+          "declension": 3,
+          "audio_key": "fortis"
+        },
+        {
+          "id": "ff-22-2",
+          "latin": "omnis, omne",
+          "english": "all, every",
+          "pos": "adjective",
+          "declension": 3,
+          "audio_key": "omnis"
+        },
+        {
+          "id": "ff-22-3",
+          "latin": "brevis, breve",
+          "english": "short, brief",
+          "pos": "adjective",
+          "declension": 3,
+          "audio_key": "brevis"
+        },
+        {
+          "id": "ff-22-4",
+          "latin": "gravis, grave",
+          "english": "heavy, serious, severe",
+          "pos": "adjective",
+          "declension": 3,
+          "audio_key": "gravis"
+        },
+        {
+          "id": "ff-22-5",
+          "latin": "adiuvo, adiuvare, adiuvi, adiutum",
+          "english": "to help, aid",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "adiuvo"
+        },
+        {
+          "id": "ff-22-6",
+          "latin": "interficio, interficere, interfeci, interfectum",
+          "english": "to kill",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "interficio"
+        },
+        {
+          "id": "ff-22-7",
+          "latin": "mitto, mittere, misi, missum",
+          "english": "to send",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "mitto"
+        },
+        {
+          "id": "ff-22-8",
+          "latin": "dico, dicere, dixi, dictum",
+          "english": "to say, speak",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "dico"
+        }
+      ],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "vulgate-ff-22"
+    },
+    {
+      "id": 23,
+      "unit": 4,
+      "type": "lesson",
+      "title": "Latin Sayings; Reading Passage",
+      "focus": "Review of Unit IV; Bennett reading: Labores Herculis",
+      "practical_latin": [
+        {
+          "latin": "Labor omnia vincit.",
+          "english": "Work conquers all."
+        },
+        {
+          "latin": "Per aspera ad astra.",
+          "english": "Through difficulties to the stars."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-23-1",
+          "latin": "labor, laboris",
+          "english": "labor, hardship, toil",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "labor"
+        },
+        {
+          "id": "ff-23-2",
+          "latin": "astrum, astri",
+          "english": "star, constellation",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "astrum"
+        },
+        {
+          "id": "ff-23-3",
+          "latin": "fortuna, fortunae",
+          "english": "fortune, luck, fate",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "fortuna"
+        },
+        {
+          "id": "ff-23-4",
+          "latin": "fama, famae",
+          "english": "fame, report, rumor",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "fama"
+        },
+        {
+          "id": "ff-23-5",
+          "latin": "gero, gerere, gessi, gestum",
+          "english": "to carry on, wage (war)",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "gero"
+        },
+        {
+          "id": "ff-23-6",
+          "latin": "peto, petere, petivi, petitum",
+          "english": "to seek, attack, beg",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "peto"
+        },
+        {
+          "id": "ff-23-7",
+          "latin": "capio, capere, cepi, captum",
+          "english": "to take, capture, seize",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "capio"
+        },
+        {
+          "id": "ff-23-8",
+          "latin": "accipio, accipere, accepi, acceptum",
+          "english": "to receive, accept",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "accipio"
+        }
+      ],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "labores-3"
+    },
+    {
+      "id": "R4",
+      "unit": 4,
+      "type": "review",
+      "title": "Review — Unit IV",
+      "focus": "Review: adjectives, pronouns, perfect tense, 3rd declension adjectives",
+      "practical_latin": [],
+      "vocab": [],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "vulgate-ff-r4"
+    },
+    {
+      "id": 25,
+      "unit": 5,
+      "type": "lesson",
+      "title": "Passive Voice — Present, Imperfect, Future",
+      "focus": "The passive voice: the subject receives the action; passive endings",
+      "practical_latin": [
+        {
+          "latin": "Roma non uno die aedificata est.",
+          "english": "Rome was not built in one day."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-25-1",
+          "latin": "aedifico, aedificare, aedificavi, aedificatum",
+          "english": "to build",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "aedifico"
+        },
+        {
+          "id": "ff-25-2",
+          "latin": "demonstro, demonstrare, demonstravi, demonstratum",
+          "english": "to show, demonstrate",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "demonstro"
+        },
+        {
+          "id": "ff-25-3",
+          "latin": "delecto, delectare, delectavi, delectatum",
+          "english": "to delight, please",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "delecto"
+        },
+        {
+          "id": "ff-25-4",
+          "latin": "confirmo, confirmare, confirmavi, confirmatum",
+          "english": "to strengthen, confirm",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "confirmo"
+        },
+        {
+          "id": "ff-25-5",
+          "latin": "manus, manus",
+          "english": "hand; band of men",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 4,
+          "audio_key": "manus"
+        },
+        {
+          "id": "ff-25-6",
+          "latin": "exercitus, exercitus",
+          "english": "army",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 4,
+          "audio_key": "exercitus"
+        },
+        {
+          "id": "ff-25-7",
+          "latin": "portus, portus",
+          "english": "harbor, port",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 4,
+          "audio_key": "portus"
+        },
+        {
+          "id": "ff-25-8",
+          "latin": "adventus, adventus",
+          "english": "arrival, approach",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 4,
+          "audio_key": "adventus"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "1st-conj-passive-present",
+          "label": "1st Conjugation Present Passive (amor)",
+          "type": "verb_conjugation",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "amor",
+              "english": "I am loved"
+            },
+            {
+              "person": "2sg",
+              "form": "amaris",
+              "english": "you are loved"
+            },
+            {
+              "person": "3sg",
+              "form": "amatur",
+              "english": "he/she/it is loved"
+            },
+            {
+              "person": "1pl",
+              "form": "amamur",
+              "english": "we are loved"
+            },
+            {
+              "person": "2pl",
+              "form": "amamini",
+              "english": "you (pl.) are loved"
+            },
+            {
+              "person": "3pl",
+              "form": "amantur",
+              "english": "they are loved"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-25"
+    },
+    {
+      "id": 26,
+      "unit": 5,
+      "type": "lesson",
+      "title": "4th Declension",
+      "focus": "4th declension nouns: -us genitive singular identifies this declension",
+      "practical_latin": [
+        {
+          "latin": "Exercitus Romanus",
+          "english": "The Roman army"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-26-1",
+          "latin": "senatus, senatus",
+          "english": "senate",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 4,
+          "audio_key": "senatus"
+        },
+        {
+          "id": "ff-26-2",
+          "latin": "cursus, cursus",
+          "english": "course, running, speed",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 4,
+          "audio_key": "cursus"
+        },
+        {
+          "id": "ff-26-3",
+          "latin": "usus, usus",
+          "english": "use, experience",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 4,
+          "audio_key": "usus"
+        },
+        {
+          "id": "ff-26-4",
+          "latin": "fructus, fructus",
+          "english": "fruit, profit, enjoyment",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 4,
+          "audio_key": "fructus"
+        },
+        {
+          "id": "ff-26-5",
+          "latin": "impetus, impetus",
+          "english": "attack, impulse",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 4,
+          "audio_key": "impetus"
+        },
+        {
+          "id": "ff-26-6",
+          "latin": "gradus, gradus",
+          "english": "step, grade, rank",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 4,
+          "audio_key": "gradus"
+        },
+        {
+          "id": "ff-26-7",
+          "latin": "reduco, reducere, reduxi, reductum",
+          "english": "to lead back",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "reduco"
+        },
+        {
+          "id": "ff-26-8",
+          "latin": "refero, referre, rettuli, relatum",
+          "english": "to bring back, report",
+          "pos": "verb",
+          "conjugation": null,
+          "audio_key": "refero"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "4th-decl",
+          "label": "4th Declension (portus)",
+          "type": "noun_declension",
+          "rows": [
+            {
+              "case": "Nominative sg.",
+              "ending": "-us",
+              "example": "portus",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive sg.",
+              "ending": "-ūs",
+              "example": "portus",
+              "use": "possession"
+            },
+            {
+              "case": "Dative sg.",
+              "ending": "-uī",
+              "example": "portui",
+              "use": "indirect object"
+            },
+            {
+              "case": "Accusative sg.",
+              "ending": "-um",
+              "example": "portum",
+              "use": "direct object"
+            },
+            {
+              "case": "Ablative sg.",
+              "ending": "-ū",
+              "example": "portu",
+              "use": "by/with/from"
+            },
+            {
+              "case": "Nominative pl.",
+              "ending": "-ūs",
+              "example": "portus",
+              "use": "subject"
+            },
+            {
+              "case": "Genitive pl.",
+              "ending": "-uum",
+              "example": "portuum",
+              "use": "possession"
+            },
+            {
+              "case": "Accusative pl.",
+              "ending": "-ūs",
+              "example": "portus",
+              "use": "direct object"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-26"
+    },
+    {
+      "id": 27,
+      "unit": 5,
+      "type": "lesson",
+      "title": "Perfect Passive; Participles",
+      "focus": "The perfect passive tense; perfect passive participle + sum",
+      "practical_latin": [
+        {
+          "latin": "Amatus sum.",
+          "english": "I have been loved."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-27-1",
+          "latin": "captivus, captivi",
+          "english": "prisoner, captive",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "captivus"
+        },
+        {
+          "id": "ff-27-2",
+          "latin": "praemium, praemii",
+          "english": "reward, prize",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "praemium"
+        },
+        {
+          "id": "ff-27-3",
+          "latin": "proelium, proelii",
+          "english": "battle",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "proelium"
+        },
+        {
+          "id": "ff-27-4",
+          "latin": "initium, initii",
+          "english": "beginning",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "initium"
+        },
+        {
+          "id": "ff-27-5",
+          "latin": "convoco, convocare, convocavi, convocatum",
+          "english": "to call together, assemble",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "convoco"
+        },
+        {
+          "id": "ff-27-6",
+          "latin": "loco, locare, locavi, locatum",
+          "english": "to place, put",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "loco"
+        },
+        {
+          "id": "ff-27-7",
+          "latin": "terreo, terrere, terrui, territum",
+          "english": "to frighten, terrify",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "terreo"
+        },
+        {
+          "id": "ff-27-8",
+          "latin": "doceo, docere, docui, doctum",
+          "english": "to teach",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "doceo"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "perfect-passive",
+          "label": "Perfect Passive Indicative (amatus sum)",
+          "type": "verb_conjugation",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "amatus/a sum",
+              "english": "I was loved / I have been loved"
+            },
+            {
+              "person": "2sg",
+              "form": "amatus/a es",
+              "english": "you were loved"
+            },
+            {
+              "person": "3sg",
+              "form": "amatus/a/um est",
+              "english": "he/she/it was loved"
+            },
+            {
+              "person": "1pl",
+              "form": "amati/ae sumus",
+              "english": "we were loved"
+            },
+            {
+              "person": "2pl",
+              "form": "amati/ae estis",
+              "english": "you (pl.) were loved"
+            },
+            {
+              "person": "3pl",
+              "form": "amati/ae/a sunt",
+              "english": "they were loved"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-27"
+    },
+    {
+      "id": 28,
+      "unit": 5,
+      "type": "lesson",
+      "title": "Possum, Posse — To Be Able",
+      "focus": "Possum (I am able, I can); compound of pot- + sum",
+      "practical_latin": [
+        {
+          "latin": "Non possumus.",
+          "english": "We are not able. (We cannot.)"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-28-1",
+          "latin": "possum, posse, potui",
+          "english": "to be able, can",
+          "pos": "verb",
+          "conjugation": null,
+          "audio_key": "possum",
+          "note": "irregular"
+        },
+        {
+          "id": "ff-28-2",
+          "latin": "gens, gentis",
+          "english": "tribe, nation, people",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "gens"
+        },
+        {
+          "id": "ff-28-3",
+          "latin": "pars, partis",
+          "english": "part, portion",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "pars"
+        },
+        {
+          "id": "ff-28-4",
+          "latin": "ordo, ordinis",
+          "english": "rank, order, class",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "ordo"
+        },
+        {
+          "id": "ff-28-5",
+          "latin": "res, rei",
+          "english": "thing, matter, affair",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 5,
+          "audio_key": "res"
+        },
+        {
+          "id": "ff-28-6",
+          "latin": "dies, diei",
+          "english": "day",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 5,
+          "audio_key": "dies"
+        },
+        {
+          "id": "ff-28-7",
+          "latin": "fides, fidei",
+          "english": "faith, loyalty, trust",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 5,
+          "audio_key": "fides"
+        },
+        {
+          "id": "ff-28-8",
+          "latin": "acies, aciei",
+          "english": "line of battle, battle array",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 5,
+          "audio_key": "acies"
+        }
+      ],
+      "paradigms": [
+        {
+          "id": "possum",
+          "label": "Possum: Present, Imperfect, Future",
+          "type": "verb_conjugation",
+          "rows": [
+            {
+              "person": "1sg",
+              "form": "possum / poteram / potero",
+              "english": "I am able / I was able / I will be able"
+            },
+            {
+              "person": "2sg",
+              "form": "potes / poteras / poteris",
+              "english": "you are able"
+            },
+            {
+              "person": "3sg",
+              "form": "potest / poterat / poterit",
+              "english": "he/she/it is able"
+            },
+            {
+              "person": "1pl",
+              "form": "possumus / poteramus / poterimus",
+              "english": "we are able"
+            },
+            {
+              "person": "2pl",
+              "form": "potestis / poteratis / poteritis",
+              "english": "you (pl.) are able"
+            },
+            {
+              "person": "3pl",
+              "form": "possunt / poterant / poterunt",
+              "english": "they are able"
+            }
+          ]
+        }
+      ],
+      "prayer": null,
+      "reading_key": "vulgate-ff-28"
+    },
+    {
+      "id": 29,
+      "unit": 5,
+      "type": "lesson",
+      "title": "Latin Sayings; Reading Passage",
+      "focus": "Review of Unit V; Bennett reading; Latin phrases in English",
+      "practical_latin": [
+        {
+          "latin": "Sine Deo nihil possumus.",
+          "english": "Without God we can do nothing."
+        },
+        {
+          "latin": "Omnia vincit amor.",
+          "english": "Love conquers all."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "ff-29-1",
+          "latin": "nihil",
+          "english": "nothing",
+          "pos": "pronoun",
+          "audio_key": "nihil"
+        },
+        {
+          "id": "ff-29-2",
+          "latin": "sine",
+          "english": "without (+ ablative)",
+          "pos": "preposition",
+          "audio_key": "sine"
+        },
+        {
+          "id": "ff-29-3",
+          "latin": "cum",
+          "english": "with (+ ablative)",
+          "pos": "preposition",
+          "audio_key": "cum"
+        },
+        {
+          "id": "ff-29-4",
+          "latin": "propter",
+          "english": "on account of, because of (+ accusative)",
+          "pos": "preposition",
+          "audio_key": "propter"
+        },
+        {
+          "id": "ff-29-5",
+          "latin": "ante",
+          "english": "before, in front of (+ accusative)",
+          "pos": "preposition",
+          "audio_key": "ante"
+        },
+        {
+          "id": "ff-29-6",
+          "latin": "post",
+          "english": "after, behind (+ accusative)",
+          "pos": "preposition",
+          "audio_key": "post"
+        },
+        {
+          "id": "ff-29-7",
+          "latin": "sed",
+          "english": "but",
+          "pos": "conjunction",
+          "audio_key": "sed"
+        },
+        {
+          "id": "ff-29-8",
+          "latin": "et",
+          "english": "and",
+          "pos": "conjunction",
+          "audio_key": "et"
+        }
+      ],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "labores-4"
+    },
+    {
+      "id": "R5",
+      "unit": 5,
+      "type": "review",
+      "title": "Review — Unit V",
+      "focus": "Review: passive voice, 4th declension, 5th declension, possum",
+      "practical_latin": [],
+      "vocab": [],
+      "paradigms": [],
+      "prayer": null,
+      "reading_key": "vulgate-ff-r5"
+    }
+  ]
+}

@@ -8,7 +8,6 @@
     "total_review_lessons": 5,
     "status": "complete"
   },
-
   "pronunciation_rules": [
     {
       "id": "vowel-a",
@@ -138,7 +137,6 @@
       "english_hint": "like ts"
     }
   ],
-
   "lessons": [
     {
       "id": 1,
@@ -146,46 +144,119 @@
       "title": "The Alphabet",
       "focus": "Latin alphabet; vowel sounds A E I O U",
       "practical_latin": [
-        { "latin": "Salve!", "english": "Hello! (to one person)" },
-        { "latin": "Salvete!", "english": "Hello! (to more than one person)" }
+        {
+          "latin": "Salve!",
+          "english": "Hello! (to one person)"
+        },
+        {
+          "latin": "Salvete!",
+          "english": "Hello! (to more than one person)"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-1-1", "latin": "ambulo", "english": "I walk",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-1-1",
+          "latin": "ambulo",
+          "english": "I walk",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "ambulo",
           "derivatives": [
-            { "english": "ambulance", "gloss": "a vehicle to carry those who cannot walk to the hospital (n.)" }
+            {
+              "english": "ambulance",
+              "gloss": "a vehicle to carry those who cannot walk to the hospital (n.)"
+            }
           ]
         },
         {
-          "id": "pl-1-2", "latin": "via", "english": "road",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-1-2",
+          "latin": "via",
+          "english": "road",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "via",
           "derivatives": [
-            { "english": "viaduct", "gloss": "a roadway or bridge on piers (n.)" }
+            {
+              "english": "viaduct",
+              "gloss": "a roadway or bridge on piers (n.)"
+            }
           ]
         },
         {
-          "id": "pl-1-3", "latin": "Deus", "english": "God",
-          "pos": "noun", "gender": "m", "declension": 2,
+          "id": "pl-1-3",
+          "latin": "Deus",
+          "english": "God",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
           "audio_key": "deus",
           "derivatives": [
-            { "english": "deity", "gloss": "a god (n.)" }
+            {
+              "english": "deity",
+              "gloss": "a god (n.)"
+            }
           ]
         },
         {
-          "id": "pl-1-4", "latin": "toga", "english": "toga",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-1-4",
+          "latin": "toga",
+          "english": "toga",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "toga",
           "derivatives": []
         },
         {
-          "id": "pl-1-5", "latin": "luna", "english": "moon",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-1-5",
+          "latin": "luna",
+          "english": "moon",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "luna",
           "derivatives": [
-            { "english": "lunar", "gloss": "having to do with the moon (adj.)" }
+            {
+              "english": "lunar",
+              "gloss": "having to do with the moon (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-1-6",
+          "latin": "salvē",
+          "english": "hello (to one person)",
+          "pos": "particle",
+          "audio_key": "salve",
+          "derivatives": []
+        },
+        {
+          "id": "pl-1-7",
+          "latin": "valē",
+          "english": "goodbye (to one person)",
+          "pos": "particle",
+          "audio_key": "vale",
+          "derivatives": [
+            {
+              "english": "vale",
+              "gloss": "a poetic farewell (interj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-1-8",
+          "latin": "magistra",
+          "english": "teacher (f.)",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "magistra",
+          "derivatives": [
+            {
+              "english": "magistrate",
+              "gloss": "a public official with authority (n.)"
+            }
           ]
         }
       ],
@@ -199,56 +270,142 @@
         "new_portion": "Oremus.",
         "note": "Say this before each prayer."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl1",
+      "copywork": {
+        "sentences": [
+          "Salvē, discipula.",
+          "Salvē, magistra."
+        ],
+        "instructions": "Copy and translate each greeting. Then circle every vowel (a, e, i, o, u) in each word. How many vowels does each word contain?"
+      }
     },
-
     {
       "id": 2,
       "type": "lesson",
       "title": "Consonants and Vowel Teams",
       "focus": "Consonant sounds; vowel teams ae, oe, au",
       "practical_latin": [
-        { "latin": "Magister", "english": "Teacher (male)" },
-        { "latin": "Magistra", "english": "Teacher (female)" }
+        {
+          "latin": "Magister",
+          "english": "Teacher (male)"
+        },
+        {
+          "latin": "Magistra",
+          "english": "Teacher (female)"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-2-1", "latin": "gloria", "english": "glory",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-2-1",
+          "latin": "gloria",
+          "english": "glory",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "gloria",
           "derivatives": [
-            { "english": "glorious", "gloss": "wonderful (adj.)" },
-            { "english": "glorify", "gloss": "to exalt, worship, or honor (v.)" }
+            {
+              "english": "glorious",
+              "gloss": "wonderful (adj.)"
+            },
+            {
+              "english": "glorify",
+              "gloss": "to exalt, worship, or honor (v.)"
+            }
           ]
         },
         {
-          "id": "pl-2-2", "latin": "Jesus", "english": "Jesus",
-          "pos": "noun", "gender": "m", "declension": null,
+          "id": "pl-2-2",
+          "latin": "Jesus",
+          "english": "Jesus",
+          "pos": "noun",
+          "gender": "m",
+          "declension": null,
           "audio_key": "jesus",
           "derivatives": []
         },
         {
-          "id": "pl-2-3", "latin": "laudo", "english": "I praise",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-2-3",
+          "latin": "laudo",
+          "english": "I praise",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "laudo",
           "derivatives": [
-            { "english": "laudatory", "gloss": "the art of public speaking (n.)" }
+            {
+              "english": "laudatory",
+              "gloss": "the art of public speaking (n.)"
+            }
           ]
         },
         {
-          "id": "pl-2-4", "latin": "clamo", "english": "I shout",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-2-4",
+          "latin": "clamo",
+          "english": "I shout",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "clamo",
           "derivatives": [
-            { "english": "proclamation", "gloss": "an official announcement (n.)" }
+            {
+              "english": "proclamation",
+              "gloss": "an official announcement (n.)"
+            }
           ]
         },
         {
-          "id": "pl-2-5", "latin": "caelum", "english": "heaven",
-          "pos": "noun", "gender": "n", "declension": 2,
+          "id": "pl-2-5",
+          "latin": "caelum",
+          "english": "heaven",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
           "audio_key": "caelum",
           "derivatives": [
-            { "english": "celestial", "gloss": "heavenly (adj.)" }
+            {
+              "english": "celestial",
+              "gloss": "heavenly (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-2-6",
+          "latin": "puer",
+          "english": "boy",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "puer",
+          "derivatives": [
+            {
+              "english": "puerile",
+              "gloss": "childish (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-2-7",
+          "latin": "puella",
+          "english": "girl",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "puella",
+          "derivatives": []
+        },
+        {
+          "id": "pl-2-8",
+          "latin": "discipula",
+          "english": "student (f.)",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "discipula",
+          "derivatives": [
+            {
+              "english": "disciple",
+              "gloss": "a follower or student (n.)"
+            }
           ]
         }
       ],
@@ -263,63 +420,144 @@
         "new_portion_english": "Holy, Holy, Holy, Lord God of Hosts.",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl2",
+      "copywork": {
+        "sentences": [
+          "Puer est discipulus.",
+          "Puella est discipula."
+        ],
+        "instructions": "Copy and translate. Identify the nouns in each sentence. Which are masculine? Which are feminine? (Hint: -us endings are usually masculine; -a endings are usually feminine.)"
+      }
     },
-
     {
       "id": 3,
       "type": "lesson",
       "title": "Verbs",
       "focus": "Action words; Verb-Finder Sentence (Can I ___?)",
       "practical_latin": [
-        { "latin": "Surge!", "english": "Stand up! (to one person)" },
-        { "latin": "Surgite!", "english": "Stand up! (to more than one person)" }
+        {
+          "latin": "Surge!",
+          "english": "Stand up! (to one person)"
+        },
+        {
+          "latin": "Surgite!",
+          "english": "Stand up! (to more than one person)"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-3-1", "latin": "navigo", "english": "I sail",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-3-1",
+          "latin": "navigo",
+          "english": "I sail",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "navigo",
           "derivatives": [
-            { "english": "navigate", "gloss": "to steer a ship or plane (v.)" },
-            { "english": "navy", "gloss": "a nation's ships or a dark blue color (n.)" }
+            {
+              "english": "navigate",
+              "gloss": "to steer a ship or plane (v.)"
+            },
+            {
+              "english": "navy",
+              "gloss": "a nation's ships or a dark blue color (n.)"
+            }
           ]
         },
         {
-          "id": "pl-3-2", "latin": "porto", "english": "I carry",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-3-2",
+          "latin": "porto",
+          "english": "I carry",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "porto",
           "derivatives": [
-            { "english": "portable", "gloss": "able to be carried (adj.)" },
-            { "english": "airport", "gloss": "a place where aircraft land and take off (n.)" }
+            {
+              "english": "portable",
+              "gloss": "able to be carried (adj.)"
+            },
+            {
+              "english": "airport",
+              "gloss": "a place where aircraft land and take off (n.)"
+            }
           ]
         },
         {
-          "id": "pl-3-3", "latin": "oro", "english": "I pray",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-3-3",
+          "latin": "oro",
+          "english": "I pray",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "oro",
           "derivatives": [
-            { "english": "oral", "gloss": "spoken or having to do with the mouth (adj.)" },
-            { "english": "oratory", "gloss": "the art of public speaking (n.)" }
+            {
+              "english": "oral",
+              "gloss": "spoken or having to do with the mouth (adj.)"
+            },
+            {
+              "english": "oratory",
+              "gloss": "the art of public speaking (n.)"
+            }
           ]
         },
         {
-          "id": "pl-3-4", "latin": "laboro", "english": "I work",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-3-4",
+          "latin": "laboro",
+          "english": "I work",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "laboro",
           "derivatives": [
-            { "english": "laboratory", "gloss": "a place for scientific work or research (n.)" },
-            { "english": "labor", "gloss": "work; physical or mental exertion (n.)" }
+            {
+              "english": "laboratory",
+              "gloss": "a place for scientific work or research (n.)"
+            },
+            {
+              "english": "labor",
+              "gloss": "work; physical or mental exertion (n.)"
+            }
           ]
         },
         {
-          "id": "pl-3-5", "latin": "specto", "english": "I look at",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-3-5",
+          "latin": "specto",
+          "english": "I look at",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "specto",
           "derivatives": [
-            { "english": "spectacle", "gloss": "a remarkable sight (n.)" },
-            { "english": "spectacular", "gloss": "remarkable, unusual (adj.)" }
+            {
+              "english": "spectacle",
+              "gloss": "a remarkable sight (n.)"
+            },
+            {
+              "english": "spectacular",
+              "gloss": "remarkable, unusual (adj.)"
+            }
           ]
+        },
+        {
+          "id": "pl-3-6",
+          "latin": "fēmina",
+          "english": "woman",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "femina",
+          "derivatives": [
+            {
+              "english": "feminine",
+              "gloss": "of or relating to women (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-3-7",
+          "latin": "nōn",
+          "english": "not",
+          "pos": "adverb",
+          "audio_key": "non",
+          "derivatives": []
         }
       ],
       "prayer": {
@@ -333,60 +571,157 @@
         "new_portion_english": "heaven and earth are full of Thy glory. Hosanna in the highest.",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl3",
+      "copywork": {
+        "sentences": [
+          "Magistra nōn est puella.",
+          "Magistra est fēmina."
+        ],
+        "instructions": "Copy and translate. Underline the verb in each sentence. (Est is a form of 'to be' — it counts as a verb!) What does nōn do to the meaning of the first sentence?"
+      }
     },
-
     {
       "id": 4,
       "type": "lesson",
       "title": "Invisible Verbs",
       "focus": "Invisible (mental/emotional) action verbs; all Latin verbs in this book end in -o",
       "practical_latin": [
-        { "latin": "Vale!", "english": "Good-bye! (to one person)" },
-        { "latin": "Valete!", "english": "Good-bye! (to more than one person)" }
+        {
+          "latin": "Vale!",
+          "english": "Good-bye! (to one person)"
+        },
+        {
+          "latin": "Valete!",
+          "english": "Good-bye! (to more than one person)"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-4-1", "latin": "amo", "english": "I love",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-4-1",
+          "latin": "amo",
+          "english": "I love",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "amo",
           "derivatives": [
-            { "english": "amorous", "gloss": "full of love (adj.)" }
+            {
+              "english": "amorous",
+              "gloss": "full of love (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-4-2", "latin": "adoro", "english": "I adore",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-4-2",
+          "latin": "adoro",
+          "english": "I adore",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "adoro",
           "derivatives": [
-            { "english": "adoration", "gloss": "great love or devotion (n.)" },
-            { "english": "adorable", "gloss": "lovable (adj.)" }
+            {
+              "english": "adoration",
+              "gloss": "great love or devotion (n.)"
+            },
+            {
+              "english": "adorable",
+              "gloss": "lovable (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-4-3", "latin": "habito", "english": "I live in",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-4-3",
+          "latin": "habito",
+          "english": "I live in",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "habito",
           "derivatives": [
-            { "english": "habitat", "gloss": "a place where something or someone lives (n.)" }
+            {
+              "english": "habitat",
+              "gloss": "a place where something or someone lives (n.)"
+            }
           ]
         },
         {
-          "id": "pl-4-4", "latin": "judico", "english": "I judge",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-4-4",
+          "latin": "judico",
+          "english": "I judge",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "judico",
           "derivatives": [
-            { "english": "judicial", "gloss": "having to do with judges, courts, and laws (adj.)" },
-            { "english": "judgment", "gloss": "a decision or opinion (n.)" }
+            {
+              "english": "judicial",
+              "gloss": "having to do with judges, courts, and laws (adj.)"
+            },
+            {
+              "english": "judgment",
+              "gloss": "a decision or opinion (n.)"
+            }
           ]
         },
         {
-          "id": "pl-4-5", "latin": "paro", "english": "I prepare",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-4-5",
+          "latin": "paro",
+          "english": "I prepare",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "paro",
           "derivatives": [
-            { "english": "parachute", "gloss": "a device used to slow the speed of someone jumping from an airplane (n.)" },
-            { "english": "preparation", "gloss": "getting ready or making something in advance (n.)" }
+            {
+              "english": "parachute",
+              "gloss": "a device used to slow the speed of someone jumping from an airplane (n.)"
+            },
+            {
+              "english": "preparation",
+              "gloss": "getting ready or making something in advance (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-4-6",
+          "latin": "māter",
+          "english": "mother",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "mater",
+          "derivatives": [
+            {
+              "english": "maternal",
+              "gloss": "of or relating to a mother (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-4-7",
+          "latin": "fīlia",
+          "english": "daughter",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "filia",
+          "derivatives": [
+            {
+              "english": "filial",
+              "gloss": "of or befitting a son or daughter (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-4-8",
+          "latin": "fīlius",
+          "english": "son",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "filius",
+          "derivatives": [
+            {
+              "english": "filial",
+              "gloss": "of or befitting a son or daughter (adj.)"
+            }
           ]
         }
       ],
@@ -401,59 +736,134 @@
         "new_portion_english": "Blessed is He who comes in the name of the Lord.",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl4",
+      "copywork": {
+        "sentences": [
+          "Hic puer puellam amat.",
+          "Haec māter fīliam amat."
+        ],
+        "instructions": "Copy and translate. Underline the verb. Is it an action you can see, or an invisible feeling? What do the -am endings on puellam and fīliam tell you about their role in the sentence?"
+      }
     },
-
     {
       "id": 5,
       "type": "lesson",
       "title": "Latin Verbs",
       "focus": "Latin verbs end in -o in dictionary form; recognizing verbs by ending",
       "practical_latin": [
-        { "latin": "discipulus", "english": "student (one)" },
-        { "latin": "discipuli", "english": "students (many)" }
+        {
+          "latin": "discipulus",
+          "english": "student (one)"
+        },
+        {
+          "latin": "discipuli",
+          "english": "students (many)"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-5-1", "latin": "libero", "english": "I free",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-5-1",
+          "latin": "libero",
+          "english": "I free",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "libero",
           "derivatives": [
-            { "english": "liberty", "gloss": "freedom (n.)" }
+            {
+              "english": "liberty",
+              "gloss": "freedom (n.)"
+            }
           ]
         },
         {
-          "id": "pl-5-2", "latin": "narro", "english": "I tell",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-5-2",
+          "latin": "narro",
+          "english": "I tell",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "narro",
           "derivatives": [
-            { "english": "narrate", "gloss": "to tell about a story or event (v.)" },
-            { "english": "narrator", "gloss": "the person telling a story or event (n.)" }
+            {
+              "english": "narrate",
+              "gloss": "to tell about a story or event (v.)"
+            },
+            {
+              "english": "narrator",
+              "gloss": "the person telling a story or event (n.)"
+            }
           ]
         },
         {
-          "id": "pl-5-3", "latin": "pugno", "english": "I fight",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-5-3",
+          "latin": "pugno",
+          "english": "I fight",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "pugno",
           "derivatives": [
-            { "english": "pugnacious", "gloss": "in a fighting spirit (adj.)" }
+            {
+              "english": "pugnacious",
+              "gloss": "in a fighting spirit (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-5-4", "latin": "supero", "english": "I conquer",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-5-4",
+          "latin": "supero",
+          "english": "I conquer",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "supero",
           "derivatives": [
-            { "english": "superior", "gloss": "excellent (adj.)" }
+            {
+              "english": "superior",
+              "gloss": "excellent (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-5-5", "latin": "voco", "english": "I call",
-          "pos": "verb", "conjugation": 1,
+          "id": "pl-5-5",
+          "latin": "voco",
+          "english": "I call",
+          "pos": "verb",
+          "conjugation": 1,
           "audio_key": "voco",
           "derivatives": [
-            { "english": "vocal", "gloss": "having to do with speaking or singing (adj.)" },
-            { "english": "vocabulary", "gloss": "a list of words (n.)" }
+            {
+              "english": "vocal",
+              "gloss": "having to do with speaking or singing (adj.)"
+            },
+            {
+              "english": "vocabulary",
+              "gloss": "a list of words (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-5-6",
+          "latin": "parva",
+          "english": "small (f.)",
+          "pos": "adjective",
+          "audio_key": "parva",
+          "derivatives": [
+            {
+              "english": "parvovirus",
+              "gloss": "a type of very small virus (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-5-7",
+          "latin": "magna",
+          "english": "large, great (f.)",
+          "pos": "adjective",
+          "audio_key": "magna",
+          "derivatives": [
+            {
+              "english": "magnificent",
+              "gloss": "impressively beautiful or elaborate (adj.)"
+            }
           ]
         }
       ],
@@ -468,79 +878,211 @@
         "new_portion_english": "Hosanna in the highest.",
         "note": "Final line — the full Sanctus is now complete."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl5",
+      "copywork": {
+        "sentences": [
+          "Puellam parvam amō.",
+          "Et magistram amō.",
+          "Puellam amō."
+        ],
+        "instructions": "Copy and translate. Circle the verb in each sentence. Every verb ends in -ō — who is doing the action? Can you find an adjective in the first sentence? Which noun does it describe?"
+      }
     },
-
     {
       "id": "R1",
       "type": "review",
       "title": "Review Lesson 1 (Lessons 1–5)",
-      "reviews_lessons": [1, 2, 3, 4, 5],
+      "reviews_lessons": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
       "prayer_id": "sanctus",
       "latin_song": {
         "title": "Dona Nobis Pacem",
         "latin": "Dona Nobis Pacem",
         "english": "Grant us Peace",
         "source": "Lingua Angelica CD"
-      }
+      },
+      "reading_key": "maxey-r1",
+      "copywork": {
+        "sentences": [
+          "America est patria mea.",
+          "Americam amō.",
+          "Amāsne Italiam?"
+        ],
+        "instructions": "Copy and translate. Find one verb and one noun in each sentence. Notice America becomes Americam and Italia becomes Italiam — the -m ending appears when the noun is the object of a verb. We will study this more later!"
+      },
+      "vocab": [
+        {
+          "id": "pl-R1-1",
+          "latin": "īnsula",
+          "english": "island",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "insula",
+          "derivatives": [
+            {
+              "english": "insulate",
+              "gloss": "to protect by surrounding (v.)"
+            },
+            {
+              "english": "insulin",
+              "gloss": "a hormone produced in the pancreas (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-R1-2",
+          "latin": "fāma",
+          "english": "fame, reputation",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "fama",
+          "derivatives": [
+            {
+              "english": "famous",
+              "gloss": "known by many people (adj.)"
+            }
+          ]
+        }
+      ]
     },
-
     {
       "id": 6,
       "type": "lesson",
       "title": "Nouns",
       "focus": "Nouns are persons, places, or things; simple Latin nouns end in -a",
       "practical_latin": [
-        { "latin": "Deo gratias", "english": "Thanks be to God" }
+        {
+          "latin": "Deo gratias",
+          "english": "Thanks be to God"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-6-1", "latin": "regina", "english": "queen",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-6-1",
+          "latin": "regina",
+          "english": "queen",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "regina",
           "derivatives": [
-            { "english": "regal", "gloss": "like a king or queen; befitting royalty (adj.)" }
+            {
+              "english": "regal",
+              "gloss": "like a king or queen; befitting royalty (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-6-2", "latin": "stella", "english": "star",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-6-2",
+          "latin": "stella",
+          "english": "star",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "stella",
           "derivatives": [
-            { "english": "stellar", "gloss": "having to do with a star; outstanding (adj.)" }
+            {
+              "english": "stellar",
+              "gloss": "having to do with a star; outstanding (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-6-3", "latin": "silva", "english": "forest",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-6-3",
+          "latin": "silva",
+          "english": "forest",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "silva",
           "derivatives": [
-            { "english": "Pennsylvania", "gloss": "a state of the Northeast U.S. (proper noun)" }
+            {
+              "english": "Pennsylvania",
+              "gloss": "a state of the Northeast U.S. (proper noun)"
+            }
           ]
         },
         {
-          "id": "pl-6-4", "latin": "terra", "english": "earth",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-6-4",
+          "latin": "terra",
+          "english": "earth",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "terra",
           "derivatives": [
-            { "english": "territory", "gloss": "an area of land (n.)" }
+            {
+              "english": "territory",
+              "gloss": "an area of land (n.)"
+            }
           ]
         },
         {
-          "id": "pl-6-5", "latin": "unda", "english": "wave",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-6-5",
+          "latin": "unda",
+          "english": "wave",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "unda",
           "derivatives": [
-            { "english": "undulate", "gloss": "to move in a wave-like motion (v.)" }
+            {
+              "english": "undulate",
+              "gloss": "to move in a wave-like motion (v.)"
+            }
           ]
         },
         {
-          "id": "pl-6-6", "latin": "vita", "english": "life",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-6-6",
+          "latin": "vita",
+          "english": "life",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "vita",
           "derivatives": [
-            { "english": "vital", "gloss": "extremely important (adj.)" },
-            { "english": "vitamin", "gloss": "a natural substance that is essential to health (n.)" }
+            {
+              "english": "vital",
+              "gloss": "extremely important (adj.)"
+            },
+            {
+              "english": "vitamin",
+              "gloss": "a natural substance that is essential to health (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-6-7",
+          "latin": "longa",
+          "english": "long (f.)",
+          "pos": "adjective",
+          "audio_key": "longa",
+          "derivatives": [
+            {
+              "english": "longitude",
+              "gloss": "imaginary vertical lines on a globe (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-6-8",
+          "latin": "antīqua",
+          "english": "ancient, old (f.)",
+          "pos": "adjective",
+          "audio_key": "antiqua",
+          "derivatives": [
+            {
+              "english": "antique",
+              "gloss": "a valuable old object (n.)"
+            }
           ]
         }
       ],
@@ -555,56 +1097,134 @@
         "new_portion_english": "Glory be to the Father,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl6",
+      "copywork": {
+        "sentences": [
+          "Haec via est longa.",
+          "Haec via est via bona et pulchra.",
+          "Viam longam amō."
+        ],
+        "instructions": "Copy and translate. Underline every noun. Which nouns end in -a? Notice how via becomes viam and longa becomes longam in the third sentence — noun and adjective both change endings together."
+      }
     },
-
     {
       "id": 7,
       "type": "lesson",
       "title": "Latin Nouns",
       "focus": "Latin nouns end in -a; five groups (declensions)",
       "practical_latin": [
-        { "latin": "mea culpa", "english": "my fault" }
+        {
+          "latin": "mea culpa",
+          "english": "my fault"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-7-1", "latin": "aqua", "english": "water",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-7-1",
+          "latin": "aqua",
+          "english": "water",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "aqua",
           "derivatives": [
-            { "english": "aquarium", "gloss": "a tank for keeping water animals (n.)" },
-            { "english": "aquatic", "gloss": "relating to or being in water (adj.)" }
+            {
+              "english": "aquarium",
+              "gloss": "a tank for keeping water animals (n.)"
+            },
+            {
+              "english": "aquatic",
+              "gloss": "relating to or being in water (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-7-2", "latin": "cena", "english": "dinner",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-7-2",
+          "latin": "cena",
+          "english": "dinner",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "cena",
           "derivatives": []
         },
         {
-          "id": "pl-7-3", "latin": "corona", "english": "crown",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-7-3",
+          "latin": "corona",
+          "english": "crown",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "corona",
           "derivatives": [
-            { "english": "coronation", "gloss": "the crowning of a king/queen (n.)" }
+            {
+              "english": "coronation",
+              "gloss": "the crowning of a king/queen (n.)"
+            }
           ]
         },
         {
-          "id": "pl-7-4", "latin": "mensa", "english": "table",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-7-4",
+          "latin": "mensa",
+          "english": "table",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "mensa",
           "derivatives": [
-            { "english": "Mesa Verde", "gloss": "a place in the Western U.S. where land is raised off the ground (proper noun)" }
+            {
+              "english": "Mesa Verde",
+              "gloss": "a place in the Western U.S. where land is raised off the ground (proper noun)"
+            }
           ]
         },
         {
-          "id": "pl-7-5", "latin": "patria", "english": "country, fatherland",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-7-5",
+          "latin": "patria",
+          "english": "country, fatherland",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "patria",
           "derivatives": [
-            { "english": "patriot", "gloss": "someone who loves his/her country (n.)" },
-            { "english": "patriotic", "gloss": "showing love for one's country (adj.)" }
+            {
+              "english": "patriot",
+              "gloss": "someone who loves his/her country (n.)"
+            },
+            {
+              "english": "patriotic",
+              "gloss": "showing love for one's country (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-7-6",
+          "latin": "epistula",
+          "english": "letter",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "epistula",
+          "derivatives": [
+            {
+              "english": "epistle",
+              "gloss": "a formal letter, especially in the New Testament (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-7-7",
+          "latin": "habet",
+          "english": "has, holds",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "habet",
+          "derivatives": [
+            {
+              "english": "habit",
+              "gloss": "a regular practice (n.)"
+            }
           ]
         }
       ],
@@ -619,59 +1239,144 @@
         "new_portion_english": "and to the Son, and to the Holy Spirit,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl7",
+      "copywork": {
+        "sentences": [
+          "Quis est haec puella?",
+          "Iūlia epistulam habet.",
+          "Māter est in Britanniā."
+        ],
+        "instructions": "Copy and translate. Circle every noun. Can you tell which ones are persons, places, or things? In the second sentence, epistulam ends in -m — why? (It is the object of habet.)"
+      }
     },
-
     {
       "id": 8,
       "type": "lesson",
       "title": "Derivatives",
       "focus": "English derivatives: English words that come from Latin root words",
       "practical_latin": [
-        { "latin": "amicus", "english": "friend (one)" },
-        { "latin": "amici", "english": "friends (many)" }
+        {
+          "latin": "amicus",
+          "english": "friend (one)"
+        },
+        {
+          "latin": "amici",
+          "english": "friends (many)"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-8-1", "latin": "herba", "english": "plant",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-8-1",
+          "latin": "herba",
+          "english": "plant",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "herba",
           "derivatives": [
-            { "english": "herb", "gloss": "leaves of a plant used as medicine or in cooking (n.)" }
+            {
+              "english": "herb",
+              "gloss": "leaves of a plant used as medicine or in cooking (n.)"
+            }
           ]
         },
         {
-          "id": "pl-8-2", "latin": "injuria", "english": "injury",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-8-2",
+          "latin": "injuria",
+          "english": "injury",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "injuria",
           "derivatives": [
-            { "english": "injury", "gloss": "a harm done (n.)" }
+            {
+              "english": "injury",
+              "gloss": "a harm done (n.)"
+            }
           ]
         },
         {
-          "id": "pl-8-3", "latin": "femina", "english": "woman",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-8-3",
+          "latin": "femina",
+          "english": "woman",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "femina",
           "derivatives": [
-            { "english": "female", "gloss": "of or having to do with the female gender (adj.)" },
-            { "english": "feminine", "gloss": "having the qualities of a female person (adj.)" }
+            {
+              "english": "female",
+              "gloss": "of or having to do with the female gender (adj.)"
+            },
+            {
+              "english": "feminine",
+              "gloss": "having the qualities of a female person (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-8-4", "latin": "nauta", "english": "sailor",
-          "pos": "noun", "gender": "m", "declension": 1,
+          "id": "pl-8-4",
+          "latin": "nauta",
+          "english": "sailor",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 1,
           "audio_key": "nauta",
           "derivatives": [
-            { "english": "nautical", "gloss": "having to do with seafaring (adj.)" }
+            {
+              "english": "nautical",
+              "gloss": "having to do with seafaring (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-8-5", "latin": "fortuna", "english": "fortune",
-          "pos": "noun", "gender": "f", "declension": 1,
+          "id": "pl-8-5",
+          "latin": "fortuna",
+          "english": "fortune",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
           "audio_key": "fortuna",
           "derivatives": [
-            { "english": "fortune", "gloss": "luck; great wealth (n.)" },
-            { "english": "fortunate", "gloss": "lucky (adj.)" }
+            {
+              "english": "fortune",
+              "gloss": "luck; great wealth (n.)"
+            },
+            {
+              "english": "fortunate",
+              "gloss": "lucky (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-8-6",
+          "latin": "casa",
+          "english": "house, cottage",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "casa",
+          "derivatives": [
+            {
+              "english": "casino",
+              "gloss": "a building for entertainment (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-8-7",
+          "latin": "ager",
+          "english": "field",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "ager",
+          "derivatives": [
+            {
+              "english": "agriculture",
+              "gloss": "the practice of farming (n.)"
+            }
           ]
         }
       ],
@@ -686,59 +1391,133 @@
         "new_portion_english": "as it was in the beginning,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl8",
+      "copywork": {
+        "sentences": [
+          "Agricola fīliam pulchram habet.",
+          "Fīlia in casā labōrat; fīlius in agrō labōrat."
+        ],
+        "instructions": "Copy and translate. Find English words descended from these Latin words. Try: agricola → agriculture, fīlia/fīlius → filial, labōrat → labor, ager → agriculture (same root!). Can you find more?"
+      }
     },
-
     {
       "id": 9,
       "type": "lesson",
       "title": "Numbers 1–5",
       "focus": "Latin cardinal numbers one through five",
       "practical_latin": [
-        { "latin": "Sedete", "english": "Sit down (to many)" }
+        {
+          "latin": "Sedete",
+          "english": "Sit down (to many)"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-9-1", "latin": "unus", "english": "one (1)",
+          "id": "pl-9-1",
+          "latin": "unus",
+          "english": "one (1)",
           "pos": "number",
           "audio_key": "unus",
           "derivatives": [
-            { "english": "unite", "gloss": "to join or make one (v.)" },
-            { "english": "unicorn", "gloss": "a mythical creature with one horn (n.)" }
+            {
+              "english": "unite",
+              "gloss": "to join or make one (v.)"
+            },
+            {
+              "english": "unicorn",
+              "gloss": "a mythical creature with one horn (n.)"
+            }
           ]
         },
         {
-          "id": "pl-9-2", "latin": "duo", "english": "two (2)",
+          "id": "pl-9-2",
+          "latin": "duo",
+          "english": "two (2)",
           "pos": "number",
           "audio_key": "duo",
           "derivatives": [
-            { "english": "dual", "gloss": "double (adj.)" }
+            {
+              "english": "dual",
+              "gloss": "double (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-9-3", "latin": "tres", "english": "three (3)",
+          "id": "pl-9-3",
+          "latin": "tres",
+          "english": "three (3)",
           "pos": "number",
           "audio_key": "tres",
           "derivatives": [
-            { "english": "tertiary", "gloss": "third (adj.)" },
-            { "english": "trio", "gloss": "a group of three (n.)" }
+            {
+              "english": "tertiary",
+              "gloss": "third (adj.)"
+            },
+            {
+              "english": "trio",
+              "gloss": "a group of three (n.)"
+            }
           ]
         },
         {
-          "id": "pl-9-4", "latin": "quattuor", "english": "four (4)",
+          "id": "pl-9-4",
+          "latin": "quattuor",
+          "english": "four (4)",
           "pos": "number",
           "audio_key": "quattuor",
           "derivatives": [
-            { "english": "quartet", "gloss": "a group of four (n.)" },
-            { "english": "quarter", "gloss": "a fourth of something (n.)" }
+            {
+              "english": "quartet",
+              "gloss": "a group of four (n.)"
+            },
+            {
+              "english": "quarter",
+              "gloss": "a fourth of something (n.)"
+            }
           ]
         },
         {
-          "id": "pl-9-5", "latin": "quinque", "english": "five (5)",
+          "id": "pl-9-5",
+          "latin": "quinque",
+          "english": "five (5)",
           "pos": "number",
           "audio_key": "quinque",
           "derivatives": [
-            { "english": "quintuplets", "gloss": "five babies born at the same time from the same mother (n.)" }
+            {
+              "english": "quintuplets",
+              "gloss": "five babies born at the same time from the same mother (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-9-6",
+          "latin": "amīcus",
+          "english": "friend",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "amicus",
+          "derivatives": [
+            {
+              "english": "amicable",
+              "gloss": "friendly and pleasant (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-9-7",
+          "latin": "vir",
+          "english": "man",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "vir",
+          "derivatives": [
+            {
+              "english": "virile",
+              "gloss": "strong and masculine (adj.)"
+            }
           ]
         }
       ],
@@ -753,58 +1532,147 @@
         "new_portion_english": "is now, and ever shall be,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl9",
+      "copywork": {
+        "sentences": [
+          "Nauta est amīcus agricolae.",
+          "Nauta labōrat sed nōn in agrō.",
+          "Aquam saepe videt quod est nauta."
+        ],
+        "instructions": "Copy and translate. Count the nouns in each sentence (1? 2? 3?). Find the word meaning 'because' — that is quod. Find the word meaning 'often' — that is saepe."
+      }
     },
-
     {
       "id": 10,
       "type": "lesson",
       "title": "Numbers 6–10",
       "focus": "Latin cardinal numbers six through ten; connection to English month names",
       "practical_latin": [
-        { "latin": "Anno Domini, A.D.", "english": "In the year of our Lord" }
+        {
+          "latin": "Anno Domini, A.D.",
+          "english": "In the year of our Lord"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-10-1", "latin": "sex", "english": "six (6)",
+          "id": "pl-10-1",
+          "latin": "sex",
+          "english": "six (6)",
           "pos": "number",
           "audio_key": "sex",
           "derivatives": [
-            { "english": "semester", "gloss": "historically a six-month term of school (n.)" }
+            {
+              "english": "semester",
+              "gloss": "historically a six-month term of school (n.)"
+            }
           ]
         },
         {
-          "id": "pl-10-2", "latin": "septem", "english": "seven (7)",
+          "id": "pl-10-2",
+          "latin": "septem",
+          "english": "seven (7)",
           "pos": "number",
           "audio_key": "septem",
           "derivatives": [
-            { "english": "September", "gloss": "the seventh month of the Roman calendar (n.)" }
+            {
+              "english": "September",
+              "gloss": "the seventh month of the Roman calendar (n.)"
+            }
           ]
         },
         {
-          "id": "pl-10-3", "latin": "octo", "english": "eight (8)",
+          "id": "pl-10-3",
+          "latin": "octo",
+          "english": "eight (8)",
           "pos": "number",
           "audio_key": "octo",
           "derivatives": [
-            { "english": "October", "gloss": "the eighth month of the Roman calendar (n.)" },
-            { "english": "octagon", "gloss": "an eight-sided figure (n.)" }
+            {
+              "english": "October",
+              "gloss": "the eighth month of the Roman calendar (n.)"
+            },
+            {
+              "english": "octagon",
+              "gloss": "an eight-sided figure (n.)"
+            }
           ]
         },
         {
-          "id": "pl-10-4", "latin": "novem", "english": "nine (9)",
+          "id": "pl-10-4",
+          "latin": "novem",
+          "english": "nine (9)",
           "pos": "number",
           "audio_key": "novem",
           "derivatives": [
-            { "english": "November", "gloss": "the ninth month of the Roman calendar (n.)" }
+            {
+              "english": "November",
+              "gloss": "the ninth month of the Roman calendar (n.)"
+            }
           ]
         },
         {
-          "id": "pl-10-5", "latin": "decem", "english": "ten (10)",
+          "id": "pl-10-5",
+          "latin": "decem",
+          "english": "ten (10)",
           "pos": "number",
           "audio_key": "decem",
           "derivatives": [
-            { "english": "December", "gloss": "the tenth month of the Roman calendar (n.)" },
-            { "english": "decimal", "gloss": "based on the number 10 (adj.); a number in the decimal system (n.)" }
+            {
+              "english": "December",
+              "gloss": "the tenth month of the Roman calendar (n.)"
+            },
+            {
+              "english": "decimal",
+              "gloss": "based on the number 10 (adj.); a number in the decimal system (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-10-6",
+          "latin": "scrībit",
+          "english": "writes",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "scribit",
+          "derivatives": [
+            {
+              "english": "script",
+              "gloss": "written text (n.)"
+            },
+            {
+              "english": "scribe",
+              "gloss": "a person who copies text (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-10-7",
+          "latin": "legit",
+          "english": "reads",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "legit",
+          "derivatives": [
+            {
+              "english": "legible",
+              "gloss": "clear enough to read (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-10-8",
+          "latin": "pater",
+          "english": "father",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "pater",
+          "derivatives": [
+            {
+              "english": "paternal",
+              "gloss": "of or relating to a father (adj.)"
+            }
           ]
         }
       ],
@@ -819,71 +1687,237 @@
         "new_portion_english": "world without end. Amen.",
         "note": "Final line — the full Gloria Patri is now complete."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl10",
+      "copywork": {
+        "sentences": [
+          "Ego sum magistra.",
+          "Tū es discipulus.",
+          "Nauta epistulās scrībit et puer epistulās ostendit.",
+          "Discipulī fābulās laudant."
+        ],
+        "instructions": "Copy and translate. Circle ego (I) and tū (you). How does the verb change: sum vs. es vs. scrībit vs. laudant? Each ending signals who is acting — the ending IS the pronoun."
+      }
     },
-
     {
       "id": "R2",
       "type": "review",
       "title": "Review Lesson 2 (Lessons 6–10)",
-      "reviews_lessons": [6, 7, 8, 9, 10],
+      "reviews_lessons": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "prayer_id": "gloria-patri",
       "latin_song": {
         "title": "Christus Vincit",
         "lines": [
-          { "latin": "Christus vincit", "english": "Christ conquers" },
-          { "latin": "Christus regnat", "english": "Christ reigns" },
-          { "latin": "Christus imperat", "english": "Christ rules" }
+          {
+            "latin": "Christus vincit",
+            "english": "Christ conquers"
+          },
+          {
+            "latin": "Christus regnat",
+            "english": "Christ reigns"
+          },
+          {
+            "latin": "Christus imperat",
+            "english": "Christ rules"
+          }
         ],
         "source": "Lingua Angelica CD"
-      }
+      },
+      "reading_key": "maxey-r2",
+      "copywork": {
+        "sentences": [
+          "Epistulam habeō.",
+          "Nautae epistulam dō.",
+          "Iānua est clausa.",
+          "Poēta iānuam aperit et fēminās videt."
+        ],
+        "instructions": "Copy and translate. Find all the nouns. Which end in -a (1st declension)? Habeō and dō end in -ō — who is doing each action? Find one adjective and the noun it describes."
+      },
+      "vocab": [
+        {
+          "id": "pl-R2-1",
+          "latin": "iānua",
+          "english": "door",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "ianua",
+          "derivatives": [
+            {
+              "english": "January",
+              "gloss": "named for Janus, god of doors and beginnings (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-R2-2",
+          "latin": "rosa",
+          "english": "rose",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "rosa",
+          "derivatives": [
+            {
+              "english": "rosary",
+              "gloss": "a string of beads used for prayer (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-R2-3",
+          "latin": "fenestra",
+          "english": "window",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "fenestra",
+          "derivatives": [
+            {
+              "english": "fenestration",
+              "gloss": "the arrangement of windows in a building (n.)"
+            }
+          ]
+        }
+      ]
     },
-
     {
       "id": 11,
       "type": "lesson",
       "title": "Proper Nouns",
       "focus": "Proper nouns name a specific person, place, or thing; identified by capital letter",
       "practical_latin": [
-        { "latin": "Veni, vidi, vici", "english": "I came, I saw, I conquered (Julius Caesar)" }
+        {
+          "latin": "Veni, vidi, vici",
+          "english": "I came, I saw, I conquered (Julius Caesar)"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-11-1", "latin": "Roma", "english": "Rome",
-          "pos": "noun", "gender": "f", "declension": 1, "proper": true,
+          "id": "pl-11-1",
+          "latin": "Roma",
+          "english": "Rome",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "proper": true,
           "audio_key": "roma",
           "derivatives": [
-            { "english": "Roman", "gloss": "having to do with Rome (adj.); a person of Rome (n.)" }
+            {
+              "english": "Roman",
+              "gloss": "having to do with Rome (adj.); a person of Rome (n.)"
+            }
           ]
         },
         {
-          "id": "pl-11-2", "latin": "Italia", "english": "Italy",
-          "pos": "noun", "gender": "f", "declension": 1, "proper": true,
+          "id": "pl-11-2",
+          "latin": "Italia",
+          "english": "Italy",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "proper": true,
           "audio_key": "italia",
           "derivatives": [
-            { "english": "Italian", "gloss": "having to do with Italy (adj.); a person of Italy (n.)" }
+            {
+              "english": "Italian",
+              "gloss": "having to do with Italy (adj.); a person of Italy (n.)"
+            }
           ]
         },
         {
-          "id": "pl-11-3", "latin": "Maria", "english": "Mary",
-          "pos": "noun", "gender": "f", "declension": 1, "proper": true,
+          "id": "pl-11-3",
+          "latin": "Maria",
+          "english": "Mary",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "proper": true,
           "audio_key": "maria",
           "derivatives": []
         },
         {
-          "id": "pl-11-4", "latin": "Marcus", "english": "Mark",
-          "pos": "noun", "gender": "m", "declension": 2, "proper": true,
+          "id": "pl-11-4",
+          "latin": "Marcus",
+          "english": "Mark",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "proper": true,
           "audio_key": "marcus",
           "derivatives": []
         },
         {
-          "id": "pl-11-5", "latin": "Hispania", "english": "Spain",
-          "pos": "noun", "gender": "f", "declension": 1, "proper": true,
+          "id": "pl-11-5",
+          "latin": "Hispania",
+          "english": "Spain",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "proper": true,
           "audio_key": "hispania",
           "derivatives": [
-            { "english": "Spanish", "gloss": "having to do with Spain (adj.)" },
-            { "english": "Spaniard", "gloss": "a person of Spain (n.)" },
-            { "english": "Hispanic", "gloss": "of or relating to Latin-America or Spain (adj.); a person of Latin-America or Spain (n.)" }
+            {
+              "english": "Spanish",
+              "gloss": "having to do with Spain (adj.)"
+            },
+            {
+              "english": "Spaniard",
+              "gloss": "a person of Spain (n.)"
+            },
+            {
+              "english": "Hispanic",
+              "gloss": "of or relating to Latin-America or Spain (adj.); a person of Latin-America or Spain (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-11-6",
+          "latin": "schola",
+          "english": "school",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "schola",
+          "derivatives": [
+            {
+              "english": "scholar",
+              "gloss": "a learned person (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-11-7",
+          "latin": "lingua",
+          "english": "language, tongue",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "lingua",
+          "derivatives": [
+            {
+              "english": "linguistic",
+              "gloss": "relating to language (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-11-8",
+          "latin": "benignus",
+          "english": "kind, gentle",
+          "pos": "adjective",
+          "audio_key": "benignus",
+          "derivatives": [
+            {
+              "english": "benign",
+              "gloss": "gentle; not harmful (adj.)"
+            }
           ]
         }
       ],
@@ -898,60 +1932,133 @@
         "new_portion_english": "Bless us, O Lord,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl11",
+      "copywork": {
+        "sentences": [
+          "Haec est schola nostra.",
+          "Magistra nostra est benigna et puerīs et puellīs cāra.",
+          "Linguam Latīnam discere cupimus."
+        ],
+        "instructions": "Copy and translate. Circle any proper nouns (names of specific people or places). Underline the common nouns. Find at least two adjectives — which noun does each describe?"
+      }
     },
-
     {
       "id": 12,
       "type": "lesson",
       "title": "Prepositions",
       "focus": "Prepositions show relationship or location between two words",
       "practical_latin": [
-        { "latin": "Quo vadis?", "english": "Where are you going?" }
+        {
+          "latin": "Quo vadis?",
+          "english": "Where are you going?"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-12-1", "latin": "inter", "english": "between",
+          "id": "pl-12-1",
+          "latin": "inter",
+          "english": "between",
           "pos": "preposition",
           "audio_key": "inter",
           "derivatives": [
-            { "english": "interrupt", "gloss": "to make a break in conversation or action (v.)" },
-            { "english": "intermediate", "gloss": "in the middle (adj.)" }
+            {
+              "english": "interrupt",
+              "gloss": "to make a break in conversation or action (v.)"
+            },
+            {
+              "english": "intermediate",
+              "gloss": "in the middle (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-12-2", "latin": "sub", "english": "under",
+          "id": "pl-12-2",
+          "latin": "sub",
+          "english": "under",
           "pos": "preposition",
           "audio_key": "sub",
           "derivatives": [
-            { "english": "submarine", "gloss": "underwater ship (n.)" },
-            { "english": "subway", "gloss": "underground railway (n.)" }
+            {
+              "english": "submarine",
+              "gloss": "underwater ship (n.)"
+            },
+            {
+              "english": "subway",
+              "gloss": "underground railway (n.)"
+            }
           ]
         },
         {
-          "id": "pl-12-3", "latin": "supra", "english": "above",
+          "id": "pl-12-3",
+          "latin": "supra",
+          "english": "above",
           "pos": "preposition",
           "audio_key": "supra",
           "derivatives": [
-            { "english": "superb", "gloss": "above average; excellent (adj.)" }
+            {
+              "english": "superb",
+              "gloss": "above average; excellent (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-12-4", "latin": "ex", "english": "out of",
+          "id": "pl-12-4",
+          "latin": "ex",
+          "english": "out of",
           "pos": "preposition",
           "audio_key": "ex",
           "derivatives": [
-            { "english": "exit", "gloss": "a way out (n.); to leave (v.)" },
-            { "english": "extraordinary", "gloss": "out of the ordinary; very unusual (adj.)" }
+            {
+              "english": "exit",
+              "gloss": "a way out (n.); to leave (v.)"
+            },
+            {
+              "english": "extraordinary",
+              "gloss": "out of the ordinary; very unusual (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-12-5", "latin": "contra", "english": "against",
+          "id": "pl-12-5",
+          "latin": "contra",
+          "english": "against",
           "pos": "preposition",
           "audio_key": "contra",
           "derivatives": [
-            { "english": "contrast", "gloss": "to compare unlike things (v.)" }
+            {
+              "english": "contrast",
+              "gloss": "to compare unlike things (v.)"
+            }
           ]
+        },
+        {
+          "id": "pl-12-6",
+          "latin": "medicus",
+          "english": "doctor, physician",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "medicus",
+          "derivatives": [
+            {
+              "english": "medicine",
+              "gloss": "the science of healing (n.)"
+            },
+            {
+              "english": "medical",
+              "gloss": "relating to the practice of medicine (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-12-7",
+          "latin": "properat",
+          "english": "hurries",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "properat",
+          "derivatives": []
         }
       ],
       "prayer": {
@@ -965,7 +2072,16 @@
         "new_portion_english": "and these Thy gifts,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl12",
+      "copywork": {
+        "sentences": [
+          "Medicus ad casam agricolae properat.",
+          "In silvā sōlus ambulat.",
+          "Puer aeger medicum exspectat."
+        ],
+        "instructions": "Copy and translate. Underline every preposition (ad, in, ex, per, sub, contra). What noun follows each preposition? Note how the noun ending sometimes changes after a preposition."
+      }
     },
     {
       "id": 13,
@@ -973,15 +2089,86 @@
       "title": "Pronouns",
       "focus": "Pronouns replace nouns; Latin verb endings (pronoun letters) indicate person and number",
       "practical_latin": [
-        { "latin": "alma mater", "english": "nurturing mother" }
+        {
+          "latin": "alma mater",
+          "english": "nurturing mother"
+        }
       ],
       "vocab": [
-        { "id": "pl-13-1", "latin": "o", "english": "I", "pos": "verb_ending", "person": "1sg", "audio_key": "ending-o" },
-        { "id": "pl-13-2", "latin": "s", "english": "you (s.)", "pos": "verb_ending", "person": "2sg", "audio_key": "ending-s" },
-        { "id": "pl-13-3", "latin": "t", "english": "he, she, it", "pos": "verb_ending", "person": "3sg", "audio_key": "ending-t" },
-        { "id": "pl-13-4", "latin": "mus", "english": "we", "pos": "verb_ending", "person": "1pl", "audio_key": "ending-mus" },
-        { "id": "pl-13-5", "latin": "tis", "english": "you (pl.)", "pos": "verb_ending", "person": "2pl", "audio_key": "ending-tis" },
-        { "id": "pl-13-6", "latin": "nt", "english": "they", "pos": "verb_ending", "person": "3pl", "audio_key": "ending-nt" }
+        {
+          "id": "pl-13-1",
+          "latin": "o",
+          "english": "I",
+          "pos": "verb_ending",
+          "person": "1sg",
+          "audio_key": "ending-o"
+        },
+        {
+          "id": "pl-13-2",
+          "latin": "s",
+          "english": "you (s.)",
+          "pos": "verb_ending",
+          "person": "2sg",
+          "audio_key": "ending-s"
+        },
+        {
+          "id": "pl-13-3",
+          "latin": "t",
+          "english": "he, she, it",
+          "pos": "verb_ending",
+          "person": "3sg",
+          "audio_key": "ending-t"
+        },
+        {
+          "id": "pl-13-4",
+          "latin": "mus",
+          "english": "we",
+          "pos": "verb_ending",
+          "person": "1pl",
+          "audio_key": "ending-mus"
+        },
+        {
+          "id": "pl-13-5",
+          "latin": "tis",
+          "english": "you (pl.)",
+          "pos": "verb_ending",
+          "person": "2pl",
+          "audio_key": "ending-tis"
+        },
+        {
+          "id": "pl-13-6",
+          "latin": "nt",
+          "english": "they",
+          "pos": "verb_ending",
+          "person": "3pl",
+          "audio_key": "ending-nt"
+        },
+        {
+          "id": "pl-13-7",
+          "latin": "aeger",
+          "english": "sick",
+          "pos": "adjective",
+          "audio_key": "aeger",
+          "derivatives": [
+            {
+              "english": "aegis",
+              "gloss": "protection or support (n.) — unrelated, but a good Latin word to know"
+            }
+          ]
+        },
+        {
+          "id": "pl-13-8",
+          "latin": "sōlus",
+          "english": "alone, only",
+          "pos": "adjective",
+          "audio_key": "solus",
+          "derivatives": [
+            {
+              "english": "solo",
+              "gloss": "alone; a performance by one person (adj./n.)"
+            }
+          ]
+        }
       ],
       "prayer": {
         "id": "table-blessing",
@@ -1000,60 +2187,166 @@
           "label": "Present Tense Verb Endings",
           "type": "verb_endings",
           "rows": [
-            { "person": "1sg", "ending": "o", "pronoun": "I" },
-            { "person": "2sg", "ending": "s", "pronoun": "you (s.)" },
-            { "person": "3sg", "ending": "t", "pronoun": "he, she, it" },
-            { "person": "1pl", "ending": "mus", "pronoun": "we" },
-            { "person": "2pl", "ending": "tis", "pronoun": "you (pl.)" },
-            { "person": "3pl", "ending": "nt", "pronoun": "they" }
+            {
+              "person": "1sg",
+              "ending": "o",
+              "pronoun": "I"
+            },
+            {
+              "person": "2sg",
+              "ending": "s",
+              "pronoun": "you (s.)"
+            },
+            {
+              "person": "3sg",
+              "ending": "t",
+              "pronoun": "he, she, it"
+            },
+            {
+              "person": "1pl",
+              "ending": "mus",
+              "pronoun": "we"
+            },
+            {
+              "person": "2pl",
+              "ending": "tis",
+              "pronoun": "you (pl.)"
+            },
+            {
+              "person": "3pl",
+              "ending": "nt",
+              "pronoun": "they"
+            }
           ]
         }
-      ]
+      ],
+      "reading_key": "maxey-pl13",
+      "copywork": {
+        "sentences": [
+          "Puer sōlus est, sed sōlus esse nōn cupit.",
+          "Amīcōs vidēre cupit.",
+          "Esne aeger, puer? Nōn sum aeger."
+        ],
+        "instructions": "Copy and translate. Circle any pronouns you see. In 'nōn sum aeger,' the verb sum tells us the speaker means herself — the verb ending IS the pronoun! How many hidden pronouns can you find in verb endings?"
+      }
     },
-
     {
       "id": 14,
       "type": "lesson",
       "title": "Adjectives",
       "focus": "Adjectives modify (describe) nouns and pronouns",
       "practical_latin": [
-        { "latin": "stupor mundi", "english": "wonder of the world" }
+        {
+          "latin": "stupor mundi",
+          "english": "wonder of the world"
+        }
       ],
       "vocab": [
         {
-          "id": "pl-14-1", "latin": "altus", "english": "high, deep",
-          "pos": "adjective", "audio_key": "altus",
+          "id": "pl-14-1",
+          "latin": "altus",
+          "english": "high, deep",
+          "pos": "adjective",
+          "audio_key": "altus",
           "derivatives": [
-            { "english": "altitude", "gloss": "height (n.)" }
+            {
+              "english": "altitude",
+              "gloss": "height (n.)"
+            }
           ]
         },
         {
-          "id": "pl-14-2", "latin": "multus", "english": "much, many",
-          "pos": "adjective", "audio_key": "multus",
+          "id": "pl-14-2",
+          "latin": "multus",
+          "english": "much, many",
+          "pos": "adjective",
+          "audio_key": "multus",
           "derivatives": [
-            { "english": "multiply", "gloss": "to increase (v.)" }
+            {
+              "english": "multiply",
+              "gloss": "to increase (v.)"
+            }
           ]
         },
         {
-          "id": "pl-14-3", "latin": "bonus", "english": "good",
-          "pos": "adjective", "audio_key": "bonus",
+          "id": "pl-14-3",
+          "latin": "bonus",
+          "english": "good",
+          "pos": "adjective",
+          "audio_key": "bonus",
           "derivatives": [
-            { "english": "bonus", "gloss": "a new invention (n.)" }
+            {
+              "english": "bonus",
+              "gloss": "a new invention (n.)"
+            }
           ]
         },
         {
-          "id": "pl-14-4", "latin": "longus", "english": "long",
-          "pos": "adjective", "audio_key": "longus",
+          "id": "pl-14-4",
+          "latin": "longus",
+          "english": "long",
+          "pos": "adjective",
+          "audio_key": "longus",
           "derivatives": [
-            { "english": "longitude", "gloss": "imaginary lines that run vertically on a globe (n.)" }
+            {
+              "english": "longitude",
+              "gloss": "imaginary lines that run vertically on a globe (n.)"
+            }
           ]
         },
         {
-          "id": "pl-14-5", "latin": "novus", "english": "new",
-          "pos": "adjective", "audio_key": "novus",
+          "id": "pl-14-5",
+          "latin": "novus",
+          "english": "new",
+          "pos": "adjective",
+          "audio_key": "novus",
           "derivatives": [
-            { "english": "novice", "gloss": "a beginner (n.)" },
-            { "english": "novel", "gloss": "new and unusual (adj.)" }
+            {
+              "english": "novice",
+              "gloss": "a beginner (n.)"
+            },
+            {
+              "english": "novel",
+              "gloss": "new and unusual (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-14-6",
+          "latin": "laetus",
+          "english": "happy, joyful",
+          "pos": "adjective",
+          "audio_key": "laetus",
+          "derivatives": []
+        },
+        {
+          "id": "pl-14-7",
+          "latin": "miser",
+          "english": "miserable, wretched",
+          "pos": "adjective",
+          "audio_key": "miser",
+          "derivatives": [
+            {
+              "english": "misery",
+              "gloss": "great suffering or unhappiness (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-14-8",
+          "latin": "clārus",
+          "english": "famous, clear, bright",
+          "pos": "adjective",
+          "audio_key": "clarus",
+          "derivatives": [
+            {
+              "english": "clarity",
+              "gloss": "clearness (n.)"
+            },
+            {
+              "english": "clarify",
+              "gloss": "to make clear (v.)"
+            }
           ]
         }
       ],
@@ -1068,23 +2361,100 @@
         "new_portion_english": "we are about to receive,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl14",
+      "copywork": {
+        "sentences": [
+          "Puer nōn est miser sed laetus.",
+          "Medicus, vir clārus et benignus, ad casam properat.",
+          "Herī puer aeger erat; hodiē laetus est."
+        ],
+        "instructions": "Copy and translate. Underline every adjective. Draw an arrow from each adjective to the noun it describes. Do the adjective endings match the noun endings? (They should!)"
+      }
     },
-
     {
       "id": 15,
       "type": "lesson",
       "title": "Adverbs",
       "focus": "Adverbs modify verbs; describe how, where, when, or why",
       "practical_latin": [
-        { "latin": "nunc aut numquam", "english": "now or never" }
+        {
+          "latin": "nunc aut numquam",
+          "english": "now or never"
+        }
       ],
       "vocab": [
-        { "id": "pl-15-1", "latin": "clam", "english": "secretly", "pos": "adverb", "audio_key": "clam", "derivatives": [] },
-        { "id": "pl-15-2", "latin": "numquam", "english": "never", "pos": "adverb", "audio_key": "numquam", "derivatives": [] },
-        { "id": "pl-15-3", "latin": "nunc", "english": "now", "pos": "adverb", "audio_key": "nunc", "derivatives": [] },
-        { "id": "pl-15-4", "latin": "saepe", "english": "often", "pos": "adverb", "audio_key": "saepe", "derivatives": [] },
-        { "id": "pl-15-5", "latin": "semper", "english": "always", "pos": "adverb", "audio_key": "semper", "derivatives": [] }
+        {
+          "id": "pl-15-1",
+          "latin": "clam",
+          "english": "secretly",
+          "pos": "adverb",
+          "audio_key": "clam",
+          "derivatives": []
+        },
+        {
+          "id": "pl-15-2",
+          "latin": "numquam",
+          "english": "never",
+          "pos": "adverb",
+          "audio_key": "numquam",
+          "derivatives": []
+        },
+        {
+          "id": "pl-15-3",
+          "latin": "nunc",
+          "english": "now",
+          "pos": "adverb",
+          "audio_key": "nunc",
+          "derivatives": []
+        },
+        {
+          "id": "pl-15-4",
+          "latin": "saepe",
+          "english": "often",
+          "pos": "adverb",
+          "audio_key": "saepe",
+          "derivatives": []
+        },
+        {
+          "id": "pl-15-5",
+          "latin": "semper",
+          "english": "always",
+          "pos": "adverb",
+          "audio_key": "semper",
+          "derivatives": []
+        },
+        {
+          "id": "pl-15-6",
+          "latin": "minimē",
+          "english": "not at all, certainly not",
+          "pos": "adverb",
+          "audio_key": "minime",
+          "derivatives": []
+        },
+        {
+          "id": "pl-15-7",
+          "latin": "vesper",
+          "english": "evening",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "vesper",
+          "derivatives": [
+            {
+              "english": "vespers",
+              "gloss": "an evening prayer service (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-15-8",
+          "latin": "noctū",
+          "english": "at night",
+          "pos": "adverb",
+          "audio_key": "noctu",
+          "derivatives": []
+        }
       ],
       "prayer": {
         "id": "table-blessing",
@@ -1097,42 +2467,217 @@
         "new_portion_english": "through Christ our Lord. Amen.",
         "note": "Final line — the full Table Blessing is now complete."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl15",
+      "copywork": {
+        "sentences": [
+          "Minimē. Nōn in casā, sed in scholā labōrō.",
+          "Noctū stellās spectāmus quod stellās amāmus.",
+          "Cum in viā stāmus, stellās et lūnam vidēmus."
+        ],
+        "instructions": "Copy and translate. Circle every adverb (words answering how, where, or when — minimē, nōn, noctū, bene, saepe, semper, interdum). What verb does each adverb modify?"
+      }
     },
-
     {
       "id": "R3",
       "type": "review",
       "title": "Review Lesson 3 (Lessons 11–15)",
-      "reviews_lessons": [11, 12, 13, 14, 15],
+      "reviews_lessons": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
       "prayer_id": "table-blessing",
       "latin_song": {
         "title": "Adeste Fideles (Refrain)",
         "lines": [
-          { "latin": "Venite adoremus", "english": "O come let us adore Him" },
-          { "latin": "Venite adoremus", "english": "O come let us adore Him" },
-          { "latin": "Venite adoremus", "english": "O come let us adore Him" },
-          { "latin": "Dominum", "english": "Christ the Lord" }
+          {
+            "latin": "Venite adoremus",
+            "english": "O come let us adore Him"
+          },
+          {
+            "latin": "Venite adoremus",
+            "english": "O come let us adore Him"
+          },
+          {
+            "latin": "Venite adoremus",
+            "english": "O come let us adore Him"
+          },
+          {
+            "latin": "Dominum",
+            "english": "Christ the Lord"
+          }
         ],
         "source": "Lingua Angelica CD"
-      }
+      },
+      "reading_key": "maxey-r3",
+      "copywork": {
+        "sentences": [
+          "Aestāte fēmina in tabernāculō habitat.",
+          "Diū labōrat in tabernāculō.",
+          "Nōn est aegra fēmina; est valida.",
+          "Puella saltat et dīcit: 'Laeta sum quod nōn sum aegra.'"
+        ],
+        "instructions": "Copy and translate. For each sentence find: (1) a noun, (2) a verb, and (3) one of these — proper noun, common noun, adjective, adverb, or preposition. Then circle every form of esse (sum, est)."
+      },
+      "vocab": [
+        {
+          "id": "pl-R3-1",
+          "latin": "aestās",
+          "english": "summer",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "aestas",
+          "derivatives": []
+        },
+        {
+          "id": "pl-R3-2",
+          "latin": "valida",
+          "english": "healthy, strong (f.)",
+          "pos": "adjective",
+          "audio_key": "valida",
+          "derivatives": [
+            {
+              "english": "valid",
+              "gloss": "sound and well-founded (adj.)"
+            },
+            {
+              "english": "valor",
+              "gloss": "great courage (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-R3-3",
+          "latin": "oppidum",
+          "english": "town",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "oppidum",
+          "derivatives": []
+        }
+      ]
     },
-
     {
       "id": 16,
       "type": "lesson",
       "title": "Constellations",
       "focus": "Constellations are groups of stars that form pictures in the sky",
       "practical_latin": [
-        { "latin": "Semper Fidelis", "english": "Always Faithful (Marine Corps motto)" }
+        {
+          "latin": "Semper Fidelis",
+          "english": "Always Faithful (Marine Corps motto)"
+        }
       ],
       "vocab": [
-        { "id": "pl-16-1", "latin": "Aquarius", "english": "water carrier", "pos": "noun", "proper": true, "constellation": true, "audio_key": "aquarius", "derivatives": [] },
-        { "id": "pl-16-2", "latin": "Aries", "english": "ram", "pos": "noun", "proper": true, "constellation": true, "audio_key": "aries", "derivatives": [] },
-        { "id": "pl-16-3", "latin": "Cancer", "english": "crab", "pos": "noun", "proper": true, "constellation": true, "audio_key": "cancer", "derivatives": [] },
-        { "id": "pl-16-4", "latin": "Capricornus", "english": "goat", "pos": "noun", "proper": true, "constellation": true, "audio_key": "capricornus", "derivatives": [], "note": "Capricornus is the constellation; Capricorn is a sign of the zodiac" },
-        { "id": "pl-16-5", "latin": "Gemini", "english": "twins", "pos": "noun", "proper": true, "constellation": true, "audio_key": "gemini", "derivatives": [] },
-        { "id": "pl-16-6", "latin": "Virgo", "english": "maiden, virgin", "pos": "noun", "proper": true, "constellation": true, "audio_key": "virgo", "derivatives": [] }
+        {
+          "id": "pl-16-1",
+          "latin": "Aquarius",
+          "english": "water carrier",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "aquarius",
+          "derivatives": []
+        },
+        {
+          "id": "pl-16-2",
+          "latin": "Aries",
+          "english": "ram",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "aries",
+          "derivatives": []
+        },
+        {
+          "id": "pl-16-3",
+          "latin": "Cancer",
+          "english": "crab",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "cancer",
+          "derivatives": []
+        },
+        {
+          "id": "pl-16-4",
+          "latin": "Capricornus",
+          "english": "goat",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "capricornus",
+          "derivatives": [],
+          "note": "Capricornus is the constellation; Capricorn is a sign of the zodiac"
+        },
+        {
+          "id": "pl-16-5",
+          "latin": "Gemini",
+          "english": "twins",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "gemini",
+          "derivatives": []
+        },
+        {
+          "id": "pl-16-6",
+          "latin": "Virgo",
+          "english": "maiden, virgin",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "virgo",
+          "derivatives": []
+        },
+        {
+          "id": "pl-16-7",
+          "latin": "nox",
+          "english": "night",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "nox",
+          "derivatives": [
+            {
+              "english": "nocturnal",
+              "gloss": "active at night (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-16-8",
+          "latin": "hōra",
+          "english": "hour",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "hora",
+          "derivatives": [
+            {
+              "english": "horology",
+              "gloss": "the study of measuring time (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-16-9",
+          "latin": "malus",
+          "english": "bad, evil",
+          "pos": "adjective",
+          "audio_key": "malus",
+          "derivatives": [
+            {
+              "english": "malice",
+              "gloss": "the wish to do harm (n.)"
+            }
+          ]
+        }
       ],
       "prayer": {
         "id": "pater-noster",
@@ -1145,24 +2690,133 @@
         "new_portion_english": "Our Father, who art in heaven,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl16",
+      "copywork": {
+        "sentences": [
+          "Nox est et stellae et lūna sunt clārae.",
+          "Māter puerī domī puerum exspectat.",
+          "Mox māter et fīlius domum eunt. Properant quod nox est."
+        ],
+        "instructions": "Copy and translate. Stella and lūna appear in many constellation and star names in English. Find both words. Are they singular or plural in these sentences? (Hint: stellae with -ae is plural 1st declension.)"
+      }
     },
-
     {
       "id": 17,
       "type": "lesson",
       "title": "More Constellations",
       "focus": "More constellation names from Greek and Roman mythology",
       "practical_latin": [
-        { "latin": "Repetite", "english": "Repeat (to many)" }
+        {
+          "latin": "Repetite",
+          "english": "Repeat (to many)"
+        }
       ],
       "vocab": [
-        { "id": "pl-17-1", "latin": "Leo", "english": "lion", "pos": "noun", "proper": true, "constellation": true, "audio_key": "leo", "derivatives": [] },
-        { "id": "pl-17-2", "latin": "Libra", "english": "scales of justice", "pos": "noun", "proper": true, "constellation": true, "audio_key": "libra", "derivatives": [] },
-        { "id": "pl-17-3", "latin": "Pisces", "english": "fish", "pos": "noun", "proper": true, "constellation": true, "audio_key": "pisces", "derivatives": [] },
-        { "id": "pl-17-4", "latin": "Sagittarius", "english": "archer", "pos": "noun", "proper": true, "constellation": true, "audio_key": "sagittarius", "derivatives": [] },
-        { "id": "pl-17-5", "latin": "Scorpius", "english": "scorpion", "pos": "noun", "proper": true, "constellation": true, "audio_key": "scorpius", "derivatives": [], "note": "Scorpius is the constellation; Scorpio is the zodiac sign" },
-        { "id": "pl-17-6", "latin": "Taurus", "english": "bull", "pos": "noun", "proper": true, "constellation": true, "audio_key": "taurus", "derivatives": [] }
+        {
+          "id": "pl-17-1",
+          "latin": "Leo",
+          "english": "lion",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "leo",
+          "derivatives": []
+        },
+        {
+          "id": "pl-17-2",
+          "latin": "Libra",
+          "english": "scales of justice",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "libra",
+          "derivatives": []
+        },
+        {
+          "id": "pl-17-3",
+          "latin": "Pisces",
+          "english": "fish",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "pisces",
+          "derivatives": []
+        },
+        {
+          "id": "pl-17-4",
+          "latin": "Sagittarius",
+          "english": "archer",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "sagittarius",
+          "derivatives": []
+        },
+        {
+          "id": "pl-17-5",
+          "latin": "Scorpius",
+          "english": "scorpion",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "scorpius",
+          "derivatives": [],
+          "note": "Scorpius is the constellation; Scorpio is the zodiac sign"
+        },
+        {
+          "id": "pl-17-6",
+          "latin": "Taurus",
+          "english": "bull",
+          "pos": "noun",
+          "proper": true,
+          "constellation": true,
+          "audio_key": "taurus",
+          "derivatives": []
+        },
+        {
+          "id": "pl-17-7",
+          "latin": "hortus",
+          "english": "garden",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "hortus",
+          "derivatives": [
+            {
+              "english": "horticulture",
+              "gloss": "the art of cultivating gardens (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-17-8",
+          "latin": "equus",
+          "english": "horse",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "equus",
+          "derivatives": [
+            {
+              "english": "equestrian",
+              "gloss": "relating to horse-riding (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-17-9",
+          "latin": "albus",
+          "english": "white",
+          "pos": "adjective",
+          "audio_key": "albus",
+          "derivatives": [
+            {
+              "english": "albino",
+              "gloss": "lacking pigment; very pale (adj./n.)"
+            }
+          ]
+        }
       ],
       "prayer": {
         "id": "pater-noster",
@@ -1175,24 +2829,128 @@
         "new_portion_english": "hallowed be Thy name.",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl17",
+      "copywork": {
+        "sentences": [
+          "In hortō sunt multī et pulchrī flōrēs.",
+          "Sunt rosae albae et līlia alba quoque.",
+          "Alta sunt līlia et pulchrae sunt rosae."
+        ],
+        "instructions": "Copy and translate. Rōsa and Lilium (from līlium) are still used today as scientific genus names. Find them! Notice alta, albae, pulchrae — these adjectives change ending to match the noun they describe. Are their nouns masculine or feminine?"
+      }
     },
-
     {
       "id": 18,
       "type": "lesson",
       "title": "To Be Verb",
       "focus": "The verb 'to be' (esse) is the most common verb; it shows existence, not action",
       "practical_latin": [
-        { "latin": "Quid agis?", "english": "How are you?" }
+        {
+          "latin": "Quid agis?",
+          "english": "How are you?"
+        }
       ],
       "vocab": [
-        { "id": "pl-18-1", "latin": "sum", "english": "I am", "pos": "verb_esse", "person": "1sg", "audio_key": "sum", "derivatives": [] },
-        { "id": "pl-18-2", "latin": "es", "english": "you (s.) are", "pos": "verb_esse", "person": "2sg", "audio_key": "es", "derivatives": [] },
-        { "id": "pl-18-3", "latin": "est", "english": "he, she, it is", "pos": "verb_esse", "person": "3sg", "audio_key": "est", "derivatives": [] },
-        { "id": "pl-18-4", "latin": "sumus", "english": "we are", "pos": "verb_esse", "person": "1pl", "audio_key": "sumus", "derivatives": [] },
-        { "id": "pl-18-5", "latin": "estis", "english": "you (pl.) are", "pos": "verb_esse", "person": "2pl", "audio_key": "estis", "derivatives": [] },
-        { "id": "pl-18-6", "latin": "sunt", "english": "they are", "pos": "verb_esse", "person": "3pl", "audio_key": "sunt", "derivatives": [] }
+        {
+          "id": "pl-18-1",
+          "latin": "sum",
+          "english": "I am",
+          "pos": "verb_esse",
+          "person": "1sg",
+          "audio_key": "sum",
+          "derivatives": []
+        },
+        {
+          "id": "pl-18-2",
+          "latin": "es",
+          "english": "you (s.) are",
+          "pos": "verb_esse",
+          "person": "2sg",
+          "audio_key": "es",
+          "derivatives": []
+        },
+        {
+          "id": "pl-18-3",
+          "latin": "est",
+          "english": "he, she, it is",
+          "pos": "verb_esse",
+          "person": "3sg",
+          "audio_key": "est",
+          "derivatives": []
+        },
+        {
+          "id": "pl-18-4",
+          "latin": "sumus",
+          "english": "we are",
+          "pos": "verb_esse",
+          "person": "1pl",
+          "audio_key": "sumus",
+          "derivatives": []
+        },
+        {
+          "id": "pl-18-5",
+          "latin": "estis",
+          "english": "you (pl.) are",
+          "pos": "verb_esse",
+          "person": "2pl",
+          "audio_key": "estis",
+          "derivatives": []
+        },
+        {
+          "id": "pl-18-6",
+          "latin": "sunt",
+          "english": "they are",
+          "pos": "verb_esse",
+          "person": "3pl",
+          "audio_key": "sunt",
+          "derivatives": []
+        },
+        {
+          "id": "pl-18-7",
+          "latin": "mīles",
+          "english": "soldier",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "miles",
+          "derivatives": [
+            {
+              "english": "military",
+              "gloss": "relating to soldiers or armed forces (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-18-8",
+          "latin": "bellum",
+          "english": "war",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "bellum",
+          "derivatives": [
+            {
+              "english": "belligerent",
+              "gloss": "hostile and aggressive (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-18-9",
+          "latin": "gladius",
+          "english": "sword",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "gladius",
+          "derivatives": [
+            {
+              "english": "gladiator",
+              "gloss": "a Roman fighter in the arena (n.)"
+            }
+          ]
+        }
       ],
       "prayer": {
         "id": "pater-noster",
@@ -1211,32 +2969,163 @@
           "label": "To Be Verb (esse) — Present Tense",
           "type": "conjugation",
           "rows": [
-            { "person": "1sg", "latin": "sum", "english": "I am" },
-            { "person": "2sg", "latin": "es", "english": "you (s.) are" },
-            { "person": "3sg", "latin": "est", "english": "he, she, it is" },
-            { "person": "1pl", "latin": "sumus", "english": "we are" },
-            { "person": "2pl", "latin": "estis", "english": "you (pl.) are" },
-            { "person": "3pl", "latin": "sunt", "english": "they are" }
+            {
+              "person": "1sg",
+              "latin": "sum",
+              "english": "I am"
+            },
+            {
+              "person": "2sg",
+              "latin": "es",
+              "english": "you (s.) are"
+            },
+            {
+              "person": "3sg",
+              "latin": "est",
+              "english": "he, she, it is"
+            },
+            {
+              "person": "1pl",
+              "latin": "sumus",
+              "english": "we are"
+            },
+            {
+              "person": "2pl",
+              "latin": "estis",
+              "english": "you (pl.) are"
+            },
+            {
+              "person": "3pl",
+              "latin": "sunt",
+              "english": "they are"
+            }
           ]
         }
-      ]
+      ],
+      "reading_key": "maxey-pl18",
+      "copywork": {
+        "sentences": [
+          "Nox est et quiēs est in terrā.",
+          "Est mīles validus et magnus.",
+          "Galeam et scūtum et gladium Mārcus videt et laudat.",
+          "Ego sum dux Rōmānus et cōnsilia bona habeō."
+        ],
+        "instructions": "Copy and translate. Circle every form of esse (sum, es, est, sumus, estis, sunt). For each one, who is the subject? Which sentences have no form of esse at all — what kind of verb do they use instead?"
+      }
     },
-
     {
       "id": 19,
       "type": "lesson",
       "title": "To Be Able To / I Can",
       "focus": "The verb posse (to be able to / I can) is a special verb like esse",
       "practical_latin": [
-        { "latin": "satis bene", "english": "very well" }
+        {
+          "latin": "satis bene",
+          "english": "very well"
+        }
       ],
       "vocab": [
-        { "id": "pl-19-1", "latin": "possum", "english": "I can", "pos": "verb_posse", "person": "1sg", "audio_key": "possum", "derivatives": [{ "english": "possible", "gloss": "can be (adj.)" }] },
-        { "id": "pl-19-2", "latin": "potes", "english": "you (s.) can", "pos": "verb_posse", "person": "2sg", "audio_key": "potes", "derivatives": [] },
-        { "id": "pl-19-3", "latin": "potest", "english": "he, she, it can", "pos": "verb_posse", "person": "3sg", "audio_key": "potest", "derivatives": [] },
-        { "id": "pl-19-4", "latin": "possumus", "english": "we can", "pos": "verb_posse", "person": "1pl", "audio_key": "possumus", "derivatives": [] },
-        { "id": "pl-19-5", "latin": "potestis", "english": "you (pl.) can", "pos": "verb_posse", "person": "2pl", "audio_key": "potestis", "derivatives": [] },
-        { "id": "pl-19-6", "latin": "possunt", "english": "they can", "pos": "verb_posse", "person": "3pl", "audio_key": "possunt", "derivatives": [] }
+        {
+          "id": "pl-19-1",
+          "latin": "possum",
+          "english": "I can",
+          "pos": "verb_posse",
+          "person": "1sg",
+          "audio_key": "possum",
+          "derivatives": [
+            {
+              "english": "possible",
+              "gloss": "can be (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-19-2",
+          "latin": "potes",
+          "english": "you (s.) can",
+          "pos": "verb_posse",
+          "person": "2sg",
+          "audio_key": "potes",
+          "derivatives": []
+        },
+        {
+          "id": "pl-19-3",
+          "latin": "potest",
+          "english": "he, she, it can",
+          "pos": "verb_posse",
+          "person": "3sg",
+          "audio_key": "potest",
+          "derivatives": []
+        },
+        {
+          "id": "pl-19-4",
+          "latin": "possumus",
+          "english": "we can",
+          "pos": "verb_posse",
+          "person": "1pl",
+          "audio_key": "possumus",
+          "derivatives": []
+        },
+        {
+          "id": "pl-19-5",
+          "latin": "potestis",
+          "english": "you (pl.) can",
+          "pos": "verb_posse",
+          "person": "2pl",
+          "audio_key": "potestis",
+          "derivatives": []
+        },
+        {
+          "id": "pl-19-6",
+          "latin": "possunt",
+          "english": "they can",
+          "pos": "verb_posse",
+          "person": "3pl",
+          "audio_key": "possunt",
+          "derivatives": []
+        },
+        {
+          "id": "pl-19-7",
+          "latin": "castra",
+          "english": "camp (pl.)",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "castra",
+          "derivatives": [
+            {
+              "english": "castle",
+              "gloss": "a large fortified building (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-19-8",
+          "latin": "dux",
+          "english": "leader, general",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "dux",
+          "derivatives": [
+            {
+              "english": "duke",
+              "gloss": "a high-ranking nobleman (n.)"
+            },
+            {
+              "english": "duct",
+              "gloss": "a tube or channel (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-19-9",
+          "latin": "dēfessus",
+          "english": "tired, weary",
+          "pos": "adjective",
+          "audio_key": "defessus",
+          "derivatives": []
+        }
       ],
       "prayer": {
         "id": "pater-noster",
@@ -1255,32 +3144,144 @@
           "label": "To Be Able To (posse) — Present Tense",
           "type": "conjugation",
           "rows": [
-            { "person": "1sg", "latin": "possum", "english": "I can" },
-            { "person": "2sg", "latin": "potes", "english": "you (s.) can" },
-            { "person": "3sg", "latin": "potest", "english": "he, she, it can" },
-            { "person": "1pl", "latin": "possumus", "english": "we can" },
-            { "person": "2pl", "latin": "potestis", "english": "you (pl.) can" },
-            { "person": "3pl", "latin": "possunt", "english": "they can" }
+            {
+              "person": "1sg",
+              "latin": "possum",
+              "english": "I can"
+            },
+            {
+              "person": "2sg",
+              "latin": "potes",
+              "english": "you (s.) can"
+            },
+            {
+              "person": "3sg",
+              "latin": "potest",
+              "english": "he, she, it can"
+            },
+            {
+              "person": "1pl",
+              "latin": "possumus",
+              "english": "we can"
+            },
+            {
+              "person": "2pl",
+              "latin": "potestis",
+              "english": "you (pl.) can"
+            },
+            {
+              "person": "3pl",
+              "latin": "possunt",
+              "english": "they can"
+            }
           ]
         }
-      ]
+      ],
+      "reading_key": "maxey-pl19",
+      "copywork": {
+        "sentences": [
+          "Galeam et scūtum habeō.",
+          "Patrem et mātrem nōn videō.",
+          "Interdum sum dēfessus et patrem et mātrem vidēre cupiō.",
+          "Bonus mīles pugnat. Mīles malus domum it."
+        ],
+        "instructions": "Copy and translate. Find every verb. Which end in -ō (I ___)? Which end in -t (he/she ___)?  The verb cupiō means 'I want' — what does the speaker want to do? Could you use possum here? Try: 'Patrem vidēre nōn possum.'"
+      }
     },
-
     {
       "id": 20,
       "type": "lesson",
       "title": "Future Tense",
       "focus": "Future tense endings added to verbs to show something will happen",
       "practical_latin": [
-        { "latin": "Romanus civis sum", "english": "I am a citizen of Rome" }
+        {
+          "latin": "Romanus civis sum",
+          "english": "I am a citizen of Rome"
+        }
       ],
       "vocab": [
-        { "id": "pl-20-1", "latin": "bo", "english": "I will", "pos": "verb_ending_future", "person": "1sg", "audio_key": "ending-bo" },
-        { "id": "pl-20-2", "latin": "bis", "english": "you (s.) will", "pos": "verb_ending_future", "person": "2sg", "audio_key": "ending-bis" },
-        { "id": "pl-20-3", "latin": "bit", "english": "he, she, or it will", "pos": "verb_ending_future", "person": "3sg", "audio_key": "ending-bit" },
-        { "id": "pl-20-4", "latin": "bimus", "english": "we will", "pos": "verb_ending_future", "person": "1pl", "audio_key": "ending-bimus" },
-        { "id": "pl-20-5", "latin": "bitis", "english": "you (pl.) will", "pos": "verb_ending_future", "person": "2pl", "audio_key": "ending-bitis" },
-        { "id": "pl-20-6", "latin": "bunt", "english": "they will", "pos": "verb_ending_future", "person": "3pl", "audio_key": "ending-bunt" }
+        {
+          "id": "pl-20-1",
+          "latin": "bo",
+          "english": "I will",
+          "pos": "verb_ending_future",
+          "person": "1sg",
+          "audio_key": "ending-bo"
+        },
+        {
+          "id": "pl-20-2",
+          "latin": "bis",
+          "english": "you (s.) will",
+          "pos": "verb_ending_future",
+          "person": "2sg",
+          "audio_key": "ending-bis"
+        },
+        {
+          "id": "pl-20-3",
+          "latin": "bit",
+          "english": "he, she, or it will",
+          "pos": "verb_ending_future",
+          "person": "3sg",
+          "audio_key": "ending-bit"
+        },
+        {
+          "id": "pl-20-4",
+          "latin": "bimus",
+          "english": "we will",
+          "pos": "verb_ending_future",
+          "person": "1pl",
+          "audio_key": "ending-bimus"
+        },
+        {
+          "id": "pl-20-5",
+          "latin": "bitis",
+          "english": "you (pl.) will",
+          "pos": "verb_ending_future",
+          "person": "2pl",
+          "audio_key": "ending-bitis"
+        },
+        {
+          "id": "pl-20-6",
+          "latin": "bunt",
+          "english": "they will",
+          "pos": "verb_ending_future",
+          "person": "3pl",
+          "audio_key": "ending-bunt"
+        },
+        {
+          "id": "pl-20-7",
+          "latin": "nōmen",
+          "english": "name",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 3,
+          "audio_key": "nomen",
+          "derivatives": [
+            {
+              "english": "nominate",
+              "gloss": "to name a person for a position (v.)"
+            },
+            {
+              "english": "noun",
+              "gloss": "a word that names a person, place, or thing (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-20-8",
+          "latin": "sagitta",
+          "english": "arrow",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "sagitta",
+          "derivatives": [
+            {
+              "english": "Sagittarius",
+              "gloss": "the archer constellation (proper n.)"
+            }
+          ]
+        }
       ],
       "prayer": {
         "id": "pater-noster",
@@ -1299,31 +3300,117 @@
           "label": "Future Tense Verb Endings",
           "type": "verb_endings",
           "rows": [
-            { "person": "1sg", "ending": "bo", "english": "I will" },
-            { "person": "2sg", "ending": "bis", "english": "you (s.) will" },
-            { "person": "3sg", "ending": "bit", "english": "he, she, it will" },
-            { "person": "1pl", "ending": "bimus", "english": "we will" },
-            { "person": "2pl", "ending": "bitis", "english": "you (pl.) will" },
-            { "person": "3pl", "ending": "bunt", "english": "they will" }
+            {
+              "person": "1sg",
+              "ending": "bo",
+              "english": "I will"
+            },
+            {
+              "person": "2sg",
+              "ending": "bis",
+              "english": "you (s.) will"
+            },
+            {
+              "person": "3sg",
+              "ending": "bit",
+              "english": "he, she, it will"
+            },
+            {
+              "person": "1pl",
+              "ending": "bimus",
+              "english": "we will"
+            },
+            {
+              "person": "2pl",
+              "ending": "bitis",
+              "english": "you (pl.) will"
+            },
+            {
+              "person": "3pl",
+              "ending": "bunt",
+              "english": "they will"
+            }
           ]
         }
-      ]
+      ],
+      "reading_key": "maxey-pl20",
+      "copywork": {
+        "sentences": [
+          "Hī quattuor puerī ā casīs ad silvam properant.",
+          "Puerī animālia capere cupiunt.",
+          "Puerī domum eunt ubi cēna in mēnsā parāta est.",
+          "Cēnam laetī edunt."
+        ],
+        "instructions": "Copy and translate. These verbs are present tense. To make them future, add -bō or -bit. Try changing properant → properābunt (they will hurry) and eunt → ībunt (they will go). Find the numbers in the first sentence (quattuor = how many?)."
+      }
     },
-
     {
       "id": "R4",
       "type": "review",
       "title": "Review Lesson 4 (Lessons 16–20)",
-      "reviews_lessons": [16, 17, 18, 19, 20],
+      "reviews_lessons": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
       "prayer_id": "pater-noster",
       "latin_song": {
         "title": "Resonet in Laudibus (Refrain)",
         "lines": [
-          { "latin": "Gaudete", "english": "Rejoice" },
-          { "latin": "Gaudete", "english": "Rejoice" }
+          {
+            "latin": "Gaudete",
+            "english": "Rejoice"
+          },
+          {
+            "latin": "Gaudete",
+            "english": "Rejoice"
+          }
         ],
         "source": "Lingua Angelica CD"
-      }
+      },
+      "reading_key": "maxey-r4",
+      "copywork": {
+        "sentences": [
+          "Māne in carrō pater et fīlia per agrōs et silvam properant.",
+          "Subitō in agrō quattuor animālia videntur.",
+          "Vesperī pater et fīlia in magnō oppidō sunt.",
+          "Iūlia Annam exspectat et prope fenestram stat."
+        ],
+        "instructions": "Copy and translate. Find: (1) a form of esse, (2) two adjectives, (3) two adverbs (māne, vesperī, subitō, prope), (4) two prepositions. Circle any number words. Bonus: what constellation shares a name with a word in this passage?"
+      },
+      "vocab": [
+        {
+          "id": "pl-R4-1",
+          "latin": "māne",
+          "english": "in the morning",
+          "pos": "adverb",
+          "audio_key": "mane",
+          "derivatives": []
+        },
+        {
+          "id": "pl-R4-2",
+          "latin": "vesperī",
+          "english": "in the evening",
+          "pos": "adverb",
+          "audio_key": "vesperi",
+          "derivatives": []
+        },
+        {
+          "id": "pl-R4-3",
+          "latin": "subitō",
+          "english": "suddenly",
+          "pos": "adverb",
+          "audio_key": "subito",
+          "derivatives": [
+            {
+              "english": "subito",
+              "gloss": "suddenly (musical term) (adv.)"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 21,
@@ -1331,14 +3418,85 @@
       "title": "Other Words",
       "focus": "Conjunctions and particles — small words that connect or modify ideas",
       "practical_latin": [
-        { "latin": "E pluribus unum", "english": "One out of many" }
+        {
+          "latin": "E pluribus unum",
+          "english": "One out of many"
+        }
       ],
       "vocab": [
-        { "id": "pl-21-1", "latin": "sed", "english": "but", "pos": "conjunction", "audio_key": "sed", "derivatives": [] },
-        { "id": "pl-21-2", "latin": "sicut", "english": "as", "pos": "conjunction", "audio_key": "sicut", "derivatives": [] },
-        { "id": "pl-21-3", "latin": "non", "english": "not", "pos": "particle", "audio_key": "non", "derivatives": [] },
-        { "id": "pl-21-4", "latin": "etiam", "english": "also", "pos": "conjunction", "audio_key": "etiam", "derivatives": [] },
-        { "id": "pl-21-5", "latin": "et", "english": "and", "pos": "conjunction", "audio_key": "et", "derivatives": [] }
+        {
+          "id": "pl-21-1",
+          "latin": "sed",
+          "english": "but",
+          "pos": "conjunction",
+          "audio_key": "sed",
+          "derivatives": []
+        },
+        {
+          "id": "pl-21-2",
+          "latin": "sicut",
+          "english": "as",
+          "pos": "conjunction",
+          "audio_key": "sicut",
+          "derivatives": []
+        },
+        {
+          "id": "pl-21-3",
+          "latin": "non",
+          "english": "not",
+          "pos": "particle",
+          "audio_key": "non",
+          "derivatives": []
+        },
+        {
+          "id": "pl-21-4",
+          "latin": "etiam",
+          "english": "also",
+          "pos": "conjunction",
+          "audio_key": "etiam",
+          "derivatives": []
+        },
+        {
+          "id": "pl-21-5",
+          "latin": "et",
+          "english": "and",
+          "pos": "conjunction",
+          "audio_key": "et",
+          "derivatives": []
+        },
+        {
+          "id": "pl-21-6",
+          "latin": "auxilium",
+          "english": "help, aid",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "auxilium",
+          "derivatives": [
+            {
+              "english": "auxiliary",
+              "gloss": "providing support or help (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-21-7",
+          "latin": "dēbet",
+          "english": "ought, must",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "debet",
+          "derivatives": [
+            {
+              "english": "debt",
+              "gloss": "something owed (n.)"
+            },
+            {
+              "english": "debit",
+              "gloss": "a charge or withdrawal (n.)"
+            }
+          ]
+        }
       ],
       "prayer": {
         "id": "pater-noster",
@@ -1351,43 +3509,117 @@
         "new_portion_english": "Give us this day our daily bread,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl21",
+      "copywork": {
+        "sentences": [
+          "Patria nostra in bellō nōn pugnat, sed fīnitimī nostrī pugnant et nōs sumus sociī.",
+          "Cum fīnitimī auxilium rogant, necesse est īre.",
+          "Multī numquam iterum venient. Multī vītās dabunt."
+        ],
+        "instructions": "Copy and translate. Underline every conjunction (sed, et, cum, neque, quod, quamquam, sicut). What two things or ideas does each conjunction connect or contrast? Find the word meaning 'never' — numquam."
+      }
     },
-
     {
       "id": 22,
       "type": "lesson",
       "title": "Question Words",
       "focus": "Question words (interrogatives) introduce questions and always appear with a question mark",
       "practical_latin": [
-        { "latin": "Ego amo te.", "english": "I love you." }
+        {
+          "latin": "Ego amo te.",
+          "english": "I love you."
+        }
       ],
       "vocab": [
         {
-          "id": "pl-22-1", "latin": "quis", "english": "who?",
-          "pos": "interrogative", "audio_key": "quis",
+          "id": "pl-22-1",
+          "latin": "quis",
+          "english": "who?",
+          "pos": "interrogative",
+          "audio_key": "quis",
           "derivatives": [
-            { "english": "inquisitive", "gloss": "questioning (adj.)" }
+            {
+              "english": "inquisitive",
+              "gloss": "questioning (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-22-2", "latin": "quid", "english": "what?",
-          "pos": "interrogative", "audio_key": "quid",
+          "id": "pl-22-2",
+          "latin": "quid",
+          "english": "what?",
+          "pos": "interrogative",
+          "audio_key": "quid",
           "derivatives": []
         },
         {
-          "id": "pl-22-3", "latin": "ubi", "english": "where?",
-          "pos": "interrogative", "audio_key": "ubi",
+          "id": "pl-22-3",
+          "latin": "ubi",
+          "english": "where?",
+          "pos": "interrogative",
+          "audio_key": "ubi",
           "derivatives": [
-            { "english": "ubiquitous", "gloss": "seemingly everywhere (adj.)" }
+            {
+              "english": "ubiquitous",
+              "gloss": "seemingly everywhere (adj.)"
+            }
           ]
         },
         {
-          "id": "pl-22-4", "latin": "cur", "english": "why?",
-          "pos": "interrogative", "audio_key": "cur",
+          "id": "pl-22-4",
+          "latin": "cur",
+          "english": "why?",
+          "pos": "interrogative",
+          "audio_key": "cur",
           "derivatives": [
-            { "english": "query", "gloss": "question (n.); to question someone or something (v.)" },
-            { "english": "curious", "gloss": "eager to know (adj.)" }
+            {
+              "english": "query",
+              "gloss": "question (n.); to question someone or something (v.)"
+            },
+            {
+              "english": "curious",
+              "gloss": "eager to know (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-22-5",
+          "latin": "caecus",
+          "english": "blind",
+          "pos": "adjective",
+          "audio_key": "caecus",
+          "derivatives": [
+            {
+              "english": "cecal",
+              "gloss": "relating to the first part of the large intestine (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-22-6",
+          "latin": "ille",
+          "english": "that (m.)",
+          "pos": "adjective",
+          "audio_key": "ille",
+          "derivatives": [
+            {
+              "english": "illustrate",
+              "gloss": "to make clear with examples (v.) — from same root"
+            }
+          ]
+        },
+        {
+          "id": "pl-22-7",
+          "latin": "tūtus",
+          "english": "safe",
+          "pos": "adjective",
+          "audio_key": "tutus",
+          "derivatives": [
+            {
+              "english": "tutor",
+              "gloss": "one who guards or protects a student (n.)"
+            }
           ]
         }
       ],
@@ -1402,7 +3634,17 @@
         "new_portion_english": "and forgive us our debts,",
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
-      "paradigms": []
+      "paradigms": [],
+      "reading_key": "maxey-pl22",
+      "copywork": {
+        "sentences": [
+          "Quis est ille vir?",
+          "Cūr adest? Cūr hīc est?",
+          "Ad quem locum eunt vir et fīlius?",
+          "Necesse est ad aedificium magnum īre quod ibi vir caecus pecūniam accipit."
+        ],
+        "instructions": "Copy and translate. Circle the question word in each sentence (quis, cūr, ad quem). Match each question word to the kind of answer it expects: a person, a reason, or a place. Find the word meaning 'blind' — can you guess from context before looking it up?"
+      }
     },
     {
       "id": 23,
@@ -1410,9 +3652,47 @@
       "title": "The First Declension",
       "focus": "Declensions are groups of nouns with the same endings; there are five in Latin",
       "practical_latin": [
-        { "latin": "Optime!", "english": "Excellent!" }
+        {
+          "latin": "Optime!",
+          "english": "Excellent!"
+        }
       ],
-      "vocab": [],
+      "vocab": [
+        {
+          "id": "pl-23-1",
+          "latin": "oculus",
+          "english": "eye",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "oculus",
+          "derivatives": [
+            {
+              "english": "oculist",
+              "gloss": "an eye doctor (n.)"
+            },
+            {
+              "english": "binoculars",
+              "gloss": "an optical device for both eyes (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-23-2",
+          "latin": "auxilium",
+          "english": "help, aid",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "auxilium",
+          "derivatives": [
+            {
+              "english": "auxiliary",
+              "gloss": "providing support (adj.)"
+            }
+          ]
+        }
+      ],
       "prayer": {
         "id": "pater-noster",
         "title": "The Our Father (Lord's Prayer)",
@@ -1432,25 +3712,98 @@
           "number": "singular",
           "note": "ae has the long A sound",
           "rows": [
-            { "case": "nominative", "ending": "a" },
-            { "case": "genitive",   "ending": "ae" },
-            { "case": "dative",     "ending": "ae" },
-            { "case": "accusative", "ending": "am" },
-            { "case": "ablative",   "ending": "a" }
+            {
+              "case": "nominative",
+              "ending": "a"
+            },
+            {
+              "case": "genitive",
+              "ending": "ae"
+            },
+            {
+              "case": "dative",
+              "ending": "ae"
+            },
+            {
+              "case": "accusative",
+              "ending": "am"
+            },
+            {
+              "case": "ablative",
+              "ending": "a"
+            }
           ]
         }
-      ]
+      ],
+      "reading_key": "maxey-pl23",
+      "copywork": {
+        "sentences": [
+          "Ille vir oculōs habet, sed nūllās rēs videt.",
+          "Ubi cum fīliō ambulat, tūtus est.",
+          "Omnēs virī et puerī illī virō auxilium dare dēbent.",
+          "Vir erat mīles et prō patriā pugnābat."
+        ],
+        "instructions": "Copy and translate. Find the 1st declension nouns (base form ends in -a). Try to identify each noun's case: nominative (subject), accusative (direct object), or dative (indirect object, often meaning 'to/for'). How do the endings help you?"
+      }
     },
-
     {
       "id": 24,
       "type": "lesson",
       "title": "Declensions",
       "focus": "First Declension plural endings; completing the full 1st declension paradigm",
       "practical_latin": [
-        { "latin": "Pessime!", "english": "Very bad!" }
+        {
+          "latin": "Pessime!",
+          "english": "Very bad!"
+        }
       ],
-      "vocab": [],
+      "vocab": [
+        {
+          "id": "pl-24-1",
+          "latin": "flūmen",
+          "english": "river",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 3,
+          "audio_key": "flumen",
+          "derivatives": [
+            {
+              "english": "flume",
+              "gloss": "a channel for water (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-24-2",
+          "latin": "mūrus",
+          "english": "wall",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "murus",
+          "derivatives": [
+            {
+              "english": "mural",
+              "gloss": "a painting on a wall (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-24-3",
+          "latin": "hostis",
+          "english": "enemy",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "hostis",
+          "derivatives": [
+            {
+              "english": "hostile",
+              "gloss": "unfriendly, aggressive (adj.)"
+            }
+          ]
+        }
+      ],
       "prayer": {
         "id": "pater-noster",
         "title": "The Our Father (Lord's Prayer)",
@@ -1470,31 +3823,131 @@
           "number": "plural",
           "note": "ae has the long A sound",
           "rows": [
-            { "case": "nominative", "ending": "ae" },
-            { "case": "genitive",   "ending": "arum" },
-            { "case": "dative",     "ending": "is" },
-            { "case": "accusative", "ending": "as" },
-            { "case": "ablative",   "ending": "is" }
+            {
+              "case": "nominative",
+              "ending": "ae"
+            },
+            {
+              "case": "genitive",
+              "ending": "arum"
+            },
+            {
+              "case": "dative",
+              "ending": "is"
+            },
+            {
+              "case": "accusative",
+              "ending": "as"
+            },
+            {
+              "case": "ablative",
+              "ending": "is"
+            }
           ]
         }
-      ]
+      ],
+      "reading_key": "maxey-pl24",
+      "copywork": {
+        "sentences": [
+          "Hīc sunt castra nostra.",
+          "Trāns flūmen sunt castra hostium.",
+          "Circum castra nostra est mūrus altus.",
+          "Inter castra hostium et castra nostra illud flūmen fluit."
+        ],
+        "instructions": "Copy and translate. Find all plural nouns — what are their endings? Find any 1st declension nouns and identify their case. Find four different prepositions (trāns, circum, inter, in) — what does each one mean?"
+      }
     },
-
     {
       "id": 25,
       "type": "lesson",
       "title": "First Conjugation",
       "focus": "Conjugations are verb groups; 1st conjugation verbs are conjugated by adding pronoun endings to the stem",
       "practical_latin": [
-        { "latin": "Finis!", "english": "The end!" }
+        {
+          "latin": "Finis!",
+          "english": "The end!"
+        }
       ],
       "vocab": [
-        { "id": "pl-25-1", "latin": "amo",    "english": "I love",           "pos": "verb_conj1", "person": "1sg", "audio_key": "amo",    "derivatives": [] },
-        { "id": "pl-25-2", "latin": "amas",   "english": "you (s.) love",    "pos": "verb_conj1", "person": "2sg", "audio_key": "amas",   "derivatives": [] },
-        { "id": "pl-25-3", "latin": "amat",   "english": "he, she, it loves","pos": "verb_conj1", "person": "3sg", "audio_key": "amat",   "derivatives": [] },
-        { "id": "pl-25-4", "latin": "amamus", "english": "we love",          "pos": "verb_conj1", "person": "1pl", "audio_key": "amamus", "derivatives": [] },
-        { "id": "pl-25-5", "latin": "amatis", "english": "you (pl.) love",   "pos": "verb_conj1", "person": "2pl", "audio_key": "amatis", "derivatives": [] },
-        { "id": "pl-25-6", "latin": "amant",  "english": "they love",        "pos": "verb_conj1", "person": "3pl", "audio_key": "amant",  "derivatives": [] }
+        {
+          "id": "pl-25-1",
+          "latin": "amo",
+          "english": "I love",
+          "pos": "verb_conj1",
+          "person": "1sg",
+          "audio_key": "amo",
+          "derivatives": []
+        },
+        {
+          "id": "pl-25-2",
+          "latin": "amas",
+          "english": "you (s.) love",
+          "pos": "verb_conj1",
+          "person": "2sg",
+          "audio_key": "amas",
+          "derivatives": []
+        },
+        {
+          "id": "pl-25-3",
+          "latin": "amat",
+          "english": "he, she, it loves",
+          "pos": "verb_conj1",
+          "person": "3sg",
+          "audio_key": "amat",
+          "derivatives": []
+        },
+        {
+          "id": "pl-25-4",
+          "latin": "amamus",
+          "english": "we love",
+          "pos": "verb_conj1",
+          "person": "1pl",
+          "audio_key": "amamus",
+          "derivatives": []
+        },
+        {
+          "id": "pl-25-5",
+          "latin": "amatis",
+          "english": "you (pl.) love",
+          "pos": "verb_conj1",
+          "person": "2pl",
+          "audio_key": "amatis",
+          "derivatives": []
+        },
+        {
+          "id": "pl-25-6",
+          "latin": "amant",
+          "english": "they love",
+          "pos": "verb_conj1",
+          "person": "3pl",
+          "audio_key": "amant",
+          "derivatives": []
+        },
+        {
+          "id": "pl-25-7",
+          "latin": "avunculus",
+          "english": "uncle",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "avunculus",
+          "derivatives": [
+            {
+              "english": "avuncular",
+              "gloss": "kind and friendly like an uncle (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-25-8",
+          "latin": "hiems",
+          "english": "winter",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "hiems",
+          "derivatives": []
+        }
       ],
       "prayer": {
         "id": "pater-noster",
@@ -1514,33 +3967,134 @@
           "type": "conjugation",
           "model_verb": "amare",
           "rows": [
-            { "person": "1sg", "latin": "amo",    "english": "I love" },
-            { "person": "2sg", "latin": "amas",   "english": "you (s.) love" },
-            { "person": "3sg", "latin": "amat",   "english": "he, she, it loves" },
-            { "person": "1pl", "latin": "amamus", "english": "we love" },
-            { "person": "2pl", "latin": "amatis", "english": "you (pl.) love" },
-            { "person": "3pl", "latin": "amant",  "english": "they love" }
+            {
+              "person": "1sg",
+              "latin": "amo",
+              "english": "I love"
+            },
+            {
+              "person": "2sg",
+              "latin": "amas",
+              "english": "you (s.) love"
+            },
+            {
+              "person": "3sg",
+              "latin": "amat",
+              "english": "he, she, it loves"
+            },
+            {
+              "person": "1pl",
+              "latin": "amamus",
+              "english": "we love"
+            },
+            {
+              "person": "2pl",
+              "latin": "amatis",
+              "english": "you (pl.) love"
+            },
+            {
+              "person": "3pl",
+              "latin": "amant",
+              "english": "they love"
+            }
           ]
         }
-      ]
+      ],
+      "reading_key": "maxey-pl25",
+      "copywork": {
+        "sentences": [
+          "Vir avunculum in hortō iuvat.",
+          "Sine illō auxiliō avunculus hortum nōn bene cūrat.",
+          "Hiems bene armāta flōrēs flūminaque oppugnat et semper superat.",
+          "Aestās, tamen, est mihi grātior quam hiems."
+        ],
+        "instructions": "Copy and translate. Underline all 1st conjugation verbs (built on -āre stems: iuvat, cūrat, oppugnat, superat). What person and number is each? Give the infinitive: iuvāre, cūrāre, etc. Find a comparative adjective (hint: -ior ending means 'more ___')."
+      }
     },
-
     {
       "id": "R5",
       "type": "review",
       "title": "Review Lesson 5 (Lessons 21–25)",
-      "reviews_lessons": [21, 22, 23, 24, 25],
+      "reviews_lessons": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
       "prayer_id": "pater-noster",
       "latin_song": {
         "title": "Resonet in Laudibus (More of Refrain)",
         "lines": [
-          { "latin": "Christus natus hodie", "english": "Christ is born today" }
+          {
+            "latin": "Christus natus hodie",
+            "english": "Christ is born today"
+          }
         ],
         "source": "Lingua Angelica CD"
-      }
+      },
+      "reading_key": "maxey-r5",
+      "copywork": {
+        "sentences": [
+          "Nōs sumus mīlitēs populī Rōmānī.",
+          "Sī hodiē oppugnābunt, tamen fortiter et ācriter pugnābimus.",
+          "Nōs nōn superābimur.",
+          "Nōs fortēs mīlitēs probābimus.",
+          "Itaque manēre nōn cupiō."
+        ],
+        "instructions": "Copy and translate. This is your full grammar review! Find: (1) a conjunction, (2) a 1st declension noun, (3) a 1st conjugation verb, (4) a form of esse, (5) a question word (if any), (6) a future tense verb (-bō/-bit/-bunt ending). Bonus: which verbs are future passive?"
+      },
+      "vocab": [
+        {
+          "id": "pl-R5-1",
+          "latin": "populus",
+          "english": "people, nation",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "populus",
+          "derivatives": [
+            {
+              "english": "popular",
+              "gloss": "liked by many people (adj.)"
+            },
+            {
+              "english": "population",
+              "gloss": "the people of an area (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-R5-2",
+          "latin": "barbarus",
+          "english": "barbarian, foreigner",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "barbarus",
+          "derivatives": [
+            {
+              "english": "barbarian",
+              "gloss": "a person regarded as uncivilized (n.)"
+            }
+          ]
+        },
+        {
+          "id": "pl-R5-3",
+          "latin": "ācriter",
+          "english": "fiercely, sharply",
+          "pos": "adverb",
+          "audio_key": "acriter",
+          "derivatives": [
+            {
+              "english": "acrid",
+              "gloss": "unpleasantly bitter or sharp (adj.)"
+            }
+          ]
+        }
+      ]
     }
   ],
-
   "prayers": {
     "oremus": {
       "id": "oremus",

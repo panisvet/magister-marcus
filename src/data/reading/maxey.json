@@ -1,0 +1,1022 @@
+{
+  "passages": [
+    {
+      "id": "maxey-pl1",
+      "title": "Cap. I · Salūtātiōnēs",
+      "latin": "Salvē, discipula.\nSalvē, magistra.\nSalvē, discipule.\nSalvē, magister.\nSalvēte, discipulī.\nValē, discipula.\nValē, magistra.\nValēte, discipulī.",
+      "english": "Hello, student (f.). Hello, teacher (f.). Hello, student (m.). Hello, teacher (m.). Hello, students. Goodbye, student (f.). Goodbye, teacher (f.). Goodbye, students.",
+      "source_story": "Maxey, Cap. I",
+      "notes": "Pure greetings. Salvē is singular, Salvēte plural; same for Valē/Valēte. The -a ending marks feminine, -e/-us masculine.",
+      "vocab_hints": [
+        "salvē / salvēte = hello (to one / to many)",
+        "valē / valēte = goodbye (to one / to many)",
+        "discipula/discipulus = student (f./m.)",
+        "magistra/magister = teacher (f./m.)"
+      ]
+    },
+    {
+      "id": "maxey-pl2",
+      "title": "Cap. I · Hic et Haec",
+      "latin": "Salvēte, discipulī.\nSalvē, magister.\nHic est discipulus. Haec est discipula.\nHic est puer. Haec est puella.\nHae sunt puellae. Hī sunt puerī.\nHaec est magistra.\n\"Salvēte, discipulī, puerī et puellae.\"\nPuer est discipulus.\nPuella est discipula.\nHae sunt discipulae.\nHī sunt discipulī.\nHaec est puella.",
+      "english": "Hello, students. Hello, teacher (m.). This is a male student. This is a female student. This is a boy. This is a girl. These are girls. These are boys. This is a teacher. \"Hello, students, boys and girls.\" A boy is a student. A girl is a student. These are female students. These are male students. This is a girl.",
+      "source_story": "Maxey, Cap. I",
+      "notes": "Hic points to a masculine noun, haec to feminine. Hī/hae are their plurals. Est = is, sunt = are.",
+      "vocab_hints": [
+        "hic = this (m.)",
+        "haec = this (f.)",
+        "hī = these (m.pl.)",
+        "hae = these (f.pl.)",
+        "est = is",
+        "sunt = are",
+        "puer = boy",
+        "puella = girl"
+      ]
+    },
+    {
+      "id": "maxey-pl3",
+      "title": "Cap. I · Adiectīva",
+      "latin": "Magistra nōn est puella.\nMagistra est fēmina.\nHaec est magistra. Haec est fēmina. Haec est puella. Haec puella est discipula. Haec puella nōn est magistra.\nHaec puella est parva. Haec puella nōn est parva; haec puella est magna.\nHaec puella nōn est parva; haec puella est alta.\nHaec puella est bona. Fēmina quoque est bona.\nHaec puella nōn est bona.\nHaec puella est magna. Magistra quoque est magna.\nHaec puella est parva.\nPuella est pulchra quoque.",
+      "english": "A teacher is not a girl. A teacher is a woman. This is a teacher. This is a woman. This is a girl. This girl is a student. This girl is not a teacher. This girl is small. This girl is not small; this girl is large. This girl is not small; this girl is tall. This girl is good. The woman is also good. This girl is not good. This girl is large. The teacher is also large. This girl is small. The girl is also beautiful.",
+      "source_story": "Maxey, Cap. I",
+      "notes": "Nōn negates. Quoque means 'also.' All adjectives here end in -a to agree with feminine nouns.",
+      "vocab_hints": [
+        "nōn = not",
+        "quoque = also",
+        "parva = small (f.)",
+        "magna = large (f.)",
+        "alta = tall (f.)",
+        "bona = good (f.)",
+        "pulchra = beautiful (f.)",
+        "fēmina = woman"
+      ]
+    },
+    {
+      "id": "maxey-pl4",
+      "title": "Cap. II · Māter et Fīlia",
+      "latin": "Hīc sunt fēmina et puer et puella. (Sunt hīc; hīc nōn sunt.)\n\nHaec fēmina est māter; hic puer est fīlius et haec puella est fīlia fēminae. Māter est magna, sed fīlius et fīlia sunt parvī. Haec māter est bona māter. Haec māter nōn est mea māter; nōn est tua māter; est māter puerī et puellae. Haec puella est soror puerī. Hic puer est frāter puellae. Hic puer puellam amat. Haec māter fīliam amat. Haec puella magistram amat et magistra puellam amat.\n\nFīlium et fīliam fēminae amō. Mātrem puerī et puellae amō. Mātrem meam quoque amō. Sorōrem et frātrem et mātrem amō. Magistram amō. Estne fēmina, puella, māter tua?\n\nIta. Māter mea est.\n\nHaec puella nōn est soror mea. Soror puerī est. Hic frāter est frāter puellae; nōn est frāter meus. Haec fēmina nōn est māter mea, sed fēminam amō. Estne haec magistra māter tua?\n\nMāter mea nōn est.\n\nFīlius fēminae est discipulus bonus, et magistra puerum amat. Nunc discipula nōn est bona. Nunc magistra discipulam nōn amat.",
+      "english": "Here are a woman, a boy, and a girl. (They are here; they are not here.)\n\nThis woman is a mother; this boy is her son and this girl is the woman's daughter. The mother is large, but the son and daughter are small. This mother is a good mother. This mother is not my mother; she is not your mother; she is the mother of the boy and girl. This girl is the boy's sister. This boy is the girl's brother. This boy loves the girl. This mother loves her daughter. This girl loves the teacher and the teacher loves the girl.\n\nI love the woman's son and daughter. I love the mother of the boy and girl. I love my own mother too. I love my sister and brother and mother. I love the teacher. Is this woman the girl's mother?\n\nYes. She is my mother.\n\nThis girl is not my sister. She is the boy's sister. This brother is the girl's brother; he is not my brother. This woman is not my mother, but I love the woman. Is this teacher your mother?\n\nShe is not my mother.\n\nThe woman's son is a good student, and the teacher loves the boy. Now the student is not good. Now the teacher does not love the student.",
+      "source_story": "Maxey, Cap. II",
+      "notes": "First accusative forms: puellam, māter, magistram. Nouns ending in -am are direct objects. Sed = but; nunc = now.",
+      "vocab_hints": [
+        "māter = mother",
+        "fīlius/fīlia = son/daughter",
+        "frāter = brother",
+        "soror = sister",
+        "amō = I love",
+        "amat = (he/she) loves",
+        "sed = but",
+        "nunc = now",
+        "ita = yes"
+      ]
+    },
+    {
+      "id": "maxey-pl5",
+      "title": "Cap. II · Colloquium",
+      "latin": "Magistra: Puellam parvam amō.\nPuella: Et magistram amō.\nMagistra: Māter quoque puellam amat. Amāsne puellam?\nDiscipula: Ita. Puellam amō.\n\nValēte, discipulī.\n\nValē, magistra. Salvē, puella. Haec est magistra; nōn est magister. Estne magistra tua bona?\n\nIta. Bona est.\n\nEstne frāter tuus discipulus bonus?\n\nFrāter meus est bonus et magnus et altus, sed nōn est pulcher. Soror mea et frāter meus sunt discipulī magistrae bonae.\n\nValēte, discipulī.",
+      "english": "Teacher: I love the little girl. Girl: And I love the teacher. Teacher: The mother also loves the girl. Do you love the girl? Student: Yes. I love the girl.\n\nGoodbye, students.\n\nGoodbye, teacher. Hello, girl. This is a (female) teacher; she is not a (male) teacher. Is your teacher good?\n\nYes. She is good.\n\nIs your brother a good student?\n\nMy brother is good and large and tall, but he is not handsome. My sister and my brother are students of a good teacher.\n\nGoodbye, students.",
+      "source_story": "Maxey, Cap. II",
+      "notes": "Amāsne? = Do you love? The -ne ending turns a statement into a yes/no question. Tuus/tua = your (m./f.).",
+      "vocab_hints": [
+        "amāsne? = do you love?",
+        "tuus/tua = your (m./f.)",
+        "meus/mea = my (m./f.)",
+        "bonus/bona = good (m./f.)",
+        "magnus/magna = large (m./f.)",
+        "pulcher = handsome (m.)"
+      ]
+    },
+    {
+      "id": "maxey-r1",
+      "title": "Cap. III · Patria Mea",
+      "latin": "Fēmina: Salvēte, puer et puella. Hic est fīlius meus; haec est fīlia mea.\nPuer: Haec est māter mea; haec est soror mea.\nPuella: Haec est māter mea et hic est frāter meus.\nFēmina: Amāsne magistram, puer?\nPuer: Ita. Magistram meam amō.\nFēmina: Estne magistra tua hīc?\nPuer: Nunc hīc nōn est.\nFēmina: Amāsne magistram tuam, puella?\nPuella: Ita. Magistra est bona et magistram bonam amō.\n\nAmerica est patria mea. Americam amō. America est terra magna. America nōn est īnsula. Britannia est īnsula, Hibernia est īnsula, Sicilia est īnsula, Cuba est īnsula. Italia quoque nōn est īnsula. Italia nōn est patria mea sed Italiam amō. Amāsne Italiam? Amāsne Britanniam?",
+      "english": "Woman: Hello, boy and girl. This is my son; this is my daughter. Boy: This is my mother; this is my sister. Girl: This is my mother and this is my brother. Woman: Do you love your teacher, boy? Boy: Yes. I love my teacher. Woman: Is your teacher here? Boy: She is not here now. Woman: Do you love your teacher, girl? Girl: Yes. The teacher is good and I love my good teacher.\n\nAmerica is my homeland. I love America. America is a great land. America is not an island. Britain is an island, Ireland is an island, Sicily is an island, Cuba is an island. Italy is also not an island. Italy is not my homeland but I love Italy. Do you love Italy? Do you love Britain?",
+      "source_story": "Maxey, Cap. III",
+      "notes": "Patria = homeland/fatherland. Terra = land. Īnsula = island. Notice the accusative -am endings on country names when they are the object of amō.",
+      "vocab_hints": [
+        "patria = homeland",
+        "terra = land",
+        "īnsula = island",
+        "hīc = here (adv.)",
+        "Britannia = Britain",
+        "Hibernia = Ireland",
+        "Italia = Italy"
+      ]
+    },
+    {
+      "id": "maxey-pl6",
+      "title": "Cap. III · Via Longa",
+      "latin": "America nōn est īnsula; est terra magna. Italia et Hispānia nōn sunt terrae magnae sed nōn sunt īnsulae. America est patria mea, sed Italia nōn est patria mea et Britannia nōn est patria mea. America est patria mea et fāma Americae est magna et fortūna Americae est bona. Americam et fāmam Americae et fortūnam Americae amō.\n\nHaec via est longa. Haec via est via bona et pulchra. Nova quoque est haec via. Haec via nōn est via antīqua. Hīc viae nōn sunt antīquae. Viae sunt novae. Viam longam amō. Amatne soror tua viam longam? Amatne frāter viam longam? Amāsne viam longam?",
+      "english": "America is not an island; it is a great land. Italy and Spain are not great lands but they are not islands. America is my homeland, but Italy is not my homeland and Britain is not my homeland. America is my homeland and the fame of America is great and the fortune of America is good. I love America and the fame of America and the fortune of America.\n\nThis road is long. This road is a good and beautiful road. This road is also new. This road is not an old road. These roads here are not ancient. The roads are new. I love a long road. Does your sister love a long road? Does your brother love a long road? Do you love a long road?",
+      "source_story": "Maxey, Cap. III",
+      "notes": "Fāma Americae = fame of America — first genitive (possession). Antīqua/nova = ancient/new. Via = road/way.",
+      "vocab_hints": [
+        "via = road, way",
+        "longa = long (f.)",
+        "antīqua = ancient (f.)",
+        "nova = new (f.)",
+        "fāma = fame",
+        "fortūna = fortune",
+        "Hispānia = Spain"
+      ]
+    },
+    {
+      "id": "maxey-pl7",
+      "title": "Cap. IV · Quis et Ubi",
+      "latin": "Haec via est via antīqua; nōn est via nova. Italia est terra magna; nōn est īnsula. Sunt longae viae in Italiā. Hae viae sunt antīquae quoque. Sed nunc viae bonae sunt. Fāma Italiae est magna. Fortūna Italiae nōn est bona. Italia nōn est patria mea. America est patria mea. Estne America patria tua?\n\nIta. America est patria mea.\n\nQuis est haec? Puella est haec; magistra haec nōn est.\nQuis est haec puella? Iūlia est haec puella.\nUbi est Iūlia? In viā est Iūlia.\nQuid habet Iūlia? Epistulam habet Iūlia.\nCūr habet Iūlia epistulam? Iūlia epistulam habet quod māter Iūliae hīc nōn est. Māter est in Britanniā. Nunc Iūlia epistulam portat et laeta est.",
+      "english": "This road is an ancient road; it is not a new road. Italy is a great land; it is not an island. There are long roads in Italy. These roads are also ancient. But now the roads are good. The fame of Italy is great. The fortune of Italy is not good. Italy is not my homeland. America is my homeland. Is America your homeland?\n\nYes. America is my homeland.\n\nWho is this? This is a girl; this is not a teacher. Who is this girl? Julia is this girl. Where is Julia? Julia is on the road. What does Julia have? Julia has a letter. Why does Julia have a letter? Julia has the letter because Julia's mother is not here. The mother is in Britain. Now Julia carries the letter and she is happy.",
+      "source_story": "Maxey, Cap. IV",
+      "notes": "Question words: Quis? = Who?, Ubi? = Where?, Quid? = What?, Cūr? = Why?. Quod = because. In + ablative = location.",
+      "vocab_hints": [
+        "quis? = who?",
+        "ubi? = where?",
+        "quid? = what?",
+        "cūr? = why?",
+        "quod = because",
+        "epistula = letter",
+        "portat = carries",
+        "laeta = happy (f.)",
+        "in viā = on the road"
+      ]
+    },
+    {
+      "id": "maxey-pl8",
+      "title": "Cap. IV · Agricola",
+      "latin": "Nunc Iūlia in casā est. Epistula est longa.\n\nCūr Iūlia nōn est in scholā? Nōn intellegō.\n\nPuer: Salvē, soror.\nPuella: Salvē, frāter.\nPuer: Estne māter hīc?\nPuella: Nunc hīc māter nōn est. Quid cupis?\nPuer: Mātrem cupiō. Valē.\nPuella: Valē.\n\nQuis est hic? Agricola est hic. Agricola fīliam pulchram habet et fīliam amat. Fīlium quoque habet. Fīlius agricolae est magnus et labōrat. Sed fīlia nōn est magna; est parva. Fīlia in casā labōrat; fīlius in agrō labōrat. Agricola quoque in agrō labōrat. Fīlia in agrō nōn labōrat et haec est causa: quod est puella et puella parva. Fortūna agricolae nōn est magna sed fīlia parva in agrō nōn labōrat. In casā labōrat et cēnam parat. Agricola est laetus quod fīlia cēnam parat. Cēnam cupit.",
+      "english": "Now Julia is in the house. The letter is long.\n\nWhy is Julia not in school? I do not understand.\n\nBoy: Hello, sister. Girl: Hello, brother. Boy: Is mother here? Girl: Mother is not here now. What do you want? Boy: I want mother. Goodbye. Girl: Goodbye.\n\nWho is this? This is a farmer. The farmer has a beautiful daughter and loves his daughter. He also has a son. The farmer's son is large and works. But the daughter is not large; she is small. The daughter works in the house; the son works in the field. The farmer also works in the field. The daughter does not work in the field and this is the reason: because she is a girl and a small girl. The farmer's fortune is not great but the little daughter does not work in the field. She works in the house and prepares dinner. The farmer is happy because the daughter prepares dinner. He wants dinner.",
+      "source_story": "Maxey, Cap. IV",
+      "notes": "Causa = reason/cause. Labōrat = works. Cēnam parat = prepares dinner. Casa = house. Ager/agrō = field (note the ablative form in agrō).",
+      "vocab_hints": [
+        "agricola = farmer",
+        "ager/agrō = field",
+        "casa = house",
+        "labōrat = works",
+        "parat = prepares",
+        "cēna = dinner",
+        "causa = reason",
+        "intellegō = I understand",
+        "cupit = wants/desires"
+      ]
+    },
+    {
+      "id": "maxey-pl9",
+      "title": "Cap. V · Nauta",
+      "latin": "Quis est hic vir? Hic vir est nauta. Nauta est amīcus agricolae. Vir altus et magnus est. Nauta agricolam amat et agricola nautam amat. Nauta labōrat sed nōn in agrō. In terrā nōn labōrat. Estne nauta Americānus? Ita. Hic vir saepe in terrā est. Nōn semper in terrā est. Interdum in casā agricolae est. Intellegisne? Ita.\n\nAgricola hunc amīcum amat et saepe nautam laudat quod nauta bonus est. Fīlius et fīlia agricolae quoque nautam vidēre cupiunt, quod vīta nautae est perīculōsa. Hic nauta multās terrās videt quod nōn est semper in Americā. Aquam saepe videt quod est nauta. Aqua saepe est perīculōsa. Interdum nauta aquam vidēre nōn cupit.",
+      "english": "Who is this man? This man is a sailor. The sailor is a friend of the farmer. The man is tall and large. The sailor loves the farmer and the farmer loves the sailor. The sailor works but not in a field. He does not work on land. Is the sailor American? Yes. This man is often on land. He is not always on land. Sometimes he is in the farmer's house. Do you understand? Yes.\n\nThe farmer loves this friend and often praises the sailor because the sailor is good. The farmer's son and daughter also want to see the sailor, because the sailor's life is dangerous. This sailor sees many lands because he is not always in America. He often sees water because he is a sailor. Water is often dangerous. Sometimes the sailor does not want to see water.",
+      "source_story": "Maxey, Cap. V",
+      "notes": "Saepe = often; semper = always; interdum = sometimes. Vīta = life. Perīculōsa = dangerous. Laudat = praises.",
+      "vocab_hints": [
+        "nauta = sailor",
+        "amīcus = friend",
+        "vīta = life",
+        "perīculōsa = dangerous",
+        "saepe = often",
+        "semper = always",
+        "interdum = sometimes",
+        "laudat = praises",
+        "aqua = water"
+      ]
+    },
+    {
+      "id": "maxey-pl10",
+      "title": "Cap. VI · Magistra Nārrat",
+      "latin": "Ego sum magistra. Tū es discipulus. Ego in Americā habitō. Habitāsne tū in Americā? Haec est pictūra scholae meae. In pictūrā est puer, discipulus bonus. Pater huius puerī est nauta. Incola Americae est. Vir bonus et magnus est. Nauta epistulās scrībit et puer saepe mihi epistulās ostendit. Interdum nauta est in scholā. Discipulīs fābulās dē multīs terrīs nārrat et pictūrās ostendit. Nauta multās terrās videt et virōs et fēminās videt. Discipulī pictūrās nautae spectant et fābulās laudant. Interdum ego epistulās nautae legō. Discipulī nautae grātiās agunt quod pictūrās ostendit et fābulās nārrat et epistulās bene scrībit.\n\nFīlius nautae est saepe laetus quod pater dōna dat. Saepe fīliō dōna dat. Puer patrī grātiās agit.",
+      "english": "I am a teacher. You are a student. I live in America. Do you live in America? This is a picture of my school. In the picture is a boy, a good student. This boy's father is a sailor. He is an inhabitant of America. He is a good and large man. The sailor writes letters and the boy often shows me the letters. Sometimes the sailor is in the school. He tells the students stories about many lands and shows pictures. The sailor sees many lands and sees men and women. The students look at the sailor's pictures and praise the stories. Sometimes I read the sailor's letters. The students thank the sailor because he shows pictures and tells stories and writes letters well.\n\nThe sailor's son is often happy because the father gives gifts. He often gives gifts to his son. The boy thanks his father.",
+      "source_story": "Maxey, Cap. VI",
+      "notes": "Ego = I; tū = you. Habitō = I live/dwell. Grātiās agit = gives thanks. Dōnum = gift. Nārrat = tells (a story). Ostendit = shows.",
+      "vocab_hints": [
+        "ego = I",
+        "tū = you",
+        "habitō = I live/dwell",
+        "pictūra = picture",
+        "fābula = story",
+        "dōnum = gift",
+        "grātiās agit = gives thanks",
+        "nārrat = tells (a story)",
+        "pater = father"
+      ]
+    },
+    {
+      "id": "maxey-r2",
+      "title": "Cap. VII · Poēta et Casa",
+      "latin": "Epistulam habeō. Epistulam nautae ostendō. Nauta epistulam videt. Epistulam spectat. Est epistula nautae. Nauta epistulam cupit. Nautae epistulam dō. Nunc epistulam habet et laetus est. Mihi grātiās agit. Epistulam legit. In epistulā est pictūra. Nunc mihi pictūram mōnstrat.\n\nHaec est casa Americāna. Haec casa iānuam habet. Iānua est clausa. Multās fenestrās quoque habet. Fenestrae sunt magnae.\n\nHaec est casa Rōmāna. Casa nōn est magna; est parva. Iānuam habet. Iānua est aperta. Fenestrās habet sed nōn multās fenestrās. Fenestrae Rōmānae nōn sunt magnae; sunt parvae. Fenestrae Rōmānae sunt altae. Nōn sunt clārae. Fenestrās Rōmānās nōn amō. Fenestrās Americānās laudō.\n\nHīc non habitat vir. Ibi habitat vir. Hic vir est poēta clārus et benignus. Casam habet et cūrat. Nunc fēminae in silvā ambulant. Nunc poēta iānuam aperit et fēminās videt. Fēminae rosās portant. Poētae rosās ostendunt et poēta est laetus quod rosae sunt grātae et rosās nōn habet. Fēminae poētae rosās dant. Poēta fēminīs grātiās agit.",
+      "english": "I have a letter. I show the letter to the sailor. The sailor sees the letter. He looks at it. It is the sailor's letter. The sailor wants the letter. I give the letter to the sailor. Now he has the letter and he is happy. He thanks me. He reads the letter. In the letter is a picture. Now he shows me the picture.\n\nThis is an American house. This house has a door. The door is closed. It also has many windows. The windows are large.\n\nThis is a Roman house. The house is not large; it is small. It has a door. The door is open. It has windows but not many windows. The Roman windows are not large; they are small. The Roman windows are tall. They are not bright. I do not love the Roman windows. I praise the American windows.\n\nA man does not live here. A man lives there. This man is a famous and kind poet. He has a house and cares for it. Now women are walking in the forest. Now the poet opens the door and sees the women. The women are carrying roses. They show the roses to the poet and the poet is happy because the roses are pleasing and he does not have roses. The women give roses to the poet. The poet thanks the women.",
+      "source_story": "Maxey, Cap. VII",
+      "notes": "Iānua = door; fenestra = window; silva = forest/woods. Apertus/clausus = open/closed. Benignus = kind. Grātus = pleasing/welcome.",
+      "vocab_hints": [
+        "iānua = door",
+        "fenestra = window",
+        "silva = forest",
+        "aperta = open (f.)",
+        "clausa = closed (f.)",
+        "poēta = poet",
+        "clārus = famous",
+        "benignus = kind",
+        "rosa = rose",
+        "grātus = pleasing"
+      ]
+    },
+    {
+      "id": "maxey-pl11",
+      "title": "Cap. VIII · Schola Nostra",
+      "latin": "In viā ambulō. Hīc est casa pulchra. Fenestra casae est aperta et in fenestrā est rosa pulchra. Iānua casae nōn est clausa. Iānua quoque est aperta et hīc est fēmina benigna.\n\nHaec est schola nostra. Schola nostra est clāra et fāma est magna. Interdum iānua est aperta. Rosās vidēmus. Agrōs quoque vidēmus. Silvam ex fenestrīs vidēmus. Ibi est via longa. Ex fenestrīs viam quoque vidēmus.\n\nNunc magistra nostra discipulōs exspectat. In scholā nōn labōrāmus. In viīs ambulāmus. Ad scholam properāmus. Hī puerī linguam Latīnam discunt, sed hae puellae sunt parvae et linguam Latīnam non discunt. Magistra nostra est benigna et puerīs et puellīs cāra. Linguam Latīnam discere cupimus. Interdum mātrēs nostrae ad scholam properant. Mātrēs nostrae magistram vident et laudant. Nōs quoque magistram laudāmus.",
+      "english": "I am walking on the road. Here is a beautiful house. The window of the house is open and in the window is a beautiful rose. The door of the house is not closed. The door is also open and here is a kind woman.\n\nThis is our school. Our school is famous and its reputation is great. Sometimes the door is open. We see roses. We also see fields. We see the forest from the windows. There is a long road over there. We also see the road from the windows.\n\nNow our teacher awaits the students. We are not working in school. We are walking on the roads. We are hurrying to school. These boys are learning the Latin language, but these girls are small and do not learn the Latin language. Our teacher is kind and dear to boys and girls. We want to learn the Latin language. Sometimes our mothers hurry to school. Our mothers see and praise the teacher. We also praise the teacher.",
+      "source_story": "Maxey, Cap. VIII",
+      "notes": "Nōs = we. Nostra = our. Vidēmus/ambulāmus = we see/we walk (1st plural). Properāmus = we hurry. Discunt = they learn. Linguam Latīnam = Latin language (accusative).",
+      "vocab_hints": [
+        "nōs = we",
+        "noster/nostra = our",
+        "properāmus = we hurry",
+        "exspectat = awaits",
+        "discunt = they learn",
+        "lingua Latīna = Latin language",
+        "cārus = dear",
+        "ex fenestrīs = from the windows"
+      ]
+    },
+    {
+      "id": "maxey-pl12",
+      "title": "Cap. IX · Medicus Noctū",
+      "latin": "Nox est et noctū agricolae agrōs nōn cūrant. Noctū mātrēs cēnam nōn parant. Noctū discipulī in scholā nōn labōrant et linguam Latīnam nōn discunt. Sed noctū nautae saepe labōrant.\n\nNox est et ibi medicus ambulat. Medicus noster nōn est, sed medicus puerī. Nunc medicus properat sed est tardus. In silvā properat. Puer, fīlius agricolae, in casā est aeger. Medicus, vir clārus et benignus, ad casam agricolae properat quod puer est aeger. Nox est et medicus sōlus ambulat. Amīcī cum medicō nōn ambulant. Sōlus properat. Tardus est quod lūna est obscūra. Medicus lūnam clāram vidēre cupit. Stellae quoque sunt obscūrae et medicus nōn clārē videt.\n\nPuer laetus nōn est. Aeger et miser est. Ubi nōs aegrī sumus, miserī sumus nōs quoque. Puer sōlus est, sed sōlus esse nōn cupit. Amīcōs vidēre cupit. Lūnam et stellās nōn videt quod obscūrae sunt. Puer aeger medicum exspectat sed medicus est tardus.",
+      "english": "It is night and at night farmers do not tend their fields. At night mothers do not prepare dinner. At night students do not work in school and do not learn the Latin language. But at night sailors often work.\n\nIt is night and there a doctor is walking. He is not our doctor, but the boy's doctor. Now the doctor hurries but he is slow. He hurries in the forest. The boy, the farmer's son, is sick in the house. The doctor, a famous and kind man, hurries to the farmer's house because the boy is sick. It is night and the doctor walks alone. Friends do not walk with the doctor. He hurries alone. He is slow because the moon is dark. The doctor wants to see a bright moon. The stars are also dark and the doctor does not see clearly.\n\nThe boy is not happy. He is sick and miserable. When we are sick, we are also miserable. The boy is alone, but he does not want to be alone. He wants to see friends. He does not see the moon and stars because they are dark. The sick boy awaits the doctor but the doctor is slow.",
+      "source_story": "Maxey, Cap. IX",
+      "notes": "Nox/noctū = night/at night. Aeger = sick. Miser = miserable. Sōlus = alone. Lūna = moon. Stella = star. Tardus = slow/late. Obscūrus = dark/dim.",
+      "vocab_hints": [
+        "nox = night",
+        "noctū = at night",
+        "medicus = doctor",
+        "aeger = sick",
+        "miser = miserable",
+        "sōlus = alone",
+        "lūna = moon",
+        "stella = star",
+        "tardus = slow",
+        "obscūra = dark (f.)"
+      ]
+    },
+    {
+      "id": "maxey-pl13",
+      "title": "Cap. IX · Aegrī",
+      "latin": "Nunc medicus iānuam agricolae aperit et puerum spectat. Medicus est puerō benignus. Puerō fābulās longās et bonās nārrat. Ex fenestrīs puer et medicus silvam spectant sed stellās et lūnam nōn vident. Nunc medicus iānuam claudit. Ex casā agricolae properat et ad silvam ambulat.\n\nEstne aegra, puella?\nMinimē. Nōn sum aegra.\nLaeta sum quod nōn es aegra. Misera sum quod Cornēlia est aegra. Haec puella nōn est aegra; haec puella nōn est aegra. Nōn sunt aegrae. Estisne aegrae, puellae?\nNōn sumus aegrae.\nEstne aeger, puer?\nNōn sum aeger.\nLaeta sum quod nōn es aeger. Esne aeger, discipule?\nNōn sum aeger.\nEstisne, puerī, aegrī?\nMinimē. Nōn sumus aegrī.\nLaeta sum.",
+      "english": "Now the doctor opens the farmer's door and looks at the boy. The doctor is kind to the boy. He tells the boy long and good stories. From the windows the boy and the doctor look at the forest but do not see the stars and moon. Now the doctor closes the door. He hurries out of the farmer's house and walks toward the forest.\n\nAre you sick, girl? No indeed. I am not sick. I am happy because you are not sick. I am sad because Cornelia is sick. This girl is not sick; this girl is not sick. They are not sick. Are you sick, girls? We are not sick. Are you sick, boy? I am not sick. I am happy because you are not sick. Are you sick, student? I am not sick. Are you sick, boys? No indeed. We are not sick. I am happy.",
+      "source_story": "Maxey, Cap. IX",
+      "notes": "Minimē = No indeed / Not at all. Estisne? = Are you (plural)? Sumus = we are. The adjective aeger/aegra changes ending to match gender.",
+      "vocab_hints": [
+        "minimē = no indeed, not at all",
+        "estisne? = are you (pl.)?",
+        "sumus = we are",
+        "es = you are",
+        "sum = I am",
+        "claudit = closes",
+        "aperit = opens"
+      ]
+    },
+    {
+      "id": "maxey-pl14",
+      "title": "Cap. X · Vesper",
+      "latin": "Nunc nōn est nox, sed vesper est. Amīcus noster, puer aeger, in casā stat. Ex fenestrā viam spectat. Discipulōs exspectat. Stellās nōn videt quod nōn est nox. Lūna nōn est obscūra. Vesper est. Vesperī agricolae ex agrīs properant et discipulī ex scholā ambulant.\n\nPuer nōn est miser sed laetus. Haec est causa: nunc nōn est aeger. Herī puer erat aeger et in scholā nōn labōrat. Miser erat et sōlus, sed medicus puerō medicīnam dedit et hodiē puer est laetus. Herī puer nōn labōrābat. Impiger nōn erat. Tardus erat. Hodiē est impiger. Scrībit, legit, aquam in casā portat. Herī cum puer medicum vīdit, medicīnam nōn cupiēbat. Medicus, vir benignus, puerō pecūniam dedit, et puer medicīnam cupīvit. Herī puer amīcōs nōn vīdit. Hodiē ex fenestrīs discipulōs in viā videt. Discipulī puerum ex viā vident et ad fenestram properant. Discipulī puerō epistulam dant. Magistra epistulam scrīpsit. Puer epistulam legit et laetus est quod epistula est grāta.",
+      "english": "Now it is not night, but evening. Our friend, the sick boy, stands in the house. He looks at the road from the window. He awaits students. He does not see stars because it is not night. The moon is not dark. It is evening. In the evening farmers hurry from the fields and students walk from school.\n\nThe boy is not miserable but happy. This is the reason: now he is not sick. Yesterday the boy was sick and he did not work in school. He was miserable and alone, but the doctor gave the boy medicine and today the boy is happy. Yesterday the boy was not working. He was not energetic. He was slow. Today he is energetic. He writes, reads, carries water in the house. Yesterday when the boy saw the doctor, he did not want medicine. The doctor, a kind man, gave money to the boy, and the boy wanted the medicine. Yesterday the boy did not see friends. Today he sees students on the road from the windows. The students see the boy from the road and hurry to the window. The students give the boy a letter. The teacher wrote the letter. The boy reads the letter and is happy because the letter is welcome.",
+      "source_story": "Maxey, Cap. X",
+      "notes": "Herī = yesterday; hodiē = today; vesper = evening; vesperī = in the evening. Erat = was (imperfect). Medicīna = medicine.",
+      "vocab_hints": [
+        "vesper = evening",
+        "herī = yesterday",
+        "hodiē = today",
+        "erat = was (imperfect)",
+        "medicīna = medicine",
+        "impiger = energetic, diligent",
+        "stat = stands",
+        "scrīpsit = wrote (perfect)"
+      ]
+    },
+    {
+      "id": "maxey-pl15",
+      "title": "Cap. X · Lūna et Stellae",
+      "latin": "Labōrāsne in casā, puella?\nIta. In casā labōrō.\nLabōrāsne in casā, puer?\nMinimē. Nōn in casā, sed in scholā labōrō.\nLabōrātisne in scholā, puerī?\nIta. In scholā labōrāmus, sed nōn in casā. Puellae quoque in scholā labōrant.\n\nSpectāsne lūnam vesperī, puella? Spectāsne stellās noctū, puer?\nNoctū stellās spectāmus quod stellās amāmus. Cum lūna est obscūra, stellās vidēmus.\n\nEstne lūna grāta tibi? Suntne stellae tibi grātae?\nIta. Lūnam et stellās amō.\n\nUbi stās cum stellās spectās?\nIn casā nōn stō cum stellās specto. Cum in viā stāmus, stellās et lūnam vidēmus.",
+      "english": "Do you work in the house, girl? Yes. I work in the house. Do you work in the house, boy? No indeed. I work not in the house, but in school. Do you work in school, boys? Yes. We work in school, but not in the house. The girls also work in school.\n\nDo you watch the moon in the evening, girl? Do you watch the stars at night, boy? At night we watch the stars because we love the stars. When the moon is dark, we see the stars.\n\nIs the moon pleasing to you? Are the stars pleasing to you? Yes. I love the moon and stars.\n\nWhere do you stand when you watch the stars? I do not stand in the house when I watch the stars. When we stand on the road, we see the stars and moon.",
+      "source_story": "Maxey, Cap. X",
+      "notes": "Labōrātisne? = Do you (pl.) work? Tibi grāta = pleasing to you. Cum + indicative = when. Stō/stāmus = I stand/we stand.",
+      "vocab_hints": [
+        "labōrātisne? = do you (pl.) work?",
+        "tibi = to you",
+        "grāta = pleasing, welcome",
+        "cum = when (+ indicative)",
+        "stō = I stand",
+        "spectō = I watch/look at"
+      ]
+    },
+    {
+      "id": "maxey-r3",
+      "title": "Cap. XI · Tabernāculum",
+      "latin": "Haec puella parva cum mātre in casā stat. Est aestās et iānua et fenestrae sunt apertae. Vesper est pulcher. Hīc est silva et in silvā tabernāculum vident. In tabernāculō in silvā habitat fēmina. Aestāte fēmina in tabernāculō habitat. Aestāte sōla in tabernāculō manet. Hodiē est in tabernāculō. Herī nōn erat in tabernāculō. Herī erat in oppidō. Saepe ad oppidum ambulat. Ex oppidō multa ad tabernāculum portat. Hodiē erat in silvā. Ex silvā quoque multa portat. Nunc in tabernāculō est et est impigra. Quid nunc habet fēmina? Medicīnam habet. Diū labōrat in tabernāculō et nunc medicīnam habet. Medicīnam ad oppidum portat et pecūniam ad tabernāculum portat. Nōn est medicus sed medicō medicīnam dat. Nōn est aegra fēmina; est valida.\n\nPuella parva cum mātre fēminam et medicīnam spectat. Puella saltat et hoc dīcit: \"Laeta sum quod nōn sum aegra. Medicus mihi medicīnam fēminae nōn dat.\"\n\nMāter respondet: \"Ego quoque sum laeta quod es valida et medicīnam nōn cupis. Laeta sum quoque quod in tabernāculō nōn habitāmus. Tēctum magnum nōn habēmus sed cāra mihi est casa nostra.\"",
+      "english": "This little girl stands in the house with her mother. It is summer and the door and windows are open. The evening is beautiful. Here is a forest and in the forest they see a tent. A woman lives in the tent in the forest. In summer the woman lives in the tent. In summer she stays alone in the tent. Today she is in the tent. Yesterday she was not in the tent. Yesterday she was in town. She often walks to town. From town she carries many things to the tent. Today she was in the forest. She also carries many things from the forest. Now she is in the tent and she is diligent. What does the woman have now? She has medicine. She works a long time in the tent and now she has medicine. She carries the medicine to town and carries money to the tent. She is not a doctor but she gives medicine to the doctor. The woman is not sick; she is healthy.\n\nThe little girl looks at the woman and the medicine with her mother. The girl jumps and says this: 'I am happy because I am not sick. The doctor does not give me the woman's medicine.'\n\nThe mother answers: 'I too am happy because you are healthy and do not want medicine. I am also happy because we do not live in a tent. We do not have a large house but our house is dear to me.'",
+      "source_story": "Maxey, Cap. XI",
+      "notes": "Aestās/aestāte = summer/in summer. Tabernāculum = tent. Oppidum = town. Valida = healthy/strong. Saltat = jumps/dances. Respondet = answers.",
+      "vocab_hints": [
+        "aestās = summer",
+        "aestāte = in summer (ablative)",
+        "tabernāculum = tent",
+        "oppidum = town",
+        "valida = healthy, strong",
+        "saltat = jumps, dances",
+        "respondet = answers",
+        "diū = for a long time"
+      ]
+    },
+    {
+      "id": "maxey-pl16",
+      "title": "Cap. XII · Puer Malus",
+      "latin": "Interdum hic discipulus nōn est bonus. Malus est et in scholā nōn bene labōrat. Hodiē magistra nōn est laeta. Maesta est. Puerum nōn laudat. Ubi discipulī scholā domum eunt, magistra ad sē puerum malum vocat et hoc dicit: \"Tū, puer, nōn bene labōrās. Nunc tē sōlum labōrāre cupiō. Aquam in scholam portā.\"\n\nPuer aquam portāre nōn cupit et sēcum, \"Domum ire cupiō,\" inquit. \"Hanc magistram nōn amō.\"\n\nDiū lacrimat. Ūnam hōram puer sōlus cum magistrā manet. Linguam Latīnam discit. Aquam portat. Fenestrās et iānuās claudit. Sed hōra longa nōn est puerō maestō grāta.\n\nMāter puerī domī puerum exspectat et ē fenestrā vocat. \"Puer! Puer!\" dīcit māter. Puer nōn respondet. Post ūnam hōram māter maesta ē tēctō ad scholam it quod vesper est et puer nōn est domī. Ibi puer stat et lacrimat.\n\n\"Cupisne mox bonus esse?\" dīcit magistra. \"Cupisne bene labōrāre? Ubi bene labōrās tē laudō.\"\n\nPuer magistram et mātrem maestam spectat. \"Ita,\" respondet puer sed sēcum, \"Nunc domum īre cupiō,\" dīcit.\n\nMox māter et fīlius domum eunt. Properant quod nox est et stellae et lūna sunt clārae.",
+      "english": "Sometimes this student is not good. He is bad and does not work well in school. Today the teacher is not happy. She is sad. She does not praise the boy. When the students go home from school, the teacher calls the bad boy to her and says this: 'You, boy, do not work well. Now I want you to work alone. Carry water into the school.'\n\nThe boy does not want to carry water and says to himself, 'I want to go home. I do not love this teacher.'\n\nHe cries for a long time. The boy stays alone with the teacher for one hour. He learns the Latin language. He carries water. He closes the windows and doors. But the long hour is not pleasing to the sad boy.\n\nThe boy's mother awaits the boy at home and calls from the window. 'Boy! Boy!' says the mother. The boy does not answer. After one hour the sad mother goes from the house to the school because it is evening and the boy is not at home. There the boy stands and cries.\n\n'Do you want to be good soon?' says the teacher. 'Do you want to work well? When you work well I will praise you.'\n\nThe boy looks at the teacher and his sad mother. 'Yes,' the boy answers, but to himself he says, 'Now I want to go home.'\n\nSoon the mother and son go home. They hurry because it is night and the stars and moon are bright.",
+      "source_story": "Maxey, Cap. XII",
+      "notes": "Malus = bad. Maesta = sad. Lacrimat = cries/weeps. Domum = homeward (direction). Domī = at home (location). Sēcum = to himself. Inquit = says/said.",
+      "vocab_hints": [
+        "malus = bad",
+        "maesta/maestus = sad",
+        "lacrimat = cries",
+        "domum = homeward",
+        "domī = at home",
+        "sēcum = to himself",
+        "hōra = hour",
+        "vocat = calls",
+        "mox = soon"
+      ]
+    },
+    {
+      "id": "maxey-pl17",
+      "title": "Cap. XIII · Hortus",
+      "latin": "Haec casa est domus fēminae benignae. Casa est casa alba. Post casam est hortus. Post hortum est silva. In hortō sunt multī et pulchrī flōrēs. Sunt rosae albae et līlia alba quoque. Alta sunt līlia et pulchrae sunt rosae. Sunt aliī flōrēs quoque in hortō. Grātī fēminae benignae sunt flōrēs. Fēmina hortum nōn cūrat. Vir quī in aliā casā habitat hortum cūrat. Aestāte hortum cūrat; hieme nōn cūrat quod hieme sunt nūllī flōrēs in hortō.\n\nHodiē vir nōn est in hortō. Herī hīc erat. Hodiē hīc nōn est. Est aestās et in hortō est quiēs. Fēmina quiētem amat.\n\nMox fēmina puerum lacrimantem audit. Ad iānuam it. Nūllus puer est in viā. Mox puerum quī in hortō labōrat videt. Est fīlius virī quī hortum cūrat. Hodiē puer hortum cūrat et lacrimat.\n\nFēmina puerum ad sē vocat: \"Cūr lacrimās, puer?\"\n\nTum puer respondet: \"Pater meus ad oppidum it et ego labōrō. Ego quoque ad oppidum īre cupiō. Duōs equōs habet et ego equōs amō. In stabulō frūmentum equīs dō. Aquam quoque dō. Ūnum equum semper cūrō. Ego quoque cum patre et equīs īre cupiō.\"\n\nFēmina, quae est fēmina benigna, est maesta. Fēmina et puer cēnam edunt. Tum fēmina flōrēs ex hortō capit et ad oppidum it. Cum fēminā it puer parvus quī nunc nōn lacrimat.",
+      "english": "This house is the home of a kind woman. The house is a white house. Behind the house is a garden. Behind the garden is a forest. In the garden are many beautiful flowers. There are white roses and white lilies too. The lilies are tall and the roses are beautiful. There are other flowers too in the garden. The flowers are pleasing to the kind woman. The woman does not tend the garden. A man who lives in another house tends the garden. In summer he tends the garden; in winter he does not tend it because in winter there are no flowers in the garden.\n\nToday the man is not in the garden. Yesterday he was here. Today he is not here. It is summer and there is quiet in the garden. The woman loves quiet.\n\nSoon the woman hears a crying boy. She goes to the door. No boy is on the road. Soon she sees a boy who is working in the garden. He is the son of the man who tends the garden. Today the boy tends the garden and cries.\n\nThe woman calls the boy to her: 'Why are you crying, boy?'\n\nThen the boy answers: 'My father goes to town and I work. I also want to go to town. He has two horses and I love horses. In the stable I give grain to the horses. I give water too. I always tend one horse. I also want to go with my father and the horses.'\n\nThe woman, who is a kind woman, is sad. The woman and boy eat dinner. Then the woman takes flowers from the garden and goes to town. The little boy, who no longer cries, goes with the woman.",
+      "source_story": "Maxey, Cap. XIII",
+      "notes": "Hortus = garden. Flōs/flōrēs = flower/flowers. Alba = white. Quiēs = quiet/rest. Equus = horse. Frūmentum = grain. Hiems/hieme = winter/in winter.",
+      "vocab_hints": [
+        "hortus = garden",
+        "flōs/flōrēs = flower/flowers",
+        "alba = white (f.)",
+        "quiēs = quiet, rest",
+        "hiems = winter",
+        "hieme = in winter",
+        "equus = horse",
+        "frūmentum = grain",
+        "stabulum = stable",
+        "edit = eats"
+      ]
+    },
+    {
+      "id": "maxey-pl18",
+      "title": "Cap. XIV · Mārcus et Mīles",
+      "latin": "Nox est et quiēs est in terrā. Hiems est. Mārcus, puer Americānus, sōlus est in casā quod māter et pater ad oppidum iērunt. Diū legit. Dē multīs terrīs legit. Hanc fābulam, quae de Rōmānīs antīquīs nārrātur, saepe Mārcus in scholā audīvit. In pictūrā est vir quī mīles Rōmānus est. Ad bellum properat. Est mīles validus et magnus quī arma Rōmāna portat. Multī aliī mīlitēs, quī in pictūrā nōn videntur, ad bellum ambulant quod bellum est magnum. Ibi sunt castra Rōmāna ubi noctū mīlitēs manent.\n\nHic mīles Rōmānus quī est dux mīlitum arma bona portat. Quae sunt haec arma? Hic est gladius validus. Gladius nōn est longus. Nōn est lātus. Scūtum quoque capit. Scūtum ducem tegit ubi bellum est perīculōsum. Pīlum habet. Hoc pīlum est longum et validum sed nōn est lātum. Galea quoque ducem tegit. Galeam et scūtum et gladium et pīlum Mārcus videt et laudat.\n\nNunc nōn est nox. Mārcus nōn legit sed ad stabulum ubi equus stat ambulat. In stabulō Mārcus equō albō frūmentum dat. Tum in hortum puer et equus properant. \"Ego sum dux Rōmānus,\" inquit puer, \"et arma capiō. Gladium et ūnum scūtum portō. Galeam habeō et in tabernāculō sunt duo pila quae nunc nōn portō. Mīlitēs meī mē laudant quod cōnsilia bona habeō.\"",
+      "english": "It is night and there is quiet on the land. It is winter. Marcus, an American boy, is alone in the house because his mother and father went to town. He reads for a long time. He reads about many lands. Marcus often heard this story, which is told about the ancient Romans, in school. In the picture is a man who is a Roman soldier. He hurries to war. He is a strong and large soldier who carries Roman weapons. Many other soldiers, who are not seen in the picture, walk to war because the war is great. There are Roman camps there where soldiers stay at night.\n\nThis Roman soldier who is the leader of soldiers carries good weapons. What are these weapons? Here is a strong sword. The sword is not long. It is not wide. He also takes a shield. The shield protects the leader when the war is dangerous. He has a javelin. This javelin is long and strong but it is not wide. A helmet also protects the leader. Marcus sees and praises the helmet and shield and sword and javelin.\n\nNow it is not night. Marcus is not reading but walks to the stable where the horse stands. In the stable Marcus gives grain to the white horse. Then the boy and horse hurry to the garden. 'I am a Roman leader,' says the boy, 'and I take weapons. I carry a sword and one shield. I have a helmet and in the tent there are two javelins which I do not carry now. My soldiers praise me because I have good plans.'",
+      "source_story": "Maxey, Cap. XIV",
+      "notes": "Arma = weapons. Gladius = sword. Scūtum = shield. Galea = helmet. Pīlum = javelin. Dux = leader/general. Castra = camp (pl.). Bellum = war. Cōnsilia = plans.",
+      "vocab_hints": [
+        "arma = weapons",
+        "gladius = sword",
+        "scūtum = shield",
+        "galea = helmet",
+        "pīlum = javelin",
+        "dux = leader, general",
+        "castra = camp (pl.)",
+        "bellum = war",
+        "tegit = protects",
+        "cōnsilia = plans"
+      ]
+    },
+    {
+      "id": "maxey-pl19",
+      "title": "Cap. XV · Mīles Rōmānus Loquitur",
+      "latin": "Colloquium\n\nQuae arma, mīles Rōmāne, habēs?\nGaleam et scūtum habeō. Haec est galea mea; hoc est scūtum meum.\nQuid facit scūtum?\nScūtum mē tegit.\nQuid facit galea?\nGalea caput meum tegit.\nQuae tēla, mīles Rōmāne, habēs?\nTēla mea sunt gladius et pīlum. Multī mīlitēs sagittās habent sed ego sagittās nōn habeō quod nōn sum sagittārius.\n\nUbi habitās, mīles Rōmāne?\nIn castrīs habitō cum est bellum. Castra amō. Castra sunt lāta et longa et multī mīlitēs Rōmānī in castrīs sunt. Longē ā casā patris meī sunt castra. Patrem et mātrem nōn videō. Interdum sum dēfessus et patrem et mātrem vidēre cupiō, sed ad casam nōn eō quod dux hoc dīcit: \"Bonus mīles pugnat. Mīles malus domum it.\"\n\nCūr cōnsilium nōn capis et domum īs?\nDux meus est benignus dux sed cōnsilium intellegit. Nōn cupit mīlitēs domum īre. \"Cōnsilium nōn est bonum,\" inquit dux. \"Est malum. In castrīs manē.\" Tum numquam īre cupiō.\n\nLabōrāsne semper in castrīs?\nMinimē. Ego et trēs amīcī interdum ad silvam īmus. Cum in silvā sumus, iacula habēmus. Sagittās quoque habēmus. Interdum ad castra animālia portāmus.",
+      "english": "Conversation\n\nWhat weapons do you have, Roman soldier? I have a helmet and shield. This is my helmet; this is my shield. What does the shield do? The shield protects me. What does the helmet do? The helmet protects my head. What missiles do you have, Roman soldier? My missiles are a sword and javelin. Many soldiers have arrows but I do not have arrows because I am not an archer.\n\nWhere do you live, Roman soldier? I live in camp when there is war. I love the camp. The camp is wide and long and many Roman soldiers are in the camp. The camp is far from my father's house. I do not see my father and mother. Sometimes I am tired and want to see my father and mother, but I do not go to the house because the leader says this: 'A good soldier fights. A bad soldier goes home.'\n\nWhy do you not take the plan and go home? My leader is a kind leader but he understands the plan. He does not want soldiers to go home. 'The plan is not good,' says the leader. 'It is bad. Stay in camp.' Then I never want to go.\n\nDo you always work in camp? No indeed. My three friends and I sometimes go to the forest. When we are in the forest, we have javelins. We also have arrows. Sometimes we carry animals to camp.",
+      "source_story": "Maxey, Cap. XV",
+      "notes": "Tēlum = missile/weapon. Sagittā = arrow. Sagittārius = archer. Pugnat = fights. Dēfessus = tired/weary. Caput = head. Numquam = never. Iaculum = javelin (short spear).",
+      "vocab_hints": [
+        "tēlum/tēla = missile/missiles",
+        "sagitta = arrow",
+        "sagittārius = archer",
+        "pugnat = fights",
+        "dēfessus = tired, weary",
+        "caput = head",
+        "numquam = never",
+        "iaculum = javelin",
+        "longē ā = far from"
+      ]
+    },
+    {
+      "id": "maxey-pl20",
+      "title": "Cap. XV · Dē Puerīs Quattuor",
+      "latin": "Dē Puerīs Quattuor\n\nQuī sunt hī quattuor puerī qui in viā lātā ambulant?\nAmīcī sunt et fīliī agricolārum.\n\nQuid faciunt?\nSagittās portant. Scūta et pila nōn portantur quod puerī mīlitēs nōn sunt et nōn pugnant. Nōmen huius puerī altī est Mārcus. Medius puer est. Ā dextrā Mārcī est frāter, Lūcius, puer secundus, quī trēs sagittās portat. Ā sinistrā Mārcī est puer tertius, Carolus, nōmine. In capite Carolī est galea, sed mīles nōn est. Hic parvus puer, cuius nōmen est Claudius, post hōs trēs puerōs manet. Parvus est, sed cum puerīs magnīs ambulāre cupit. Dēfessus est quod puerī magnī properant.\n\nQuid puerī nunc faciunt?\nHī quattuor puerī ā casīs ad silvam properant quod ibi sunt animālia. In stabulō sunt equī nigrī, et nunc ibi manent. Puerī animālia capere cupiunt. Interdum animālia puerōs timent. Sagittās quoque timent. Diū puerī in silvā manent, sed diū animālia nōn videntur.\n\n\"Ibi,\" inquit Mārcus, \"caput parvī animālis nigrī videō.\"\n\nTum Mārcus prīmam sagittam capit, tum secundam et tertiam. Animal stat et puerum spectat. Nūllum perīculum est quod puerī nōn sunt virī magnī et validī. Puerī domum eunt ubi cēna in mēnsā parāta est. Cēnam laetī edunt.",
+      "english": "About Four Boys\n\nWho are these four boys walking on the wide road? They are friends and sons of farmers.\n\nWhat are they doing? They are carrying arrows. Shields and javelins are not carried because the boys are not soldiers and do not fight. The name of this tall boy is Marcus. He is the middle boy. To the right of Marcus is his brother Lucius, the second boy, who carries three arrows. To the left of Marcus is the third boy, named Carolus. On Carolus' head is a helmet, but he is not a soldier. This small boy, whose name is Claudius, stays behind these three boys. He is small, but he wants to walk with the big boys. He is tired because the big boys hurry.\n\nWhat are the boys doing now? These four boys hurry from the houses to the forest because there are animals there. In the stable are black horses, and now they remain there. The boys want to catch animals. Sometimes the animals fear the boys. They also fear arrows. The boys stay in the forest for a long time, but for a long time no animals are seen.\n\n'There,' says Marcus, 'I see the head of a small black animal.'\n\nThen Marcus takes the first arrow, then the second and third. The animal stands and looks at the boy. There is no danger because the boys are not big strong men. The boys go home where dinner is prepared on the table. They eat dinner happily.",
+      "source_story": "Maxey, Cap. XV",
+      "notes": "Nōmen = name. Ā dextrā/sinistrā = to the right/left. Prīmus, secundus, tertius = first, second, third. Mēnsa = table. Parāta = prepared. Timent = fear.",
+      "vocab_hints": [
+        "nōmen = name",
+        "ā dextrā = to the right",
+        "ā sinistrā = to the left",
+        "prīmus/secundus/tertius = first/second/third",
+        "mēnsa = table",
+        "timent = they fear",
+        "animālia = animals",
+        "niger/nigra = black"
+      ]
+    },
+    {
+      "id": "maxey-r4",
+      "title": "Cap. XVI · Anna in Oppidō",
+      "latin": "Haec est agricolae fīlia cuius nōmen est Anna. In casā est. Herī aliquis ad iānuam casae vēnit et epistulam portāvit. Anna iānuam aperuit. Tum epistulam manibus ad mātrem, quae epistulam lēgit, portāvit. Nunc Anna ad oppidum īre parat. Hīc habitat amīca Annae, Iūlia nōmine. Anna ā Iūliā ad oppidum invītātur. Anna est laeta et saltat.\n\nVesperī puella nōn it. Māne it. Māne in carrō pater et fīlia per agrōs et silvam properant. Equum habent. Equus bene currit quod est validus. Puella est laeta. Ā dextrā et ā sinistrā multa videt. Omnēs rēs sunt grātae. Subitō in agrō quattuor animālia videntur.\n\nVesperī pater et fīlia in magnō oppidō sunt. Iūlia Annam exspectat et prope fenestram stat. Subitō equum et carrum videt. Ē tēctō currit et \"Salvēte\" inquit. Tēctum Iūliae est magnum aedificium. Multās fenestrās et quattuor iānuās habet. Ante tēctum est hortus. Per hortum puellae ad iānuam ambulant. Pater, \"Valēte,\" inquit, \"puellae,\" et domum it.\n\nIūlia trēs amīcās habet. Prīma est fīlia medicī. Secunda est fīlia poētae. Tertia est fīlia mīlitis quī iacula et alia tēla domī habet. In mēnsā stat pictūra virī quī in capite galeam habet.",
+      "english": "This is the farmer's daughter whose name is Anna. She is in the house. Yesterday someone came to the door of the house and carried a letter. Anna opened the door. Then she carried the letter with her hands to her mother, who read the letter. Now Anna is preparing to go to town. Here lives Anna's friend, named Julia. Anna is invited to town by Julia. Anna is happy and jumps for joy.\n\nIn the evening the girl does not go. She goes in the morning. In the morning the father and daughter hurry through the fields and forest in a wagon. They have a horse. The horse runs well because it is strong. The girl is happy. She sees many things to the right and left. All things are pleasing. Suddenly four animals are seen in the field.\n\nIn the evening the father and daughter are in the large town. Julia awaits Anna and stands near the window. Suddenly she sees the horse and wagon. She runs out of the house and says 'Hello!' Julia's house is a large building. It has many windows and four doors. In front of the house is a garden. The girls walk through the garden to the door. The father says 'Goodbye, girls,' and goes home.\n\nJulia has three friends. The first is the daughter of a doctor. The second is the daughter of a poet. The third is the daughter of a soldier who has javelins and other weapons at home. On the table stands a picture of a man who has a helmet on his head.",
+      "source_story": "Maxey, Cap. XVI",
+      "notes": "Māne = in the morning. Carrus = wagon/cart. Subitō = suddenly. Tēctum = house/building (lit. roof). Ante = in front of. Per = through. Aliquis = someone.",
+      "vocab_hints": [
+        "māne = in the morning",
+        "carrus = wagon",
+        "subitō = suddenly",
+        "tēctum = house, building",
+        "ante = in front of",
+        "per = through",
+        "aliquis = someone",
+        "invītātur = is invited",
+        "currit = runs"
+      ]
+    },
+    {
+      "id": "maxey-pl21",
+      "title": "Cap. XVII · Mīlitēs Eunt",
+      "latin": "\"Audī. Aliquid audiō. Audīsne aliquid? Multī virī per viās currunt; multī equī veniunt. Sunt carrī quoque et in carrīs multae rēs portantur. Sunt mīlitēs quoque et in manibus mīlitum sunt tēla. Quī sunt hī mīlitēs? Ad quem locum eunt? Vidē. Ibi prope nostram domum veniunt.\"\n\nSpectāmus et subitō multōs mīlitēs vidēmus. Multī aliī virī trāns viās et ante aedificia currunt quod hōs mīlitēs vidēre cupiunt. Mīlitēs arma et tēla habent. Galeās, gladiōs habent; scūta, pīla, arcūs, sagittās nōn habent. Patria nostra in bellō nōn pugnat, sed fīnitimī nostrī pugnant et nōs sumus sociī. Cum fīnitimī auxilium rogant necesse est īre. Mīlitēs nostrī īre dēbent quod sunt sociī fīnitimōrum.\n\nDux noster ducī sociōrum cōnsilium dat. Ducem sociōrum monet. Mīlitēs nostrī auxilium fīnitimīs dant quod fīnitimī nōn satis magnās cōpiās habent. Nōs nostrōs mīlitēs tūtōs esse cupimus, sed mīlitēs sociōs nostrōs tūtōs esse cupiunt. Māne hodiē ad sociōs eunt. Multī numquam iterum venient. Multī vītās dabunt, multī morientur.",
+      "english": "'Listen. I hear something. Do you hear something? Many men are running through the roads; many horses are coming. There are also wagons and in the wagons many things are carried. There are also soldiers and in the hands of soldiers are weapons. Who are these soldiers? To what place are they going? Look. They are coming near our house.'\n\nWe look and suddenly we see many soldiers. Many other men run across the roads and in front of the buildings because they want to see these soldiers. The soldiers have weapons and missiles. They have helmets and swords; they do not have shields, javelins, bows, and arrows. Our homeland does not fight in war, but our neighbors are fighting and we are allies. When the neighbors ask for help it is necessary to go. Our soldiers must go because they are allies of the neighbors.\n\nOur leader gives advice to the leader of the allies. He warns the leader of the allies. Our soldiers give help to the neighbors because the neighbors do not have large enough forces. We want our soldiers to be safe, but the soldiers want our allies to be safe. Today in the morning they go to the allies. Many will never come again. Many will give their lives; many will die.",
+      "source_story": "Maxey, Cap. XVII",
+      "notes": "Fīnitimī = neighbors/neighboring peoples. Sociī = allies. Auxilium = help. Necesse est = it is necessary. Dēbent = must/ought. Cōpiae = forces/troops. Arcus = bow.",
+      "vocab_hints": [
+        "fīnitimī = neighbors",
+        "sociī = allies",
+        "auxilium = help",
+        "necesse est = it is necessary",
+        "dēbent = must, ought",
+        "cōpiae = forces, troops",
+        "arcus = bow",
+        "monet = warns",
+        "morientur = will die"
+      ]
+    },
+    {
+      "id": "maxey-pl22",
+      "title": "Cap. XVIII · Vir Caecus",
+      "latin": "Magistra: Quis est ille vir?\nPuer: Ille vir est caecus. Ille vir oculōs habet, sed nūllās rēs videt.\nMagistra: Cūr adest? Cūr hīc est?\nPuer: Ille vir fīlium habet quī prope hunc locum habitat. Vir fīlium vīsitat et nunc fīlium exspectat.\nMagistra: Herī ille caecus vir aderat. Nunc iterum adest.\nPuer: Ita. Tum fīlium exspectābat et nunc iterum fīlium exspectat. Numquam longē sine fīliō it quod est timidus. Ubi cum fīliō ambulat, tūtus est.\nMagistra: Omnēs virī et puerī quoque illī virō auxilium dare dēbent. Sī omnēs auxilium dant, virī caecī sunt laetī neque timent.\nPuer: Ecce! Vidē! Fīlius caecī virī adest. Quam laetus est ille vir!\nMagistra: Ad quem locum eunt vir et fīlius?\nPuer: Necesse est ad aedificium magnum īre quod ibi vir caecus pecūniam accipit.",
+      "english": "Teacher: Who is that man? Boy: That man is blind. That man has eyes, but sees nothing. Teacher: Why is he here? Why is he here? Boy: That man has a son who lives near this place. The man visits his son and now awaits his son. Teacher: Yesterday that blind man was here. Now he is here again. Boy: Yes. Then he was awaiting his son and now he awaits his son again. He never goes far without his son because he is fearful. When he walks with his son, he is safe. Teacher: All men and boys also ought to give that man help. If all give help, blind men are happy and not afraid. Boy: Look! See! The son of the blind man is here. How happy that man is! Teacher: To what place are the man and son going? Boy: It is necessary to go to the large building because there the blind man receives money.",
+      "source_story": "Maxey, Cap. XVIII",
+      "notes": "Caecus = blind. Ille/illa = that (demonstrative). Tūtus = safe. Necesse est + infinitive = it is necessary to. Accipit = receives. Adest = is present/here.",
+      "vocab_hints": [
+        "caecus = blind",
+        "ille/illa = that",
+        "oculī = eyes",
+        "tūtus = safe",
+        "timidus = fearful",
+        "adest = is here/present",
+        "accipit = receives",
+        "sine = without (+ abl.)",
+        "iterum = again"
+      ]
+    },
+    {
+      "id": "maxey-pl23",
+      "title": "Cap. XVIII · Miles Caecus",
+      "latin": "Magistra: Cūr pecūniam accipit?\nPuer: Vir erat mīles et cum sociīs et fīnitimīs prō patriā pugnābat. Prō patriā parātus erat morīrī sī necesse erat. Cōpiae hostium erant magnae sed cōpiae nostrae nōn satis magnae erant. Dux mīlitēs monēbat sed fortēs erant et fortiter pugnābant. Multī vulnerābantur; multī necābantur. Posterō diē aliī mīlitēs illum mīlitem vident, sed numquam posteā ille videt. Hodiē est caecus! \"Putābam mē tūtum,\" inquit. \"Eram paene tūtus. Tum tēlum veniēbat et hic sum.\" Nunc ab illō mīlite ex aedificiō magnō pecūnia accipitur.",
+      "english": "Teacher: Why does he receive money? Boy: The man was a soldier and was fighting for the homeland with allies and neighbors. He was ready to die for the homeland if it was necessary. The forces of the enemy were great but our forces were not large enough. The leader was warning the soldiers but they were brave and fighting bravely. Many were being wounded; many were being killed. The next day other soldiers see that soldier, but he never sees again after that. Today he is blind! 'I thought myself safe,' he says. 'I was almost safe. Then a weapon was coming and here I am.' Now money is received from that large building by that soldier.",
+      "source_story": "Maxey, Cap. XVIII",
+      "notes": "Prō + ablative = for/on behalf of. Hostes = enemies. Vulnerābantur/necābantur = were being wounded/killed (imperfect passive). Posterō diē = the next day. Paene = almost.",
+      "vocab_hints": [
+        "prō + abl. = for, on behalf of",
+        "hostis/hostēs = enemy/enemies",
+        "vulnerātur = is wounded",
+        "necātur = is killed",
+        "posterō diē = the next day",
+        "paene = almost",
+        "fortis/fortēs = brave",
+        "fortiter = bravely"
+      ]
+    },
+    {
+      "id": "maxey-pl24",
+      "title": "Cap. XIX · Ad Flūmen",
+      "latin": "Herī vir caecus mihi fābulam dē bellō in quō prō patriā pugnāvit nārrāvit. Haec est fābula:\n\nHīc sunt castra nostra. Ibi est flūmen. Trāns flūmen sunt castra hostium. Inter castra hostium et castra nostra illud flūmen fluit. Hodiē hostēs in castrīs manent quod herī multī vulnerātī et necātī sunt.\n\nDucēs hostium sunt īrātī et mīlitēs noctū castra nostra capere cupiunt. Circum castra nostra est mūrus altus. Sine hōc mūrō perīculum est magnum. Propter hunc mūrum hostēs castra nostra neque capient neque nostrōs vulnerābunt.\n\nHodiē dux noster adest. Magnās cōpiās postulat. Auxilium postulat accipitque. Mox omnēs rēs erunt parātae quod nocte perīculum erit magnum.\n\nMedia nox est. Hostēs exspectāmus.\n\"Quis oculōs bonōs habet?\" rogat dux.\n\"Ego,\" respondet mīles quī prope stābat.\n\"Ad mūrum ī,\" inquit dux, \"et sī hostēs venientēs vidēs, omnēs mīlitēs monē.\"\n\"Nunc,\" clāmat ille mīles, \"hostēs in flūmine sunt.\"\nTum, \"Pīla aliaque tēla iacite,\" dux iubet.\n\nHostēs cōnsilia esse audīta nōn putābant. Tēla vīdērunt. Posteā ad castra trāns flūmen iērunt.\n\nPosterō diē dux, \"Cūr Mārcus, mīles fortis, abest?\" inquit. \"Herī aderat, sed nunc abest.\"\nTum omnēs mīlitēs ad flūmen properāvērunt. Ecce! Ibi inter mūrum et flūmen erat Mārcus mortuus. Per caput inter oculōs erat gladius hostis. Bene Mārcus prō patriā pugnāverat.",
+      "english": "Yesterday the blind man told me a story about the war in which he fought for the homeland. This is the story:\n\nHere are our camps. There is the river. Across the river are the enemy's camps. That river flows between the enemy's camps and our camps. Today the enemies stay in camp because yesterday many were wounded and killed.\n\nThe enemy leaders are angry and the soldiers want to take our camps at night. Around our camps is a high wall. Without this wall the danger is great. Because of this wall the enemies will neither take our camps nor wound our men.\n\nToday our leader is here. He demands large forces. He demands and receives help. Soon all things will be ready because at night the danger will be great.\n\nIt is midnight. We await the enemies. 'Who has good eyes?' the leader asks. 'I do,' answers a soldier who was standing nearby. 'Go to the wall,' says the leader, 'and if you see the enemies coming, warn all soldiers.' 'Now,' shouts that soldier, 'the enemies are in the river.' Then the leader orders, 'Throw javelins and other weapons.'\n\nThe enemies did not think their plans had been heard. They saw the weapons. Afterwards they went back to camp across the river.\n\nThe next day the leader said, 'Why is Marcus, a brave soldier, absent? Yesterday he was here, but now he is absent.' Then all soldiers hurried to the river. Look! There between the wall and the river was Marcus, dead. Through his head between the eyes was the enemy's sword. Marcus had fought well for the homeland.",
+      "source_story": "Maxey, Cap. XIX",
+      "notes": "Flūmen = river. Mūrus = wall. Inter = between. Propter + acc. = because of. Iubet = orders. Mortuus = dead. Abest = is absent.",
+      "vocab_hints": [
+        "flūmen = river",
+        "mūrus = wall",
+        "inter = between",
+        "propter + acc. = because of",
+        "iubet = orders, commands",
+        "mortuus = dead",
+        "abest = is absent",
+        "clāmat = shouts",
+        "iacite = throw! (pl. command)"
+      ]
+    },
+    {
+      "id": "maxey-pl25",
+      "title": "Cap. XX · Hortus Vāstātus",
+      "latin": "Is quī inter mūrum aedificiumque stat est avunculus meus. Māne in hortō est et flōrēs spectat. Nōn est īrātus, sed maestus. Ubi avunculus circumspectat, pulchrās rosās et aliōs flōrēs nōn videt. Undique flōrēs sunt in ruīnīs. Ōlim flōrēs erant pulchrī et ubi avunculus hortum spectābat omnēs probābat. Nunc omnēs flōrēs vāstātī sunt.\n\nQuis hortum vāstābat? Vēnitne aliquis armātus nocte ubi avunculus aberat? Cūr aliquis illum inimicum nōn audiēbat ubi per hortum vēnit? Hoc nōn intellegō.\n\nQuis est is quī ad hortum ex aedificiō properat? Est vir quī avunculum in hortō iuvat. Sine illō auxiliō avunculus hortum nōn bene cūrat quod hortus est magnus. Vir avunculum salūtat.\n\n\"Salvē,\" inquit.\n\"Salvē,\" respondet avunculus.\n\nTum vir quoque circumspectat. Is quoque undique flōrēs in ruīnīs videt.\n\n\"Herī,\" inquit, \"prīmus diēs hiemis vēnit et omnia oppugnābat. Quamquam flōrēs pulchrī nōn videntur et eōs nōn probāmus, aestāte, tamen, nūllī erunt in ruīnīs. Hiems est inimīca hortōrum. Hiems bene armāta flōrēs flūminaque oppugnat et semper superat. Interdum validior est quam aestās.\"\n\n\"Ita,\" respondet avunculus. \"Aestās, tamen, est mihī grātior quam hiems.\"",
+      "english": "He who stands between the wall and the building is my uncle. In the morning he is in the garden and looks at the flowers. He is not angry, but sad. When the uncle looks around, he does not see beautiful roses and other flowers. Everywhere the flowers are in ruins. Once the flowers were beautiful and when the uncle looked at the garden he approved of all of them. Now all the flowers are destroyed.\n\nWho was destroying the garden? Did someone armed come at night when the uncle was away? Why did no one hear that enemy when he came through the garden? I do not understand this.\n\nWho is he who hurries to the garden from the building? He is a man who helps the uncle in the garden. Without that help the uncle does not tend the garden well because the garden is large. The man greets the uncle.\n\n'Hello,' he says. 'Hello,' the uncle answers.\n\nThen the man also looks around. He too sees flowers in ruins everywhere.\n\n'Yesterday,' he says, 'the first day of winter came and attacked everything. Although the flowers do not appear beautiful and we do not approve of them, in summer, however, none will be in ruins. Winter is the enemy of gardens. Well-armed winter attacks flowers and rivers and always conquers. Sometimes it is stronger than summer.'\n\n'Yes,' answers the uncle. 'Summer, however, is more pleasing to me than winter.'",
+      "source_story": "Maxey, Cap. XX",
+      "notes": "Avunculus = uncle. Undique = everywhere. Ōlim = once/formerly. Vāstātus = destroyed/laid waste. Quamquam = although. Tamen = however. Grātior = more pleasing (comparative).",
+      "vocab_hints": [
+        "avunculus = uncle",
+        "undique = everywhere",
+        "ōlim = once, formerly",
+        "vāstātus = destroyed",
+        "quamquam = although",
+        "tamen = however",
+        "grātior = more pleasing",
+        "validior = stronger",
+        "oppugnat = attacks",
+        "salūtat = greets"
+      ]
+    },
+    {
+      "id": "maxey-r5",
+      "title": "Cap. XXI · Mīlitēs Rōmānī",
+      "latin": "Nōs sumus mīlitēs Rōmānī. Sumus mīlitēs populī Rōmānī. Illī mīlitēs quōs in illīs castrīs vidētis sunt barbarī. Mox barbarī castra nostra oppugnābunt. Sī nōn hodiē sed crās castra nostra oppugnābunt, nōs tūtī erimus quod sociī nōs iuvābunt et crās sociī aderunt. Sī hodiē oppugnābunt, quamquam multōs mīlitēs nōn habēmus, tamen fortiter et ācriter pugnābimus et barbarī castra nōn expugnābunt. Quamquam ea oppugnābunt, tamen castra nōn expugnābuntur. Castra expugnāre et dēlēre cupiunt sed neque ea expugnābuntur neque dēlēbuntur. Nōs nōn superābimur. Nōs fortēs mīlitēs probābimus.\n\nMīles putat: \"Sī in castrīs manēbō, mox hostēs aderunt. Multī vulnerābuntur; multī necābuntur. Itaque manēre nōn cupiō. Domum īre cupiō. Rūrī habitō. Rūs īre cupiō. Īre nōn dēbeō. Dux est fortis vir. Mīlitēs monet et mē quoque monet. Sī domum ībō, numquam iterum mīles erō. Prō patriā numquam pugnābō, neque posteā laudābor. Quam maestus sum!\"\n\nMīles est in vinculīs. Mīles putat: \"Ā castrīs īre nōn debēbam. Ōlim putābam mē īre cupere. Nunc nōn sum timidus, hostēs nōn tīmeō, nūllam rem timeō. Sī dux mē accipiet, quam laetus erō! Dā mihi tēla et arma. Nūllus audit. Sōlus sum. Mē miserum!\"",
+      "english": "We are Roman soldiers. We are soldiers of the Roman people. Those soldiers whom you see in those camps are barbarians. Soon the barbarians will attack our camps. If they attack our camps not today but tomorrow, we will be safe because allies will help us and tomorrow the allies will be present. If they attack today, although we do not have many soldiers, we will nevertheless fight bravely and fiercely and the barbarians will not storm the camp. Although they will attack it, the camp will not be stormed. They want to storm and destroy the camp but neither will it be stormed nor will it be destroyed. We will not be conquered. We will prove ourselves brave soldiers.\n\nA soldier thinks: 'If I remain in camp, soon the enemies will be here. Many will be wounded; many will be killed. And so I do not want to remain. I want to go home. I live in the country. I want to go to the country. I ought not to go. The leader is a brave man. He warns the soldiers and warns me too. If I go home, I will never be a soldier again. I will never fight for the homeland, and I will not be praised afterward. How sad I am!'\n\nThe soldier is in chains. The soldier thinks: 'I ought not to have left camp. Once I thought I wanted to go. Now I am not afraid, I do not fear enemies, I fear nothing. If the leader receives me, how happy I will be! Give me weapons and arms. No one listens. I am alone. Wretched me!'",
+      "source_story": "Maxey, Cap. XXI",
+      "notes": "Barbarus = barbarian. Expugnāre = to storm/capture (by assault). Dēlēre = to destroy. Superābimur = we will be conquered (future passive). Vincula = chains. Rūs/rūrī = countryside/in the country. Ācriter = fiercely.",
+      "vocab_hints": [
+        "barbarus = barbarian",
+        "expugnāre = to storm, capture",
+        "dēlēre = to destroy",
+        "vinculum/vincula = chain/chains",
+        "rūs = countryside",
+        "rūrī = in the country",
+        "ācriter = fiercely",
+        "putat = thinks",
+        "itaque = and so, therefore"
+      ]
+    },
+    {
+      "id": "maxey-lc1",
+      "title": "Cap. XXII · Vēnātiō – Pars I",
+      "latin": "Ōlim vir et servus per silvam errāvērunt. Servus erat magnus et quod tēla portāvit virum bene iūvit. Laetī erant quod rūs erat grātum eīs et bēstiās ferās capere cupīvērunt. Herī hī duo virī bēstiās ferās esse in silvā audīvērunt. Diū in silvā fuerant et per tōtam silvam errāverant, nam nūllās bēstiās vīderant, et domum sine bēstiīs ferīs īre nōn cupīvērunt.\n\nMāne servus, cuius nōmen erat Carolus, \"Sī domum duās bēstiās magnās portābimus,\" inquit, \"magna erit cēna et amīcōs tuōs invītābimus.\"\n\n\"Ita,\" respondit vir, cuius nōmen erat Mārcus, \"facile erit bēstiās oppugnāre et superāre, nam multās esse in silvā scīmus.\"",
+      "english": "Once a man and his slave were wandering through the forest. The slave was large and, because he was carrying weapons, helped the man well. They were happy because the countryside was pleasing to them and they wanted to catch wild beasts. Yesterday these two men had heard that there were wild beasts in the forest. They had been in the forest for a long time and had wandered through the whole forest, for they had seen no beasts, and they did not want to go home without wild beasts.\n\nIn the morning the slave, whose name was Carolus, said: \"If we carry home two large beasts, the dinner will be great and we will invite your friends.\"\n\n\"Yes,\" answered the man, whose name was Marcus, \"it will be easy to attack and overcome the beasts, for we know that there are many in the forest.\"",
+      "source_story": "Maxey, Cap. XXII",
+      "notes": "Perfect tense dominates: errāvērunt, fuerant, errāverant, vīderant. Note the pluperfect (fuerant, errāverant, vīderant) showing action completed before another past action. Cuius nōmen erat = 'whose name was' — genitive of possession.",
+      "vocab_hints": [
+        "errō / errāre = to wander",
+        "bēstia fera = wild beast",
+        "tēla = weapons (pl.)",
+        "invītō = to invite",
+        "cuius = whose (genitive of quī)"
+      ]
+    },
+    {
+      "id": "maxey-lc2",
+      "title": "Cap. XXII · Equī, Nōn Bēstiae – Pars II",
+      "latin": "Sed ubi erat nox et paene tempus domum īre, eī, tamen, sine bēstiīs manēbant. Quamquam lūna stellaeque nunc vidēbantur, nōn erat facile, tamen, viam vidēre. Subitō duo oculī, mox aliī prope virōs videntur. Virī timent. Celeriter bēstiae (nam ita virī putant) ad virōs sē movent. Servus sagittās capit sed timidus est et bēstiae ferae nōn vulnerantur. Tum Mārcus, \"Ego,\" inquit, \"vītās nostrās servābō. Celeriter curram et bēstiae post mē venient. Subitō prope flūmen stābō et bēstiae in flūmen current et omnēs morientur. Tūtī erimus.\"\n\n\"Hae bēstiae,\" inquit Carolus, \"vītās nostrās dēlēre cupiunt. Interdum tōtum oppidum expugnant et incolās superant. Bēstiae sunt perīculōsiōrēs quam barbarī.\"\n\nProxius bēstiae ferae veniēbant.\n\n\"Ecce!\" inquit Mārcus. \"Bēstiae ferae nōn sunt. Eī sunt equī nostrī quī ē stabulō cucurrērunt. Iānua est aperta. Itaque hīc sunt.\"\n\nTum Mārcus ūnum equum cēpit. Carolus ūnum equum cēpit et ubi duo virī eōs incitāvērunt, domum in equīs portātī sunt. Cēterī equī post eōs properāvērunt.",
+      "english": "But when it was night and almost time to go home, they remained without beasts, however. Although the moon and stars could now be seen, it was not easy to see the road. Suddenly two eyes, then others, were seen near the men. The men are afraid. Quickly the beasts (for so the men think) move toward the men. The slave takes arrows but is timid and the wild beasts are not wounded. Then Marcus said: \"I will save our lives. I will run quickly and the beasts will come after me. Suddenly I will stand near the river and the beasts will run into the river and they will all die. We will be safe.\"\n\n\"These beasts,\" said Carolus, \"want to destroy our lives. Sometimes they storm whole towns and overcome the inhabitants. Beasts are more dangerous than barbarians.\"\n\nThe wild beasts were coming nearer.\n\n\"Look!\" said Marcus. \"They are not wild beasts. They are our horses which ran out of the stable. The door is open. That is why they are here.\"\n\nThen Marcus took one horse. Carolus took one horse and when the two men urged them on, they were carried home on the horses. The other horses hurried after them.",
+      "source_story": "Maxey, Cap. XXII",
+      "notes": "Passive perfect: vulnerantur (present passive), portātī sunt (perfect passive). Note comparative: perīculōsiōrēs quam = 'more dangerous than.' Future tense sequence: curram, venient, stābō, current, morientur.",
+      "vocab_hints": [
+        "sagittae = arrows",
+        "timidus = fearful, timid",
+        "vulnerō = to wound",
+        "stābulum = stable",
+        "incitō = to urge on, spur",
+        "perīculōsus / -ior = dangerous / more dangerous"
+      ]
+    },
+    {
+      "id": "maxey-lc3",
+      "title": "Cap. XXIII · Servus Perfidus",
+      "latin": "Ōlim dominus bonus malum servum habēbat. In multīs locīs dominus servum suum probābat. Prīmum in tēctō suō labōrem dabat, sed servus tēctum eius nōn bene cūrābat neque erat benignus puerīs et puellīs eius. Tum in hortō eius labōrābat sed flōrēs eius nōn amābat neque eōs cūrābat. Tum rūrī in agrīs eius labōrābat sed ibi quoque nōn bene labōrābat.\n\nMox dominus eius eum ad silvam mīsit. Ā silvīs ad tēctum necesse erat lignum portāre. Servus malus ad silvam īvit sed lignum nōn portāvit. Quamquam dominus imperat, servus nōn pāret. Per tōtum tempus sēcum putat. Cēterōs servōs nōn incitat sed mox sōlus sē in fugam dat. Celeriter currit sed semper timet. Per diēs servus perfidus in agrīs dormit; per noctēs iterum currit.\n\nMox tamen dominus cum servīs armātīs eum reperit et servus perfidus statim domum in vinculīs it. Ibi dominus eius hoc dīcit: \"Tū in tēctō nōn bene labōrās, in hortō nōn bene labōrās, in agrīs nōn bene labōrās. Ad silvam igitur tē mittō. Ibi quoque nōn bene labōrās sed in fugam tē dās. Imperō; nōn pārēs. Quid cupis? Quid in animō habēs?\"\n\n\"Vōs omnēs necābō,\" servus perfidus inquit. \"Rēs omnēs vestrās dēlēbō.\"\n\nDominus igitur multum movētur nam servum saevum esse scit. Statim imperat, \"Hunc servum in vincula conicite, servī meī. In locīs obscūrīs post mūrōs validōs semper eum tenēte.\"",
+      "english": "Once a good master had a bad slave. In many places the master tested his slave. First he gave him work in his house, but the slave did not take good care of his house and was not kind to his boys and girls. Then he worked in his garden but did not love his flowers and did not care for them. Then he worked in the country in his fields but there too he did not work well.\n\nSoon the master sent him to the forest. It was necessary to carry wood from the forests to the house. The bad slave went to the forest but did not carry wood. Although the master commands, the slave does not obey. He thinks to himself all the time. He does not urge on the other slaves but soon on his own he takes to flight. He runs quickly but is always afraid. Through the days the treacherous slave sleeps in the fields; through the nights he runs again.\n\nSoon, however, the master finds him with armed slaves and the treacherous slave goes home immediately in chains. There the master says this to him: \"You do not work well in the house, in the garden, in the fields. Therefore I send you to the forest. There too you do not work well but take to flight. I command; you do not obey. What do you want? What do you have in mind?\"\n\n\"I will kill you all,\" the treacherous slave said. \"I will destroy all your things.\"\n\nThe master therefore is much moved for he knows the slave is fierce. He commands immediately: \"Throw this slave in chains, my slaves. Keep him always in dark places behind strong walls.\"",
+      "source_story": "Maxey, Cap. XXIII",
+      "notes": "Note mixed tenses — the slave's flight narrated in present (historical present) for vividness. sē in fugam dare = idiom 'to take to flight.' in vinculīs = 'in chains' (ablative of means).",
+      "vocab_hints": [
+        "probō = to test, prove",
+        "hortus = garden",
+        "lignum = wood, firewood",
+        "vincula = chains, bonds",
+        "perfidus = treacherous, faithless",
+        "coniciō = to throw, hurl"
+      ]
+    },
+    {
+      "id": "maxey-lc4",
+      "title": "Cap. XXIV · Ānserēs Rōmam Servant",
+      "latin": "Virī quī Rōmae habitābant Rōmānī vocābantur. Virī quī in Germāniā, in Galliā, in Britanniā habitābant barbarī vocābantur. Quī sunt eī barbarī? Eī barbarī sunt Gallī quī Rōmam sē movent. Rōmānōs nōn amant nam līberī esse cupiunt, sed Rōmānī dominī esse cupiunt et illōs servōs facere cupiunt.\n\nĀnserēs cōnsilium cēpērunt. Dux ānserum cēterōs ānserēs convocāvit et dīxit: \"Rēx ānserum sum. Celeriter venīte et audīte. Nōn est tempus morae. Vōbīs rem malam dīcō. Hostēs ad urbem nostram sē movent. Nox est. Nocte oppugnābunt. Ā tergō urbem oppugnābunt. Tōtam urbem dēlēbunt. Neque virōs līberōs neque servōs servābunt, neque hominēs neque bēstiās servābunt. Omnēs necābunt. Tōtōs agrōs vastābunt. Nunc virī Rōmānī sunt dēfessī et dormiunt. Neque vir līber neque servus neque bēstia hostēs videt. Nōs sōlī hanc rem scīmus. Tempus est virōs incitāre. Vōs ānserēs statim clāmōrem facite et virōs incitāte. Rōmam servāte.\"\n\nExpugnāvēruntne barbarī Rōmam? Minimē, nam ānserēs Rōmam servāvērunt.",
+      "english": "The men who lived in Rome were called Romans. The men who lived in Germany, in Gaul, in Britain were called barbarians. Who are those barbarians? Those barbarians are Gauls who are moving toward Rome. They do not love the Romans for they want to be free, but the Romans want to be masters and want to make them slaves.\n\nThe geese formed a plan. The leader of the geese called together the other geese and said: \"I am king of the geese. Come quickly and listen. There is no time for delay. I tell you a bad thing. The enemy is moving toward our city. It is night. They will attack by night. They will attack the city from the rear. They will destroy the whole city. They will save neither free men nor slaves, neither men nor animals. They will kill all. They will lay waste all the fields. Now the Roman men are weary and are sleeping. Neither free man nor slave nor animal sees the enemy. We alone know this matter. It is time to rouse the men. You geese, make a clamor immediately and rouse the men. Save Rome.\"\n\nDid the barbarians storm Rome? Not at all, for the geese saved Rome.",
+      "source_story": "Maxey, Cap. XXIV",
+      "notes": "Historical reference to the Gallic invasion of Rome (390 BC). Note future tense in speech: oppugnābunt, dēlēbunt, necābunt, vastābunt. Minimē = 'Not at all' (strong negative answer).",
+      "vocab_hints": [
+        "ānser / ānserēs = goose / geese",
+        "mora = delay",
+        "ā tergō = from the rear",
+        "vastō = to lay waste, devastate",
+        "clāmōrem faciō = to raise a shout",
+        "minimē = not at all, by no means"
+      ]
+    },
+    {
+      "id": "maxey-lc5",
+      "title": "Cap. XXV · Vīta Ad Flūmen – Pars I",
+      "latin": "In silvīs ad quās aestāte īmus est flūmen parvum. Hoc flūmen in flūmen magnum fluit. In flūmine magnō sunt multae et magnae nāvēs quae hominēs et rēs portant. Semper nāve ad urbem quae est prope casam nostram īmus. Haec nāvis est longa et angusta et alba. Nāvem amō quod est tam pulchra et tam celeriter it.\n\nŌlim ego et pater ex urbe ad casam per flūmen parvum in nāviculā īvimus. Id ego amāvī, sed frāter meus nōn amāvit quod eum cum mātre et sorōribus īre necesse erat. Cum in silvā sumus, nōs omnēs in aquam sine morā īmus. Per tōtum diem in flūmine sumus et magnī clāmōrēs ibi audīrī possunt.\n\nIn flūmine est saxum magnum, paene īnsula. Ad hoc saxum ego per aquam ambulāre possum. Ubi prope rīpam sum, tōtum corpus meum vidēre potes. Mox tergum, nōn corpus vidēs. Ubi prope saxum sum, caput meum sōlum vidērī potest. Aqua igitur nōn est alta, sed in flūmine natāre possum.",
+      "english": "In the forests to which we go in summer there is a small river. This river flows into a large river. In the large river there are many large ships which carry people and goods. We always go by boat to the city which is near our cottage. This ship is long and narrow and white. I love the ship because it is so beautiful and goes so quickly.\n\nOnce my father and I went from the city to the cottage through the small river in a small boat. I loved that, but my brother did not love it because it was necessary for him to go with his mother and sisters. When we are in the forest, we all go into the water without delay. Through the whole day we are in the river and loud shouts can be heard there.\n\nIn the river there is a large rock, almost an island. I can walk through the water to this rock. When I am near the bank, you can see my whole body. Soon you see my back, not my body. When I am near the rock, only my head can be seen. The water therefore is not deep, but I can swim in the river.",
+      "source_story": "Maxey, Cap. XXV",
+      "notes": "First-person narrator. fluō / fluit = 'to flow.' Passive infinitive: audīrī possunt = 'can be heard.' paene = 'almost, nearly.'",
+      "vocab_hints": [
+        "fluō / fluit = to flow",
+        "nāvicula = small boat",
+        "rīpa = riverbank",
+        "natō = to swim",
+        "tergum = back (of the body)",
+        "paene = almost, nearly"
+      ]
+    },
+    {
+      "id": "maxey-lc-r1",
+      "title": "Cap. XXV · Nāvicula Ānser – Pars II",
+      "latin": "Interdum per tōtum diem aut natō aut in saxō sedeō aut in rīpā lēgō. Nāviculam quoque habeō. Nōmen nāviculae est \"Ānser.\" Sorōrēs meae et frāter meus quoque natant. Sorōrēs sunt puellae magnae et sē servāre possunt, sed frāter meus est parvus. Bene natat. Paucī puerī tam bene natant, sed sī etiam prope rīpam ambulat, caput nōn vidēs.\n\nFrāter autem nōn est validus, itaque, sī est in flūmine, numquam eum relinquō. Sī nōn natāre cupiō, in saxō sedeō et puer in aquā natat aut tēcta in rīpā aedificat. Hanc vītam amō quod sum tam līber. \"Ego sum rēx hominum,\" interdum inquam. \"Haec vīta sōla est bona.\"\n\nHeu! Ubi hiems venit miser sum quod flūmen relinquō et nōn semper manēre possum. Semper hunc locum memoriā teneō.",
+      "english": "Sometimes through the whole day I either swim or sit on the rock or read on the bank. I also have a small boat. The name of the little boat is \"Goose.\" My sisters and my brother also swim. The sisters are big girls and can look after themselves, but my brother is small. He swims well. Few boys swim so well, but even if he walks near the bank, you cannot see his head.\n\nMy brother, however, is not strong; therefore, if he is in the river, I never leave him. If I do not want to swim, I sit on the rock and the boy swims in the water or builds houses on the bank. I love this life because I am so free. \"I am king of men,\" I sometimes say. \"This life alone is good.\"\n\nAlas! When winter comes I am miserable because I leave the river and cannot always stay. I always hold this place in my memory.",
+      "source_story": "Maxey, Cap. XXV",
+      "notes": "Note aut … aut = 'either … or.' memoriā teneō = 'I hold in memory.' Hiems = winter. The boat named Ānser connects back to the geese of Cap. XXIV.",
+      "vocab_hints": [
+        "aut … aut = either … or",
+        "relinquō = to leave, abandon",
+        "memoriā teneō = to hold in memory, remember",
+        "hiems = winter",
+        "miser = miserable, wretched"
+      ]
+    },
+    {
+      "id": "maxey-lc6",
+      "title": "Cap. XXVI · Sōlus In Nāviculā – Pars I",
+      "latin": "Herī sōlus in nāviculā meā in flūmine eram. Māne ubi lūx nōn iam erat obscūra domum relīquī et ad rīpam flūminis properāvī. Hīc nāviculam parvam angustamque vīdī. Diēs erat pulcher. Nūllae nūbēs erant in caelō. Avēs laetae ē somnō excitātae in arboribus sedēbant. Undique erant collēs. In summīs collibus erant agricolae. Iam labōrābant.\n\nDiū silēbam. Dē nātūrā locī putābam. Collēs, arborēs, caelum quoque silēbant, sed avēs nōn silēbant. In arboribus avēs audiēbam. Itaque laetus eram. Aliae tēcta sua aedificābant, aliae cibum dēsīderābant, aliae ubi appropinquāvī per caelum properābant.\n\nInter collēs, per silvās in nāviculā īvī. Posteā corpus meum erat dēfessum et cibum cupīvī. Prope rīpam saxum magnum vīdī. Ibi sēdī et diū quiētem cēpī. Tum in flūmine natāvī. Ubi natāre nōn iam cupīvī, in nāviculā meā sēdī.\n\nSubitō post lignum tergum hominis vīdī. Sine morā rīpae appropinquāvī et ibi agricolam vīdī. Dēfessus erat et quiētem capere cupīvit.\n\n\"Salvē,\" dīxī.\n\n\"Salvē,\" respondit agricola.\n\n\"Cuius ager est hic?\" rogāvī.\n\n\"Meus ager est,\" respondit vir.",
+      "english": "Yesterday I was alone in my small boat on the river. In the morning when the light was no longer dark I left home and hurried to the bank of the river. Here I saw the small narrow boat. The day was beautiful. There were no clouds in the sky. Happy birds, awakened from sleep, sat in the trees. Everywhere there were hills. On the tops of the hills were farmers. They were already working.\n\nFor a long time I was silent. I was thinking about the nature of the place. The hills, the trees, the sky too were silent, but the birds were not silent. I heard birds in the trees. So I was happy. Some were building their nests, others were seeking food, others hurried through the sky as I drew near.\n\nAmong the hills, through the forests I went in my boat. Afterward my body was weary and I wanted food. Near the bank I saw a large rock. There I sat and rested for a long time. Then I swam in the river. When I no longer wanted to swim, I sat in my little boat.\n\nSuddenly beyond a piece of wood I saw the back of a man. Without delay I drew near to the bank and there I saw a farmer. He was weary and wanted to rest.\n\n\"Hello,\" I said.\n\n\"Hello,\" answered the farmer.\n\n\"Whose field is this?\" I asked.\n\n\"This field is mine,\" answered the man.",
+      "source_story": "Maxey, Cap. XXVI",
+      "notes": "Nūbēs = clouds (3rd declension). aliae … aliae … aliae = 'some … others … others.' quiētem capiō = idiomatic 'to rest.'",
+      "vocab_hints": [
+        "nūbēs = clouds (3rd decl.)",
+        "silēō = to be silent",
+        "collēs = hills (pl. of collis, 3rd decl.)",
+        "aliae … aliae = some … others",
+        "quiētem capiō = to rest"
+      ]
+    },
+    {
+      "id": "maxey-lc7",
+      "title": "Cap. XXVI · Fābula Agricolae – Pars II",
+      "latin": "Tum dē agrīs, dē nātūrā eius locī, dē collibus cārīs suīs nārrāvit. Haec erat eius fābula:\n\n\"Ubi parvus puer eram, pater meus māterque in carrō per agrōs ībant. Illīs temporibus nōn erat facile trāns terram, Americam, īre quod multa erant perīcula. Equī erant tardī et saepe necesse erat diū in ūnō locō manēre, ubi aut virī dēfessī aut fēminae aegrae erant. Interdum paucōs diēs nūllum cibum habēbant. Sī flūmina erant magna, necesse erat diū in rīpā manēre. Tum virī nāvēs aedificābant aut sī nāvēs aedificāre nōn poterant, equōs cum carrīs per flūmen dūcēbant.\"\n\n\"Ōlim barbarī appropinquāvērunt. Māter paterque perīculum esse magnum sciēbant et diū post collem, inter arborēs manēbant. Diū silēbant et sine cibō manēbant quod barbarī per noctem in castrīs prope collem manēbant. Māne, prīmā lūce, pater et māter ā collibus properāvērunt.\"\n\nCum hanc fābulam audieram, hoc dīxī: \"Pater tuus est exemplum virī fortis. Hodiē nōn sunt tam multa exempla virōrum fortium.\"\n\n\"Ita,\" respondit vir. \"Etiam nunc in Americā sunt multī et fortēs virī. Semper erunt.\"",
+      "english": "Then he told about the fields, the nature of his place, his dear hills. This was his story:\n\n\"When I was a small boy, my father and mother were going across the fields in a wagon. In those times it was not easy to travel across the land, America, because there were many dangers. The horses were slow and often it was necessary to stay a long time in one place, where either the men were weary or the women were sick. Sometimes for a few days they had no food. If the rivers were large, it was necessary to stay for a long time on the bank. Then the men built boats, or if they could not build boats, they led the horses with wagons through the river.\"\n\n\"Once barbarians drew near. The mother and father knew that the danger was great and they stayed for a long time behind a hill, among the trees. They were silent for a long time and stayed without food because the barbarians remained through the night in a camp near the hill. In the morning, at first light, the father and mother hurried away from the hills.\"\n\nWhen I had heard this story, I said: \"Your father is an example of a brave man. Today there are not so many examples of brave men.\"\n\n\"Yes,\" answered the man. \"Even now in America there are many brave men. There always will be.\"",
+      "source_story": "Maxey, Cap. XXVI",
+      "notes": "Cum + pluperfect (cum hanc fābulam audieram) = 'when I had heard.' Exemplum virī fortis = 'an example of a brave man' — genitive of description.",
+      "vocab_hints": [
+        "carrus = wagon, cart",
+        "tardus = slow",
+        "prīmā lūce = at first light, at dawn",
+        "exemplum = example",
+        "fortis, forte = brave, strong"
+      ]
+    },
+    {
+      "id": "maxey-lc8",
+      "title": "Cap. XXVII · In Summō Saxō – Pars I",
+      "latin": "Herī in summō saxō stetī et terram undique spectāvī. Caelum erat clārum pulchrumque. Nūllae nūbēs erant. Ubīque collēs arborēsque vīdī. Avēs erant laetae. Ubīque signa laetitiae vidēbantur. Flūmen erat prope et paucās nāviculās vīdī. Subitō figūrās duōrum virōrum vīdī. Virī cibum tēlaque portābant. Splendida erant tēla. Virī in saxō sedēbant sed mē hīc esse nōn sentiēbant. Ego, igitur, post arborem mē cēlāvī et audīvī. Diū silēbam.\n\nVir altior hoc dīxit: \"Ōlim in hōc saxō erat proelium magnum et multī barbarī moriēbantur. Per tōtam terram hoc proelium est nōtum.\"\n\n\"Cūr barbarī hostēs nōn superāvērunt? Habēbantne nūlla tēla?\" rogāvit amīcus eius. \"Cūr tēla nōn rapuērunt et hostēs oppugnāvērunt?\"",
+      "english": "Yesterday I stood on the top of the rock and looked at the land on all sides. The sky was clear and beautiful. There were no clouds. I saw hills and trees everywhere. The birds were happy. Everywhere signs of joy were visible. The river was nearby and I saw a few small boats. Suddenly I saw the shapes of two men. The men were carrying food and weapons. The weapons were splendid. The men were sitting on the rock but they did not notice that I was here. Therefore I hid myself behind a tree and listened. I was silent for a long time.\n\nThe taller man said this: \"Once on this rock there was a great battle and many barbarians were dying. Through the whole land this battle is well known.\"\n\n\"Why did the barbarians not overcome the enemy? Did they have no weapons?\" asked his companion. \"Why didn't they grab weapons and attack the enemy?\"",
+      "source_story": "Maxey, Cap. XXVII",
+      "notes": "signa laetitiae = 'signs of joy' — genitive. Vir altior = 'the taller man' (comparative used as noun). mē cēlāvī = reflexive 'I hid myself.'",
+      "vocab_hints": [
+        "figūra = shape, figure",
+        "splendidus = splendid, shining",
+        "sentiō = to perceive, feel, notice",
+        "cēlō / mē cēlō = to hide / to hide oneself",
+        "altior = taller (comparative of altus)"
+      ]
+    },
+    {
+      "id": "maxey-lc9",
+      "title": "Cap. XXVII · Proelium In Saxō – Pars II",
+      "latin": "\"Hostēs circum tōtum saxum mittēbantur,\" inquit vir altior, \"et barbarī ā saxō ad tēcta sua īre nōn poterant. Multōs diēs in summō saxō barbarī sine cibō manēbant. Iam multī erant aegrī. Mox undique erant corpora mortua. Posteā omnēs barbarī superātī sunt. Sīc nōmen huius locī nōtum erat. Hoc proelium est exemplum multōrum et dūrōrum proeliōrum quae inter barbarōs et Americānōs facta.\"\n\nNunc, excitātus, mē nōn iam cēlāvī, sed virīs appropinquāvī. \"Tōtam fābulam,\" inquam, \"audīvī et est mihi grāta. Aliās nārrā.\"\n\nVir altior ita respondit: \"Lūx est obscūra et tempus est domum īre.\" Tum vir et amīcus eius tēla splendida capiēbant et dē summō saxō properābant.\n\nDiū figūrās eōrum spectābam. Diū ibi manēbam. Nunc hīc erat nūllum proelium. Omnēs rēs silēbant. Laetitiam sentiēbam, sed miser quoque eram. Etiam nunc fābulam dē nātūrā huius proelī in animō meō teneō.",
+      "english": "\"The enemy was being sent around the whole rock,\" said the taller man, \"and the barbarians could not go from the rock to their homes. For many days the barbarians remained on top of the rock without food. Already many were sick. Soon dead bodies were everywhere. Afterward all the barbarians were overcome. Thus the name of this place was well known. This battle is an example of many hard battles which were fought between barbarians and Americans.\"\n\nNow, excited, I no longer hid myself, but I drew near to the men. \"I have heard the whole story,\" I said, \"and it is pleasing to me. Tell other stories.\"\n\nThe taller man answered thus: \"The light is dim and it is time to go home.\" Then the man and his companion were taking their splendid weapons and hurrying down from the top of the rock.\n\nFor a long time I watched their shapes. For a long time I stayed there. Now there was no battle here. All things were silent. I felt happiness, but I was sad too. Even now I hold the story of the nature of this battle in my mind.",
+      "source_story": "Maxey, Cap. XXVII",
+      "notes": "Passive imperfect: mittēbantur = 'were being sent.' corpus mortuum = 'dead body.' fābulam in animō teneō = 'I hold the story in my mind.'",
+      "vocab_hints": [
+        "corpus mortuum = dead body",
+        "excitātus = excited, aroused (participle)",
+        "mittēbantur = were being sent (imperfect passive)",
+        "animō teneō = to hold in mind, remember"
+      ]
+    },
+    {
+      "id": "maxey-lc10",
+      "title": "Cap. XXVIII · Cursus Nāvigiōrum",
+      "latin": "Hic est vir cuius fāma nōn cēlātur. Cīvis oppidī nostrī est. Ubīque nōtus est. Ā multīs cīvibus laudātur. Nāvigium pulchrum quod nunc in portū est habet. Nāvigium nōn est angustum sed lātum et longum. In summō corpore est figūra avīs albae. Prope figūram Avis Alba scrīptum est. Hoc est īnsigne nāvigī. Sīc nōtum est inter alia nāvigia.\n\nPrīmā lūce, hodiē, multī cīvēs ad portum vēnērunt. Caelum est clārum. Ubīque sunt nāvigia splendida. Hūc illūc nautae currunt et omnia parant. Prīmō signum datur et omnia nāvigia portum relinquunt; deinde per aquam celeriter eunt. Nunc nāvigium cīvis nostrī est secundum. Nautae, tamen, nōn sunt ignāvī. Nunc alia nāvigia superāre cōnstituunt. Nāvigium cīvis nostrī celerius it.\n\nIn summā nāvī cīvis stat et alia nāvigia spectat. Nautīs celeriōrem viam mōnstrat et sīc nautīs imperat: \"Heu! Etiam nunc aliud nāvigium ante nōs it. Properātē, nautae!\"\n\nEcce! Prīmum nāvigium tardius it. Saxum nōn videt et nunc īre nōn potest. Tandem Avis Alba est prīma. Cīvēs quī prope portum stant inter sē hās rēs dīcunt: \"Cīvis noster praemium accipit. Mox ad aliās gentēs ībit et alia praemia accipiet. Aliae gentēs cīvem nostrum laudābunt.\"",
+      "english": "Here is a man whose fame is not hidden. He is a citizen of our town. He is known everywhere. He is praised by many citizens. He has a beautiful boat which is now in the harbor. The boat is not narrow but wide and long. On the top of the body there is a figure of a white bird. Near the figure White Bird is written. This is the emblem of the boat. Thus it is known among the other boats.\n\nAt first light today many citizens came to the harbor. The sky is clear. Everywhere there are splendid boats. This way and that way sailors run and prepare everything. First a signal is given and all the boats leave the harbor; then they go quickly through the water. Now the citizen's boat is second. The sailors, however, are not lazy. Now they resolve to overcome the other boats. The citizen's boat goes more quickly.\n\nOn top of the boat the citizen stands and watches the other boats. He shows the sailors a faster route and commands the sailors: \"Hey! Even now another boat goes before us. Hurry, sailors!\"\n\nLook! The first boat goes more slowly. It does not see the rock and now it cannot go. At last White Bird is first. The citizens who stand near the harbor say these things among themselves: \"Our citizen receives the prize. Soon he will go to other nations and will receive other prizes. Other nations will praise our citizen.\"",
+      "source_story": "Maxey, Cap. XXVIII",
+      "notes": "Present passive throughout: cēlātur, laudātur, datur, excitantur. Hūc illūc = 'here and there.' secundus = 'second.' īnsigne = emblem, insignia.",
+      "vocab_hints": [
+        "nāvigium = ship, vessel (larger than nāvicula)",
+        "portus = harbor, port",
+        "īnsigne = emblem, insignia",
+        "nauta = sailor",
+        "praemium = prize, reward",
+        "hūc illūc = here and there"
+      ]
+    },
+    {
+      "id": "maxey-lc-r2",
+      "title": "Cap. XXVIII · Urbs Mea",
+      "latin": "Ōlim locus ubi urbs mea stat erat silva. Bēstiae et barbarī errābant per silvās et trāns flūmina. Tum virī Gallicī hūc vēnērunt. Signa pulchra portābant; splendida īnsignia galeās et scūta ōrnābant. Barbarī nōn erant ignāvī sed virī Gallicī novīs armīs armātī erant. Erant multa proelia, tamen. Diū pugnātum est. Tandem barbarī castra virōrum oppugnāvērunt. Cōpia cibī nōn erat satis magna et virī perterritī erant. Saepe colloquia habēbant et tandem cōnstituērunt barbarōs oppugnāre. Hoc fēcērunt et sīc in fugam barbarōs dedērunt. Virī Gallicī tamen nōn mānsērunt. Castra mōvērunt et ad flūmen magnum īvērunt.\n\nDeinde virī Britannicī vēnērunt et aedificāvērunt castra quae mānsērunt. Prīmō erat oppidum parvum. In portū tamen erant multa nāvigia et multī hīc labōrābant. Multī virī ad hōc oppidum īvērunt et mox erat urbs. Nunc est urbs magna et etiam nunc virī hūc veniunt et manent.\n\nHī virī quī vēnērunt erant validī et multa intellegēbant. Viās longās et lātās fēcērunt. Illī virī tēcta magna et pulchra aedificāvērunt. Cīvēs bonōs tamen habēmus et tandem hī cīvēs bonī excitābuntur et nōs illam gentem malam ex urbe nostrā magnā cum laetitiā mittēmus.",
+      "english": "Once the place where my city stands was a forest. Wild animals and barbarians wandered through the forests and across rivers. Then French men came here. They carried beautiful standards; splendid emblems adorned helmets and shields. The barbarians were not lazy but the French men were armed with new weapons. There were many battles, however. The fighting went on for a long time. At last the barbarians attacked the camp of the men. The supply of food was not large enough and the men were terrified. They often held councils and at last resolved to attack the barbarians. They did this and thus put the barbarians to flight. The French men, however, did not stay. They moved camp and went to the great river.\n\nThen British men came and built a camp which endured. At first it was a small town. In the harbor, however, there were many ships and many worked here. Many men went to this town and soon there was a city. Now it is a great city and even now men come here and stay.\n\nThe men who came were strong and understood many things. They made long wide roads. Those men built great and beautiful buildings. We have good citizens, however, and at last these good citizens will be aroused and with great joy we will send that bad people out of our city.",
+      "source_story": "Maxey, Cap. XXVIII",
+      "notes": "Gallicī = 'French', Britannicī = 'British.' pugnātum est = impersonal passive 'there was fighting.' cōpia cibī = 'supply of food' — genitive.",
+      "vocab_hints": [
+        "Gallicī = French (of the Gauls)",
+        "Britannicī = British",
+        "colloquium = council, conversation",
+        "cōpia = supply, abundance",
+        "aedificium = building, structure",
+        "pugnātum est = there was fighting (impersonal passive)"
+      ]
+    },
+    {
+      "id": "maxey-lc11",
+      "title": "Cap. XXIX · Nūntius Ad Exercitum",
+      "latin": "Exercitus noster erat in castrīs. Māne erat. Vigilēs erant in moenibus. Undique prōspectābant. Mox vigil mīlitem in equō portātum vidēbat. Mīles celeriter veniēbat. Deinde clāmor factus est. Mīlitēs properāvērunt. Mox galeae erant in capitibus, scūta et gladiī erant parāta, pīla erant in manibus. Dux est prope portam. Tandem mīles appropinquat. Insignia quae galeam ōrnant mōnstrant eum amīcum esse. Hīc est nūntius quī ex fīnitimā gente venit. Hūc venit quod gēns est perterrita. Cīvēs eius gentis nōn sunt ignāvī sed barbarī veniunt et cīvēs sine sociīs nōn pugnāre audent. Est flūmen prope urbem et barbarī nāvigia nōn habent. Haec est causa morae parvae. Sed mox ad urbem venient.\n\nDux noster excitātur. Paucōs mīlitēs vocat. Mīlitēs vocātī veniunt et colloquium habent. Tandem cōnstituunt exercitum mittere. Dux partem exercitūs nostrī sēcum dūcere cōnstituit. Partem in castrīs relinquit. Circum moenia castrōrum mīlitēs vāllum aedificābunt. Vāllum aedificātum castra validiōra faciet. Exercitus et dux arma rapiunt. Mox sunt parātī. Agmen faciunt. In prīmō agmine sunt dux et nūntius. Deinde agmen sē movet.",
+      "english": "Our army was in camp. It was morning. Watchmen were on the walls. They were looking out on all sides. Soon a watchman saw a soldier being carried on a horse. The soldier was coming quickly. Then a shout arose. The soldiers hurried. Soon helmets were on heads, shields and swords were ready, javelins were in hands. The general is near the gate. At last the soldier draws near. The emblems which adorn his helmet show that he is a friend. This is the messenger who comes from a neighboring people. He comes here because the people is terrified. The citizens of that people are not cowardly but barbarians are coming and the citizens do not dare fight without allies. There is a river near the city and the barbarians have no boats. This is the cause of the short delay. But soon they will come to the city.\n\nOur general is aroused. He calls a few soldiers. The summoned soldiers come and hold a council. At last they resolve to send the army. The general resolves to lead part of our army with himself. He leaves part in camp. Around the walls of the camp soldiers will build a rampart. The rampart, once built, will make the camp stronger. The army and general seize weapons. Soon they are ready. They form a column. At the head of the column are the general and the messenger. Then the column moves.",
+      "source_story": "Maxey, Cap. XXIX",
+      "notes": "Rich military vocabulary: vigil, moenia, galeae, scūta, gladiī, pīla, vāllum, agmen. agmen = 'column of march.' vāllum aedificātum = 'the rampart, once built' — perfect passive participle.",
+      "vocab_hints": [
+        "vigil = watchman, sentinel",
+        "moenia = walls (of a city or camp)",
+        "pīlum / pīla = javelin(s)",
+        "vāllum = rampart, palisade",
+        "agmen = column of march",
+        "socius = ally, companion"
+      ]
+    },
+    {
+      "id": "maxey-lc12",
+      "title": "Cap. XXX · Nūntiī – Pars I",
+      "latin": "Herī ego et Mārcus erāmus nūntiī. Epistulam ā patre meō ad fīnitimum portāvimus. Iter erat longum. Per agrōs, trāns flūmen, ad montēs ubi fīnitimus habitābat īvimus. Pars itineris erat grāta. Ubi, autem, dēfessī erāmus iter nōn facere cōnstituimus. Diū prope montem parvum sēdimus. Tum quiētem in hōc locō idōneō cēpimus.\n\nSubitō agmen exercitūs magnī vīdī. Ex portīs moenium veniēbat. Agmen erat longum et ad hunc montem veniēbat. Auxilium vocāre nōn poteram quod nōn validus eram, et clāmōrēs facere nōn poteram. Dux exercitūs hoc dīxit: \"Hic locus est idōneus castrīs. Hīc manēbimus. Vallum facite et, vigilēs, prōspectāte. Undique sunt hostēs.\"\n\nPerterritus nunc eram et mēcum hoc dīxī: \"Dux mē nōn videt. Arbor mē cēlat. Silēbō et ille mē nōn vidēbit. Nocte montem relinquam et mox tūtus domī erō.\"\n\nSubitō dux appropinquāvit et mē vīdit. \"Ecce! Hic, mīlitēs, nōn est cīvis noster. Nōn est Etrūscus. Rōmānus est. In illā urbe habitat. Urbs appellātur Rōma. Illam urbem occupāre cupimus. In illam impetum faciēmus. Vītam huius puerī nōn servābimus. Illum ad summum montem portāte et ibi corpus eius relinquite.\"",
+      "english": "Yesterday Marcus and I were messengers. We carried a letter from my father to a neighbor. The journey was long. We went through fields, across a river, to the mountains where the neighbor lived. Part of the journey was pleasant. When, however, we were weary we resolved not to travel. We sat for a long time near a small mountain. Then we rested in this suitable place.\n\nSuddenly I saw the column of a large army. It was coming from the gates of walls. The column was long and was coming toward this mountain. I could not call for help because I was not strong, and I could not raise shouts. The general of the army said this: \"This place is suitable for a camp. We will stay here. Make a rampart and, watchmen, look out on all sides. Everywhere there are enemies.\"\n\nNow I was terrified and said this to myself: \"The general does not see me. The tree hides me. I will be silent and he will not see me. At night I will leave the mountain and soon I will be safe at home.\"\n\nSuddenly the general drew near and saw me. \"Look! Here, soldiers, is not one of our citizens. He is not an Etruscan. He is a Roman. He lives in that city. The city is called Rome. We want to occupy that city. We will make an attack on it. We will not save this boy's life. Carry him to the top of the mountain and leave his body there.\"",
+      "source_story": "Maxey, Cap. XXX",
+      "notes": "The narrator is a Roman boy caught by Etruscans. idōneus castrīs = 'suitable for a camp' (dative after adjective). appellātur = 'is called' (present passive). Etrūscī = Etruscans.",
+      "vocab_hints": [
+        "epistula = letter",
+        "fīnitimus = neighbor",
+        "idōneus = suitable (+ dative)",
+        "Etrūscī = Etruscans",
+        "occupō = to seize, occupy",
+        "impetum faciō = to make an attack"
+      ]
+    },
+    {
+      "id": "maxey-lc13",
+      "title": "Cap. XXX · Horātius – Pars II",
+      "latin": "Dux ipse gladium rapuit. Subitō ex ulteriōre monte clāmōrēs audītī sunt. Signa exercitūs Rōmānī vidēbantur. Magnam laetitiam sēnsī.\n\n\"Deī mē servābunt,\" dīxī, \"quī ōlim Rōmam ab hostibus servābant.\"\n\nEtrūscī perterritī mē relīquērunt et arma parāvērunt. Clāmōrēs eōrum mē excitāvērunt. Undique circumspectāvī sed nūlla signa vīdī. Nūlla castra, nūllī hostēs, nūllus dux erat prope.\n\n\"Ubi sumus?\" rogāvī.\n\nMārcus quoque excitātus est. Eī omnia nārrāvī. Tum epistulam vīdimus. Tempus erat currere quod necesse erat epistulam fīnitimō ante noctem dare.\n\n\"Vīdistīne fortem Horātium?\" rogāvit Mārcus. \"Ōlim Rōma virtūte Horātiī servāta est. Deī auxilium suum dedērunt. Virtūs huius Rōmānī per multās terrās nōta est.\"\n\n\"Hoc sciō,\" respondī, \"quod herī fābulam dē proeliīs quae inter Etrūscōs Rōmānōsque pugnāta sunt legī.\"\n\nMox erat fīnis itineris et ubi epistulam fīnitimus accēperat, domum īvimus.",
+      "english": "The general himself seized his sword. Suddenly shouts were heard from the more distant mountain. The standards of the Roman army were visible. I felt great joy.\n\n\"The gods will save me,\" I said, \"who once saved Rome from its enemies.\"\n\nThe terrified Etruscans left me and prepared their weapons. Their shouts roused me. I looked around on all sides but saw no standards. There were no camps, no enemies, no general nearby.\n\n\"Where are we?\" I asked.\n\nMarcus was also roused. I told him everything. Then we saw the letter. It was time to run because it was necessary to give the letter to the neighbor before nightfall.\n\n\"Did you see brave Horatius?\" asked Marcus. \"Once Rome was saved by the virtue of Horatius. The gods gave their help. The virtue of this Roman is known through many lands.\"\n\n\"I know this,\" I answered, \"because yesterday I read the story about the battles which were fought between the Etruscans and Romans.\"\n\nSoon was the end of the journey and when the neighbor had received the letter, we went home.",
+      "source_story": "Maxey, Cap. XXX",
+      "notes": "The Etruscan scene was a dream! virtūte Horātiī = 'by the virtue of Horatius' — ablative of means + genitive. Reference to Horatius Cocles. Vīdistīne = Vīdistī + -ne.",
+      "vocab_hints": [
+        "ulterior = more distant, farther",
+        "virtūs, virtūtis, f. = virtue, courage",
+        "Horātius = Horatius Cocles (hero of the bridge)",
+        "pugnāta sunt = were fought (neuter pl. perfect passive)",
+        "fīnis itineris = end of the journey"
+      ]
+    },
+    {
+      "id": "maxey-lc14",
+      "title": "Cap. XXXI · Exercitus Rōmānus",
+      "latin": "Exercitus imperātōrem ūnum habet. Sunt multī ducēs. Imperātor imperat; ducēs pārent. Deinde ducēs imperant et reliquī mīlitēs pārent. In exercitū sunt multae legiōnēs. Circiter tria mīlia mīlitum \"legiō\" appellantur. Īdem imperātor omnēs legiōnēs quae in exercitū sunt dūcit, sed ūna legiō ūnum ducem habet; itaque in exercitū sunt multī ducēs.\n\nImperātor bonus semper hostēs vincit quod mīlitēs eum amant et laetī eunt ubi dūcit. Semper bonus imperātor castra in locō idōneō pōnit et numquam mīlitēs in locum inīquum dūcit. Imperātor ipse nōn est deus, sed est vir quī virtūtem multam habet et multa scit et multa putat. Sī perīculum est magnum, imperātor ipse mīlitēs dūcit. Tum mīlitēs fortiter pugnant et vincunt.\n\nŌlim erat malus imperātor. Castra nōn in summō monte posuit sed sub monte. Trāns flūmen quod prope castra erat in ulteriōre rīpā erant hostēs fortēs. Bonus imperātor hōs hostēs dūxit. Cōpiās suās dīvīsit. Aliae legiōnēs in castrīs mānsērunt. Aliās legiōnēs trāns flūmen circum montem ad summum montem dūxit et hae subitō dē monte cucurrērunt. Per nivem cucurrērunt. Exercitum hostium vīcērunt et castra expugnāvērunt. Multa mīlia mīlitum necāta sunt et reliquī sē in fugam dedērunt. Ab eōdem imperātōre numquam iterum ille exercitus ductus est quod imperātor bonus nōn erat.",
+      "english": "The army has one commander. There are many generals. The commander commands; the generals obey. Then the generals command and the rest of the soldiers obey. In the army there are many legions. About three thousand soldiers are called a 'legion.' The same commander leads all the legions which are in the army, but one legion has one general; therefore in the army there are many generals.\n\nA good commander always overcomes the enemy because the soldiers love him and go gladly wherever he leads. A good commander always places the camp in a suitable place and never leads soldiers into an unfavorable place. The commander himself is not a god, but is a man who has great virtue and knows many things and thinks about many things. If the danger is great, the commander himself leads the soldiers. Then the soldiers fight bravely and conquer.\n\nOnce there was a bad commander. He placed the camp not on top of the mountain but below the mountain. Across the river which was near the camp on the farther bank were strong enemies. A good commander led these enemies. He divided his forces. Some legions remained in camp. He led other legions across the river around the mountain to the top of the mountain and these suddenly ran down from the mountain. They ran through the snow. They overcame the army of the enemy and stormed the camp. Many thousands of soldiers were killed and the rest took to flight. By the same commander that army was never led again because he was not a good commander.",
+      "source_story": "Maxey, Cap. XXXI",
+      "notes": "Roman army organization: imperātor > ducēs > legiō > centuriō. Circiter tria mīlia = 'about three thousand' — mīlia is neuter plural, takes genitive. nix, nivis, f. = snow.",
+      "vocab_hints": [
+        "imperātor = commander-in-chief, general",
+        "legiō, legiōnis, f. = legion",
+        "mīlia = thousands (pl. of mīlle)",
+        "nix, nivis, f. = snow",
+        "cōpiās dīvīdō = to divide one's forces",
+        "inīquus = unfavorable, disadvantageous"
+      ]
+    },
+    {
+      "id": "maxey-lc15",
+      "title": "Cap. XXXII · Lēgātus Captus",
+      "latin": "Legiō est pars exercitūs sed legiō ipsa in multās partēs dīvīsa est. Imperātor tōtum exercitum dūcit; lēgātus legiōnem dūcit. Vir quī ūnam ex partibus legiōnis dūcit est centuriō. Temporibus antīquīs illa pars quam centuriō dūxit circiter centum mīlitēs habēbat.\n\nŌlim lēgātus et centuriō in eōdem proeliō pugnābant. Proelium erat grave quod locus ubi legiō stābat erat inīquus. Hostēs quī erant in locō idōneō, in summīs montibus, exspectābant. Post legiōnem et ante legiōnem erant hostēs. In locō inīquō inter montēs manēbat lēgātus et cum mīlitibus exspectābat.\n\nTandem lēgātus graviter vulnerātus est et ab hostibus captus est. Sed comes lēgātī, centuriō bonus, legiōnem ad proelium novum excitāvit.\n\n\"Necesse est lēgātum nostrum ab hostibus servāre,\" inquit centuriō. \"Ego nocte ad castra hostium modō agricolae ībō. Tum hostēs ad castra nostra prōcēdent et vōs eritis parātī. Celeriter oppugnāte.\"\n\nSōlus agricolae modō centuriō ad castra inimīca prōcessit. Imperātor hostium fābulam centuriōnis audīvit et cum circiter mīlle mīlitibus ē castrīs ad legiōnem iter fēcit. Lēgātus et comes eius ab hostibus nōn vīsī aliā viā properāvērunt.\n\nIam legiō omnia parāverat et ad hostēs prōcessit. Subitō legiō sub monte oppugnāvit et hostēs nōn parātī vīctī sunt. Posterō diē lēgātus centuriōnem ad sē vocāvit. Tum eī praemium dedit. Posteā cīvēs centuriōnem magnā cum laetitiā excēpērunt. Praemium erat corōna centuriōnī grāta. In caput eius posita est.",
+      "english": "A legion is part of the army but the legion itself is divided into many parts. The commander leads the whole army; the legate leads the legion. The man who leads one of the parts of the legion is a centurion. In ancient times the part which the centurion led had about one hundred soldiers.\n\nOnce a legate and a centurion were fighting in the same battle. The battle was serious because the place where the legion stood was unfavorable. The enemy who were in a suitable place, on the tops of mountains, was waiting. Behind the legion and before the legion were enemies. In the unfavorable place between the mountains the legate remained and waited with the soldiers.\n\nAt last the legate was seriously wounded and was captured by the enemy. But the companion of the legate, a good centurion, roused the legion to a new battle.\n\n\"It is necessary to save our legate from the enemy,\" said the centurion. \"I will go by night to the enemy's camp in the manner of a farmer. Then the enemy will advance toward our camp and you will be ready. Attack quickly.\"\n\nAlone in the manner of a farmer the centurion advanced to the enemy's camp. The commander of the enemy heard the centurion's story and made the march from camp to the legion with about a thousand soldiers. The legate and his companion, unseen by the enemy, hurried by another way.\n\nAlready the legion had prepared everything and advanced toward the enemy. Suddenly the legion attacked below the mountain and the unprepared enemy was defeated. The next day the legate called the centurion to himself. Then he gave him a prize. Afterward the citizens received the centurion with great joy. The prize was a crown pleasing to the centurion. It was placed on his head.",
+      "source_story": "Maxey, Cap. XXXII",
+      "notes": "lēgātus = legate, commander of a legion. The centurion infiltrates disguised as a farmer. Posterō diē = 'on the following day.' corōna = crown or wreath — Roman military decoration.",
+      "vocab_hints": [
+        "lēgātus = legate, legion commander",
+        "centuriō = centurion (commands ~100 men)",
+        "graviter vulnerātus = seriously wounded",
+        "modō + genitive = in the manner of",
+        "corōna = crown, wreath (military decoration)",
+        "posterō diē = on the following day"
+      ]
+    },
+    {
+      "id": "maxey-lc-r3",
+      "title": "Cap. XXXIII · Latrōnēs",
+      "latin": "Ōlim ad tēctum magnum prope Rōmam vēnērunt latrōnēs. Hī latrōnēs erant saevī et praedam, maximē pecūniam, cupīvērunt. Omnēs quī sē dēfendērunt interficere voluērunt. Hastās tulērunt quās iēcērunt. Hīs multōs graviter vulnerāvērunt et omnēs eōs timuērunt. Hī latrōnēs centuriōnem habuērunt; fuērunt enim circiter centum latrōnēs.\n\nUbi ad hoc tēctum vēnērunt, dominus servōs ad sē vocāvit et gladiīs et pilīs et hastīs et saxīs latrōnēs excēpērunt. Fortiter omnēs tēctum dēfendērunt. Paene bellum gessērunt. Dominus erat imperātor, nam lēgātus in exercitū Rōmānō fuerat et bellum bene scīvit. Cum paucīs comitibus inter latrōnēs prōcessit et gladiō suō multōs interfēcit. Comitēs eius erant fortēs quod ipse fortis erat.\n\n\"Is servus quī centuriōnem latrōnum interficiet,\" inquit dominus, \"corōnam habēbit et eum līberum faciam. Sī cīvitās latrōnēs nōn vincere potest, nōs ipsī eōs expellēmus.\"\n\nMultī servī sē fortēs probāvērunt et quīdam centuriōnem vulnerāvit sed nēmō eum interfēcit. Ubi latrōnēs discessērunt, dominus servōs convocāvit.\n\n\"Vōs laudāre volō,\" inquit dominus, \"bene enim hoc bellum gessistis. Celeriter latrōnēs expulistis. Bonī servī estis. Crās cēnam magnam habēbitis.\"",
+      "english": "Once robbers came to a large house near Rome. These robbers were fierce and wanted plunder, especially money. They wanted to kill all who defended themselves. They carried spears which they hurled. With these they seriously wounded many and all feared them. These robbers had a centurion; for there were about a hundred robbers.\n\nWhen they came to this house, the master called the slaves to himself and they received the robbers with swords and javelins and spears and rocks. All defended the house bravely. They almost waged war. The master was a commander, for he had been a legate in the Roman army and understood war well. He advanced among the robbers with a few companions and killed many with his sword. His companions were brave because he himself was brave.\n\n\"The slave who kills the centurion of the robbers,\" said the master, \"will have a crown and I will make him free. If the state cannot overcome the robbers, we ourselves will drive them out.\"\n\nMany slaves proved themselves brave and someone wounded the centurion but no one killed him. When the robbers departed, the master assembled the slaves.\n\n\"I want to praise you,\" said the master, \"for you waged this war well. You quickly drove out the robbers. You are good slaves. Tomorrow you will have a great dinner.\"",
+      "source_story": "Maxey, Cap. XXXIII",
+      "notes": "latrō / latrōnēs = robber(s). Note offer of freedom for the slave who kills the robber leader. gessistis = 'you waged' — perfect of gerō. bellum gerō = 'to wage war' (idiom).",
+      "vocab_hints": [
+        "latrō, latrōnis, m. = robber, bandit",
+        "praeda = plunder, booty",
+        "hasta = spear",
+        "pīlum = javelin",
+        "bellum gerō = to wage war",
+        "līber faciam = I will make free"
+      ]
+    },
+    {
+      "id": "maxey-lc16",
+      "title": "Cap. XXXIV · Prope Mare – Pars I",
+      "latin": "Herī prope mare iacēbāmus, ego et Cornēlius, comes meus. In grāmine iacēbāmus. Pulchrum erat grāmen. Nūllum sonitum hominum audiēbāmus. Sonitum sōlum maris audiēbāmus. Umbra arboris erat nōbīs grāta quod aestās erat et post iter longum dēfessī erāmus. Ubīque in terrā erat pāx. Sed pāx numquam est in marī. Mare semper sē movet. Mare spectābāmus. Nēminem vidēbāmus, quamquam nāvēs vidēre poterāmus.\n\nMox nōs somnō gravī dabāmus. Hoc nōn erat difficile. Subitō sonitum pedum audīvī. Undique per grāmen circumspectāvī. Ut animālia hostēs suōs spectant, sīc ego per grāmen hostēs meōs spectāvī. Sub umbrā saxī latrōnem vīdī et mox prope saxum aliī, comitēs eius, vidēbantur. Hastās ferēbant. Mē armīs dēfendere nōn poteram quod nūlla arma tuleram. Ā saxō latrōnēs expellere volēbam sed nōn sōlus hoc facere poteram.\n\nComitem meum vocāvī sed Cornēlius ipse discesserat. Auxilium maximē volēbam. Latrōnēs ab hōc locō expellere volēbam.\n\n\"Sī cum latrōnibus bellum geram,\" ut putābam, \"bellum sine hastā atque gladiō gerētur. In tantō perīculō esse nōn cupiō.\"",
+      "english": "Yesterday we were lying near the sea, I and Cornelius, my companion. We were lying in the grass. The grass was beautiful. We heard no sound of men. We heard only the sound of the sea. The shadow of the tree was pleasing to us because it was summer and after a long journey we were weary. Everywhere on land there was peace. But peace is never on the sea. The sea always moves. We were watching the sea. We saw no one, although we were able to see ships.\n\nSoon we were giving ourselves to deep sleep. This was not difficult. Suddenly I heard the sound of feet. I looked around through the grass on all sides. Just as animals look for their enemies, so I looked through the grass for my enemies. Under the shadow of the rock I saw a robber and soon near the rock others, his companions, were visible. They were carrying spears. I was not able to defend myself with weapons because I had brought no weapons. I wanted to drive the robbers from the rock but I was not able to do this alone.\n\nI called my companion but Cornelius himself had gone away. I very much wanted help. I wanted to drive the robbers from this place.\n\n\"If I should wage war with the robbers,\" as I was thinking, \"war would be waged without spear or sword. I do not want to be in so great a danger.\"",
+      "source_story": "Maxey, Cap. XXXIV",
+      "notes": "Simile: ut animālia … sīc ego = 'just as animals … so I.' sonus pedum = 'sound of feet.' somnō mē dō = 'to give oneself to sleep.'",
+      "vocab_hints": [
+        "grāmen = grass",
+        "sonitus = sound",
+        "ut … sīc = just as … so",
+        "somnō mē dō = to give oneself to sleep",
+        "pāx, pācis, f. = peace",
+        "atque = and also, and even"
+      ]
+    },
+    {
+      "id": "maxey-lc17",
+      "title": "Cap. XXXIV · Somnium – Pars II",
+      "latin": "Latrōnēs bene mūnītī sunt. Ante saxum erat mare. Post saxum rīpa altissima illum locum mūniēbat. Difficile atque perīculōsum erat latrōnibus appropinquāre. Diū exspectāvī. Nocte saxō appropinquāvī et latrōnēs praedam spectantēs vīdī. Nēminem sonitum pedum meōrum audīre volēbam. In grāmine in rīpā post saxum iacēbam. Ita enim vidērī nōn poteram. Verba virōrum audīvī. Cōnsilium eōrum audīvī. Tēctum patris meī oppugnāre cōnstituēbant. Tum maximē timēbam. Tantum erat perīculum.\n\n\"Necesse est,\" inquam, \"patrem monēre. Nūntius erō.\" Sed pedēs meī movērī nōn poterant. Subitō oculī meī apertī erant. In somnum mē dederam. Ubīque erat pāx. Hīc Cornēlius quoque iacēbat. Oculī eius quoque apertī erant.\n\n\"Cūr, amīce,\" inquit, \"tantam cūram in oculīs tuīs videō?\"\n\nTōtam fābulam nārrāvī. Posteā ad saxum errāvimus sed ibi nēmō erat. Mox tempus erat domum īre. Celeriter properāvimus.",
+      "english": "The robbers were well fortified. Before the rock was the sea. Behind the rock the highest bank fortified that place. It was difficult and dangerous to approach the robbers. I waited for a long time. At night I drew near to the rock and saw the robbers watching their plunder. I did not want anyone to hear the sound of my feet. I was lying in the grass on the bank behind the rock. For thus I could not be seen. I heard the words of the men. I heard their plan. They were resolving to attack my father's house. Then I was very afraid. So great was the danger.\n\n\"It is necessary,\" I said, \"to warn my father. I will be the messenger.\" But my feet could not be moved. Suddenly my eyes were open. I had given myself to sleep. Everywhere there was peace. Here Cornelius also lay. His eyes too were open.\n\n\"Why, friend,\" he said, \"do I see so great a worry in your eyes?\"\n\nI told the whole story. Afterward we wandered to the rock but no one was there. Soon it was time to go home. We hurried quickly.",
+      "source_story": "Maxey, Cap. XXXIV",
+      "notes": "Another dream sequence. pedēs movērī nōn poterant = 'feet could not be moved' — passive infinitive with possum. cūra in oculīs = 'worry in the eyes' — vivid Latin idiom.",
+      "vocab_hints": [
+        "mūnītus = fortified",
+        "altissima = very high (superlative)",
+        "somnium = dream",
+        "cūra = worry, care, concern",
+        "moneō = to warn, advise",
+        "vidērī nōn poteram = I could not be seen (passive)"
+      ]
+    },
+    {
+      "id": "maxey-lc18",
+      "title": "Cap. XXXV · Rēs Pūblica Rōmāna",
+      "latin": "Diū Rōmae rēgēs erant. Rēx omnia fēcit. Erat imperātor exercituum et omnēs rēxit. Imperium summum habēbat. Mox tamen rēx nōn bene imperium gessit et officium neglēxit et populum pressit. Populus erat īrātus et statim rēgem expulit. Deinde cīvitās, rēs pūblica, facta est et duo cōnsulēs imperium habēbant.\n\nErant aliī magistrātūs quoque. Quaestor pecūniam gessit. Sī umquam magistrātus officium bene gessit, populus huic magistrātuī aliud et altius officium dedit. Sī erat malus magistrātus et populum pressit, numquam iterum officium habuit. Fēlīx est ea cīvitās quae nūllōs nisi bonōs magistrātūs habet!\n\nHic cōnsul est vir saevus. Officium neglegit, urbem neglegit. In urbe est neque grāmen neque flōrēs neque arborēs quae umbram dant. Nova et pulchra aedificia nōn aedificat. Nēminem nisi sē amat. Urbem nōn mūnit; sī hostēs venient, facile erit urbem expugnāre. Rēs, quās cōnsul facit, sunt mālae. Imperium sōlum sibi vult. Populum sub pedibus suīs premit.\n\nCūr populus nōn hunc cōnsulem expellit? Populus sē in somnum dedit. Ut virī quī dormiunt, nihil faciunt. Hic cōnsul est hostis pūblicus. Auxilium date, cīvēs. Hunc cōnsulem malum ex urbe expellite.",
+      "english": "For a long time there were kings in Rome. The king did everything. He was the commander of the armies and ruled everyone. He had supreme power. But soon the king did not manage his authority well and neglected his duty and pressed down upon the people. The people were angry and immediately expelled the king. Then a state, the Republic, was formed and two consuls held power.\n\nThere were other magistrates too. The quaestor managed money. If ever a magistrate performed his duty well, the people gave this magistrate another and higher position. If he was a bad magistrate and pressed down upon the people, he never held office again. Happy is that state which has only good magistrates!\n\nThis consul is a fierce man. He neglects his duty, he neglects the city. In the city there is neither grass nor flowers nor trees which give shade. He does not build new and beautiful buildings. He loves no one but himself. He does not fortify the city; if enemies come, it will be easy to storm the city. The things the consul does are bad. He wants power for himself alone. He presses the people under his feet.\n\nWhy does the people not expel this consul? The people gave itself to sleep. Like men who are sleeping, they do nothing. This consul is a public enemy. Give help, citizens. Expel this bad consul from the city.",
+      "source_story": "Maxey, Cap. XXXV",
+      "notes": "Rome's transition from monarchy to republic (509 BC). rēs pūblica, cōnsul, magistrātus, quaestor = key civics vocabulary. imperium gerō = 'to manage authority.' hostis pūblicus = 'public enemy' — formal Roman legal term.",
+      "vocab_hints": [
+        "rēs pūblica = republic, public affairs",
+        "cōnsul = consul (one of two annual leaders)",
+        "magistrātus = magistrate, office",
+        "quaestor = quaestor (financial official)",
+        "officium neglegō = to neglect one's duty",
+        "hostis pūblicus = public enemy"
+      ]
+    },
+    {
+      "id": "maxey-lc19",
+      "title": "Cap. XXXVI · Centuriō Et Hostēs",
+      "latin": "Ōlim quīdam mīlitēs castellum tenuērunt quod erat prope pontem quī erat in flūmine magnō. In castellō erat neque ūllus magistrātus reī pūblicae neque dux quī magnum imperium habuit. Erat nūllus dux nisi centuriō. Centuriō tamen erat fortis mīles et sī umquam perīculum aderat, centuriō officium suum nōn neglēxit.\n\nHōc tempore centuriō scīvit hostēs appropinquāre per explōrātōrēs quōs mīserat. Explōrātōrēs celeriter centuriōnem petīvērunt. \"Magnī numerī hostium veniunt,\" inquiunt. \"Mox aderunt et nōs graviter prement. Semper fēlīcēs sunt; itaque semper per multōs annōs in proeliīs vīcērunt et nōs sumus paucī.\"\n\nCenturiō paucōs mīlitēs habuit. Virtūtem autem hostium cognōvit sed, quod fortūna fortēs iuvat, pugnāre fortiter cōnstituit. Suās cōpiās in duās partēs dīvīsit. Alteram partem intrā moenia manēre iussit. Alteram partem post arborēs longē ā castellō latēre iussit. Ubi hostēs, circiter septem mīlia mīlitum, vēnērunt, cum comitibus quī intrā castellum erant, centuriō celeriter ex castellō cucurrit, hostēs statim oppugnāvit, eōs reppulit.\n\nUt hī hostēs discēdēbant, mīlitēs quī latēbant subitō eōs oppugnāvērunt. Eōdem tempore ex utrīsque partibus oppugnātī sunt. Multī mīlitēs centuriōnis reppulērunt, deinde per fugam salūtem repperērunt, sed multī interfectī sunt.\n\nUbi hostēs discessērunt, utraque pars mīlitum ad castellum īvit. Centuriō omnēs laudāvit et quod omnibus salūtem tulit omnēs sēnsērunt centuriōnem bene regere.",
+      "english": "Once some soldiers held a small fort which was near a bridge in a large river. In the fort there was neither any magistrate of the republic nor a general who held great authority. There was no general except the centurion. The centurion however was a brave soldier and if ever danger was present, the centurion did not neglect his duty.\n\nAt this time the centurion learned that the enemy was approaching through scouts whom he had sent. The scouts quickly sought the centurion. \"Large numbers of the enemy are coming,\" they said. \"Soon they will be here and will press us hard. They are always successful; and so for many years they have always won in battles and we are few.\"\n\nThe centurion had few soldiers. But he learned the strength of the enemy and, because fortune helps the brave, he resolved to fight bravely. He divided his forces into two parts. He ordered one part to remain inside the walls. He ordered the other part to hide behind trees far from the fort. When the enemy, about seven thousand soldiers, came, with companions who were inside the fort, the centurion quickly ran out of the fort, immediately attacked the enemy, drove them back.\n\nAs these enemies were withdrawing, the soldiers who were hiding suddenly attacked them. At the same time they were attacked from both sides. Many soldiers drove back the centurion's men, then found safety in flight, but many were killed.\n\nWhen the enemies had departed, both parts of the soldiers went to the fort. The centurion praised all and because he brought safety to all, all felt that the centurion ruled well.",
+      "source_story": "Maxey, Cap. XXXVI",
+      "notes": "Classic ambush strategy: divide forces, lure enemy, attack from both sides. fortūna fortēs iuvat = famous proverb (Virgil). explōrātōres = scouts. utrīsque partibus = 'from both sides.'",
+      "vocab_hints": [
+        "castellum = small fort, fortress",
+        "explōrātor = scout, spy",
+        "fortūna fortēs iuvat = fortune favors the brave",
+        "latēre = to hide, lie hidden",
+        "reppulit = drove back (perfect of repellō)",
+        "ex utrīsque partibus = from both sides"
+      ]
+    },
+    {
+      "id": "maxey-lc20",
+      "title": "Cap. XXXVII · Exsul – Pars I",
+      "latin": "Haec est īnsula ubi exsul paene sōlus habitat. Amīcōs suōs nōn videt. Quandō est hostis, exsul est et hic exsul numquam iterum patriam vidēbit. Septem annīs anteā in hunc locum pervēnit. Magistrātūs patriae, virī magnā vī, exsulem domum venīre nōn sinunt quod ōlim ipse hostem patriam intrāre sinēbat. Tum erat victōria hostium quī diū intrā fīnēs patriae manēbant. Hic vir erat nōn sapiēns at perfidus. Cīvēs sapientēs salūtem patriae cupiunt. Nunc exsul nihil habet. Patriam, amīcōs, domum, patrem, mātrem nōn videt. Semper, autem, sē iterum domum itūrum esse spērat. In numerō hostium cīvitāte habētur.\n\nHōc modō vir exsul factus est: Ōlim patria diū cum hostibus pugnāverat. Uterque exercitus, bellō dēfessus, pācem cupiēbat. Mīlitēs officia neglegere et domum īre paene parātī erant, sed uterque exercitus victōriam cupiēbat.\n\n\"Quō modō pāx esse potest sine victōriā?\" rogāvit magistrātus maximus. Mīlitēs vōcem magistrātūs audiēbant et diūtius in bellō manēbant. Paucī mīlitēs, autem, magistrātūs patriae nōn laudābant. Apud eōs erat exsul, explōrātor bonus, quī interdum cōnsilia hostium cognōscēbat.\n\n\"Quō tempore erit fīnis bellī?\" explōrātor cum aliīs mīlitibus inquit. \"Nisi mox fīnis erit, salūtem fugā petam.\"",
+      "english": "This is the island where the exile lives almost alone. He does not see his friends. When he is an enemy, he is an exile and this exile will never see his homeland again. Seven years ago he arrived at this place. The magistrates of his homeland, men of great power, do not allow the exile to come home because he once allowed the enemy to enter his homeland. Then there was a victory of the enemy who remained for a long time within the borders of the homeland. This man was not wise but treacherous. Wise citizens desire the safety of the homeland. Now the exile has nothing. He does not see his homeland, friends, home, father, mother. He always hopes, however, that he will go home again. He is reckoned in the number of enemies by the state.\n\nThis is how the man became an exile: Once the homeland had fought for a long time with enemies. Each army, weary of war, desired peace. The soldiers were almost ready to neglect their duties and go home, but each army desired victory.\n\n\"In what way can there be peace without victory?\" asked the highest magistrate. The soldiers heard the voice of the magistrate and remained longer in the war. A few soldiers, however, did not praise the magistrates of the homeland. Among them was the exile, a good scout, who sometimes learned the plans of the enemy.\n\n\"When will there be an end to the war?\" the scout said with other soldiers. \"Unless there will be an end soon, I will seek safety in flight.\"",
+      "source_story": "Maxey, Cap. XXXVII",
+      "notes": "Exile as punishment for treason. exsul = 'exile' (noun). sinō + accusative + infinitive = 'to allow someone to.' in numerō hostium habētur = 'is reckoned in the number of enemies.' diūtius = 'longer' (comparative of diū).",
+      "vocab_hints": [
+        "exsul, exsulis = exile (person exiled)",
+        "patria = homeland, fatherland",
+        "sinō = to allow, permit",
+        "in numerō habētur = is counted among",
+        "diūtius = longer (comparative adverb)",
+        "spērō = to hope"
+      ]
+    },
+    {
+      "id": "maxey-lc-r4",
+      "title": "Cap. XXXVII · Prōditiō – Pars II",
+      "latin": "Paucīs diēbus posteā explōrātor ē castrīs it. Flūmen exercitum explōrātōris ab alterō exercitū dīvīsit. Trāns pontem properāvit et noctū in castellum hostium pervēnit. Scūtum et galeam et alia tēla hostium portāvit et nōn cognōscēbātur. Mox ille et ūnus ex hostium explōrātōribus erant amīcī. Uterque bellō dēfessus pācem petīvit. Mox cōnsilium cēperant.\n\n\"Pecūniam tibi dabō,\" inquit hostis, \"sī cōnsilia exercitūs tuī nārrābis. Quantam pecūniam postulās?\"\n\nPosterā nocte duo explōrātōrēs diū prope pontem latēbant. Exercitus hostium oppugnāre erat parātus. Cōnsilia exercitūs patriae cognita erant. Mox tēla coniciēbantur et prīmō mīlitēs patriae repellēbantur, sed victōria hostium nōn erat longa. Ducēs mīlitum patriae dē explōrātōre perfidō iam cognōvit et cōnsilia nova cēpērunt. Multās hōrās erat pāx inter duōs exercitūs. Exercitus patriae tandem iterum multa tēla coniciēbat et hōc modō hostēs, quī nihil hōrum cōnsiliōrum cognōverat, superātī sunt.\n\n\"Quandō hic explōrātor perfidus fuit, eum capiēmus et ad īnsulam mittēmus,\" inquiunt cīvēs post victōriam. \"Eum in patriā manēre sinere nōn possumus. Exsul erit et longē ā patriā habitābit. Nisi exsul erit, hīc vīta eius in perīculō erit.\"\n\nItaque hic vir sōlus in īnsulā manet et in numerō hostium habētur.",
+      "english": "A few days later the scout left camp. The river divided the scout's army from the other army. He hurried across the bridge and arrived at night at the enemy's fort. He was carrying the shield and helmet and other weapons of the enemy and was not recognized. Soon he and one of the enemy's scouts were friends. Each worn out by war sought peace. Soon they had formed a plan.\n\n\"I will give you money,\" said the enemy, \"if you will tell the plans of your army. How much money do you demand?\"\n\nThe following night two scouts were hiding for a long time near the bridge. The enemy's army was ready to attack. The plans of the homeland's army had been learned. Soon weapons were being hurled and at first the soldiers of the homeland were being driven back, but the victory of the enemy was not long. The leaders of the homeland's soldiers now learned about the treacherous scout and made new plans. For many hours there was peace between the two armies. The homeland's army at last again was hurling many weapons and in this way the enemy, who had learned nothing of these plans, was overcome.\n\n\"When this treacherous scout is caught, we will capture him and send him to an island,\" say the citizens after the victory. \"We cannot allow him to remain in the homeland. He will be an exile and will live far from his homeland. Unless he is an exile, his life here will be in danger.\"\n\nAnd so this man remains alone on the island and is reckoned in the number of enemies.",
+      "source_story": "Maxey, Cap. XXXVII",
+      "notes": "Traitor-scout ends in exile. nōn cognōscēbātur = 'he was not recognized' — imperfect passive. Quantam pecūniam postulās? — quantus in questions. noctū = at night (adverb).",
+      "vocab_hints": [
+        "noctū = at night (adverb)",
+        "nōn cognōscēbātur = was not recognized (imperfect passive)",
+        "coniciō tēla = to hurl weapons",
+        "quantus = how much, how great",
+        "postulō = to demand"
+      ]
+    },
+    {
+      "id": "maxey-lc21",
+      "title": "Cap. XXXVIII · Duo Frātrēs – Pars I",
+      "latin": "Ōlim erant duo frātrēs. Alter erat vir magnā vī. Sapiēns erat et amīcus fīdus nōbilisque, at ā frātre nōn amābātur. Agricola erat. Diū dīligenterque labōrāverat et ā fīnitimīs maximē amābātur. At alter frāter, vir perfidus et inīquus, neque tēctum habēbat neque ab amīcīs amābātur. Frātrem quī agrōs et multōs equōs et tēctum et fīliōs fīliāsque habēbat is vir numquam laudābat. Omnēs hās rēs frāter perfidus dēsīderābat et ipse nōn habēbat. Vir perfidus erat servus. Rēs dominī, autem, nōn dīligenter cūrābat.\n\nŌlim autem, ubi multī agricolae servīque in oppidō conveniēbant, hī duo frātrēs quoque ibi erant. Alter, vir sapiēns, alterum salūtāvit. At servus nōn respondit et īrātus vidēbātur. Posteā, ubi frāter sapiēns sērō ab oppidō redībat, sōlus per silvam ambulāre coepit. Subitō vōcem audīvit. Sē vertit at nihil vīdit. Iterum ambulāre coepit. Usque ad pontem pervēnerat. Subitō in cōnspectū erat figūra frātris eius, servī.\n\n\"Sī flūmen trānsīre audēbis,\" inquit, \"tē occīdam. Mihi pecūniam dā. Quantam tēcum habēs?\"\n\nCōnspectus frātris eius nōn erat grātus agricolae, eius tēla domī erant. Sēcum hoc dīxit: \"Quō modō mē dēfendam? Quantum est perīculum! Quandō iterum in locō tūtō erō?\"",
+      "english": "Once there were two brothers. One was a man of great strength. He was wise and a faithful and noble friend, but he was not loved by his brother. He was a farmer. He had worked for a long time and diligently and was greatly loved by his neighbors. But the other brother, a treacherous and unjust man, had neither a home nor was loved by friends. This man never praised his brother who had fields and many horses and a house and sons and daughters. The treacherous brother desired all these things and did not have them himself. The treacherous man was a slave. He did not, however, take careful care of his master's things.\n\nOnce however, when many farmers and slaves were meeting in the town, these two brothers were also there. One, the wise man, greeted the other. But the slave did not answer and seemed angry. Afterward, when the wise brother was returning late from town, he began to walk alone through the forest. Suddenly he heard a voice. He turned around but saw nothing. He began to walk again. He had arrived as far as the bridge. Suddenly the shape of his brother, the slave, was in view.\n\n\"If you dare cross the river,\" he said, \"I will kill you. Give me money. How much do you have with you?\"\n\nThe appearance of his brother was not pleasing to the farmer — his weapons were at home. He said this to himself: \"How shall I defend myself? How great is the danger! When will I again be in a safe place?\"",
+      "source_story": "Maxey, Cap. XXXVIII",
+      "notes": "alter … alter = 'one … the other' (of two). usque ad = 'all the way to.' coepit + infinitive = 'began to.' sēcum = 'to himself.'",
+      "vocab_hints": [
+        "alter … alter = one … the other (of two)",
+        "fīdus = faithful, loyal",
+        "nōbilis = noble",
+        "usque ad = all the way to, up to",
+        "coepit = began (perfect of coepī)",
+        "cōnspectus = sight, appearance, view"
+      ]
+    },
+    {
+      "id": "maxey-lc22",
+      "title": "Cap. XXXVIII · Reconciliātiō – Pars II",
+      "latin": "Tum vir sapiēns frātrī tōtam pecūniam dedit et, \"Pecūniam tibi dō,\" inquit. \"Nōlī mē occīdere. Mē domum redīre sine. Es frāter meus et tibi auxilium dabō.\"\n\nSed hae rēs nōn erant grātae servō quī tēlum subitō cēpit et impetum facere coepit. Agricola, autem, sē vertit et ubi saxum reppererat hoc in caput frātris coniēcit. Servus vulnerātus at nōn occīsus est. Victōria erat agricolae. Sērō domum redībat frātrem vulnerātum portāns.\n\nPost multōs diēs servus iam validus, \"Ad dominum meum,\" inquit, \"redīre nōn cupiō, at tēcum manēre. Mihi vītam bonam mōnstrāvistī. Tū es amīcus meus. Numquam iterum mē tibi perfidum futūrum esse spērō.\"\n\nAgricola tandem frātrem manēre sinēbat. Nōn iam erat servus exsul ā tēctō frātris suī et usque ad fīnem vītae servus bonus erat.",
+      "english": "Then the wise man gave all his money to his brother and said: \"I give you the money. Do not kill me. Allow me to return home. You are my brother and I will give you help.\"\n\nBut these things were not pleasing to the slave, who suddenly took a weapon and began to make an attack. The farmer, however, turned around and when he had found a rock threw it at his brother's head. The slave was wounded but not killed. The victory was the farmer's. He was returning home late carrying his wounded brother.\n\nAfter many days when the slave was now strong: \"I do not want to return to my master,\" he said, \"but to stay with you. You have shown me a good life. You are my friend. I hope that I will never again be treacherous to you.\"\n\nThe farmer at last allowed his brother to stay. No longer was the slave an exile from his brother's house and he was a good slave to the end of his life.",
+      "source_story": "Maxey, Cap. XXXVIII",
+      "notes": "Reconciliation and redemption. Nōlī + infinitive = 'Don't!' (negative imperative). frātrem vulnerātum portāns = 'carrying his wounded brother' — present participle. usque ad fīnem vītae = 'to the end of his life.'",
+      "vocab_hints": [
+        "nōlī + infinitive = don't! (negative command)",
+        "portāns = carrying (present participle)",
+        "usque ad fīnem vītae = to the end of life",
+        "spērō … futūrum esse = I hope … that (it) will be"
+      ]
+    },
+    {
+      "id": "maxey-lc23",
+      "title": "Cap. XXXIX · Nocturnae Vigiliae",
+      "latin": "\"Per multōs annōs centuriō fuī. Anteā fuī mīles quī cum aliīs mīlitibus pugnābam. Saepe eīs diēbus eram vigil. Vigilēs vesperī in moenibus dispōnēbantur. Nihil in bellō tam necesse est quam vigilēs bonī. Nox in quattuor partēs 'vigiliās' vocātās dīviditur. Per omnēs vigiliās vigilēs prōspectant. Sī hostēs vīsī sunt, vigilēs clāmōribus magnīs comitēs incitant. Omnēs tum tēla omnī genere sūmunt et hostēs repellunt. Multās noctēs prīmī vigilēs prīmā vigiliā conveniunt, per tōta moenia dispōnuntur, usque ad vigiliam secundam manent; tum aliī hōs succēdunt, hīs deinde ab aliīs tertiā vigiliā succēditur et sīc nox it, sed hostis nūllus vidētur.\"\n\n\"Sī nocte hostēs castra oppugnant, semper magnā vī impetum faciunt. Sī possunt, mīlitēs ā moenibus pellunt, ad moenia currunt, portās frangunt. Secūrēs sēcum portant et nōn gladiīs sed secūribus portās caedunt. Deinde gladiīs et tēlīs omnī genere pugnant. Intereā etiam omnēs, quī sunt in cōnspectū, secūribus occīdunt. Numquam terga vertunt sī homō aut praeda ūllō genere est relicta.\"\n\n\"Ad tēctum meum mēcum venī. Apud mē est secūris quam in quōdam proeliō cēpī. Hanc secūrim ex locō sūmam et eam tibi ostendam. Mēcum venī.\"\n\nLaetus ego, puer parvus, cum nōbilī virō iī. Laetus secūrim spectāvī. Diū mānsī et fābulās audīvī. Bella antīqua intellegere coepī. Sērō tēctum relīquī et domum meam rediī.",
+      "english": "\"For many years I was a centurion. Before that I was a soldier who fought with the other soldiers. Often in those days I was a watchman. In the evening the watchmen were stationed on the walls. Nothing in war is so necessary as good watchmen. The night is divided into four parts called 'watches.' Through all the watches the watchmen look out. If enemies are seen, the watchmen rouse their companions with loud shouts. All then take up weapons of every kind and drive back the enemy. Many nights the first watchmen gather at the first watch, are stationed throughout all the walls, remain until the second watch; then others succeed them, then by others at the third watch these are relieved, and so the night goes, but no enemy is seen.\"\n\n\"If the enemy attacks the camp at night, they always make an attack with great force. If they can, they drive the soldiers from the walls, run to the walls, break down the gates. They carry axes with them and cut down the gates not with swords but with axes. Then they fight with swords and weapons of every kind. Meanwhile they also kill with axes all who are in sight. They never turn their backs if any person or plunder of any kind is left.\"\n\n\"Come with me to my house. At my house there is an axe which I took in a certain battle. I will take this axe from its place and show it to you. Come with me.\"\n\nHappy I, a small boy, went with the noble man. Happily I looked at the axe. I stayed for a long time and heard stories. I began to understand ancient wars. Late I left the house and returned to my own home.",
+      "source_story": "Maxey, Cap. XXXIX",
+      "notes": "Four Roman night-watches (vigiliā). secūris = axe (3rd declension, irregular: secūrim in accusative). tergum vertō = 'to turn one's back' — idiom for fleeing. succēdō + dative = 'to relieve, succeed.'",
+      "vocab_hints": [
+        "vigilia = night watch (one of four)",
+        "dispōnō = to station, post",
+        "succēdō = to relieve, succeed",
+        "secūris, secūrim, f. = axe",
+        "tergum vertō = to turn one's back, flee",
+        "intereā = meanwhile"
+      ]
+    },
+    {
+      "id": "maxey-lc24",
+      "title": "Cap. XL · Prō Lībertāte",
+      "latin": "Prō comitibus suīs fortis eques stetit et hoc dīxit: \"Nōs sumus cīvēs quī in rēgnō habitāmus. Rēx quī nōn hīc habitat imperium in hōc rēgnō habet. Nōs rēgī omnia quae petit damus et multōs annōs dedimus. Omnia imperāta rēgis facimus. Intereā quid rēx nōbīs dat? Quid recipimus ex rēge? Honōremne an iniūriam recipimus? Utrum vult rēx? Pācem? An bellum? Quid nōs facere dēbēmus? Quid facere possumus? Apud mē sunt tēla. Haec tēla sūmam. Vōs quoque tēla capite. Nōlīte ad loca eōrum ea restituere. Prō cīvibus usque ad fīnem vītae pugnābimus!\"\n\nEx illō locō exiērunt illī cīvēs et magnā vī pugnāre coepērunt. Tum bellum grave inceptum est. Castella et castra rēgis cīvēs circumvēnērunt et ignibus dēlēvērunt. Numquam cīvēs sē recēpērunt at semper mīlitēs rēgis fūgērunt. Vigilēs dispositī sunt; pontēs frāctī sunt et secūribus caesī sunt. Cīvēs urbis huius pācem amāverant. Tamen quamquam mīlitēs nōn fuerant, cīvēs validī fuerant et mox mīlitēs bonī factī sunt. Diū pugnātum est. Tandem cīvēs vīcērunt et hodiē nōs sumus libērī quod eques fortis hoc dīxit: \"Rēx nōbīs nōn benignus est. Līber erō aut moriar.\"",
+      "english": "Before his companions a brave horseman stood and said this: \"We are citizens who live in a kingdom. The king who does not live here has authority in this kingdom. We give the king everything he asks and have given for many years. We do all the commands of the king. Meanwhile what does the king give us? What do we receive from the king? Do we receive honor or injury? Which does the king want? Peace? Or war? What ought we to do? What are we able to do? At my house there are weapons. I will take up these weapons. You too take up weapons. Do not restore them to their places. We will fight for the citizens to the end of life!\"\n\nFrom that place those citizens went out and began to fight with great force. Then a serious war was begun. The citizens surrounded the forts and camps of the king and destroyed them with fires. The citizens never retreated but the king's soldiers always fled. Watchmen were posted; bridges were broken and cut down with axes. The citizens of this city had loved peace. Nevertheless although they had not been soldiers, the citizens had been strong and soon became good soldiers. The fighting went on for a long time. At last the citizens conquered and today we are free because the brave horseman said this: \"The king is not kind to us. I will be free or I will die.\"",
+      "source_story": "Maxey, Cap. XL",
+      "notes": "The American Revolution in Latin! The horseman echoes Patrick Henry (1775). Honōremne an iniūriam = 'Honor or injury?' — -ne introduces the question. Līber erō aut moriar = 'I will be free or I will die.'",
+      "vocab_hints": [
+        "rēgnum = kingdom",
+        "imperāta = commands (pl. noun)",
+        "restituō = to restore, put back",
+        "ignibus dēlēvērunt = destroyed with fires",
+        "sē recipiō = to retreat, withdraw",
+        "Līber erō aut moriar = I will be free or I will die"
+      ]
+    },
+    {
+      "id": "maxey-lc25",
+      "title": "Cap. XL · Sāturnālia",
+      "latin": "Rōmae, temporibus antīquīs, septimus diēs nōn erat diēs quiētis. Semper virī et fēminae labōrābant. Sed saepe fēriae erant. Tum virī nōn labōrābant sed multum edēbant et multum bibēbant et ad lūdōs ībant. Puerī et puellae ad scholam nōn ībant.\n\nMagnae fēriae erant mēnse Decembrī et 'Sāturnālia' appellābantur. Per hās fēriās nūllus labōrābat. Servī nōn labōrābant et togās habēbant et per viās ambulābant. Omnēs erant laetī et per viās \"Iō Sāturnālia! Iō Sāturnālia!\" exclāmābant. Omnēs amīcīs dōna dabant. Dōna erant cēreī. Multī cēreī in tēctīs clārās flammās dabant. Prīmō hae fēriae per trēs diēs manēbant. Posteā hae fēriae septem diēs manēbant.\n\nPuerī et puellae erant laetī per fēriās. Puerīs et puellīs quoque dōna dabantur. Dōna erant sigilla. Sigillum est parvum. Factum est ex terrā. Parvī puerī et puellae sigilla amant. Diēs cum sigilla dabantur 'Sigillāria' appellābantur.\n\nPer Sāturnālia omnēs aliōs amābant, omnēs erant amīcī. Omnēs cēnās magnās parābant ubi servī edēbant et dominī cēnam dabant.",
+      "english": "In Rome, in ancient times, the seventh day was not a day of rest. Men and women always worked. But there were often holidays. Then men did not work but ate much and drank much and went to games. Boys and girls did not go to school.\n\nThere were great holidays in the month of December and they were called 'Saturnalia.' During these holidays no one worked. Slaves did not work and had togas and walked through the streets. All were happy and shouted through the streets: \"Io Saturnalia! Io Saturnalia!\" All gave gifts to friends. The gifts were wax candles. Many candles gave bright flames in houses. At first these holidays lasted three days. Afterward these holidays lasted seven days.\n\nBoys and girls were happy during the holidays. To boys and girls too gifts were given. The gifts were little clay figures. A sigillum is small. It is made from clay. Small boys and girls love the figures. The days when figures were given were called 'Sigillaria.'\n\nDuring Saturnalia everyone loved others, all were friends. All prepared great dinners where slaves ate and masters provided the dinner.",
+      "source_story": "Maxey, Cap. XL",
+      "notes": "The Saturnalia (Dec. 17–23) — Rome's great winter festival. Roles reversed: masters served slaves. Gifts of candles (cēreī) and clay figurines (sigilla). Sigillaria was the final day. Connects to Christmas in the next passage.",
+      "vocab_hints": [
+        "fēriae = holidays, festival days",
+        "Sāturnālia = Saturnalia (December festival)",
+        "cēreus = wax candle",
+        "flamma = flame",
+        "sigillum = small clay figure, statuette",
+        "Iō! = Hurrah! (exclamation of joy)"
+      ]
+    },
+    {
+      "id": "maxey-lc-r5",
+      "title": "Cap. XL · Chrīstus Nātus Est",
+      "latin": "Per Sāturnālia omnēs aliōs amābant, omnēs erant amīcī. Omnēs cēnās magnās parābant ubi servī edēbant et dominī cēnam dabant. Omnēs erant benignī, omnēs erant laetī.\n\nNunc nōs quoque mēnse Decembrī fēriās habēmus. Diēs paene habēmus quae erant fēriae Rōmānōrum antīquōrum. Multa facimus quae Rōmānī faciēbant. Dōna damus et sumus benignī et laetī. Nōs fēriās habēmus quod Chrīstus nātus est.\n\nFīnis.",
+      "english": "During Saturnalia everyone loved others, all were friends. All prepared great dinners where slaves ate and masters provided the dinner. All were kind, all were joyful.\n\nNow we too have holidays in the month of December. We have days almost like those which were the holidays of the ancient Romans. We do many things which the Romans did. We give gifts and we are kind and joyful. We have holidays because Christ is born.\n\nThe End.",
+      "source_story": "Maxey, Cap. XL",
+      "notes": "The culminating passage of the entire Maxey reader. The author draws a direct line from Saturnalia to Christmas: Nōs fēriās habēmus quod Chrīstus nātus est — 'We have holidays because Christ is born.' nātus est = perfect passive of nāscor. A beautiful conclusion for a Christian Latin curriculum.",
+      "vocab_hints": [
+        "benīgnus = kind, generous",
+        "nātus est = is born / was born (perfect passive of nāscor)",
+        "Chrīstus nātus est = Christ is born",
+        "Fīnis = The End"
+      ]
+    }
+  ]
+}
