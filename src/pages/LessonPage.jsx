@@ -438,7 +438,7 @@ function LectioTab({ lesson, onComplete }) {
         </p>
       )}
 
-      <p className="reading-passage">{passage.latin}</p>
+      <p className="reading-passage" style={{ whiteSpace: 'pre-line' }}>{passage.latin}</p>
 
       {/* Vocab hints */}
       {passage.vocab_hints?.length > 0 && (
@@ -478,7 +478,7 @@ function LectioTab({ lesson, onComplete }) {
       </div>
 
       {showTranslation && (
-        <p className="reading-translation">{passage.english}</p>
+        <p className="reading-translation" style={{ whiteSpace: 'pre-line' }}>{passage.english}</p>
       )}
 
       {passage.notes && (
