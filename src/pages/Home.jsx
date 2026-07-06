@@ -201,7 +201,7 @@ const TOOLS = [
     subtitle: 'Via Latina — The Latin Way',
     desc: 'Via Latina: Gradus I (Prima Latina) + Gradus II (Latina Christiana from screenshots) + authentic texts (Caesar to Virgil). Structured lessons, flashcards, quizzes, classical TTS (Leo + overrides), drills & chat with Magister.',
     accent: '#c9902a',
-    href: '/latin',
+    href: '/via-latina',
     status: 'active',
     tag: 'Active',
   },
