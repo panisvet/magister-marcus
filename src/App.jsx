@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import ViaLatina from './pages/ViaLatina.jsx'
 import LessonPage from './pages/LessonPage.jsx'
-import Latin from './pages/Latin.jsx'
 import LessonViewer from './pages/LessonViewer.jsx'
 import MagisterNatura from './pages/MagisterNatura.jsx'
 import MagisterHistoria from './pages/MagisterHistoria.jsx'
@@ -18,7 +17,6 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/via-latina" element={<ViaLatina />} />
       <Route path="/lesson/:stage/:lessonId" element={<LessonPage />} />
-      <Route path="/latin" element={<Latin />} />
       <Route path="/read" element={<ReadingApp />} />
       <Route path="/sounds" element={<SoundsBoard />} />
       <Route path="/magister-natura" element={<MagisterNatura />} />

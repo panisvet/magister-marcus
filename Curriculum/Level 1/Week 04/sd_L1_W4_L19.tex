@@ -1,0 +1,124 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Level 1, Week 4, Lesson 19
+%  Topic: Numbers 0–10 — Full Review & Counting Backward from 10
+%  10–12 problems | No speed drill
+%  Compile with XeLaTeX
+% ============================================================
+\documentclass[12pt,letterpaper]{article}
+\usepackage{sd_style}
+
+\renewcommand{\lessonnum}{19}
+\renewcommand{\lessonweek}{4}
+
+\begin{document}
+
+\lessonheader{4}{19}{Numbers 0–10: Full Review \& Counting Backward}
+
+\begin{instructbox}
+\noindent\textbf{\color{sd-blue}Instruction} \textit{(read aloud):}\\[4pt]
+Today we review all numbers 0 through 10 and practice counting
+backward from 10 all the way to 0.
+Counting backward from 10 is like a grand rocket launch!
+\end{instructbox}
+
+\vspace{6pt}
+\begin{center}
+\begin{tikzpicture}
+  \draw[sd-blue, very thick, <-] (-0.3,0) -- (10.8,0);
+  \foreach \n in {0,...,10}{
+    \draw[sd-blue, thick] (\n, -0.15) -- (\n, 0.15);
+    \node[below] at (\n, -0.25) {\textbf{\n}};
+  }
+  \draw[sd-gold, very thick, ->] (10.2, 0.5) -- (9.0, 0.5);
+  \node[above] at (9.6, 0.55) {\color{sd-gold}\small\textit{count this way}};
+\end{tikzpicture}
+\end{center}
+
+\goldrule
+\noindent\textbf{\color{sd-blue}Practice}
+\vspace{6pt}
+
+\prob Count backward. Fill in the blanks.\\[6pt]
+\hspace{1cm}{\Large 10, \ansblank, 8, \ansblank, 6, \ansblank, 4, \ansblank, 2, \ansblank, 0}
+
+\vspace{10pt}
+\prob What is \textbf{one less} than each number?\\[6pt]
+\begin{tabular}{ccccc}
+one less than 10: & one less than 7: & one less than 4: & one less than 9: & one less than 1:\\[4pt]
+\ansblank & \ansblank & \ansblank & \ansblank & \ansblank
+\end{tabular}
+
+\vspace{10pt}
+\prob Count and write.\\[8pt]
+\begin{tabular}{ccccc}
+\onedot\onedot\onedot\onedot\onedot\onedot\onedot\onedot\onedot &
+\onedot\onedot\onedot\onedot\onedot\onedot &
+\onedot\onedot\onedot\onedot\onedot\onedot\onedot\onedot\onedot\onedot &
+\onedot\onedot\onedot\onedot\onedot\onedot\onedot &
+\onedot\onedot\onedot\onedot\onedot\onedot\onedot\onedot\\[4pt]
+\ansblank & \ansblank & \ansblank & \ansblank & \ansblank
+\end{tabular}
+
+\vspace{10pt}
+\prob Circle every number that is \textbf{less than 5}:\\[6pt]
+\hspace{2cm}{\Large 7 \quad 2 \quad 9 \quad 0 \quad 4 \quad 6 \quad 3 \quad 10 \quad 1}
+
+\vspace{10pt}
+\prob Write the missing number in each sequence:\\[6pt]
+\hspace{1cm}0, 1, \ansblank, 3, 4 \hspace{2cm}
+6, 7, \ansblank, 9, 10 \hspace{2cm}
+10, 9, \ansblank, 7, 6
+
+\vspace{10pt}
+\prob Order from greatest to least:\\[6pt]
+\hspace{1cm}{\Large 3 \quad 10 \quad 1 \quad 8 \quad 5}\quad$\longrightarrow$\quad
+\ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank
+
+\vspace{10pt}
+\prob \textit{(Teacher reads)} Ten candles were lit on a birthday cake.
+The birthday child blew out one candle at a time.
+Count backward to show how many were left after each blow:\\[6pt]
+\hspace{1cm}10, \ansblank, \ansblank, \ansblank, \ansblank, \ansblank, \ansblank, \ansblank, \ansblank, \ansblank, \ansblank
+
+\vspace{10pt}
+\prob What number is exactly halfway between 0 and 10? \quad\ansblank
+
+\vspace{10pt}
+\prob Write all numbers from 0 to 10 in your neatest hand:\\[8pt]
+\noindent\fbox{\rule{0pt}{1.8cm}\hspace{12.5cm}}
+
+\goldrule
+
+\begin{checkbox}
+\noindent\textbf{\color{sd-green}Knowledge Check}\\[4pt]
+\setcounter{probnum}{0}
+\prob Count backward from 10 to 0 aloud. \quad $\square$~Done\\[8pt]
+\prob What is one less than 6? \quad\ansblank\\[8pt]
+\prob What is one less than 10? \quad\ansblank
+\end{checkbox}
+
+\vfill
+\noindent{\color{sd-blue}$\bigstar$ \textbf{Enrichment — Cuneiform Numbers:}}\\[4pt]
+The ancient Sumerians of Mesopotamia wrote numbers using a wedge-shaped stylus pressed into clay.
+Their symbols for 1 through 10 looked like this:\\[4pt]
+\begin{center}
+\begin{tabular}{cccccccccc}
+$\triangledown$ & $\triangledown\triangledown$ & $\triangledown\triangledown\triangledown$ &
+$\triangledown\triangledown\triangledown\triangledown$ &
+$\triangledown\triangledown\triangledown\triangledown\triangledown$ &
+$\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown$ &
+$\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown$ &
+$\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown$ &
+$\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown\triangledown$ &
+$\langle$\\[2pt]
+1&2&3&4&5&6&7&8&9&10
+\end{tabular}
+\end{center}
+\textit{(The wedge $\triangledown$ = 1; the angle $\langle$ = 10.)}
+
+\vspace{4pt}\hrule\vspace{3pt}
+{\footnotesize\color{gray}\textit{Teacher note: Counting backward from 10 is harder than from 5 for most children.
+  Practice orally each day this week. The birthday candle story problem
+  makes the concept memorable.}}
+
+\end{document}

@@ -1,0 +1,137 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Level 1, Week 2, Lesson 10
+%  Topic: Numbers 0–10 Review & Number Line Introduction
+%  10–12 problems | No speed drill | Friday consolidation
+%  Compile with XeLaTeX
+% ============================================================
+\documentclass[12pt,letterpaper]{article}
+\usepackage{sd_style}
+
+\renewcommand{\lessonnum}{10}
+\renewcommand{\lessonweek}{2}
+
+\begin{document}
+
+\lessonheader{2}{10}{Numbers 0–10: Review \& the Number Line}
+
+\begin{instructbox}
+\noindent\textbf{\color{sd-blue}Instruction} \textit{(read aloud):}\\[4pt]
+Wonderful work this week!
+Today we review all the numbers from 0 to 10 and meet the \textbf{number line}.
+A number line shows numbers in order from left to right —
+the farther right, the greater the number.
+\end{instructbox}
+
+\vspace{8pt}
+% Number line
+\noindent\textbf{\color{sd-blue}The Number Line:}
+\vspace{8pt}
+
+\begin{center}
+\begin{tikzpicture}
+  \draw[sd-blue, very thick, ->] (-0.3,0) -- (11.5,0);
+  \foreach \n in {0,...,10}{
+    \draw[sd-blue, thick] (\n, -0.15) -- (\n, 0.15);
+    \node[below] at (\n, -0.2) {\textbf{\n}};
+  }
+\end{tikzpicture}
+\end{center}
+
+\goldrule
+\noindent\textbf{\color{sd-blue}Practice}
+\vspace{6pt}
+
+\prob Count and write each number.\\[8pt]
+\begin{tabular}{ccccc}
+\IfFileExists{stars_6.jpg}{\includegraphics[height=1.2cm]{stars_6.jpg}}{%
+  \onestar\onestar\onestar\onestar\onestar\onestar} &
+\IfFileExists{stars_8.jpg}{\includegraphics[height=1.2cm]{stars_8.jpg}}{%
+  \onestar\onestar\onestar\onestar\onestar\onestar\onestar\onestar} &
+\IfFileExists{stars_10.jpg}{\includegraphics[height=1.2cm]{stars_10.jpg}}{%
+  \onestar\onestar\onestar\onestar\onestar\onestar\onestar\onestar\onestar\onestar} &
+\IfFileExists{stars_7.jpg}{\includegraphics[height=1.2cm]{stars_7.jpg}}{%
+  \onestar\onestar\onestar\onestar\onestar\onestar\onestar} &
+\IfFileExists{stars_9.jpg}{\includegraphics[height=1.2cm]{stars_9.jpg}}{%
+  \onestar\onestar\onestar\onestar\onestar\onestar\onestar\onestar\onestar}\\[4pt]
+\ansblank & \ansblank & \ansblank & \ansblank & \ansblank
+\end{tabular}
+
+\vspace{12pt}
+\prob Write the missing numbers on the number line below.\\[8pt]
+\begin{center}
+\begin{tikzpicture}
+  \draw[sd-blue, very thick, ->] (-0.3,0) -- (11.5,0);
+  \foreach \n in {0,...,10}{
+    \draw[sd-blue, thick] (\n, -0.15) -- (\n, 0.15);
+  }
+  % Show some, hide others
+  \foreach \n in {0,2,4,6,8,10}{
+    \node[below] at (\n, -0.25) {\textbf{\n}};
+  }
+  \foreach \n in {1,3,5,7,9}{
+    \node[below] at (\n, -0.25) {\underline{\hspace{0.5cm}}};
+  }
+\end{tikzpicture}
+\end{center}
+
+\vspace{12pt}
+\prob What number is \textbf{one more} than 7? \quad\ansblank
+
+\vspace{10pt}
+\prob What number is \textbf{one less} than 9? \quad\ansblank
+
+\vspace{10pt}
+\prob What number is \textbf{between} 5 and 7? \quad\ansblank
+
+\vspace{10pt}
+\prob Put these numbers in order, greatest to least:\\[6pt]
+\hspace{2cm}{\Large 4 \quad 9 \quad 2 \quad 7 \quad 6}\\[6pt]
+\hspace{2cm}\ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank
+
+\vspace{10pt}
+\prob \textit{(Teacher reads)} A little mouse ran to the right on the number line
+starting at 3 and stopped at 8.
+How many hops did she take? \quad\ansblank
+
+\vspace{10pt}
+\prob Circle every number that is \textbf{greater than 6}:\\[6pt]
+\hspace{2cm}{\Large 0 \quad 5 \quad 7 \quad 10 \quad 3 \quad 9 \quad 6 \quad 8}
+
+\vspace{10pt}
+\prob Circle every number that is \textbf{less than 4}:\\[6pt]
+\hspace{2cm}{\Large 5 \quad 1 \quad 3 \quad 8 \quad 0 \quad 4 \quad 2 \quad 7}
+
+\vspace{10pt}
+\prob Write the numbers 0 through 10 in your neatest hand:\\[8pt]
+\noindent\fbox{\rule{0pt}{1.8cm}\hspace{12.5cm}}
+
+\goldrule
+
+\begin{checkbox}
+\noindent\textbf{\color{sd-green}Knowledge Check}\\[4pt]
+\setcounter{probnum}{0}
+\prob Count to 10 and back to 0 aloud. \quad $\square$~Done\\[8pt]
+\prob What number comes between 8 and 10? \quad\ansblank\\[8pt]
+\prob Which is greater: 6 or 9? \quad\ansblank
+\end{checkbox}
+
+\vfill
+\noindent{\color{sd-blue}$\bigstar$ \textbf{Enrichment — Roman Numerals I–X:}}\\
+You now know all ten Roman numerals!\\[4pt]
+\begin{center}
+\begin{tabular}{cccccccccc}
+\textbf{I}&\textbf{II}&\textbf{III}&\textbf{IV}&\textbf{V}&
+\textbf{VI}&\textbf{VII}&\textbf{VIII}&\textbf{IX}&\textbf{X}\\[2pt]
+1&2&3&4&5&6&7&8&9&10
+\end{tabular}
+\end{center}
+\vspace{4pt}
+Write your age in Roman numerals: \quad\ansblank
+
+\vspace{4pt}\hrule\vspace{3pt}
+{\footnotesize\color{gray}\textit{Teacher note: Week 2 mastery target — student reads,
+writes, and orders all numbers 0–10 without hesitation and understands
+the number line as a left-to-right sequence of increasing values.
+If not solid, do not advance to Week 3 before reviewing.}}
+
+\end{document}

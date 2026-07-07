@@ -1,0 +1,107 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Level 1, Week 2, Lesson 9
+%  Topic: Comparing Groups 0–10 (More, Fewer, Same)
+%  10 problems | No speed drill
+%  Compile with XeLaTeX
+% ============================================================
+\documentclass[12pt,letterpaper]{article}
+\usepackage{sd_style}
+
+\renewcommand{\lessonnum}{9}
+\renewcommand{\lessonweek}{2}
+
+\begin{document}
+
+\lessonheader{2}{9}{Comparing Numbers 0–10}
+
+\begin{instructbox}
+\noindent\textbf{\color{sd-blue}Instruction} \textit{(read aloud):}\\[4pt]
+We already know \textbf{more}, \textbf{fewer}, and \textbf{same} for small numbers.
+Now we use those words for numbers all the way to ten.
+The bigger the number, the more objects in the group.
+\end{instructbox}
+
+\goldrule
+\noindent\textbf{\color{sd-blue}Practice}
+\vspace{6pt}
+
+\prob Which is more: \textbf{6} or \textbf{9}? \quad\ansblank
+
+\vspace{10pt}
+\prob Which is fewer: \textbf{10} or \textbf{7}? \quad\ansblank
+
+\vspace{10pt}
+\prob Are these the same? Write \textit{yes} or \textit{no}.\\[6pt]
+\hspace{1cm}Group A: \onedot\onedot\onedot\onedot\onedot\onedot\onedot\onedot \quad (8)\\[4pt]
+\hspace{1cm}Group B: \onedot\onedot\onedot\onedot\onedot\onedot\onedot\onedot \quad (8)
+\quad\ansblank
+
+\vspace{10pt}
+\prob Which group has more? Circle it.\\[6pt]
+\begin{tabular}{lcl}
+Group A: &
+\begin{tikzpicture}[baseline=0]
+  \foreach \x in {0,...,5}\draw[fill=sd-gold,thick](\x*0.7,0)circle(0.25);
+\end{tikzpicture}
+& (6)\\[8pt]
+Group B: &
+\begin{tikzpicture}[baseline=0]
+  \foreach \x in {0,...,9}\draw[fill=sd-gold,thick](\x*0.7,0)circle(0.25);
+\end{tikzpicture}
+& (10)
+\end{tabular}
+
+\vspace{10pt}
+\prob \textit{(Teacher reads)} A vase has 8 flowers.
+Another vase has 5 flowers.
+Which vase has fewer flowers? \quad\ansblank\\[4pt]
+\hspace{1cm}\IfFileExists{flowers_vase_8.jpg}{\includegraphics[height=1.8cm]{flowers_vase_8.jpg}}{}
+\IfFileExists{flowers_vase_5.jpg}{\includegraphics[height=1.8cm]{flowers_vase_5.jpg}}{}
+
+\vspace{10pt}
+\prob Write the greater number: \quad 7 \quad or \quad 4 \quad $\longrightarrow$ \quad\ansblank
+
+\vspace{10pt}
+\prob Write the lesser number: \quad 9 \quad or \quad 6 \quad $\longrightarrow$ \quad\ansblank
+
+\vspace{10pt}
+\prob Draw a group with \textbf{more} than 6 but \textbf{fewer} than 9.\\[4pt]
+\noindent\fbox{\rule{0pt}{2.2cm}\hspace{11cm}}\\[4pt]
+How many did you draw? \quad\ansblank
+
+\vspace{10pt}
+\prob Put these numbers in order from least to greatest:\\[6pt]
+\hspace{2cm}{\Large 10 \quad 3 \quad 7 \quad 1 \quad 5}\\[6pt]
+\hspace{2cm}\ansblank\quad\ansblank\quad\ansblank\quad\ansblank\quad\ansblank
+
+\vspace{10pt}
+\prob \textit{(Teacher reads)} There are 0 rabbits under the tree and
+10 rabbits in the meadow.
+Which group has more? \quad\ansblank \quad
+Which number is greater, 0 or 10? \quad\ansblank
+
+\goldrule
+
+\begin{checkbox}
+\noindent\textbf{\color{sd-green}Knowledge Check}\\[4pt]
+\setcounter{probnum}{0}
+\prob Which is greater: 8 or 3? \quad\ansblank\\[8pt]
+\prob Which is less: 10 or 6? \quad\ansblank
+\end{checkbox}
+
+\vfill
+\noindent{\color{sd-blue}$\bigstar$ \textbf{Enrichment — Mayan Numbers:}}\\
+The Maya counted using dots and bars.
+A dot $\bullet$ = 1. A bar \rule{0.8cm}{2pt} = 5.\\[4pt]
+\begin{tabular}{ccccccc}
+$\bullet$ & $\bullet\bullet$ & $\bullet\bullet\bullet$ &
+$\bullet\bullet\bullet\bullet$ & \rule{0.8cm}{2pt} &
+\rule{0.8cm}{2pt}$\bullet$ & \rule{0.8cm}{2pt}$\bullet\bullet$\\
+1 & 2 & 3 & 4 & 5 & 6 & 7
+\end{tabular}\\[4pt]
+Can you write 8, 9, and 10 in Mayan?
+
+\vspace{4pt}\hrule\vspace{3pt}
+{\footnotesize\color{gray}\textit{Teacher note: Zero is an important concept here — zero means none, and it is less than any counting number. Make sure the student can articulate why 0 is the smallest number in our set.}}
+
+\end{document}

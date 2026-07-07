@@ -1,0 +1,186 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Magister Mathematica
+%  Level 1 | Week 10 | Day 4
+%  Topic: All Addition Facts — Sums to 8, Mixed Review
+% ============================================================
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mdframed}
+\usepackage{fancyhdr}
+
+\definecolor{scholared}{RGB}{160,30,30}
+\definecolor{scholagold}{RGB}{180,140,40}
+\definecolor{scholacream}{RGB}{253,248,235}
+\definecolor{scholagreen}{RGB}{50,110,60}
+\definecolor{scholablue}{RGB}{40,80,140}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.6pt}
+\fancyhead[L]{\small\textcolor{scholared}{\textbf{Schola Domestica — Magister Mathematica}}}
+\fancyhead[R]{\small\textcolor{scholared}{Level 1 · Week 10 · Day 4}}
+\fancyfoot[C]{\small\textcolor{gray}{— \thepage\ —}}
+
+\newcommand{\answerline}{\underline{\hspace{2.5cm}}}
+\newcommand{\biganswerline}{\underline{\hspace{4cm}}}
+\newcommand{\numbox}{\tikz{\draw[scholablue,thick](0,0)rectangle(1.2cm,0.85cm);}}
+
+\newmdenv[
+  backgroundcolor=scholacream,
+  linecolor=scholared,
+  linewidth=1.5pt,
+  roundcorner=6pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt
+]{lessonbox}
+
+\newmdenv[
+  backgroundcolor={rgb,255:red,235;green,245;blue,235},
+  linecolor=scholagreen,
+  linewidth=1.2pt,
+  roundcorner=4pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+  innerleftmargin=8pt,
+  innerrightmargin=8pt
+]{enrichbox}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\textbf{\textcolor{scholared}{All Facts to Eight:}}}\\[4pt]
+  {\Large\textcolor{scholagold}{\textit{Putting It All Together}}}\\[6pt]
+  {\small Name: \biganswerline \hspace{1cm} Date: \answerline}
+\end{center}
+
+\vspace{4pt}
+\noindent\textcolor{scholared}{\rule{\linewidth}{1pt}}
+\vspace{4pt}
+
+% IMAGE PROMPT (Beatrix Potter watercolour style):
+% A badger sits at a little wooden desk with an abacus, carefully pushing beads. Autumn leaves
+% visible through a round window. Earthy warm tones, white paper background, no text.
+
+\begin{lessonbox}
+\textbf{Your growing toolkit of strategies:}
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+  \item \textbf{$+0$}: same number \quad \textbf{$+1$}: one more \quad \textbf{$+2$/$+3$}: count on
+  \item \textbf{$+4$/$+5$}: count on from the bigger addend
+  \item \textbf{Doubles}: memorise 1+1 through 4+4
+  \item \textbf{Near-doubles}: use the double, then $\pm 1$
+\end{itemize}
+\end{lessonbox}
+
+\bigskip
+
+% ===== PART I: HORIZONTAL FACTS =====
+\noindent\textcolor{scholared}{\large\textbf{Part I — Quick Facts}} \hfill \textit{(Problems 1–8)}
+
+\medskip
+
+\noindent
+\begin{tabular}{@{}p{3.3cm} p{3.3cm} p{3.3cm} p{3.3cm}@{}}
+\textbf{1.}\; $6 + 2 =$ \numbox &
+\textbf{2.}\; $4 + 4 =$ \numbox &
+\textbf{3.}\; $5 + 3 =$ \numbox &
+\textbf{4.}\; $7 + 1 =$ \numbox \\[12pt]
+\textbf{5.}\; $3 + 4 =$ \numbox &
+\textbf{6.}\; $8 + 0 =$ \numbox &
+\textbf{7.}\; $2 + 5 =$ \numbox &
+\textbf{8.}\; $1 + 6 =$ \numbox
+\end{tabular}
+
+\bigskip\bigskip
+
+% ===== PART II: VERTICAL FACTS =====
+\noindent\textcolor{scholared}{\large\textbf{Part II — Vertical Facts}} \hfill \textit{(Problems 9–12)}
+
+\bigskip
+
+\noindent
+\begin{tabular}{@{}p{2.0cm} p{2.0cm} p{2.0cm} p{2.0cm}@{}}
+\textbf{9.}
+$\begin{array}{r} 5 \\ +2 \\ \hline \phantom{0} \end{array}$
+&
+\textbf{10.}
+$\begin{array}{r} 4 \\ +3 \\ \hline \phantom{0} \end{array}$
+&
+\textbf{11.}
+$\begin{array}{r} 6 \\ +1 \\ \hline \phantom{0} \end{array}$
+&
+\textbf{12.}
+$\begin{array}{r} 4 \\ +4 \\ \hline \phantom{0} \end{array}$
+\end{tabular}
+
+\bigskip\bigskip
+
+% ===== PART III: MISSING ADDEND =====
+\noindent\textcolor{scholared}{\large\textbf{Part III — Find the Missing Part}} \hfill \textit{(Problems 13–16)}
+
+\bigskip
+
+\noindent
+\begin{tabular}{@{}p{3.5cm} p{3.5cm} p{3.5cm} p{3.5cm}@{}}
+\textbf{13.}\; $4 +$ \numbox $= 8$ &
+\textbf{14.}\; $\numbox + 5 = 7$ &
+\textbf{15.}\; $3 +$ \numbox $= 7$ &
+\textbf{16.}\; $\numbox + 4 = 6$
+\end{tabular}
+
+\bigskip\bigskip
+
+% ===== PART IV: WORD PROBLEMS =====
+\noindent\textcolor{scholared}{\large\textbf{Part IV — Story Problems}} \hfill \textit{(Problems 17–20)}
+
+\medskip
+
+\noindent\textbf{17.} A pond has \textbf{5} lily pads on the left and \textbf{3} on the right. How many lily pads in all?
+
+\medskip\noindent\hspace{2em} $\numbox + \numbox = \numbox$ lily pads
+
+\bigskip
+
+\noindent\textbf{18.} A basket has \textbf{4} apples. Someone puts in \textbf{4} more. How many apples now?
+
+\medskip\noindent\hspace{2em} $\numbox + \numbox = \numbox$ apples
+
+\bigskip
+
+\noindent\textbf{19.} A worm finds \textbf{2} leaves and some more leaves. It has \textbf{8} leaves in all. How many more did it find?
+
+\medskip\noindent\hspace{2em} $2 +$ \numbox $= 8$\quad It found \numbox\ more leaves.
+
+\bigskip
+
+\noindent\textbf{20.} Write your own addition story that uses the number 7 as the whole:
+
+\medskip\noindent\hspace{2em}\underline{\hspace{10cm}}
+
+\medskip\noindent\hspace{2em} $\numbox + \numbox = 7$
+
+\bigskip
+
+\begin{enrichbox}
+\textbf{\textcolor{scholagreen}{Oral Fact Drill — Sums to 8}}\\[3pt]
+Teacher calls a fact; child answers immediately (no writing).\\[4pt]
+$4{+}4$ \; $3{+}5$ \; $6{+}2$ \; $7{+}1$ \; $5{+}3$ \; $4{+}3$ \; $3{+}4$ \; $2{+}5$ \; $5{+}2$ \; $8{+}0$\\[2pt]
+\textit{Goal: no hesitation. Repeat any that take more than 3 seconds.}
+\end{enrichbox}
+
+\vspace{0.3cm}
+\noindent\textcolor{gray}{\small\textit{Ray's Primary Arithmetic — mastering all facts with sums to 8.}}
+
+\end{document}

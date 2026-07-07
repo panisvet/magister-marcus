@@ -1,0 +1,129 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Level 1, Week 3, Lesson 12
+%  Topic: Counting Backward — From 5 to 0
+%  8–10 problems | No speed drill
+%  Compile with XeLaTeX
+% ============================================================
+\documentclass[12pt,letterpaper]{article}
+\usepackage{sd_style}
+
+\renewcommand{\lessonnum}{12}
+\renewcommand{\lessonweek}{3}
+
+\begin{document}
+
+\lessonheader{3}{12}{Counting Backward from 5 to 0}
+
+\begin{instructbox}
+\noindent\textbf{\color{sd-blue}Instruction} \textit{(read aloud):}\\[4pt]
+We know how to count \textit{forward}: 0, 1, 2, 3, 4, 5.
+Today we learn to count \textit{backward}: 5, 4, 3, 2, 1, 0.
+Counting backward means going one \textit{less} each time.
+It is like a rocket launch — 5, 4, 3, 2, 1, 0 \ldots\ blast off!
+\end{instructbox}
+
+\vspace{8pt}
+% Backward number line
+\noindent\textbf{\color{sd-blue}Count backward on the number line:}
+\vspace{8pt}
+
+\begin{center}
+\begin{tikzpicture}
+  \draw[sd-blue, very thick, <-] (-0.3,0) -- (5.8,0);
+  \foreach \n in {0,...,5}{
+    \draw[sd-blue, thick] (\n, -0.15) -- (\n, 0.15);
+    \node[below] at (\n, -0.25) {\textbf{\n}};
+  }
+  % Arrow showing direction
+  \draw[sd-gold, very thick, ->] (5.2, 0.5) -- (4.2, 0.5);
+  \node[above] at (4.7, 0.55) {\color{sd-gold}\small\textit{this way}};
+\end{tikzpicture}
+\end{center}
+
+\goldrule
+\noindent\textbf{\color{sd-blue}Practice}
+\vspace{6pt}
+
+\prob Fill in the blanks — count backward.\\[6pt]
+\hspace{1cm}{\Large 5 \quad \ansblank \quad 3 \quad \ansblank \quad 1 \quad \ansblank}
+
+\vspace{10pt}
+\prob What comes just \textbf{before} 4 when counting backward?\\[4pt]
+\hspace{1cm}5 \quad \ansblank \quad 3
+
+\vspace{10pt}
+\prob What comes just \textbf{before} 2 when counting backward?\\[4pt]
+\hspace{1cm}3 \quad \ansblank \quad 1
+
+\vspace{10pt}
+\prob \textit{(Teacher reads)} Five frogs sat on a log.
+One jumped into the pond. Count backward to find how many are left.\\[4pt]
+\hspace{1cm}Start at: 5 \quad Count back 1 \quad Answer: \ansblank
+
+\vspace{10pt}
+\prob Count backward and write the missing numbers:\\[6pt]
+\begin{center}
+\begin{tikzpicture}
+  \foreach \n/\v in {1/5, 2/{\ }, 3/3, 4/{\ }, 5/1, 6/0}{
+    \draw[sd-blue, thick] (\n*1.5-1.5, 0) rectangle (\n*1.5-0.3, 0.9);
+    \ifnum\n=2
+      \node at (\n*1.5-0.9, 0.45) {\Large\ansblank};
+    \else\ifnum\n=4
+      \node at (\n*1.5-0.9, 0.45) {\Large\ansblank};
+    \else
+      \node at (\n*1.5-0.9, 0.45) {\Large\textbf{\v}};
+    \fi\fi
+  }
+  \draw[sd-gold, very thick, ->] (6.6, 0.45) -- (7.2, 0.45);
+  \node[right] at (7.2, 0.45) {\color{sd-gold}\small\textit{blast off!}};
+\end{tikzpicture}
+\end{center}
+
+\vspace{10pt}
+\prob Write the number that is \textbf{one less} than each.\\[6pt]
+\begin{tabular}{ccccc}
+one less than 5: & one less than 3: & one less than 1: & one less than 4: & one less than 2:\\[4pt]
+\ansblank & \ansblank & \ansblank & \ansblank & \ansblank
+\end{tabular}
+
+\vspace{10pt}
+\prob \textit{(Teacher reads)} A candle burned down from 4 inches tall.
+Each day it got 1 inch shorter.
+Count backward from 4 to show the heights: \quad
+4 \quad \ansblank \quad \ansblank \quad \ansblank \quad \ansblank
+
+\vspace{10pt}
+\prob Count backward aloud from 5 to 0 and mark each number as you say it.\\[6pt]
+\begin{center}
+\begin{tabular}{cccccc}
+\Large\textbf{5} & \Large\textbf{4} & \Large\textbf{3} & \Large\textbf{2} & \Large\textbf{1} & \Large\textbf{0}\\[4pt]
+$\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$
+\end{tabular}
+\end{center}
+
+\goldrule
+
+\begin{checkbox}
+\noindent\textbf{\color{sd-green}Knowledge Check}\\[4pt]
+\setcounter{probnum}{0}
+\prob Count backward from 5: \quad 5, \ansblank, \ansblank, \ansblank, \ansblank, \ansblank\\[8pt]
+\prob What is one less than 3? \quad\ansblank
+\end{checkbox}
+
+\vfill
+\noindent{\color{sd-blue}$\bigstar$ \textbf{Enrichment — Tally Marks:}}\\
+People have counted with tally marks for thousands of years.
+Every four marks get crossed by a fifth: \quad
+\begin{tikzpicture}[baseline=0.1cm]
+  \foreach \x in {0,...,3}\draw[sd-blue,very thick](\x*0.3, 0)--(\x*0.3, 0.8);
+  \draw[sd-blue,very thick,rotate around={-70:(0.45,0.4)}](0,0.4)--(0.9,0.4);
+\end{tikzpicture}
+\quad = 5\\[4pt]
+Count backward using tally marks: draw 5, cross one off at a time.
+
+\vspace{4pt}\hrule\vspace{3pt}
+{\footnotesize\color{gray}\textit{Teacher note: The rocket launch countdown (5–4–3–2–1–0) is an excellent mnemonic.
+  Practice orally several times. If student confuses "one less" direction,
+  return to the physical number line and hop left one space at a time.}}
+
+\end{document}

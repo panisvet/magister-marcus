@@ -1,7 +1,6 @@
 /api/* /api/:splat 200
 /via-latina /index.html 200
 /lesson/* /index.html 200
-/latin /index.html 200
 /read /index.html 200
 /sounds /index.html 200
 /magister-natura /index.html 200

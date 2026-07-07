@@ -1,0 +1,135 @@
+% ============================================================
+%  SCHOLA DOMESTICA — Level 1, Week 3, Lesson 15
+%  Topic: Patterns & Sequences with Numbers 0–5
+%  (Friday — joyful, creative consolidation)
+%  10 problems | No speed drill
+%  Compile with XeLaTeX
+% ============================================================
+\documentclass[12pt,letterpaper]{article}
+\usepackage{sd_style}
+
+\renewcommand{\lessonnum}{15}
+\renewcommand{\lessonweek}{3}
+
+\begin{document}
+
+\lessonheader{3}{15}{Patterns with Numbers 0–5}
+
+\begin{instructbox}
+\noindent\textbf{\color{sd-blue}Instruction} \textit{(read aloud):}\\[4pt]
+Patterns repeat in a predictable way.
+Numbers can make patterns too!
+Today we find, continue, and create number patterns using 0 through 5.
+Look carefully — what comes next?
+\end{instructbox}
+
+\goldrule
+\noindent\textbf{\color{sd-blue}Practice}
+\vspace{6pt}
+
+\prob Continue the pattern.\\[6pt]
+\hspace{1cm}{\Large 1, 2, 1, 2, 1, \ansblank, \ansblank}
+
+\vspace{10pt}
+\prob Continue the pattern.\\[6pt]
+\hspace{1cm}{\Large 0, 1, 2, 0, 1, 2, 0, \ansblank, \ansblank}
+
+\vspace{10pt}
+\prob Continue the pattern.\\[6pt]
+\hspace{1cm}{\Large 1, 3, 5, 1, 3, \ansblank, \ansblank}
+
+\vspace{10pt}
+\prob Continue the counting pattern.\\[6pt]
+\hspace{1cm}{\Large 0, 1, 2, 3, 4, \ansblank, \ansblank}
+\textit{(What kind of pattern is this?)}
+
+\vspace{10pt}
+\prob Continue the counting-backward pattern.\\[6pt]
+\hspace{1cm}{\Large 5, 4, 3, 2, \ansblank, \ansblank}
+
+\vspace{10pt}
+\prob What is wrong with this pattern? Circle the mistake and write the correct number.\\[6pt]
+\hspace{1cm}{\Large 1, 2, 3, \textbf{5}, 4, 5}\\[6pt]
+The mistake is: \ansblank \quad It should be: \ansblank
+
+\vspace{10pt}
+\prob Draw the shape pattern and write the numbers below each shape.\\[6pt]
+\begin{center}
+\begin{tikzpicture}
+  % Square, circle, square, circle pattern
+  \draw[sd-blue,thick](0,0) rectangle (0.8,0.8);
+  \draw[sd-blue,thick](1.4,0.4) circle(0.4);
+  \draw[sd-blue,thick](2.2,0) rectangle (3.0,0.8);
+  \draw[sd-blue,thick](3.6,0.4) circle(0.4);
+  \draw[sd-blue,thick,dashed](4.4,0) rectangle (5.2,0.8);
+  \draw[sd-blue,thick,dashed](6.0,0.4) circle(0.4);
+  % Labels
+  \node[below] at (0.4,-0.1) {\small 1};
+  \node[below] at (1.4,-0.1) {\small 2};
+  \node[below] at (2.6,-0.1) {\small 3};
+  \node[below] at (3.6,-0.1) {\small 4};
+  \node[below] at (4.8,-0.1) {\ansblank};
+  \node[below] at (6.0,-0.1) {\ansblank};
+\end{tikzpicture}
+\end{center}
+
+\vspace{10pt}
+\prob Create your own repeating pattern using numbers 0–5.
+Write at least 8 numbers.\\[8pt]
+\noindent\fbox{\rule{0pt}{1.4cm}\hspace{12cm}}
+
+\vspace{10pt}
+\prob \textit{(Teacher reads)} A rabbit hopped 1 time, rested,
+hopped 2 times, rested, hopped 3 times, rested.
+If the pattern continues, how many times will the rabbit hop next? \quad\ansblank
+
+\vspace{10pt}
+\prob Skip-count by 2s — fill in the blanks.\\[6pt]
+\hspace{1cm}{\Large 0, 2, \ansblank, \ansblank, \ansblank}
+\textit{(Hint: add 2 each time.)}
+
+\goldrule
+
+\begin{checkbox}
+\noindent\textbf{\color{sd-green}Knowledge Check}\\[4pt]
+\setcounter{probnum}{0}
+\prob Continue: 2, 4, 2, 4, 2, \ansblank, \ansblank\\[8pt]
+\prob Continue: 0, 1, 2, 3, \ansblank, \ansblank\\[8pt]
+\prob Continue backward: 5, 4, 3, \ansblank, \ansblank
+\end{checkbox}
+
+\vfill
+\noindent{\color{sd-blue}$\bigstar$ \textbf{Enrichment — Tally Mark Patterns:}}\\[4pt]
+Tally marks make a pattern of 5.
+Every fifth mark crosses the group.
+Count these tally groups and write the number.\\[6pt]
+\begin{tabular}{cccc}
+\begin{tikzpicture}[baseline=0]
+  \foreach\x in{0,0.3,0.6,0.9}\draw[sd-blue,very thick](\x,0)--(\x,0.7);
+  \draw[sd-blue,very thick,rotate around={-70:(0.45,0.35)}](0,0.35)--(0.9,0.35);
+\end{tikzpicture}
+&
+\begin{tikzpicture}[baseline=0]
+  \foreach\x in{0,0.3,0.6,0.9}\draw[sd-blue,very thick](\x,0)--(\x,0.7);
+  \draw[sd-blue,very thick,rotate around={-70:(0.45,0.35)}](0,0.35)--(0.9,0.35);
+  \draw[sd-blue,very thick](1.2,0)--(1.2,0.7);
+\end{tikzpicture}
+&
+\begin{tikzpicture}[baseline=0]
+  \foreach\x in{0,0.3}\draw[sd-blue,very thick](\x,0)--(\x,0.7);
+\end{tikzpicture}
+&
+\begin{tikzpicture}[baseline=0]
+  \foreach\x in{0,0.3,0.6}\draw[sd-blue,very thick](\x,0)--(\x,0.7);
+\end{tikzpicture}\\[8pt]
+\ansblank & \ansblank & \ansblank & \ansblank
+\end{tabular}
+
+\vspace{4pt}\hrule\vspace{3pt}
+{\footnotesize\color{gray}\textit{Teacher note: Week 3 mastery targets —
+  (1) zero is understood as "none";
+  (2) student can count forward and backward 0–5 fluently;
+  (3) student identifies before/after/between for any number 0–5;
+  (4) student can continue a simple repeating pattern.}}
+
+\end{document}
