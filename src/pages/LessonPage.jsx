@@ -194,7 +194,7 @@ function GrammaticaTab({ lesson, onComplete }) {
       return v?.audio_key || null
     }
     // For noun/adjective: match by stem — look for vocab whose audio_key matches the example stem
-    const firstExample = p.rows?.[0]?.example?.toLowerCase() || ''
+    const firstExample = (p.rows?.[0]?.example || p.rows?.[0]?.latin || '').toLowerCase()
     const v = vocab.find(v => firstExample.startsWith(v.audio_key?.toLowerCase() || '___'))
     return v?.audio_key || null
   }
@@ -203,7 +203,7 @@ function GrammaticaTab({ lesson, onComplete }) {
     if (playingRow !== null) return
     setPlayingRow(rowIdx)
     const url = paradigmAudioUrl(audioKey, row)
-    const text = row.example || row.form || ''
+    const text = row.example || row.form || row.latin || row.sg || ''
     await playUrl(url, text)
     setPlayingRow(null)
   }
@@ -225,7 +225,11 @@ function GrammaticaTab({ lesson, onComplete }) {
         ? ['Person', 'Form', 'English']
         : p.rows[0].hasOwnProperty('1sg')
           ? ['Case', '1st', '2nd', '1st pl.', '2nd pl.']
-          : ['Case', 'Ending', 'Example', 'Use']
+          : p.rows[0].ending !== undefined
+            ? (p.rows[0].example !== undefined ? ['Case', 'Ending', 'Example', 'Use'] : ['Case', 'Ending'])
+            : p.rows[0].sg !== undefined
+              ? ['Case', 'Singular', 'Plural']
+              : ['Case', 'Latin', 'English']
 
     return (
       <div key={p.id} style={{ marginBottom: '2rem' }}>
@@ -266,9 +270,9 @@ function GrammaticaTab({ lesson, onComplete }) {
                   <tr key={i} style={rowStyle} onClick={onRowClick}>
                     <td style={{ color: 'var(--muted)', fontSize: '0.85rem' }}>{row.person}</td>
                     <td className="latin" style={{ fontSize: '1.05rem' }}>
-                      {isPlaying ? '🔊 ' : ''}{row.form}
+                      {isPlaying ? '🔊 ' : ''}{row.form || row.latin || row.ending}
                     </td>
-                    <td style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>{row.english}</td>
+                    <td style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>{row.english || row.pronoun}</td>
                   </tr>
                 )
                 if (row['1sg']) return (
@@ -280,12 +284,27 @@ function GrammaticaTab({ lesson, onComplete }) {
                     <td className="latin">{row['2pl']}</td>
                   </tr>
                 )
-                return (
+                if (row.ending !== undefined) return (
                   <tr key={i} style={rowStyle} onClick={onRowClick}>
                     <td style={{ fontFamily: 'var(--font-heading)', fontSize: '0.85rem', color: 'var(--muted)' }}>{row.case}</td>
                     <td className="latin" style={{ color: 'var(--gold-lt)', fontWeight: 600 }}>{row.ending}</td>
-                    <td className="latin">{isPlaying ? '🔊 ' : ''}{row.example}</td>
-                    <td style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>{row.use}</td>
+                    {row.example !== undefined && <td className="latin">{isPlaying ? '🔊 ' : ''}{row.example}</td>}
+                    {row.example !== undefined && <td style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>{row.use}</td>}
+                  </tr>
+                )
+                if (row.sg !== undefined) return (
+                  <tr key={i} style={rowStyle} onClick={onRowClick}>
+                    <td style={{ fontFamily: 'var(--font-heading)', fontSize: '0.85rem', color: 'var(--muted)' }}>{row.case}</td>
+                    <td className="latin" style={{ color: 'var(--gold-lt)', fontWeight: 600 }}>{isPlaying ? '🔊 ' : ''}{row.sg}</td>
+                    <td className="latin">{row.pl}</td>
+                  </tr>
+                )
+                // {case, latin, english} rows (declension-clip data format)
+                return (
+                  <tr key={i} style={rowStyle} onClick={onRowClick}>
+                    <td style={{ fontFamily: 'var(--font-heading)', fontSize: '0.85rem', color: 'var(--muted)' }}>{row.case}</td>
+                    <td className="latin" style={{ color: 'var(--gold-lt)', fontWeight: 600 }}>{isPlaying ? '🔊 ' : ''}{row.latin}</td>
+                    <td style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>{row.english}</td>
                   </tr>
                 )
               })}
@@ -306,7 +325,8 @@ function GrammaticaTab({ lesson, onComplete }) {
     drillParadigm.rows.forEach((row, i) => {
       total++
       const userVal = (drillInput[i] || '').trim().toLowerCase()
-      const expected = (row.ending || '').toLowerCase().replace(/[āēīōū]/g, m => ({ 'ā':'a','ē':'e','ī':'i','ō':'o','ū':'u' })[m] || m)
+      // Ending-style rows drill the ending; {latin}/{sg} rows drill the full singular form
+      const expected = (row.ending || row.latin || row.sg || '').toLowerCase().replace(/[āēīōū]/g, m => ({ 'ā':'a','ē':'e','ī':'i','ō':'o','ū':'u' })[m] || m)
       const userNorm = userVal.replace(/[āēīōū]/g, m => ({ 'ā':'a','ē':'e','ī':'i','ō':'o','ū':'u' })[m] || m)
       if (userNorm === expected) correct++
     })
@@ -738,12 +758,152 @@ function AskMarcus({ lesson }) {
   )
 }
 
+// ── Latina Practica Tab ────────────────────────────────────────────────────
+// The lesson's Latin saying (idiom) and practical/conversational phrases.
+function LatinaPracticaTab({ lesson, onComplete }) {
+  const [playing, setPlaying] = useState(null)
+  const saying = lesson.saying
+  const phrases = lesson.practical_latin || []
+
+  async function speak(key, latin) {
+    if (playing !== null) return
+    setPlaying(key)
+    await playUrl(null, latin)
+    setPlaying(null)
+  }
+
+  if (!saying && !phrases.length) return (
+    <div style={{ textAlign: 'center', color: 'var(--muted)', padding: '3rem' }}>
+      No practical Latin for this lesson.
+      <div style={{ marginTop: '1.5rem' }}>
+        <button className="btn btn-outline" onClick={onComplete}>Continue →</button>
+      </div>
+    </div>
+  )
+
+  return (
+    <div>
+      {saying && (
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{ fontSize: '0.9rem', letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '0.75rem' }}>
+            Latin Saying
+          </h3>
+          <div
+            onClick={() => speak('saying', saying.latin)}
+            style={{ padding: '1.25rem 1.5rem', background: 'var(--bg-hover)', borderRadius: 'var(--radius)', border: '1px solid var(--border)', cursor: 'pointer' }}
+          >
+            <p className="latin" style={{ fontSize: '1.5rem', color: 'var(--gold-lt)', marginBottom: '0.35rem' }}>
+              {playing === 'saying' ? '🔊 ' : ''}{saying.latin}
+            </p>
+            <p style={{ color: 'var(--text)', fontSize: '1rem' }}>{saying.english}</p>
+            {saying.background && (
+              <p style={{ color: 'var(--muted)', fontSize: '0.85rem', marginTop: '0.75rem', lineHeight: 1.5 }}>{saying.background}</p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {phrases.length > 0 && (
+        <div>
+          <h3 style={{ fontSize: '0.9rem', letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '0.4rem' }}>
+            Practical Latin
+          </h3>
+          <p style={{ fontSize: '0.75rem', color: 'var(--muted)', marginBottom: '0.75rem' }}>
+            Click any phrase to hear it
+          </p>
+          {phrases.map((pl, i) => (
+            <div
+              key={i}
+              onClick={() => speak(i, pl.latin)}
+              style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: '1rem', padding: '0.7rem 1rem', borderBottom: '1px solid var(--border)', cursor: 'pointer', flexWrap: 'wrap' }}
+            >
+              <span className="latin" style={{ fontSize: '1.1rem', color: 'var(--text)' }}>
+                {playing === i ? '🔊 ' : ''}{pl.latin}
+              </span>
+              <span style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>{pl.english}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <div style={{ marginTop: '2rem', textAlign: 'right' }}>
+        <button className="btn btn-gold" onClick={onComplete}>Practiced ✓</button>
+      </div>
+    </div>
+  )
+}
+
+// ── Oremus Tab ─────────────────────────────────────────────────────────────
+// The lesson's prayer. Handles both data shapes:
+//   { latin, english, note }  and  { latin_full, english_full, new_portion_latin, ... }
+function OremusTab({ lesson, stageId, onComplete }) {
+  const [playing, setPlaying] = useState(false)
+  // Review lessons carry a prayer_id — resolve it from the book's prayers dict
+  const prayer = lesson.prayer
+    || (lesson.prayer_id ? STAGE_DATA[stageId]?.prayers?.[lesson.prayer_id] : null)
+
+  if (!prayer) return (
+    <div style={{ textAlign: 'center', color: 'var(--muted)', padding: '3rem' }}>
+      No prayer for this lesson.
+      <div style={{ marginTop: '1.5rem' }}>
+        <button className="btn btn-outline" onClick={onComplete}>Continue →</button>
+      </div>
+    </div>
+  )
+
+  const latin = prayer.latin || prayer.latin_full || ''
+  const english = prayer.english || prayer.english_full || ''
+  const newLatin = prayer.new_portion_latin
+  // Bold the newly-learned portion when the data provides one
+  const parts = newLatin && latin.includes(newLatin) ? latin.split(newLatin) : null
+
+  async function speak() {
+    if (playing) return
+    setPlaying(true)
+    const url = prayer.audio_key ? `/audio/${prayer.audio_key}.m4a` : null
+    await playUrl(url, latin)
+    setPlaying(false)
+  }
+
+  return (
+    <div>
+      <h3 style={{ fontSize: '0.9rem', letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '0.75rem' }}>
+        {prayer.title || 'Prayer'}
+      </h3>
+      <div
+        onClick={speak}
+        style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', padding: '1.5rem', background: 'var(--bg-hover)', borderRadius: 'var(--radius)', border: '1px solid var(--border)', cursor: 'pointer' }}
+      >
+        <p className="latin" style={{ fontSize: '1.15rem', lineHeight: 1.7, color: 'var(--text)' }}>
+          {playing ? '🔊 ' : ''}
+          {parts
+            ? <>{parts[0]}<strong style={{ color: 'var(--gold-lt)' }}>{newLatin}</strong>{parts[1]}</>
+            : latin}
+        </p>
+        <p style={{ fontSize: '1rem', lineHeight: 1.7, color: 'var(--muted)' }}>
+          {prayer.new_portion_english && english.includes(prayer.new_portion_english)
+            ? <>{english.split(prayer.new_portion_english)[0]}<strong style={{ color: 'var(--text)' }}>{prayer.new_portion_english}</strong>{english.split(prayer.new_portion_english)[1]}</>
+            : english}
+        </p>
+      </div>
+      {prayer.note && (
+        <p style={{ color: 'var(--muted)', fontSize: '0.85rem', marginTop: '0.75rem', fontStyle: 'italic' }}>{prayer.note}</p>
+      )}
+      <div style={{ marginTop: '2rem', textAlign: 'right' }}>
+        <button className="btn btn-gold" onClick={onComplete}>Prayed ✓</button>
+      </div>
+    </div>
+  )
+}
+
 // ── Lesson Page ────────────────────────────────────────────────────────────
 const TABS = [
-  { id: 'vocabula',   label: 'Vocabula' },
-  { id: 'grammatica', label: 'Grammatica' },
-  { id: 'lectio',     label: 'Lectio' },
-  { id: 'scriptura',  label: 'Scriptura' },
+  { id: 'vocabula',        label: 'Vocabula' },
+  { id: 'grammatica',      label: 'Grammatica' },
+  { id: 'latina-practica', label: 'Latina Practica' },
+  { id: 'lectio',          label: 'Lectio' },
+  { id: 'scriptura',       label: 'Scriptura' },
+  { id: 'oremus',          label: 'Oremus' },
 ]
 
 export default function LessonPage() {
@@ -840,10 +1000,12 @@ export default function LessonPage() {
 
         {/* Tab content */}
         <div className="fade-in" key={activeTab}>
-          {activeTab === 'vocabula'   && <VocabulaTab   lesson={lesson} stageId={stage} onComplete={handleTabComplete} />}
-          {activeTab === 'grammatica' && <GrammaticaTab lesson={lesson} onComplete={handleTabComplete} />}
-          {activeTab === 'lectio'     && <LectioTab     lesson={lesson} onComplete={handleTabComplete} />}
-          {activeTab === 'scriptura'  && <ScripturaTab  lesson={lesson} onComplete={handleTabComplete} />}
+          {activeTab === 'vocabula'        && <VocabulaTab       lesson={lesson} stageId={stage} onComplete={handleTabComplete} />}
+          {activeTab === 'grammatica'      && <GrammaticaTab     lesson={lesson} onComplete={handleTabComplete} />}
+          {activeTab === 'latina-practica' && <LatinaPracticaTab lesson={lesson} onComplete={handleTabComplete} />}
+          {activeTab === 'lectio'          && <LectioTab         lesson={lesson} onComplete={handleTabComplete} />}
+          {activeTab === 'scriptura'       && <ScripturaTab      lesson={lesson} onComplete={handleTabComplete} />}
+          {activeTab === 'oremus'          && <OremusTab         lesson={lesson} stageId={stage} onComplete={handleTabComplete} />}
         </div>
 
         {/* Lesson complete banner */}

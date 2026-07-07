@@ -65,13 +65,18 @@ export function vocabAudioUrl(vocabItem) {
  *   audioKey   the verb stem key, e.g. "amo" or "video"
  */
 export function paradigmAudioUrl(audioKey, row) {
-  if (!audioKey || !row) return null
+  if (!row) return null
+
+  // Rows with an explicit clip path (declension-clip data format) win outright
+  if (row.clip) return `/audio/${row.clip}.m4a`
+
+  if (!audioKey) return null
 
   // Verb conjugation rows have a `person` field
   if (row.person) {
     // person might be "1sg", "2sg" etc.
     const person = row.person.replace(/\s+/g, '')
-    const form = row.form?.split(' ')[0] // take first form if "amatus/a sum"
+    const form = (row.form || row.latin)?.split(' ')[0] // take first form if "amatus/a sum"
     if (!form) return null
     return `/audio/${audioKey}-present/${form}-${person}.m4a`
   }
