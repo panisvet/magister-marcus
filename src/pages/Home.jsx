@@ -228,6 +228,17 @@ const TOOLS = [
     tag: 'Active',
   },
   {
+    id: 'lesson-viewer-y2',
+    icon: '🔬',
+    title: 'Wonders of the Created World · Year Two',
+    subtitle: 'Lesson Viewer · Units 1–8',
+    desc: 'The deepening year: classification & kingdoms, the cell & microscope, plants up close, light & optics, chemistry, electricity & magnetism, the body\u2019s hidden systems, and weather \u2014 paying off the year-long weather journal. Form IA / Form IIA toggle.',
+    accent: '#4a6a7a',
+    href: '/lesson-viewer-y2',
+    status: 'active',
+    tag: 'Active',
+  },
+  {
     id: 'schola-cantorum',
     icon: '🎵',
     title: 'Schola Cantorum Domestica',

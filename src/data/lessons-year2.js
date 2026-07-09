@@ -1,0 +1,1018 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// lessons.js  —  WONDERS OF THE CREATED WORLD · YEAR TWO
+// Single source of truth for all Magister Natura (Year Two) lesson data.
+//
+// Year Two is the DEEPENING ROTATION. Year One surveyed the living and physical
+// world (Grade-3-level breadth, Hillsdale/Core-Knowledge aligned). Year Two goes
+// under the surface: how living things are ordered and classified, what a cell
+// is, how a plant actually works, how light behaves, what matter is made of,
+// how electricity and magnetism are one thing, the body's hidden inner systems,
+// and finally the sky — paying off the year-long weather journal begun in Y1.
+//
+// Scope & sequence follows the Hillsdale K-12 Program Guide elementary science
+// sequence (itself based on the Core Knowledge Sequence) for Grades 4–5, used
+// only as a topical reference; all content here is original and in the Wonders
+// voice, with living-book spines drawn from the public domain.
+//
+// LESSON SHAPE (identical to Year One — MagisterNatura.jsx consumes both):
+//   id, week, type ("OBSERVE" | "READ & NARRATE" | "RECORD"), title, tagline,
+//   teacherPrep, opening, activity{label,text}, spine, spineLink, secondSpine,
+//   secondSpineLink, narration8, narration11, journal8, journal11, vocab[],
+//   watchFor, digDeeper, resources[{lbl,url,note}]
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const UNITS = [
+
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // UNIT 1 — Classification & the Kingdoms of Life
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    id: "u1",
+    title: "Classification & the Kingdoms of Life",
+    subtitle: "Weeks 1–5 · Ordering the Living World — Linnaeus, Keys, Domains",
+    icon: "🔑",
+    worksheetUrl: "/worksheets/y2/unit1/unit1_worksheets.html",
+    lessons: [
+      {
+        id: "1.1", week: 1, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Classification", url: "https://kids.britannica.com/kids/article/biological-classification/599565", note: "Reference & narration" },
+        ],
+        title: "Sorting Without Names",
+        tagline: "Before you can name a thing, you must learn to see how it differs.",
+        teacherPrep: "Gather 12–15 varied natural objects or clear photos: a fern frond, a moss clump, a mushroom, a pine cone, a snail shell, a feather, a beetle, a leaf, a lichen-covered twig, a seed head. Do not label anything.",
+        opening: "Last year we asked what things ARE. This year we ask how they are ORDERED. Spread the objects out. Ask both students to sort them into groups — any groups — and then defend the rule they used. Then re-sort using a different rule. The point is not to be right; it is to discover that sorting always depends on which features you decide matter.",
+        activity: { label: "Hands-On", text: "Each student sorts the collection twice, using two different rules (e.g. once by 'plant vs not-plant', once by 'soft vs hard'). Record both sorting rules and which objects were hardest to place. Those hard-to-place objects are exactly where classification gets interesting." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What rule did you use to sort? Which object was hardest to place, and why?",
+        narration11: "Describe both of your sorting rules. Explain why the same object can belong to different groups depending on the rule. Which features do you think SHOULD matter most, and why?",
+        journal8: "Draw three of your objects and write the group you put each one in.",
+        journal11: "Draw your two sorting schemes as branching diagrams. Write a paragraph: what makes one sorting rule better than another for a scientist?",
+        vocab: ["classify", "group", "feature", "sort"],
+        watchFor: "Resist the urge to teach the 'correct' kingdoms yet. The whole unit lands better if students first feel the problem: nature does not come pre-labelled.",
+        digDeeper: "Ask the older student: is a mushroom more like a plant or more like an animal? Hold the question open — it is answered in Lesson 1.4.",
+      },
+
+      {
+        id: "1.2", week: 1, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Britannica Kids: Carolus Linnaeus", url: "https://kids.britannica.com/kids/article/Carolus-Linnaeus/625446", note: "Biography spine" },
+        ],
+        title: "The Man Who Named the World",
+        tagline: "Carl Linnaeus gave every living thing two names — and a place.",
+        teacherPrep: null,
+        opening: "Read about Carl Linnaeus (1707–1778), the Swedish naturalist who devised the system of two-part Latin names still used today. Before Linnaeus, the same plant had a dozen long descriptive names in different countries. He gave each living thing a genus and a species — like a surname and a first name — so that a botanist in Sweden and one in Japan could know they meant the same creature.",
+        activity: { label: "Naming Practice", text: "Write your own two-part names for three household pets or garden creatures, surname (group) first: e.g. Felis domesticus. Then look up the real binomial name for one of them and compare." },
+        spine: "Britannica Kids: Carolus Linnaeus", spineLink: "https://kids.britannica.com/kids/article/Carolus-Linnaeus/625446", secondSpine: null, secondSpineLink: null,
+        narration8: "Why did Linnaeus give every living thing two names instead of one?",
+        narration11: "Narrate the problem Linnaeus solved. Explain how a two-part name works and why using Latin — a language no country 'owns' — was a wise choice.",
+        journal8: "Copywork: 'Homo sapiens' — the name Linnaeus gave to human beings. Write what it means: 'wise man.'",
+        journal11: "Copywork the Linnaean ranks in order: Kingdom, Phylum, Class, Order, Family, Genus, Species. Write one sentence on why the order runs from broadest to narrowest.",
+        vocab: ["Linnaeus", "binomial", "genus", "species", "taxonomy"],
+        watchFor: "Students often think the species name comes first. Reinforce: genus (the group) is capitalised and comes first; species is lowercase and comes second; both are italicised.",
+        digDeeper: "Linnaeus placed humans among the animals — bold for his day. Discuss: what does it mean that we can be both classified WITH the animals and yet be the ones DOING the classifying?",
+      },
+
+      {
+        id: "1.3", week: 2, type: "RECORD",
+        resources: [
+          { lbl: "Britannica Kids: Classification", url: "https://kids.britannica.com/kids/article/biological-classification/599565", note: "Reference" },
+        ],
+        title: "Building a Dichotomous Key",
+        tagline: "A key is a ladder of either/or questions that leads to a name.",
+        teacherPrep: "You will need 6 leaves of clearly different shapes, or 6 shells, or 6 seeds.",
+        opening: "A dichotomous key sorts by asking one yes/no question at a time — 'dichotomous' means 'divided in two.' Each answer sends you down one of two branches until only one creature remains. Naturalists use keys every day to identify what they find.",
+        activity: { label: "Make a Key", text: "Lay out your 6 specimens. Write a key: Question 1 splits all 6 into two piles (e.g. 'edges smooth?' yes/no). Each pile gets its own next question, until every specimen sits alone at the end of a branch. Trade keys with your sibling and test whether theirs correctly identifies your specimens." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "How does asking one question at a time help you find the right name?",
+        narration11: "Explain how a dichotomous key works. Why must each question have exactly two answers? What happens if a specimen fits neither?",
+        journal8: "Draw your key as a branching tree with your 6 specimens at the ends.",
+        journal11: "Paste or draw your key. Write a paragraph evaluating it: where did it work smoothly, and where did a specimen not fit cleanly? What does that tell you about real classification?",
+        vocab: ["dichotomous key", "branch", "couplet", "identify"],
+        watchFor: "The classic error is a first question that leaves an uneven or overlapping split. A good key's questions are unambiguous — the answer is never 'sort of.'",
+        digDeeper: "Have the older student build a key that a stranger could use to identify the trees in your own yard.",
+      },
+
+      {
+        id: "1.4", week: 3, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Fairy-Land of Science (Buckley)", url: "https://www.gutenberg.org/files/5726/5726-h/5726-h.htm", note: "Living-book spine, public domain" },
+        ],
+        title: "More Than Two Kingdoms",
+        tagline: "Not plant, not animal — and yet alive.",
+        teacherPrep: null,
+        opening: "For a long time people sorted all life into just two kingdoms: plants and animals. But a mushroom makes no food from sunlight as a plant does, nor does it hunt and move as an animal does — it belongs to its own kingdom, the fungi. And the tiniest living things, revealed only by the microscope, fit neither. Scientists now recognise several kingdoms, and above them the three great domains: Bacteria, Archaea, and Eukarya.",
+        activity: { label: "Sorting Revisited", text: "Return to your objects from Lesson 1.1. Now sort them into: plant, animal, fungus, or 'too small to see clearly.' Notice how the mushroom and the lichen forced you to invent new groups — exactly as scientists had to." },
+        spine: "The Fairy-Land of Science — Buckley", spineLink: "https://www.gutenberg.org/files/5726/5726-h/5726-h.htm", secondSpine: null, secondSpineLink: null,
+        narration8: "Why is a mushroom not a plant? Name the four kingdoms you sorted into.",
+        narration11: "Explain why two kingdoms were not enough. Describe how a fungus differs from both a plant and an animal in how it gets its food.",
+        journal8: "Draw one plant, one animal, one fungus. Label each with its kingdom.",
+        journal11: "Make a chart of the kingdoms you have met, with one distinguishing feature and one example for each. Add the three domains above them.",
+        vocab: ["kingdom", "fungi", "domain", "Eukarya", "Bacteria"],
+        watchFor: "Keep 'domain' and 'kingdom' distinct: domains are the three broadest branches of life; kingdoms sit inside them.",
+        digDeeper: "Introduce the idea that classification changes as we learn more — it is a map of our understanding, not a fixed decree. Ask: does the world change when scientists re-draw the map, or does our seeing change?",
+      },
+
+      {
+        id: "1.5", week: 4, type: "OBSERVE",
+        resources: [],
+        title: "A Backyard Census",
+        tagline: "Classify what actually lives where you live.",
+        teacherPrep: "Choose a 1-metre square of yard, garden, or a single tree. Bring the hand lens.",
+        opening: "Real classification begins at home. Spend 30 quiet minutes cataloguing every living thing in one small square of ground — plants, insects, fungi, mosses, birds overhead. You are doing exactly what Linnaeus did on his expeditions, only in your own garden.",
+        activity: { label: "Field Census", text: "List every distinct living thing you can find in your square. For each, assign the broadest group you are sure of (plant / animal / fungus / other). Count how many distinct kinds you found — this is the 'diversity' of your square." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "How many different living kinds did you find? Which surprised you?",
+        narration11: "Report your census. Which kingdom had the most kinds? Propose a reason. What might you have missed because it was too small, too fast, or hidden?",
+        journal8: "Draw your square and label five living things you found.",
+        journal11: "Draw a map of your square. Tally the kinds by kingdom. Write a paragraph on why even a tiny patch of ground holds more order than it first appears to.",
+        vocab: ["diversity", "census", "habitat", "specimen"],
+        watchFor: "This lesson pairs with the year-long nature notebook. Encourage a return visit to the same square in a later season to see how the census changes.",
+        digDeeper: "Have the older student research how many species Linnaeus personally named (roughly 12,000) and reflect on the patience such work required.",
+      },
+
+      {
+        id: "1.6", week: 5, type: "RECORD",
+        resources: [
+          { lbl: "📋 Y2 Unit 1 Synthesis — Form IA", url: "/worksheets/y2/unit1/unit1_synthesis.html", note: "Print-ready · Form IA" },
+          { lbl: "📋 Y2 Unit 1 Synthesis — Form IIA", url: "/worksheets/y2/unit1/unit1_synthesis.html#form-iia", note: "Print-ready · Form IIA" },
+        ],
+        title: "Unit Synthesis — The Ordered World",
+        tagline: "He calleth them all by their names.",
+        teacherPrep: null,
+        opening: "Three-part synthesis: oral narration of the whole unit, a written reflection, and the connecting question.",
+        activity: { label: "The Unit's Question", text: "You began by sorting objects with no names, and discovered that sorting always depends on which features you choose. You met Linnaeus, who gave the world one shared language of names. You built a key. You learned that life needs more than two kingdoms. And you counted the living order in your own garden.\\n\\nThe question this unit leaves you: the order you found in the living world — did you invent it, or discover it? When Linnaeus grouped creatures, was he imposing order or uncovering an order already there? A Christian naturalist has long answered that the order is real because the world is made, and that naming is part of the work given to humankind from the beginning." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Tell the story of this whole unit, from sorting objects to counting your garden.",
+        narration11: "Narrate the unit. Then answer in writing: is classification something we invent, or something we discover? Defend your answer.",
+        journal8: "Copywork: 'And whatsoever Adam called every living creature, that was the name thereof.' — Genesis 2:19. Draw your favourite creature from the unit.",
+        journal11: "Copywork Genesis 2:19–20 (the naming of the animals). Write a paragraph connecting the ancient task of naming to the modern science of taxonomy.",
+        vocab: [],
+        watchFor: "The teacher mostly listens here. Let the student's own synthesis surprise you.",
+        digDeeper: null,
+      },
+
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // UNIT 2 — The Cell & the Microscope
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    id: "u2",
+    title: "The Cell & the Microscope",
+    subtitle: "Weeks 6–10 · Hooke, Leeuwenhoek, and the Hidden World",
+    icon: "🔬",
+    worksheetUrl: "/worksheets/y2/unit2/unit2_worksheets.html",
+    lessons: [
+      {
+        id: "2.1", week: 6, type: "OBSERVE",
+        resources: [
+          { lbl: "Micrographia (Hooke) — full text", url: "https://www.gutenberg.org/files/15491/15491-h/15491-h.htm", note: "Primary source, public domain" },
+        ],
+        title: "A New Visible World",
+        tagline: "There is nothing so small as to escape our inquiry.",
+        teacherPrep: "A hand lens for each student; if you own a microscope, prepare it. Otherwise a strong magnifier and a smartphone macro lens work.",
+        opening: "Robert Hooke wrote that the microscope revealed 'a new visible World discovered to the understanding.' Before any reading, look closely: examine a torn edge of paper, a strand of your own hair, a grain of salt, the skin of an onion, a housefly's wing. The point is astonishment — the ordinary is not ordinary once magnified.",
+        activity: { label: "Hands-On", text: "Examine five ordinary objects under the greatest magnification you have. For each, draw what you see and write one thing that was invisible to the naked eye. Save the onion skin — you will meet Hooke's discovery in it next lesson." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What did the magnifier show you that your eyes alone could not?",
+        narration11: "Describe the most surprising thing you magnified. Why does Hooke call the microscope's revelation 'a new visible world'? What does it suggest about how much of creation lies below our ordinary sight?",
+        journal8: "Draw two magnified objects. Write one word for how each looked: rough? patterned? alive?",
+        journal11: "Draw three magnified objects with careful detail. Write a paragraph: how does seeing small change how large the world feels?",
+        vocab: ["microscope", "magnify", "lens", "specimen"],
+        watchFor: "Wonder first, vocabulary second. If a microscope is unavailable, the macro camera on a phone genuinely suffices for this unit.",
+        digDeeper: "Have the older student read Hooke's own preface language (Micrographia, opening pages) and note his argument that instruments 'repair' the weakness of our senses.",
+      },
+
+      {
+        id: "2.2", week: 6, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Micrographia (Hooke) — full text", url: "https://www.gutenberg.org/files/15491/15491-h/15491-h.htm", note: "Read the cork passage" },
+        ],
+        title: "Hooke Names the Cell",
+        tagline: "He looked at cork, and saw little rooms.",
+        teacherPrep: null,
+        opening: "In 1665 Robert Hooke sliced a thin sheet of cork, put it under his microscope, and saw it was full of tiny empty compartments. They reminded him of the small rooms — cells — where monks lived. He borrowed the word, and it stuck: every living thing is built of cells. Read the relevant passage of Micrographia (or a summary for the younger student).",
+        activity: { label: "See What Hooke Saw", text: "Peel the thin, transparent inner skin from an onion layer. Lay it flat and examine it under magnification. You should see the same orderly compartments Hooke saw in cork. You are repeating one of the most famous observations in the history of science." },
+        spine: "Micrographia — Robert Hooke", spineLink: "https://www.gutenberg.org/files/15491/15491-h/15491-h.htm", secondSpine: null, secondSpineLink: null,
+        narration8: "What was Hooke looking at when he first used the word 'cell'? Why did he choose that word?",
+        narration11: "Narrate Hooke's discovery. Explain why naming the compartments 'cells' was more than a label — how did having a word change what scientists could then investigate?",
+        journal8: "Draw the cells you saw in the onion skin, like little rooms in a wall.",
+        journal11: "Draw your onion cells. Copywork Hooke: 'there is a new visible world discovered to the understanding.' Write what he meant.",
+        vocab: ["cell", "cork", "compartment", "tissue"],
+        watchFor: "Hooke saw only the empty cell WALLS of dead cork — not living contents. That distinction sets up Leeuwenhoek's living 'animalcules' next.",
+        digDeeper: "Discuss how a single well-chosen word (cell) organised centuries of later biology. Words are tools of thought.",
+      },
+
+      {
+        id: "2.3", week: 7, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Britannica Kids: Leeuwenhoek", url: "https://kids.britannica.com/students/article/Antonie-van-Leeuwenhoek/275421", note: "Biography spine" },
+        ],
+        title: "Leeuwenhoek's Little Animals",
+        tagline: "A cloth-merchant found a whole world swimming in a drop of water.",
+        teacherPrep: null,
+        opening: "Antonie van Leeuwenhoek was a Dutch draper, not a trained scientist. He ground his own tiny, powerful lenses and pointed them at pond water, rain water, even the scrapings from his own teeth. To his astonishment, he found them teeming with living things he called 'animalcules' — the first person ever to see bacteria and single-celled creatures.",
+        activity: { label: "Pond-Water Safari", text: "Collect a jar of pond, puddle, or vase water (the greener the better). Examine a drop under your best magnification. Look for anything that MOVES on its own. Even at low power you may catch darting specks — Leeuwenhoek's animalcules." },
+        spine: "Britannica Kids: Anton van Leeuwenhoek", spineLink: "https://kids.britannica.com/students/article/Antonie-van-Leeuwenhoek/275421", secondSpine: "Marvels of Pond-life (Slack) — Project Gutenberg", secondSpineLink: "https://www.gutenberg.org/files/36903/36903-h/36903-h.htm",
+        narration8: "What did Leeuwenhoek find in a drop of pond water? What did he call them?",
+        narration11: "Narrate Leeuwenhoek's discovery. He was not a university scientist — what qualities let a cloth-merchant see what the learned had missed? What does that suggest about who can do science?",
+        journal8: "Draw what you saw moving in your water drop, even if it was only a speck.",
+        journal11: "Draw your pond-water observations. Write a paragraph comparing Hooke's dead cork cells with Leeuwenhoek's living animalcules — what did each man add to the story of the cell?",
+        vocab: ["animalcule", "microorganism", "protozoa", "bacteria"],
+        watchFor: "Manage expectations: a home microscope may show only motion and shape, not detail. The motion alone is the point — it is unmistakably alive.",
+        digDeeper: "Leeuwenhoek kept his lens-grinding method secret his whole life. Discuss the tension between the scientific duty to share and the human wish to keep an advantage.",
+      },
+
+      {
+        id: "2.4", week: 8, type: "RECORD",
+        resources: [
+          { lbl: "Britannica Kids: Cell", url: "https://kids.britannica.com/kids/article/cell/352933", note: "Reference" },
+        ],
+        title: "Inside the Cell",
+        tagline: "Every cell is a tiny, busy household.",
+        teacherPrep: null,
+        opening: "Since Hooke and Leeuwenhoek, we have learned what fills a living cell. Every cell has a boundary (the membrane), a jelly-like inside (cytoplasm), and — in plants and animals — a control centre (the nucleus). Plant cells add a stiff outer wall and green chloroplasts where food is made from light. Think of a cell as a small household: walls, an inside, a manager, and (in plants) a kitchen.",
+        activity: { label: "Model a Cell", text: "Build or draw a plant cell and an animal cell side by side. Label membrane, cytoplasm, nucleus, and (plant only) cell wall and chloroplasts. A cheap model: jelly or pudding in a bag (cytoplasm in a membrane) with a grape for a nucleus." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Name three parts of a cell and what each one does.",
+        narration11: "Explain the main parts of a cell and their jobs. Give two differences between a plant cell and an animal cell, and explain why a plant needs each extra part.",
+        journal8: "Draw a plant cell and an animal cell. Label three parts of each.",
+        journal11: "Draw and fully label both cell types. Write a paragraph using the 'household' comparison, then note where the comparison breaks down — no model is perfect.",
+        vocab: ["membrane", "cytoplasm", "nucleus", "cell wall", "chloroplast"],
+        watchFor: "Don't overload with organelles at this level. Membrane, cytoplasm, nucleus, wall, chloroplast are plenty; deeper detail comes in later years.",
+        digDeeper: "Introduce that chloroplasts (plant food-making) connect directly to Unit 3's photosynthesis — the cell is where the plant's chemistry actually happens.",
+      },
+
+      {
+        id: "2.5", week: 9, type: "OBSERVE",
+        resources: [
+          { lbl: "Micrographia (Hooke)", url: "https://www.gutenberg.org/files/15491/15491-h/15491-h.htm", note: "Compare Hooke's drawings to your own" },
+        ],
+        title: "Cheek, Leaf, and Thread",
+        tagline: "Three specimens, three lessons in what cells look like.",
+        teacherPrep: "If you have a microscope with slides: a cheek-swab slide (animal), a thin leaf-skin peel (plant), and a cotton thread. Otherwise use the best available magnification and prepared-slide photos.",
+        opening: "Now that you know what to look for, examine real cells with intent. A cheek swab shows loose animal cells with no wall. A leaf peel shows plant cells packed in tidy walls, some with green dots. A cotton thread shows the empty walls of dead plant cells — cotton is pure cellulose.",
+        activity: { label: "Compare Three", text: "Examine (or study prepared images of) the three specimens. For each, note: are the cells packed tight or loose? Do they have stiff walls? Any green? Record which is plant and which is animal, and the evidence for each call." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "How could you tell a plant cell from an animal cell just by looking?",
+        narration11: "Describe the visible differences between your specimens. Which single feature was the most reliable clue to 'plant vs animal,' and why?",
+        journal8: "Draw the three specimens. Circle the one that is an animal cell.",
+        journal11: "Draw all three with labels. Write a short paragraph: how does structure follow function — why do plant cells have walls and animal cells do not?",
+        vocab: ["cellulose", "structure", "function", "packed"],
+        watchFor: "No microscope? High-quality prepared-slide photos are widely available and this comparison works well as guided image study.",
+        digDeeper: "Cotton, wood, and paper are all cellulose cell walls — the leftover architecture of once-living plant cells. Ask the student to find three cellulose objects in the house.",
+      },
+
+      {
+        id: "2.6", week: 10, type: "RECORD",
+        resources: [
+          { lbl: "📋 Y2 Unit 2 Synthesis — Form IA", url: "/worksheets/y2/unit2/unit2_synthesis.html", note: "Print-ready · Form IA" },
+          { lbl: "📋 Y2 Unit 2 Synthesis — Form IIA", url: "/worksheets/y2/unit2/unit2_synthesis.html#form-iia", note: "Print-ready · Form IIA" },
+        ],
+        title: "Unit Synthesis — The Hidden Household",
+        tagline: "Marvellous are thy works; and that my soul knoweth right well.",
+        teacherPrep: null,
+        opening: "Three-part synthesis: oral narration, written reflection, connecting question.",
+        activity: { label: "The Unit's Question", text: "You looked closely and found a hidden world. You repeated Hooke's cork and named the cell. You met Leeuwenhoek's living animalcules. You learned what fills a cell, and you saw real cells with your own eyes.\\n\\nThe question: the order inside a single cell — a boundary, a manager, a kitchen, all working together in something too small to see — is more intricate than any machine humans have built. When you consider that YOUR body is made of trillions of these, each one running without your attention, what is the fitting response? For centuries, naturalists have answered: wonder, and gratitude." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Tell the story of the cell, from Hooke's cork to the cells in your own cheek.",
+        narration11: "Narrate the unit. Then write: what does the hidden order of the cell suggest about the world it belongs to?",
+        journal8: "Copywork: 'I am fearfully and wonderfully made.' — Psalm 139:14. Draw a cell.",
+        journal11: "Copywork Psalm 139:14. Write a paragraph connecting the intricacy of a single cell to the psalmist's wonder at being 'fearfully and wonderfully made.'",
+        vocab: [],
+        watchFor: "Listen for whether the student connects the two microscope pioneers into one story rather than two facts.",
+        digDeeper: null,
+      },
+
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // UNIT 3 — Plants: Structure & Process
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    id: "u3",
+    title: "Plants: Structure & Process",
+    subtitle: "Weeks 11–15 · How a Plant Actually Works — Vascular Systems, Photosynthesis, Reproduction",
+    icon: "🌱",
+    worksheetUrl: "/worksheets/y2/unit3/unit3_worksheets.html",
+    lessons: [
+      {
+        id: "3.1", week: 11, type: "OBSERVE",
+        resources: [
+          { lbl: "The Fairy-Land of Science (Buckley)", url: "https://www.gutenberg.org/files/5726/5726-h/5726-h.htm", note: "Living-book spine" },
+        ],
+        title: "The Drinking Stem",
+        tagline: "A plant is mostly a system for moving water.",
+        teacherPrep: "A white carnation or celery stalk with leaves; a cup; food colouring. Start the day before if you can.",
+        opening: "Last year you learned that plants make food from light. This year: how does a plant move water from its roots all the way to a leaf at the top of a tree, with no heart and no pump? Set a white flower or a celery stalk in coloured water and watch. Within hours the colour climbs the stem and reaches the petals or leaves — carried by tiny tubes.",
+        activity: { label: "Hands-On", text: "Place a white carnation or split celery stalk in strongly coloured water. Observe every few hours and again the next day. Then cut the stem crosswise and find the coloured dots or lines — those are the vascular tubes (xylem) that carried the water up." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "How did the colour get to the top of the flower? What carried it?",
+        narration11: "Describe what you observed. A tree has no pump, yet lifts water 30 metres. Propose how tiny tubes plus the pull of evaporating leaves might accomplish this.",
+        journal8: "Draw the flower before and after. Draw the coloured dots in the cut stem.",
+        journal11: "Draw the stem cross-section with the vascular bundles labelled. Write a paragraph explaining the journey of one water molecule from cup to petal.",
+        vocab: ["vascular", "xylem", "stem", "transport"],
+        watchFor: "The reveal is the cut cross-section — do not skip it. Seeing the coloured tubes makes 'vascular' concrete.",
+        digDeeper: "Introduce transpiration: leaves lose water to the air, and that loss pulls more water up behind it — like sipping through a straw the length of a tree.",
+      },
+
+      {
+        id: "3.2", week: 11, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Fairy-Land of Science (Buckley)", url: "https://www.gutenberg.org/files/5726/5726-h/5726-h.htm", note: "Spine" },
+        ],
+        title: "Vascular and Non-Vascular",
+        tagline: "Some plants have plumbing; the simplest do not.",
+        teacherPrep: null,
+        opening: "The tubes you found are why most plants can grow tall: vascular plants (trees, flowers, ferns) have xylem to carry water up and phloem to carry food down. But the simplest plants — mosses and liverworts — have no such plumbing. They must stay small and low, soaking up water directly, which is why moss grows as a thin damp carpet and never as a tree.",
+        activity: { label: "Find Both Kinds", text: "Go outside and find one clearly vascular plant (with a real stem and veined leaves) and one non-vascular plant (a moss cushion on a rock or wall). Feel the difference: one is structured and upright; the other is soft, low, and damp." },
+        spine: "The Fairy-Land of Science — Buckley", spineLink: "https://www.gutenberg.org/files/5726/5726-h/5726-h.htm", secondSpine: null, secondSpineLink: null,
+        narration8: "Why can a tree grow tall but a moss cannot?",
+        narration11: "Explain the difference between vascular and non-vascular plants. Connect a plant's plumbing to how big it can grow and where it must live.",
+        journal8: "Draw a tall vascular plant and a low moss. Label which has tubes.",
+        journal11: "Draw both plants. Write a paragraph: how does a plant's internal structure set the limits of its size and habitat?",
+        vocab: ["vascular", "non-vascular", "phloem", "moss", "transpiration"],
+        watchFor: "Students conflate 'moss' with 'small plant.' Emphasise the real distinction is internal plumbing, not size.",
+        digDeeper: "Ferns are vascular but reproduce by spores, not seeds — a useful bridge to the reproduction lesson.",
+      },
+
+      {
+        id: "3.3", week: 12, type: "RECORD",
+        resources: [
+          { lbl: "Britannica Kids: Photosynthesis", url: "https://kids.britannica.com/kids/article/photosynthesis/353624", note: "Reference" },
+        ],
+        title: "Photosynthesis, Up Close",
+        tagline: "Light in, sugar out — the reaction that feeds the world.",
+        teacherPrep: null,
+        opening: "You learned last year THAT plants make food from light. Now the how: inside the green chloroplasts you met in Unit 2, a leaf takes in carbon dioxide from the air and water from the roots, and — using the energy of sunlight — builds sugar, releasing oxygen as its by-product. Nearly every breath you take and every meal you eat traces back to this one reaction.",
+        activity: { label: "The Bubbling Leaf", text: "Submerge a fresh green leaf (or sprig of pondweed) in a clear jar of water in bright sunlight. Watch for tiny bubbles forming on the leaf surface — that is oxygen, the visible by-product of photosynthesis happening in real time." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What three things does a leaf need to make food? What does it give off?",
+        narration11: "Explain photosynthesis in your own words: the inputs, the energy source, the product, and the by-product. Why is the oxygen 'waste' to the plant but life to you?",
+        journal8: "Draw a leaf with arrows: sunlight, water, air going in; sugar and bubbles coming out.",
+        journal11: "Draw a labelled diagram of photosynthesis. Write the word-equation (carbon dioxide + water + light → sugar + oxygen) and a paragraph on why this single reaction underlies almost all life.",
+        vocab: ["photosynthesis", "chlorophyll", "carbon dioxide", "oxygen", "glucose"],
+        watchFor: "Keep the chemistry at word-equation level; the balanced formula belongs to a later year. The bubbling-leaf demo is the memorable anchor.",
+        digDeeper: "Photosynthesis and the candle-flame combustion from Y1 Unit 6 are near-mirror images: one stores light-energy in sugar, the other releases it. Have the older student diagram the two as opposites.",
+      },
+
+      {
+        id: "3.4", week: 13, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Flower", url: "https://kids.britannica.com/kids/article/flower/353137", note: "Reference" },
+        ],
+        title: "Dissecting a Flower",
+        tagline: "A flower is a plant's plan for the next generation.",
+        teacherPrep: "A large, simple flower per student — lily, tulip, or alstroemeria work well. Tweezers, tape, a sheet of paper.",
+        opening: "A flower is not decoration; it is reproduction. Take one apart carefully and you will find the same organs in almost every flowering plant: petals to attract, stamens that make pollen (the male part), and a central pistil that receives pollen and holds the future seeds (the female part).",
+        activity: { label: "Flower Dissection", text: "Gently remove each part of your flower in turn and tape it to paper in order: sepals, petals, stamens (find the powdery pollen), pistil. Slice the base of the pistil open to find the tiny ovules — the future seeds. Label every part." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Which part of the flower makes pollen? Which part becomes the seeds?",
+        narration11: "Name the flower's parts and each one's role in reproduction. Explain how a flower's beauty and scent serve a practical purpose.",
+        journal8: "Draw your dissected flower with the parts labelled: petal, stamen, pistil.",
+        journal11: "Draw a fully labelled flower diagram. Write a paragraph on how a flower is an elegant solution to the problem of a rooted, unmoving organism needing to reproduce.",
+        vocab: ["petal", "stamen", "pistil", "pollen", "ovule"],
+        watchFor: "Some flowers are single-sex; choose a complete flower (lily/tulip) so all parts are present in one specimen.",
+        digDeeper: "Connect to the bees and pollinators studied in Y1 Unit 1 — the flower's colour and scent are advertisements aimed at exactly those insects.",
+      },
+
+      {
+        id: "3.5", week: 14, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Fairy-Land of Science (Buckley)", url: "https://www.gutenberg.org/files/5726/5726-h/5726-h.htm", note: "Spine" },
+        ],
+        title: "Seeds, Spores, and Cones",
+        tagline: "Three different answers to one question: how to begin again.",
+        teacherPrep: null,
+        opening: "Not every plant makes seeds in flowers. Ferns and mosses scatter dust-like spores. Pines and firs hold their seeds in cones. Flowering plants wrap seeds inside fruit. Three strategies, one goal — carrying life forward to the next generation. Examine examples of each you have gathered.",
+        activity: { label: "Compare Three Strategies", text: "Lay out a fruit with seeds, a pine cone (tap it over dark paper to release winged seeds), and the underside of a fern frond (find the brown spore dots). Compare how each protects and disperses its offspring." },
+        spine: "The Fairy-Land of Science — Buckley", spineLink: "https://www.gutenberg.org/files/5726/5726-h/5726-h.htm", secondSpine: null, secondSpineLink: null,
+        narration8: "Name three different ways plants make new plants.",
+        narration11: "Compare seeds, spores, and cones as reproductive strategies. What are the advantages of wrapping a seed in fruit versus scattering many tiny spores?",
+        journal8: "Draw a seed, a spore-dot fern, and a cone. Label each.",
+        journal11: "Draw all three strategies. Write a paragraph: why might a plant that makes millions of tiny spores and one that makes a few well-protected seeds both succeed?",
+        vocab: ["seed", "spore", "cone", "fruit", "dispersal"],
+        watchFor: "This lesson deliberately deepens Y1 Unit 2's seed-dispersal work — invite the student to recall it.",
+        digDeeper: "Have the older student classify each strategy by plant group (ferns=spores, conifers=cones, flowering plants=seeds-in-fruit) — tying reproduction back to Unit 1's classification.",
+      },
+
+      {
+        id: "3.6", week: 15, type: "RECORD",
+        resources: [
+          { lbl: "📋 Y2 Unit 3 Synthesis — Form IA", url: "/worksheets/y2/unit3/unit3_synthesis.html", note: "Print-ready · Form IA" },
+          { lbl: "📋 Y2 Unit 3 Synthesis — Form IIA", url: "/worksheets/y2/unit3/unit3_synthesis.html#form-iia", note: "Print-ready · Form IIA" },
+        ],
+        title: "Unit Synthesis — The Green Engine",
+        tagline: "He causeth the grass to grow.",
+        teacherPrep: null,
+        opening: "Three-part synthesis: oral narration, written reflection, connecting question.",
+        activity: { label: "The Unit's Question", text: "You watched a stem drink, learned which plants have plumbing, saw oxygen bubble from a living leaf, took a flower apart, and compared three ways plants begin again.\\n\\nThe question: a plant cannot move, cannot hunt, cannot choose — and yet it feeds nearly the whole living world, lifts water against gravity, and reproduces with elegant precision. It does all this silently, without awareness. What does it mean that so much of the order sustaining life is carried out by creatures that do not know they are doing it?" },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Tell the story of how a plant drinks, eats, and makes new plants.",
+        narration11: "Narrate the unit as one connected account of how a plant lives and reproduces. Then answer the connecting question in a paragraph.",
+        journal8: "Copywork: 'Consider the lilies of the field, how they grow.' — Matthew 6:28. Draw a plant with roots, stem, leaf, and flower.",
+        journal11: "Copywork Matthew 6:28–29. Write a paragraph connecting the silent competence of plants to the passage's lesson about provision and trust.",
+        vocab: [],
+        watchFor: "Look for the student weaving transport, photosynthesis, and reproduction into a single life-story rather than three topics.",
+        digDeeper: null,
+      },
+
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // UNIT 4 — Light & Optics
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    id: "u4",
+    title: "Light & Optics",
+    subtitle: "Weeks 16–20 · Reflection, Refraction, Colour, and the Eye — with Tyndall & Faraday",
+    icon: "💡",
+    worksheetUrl: "/worksheets/y2/unit4/unit4_worksheets.html",
+    lessons: [
+      {
+        id: "4.1", week: 16, type: "OBSERVE",
+        resources: [
+          { lbl: "Six Lectures on Light (Tyndall)", url: "https://www.gutenberg.org/files/14000/14000-h/14000-h.htm", note: "Primary source, public domain" },
+        ],
+        title: "Light Travels Straight",
+        tagline: "You cannot see light itself — only what it touches.",
+        teacherPrep: "A darkened room, a small bright flashlight, a mirror, a comb or slotted card.",
+        opening: "Light is so ordinary we forget to ask what it is. Begin with what it DOES. In a dark room, shine a flashlight and notice you cannot see the beam itself — only the objects it lands on, and any dust it passes through. Shine it through the slots of a comb and you get straight rays. Light travels in straight lines until something stops or bends it.",
+        activity: { label: "Hands-On", text: "Darken the room. Shine the flashlight through a comb onto paper to make straight rays. Then place a mirror in a ray's path and watch it bounce off at a matching angle. Trace the rays you see with a pencil on the paper." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Why can't you see the flashlight's beam in clean air, but you can where there's dust?",
+        narration11: "Describe your observations. Light travels in straight lines — how do the comb-rays and the mirror bounce both demonstrate this? Where did the light bend, and where did it merely bounce?",
+        journal8: "Draw your flashlight, the comb, and the straight rays hitting the paper.",
+        journal11: "Draw your ray diagram, including the mirror bounce. Label the incoming ray and the reflected ray. Write a sentence: what did the dust let you see that clean air did not?",
+        vocab: ["ray", "beam", "reflect", "straight-line"],
+        watchFor: "The 'you can't see light itself' point is genuinely surprising to children and worth dwelling on — we see BY light, not light.",
+        digDeeper: "Tyndall himself studied why the sky is blue — light scattered by tiny particles. Preview: the same dust that reveals the beam is why sunsets are red.",
+      },
+
+      {
+        id: "4.2", week: 16, type: "RECORD",
+        resources: [
+          { lbl: "Six Lectures on Light (Tyndall)", url: "https://www.gutenberg.org/files/14000/14000-h/14000-h.htm", note: "Reflection & refraction lectures" },
+        ],
+        title: "Reflection — The Law of the Bounce",
+        tagline: "The angle in equals the angle out.",
+        teacherPrep: "A mirror, a protractor, the flashlight-and-comb setup.",
+        opening: "When light hits a smooth surface it bounces off in a predictable way: the angle at which it arrives equals the angle at which it leaves. This one simple law explains mirrors, why you see your reflection, and how a periscope lets a submarine see above water.",
+        activity: { label: "Measure the Angle", text: "Shine a single ray at a mirror lying on paper. Draw a line straight up from the point where the ray hits (the 'normal'). Measure the angle of the incoming ray and the outgoing ray from that line. They should match. Try three different incoming angles." },
+        spine: "Six Lectures on Light — John Tyndall", spineLink: "https://www.gutenberg.org/files/14000/14000-h/14000-h.htm", secondSpine: null, secondSpineLink: null,
+        narration8: "When light hits a mirror, how does the bounce-out angle compare to the come-in angle?",
+        narration11: "State the law of reflection and explain what the 'normal' line is. Why does a rough surface (like paper) not give a clear reflection even though the same law applies to every point?",
+        journal8: "Draw a ray hitting a mirror and bouncing off. Show both angles are equal.",
+        journal11: "Record your three measured angle-pairs in a small table. Write a paragraph explaining reflection and one everyday device that depends on it.",
+        vocab: ["reflection", "angle of incidence", "angle of reflection", "normal"],
+        watchFor: "Introduce 'the normal' (the line perpendicular to the surface) carefully — angles are measured from it, not from the surface.",
+        digDeeper: "Ask why a still pond gives a clear reflection but a rippled one does not — same law, scrambled surface.",
+      },
+
+      {
+        id: "4.3", week: 17, type: "OBSERVE",
+        resources: [
+          { lbl: "Six Lectures on Light (Tyndall)", url: "https://www.gutenberg.org/files/14000/14000-h/14000-h.htm", note: "Refraction lecture" },
+        ],
+        title: "Refraction — The Broken Pencil",
+        tagline: "Light bends when it changes speed.",
+        teacherPrep: "A clear glass of water, a pencil, a coin, a bowl.",
+        opening: "Put a pencil in a glass of water and it looks broken at the surface. Look at a coin at the bottom of a bowl and it seems shifted. Light bends — refracts — when it passes from one clear substance into another, because it changes speed. This bending is the secret behind every lens: eyeglasses, telescopes, cameras, and your own eye.",
+        activity: { label: "Hands-On", text: "1) Stand a pencil in a glass of water and view from the side — note the 'break.' 2) Place a coin in an empty bowl, back away until it just disappears behind the rim, then have someone slowly pour water in without moving the bowl. The coin reappears — the light from it is bent up to your eye." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Why does a pencil look broken in a glass of water?",
+        narration11: "Explain refraction using the coin-in-the-bowl demonstration. What does it mean to say light 'changes speed' when it enters water, and why does that make it bend?",
+        journal8: "Draw the pencil looking broken in the glass.",
+        journal11: "Draw both demonstrations with light-ray lines showing where the bending happens. Write a paragraph connecting refraction to how a lens works.",
+        vocab: ["refraction", "bend", "lens", "medium"],
+        watchFor: "The reappearing-coin demo is striking and reliable — practise the disappearance point before doing it with the student.",
+        digDeeper: "Tyndall discusses how Newton and others explained refraction. Have the older student read a short passage and note how competing theories of light both tried to explain the same bending.",
+      },
+
+      {
+        id: "4.4", week: 18, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Six Lectures on Light (Tyndall)", url: "https://www.gutenberg.org/files/14000/14000-h/14000-h.htm", note: "Colour & the spectrum" },
+        ],
+        title: "The Prism and the Rainbow",
+        tagline: "White light is every colour hiding together.",
+        teacherPrep: "A glass prism (or a clear glass of water on a sunny windowsill), white paper.",
+        opening: "Isaac Newton let a beam of white sunlight pass through a glass prism and split it into a band of colours — red, orange, yellow, green, blue, violet. He proved that white light is not plain at all: it is all the colours mixed together, and the prism simply bends each colour by a slightly different amount, spreading them out. A rainbow is the sky doing the same thing with raindrops.",
+        activity: { label: "Make a Spectrum", text: "On a sunny day, let light pass through a prism (or a glass of water at the edge of a sunny table) onto white paper. Find the band of colours. Note their order — it is always the same. Then try to recombine them or spin a colour wheel to make white again." },
+        spine: "Six Lectures on Light — John Tyndall", spineLink: "https://www.gutenberg.org/files/14000/14000-h/14000-h.htm", secondSpine: null, secondSpineLink: null,
+        narration8: "What did Newton discover when he passed white light through a prism?",
+        narration11: "Explain Newton's prism experiment and what it proved about white light. Why does a prism spread the colours out instead of keeping them mixed?",
+        journal8: "Draw a prism splitting white light into a rainbow. Colour the band in order.",
+        journal11: "Draw the prism spectrum labelled with the colour order. Write a paragraph: how is a rainbow in the sky the same physics as your prism?",
+        vocab: ["prism", "spectrum", "refraction", "wavelength"],
+        watchFor: "Colour order is fixed (red bends least, violet most). If a prism is unavailable, a glass of water on a sunny sill or a CD's surface both make usable spectra.",
+        digDeeper: "Each colour is light of a different wavelength; the prism bends short wavelengths (violet) most. Introduce that our eyes only see a narrow band of a much wider spectrum.",
+      },
+
+      {
+        id: "4.5", week: 19, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Britannica Kids: Eye", url: "https://kids.britannica.com/kids/article/eye/353116", note: "Reference" },
+        ],
+        title: "How the Eye Catches Light",
+        tagline: "The eye is a living lens.",
+        teacherPrep: null,
+        opening: "Everything you have learned this unit meets in your own eye. Light passes through a clear front, is bent by the lens (refraction!), and lands on the retina at the back, where it forms a tiny upside-down picture. The eye is a camera made of living tissue. This connects directly to the vision lesson from Y1's human-body unit — now you understand the physics behind it.",
+        activity: { label: "The Pinhole Camera", text: "Make a simple pinhole viewer: a small hole in one end of a box or tube, wax paper or thin white paper at the other. Point the hole at a bright window. A dim, upside-down image of the scene appears on the paper — exactly what happens at the back of your eye." },
+        spine: "Six Lectures on Light — John Tyndall", spineLink: "https://www.gutenberg.org/files/14000/14000-h/14000-h.htm", secondSpine: null, secondSpineLink: null,
+        narration8: "How is your eye like a camera? What lands on the back of it?",
+        narration11: "Trace the path of light through the eye, using the words refraction, lens, and retina. Why is the image on the retina upside-down, and how does the brain manage this?",
+        journal8: "Draw an eye with light coming in and an upside-down picture at the back.",
+        journal11: "Draw a labelled eye diagram (front, lens, retina) beside your pinhole-camera diagram. Write a paragraph on how the two work by the same principle.",
+        vocab: ["lens", "retina", "pupil", "image", "focus"],
+        watchFor: "The upside-down image genuinely appears in a good pinhole viewer — build one in advance to confirm your hole size and darkness.",
+        digDeeper: "Eyeglasses correct focus by bending light before it reaches the eye's own lens. Have the older student explain, in refraction terms, what a lens for a far-sighted person must do.",
+      },
+
+      {
+        id: "4.6", week: 20, type: "RECORD",
+        resources: [
+          { lbl: "📋 Y2 Unit 4 Synthesis — Form IA", url: "/worksheets/y2/unit4/unit4_synthesis.html", note: "Print-ready · Form IA" },
+          { lbl: "📋 Y2 Unit 4 Synthesis — Form IIA", url: "/worksheets/y2/unit4/unit4_synthesis.html#form-iia", note: "Print-ready · Form IIA" },
+        ],
+        title: "Unit Synthesis — Let There Be Light",
+        tagline: "God is light, and in him is no darkness at all.",
+        teacherPrep: null,
+        opening: "Three-part synthesis: oral narration, written reflection, connecting question.",
+        activity: { label: "The Unit's Question", text: "You found that light travels straight, bounces by a fixed law, bends when it changes speed, hides every colour inside white, and finally forms a picture in your own eye.\\n\\nThe question: light is the first thing named good in the oldest account of creation, and the thing by which you have seen everything you studied this whole year — the insect, the cell, the leaf, the stars. You cannot see light itself; you see everything else BY it. What does it mean that the thing which reveals all other things is itself almost invisible?" },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Tell the story of light: how it travels, bounces, bends, splits, and enters your eye.",
+        narration11: "Narrate the unit as one connected account. Then answer the connecting question in a paragraph.",
+        journal8: "Copywork: 'And God said, Let there be light: and there was light.' — Genesis 1:3. Draw a prism rainbow.",
+        journal11: "Copywork Genesis 1:3 and 1 John 1:5. Write a paragraph reflecting on light as both a physical reality you measured and an image used to speak of God.",
+        vocab: [],
+        watchFor: "Encourage the student to connect this unit back to Y1's vision and astronomy units — light is the thread through both.",
+        digDeeper: null,
+      },
+
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // UNIT 5 — Chemistry: Matter & Change
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    id: "u5",
+    title: "Chemistry: Matter & Change",
+    subtitle: "Weeks 21–25 · Atoms, Elements, Mixtures, and Change — with Faraday & Dalton",
+    icon: "⚗️",
+    worksheetUrl: "/worksheets/y2/unit5/unit5_worksheets.html",
+    lessons: [
+      {
+        id: "5.1", week: 21, type: "OBSERVE",
+        resources: [
+          { lbl: "On the Various Forces of Nature (Faraday)", url: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html", note: "Primary source, public domain" },
+        ],
+        title: "The Three States",
+        tagline: "The same stuff can be solid, liquid, or gas.",
+        teacherPrep: "Ice cubes, a pot, a stove or kettle, a cold lid or mirror.",
+        opening: "Last year's candle unit introduced matter and combustion. This year we go deeper: what IS matter, and how does it change? Begin with water — the one substance you can easily watch in all three states. Melt ice to water; boil water to steam; catch the steam on a cold lid and watch it become liquid again. Nothing was added or lost; only the arrangement changed.",
+        activity: { label: "Hands-On", text: "Watch ice melt, then boil the water, then hold a cold lid in the steam to collect droplets. Record the temperature (or just the order of events). Note: the water is the same water throughout — only its state changes as heat is added or removed." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Name the three states of water. What makes it change from one to another?",
+        narration11: "Describe the three states and what drives the changes between them. If nothing is added or removed, what actually changes at the level too small to see?",
+        journal8: "Draw ice, water, and steam. Write what you add (heat) to go from one to the next.",
+        journal11: "Draw the three states with a particle picture for each (packed, loose, far apart). Write a paragraph: how does heat explain all three?",
+        vocab: ["solid", "liquid", "gas", "state", "matter"],
+        watchFor: "Set up the particle model now (tightly packed → loose → far apart) so 'atoms and molecules' in Lesson 5.3 lands on prepared ground.",
+        digDeeper: "Introduce that steam takes up vastly more space than the water it came from — the same particles, simply spread far apart.",
+      },
+
+      {
+        id: "5.2", week: 21, type: "READ & NARRATE",
+        resources: [
+          { lbl: "On the Various Forces of Nature (Faraday)", url: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html", note: "Read the cohesion lecture" },
+        ],
+        title: "Faraday's Forces of Matter",
+        tagline: "What holds matter together, and what pulls it apart.",
+        teacherPrep: null,
+        opening: "Michael Faraday — whom you met in Y1's candle lectures — also gave a series of lectures to young people on the forces of nature. He asks: why does a drop of water hold together? Why does chalk crumble but iron does not? These are questions of cohesion (the pull between particles of the same substance) and chemical affinity (the pull between different substances that makes them combine). Read a short passage in his own voice.",
+        activity: { label: "Cohesion in Action", text: "Overfill a glass of water very slowly until the surface bulges above the rim without spilling — that dome is cohesion, water pulling on itself. Then touch a dry paper towel to the edge and watch it pull the water up: adhesion, water pulled by something else." },
+        spine: "On the Various Forces of Nature — Faraday", spineLink: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html", secondSpine: null, secondSpineLink: null,
+        narration8: "What is cohesion? Show it with the bulging glass of water.",
+        narration11: "Explain cohesion and chemical affinity in your own words. How does Faraday connect the everyday (a water drop, a crumbling stone) to invisible forces between particles?",
+        journal8: "Draw the water bulging over the rim of the glass. Label it 'cohesion.'",
+        journal11: "Copywork a short line from Faraday on force and matter. Draw the bulging-glass demonstration and write a paragraph on cohesion versus adhesion.",
+        vocab: ["cohesion", "adhesion", "affinity", "force", "particle"],
+        watchFor: "Faraday's prose is rich; select one short passage for the younger student and read a fuller section with the older.",
+        digDeeper: "Faraday argued matter and force cannot be imagined apart. Have the older student wrestle with that claim and write a sentence in response.",
+      },
+
+      {
+        id: "5.3", week: 22, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Britannica Kids: John Dalton", url: "https://www.google.com/search?q=John+Dalton+site:kids.britannica.com", note: "Biography" },
+        ],
+        title: "Atoms, Elements, and Mr. Dalton",
+        tagline: "Everything is built from a small set of building blocks.",
+        teacherPrep: null,
+        opening: "John Dalton, an English schoolteacher, proposed that all matter is made of tiny indivisible particles — atoms — and that each kind of pure substance, each ELEMENT, is made of one kind of atom. Gold is all gold-atoms; oxygen is all oxygen-atoms. When atoms of different elements join, they make molecules. There are only about ninety natural elements, yet from them the entire material world is built — like an alphabet of matter.",
+        activity: { label: "Build Molecules", text: "Using coloured balls or clay (one colour per element) and toothpicks, build a water molecule (two hydrogen + one oxygen) and a carbon-dioxide molecule (one carbon + two oxygen). Notice how the same few 'atoms' make different substances depending on how they combine." },
+        spine: "On the Various Forces of Nature — Faraday", spineLink: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html", secondSpine: "Britannica Kids: John Dalton", secondSpineLink: "https://www.google.com/search?q=John+Dalton+site:kids.britannica.com",
+        narration8: "What is an atom? What is an element? Give one example.",
+        narration11: "Explain Dalton's atomic idea. Distinguish an element from a molecule, and explain how so few kinds of atom can make so many different substances.",
+        journal8: "Draw your water molecule model. Colour the two hydrogen atoms and the one oxygen atom differently.",
+        journal11: "Draw water and carbon-dioxide molecules labelled by element. Write a paragraph on the 'alphabet of matter' comparison — and where it breaks down.",
+        vocab: ["atom", "element", "molecule", "compound", "Dalton"],
+        watchFor: "Keep 'element' (one kind of atom) and 'molecule' (atoms joined) crisply distinct; the clay models make the difference physical.",
+        digDeeper: "Have the older student find the elements from Y1 and Y2 already met by name (oxygen, carbon, hydrogen) and note where each appeared — combustion, photosynthesis, water.",
+      },
+
+      {
+        id: "5.4", week: 23, type: "RECORD",
+        resources: [
+          { lbl: "Britannica Kids: Solution", url: "https://www.google.com/search?q=solution+site:kids.britannica.com", note: "Reference" },
+        ],
+        title: "Mixtures and Solutions",
+        tagline: "Some things blend; some things merely mingle.",
+        teacherPrep: "Salt, sand, water, cups, a coffee filter, a spoon.",
+        opening: "When you stir salt into water it vanishes — a solution, where one substance dissolves evenly into another. Stir sand into water and it does not dissolve; it settles — a mixture you can separate again. Learning to tell dissolving from mere mixing, and to separate what has been combined, is the beginning of a chemist's craft.",
+        activity: { label: "Separate the Unmixable", text: "Make salt-water (a solution) and sand-water (a mixture). Pour each through a coffee filter: the sand stays behind, the salt-water passes through unchanged. Then leave the salt-water in a warm dish until the water evaporates and the salt reappears — proof it was there all along." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What is the difference between salt in water and sand in water?",
+        narration11: "Distinguish a solution from a mixture. Explain how filtering and evaporation each separate a different kind of combination, and why.",
+        journal8: "Draw the salt-water and sand-water. Show which one the filter can separate.",
+        journal11: "Draw both separation methods. Write a paragraph on how a chemist uses physical differences (size, dissolving, boiling point) to pull substances apart.",
+        vocab: ["mixture", "solution", "dissolve", "solvent", "evaporation"],
+        watchFor: "The salt reappearing after evaporation is the key proof that dissolving does not destroy the salt — schedule the drying time.",
+        digDeeper: "Introduce that separating a solution by evaporation is a PHYSICAL change (setting up Lesson 5.5): the salt was never chemically altered.",
+      },
+
+      {
+        id: "5.5", week: 24, type: "OBSERVE",
+        resources: [
+          { lbl: "On the Various Forces of Nature (Faraday)", url: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html", note: "Chemical affinity" },
+        ],
+        title: "Physical Change vs Chemical Change",
+        tagline: "Sometimes you can undo it; sometimes a new thing is born.",
+        teacherPrep: "Ice, a candle or vinegar + baking soda, paper, steel wool (optional, adult-supervised).",
+        opening: "Melting ice, dissolving salt, tearing paper — these are physical changes: the substance is rearranged but not made new, and often can be reversed. Burning paper, mixing vinegar and baking soda, iron rusting — these are chemical changes: a genuinely new substance forms, usually impossible to undo. Learn to tell them apart by asking: is this still the same stuff, or something new?",
+        activity: { label: "Sort the Changes", text: "Observe several changes: ice melting, vinegar + baking soda fizzing, paper torn, paper burned (adult), sugar dissolving. For each, decide physical or chemical, and give your evidence (new colour? gas? heat? can it be reversed?)." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "How can you tell a chemical change from a physical one?",
+        narration11: "Define physical and chemical change, and list the clues that reveal a chemical change (new substance, gas, colour, heat/light, hard to reverse). Classify each demonstration with reasoning.",
+        journal8: "Draw one physical change and one chemical change. Label each.",
+        journal11: "Make a two-column chart of the changes you observed, physical vs chemical, with your evidence for each. Write a paragraph on the vinegar-and-baking-soda reaction as a clear chemical change.",
+        vocab: ["physical change", "chemical change", "reaction", "reversible", "product"],
+        watchFor: "The vinegar + baking-soda fizz (carbon-dioxide gas) is the safest, clearest chemical change; save any burning for careful adult demonstration.",
+        digDeeper: "Connect back: Y1's candle flame was a chemical change (combustion); Unit 3's photosynthesis was too. Have the older student list the chemical changes met across both years.",
+      },
+
+      {
+        id: "5.6", week: 25, type: "RECORD",
+        resources: [
+          { lbl: "📋 Y2 Unit 5 Synthesis — Form IA", url: "/worksheets/y2/unit5/unit5_synthesis.html", note: "Print-ready · Form IA" },
+          { lbl: "📋 Y2 Unit 5 Synthesis — Form IIA", url: "/worksheets/y2/unit5/unit5_synthesis.html#form-iia", note: "Print-ready · Form IIA" },
+        ],
+        title: "Unit Synthesis — The Alphabet of Matter",
+        tagline: "He upholdeth all things by the word of his power.",
+        teacherPrep: null,
+        opening: "Three-part synthesis: oral narration, written reflection, connecting question.",
+        activity: { label: "The Unit's Question", text: "You watched one substance take three forms, felt the forces that hold matter together, built molecules from an alphabet of atoms, separated mixtures and solutions, and learned to tell a rearrangement from a true transformation.\\n\\nThe question: the whole material world — every rock, plant, animal, star you studied — is built from fewer than a hundred kinds of atom, combining by fixed and knowable rules. Why should the universe be built so economically, from so few pieces, in ways a schoolteacher like Dalton could work out with care? Is the simplicity underneath the variety something we imposed, or something we found?" },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Tell the story of matter: its three states, its atoms, and how it changes.",
+        narration11: "Narrate the unit as one connected account. Then answer the connecting question in a paragraph.",
+        journal8: "Copywork: 'He telleth the number of the stars; he calleth them all by their names.' — Psalm 147:4. Draw a molecule.",
+        journal11: "Copywork Colossians 1:17 ('by him all things consist / hold together'). Write a paragraph connecting the orderly, rule-bound behaviour of matter to the idea of a world that is upheld and coherent.",
+        vocab: [],
+        watchFor: "Look for the student connecting chemistry back to combustion, photosynthesis, and the cell — matter and its changes underlie all of them.",
+        digDeeper: null,
+      },
+
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // UNIT 6 — Electricity & Magnetism
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    id: "u6",
+    title: "Electricity & Magnetism",
+    subtitle: "Weeks 26–30 · Static, Current, Circuits, and the Two Forces That Are One",
+    icon: "⚡",
+    worksheetUrl: "/worksheets/y2/unit6/unit6_worksheets.html",
+    lessons: [
+      {
+        id: "6.1", week: 26, type: "OBSERVE",
+        resources: [
+          { lbl: "On the Various Forces of Nature (Faraday)", url: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html", note: "Faraday on electrical force" },
+        ],
+        title: "The Cling and the Crackle",
+        tagline: "Rub the world the right way and it holds a charge.",
+        teacherPrep: "A balloon, wool or hair, small paper scraps, a dry day helps.",
+        opening: "You have felt static electricity — the crackle of a wool jumper, hair standing on end, a shock from a doorknob. Rubbing certain things transfers tiny charges, and like charges push apart while opposite charges pull together. Begin by making static and watching it act at a distance, with nothing touching.",
+        activity: { label: "Hands-On", text: "Rub a balloon on wool or hair. Hold it near small paper scraps — they leap up to it. Hold it near a thin stream of water from a tap — the stream bends. Touch it to a wall — it clings. Charge two balloons the same way and bring them close — they push apart." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What did the charged balloon do to the paper and the water? Did it have to touch them?",
+        narration11: "Describe your static observations. Charges act at a distance and can both attract and repel — how do your demonstrations show each? What does 'like repels, opposite attracts' mean?",
+        journal8: "Draw the balloon pulling paper scraps up, and two balloons pushing apart.",
+        journal11: "Draw your demonstrations with force arrows. Write a paragraph explaining charge, and why a dry day works better than a humid one.",
+        vocab: ["static electricity", "charge", "attract", "repel"],
+        watchFor: "Humidity ruins static demos — pick a dry day or a heated room. Wool, hair, and fleece charge a balloon reliably.",
+        digDeeper: "Preview Franklin: he showed lightning is the same static electricity, only enormous. The doorknob shock and the thunderstorm are one phenomenon at two scales.",
+      },
+
+      {
+        id: "6.2", week: 26, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Britannica Kids: Benjamin Franklin", url: "https://kids.britannica.com/kids/article/Benjamin-Franklin/353147", note: "Biography" },
+        ],
+        title: "Franklin and the Lightning",
+        tagline: "He flew a kite into a storm to catch an idea.",
+        teacherPrep: null,
+        opening: "Benjamin Franklin suspected that lightning was nothing but a giant spark of the same electricity he made in his study. In a famous and dangerous experiment he flew a kite in a thunderstorm and drew sparks from a key on the string, showing lightning is electrical. From that understanding he invented the lightning rod, which has protected buildings ever since — science turned at once to the service of neighbours.",
+        activity: { label: "Discuss the Risk", text: "Franklin's experiment could have killed him — others who repeated it died. Discuss: how should a scientist weigh a risk to himself in pursuit of knowledge? Then find a lightning rod on a building near you, or a picture of one, and trace how it carries the charge safely to the ground." },
+        spine: "Britannica Kids: Benjamin Franklin", spineLink: "https://kids.britannica.com/kids/article/Benjamin-Franklin/353147", secondSpine: null, secondSpineLink: null,
+        narration8: "What did Franklin prove about lightning? What did he invent to keep buildings safe?",
+        narration11: "Narrate Franklin's experiment and its result. Explain how proving lightning is electrical led directly to a device that saves lives — and reflect on the danger he accepted.",
+        journal8: "Draw Franklin's kite in the storm with the key on the string.",
+        journal11: "Draw a building with a lightning rod, showing the charge's safe path to the ground. Write a paragraph on knowledge turned to the protection of others.",
+        vocab: ["lightning", "conductor", "lightning rod", "discharge"],
+        watchFor: "Be clear this must never be attempted. The value is the reasoning — connecting small sparks to lightning — not the stunt.",
+        digDeeper: "Franklin refused to patent his inventions, wanting them freely used. Discuss the ethic of gift versus profit in discovery.",
+      },
+
+      {
+        id: "6.3", week: 27, type: "RECORD",
+        resources: [
+          { lbl: "On the Various Forces of Nature (Faraday)", url: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html", note: "Reference" },
+        ],
+        title: "A Circuit That Works",
+        tagline: "Charge that flows can be put to work.",
+        teacherPrep: "A battery (D-cell), insulated wire, a small bulb or LED, tape. A switch is optional (a paperclip works).",
+        opening: "Static electricity jumps and is gone. But charge made to flow steadily — a current — can light a lamp, ring a bell, or turn a motor. A current needs an unbroken loop from a source (a battery) and back: a circuit. Break the loop anywhere and the flow stops. That is all a light switch does.",
+        activity: { label: "Light the Bulb", text: "Connect a battery, wires, and a small bulb into a complete loop until it lights. Then break the loop — the bulb goes dark. Add a paperclip 'switch' you can open and close. You have built the same circuit that lights every lamp in the house." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What does a circuit need to make a bulb light? What happens if you break the loop?",
+        narration11: "Explain what an electric current is and why a circuit must be a complete loop. Describe the job of the battery and the job of the switch.",
+        journal8: "Draw your circuit: battery, wires, bulb. Show it lit and then broken.",
+        journal11: "Draw your circuit using simple symbols. Write a paragraph distinguishing static electricity from current electricity, with an example of each.",
+        vocab: ["current", "circuit", "battery", "conductor", "switch"],
+        watchFor: "A fresh D-cell and a matching low-voltage bulb/LED avoid frustration. Keep it to a single loop before any branching.",
+        digDeeper: "Introduce conductors vs insulators: test which household objects complete the circuit (metal spoon) and which do not (plastic, wood).",
+      },
+
+      {
+        id: "6.4", week: 28, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Magnet", url: "https://www.google.com/search?q=magnet+and+magnetism+site:kids.britannica.com", note: "Reference" },
+        ],
+        title: "The Force in a Magnet",
+        tagline: "Invisible lines, and a needle that always finds north.",
+        teacherPrep: "A bar or horseshoe magnet, iron filings (or steel wool snippets), paper, a compass or a magnetised needle.",
+        opening: "A magnet pulls iron across empty space and, like charge, has two opposite ends — poles — where like repels and opposite attracts. Sprinkle iron filings over a magnet under paper and the hidden field springs into view as curved lines. And a freely-turning magnet always swings to point north: that is a compass, and it means the whole Earth is itself a great magnet.",
+        activity: { label: "See the Field", text: "Lay a magnet under paper and sprinkle iron filings on top; tap gently to reveal the field lines looping from pole to pole. Then float or freely suspend a magnetised needle and watch it settle pointing north–south." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What did the iron filings show around the magnet? Which way does a compass point?",
+        narration11: "Describe the magnetic field you revealed and the behaviour of the poles. Explain what it means that a compass needle points north — what does that tell us about the Earth?",
+        journal8: "Draw the magnet with the curved filing-lines looping around it.",
+        journal11: "Draw the field lines and label the poles. Write a paragraph comparing magnetic attraction/repulsion with the electric charges of Lesson 6.1.",
+        vocab: ["magnet", "pole", "magnetic field", "compass"],
+        watchFor: "Keep iron filings sealed under paper or in a bottle — they are messy and cling stubbornly. Steel-wool snippets are a tidy substitute.",
+        digDeeper: "The compass links straight back to Y1's astronomy/navigation work — the same north the stars gave, the magnet gives. Have the older student connect them.",
+      },
+
+      {
+        id: "6.5", week: 29, type: "READ & NARRATE",
+        resources: [
+          { lbl: "On the Various Forces of Nature (Faraday)", url: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html", note: "Spine" },
+        ],
+        title: "Two Forces, One Force — Ørsted & Faraday",
+        tagline: "Electricity makes magnetism; magnetism makes electricity.",
+        teacherPrep: "The battery/wire from Lesson 6.3 and the compass from 6.4.",
+        opening: "For centuries electricity and magnetism seemed unrelated. Then Hans Christian Ørsted noticed a compass needle twitch whenever a nearby wire carried current — electricity was making magnetism. Michael Faraday then showed the reverse: moving a magnet near a coil of wire made current flow. These two discoveries — that each force can create the other — gave us every electric motor and generator in the world.",
+        activity: { label: "Ørsted's Twitch", text: "Lay a compass beside a wire connected to a battery. Complete the circuit and watch the needle deflect — you are repeating Ørsted's discovery that a current makes a magnetic field. Wrap the wire into a coil around a nail to make an electromagnet and pick up paperclips; disconnect and they drop." },
+        spine: "On the Various Forces of Nature — Faraday", spineLink: "https://www.gutenberg.org/cache/epub/52293/pg52293-images.html", secondSpine: null, secondSpineLink: null,
+        narration8: "What happened to the compass when current flowed in the wire? What is an electromagnet?",
+        narration11: "Explain Ørsted's and Faraday's discoveries and why together they matter so much. How does an electromagnet show that electricity and magnetism are linked?",
+        journal8: "Draw the coil-and-nail electromagnet picking up paperclips.",
+        journal11: "Draw the electromagnet and the compass-deflection. Write a paragraph on how 'electricity makes magnetism, magnetism makes electricity' underlies motors and generators.",
+        vocab: ["electromagnet", "electromagnetism", "current", "coil", "generator"],
+        watchFor: "The wire warms with current — keep connections brief. The electromagnet works best with many coil turns around an iron nail.",
+        digDeeper: "Faraday, once a poor bookbinder's apprentice, became one of history's greatest experimenters. Have the older student reflect on how curiosity plus patience outran a lack of early advantage.",
+      },
+
+      {
+        id: "6.6", week: 30, type: "RECORD",
+        resources: [
+          { lbl: "📋 Y2 Unit 6 Synthesis — Form IA", url: "/worksheets/y2/unit6/unit6_synthesis.html", note: "Print-ready · Form IA" },
+          { lbl: "📋 Y2 Unit 6 Synthesis — Form IIA", url: "/worksheets/y2/unit6/unit6_synthesis.html#form-iia", note: "Print-ready · Form IIA" },
+        ],
+        title: "Unit Synthesis — The Unseen Forces",
+        tagline: "The things which are seen were not made of things which do appear.",
+        teacherPrep: null,
+        opening: "Three-part synthesis: oral narration, written reflection, connecting question.",
+        activity: { label: "The Unit's Question", text: "You made charge cling and crackle, followed Franklin to the lightning, built a working circuit, revealed a magnet's hidden field, and found that electricity and magnetism are two faces of one force.\\n\\nThe question: these forces are completely invisible — you never once saw electricity or magnetism itself, only what they DID: a spark, a lit bulb, a swinging needle, a lifted paperclip. Almost everything powerful in nature acts unseen. What does it mean that the most useful forces in the world are known only by their effects, never by direct sight?" },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Tell the story of electricity and magnetism, from the balloon to the electromagnet.",
+        narration11: "Narrate the unit as one connected account. Then answer the connecting question in a paragraph.",
+        journal8: "Copywork: 'By faith we understand that the worlds were framed by the word of God.' — Hebrews 11:3. Draw a circuit or a magnet.",
+        journal11: "Copywork Hebrews 11:3. Write a paragraph reflecting on knowing invisible forces by their visible effects, and any parallel that suggests to you.",
+        vocab: [],
+        watchFor: "Listen for the unifying insight — that the unit's two topics turned out to be one — rather than a list of separate demos.",
+        digDeeper: null,
+      },
+
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // UNIT 7 — The Body's Hidden Systems
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    id: "u7",
+    title: "The Body's Hidden Systems",
+    subtitle: "Weeks 31–33 · Circulation, Breath, and the Body's Chemistry — with Harvey",
+    icon: "🩺",
+    worksheetUrl: "/worksheets/y2/unit7/unit7_worksheets.html",
+    lessons: [
+      {
+        id: "7.1", week: 31, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Heart", url: "https://www.google.com/search?q=heart+site:kids.britannica.com", note: "Reference" },
+        ],
+        title: "The Pump You Cannot Stop",
+        tagline: "Listen for the work your heart does without asking you.",
+        teacherPrep: "A stopwatch or clock with a second hand; a quiet space.",
+        opening: "Last year you met the body's systems in survey. This year, three hidden systems in depth — beginning with the heart. Find your pulse at your wrist or neck: that beat is your heart pushing blood through your whole body, about once a minute all the way around, every moment of your life, awake or asleep.",
+        activity: { label: "Hands-On", text: "Count your resting pulse for 30 seconds and double it. Then run in place or do jumping jacks for one minute and count again. Record both. Notice how the heart speeds up to deliver more blood when muscles demand more — and slows again as you rest." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What is your pulse? Why did it speed up after exercise?",
+        narration11: "Explain what your pulse is and why exercise changes it. What is the heart actually delivering to your muscles, and why do they need more of it when working hard?",
+        journal8: "Write your resting and active pulse. Draw a heart.",
+        journal11: "Record resting vs active pulse. Write a paragraph explaining the heart as a demand-driven pump, connecting rate to the body's changing need.",
+        vocab: ["pulse", "heart", "circulation", "blood"],
+        watchFor: "This deliberately deepens Y1's human-body unit; invite the student to recall what they already know before adding detail.",
+        digDeeper: "Have the older student estimate heartbeats per day (rate × minutes) and reflect on the reliability of an organ that never rests.",
+      },
+
+      {
+        id: "7.2", week: 31, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Britannica Kids: William Harvey", url: "https://www.google.com/search?q=William+Harvey+site:kids.britannica.com", note: "Biography" },
+        ],
+        title: "Harvey Traces the Circle",
+        tagline: "He proved the blood goes round and round.",
+        teacherPrep: null,
+        opening: "For 1,500 years physicians believed the liver constantly made new blood that the body used up. William Harvey, by careful measurement and dissection, showed this was impossible — the heart pumps far too much blood for that. Instead, he proved, the SAME blood circulates in a closed circle, out through arteries and back through veins. It was one of the great corrections in the history of medicine, won by measurement over authority.",
+        activity: { label: "Harvey's Reasoning", text: "Trace the loop: heart → arteries → body → veins → heart, and a second loop through the lungs. Press gently on the veins in the back of your hand and watch them fill from one direction only — the one-way flow Harvey described, kept in order by tiny valves." },
+        spine: "Britannica Kids: William Harvey", spineLink: "https://www.google.com/search?q=William+Harvey+site:kids.britannica.com", secondSpine: null, secondSpineLink: null,
+        narration8: "What did Harvey prove about the blood? What did people believe before him?",
+        narration11: "Narrate Harvey's discovery. How did measurement let him overturn a belief held for 1,500 years? Why is 'the same blood goes round' so different from 'new blood is always made'?",
+        journal8: "Draw the circle of blood: heart, out, around the body, and back.",
+        journal11: "Draw the double circulation loop (body loop and lung loop). Write a paragraph on Harvey's use of measurement to correct long-held authority.",
+        vocab: ["circulation", "artery", "vein", "valve", "Harvey"],
+        watchFor: "Emphasise the METHOD — Harvey counted and measured. This is a model of how careful observation corrects even ancient consensus.",
+        digDeeper: "Harvey could not see the capillaries linking arteries to veins — the microscope (your Unit 2!) later revealed them, completing his circle. Connect the two units.",
+      },
+
+      {
+        id: "7.3", week: 32, type: "READ & NARRATE",
+        resources: [
+          { lbl: "Britannica Kids: Respiratory system", url: "https://kids.britannica.com/kids/article/respiratory-system/353709", note: "Reference" },
+        ],
+        title: "Breath and the Body's Messengers",
+        tagline: "Air trades with blood; and hidden chemicals keep the pace.",
+        teacherPrep: "A balloon; a quiet moment to observe breathing.",
+        opening: "The circulatory and respiratory systems work as partners. In the lungs, blood picks up oxygen from the air you breathe and drops off carbon dioxide to breathe out — the very gases from Unit 3's photosynthesis and Unit 5's chemistry, now inside you. And quietly governing it all is the endocrine system: glands releasing chemical messengers (hormones) that set your growth, energy, and even how fast your heart beats.",
+        activity: { label: "Lung Capacity", text: "Take a deep breath and blow once, fully, into a balloon; pinch and measure its size. Rest, then repeat after light exercise. Notice how breathing, like heartbeat, rises to meet the body's need — the two systems answering the same demand together." },
+        spine: "Britannica Kids: Human respiratory system", spineLink: "https://kids.britannica.com/kids/article/respiratory-system/353709", secondSpine: null, secondSpineLink: null,
+        narration8: "What does your blood pick up in your lungs? What does it drop off?",
+        narration11: "Explain how the respiratory and circulatory systems partner in gas exchange. Then explain, simply, what hormones are and one thing the endocrine system controls.",
+        journal8: "Draw lungs and heart working together. Show oxygen in, carbon dioxide out.",
+        journal11: "Draw the lung–blood gas exchange. Write a paragraph connecting the oxygen and carbon dioxide here to the same gases in photosynthesis and combustion from earlier units.",
+        vocab: ["respiration", "oxygen", "carbon dioxide", "hormone", "gland"],
+        watchFor: "Keep the endocrine system light and concrete (messengers that set the body's pace); depth belongs to a later year. Avoid any reproductive detail — hold the unit at circulation/breath/messenger level.",
+        digDeeper: "Have the older student trace one oxygen atom from a leaf (photosynthesis) into the air, into the lungs, into the blood, into a muscle — one atom tying three units together.",
+      },
+
+      {
+        id: "7.4", week: 33, type: "RECORD",
+        resources: [
+          { lbl: "📋 Y2 Unit 7 Synthesis — Form IA", url: "/worksheets/y2/unit7/unit7_synthesis.html", note: "Print-ready · Form IA" },
+          { lbl: "📋 Y2 Unit 7 Synthesis — Form IIA", url: "/worksheets/y2/unit7/unit7_synthesis.html#form-iia", note: "Print-ready · Form IIA" },
+        ],
+        title: "Unit Synthesis — The Faithful Systems",
+        tagline: "In him we live, and move, and have our being.",
+        teacherPrep: null,
+        opening: "Three-part synthesis: oral narration, written reflection, connecting question.",
+        activity: { label: "The Unit's Question", text: "You measured your own heart, followed Harvey's proof that blood moves in a circle, and saw how breath and blood and hidden chemical messengers keep you alive together — using the very gases and chemistry you studied all year.\\n\\nThe question: not one of these systems asks your permission or waits for your attention. Your heart beat through every lesson of this year; your lungs traded air while you slept. What is the right response to a body that faithfully sustains you without your knowledge — and how does understanding it, as Nightingale said, make you better able to care for others?" },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Tell how your heart, lungs, and blood work together to keep you alive.",
+        narration11: "Narrate the unit as one connected account. Then answer the connecting question in a paragraph.",
+        journal8: "Copywork: 'I am fearfully and wonderfully made.' — Psalm 139:14. Draw the heart and lungs together.",
+        journal11: "Copywork Acts 17:28 ('in him we live, and move, and have our being'). Write a paragraph on the body's unbidden faithfulness and the duty of care that knowledge brings.",
+        vocab: [],
+        watchFor: "Listen for the student uniting circulation, respiration, and the endocrine pace-setting into one living whole.",
+        digDeeper: null,
+      },
+
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // UNIT 8 — Weather & the Atmosphere
+  // ═══════════════════════════════════════════════════════════════════════════
+  {
+    id: "u8",
+    title: "Weather & the Atmosphere",
+    subtitle: "Weeks 34–36 · The Sky at Work — Water Cycle, Clouds, Pressure, Storms (Weather-Journal Payoff)",
+    icon: "🌦",
+    worksheetUrl: "/worksheets/y2/unit8/unit8_worksheets.html",
+    lessons: [
+      {
+        id: "8.1", week: 34, type: "READ & NARRATE",
+        resources: [
+          { lbl: "The Fairy-Land of Science (Buckley)", url: "https://www.gutenberg.org/files/5726/5726-h/5726-h.htm", note: "Spine — the water drop's journey" },
+        ],
+        title: "Reading a Year of Weather",
+        tagline: "Now the journal you kept all year begins to speak.",
+        teacherPrep: "Bring out the year-long weather journal begun in Year One (Unit 4) and continued through this year.",
+        opening: "In Year One you began a weather journal and have kept it since. Today it pays off. Spread out your whole record and look for patterns you could not see day by day: how temperature swung with the seasons, which way the wind usually came, whether certain clouds arrived before rain. You have, without noticing, been gathering the data of a real meteorologist.",
+        activity: { label: "Mine Your Data", text: "Go through your weather journal and pull out patterns: the warmest and coldest stretches, the most common sky, any sign that reliably came before a change (a certain cloud, a wind shift, a drop in pressure). List at least three patterns your own records reveal." },
+        spine: "The Fairy-Land of Science — Buckley", spineLink: "https://www.gutenberg.org/files/5726/5726-h/5726-h.htm", secondSpine: null, secondSpineLink: null,
+        narration8: "Looking at your whole weather journal, what pattern do you notice that you couldn't see in one day?",
+        narration11: "Report the patterns your year of records reveals. Why can a whole year of data show what a single day cannot? What is the difference between weather and climate?",
+        journal8: "Draw a simple graph or picture of how the weather changed across the year.",
+        journal11: "Make a summary chart or graph from your journal. Write a paragraph on at least three patterns you found and what they suggest about your local climate.",
+        vocab: ["weather", "climate", "pattern", "meteorology", "data"],
+        watchFor: "This lesson is the reward for a year's faithful recording. If the journal has gaps, that is itself a lesson about the discipline data-keeping requires.",
+        digDeeper: "Introduce the weather/climate distinction: one day is weather; a year of days begins to show climate. Have the older student articulate it precisely.",
+      },
+
+      {
+        id: "8.2", week: 34, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Water cycle", url: "https://kids.britannica.com/kids/article/water-cycle/476333", note: "Reference" },
+        ],
+        title: "The Water Cycle in a Jar",
+        tagline: "Every raindrop has been to the sky and back many times.",
+        teacherPrep: "A clear jar with a lid, warm water, ice cubes for the lid.",
+        opening: "The water that fills your journal's rain columns is the same water, used over and over. The sun evaporates water from seas and puddles into invisible vapour; it rises, cools, and condenses into clouds; and it falls again as rain or snow. You can run the whole cycle inside a jar in ten minutes.",
+        activity: { label: "Hands-On", text: "Put a few centimetres of warm water in a clear jar. Seal the lid and set ice cubes on top. Watch: water evaporates, rises, meets the cold lid, condenses into droplets, and 'rains' back down. Label each stage as it happens — evaporation, condensation, precipitation." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What are the three main steps of the water cycle? Point them out in the jar.",
+        narration11: "Explain the water cycle using your jar. Connect evaporation and condensation to the states of matter you studied in Unit 5 — what is heat doing at each step?",
+        journal8: "Draw the water cycle in the jar with arrows: up, cloud, down.",
+        journal11: "Draw the full water cycle (sea, sun, cloud, rain, rivers) labelled. Write a paragraph linking it to the three states of matter and the role of the sun's energy.",
+        vocab: ["evaporation", "condensation", "precipitation", "water cycle", "vapour"],
+        watchFor: "Warm (not boiling) water plus a well-iced lid gives visible 'rain' within minutes; a glass lid works better than plastic.",
+        digDeeper: "Connect straight to Unit 5: evaporation and condensation are the same solid-liquid-gas changes, now happening on a planetary scale.",
+      },
+
+      {
+        id: "8.3", week: 35, type: "OBSERVE",
+        resources: [
+          { lbl: "Britannica Kids: Weather", url: "https://www.google.com/search?q=weather+site:kids.britannica.com", note: "Reference" },
+        ],
+        title: "Air Has Weight — Pressure, Wind, and Storms",
+        tagline: "The ocean of air presses on everything, and its restlessness is the weather.",
+        teacherPrep: "A balloon, a glass of water and a stiff card (for the classic pressure demo), your journal's wind notes.",
+        opening: "Air seems like nothing, yet it has weight and presses on you from every side. Where air is warm it rises and its pressure drops; cooler air rushes in to fill the space — and that moving air is wind. The great swirls of high and low pressure, and the fronts where warm and cold air meet, are what bring the fair days and storms in your journal.",
+        activity: { label: "Air Pressure Demo", text: "Fill a glass to the brim with water, press a stiff card over the mouth, and (over a sink) turn it upside down. Air pressure from below holds the card and water in place. Discuss: the same unseen pressure, unbalanced across the land, is what drives your wind readings." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "What is wind? Where does it come from?",
+        narration11: "Explain how uneven heating of air makes pressure differences, and how those differences make wind. What is a front, and why does one often bring a change in your journal's weather?",
+        journal8: "Draw warm air rising and cool air moving in to make wind.",
+        journal11: "Draw a high- and low-pressure system with wind arrows, and a front where warm and cold air meet. Write a paragraph connecting pressure to the wind and storm entries in your journal.",
+        vocab: ["air pressure", "wind", "front", "high pressure", "low pressure"],
+        watchFor: "Practise the card-and-glass demo over a sink first. The point is that 'empty' air exerts real, measurable force.",
+        digDeeper: "Have the older student check whether their journal's pressure or wind-shift notes came before rain — testing a real forecasting rule against their own data.",
+      },
+
+      {
+        id: "8.4", week: 36, type: "RECORD",
+        resources: [
+          { lbl: "📋 Y2 Unit 8 Synthesis — Form IA", url: "/worksheets/y2/unit8/unit8_synthesis.html", note: "Print-ready · Form IA" },
+          { lbl: "📋 Y2 Unit 8 Synthesis — Form IIA", url: "/worksheets/y2/unit8/unit8_synthesis.html#form-iia", note: "Print-ready · Form IIA" },
+        ],
+        title: "Year Synthesis — From the Cell to the Sky",
+        tagline: "The heavens declare the glory of God.",
+        teacherPrep: null,
+        opening: "Final three-part synthesis — for this unit AND for the whole of Year Two.",
+        activity: { label: "The Year's Final Question", text: "This year you went beneath the surface of the world you surveyed last year. You learned how life is ordered and named, what a cell is, how a plant truly works, how light behaves, what matter is made of, that electricity and magnetism are one force, how your own hidden systems sustain you, and finally how the sky itself works — reading a full year of weather you recorded with your own hand.\\n\\nEvery unit showed the same thing from a new angle: the world is not a heap of unrelated facts but a single ordered whole. The oxygen in the leaf is the oxygen in your blood. The refraction in the prism is the refraction in your eye. The states of matter in a jar are the water cycle over the sea. The same few atoms build the cell, the plant, the storm, and you.\\n\\nThe final question, the one this whole year has prepared you to ask: is such deep and connected order the kind of thing that simply happens — or the kind of thing that is MADE? Science can measure the order with wonderful precision. Whether it was intended is a question science hands back to you. This year has given you the eyes to ask it well." },
+        spine: null, spineLink: null, secondSpine: null, secondSpineLink: null,
+        narration8: "Tell the story of the whole year, from classifying living things to reading the sky. Connect as much as you can.",
+        narration11: "Narrate the whole year — one short paragraph per unit (eight in all), each connecting that unit to the theme that the created world is one ordered whole. End with what you want to study next.",
+        journal8: "Copywork: 'The heavens declare the glory of God; and the firmament sheweth his handywork.' — Psalm 19:1. Draw your favourite thing you studied this year.",
+        journal11: "Copywork Psalm 19:1–2. Write eight short paragraphs, one per unit, each linking to the idea of one ordered, knowable, made world. Final sentence: what do you most want to understand next?",
+        vocab: [],
+        watchFor: "This is the capstone of the whole year, not just Unit 8. Both students should narrate the entire year. The teacher's task is mostly to listen — and to be surprised by how much they hold.",
+        digDeeper: null,
+      },
+
+    ],
+  },
+
+
+];

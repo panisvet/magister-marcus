@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Y2 Unit 6 Synthesis — Wonders of the Created World</title>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--ink:#1e140a;--lt:#4a3728;--parch:#f5f0e4;--parch2:#ede5cc;--moss:#2d5a27;--bark:#3a2a18;--gold:#8b6914;--rule:#c8b48a;--rust:#6a2a10;--slate:#3a4a5a;}
+body{font-family:"IM Fell English",Georgia,serif;background:#c8bda8;color:var(--ink);font-size:13px;}
+#nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--bark);border-bottom:2px solid var(--gold);padding:7px 14px;display:flex;align-items:center;gap:4px;flex-wrap:wrap;}
+.ntitle{font-family:"Cinzel",serif;font-size:11px;font-weight:600;color:#e8dfc8;letter-spacing:.07em;margin-right:6px;white-space:nowrap;}
+.nb{padding:4px 9px;background:transparent;border:1px solid #6a5030;border-radius:3px;color:#c8b48a;cursor:pointer;font-family:"IM Fell English",serif;font-size:11px;white-space:nowrap;}
+.nb:hover,.nb.on{background:var(--gold);border-color:var(--gold);color:#fff;}
+.navright{margin-left:auto;display:flex;gap:5px;align-items:center;}
+.atog{display:flex;gap:4px;align-items:center;}
+.atog span{font-family:"Cinzel",serif;font-size:8px;color:#9a8060;letter-spacing:.12em;}
+.ab{padding:3px 9px;border-radius:12px;border:1px solid #6a5030;background:transparent;color:#c8b48a;cursor:pointer;font-family:"IM Fell English",serif;font-size:11px;}
+.ab.on{background:var(--moss);border-color:var(--moss);color:#fff;}
+.pbtn{padding:4px 11px;background:var(--moss);border:1px solid #1a3a18;border-radius:3px;color:#fff;cursor:pointer;font-family:"IM Fell English",serif;font-size:11px;}
+.pbtn:hover{background:#1a4018;}
+.page-wrap{display:none;margin:62px auto 28px;}
+.page-wrap.active{display:block;}
+.html-page{width:8.5in;min-height:11in;background:var(--parch);margin:0 auto 20px;padding:.55in .6in .5in;position:relative;box-shadow:0 4px 24px rgba(0,0,0,.25);}
+.html-page::before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(180,150,80,.06) 27px,rgba(180,150,80,.06) 28px),radial-gradient(ellipse at 15% 10%,rgba(160,120,40,.07) 0%,transparent 55%),radial-gradient(ellipse at 85% 90%,rgba(100,70,20,.07) 0%,transparent 55%);}
+.pg-hdr{border-bottom:2px solid var(--bark);padding-bottom:8px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:flex-end;}
+.series{font-family:"Cinzel",serif;font-size:7.5px;font-weight:600;letter-spacing:.2em;color:var(--gold);display:block;margin-bottom:3px;}
+.pg-title{font-family:"Cinzel",serif;font-size:16px;font-weight:700;color:var(--bark);line-height:1.1;}
+.pg-sub{font-style:italic;font-size:11px;color:var(--lt);margin-top:2px;}
+.pg-num{font-family:"Cinzel",serif;font-size:8px;color:var(--gold);border:1px solid var(--rule);padding:3px 8px;border-radius:2px;letter-spacing:.1em;white-space:nowrap;}
+.name-bar{display:flex;gap:20px;margin-bottom:14px;}
+.nf{flex:1;border-bottom:1px solid var(--rule);padding-bottom:3px;}
+.nf-s{width:1.4in;border-bottom:1px solid var(--rule);padding-bottom:3px;}
+.nl{font-family:"Cinzel",serif;font-size:7.5px;font-weight:600;letter-spacing:.15em;color:var(--gold);display:block;margin-bottom:13px;}
+.sec{font-family:"Cinzel",serif;font-size:8px;font-weight:600;letter-spacing:.18em;color:var(--moss);text-transform:uppercase;margin:13px 0 7px;display:flex;align-items:center;gap:7px;}
+.sec::after{content:"";flex:1;height:1px;background:var(--rule);}
+.prose{font-size:12.5px;line-height:1.5;color:var(--ink);}
+.prep{background:rgba(139,105,20,.08);border-left:3px solid var(--gold);padding:7px 11px;margin-bottom:10px;font-size:11.5px;color:var(--lt);}
+.prep b{font-family:"Cinzel",serif;font-size:8px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:2px;}
+.activity{background:rgba(45,90,39,.06);border:1px solid #b8c8a8;border-radius:4px;padding:9px 12px;margin:6px 0;font-size:12px;}
+.activity b{font-family:"Cinzel",serif;font-size:8px;letter-spacing:.12em;color:var(--moss);text-transform:uppercase;display:block;margin-bottom:3px;}
+.sptags{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0;}
+.sptag{background:#fff;border:1px solid var(--rule);border-radius:2px;padding:2px 8px;font-size:10.5px;font-style:italic;color:var(--lt);}
+.vocab{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;}
+.vch{background:var(--parch2);border:1px solid var(--rule);border-radius:2px;padding:2px 9px;font-size:11px;font-family:"Cinzel",serif;letter-spacing:.03em;}
+.narr-lines{display:flex;flex-direction:column;gap:20px;margin:6px 0 2px;}
+.narr-line{border-bottom:1px solid var(--rule);height:20px;}
+.qprompt{font-size:12px;font-style:italic;color:var(--bark);margin-bottom:4px;}
+.a8-badge{display:inline-block;border-radius:10px;font-size:8px;padding:1px 7px;margin-bottom:4px;font-family:"Cinzel",serif;font-weight:600;letter-spacing:.07em;background:#d4ead0;color:#1a4a18;border:1px solid #8ab888;}
+.a11-badge{display:inline-block;border-radius:10px;font-size:8px;padding:1px 7px;margin-bottom:4px;font-family:"Cinzel",serif;font-weight:600;letter-spacing:.07em;background:#d0dcea;color:#1a2a4a;border:1px solid #88a0b8;}
+.faith-box{border:1px solid var(--gold);border-left:3px solid var(--gold);background:rgba(139,105,20,.06);border-radius:0 4px 4px 0;padding:9px 12px;margin-top:10px;font-size:12px;}
+.faith-box b{font-family:"Cinzel",serif;font-size:8px;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:3px;}
+.tnote{border-top:1px dashed var(--rule);margin-top:12px;padding-top:7px;font-size:10.5px;color:var(--slate);}
+.tnote b{font-family:"Cinzel",serif;font-size:7.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);}
+body.show-8 .age-11{display:none;} body.show-11 .age-8{display:none;}
+@media print{
+  body{background:#fff;} #nav{display:none;}
+  .page-wrap{display:block!important;margin:0;} .html-page{box-shadow:none;margin:0;page-break-after:always;width:100%;min-height:auto;}
+  .html-page::before{display:none;}
+}
+</style></head><body class="">
+<div id="nav">
+  <span class="ntitle">Y2 · Unit 6 Synthesis</span>
+  <button class="nb" onclick="show(0,this)">6.6</button>
+  <div class="navright">
+    <div class="atog"><span>FORM</span>
+      <button class="ab on" onclick="setAge('both',this)">Both</button>
+      <button class="ab" onclick="setAge('8',this)">IA</button>
+      <button class="ab" onclick="setAge('11',this)">IIA</button>
+    </div>
+    <button class="pbtn" onclick="printAll()">⎙ Print All</button>
+    <button class="pbtn" onclick="printCurrent()">⎙ This Page</button>
+  </div>
+</div>
+<div class="page-wrap" id="wrap0"><div class="html-page"><div class="pg-hdr"><div><span class="series">WONDERS OF THE CREATED WORLD · YEAR TWO · UNIT 6 · SYNTHESIS</span><div class="pg-title">Unit Synthesis — The Unseen Forces</div><div class="pg-sub">The things which are seen were not made of things which do appear.</div></div><span class="pg-num">Synthesis 6.6</span></div><div class="name-bar"><div class="nf"><span class="nl">NAME</span></div><div class="nf-s"><span class="nl">DATE</span></div><div class="nf-s"><span class="nl">WEEK 30</span></div></div><div class="sec">Lesson</div><div class="prose">Three-part synthesis: oral narration, written reflection, connecting question.</div><div class="activity"><b>The Unit&#x27;s Question</b>You made charge cling and crackle, followed Franklin to the lightning, built a working circuit, revealed a magnet&#x27;s hidden field, and found that electricity and magnetism are two faces of one force.<br><br>The question: these forces are completely invisible — you never once saw electricity or magnetism itself, only what they DID: a spark, a lit bulb, a swinging needle, a lifted paperclip. Almost everything powerful in nature acts unseen. What does it mean that the most useful forces in the world are known only by their effects, never by direct sight?</div><div class="sec">Narration</div><div class="age-8"><span class="a8-badge">Form IA · Oral</span><div class="qprompt">Tell the story of electricity and magnetism, from the balloon to the electromagnet.</div><div class="narr-lines"><div class="narr-line"></div><div class="narr-line"></div><div class="narr-line"></div></div></div><div class="age-11"><span class="a11-badge">Form IIA · Written</span><div class="qprompt">Narrate the unit as one connected account. Then answer the connecting question in a paragraph.</div><div class="narr-lines"><div class="narr-line"></div><div class="narr-line"></div><div class="narr-line"></div><div class="narr-line"></div><div class="narr-line"></div></div></div><div class="sec">Nature Journal &amp; Copywork</div><div class="age-8"><div class="faith-box"><b>Form IA</b>Copywork: &#x27;By faith we understand that the worlds were framed by the word of God.&#x27; — Hebrews 11:3. Draw a circuit or a magnet.</div></div><div class="age-11"><div class="faith-box"><b>Form IIA</b>Copywork Hebrews 11:3. Write a paragraph reflecting on knowing invisible forces by their visible effects, and any parallel that suggests to you.</div></div><div class="tnote"><b>Watch for &nbsp;</b>Listen for the unifying insight — that the unit&#x27;s two topics turned out to be one — rather than a list of separate demos.</div></div></div>
+
+<script>
+var cur=0;
+function show(n,btn){document.querySelectorAll(".page-wrap").forEach(function(el){el.classList.remove("active");});
+ var w=document.getElementById("wrap"+n); if(w)w.classList.add("active");
+ document.querySelectorAll(".nb").forEach(function(b){b.classList.remove("on");}); if(btn)btn.classList.add("on"); cur=n; window.scrollTo(0,0);}
+function setAge(a,btn){document.querySelectorAll(".ab").forEach(function(b){b.classList.remove("on");}); if(btn)btn.classList.add("on");
+ document.body.className=a==="both"?"":a==="8"?"show-8":"show-11";}
+function printCurrent(){document.querySelectorAll(".page-wrap").forEach(function(el){el.style.display=(el.id==="wrap"+cur)?"block":"none";});
+ window.print(); setTimeout(function(){document.querySelectorAll(".page-wrap").forEach(function(el){el.style.display="";});},400);}
+function printAll(){window.print();}
+document.addEventListener("DOMContentLoaded",function(){var f=document.querySelector(".nb"); if(f)show(0,f);});
+</script></body></html>

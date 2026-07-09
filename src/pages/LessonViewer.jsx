@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { UNITS } from '../data/lessons.js'
 import TopNav from '../components/TopNav.jsx'
 
@@ -85,13 +85,16 @@ const CSS = `
 `
 
 // ── Flatten all lessons into one array ──────────────────────────────────────
-const ALL = []
-const UNIT_LAST_WK = {}
-UNITS.forEach(u => {
-  u.lessons.forEach(l => { ALL.push({ ...l, _unit: u }) })
-  const lastLesson = u.lessons[u.lessons.length - 1]
-  if (lastLesson) UNIT_LAST_WK[u.id] = lastLesson.week
-})
+function buildViews(units) {
+  const ALL = []
+  const UNIT_LAST_WK = {}
+  units.forEach(u => {
+    u.lessons.forEach(l => { ALL.push({ ...l, _unit: u }) })
+    const lastLesson = u.lessons[u.lessons.length - 1]
+    if (lastLesson) UNIT_LAST_WK[u.id] = lastLesson.week
+  })
+  return { ALL, UNIT_LAST_WK }
+}
 
 // ── Group by week for sidebar ────────────────────────────────────────────────
 function groupByWeek(lessons) {
@@ -114,10 +117,11 @@ function card(color, heading, body) {
   return { color, heading, body }
 }
 
-export default function LessonViewer() {
+export default function LessonViewer({ units = UNITS }) {
   const [ci, setCi] = useState(0)
   const [age, setAge] = useState('both')
 
+  const { ALL, UNIT_LAST_WK } = useMemo(() => buildViews(units), [units])
   const l = ALL[ci]
   const tc = TYPE_COLORS[l.type] || '#2a1f14'
   const weekGroups = groupByWeek(ALL)
