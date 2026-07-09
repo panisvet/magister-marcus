@@ -184,6 +184,17 @@ body{background:#0a0804;overflow-x:hidden;}
 
 const TOOLS = [
   {
+    id: 'planner',
+    icon: '🗓',
+    title: 'Lesson Planner',
+    subtitle: 'Plan the week for each student',
+    desc: 'Add your students and build a weekly plan — type in what each child does each day, or drop in lessons straight from your Wonders curriculum. Check work off as you go. Syncs across your devices.',
+    accent: '#c9902a',
+    href: '/planner',
+    status: 'active',
+    tag: 'Active',
+  },
+  {
     id: 'read',
     icon: '📖',
     title: 'Learn to Read',
