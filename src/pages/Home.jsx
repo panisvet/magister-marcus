@@ -315,15 +315,15 @@ const TOOLS = [
     tag: 'Coming Soon',
   },
   {
-    id: 'writing',
+    id: 'language-arts',
     icon: '✍️',
-    title: 'Coming Soon',
-    subtitle: 'Composition & Rhetoric',
-    desc: 'A future tool for this subject.',
+    title: 'Studia Linguae',
+    subtitle: 'Language Arts · Grammar & Composition',
+    desc: 'The full literature-rich Language Arts course: Year 3 & Year 6 grammar (three terms each), copywork in the Svetlana Manuscript hand, plus the handwriting strips and the Imitation & Analysis composition path — all print-ready.',
     accent: '#4a9b6a',
-    href: null,
-    status: 'soon',
-    tag: 'Coming Soon',
+    href: '/language-arts/index.html',
+    status: 'active',
+    tag: 'Active',
   },
 ];
 
