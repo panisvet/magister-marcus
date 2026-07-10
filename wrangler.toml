@@ -8,3 +8,7 @@ namespace_id = "1001"
   [ratelimits.simple]
   limit = 20
   period = 10
+
+[[kv_namespaces]]
+binding = "PLANNER_KV"
+id = "3850dd505ef04d3f8b2d0cb8c10d55b4"
