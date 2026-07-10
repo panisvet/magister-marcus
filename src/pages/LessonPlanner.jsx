@@ -12,6 +12,22 @@ const CURRICULA = [
 ]
 
 const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
+
+// Fixed start of the school year: Week 1 = the week of Monday, Aug 17 2026.
+const SCHOOL_YEAR_START = '2026-08-17'
+const SCHOOL_START_V = 'aug17-2026' // bump to force a re-anchor migration
+
+// Ensure loaded data anchors to the current school-year start; re-seed if it changed.
+const migrate = (data) => {
+  if (data.schoolStartV === SCHOOL_START_V && data.yearStart) return data
+  return {
+    ...data,
+    yearStart: SCHOOL_YEAR_START,
+    schoolStartV: SCHOOL_START_V,
+    entries: (data.entries || []).filter((e) => !e.seed), // drop old auto-seeded items; they regenerate
+    seeded: [],
+  }
+}
 const STUDENT_COLORS = ['#c9902a', '#5a7a4a', '#4a6a7a', '#8a5a2a', '#6a4a7a', '#7a4a4a']
 // Ambleside/CM daily & weekly rhythm, per level — seeded from the Year 6 planner.
 const AO_TEMPLATES = {
@@ -31,6 +47,52 @@ const LEVELS = {
 }
 const CAT_ROWS = Object.values(CATS) // Bible, History, Biography, Geography, Science, Science Bio, Literature, Free Read
 const termFor = (level, wk) => (LEVELS[level]?.terms || []).find((t) => wk >= t.weeks[0] && wk <= t.weeks[1]) || null
+
+// CM/AO short-lesson time estimates (minutes) per level & subject. Editable per entry after seeding.
+const ESTIMATES = {
+  'Year 6': {
+    'Math lesson': 65, 'Copywork (5–10 min)': 8, 'Latin — Via Latina lesson': 30, 'Modern foreign language': 15,
+    'Musical instrument practice': 25, 'Recitation': 5, 'Physical activity': 40,
+    'Prologue of Ochrid — saints of the week': 5, 'Shakespeare — this term’s play (AO rotation)': 20,
+    'Plutarch — this term’s Life (AO rotation)': 20, 'Picture Study (AO artist rotation)': 15,
+    'Composer / hymn / folksong (AO rotations)': 10, 'Nature Study outing + Handbook of Nature Study': 45,
+    'Written narration': 15, 'Dictation': 10, 'Grammar': 15, 'Map work + timeline/Book of Centuries entry': 10, 'Handicrafts': 30,
+    Bible: 10, History: 20, Biography: 15, Geography: 15, Science: 20, 'Science Bio': 15, Literature: 20, 'Free Read': 20,
+  },
+  'Year 3': {
+    'Copywork (5–10 min)': 8, 'Phonics / reading practice': 12, 'Recitation': 5, 'Math lesson': 25, 'Foreign language': 10,
+    'Latin — Via Latina (Prima Latina, optional)': 10, 'Physical activity': 40, 'Narrate every reading orally': 5,
+    'Paterikon — saint of the week (with the Prologue)': 5, 'Picture Study (AO artist rotation)': 15,
+    'Composer / hymn / folksong (AO rotations)': 10, 'Timeline + map with history readings': 10,
+    'Nature Study outing + Handbook of Nature Study': 45, 'Handicrafts': 30, 'Art': 20,
+    Bible: 8, History: 12, Biography: 12, Geography: 10, Science: 12, 'Science Bio': 10, Literature: 15, 'Free Read': 15,
+  },
+}
+// Not counted toward academic seat-time by default (afternoon / non-desk).
+const NO_COUNT = new Set(['Physical activity', 'Nature Study outing + Handbook of Nature Study', 'Handicrafts', 'Musical instrument practice'])
+const estMin = (level, subject) => ESTIMATES[level]?.[subject] ?? 15
+const fmtMin = (m) => (m >= 60 ? `${Math.floor(m / 60)}h${m % 60 ? ' ' + (m % 60) + 'm' : ''}` : `${m}m`)
+
+// Seed one child's rhythm + a school week's readings into (subjects, entries) for a given calendar week.
+// Pure: returns new arrays. Clears that child's prior *seeded* items for the week first.
+function seedInto(subjects, entries, level, sid, wk, weekKey, { rhythm = true, readings = true } = {}) {
+  const tpl = AO_TEMPLATES[level], lvl = LEVELS[level]
+  const subs = [...subjects]
+  const ensure = (n) => { if (!subs.includes(n)) subs.push(n) }
+  const ents = entries.filter((e) => !(e.week === weekKey && (e.studentId || null) === sid && e.seed))
+  const add = (subject, day, label) =>
+    ents.push({ id: uid(), week: weekKey, subject, day, studentId: sid, label: label || '', ref: null, done: false, seed: true, min: estMin(level, subject), count: !NO_COUNT.has(subject) })
+  if (rhythm && tpl) {
+    tpl.daily.forEach(ensure); tpl.weekly.forEach(ensure)
+    tpl.daily.forEach((t) => DAYS.forEach((day) => add(t, day, '')))
+    tpl.weekly.forEach((t, i) => add(t, DAYS[i % DAYS.length], ''))
+  }
+  if (readings && lvl?.weeks?.[wk]) {
+    CAT_ROWS.forEach(ensure)
+    lvl.weeks[wk].forEach(([cat, text], i) => add(CATS[cat] || 'Reading', DAYS[i % DAYS.length], text))
+  }
+  return { subjects: subs, entries: ents }
+}
 
 // Default subject rows = reading categories first, then the de-duplicated AO rhythm.
 const DEFAULT_SUBJECTS = (() => {
@@ -63,7 +125,10 @@ const prettyWeek = (mondayStr) => {
   return `${m.toLocaleDateString(undefined, opt)} – ${f.toLocaleDateString(undefined, opt)}`
 }
 
-const EMPTY = () => ({ students: [], subjects: [...DEFAULT_SUBJECTS], entries: [], yearStart: null })
+const EMPTY = () => ({ students: [], subjects: [...DEFAULT_SUBJECTS], entries: [], yearStart: SCHOOL_YEAR_START, seeded: [], schoolStartV: SCHOOL_START_V })
+
+// Infer a level from a CM Form label when one isn't set explicitly.
+const guessLevel = (form = '') => (/ii/i.test(form) ? 'Year 6' : /form\s*i\b|\bi[ab]?\b/i.test(form) ? 'Year 3' : null)
 
 // School-week number (1..36) for a given Monday, if a year-start Monday is set.
 const weekNumFor = (yearStart, weekStart) => {
@@ -121,10 +186,19 @@ const CSS = `
 .lp-entry .lab{flex:1;}
 .lp-entry .lab .who{display:block;font-size:10px;font-family:'Cinzel',serif;letter-spacing:.06em;text-transform:uppercase;opacity:.7;margin-bottom:1px;}
 .lp-entry .del{color:#5a4a38;cursor:pointer;font-size:12px;flex-shrink:0;}
+.lp-entry .min{margin-left:6px;color:#c9902a;font-size:9px;letter-spacing:.04em;}
+.lp-weektot{margin-top:14px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;padding:10px 14px;background:#160f07;border:1px solid #3d2e1e;border-radius:6px;font-size:14px;}
+.lp-wt{display:inline-flex;align-items:center;gap:7px;}
+.lp-wt b{color:#e8b84b;}
+.lp-wt-avg{color:#9e8c72;font-style:italic;font-size:12px;}
+.lp-wt-note{color:#5a4a38;font-size:11px;font-style:italic;margin-left:auto;}
 .lp-entry .del:hover{color:#d98a6a;}
 .lp-cell .addcell{width:100%;padding:3px;border:1px dashed #2a1e10;border-radius:4px;background:transparent;color:#5a4a38;cursor:pointer;font-size:16px;line-height:1;}
 .lp-cell .addcell:hover{border-color:#6a5030;color:#c9902a;}
 .lp-addsubj{margin-top:10px;}
+.lp-schoolwk{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:-2px 0 14px;font-size:14px;color:#c8b48a;}
+.lp-wk-select{padding:3px 8px;background:#1a1208;border:1px solid #6a5030;border-radius:4px;color:#e8b84b;font-family:'Crimson Pro',serif;font-size:14px;}
+.lp-sw-note{color:#9e8c72;font-style:italic;font-size:12px;margin-left:6px;}
 
 /* Modal */
 .lp-ov{position:fixed;inset:0;background:rgba(0,0,0,.62);display:flex;align-items:center;justify-content:center;z-index:200;padding:16px;}
@@ -153,12 +227,16 @@ const CSS = `
 
 export default function LessonPlanner() {
   const [data, setData] = useState(EMPTY())
-  const [weekStart, setWeekStart] = useState(() => iso(mondayOf(new Date())))
+  const [weekStart, setWeekStart] = useState(() => {
+    const today = iso(mondayOf(new Date()))
+    return today < SCHOOL_YEAR_START ? SCHOOL_YEAR_START : today
+  })
   const [sync, setSync] = useState('local') // local | saving | saved | error
   const [studentModal, setStudentModal] = useState(null) // {id?, name, form, color}
   const [entryModal, setEntryModal] = useState(null)      // {subject, day, mode, studentId, text, src, unitId, lessonId}
   const [fillOpen, setFillOpen] = useState(false)
   const [fill, setFill] = useState({ level: 'Year 6', studentId: '', week: 1, rhythm: true, readings: true })
+  const [editEntry, setEditEntry] = useState(null) // entry object being edited
   const loaded = useRef(false)
   const saveTimer = useRef(null)
 
@@ -170,7 +248,7 @@ export default function LessonPlanner() {
         const r = await fetch('/api/planner')
         if (r.ok) {
           const j = await r.json()
-          if (!cancelled && j.bound && j.data) { setData({ ...EMPTY(), ...j.data }); setSync('saved') }
+          if (!cancelled && j.bound && j.data) { setData(migrate({ ...EMPTY(), ...j.data })); setSync('saved') }
           else if (!cancelled) { loadLocal(); setSync(j.bound ? 'saved' : 'local') }
           loaded.current = true
           return
@@ -184,7 +262,7 @@ export default function LessonPlanner() {
   function loadLocal() {
     try {
       const raw = localStorage.getItem('schola-planner')
-      if (raw) setData({ ...EMPTY(), ...JSON.parse(raw) })
+      if (raw) setData(migrate({ ...EMPTY(), ...JSON.parse(raw) }))
     } catch { /* ignore */ }
   }
 
@@ -217,6 +295,21 @@ export default function LessonPlanner() {
     (subject, day) => weekEntries.filter((e) => e.subject === subject && e.day === day),
     [weekEntries]
   )
+  // seat-time totals (minutes) — excludes entries flagged count:false
+  const dayTotal = useCallback(
+    (sid, day) => weekEntries.filter((e) => (e.studentId || null) === sid && e.day === day && e.count !== false)
+      .reduce((s, e) => s + (Number(e.min) || 0), 0),
+    [weekEntries]
+  )
+  const weekTotal = useCallback(
+    (sid) => DAYS.reduce((s, day) => s + dayTotal(sid, day), 0),
+    [dayTotal]
+  )
+  // which "owners" have counted entries this week (students + optional shared "All")
+  const activeOwners = useMemo(() => {
+    const ids = new Set(weekEntries.filter((e) => e.count !== false).map((e) => e.studentId || null))
+    return data.students.filter((s) => ids.has(s.id)).concat(ids.has(null) ? [{ id: null, name: 'All', color: '#6a5030' }] : [])
+  }, [weekEntries, data.students])
 
   const shiftWeek = (n) => {
     const m = new Date(weekStart + 'T00:00:00'); m.setDate(m.getDate() + n * 7)
@@ -279,6 +372,7 @@ export default function LessonPlanner() {
       entries: [...d.entries, {
         id: uid(), week: weekStart, subject: m.subject, day: m.day,
         studentId: m.studentId || null, label, ref, done: false,
+        min: 15, count: !NO_COUNT.has(m.subject),
       }],
     }))
     setEntryModal(null)
@@ -287,40 +381,70 @@ export default function LessonPlanner() {
     setData((d) => ({ ...d, entries: d.entries.map((e) => (e.id === id ? { ...e, done: !e.done } : e)) }))
   const deleteEntry = (id) =>
     setData((d) => ({ ...d, entries: d.entries.filter((e) => e.id !== id) }))
+  const updateEntry = (id, patch) =>
+    setData((d) => ({ ...d, entries: d.entries.map((e) => (e.id === id ? { ...e, ...patch } : e)) }))
 
   // ── Seed a week: AO rhythm + that school week's readings, for one child ──
   const planWeek = () => {
-    const tpl = AO_TEMPLATES[fill.level]
-    const lvl = LEVELS[fill.level]
     const sid = fill.studentId || null
-    const wk = fill.week
     setData((d) => {
-      const subjects = [...d.subjects]
-      const ensure = (name) => { if (!subjects.includes(name)) subjects.push(name) }
-      // clear this child's previously-seeded entries for this week; keep hand-typed ones
-      const entries = d.entries.filter(
-        (e) => !(e.week === weekStart && (e.studentId || null) === sid && e.seed)
-      )
-      const add = (subject, day, label) =>
-        entries.push({ id: uid(), week: weekStart, subject, day, studentId: sid, label: label || '', ref: null, done: false, seed: true })
-
-      if (fill.rhythm && tpl) {
-        tpl.daily.forEach(ensure); tpl.weekly.forEach(ensure)
-        tpl.daily.forEach((t) => DAYS.forEach((day) => add(t, day, '')))   // every school day
-        tpl.weekly.forEach((t, i) => add(t, DAYS[i % DAYS.length], ''))     // once, spread
-      }
-      if (fill.readings && lvl?.weeks?.[wk]) {
-        CAT_ROWS.forEach(ensure)
-        lvl.weeks[wk].forEach(([cat, text], i) => add(CATS[cat] || 'Reading', DAYS[i % DAYS.length], text))
-      }
-      return { ...d, subjects, entries }
+      const r = seedInto(d.subjects, d.entries, fill.level, sid, fill.week, weekStart, { rhythm: fill.rhythm, readings: fill.readings })
+      const seeded = [...(d.seeded || [])]
+      const key = `${weekStart}|${sid}`
+      if (!seeded.includes(key)) seeded.push(key)
+      return { ...d, subjects: r.subjects, entries: r.entries, seeded }
     })
     setFillOpen(false)
   }
 
+  // Effective level for a student: explicit choice, else inferred from Form.
+  const effLevel = useCallback((s) => (s.level === 'none' ? null : s.level || guessLevel(s.form)), [])
+  const currentWk = weekNumFor(data.yearStart, weekStart)
+
+  // Set which school week the currently-viewed calendar week is, and re-seed it.
+  const setSchoolWeek = (n) => {
+    const m = new Date(weekStart + 'T00:00:00'); m.setDate(m.getDate() - (n - 1) * 7)
+    const yearStart = iso(m)
+    setData((d) => {
+      let subjects = [...d.subjects], entries = [...d.entries]
+      const seeded = (d.seeded || []).filter((k) => !k.startsWith(weekStart + '|'))
+      d.students.forEach((s) => {
+        const lvl = effLevel(s)
+        if (!lvl) return
+        const r = seedInto(subjects, entries, lvl, s.id, n, weekStart)
+        subjects = r.subjects; entries = r.entries
+        seeded.push(`${weekStart}|${s.id}`)
+      })
+      return { ...d, yearStart, subjects, entries, seeded }
+    })
+  }
+
+  // ── Auto-seed: fill each leveled child's week the first time it's viewed ──
+  useEffect(() => {
+    if (!loaded.current) return
+    // Anchor to the fixed school-year start if somehow unset.
+    if (!data.yearStart) {
+      setData((d) => ({ ...d, yearStart: SCHOOL_YEAR_START }))
+      return
+    }
+    const wk = weekNumFor(data.yearStart, weekStart)
+    if (!wk) return
+    const need = data.students.filter((s) => effLevel(s) && !(data.seeded || []).includes(`${weekStart}|${s.id}`))
+    if (need.length === 0) return
+    setData((d) => {
+      let subjects = [...d.subjects], entries = [...d.entries]
+      const seeded = [...(d.seeded || [])]
+      need.forEach((s) => {
+        const r = seedInto(subjects, entries, effLevel(s), s.id, wk, weekStart)
+        subjects = r.subjects; entries = r.entries
+        seeded.push(`${weekStart}|${s.id}`)
+      })
+      return { ...d, subjects, entries, seeded }
+    })
+  }, [weekStart, data.students, data.yearStart, data.seeded, effLevel])
+
   const openPlan = () => {
-    const suggested = weekNumFor(data.yearStart, weekStart) || 1
-    setFill({ level: 'Year 6', studentId: data.students[0]?.id || '', week: suggested, rhythm: true, readings: true })
+    setFill({ level: 'Year 6', studentId: data.students[0]?.id || '', week: currentWk || 1, rhythm: true, readings: true })
     setFillOpen(true)
   }
   const markWeekOne = () => setData((d) => ({ ...d, yearStart: weekStart }))
@@ -368,6 +492,19 @@ export default function LessonPlanner() {
           {isThisWeek && <span className="lp-today">● this week</span>}
         </div>
 
+        <div className="lp-schoolwk">
+          School week:&nbsp;
+          <select className="lp-wk-select" value={currentWk || ''} onChange={(e) => e.target.value && setSchoolWeek(Number(e.target.value))}>
+            {!currentWk && <option value="">— set —</option>}
+            {Array.from({ length: 36 }, (_, i) => i + 1).map((n) => (
+              <option key={n} value={n}>Week {n}{termFor('Year 6', n) ? ` · Term ${termFor('Year 6', n).n}` : ''}</option>
+            ))}
+          </select>
+          {currentWk
+            ? <span className="lp-sw-note">Leveled children auto-fill each week. Set a child's level by clicking their name.</span>
+            : <span className="lp-sw-note">Pick the week you're on — then leveled children fill automatically.</span>}
+        </div>
+
         {/* Grid */}
         {data.students.length === 0 && data.entries.length === 0 && (
           <p className="lp-empty">Add a student to begin, then tap <b>+</b> in any cell to plan a lesson — type it in, or drop in a lesson from your Wonders curriculum.</p>
@@ -392,8 +529,8 @@ export default function LessonPlanner() {
                           <div key={e.id} className={`lp-entry${e.done ? ' done' : ''}`}
                                style={{ borderLeftColor: stu ? stu.color : '#6a5030' }}>
                             <input className="cb" type="checkbox" checked={e.done} onChange={() => toggleDone(e.id)} />
-                            <span className="lab">
-                              <span className="who">{stu ? stu.name : 'All'}</span>
+                            <span className="lab" style={{ cursor: 'pointer' }} title="Edit / move" onClick={() => setEditEntry(e)}>
+                              <span className="who">{stu ? stu.name : 'All'}{e.min != null && <span className="min">{fmtMin(e.min)}{e.count === false ? '*' : ''}</span>}</span>
                               {e.label}
                             </span>
                             <span className="del" title="Remove" onClick={() => deleteEntry(e.id)}>✕</span>
@@ -406,11 +543,45 @@ export default function LessonPlanner() {
                 </tr>
               ))}
             </tbody>
+            {activeOwners.length > 0 && (
+              <tfoot>
+                <tr>
+                  <td className="lp-subj" style={{ fontSize: 11, color: '#c9902a' }}>Seat time / day</td>
+                  {DAYS.map((day) => (
+                    <td key={day} className="lp-cell" style={{ background: '#160f07' }}>
+                      {activeOwners.map((o) => {
+                        const t = dayTotal(o.id, day)
+                        return t > 0 ? (
+                          <div key={String(o.id)} style={{ fontSize: 12, marginBottom: 2 }}>
+                            <span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: '50%', background: o.color, marginRight: 5 }} />
+                            {o.name} <b style={{ color: '#e8dfc8' }}>{fmtMin(t)}</b>
+                          </div>
+                        ) : null
+                      })}
+                    </td>
+                  ))}
+                </tr>
+              </tfoot>
+            )}
           </table>
         </div>
         <div className="lp-addsubj">
           <button className="lp-add-btn" onClick={addSubject}>+ Add subject row</button>
         </div>
+        {activeOwners.length > 0 && (
+          <div className="lp-weektot">
+            {activeOwners.map((o) => {
+              const wt = weekTotal(o.id)
+              return (
+                <span key={String(o.id)} className="lp-wt">
+                  <span className="lp-dot" style={{ background: o.color }} />
+                  {o.name}: <b>{fmtMin(wt)}/week</b> <span className="lp-wt-avg">≈ {fmtMin(Math.round(wt / 5))}/day</span>
+                </span>
+              )
+            })}
+            <span className="lp-wt-note">* not counted toward seat time (outdoor / afternoon)</span>
+          </div>
+        )}
       </div>
 
       {/* Student modal */}
@@ -429,6 +600,16 @@ export default function LessonPlanner() {
               <label>Form / level (optional)</label>
               <input className="lp-input" placeholder="e.g. Form IA · age 8" value={studentModal.form}
                      onChange={(e) => setStudentModal({ ...studentModal, form: e.target.value })} />
+            </div>
+            <div className="lp-field">
+              <label>Curriculum level (auto-fills their week)</label>
+              <select className="lp-select" value={studentModal.level || ''}
+                      onChange={(e) => setStudentModal({ ...studentModal, level: e.target.value })}>
+                <option value="">Auto — infer from Form{guessLevel(studentModal.form) ? ` (${guessLevel(studentModal.form)})` : ' (none)'}</option>
+                <option value="Year 6">Year 6</option>
+                <option value="Year 3">Year 3</option>
+                <option value="none">None — don't auto-fill</option>
+              </select>
             </div>
             <div className="lp-field">
               <label>Colour</label>
@@ -592,6 +773,46 @@ export default function LessonPlanner() {
                   <button className="lp-btn ghost" onClick={() => setFillOpen(false)}>Cancel</button>
                   <button className="lp-btn" onClick={planWeek}>Fill week</button>
                 </div>
+              </div>
+            </div>
+          </div>
+        )
+      })()}
+
+      {/* Entry editor: move day / minutes / count / done / delete */}
+      {editEntry && (() => {
+        const e = data.entries.find((x) => x.id === editEntry.id) || editEntry
+        const stu = e.studentId ? studentsById[e.studentId] : null
+        return (
+          <div className="lp-ov" onClick={(ev) => ev.target === ev.currentTarget && setEditEntry(null)}>
+            <div className="lp-modal">
+              <h3>{e.subject}</h3>
+              <div className="sub">{stu ? stu.name : 'All students'}{e.label ? ` · ${e.label}` : ''}</div>
+              <div className="lp-field">
+                <label>Day</label>
+                <select className="lp-select" value={e.day}
+                        onChange={(ev) => { updateEntry(e.id, { day: ev.target.value }); setEditEntry({ ...e, day: ev.target.value }) }}>
+                  {DAYS.map((d) => <option key={d} value={d}>{d}</option>)}
+                </select>
+              </div>
+              <div className="lp-field">
+                <label>Minutes</label>
+                <input className="lp-input" type="number" min="0" step="5" value={e.min ?? 15}
+                       onChange={(ev) => { const v = Number(ev.target.value); updateEntry(e.id, { min: v }); setEditEntry({ ...e, min: v }) }} />
+              </div>
+              <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 14, color: '#e8dfc8', marginBottom: 6 }}>
+                <input type="checkbox" checked={e.count !== false}
+                       onChange={(ev) => { updateEntry(e.id, { count: ev.target.checked }); setEditEntry({ ...e, count: ev.target.checked }) }} />
+                Count toward seat time
+              </label>
+              <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 14, color: '#e8dfc8' }}>
+                <input type="checkbox" checked={!!e.done}
+                       onChange={(ev) => { updateEntry(e.id, { done: ev.target.checked }); setEditEntry({ ...e, done: ev.target.checked }) }} />
+                Done
+              </label>
+              <div className="lp-actions">
+                <button className="lp-btn danger" onClick={() => { deleteEntry(e.id); setEditEntry(null) }}>Remove</button>
+                <button className="lp-btn" onClick={() => setEditEntry(null)}>Done</button>
               </div>
             </div>
           </div>
