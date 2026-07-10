@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import TopNav from '../components/TopNav.jsx'
 import { UNITS as WONDERS_Y1 } from '../data/lessons.js'
 import { UNITS as WONDERS_Y2 } from '../data/lessons-year2.js'
+import { WEEKS, WEEKS3, TERMS, TERMS3, CATS, FREE3 } from '../data/ao-schedule.js'
 
 // ── Curriculum sources the planner can pull lessons from ─────────────────────
 // Add more here as their data files are wired in (Latin, Chant, etc.).
@@ -12,10 +13,34 @@ const CURRICULA = [
 
 const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
 const STUDENT_COLORS = ['#c9902a', '#5a7a4a', '#4a6a7a', '#8a5a2a', '#6a4a7a', '#7a4a4a']
-const DEFAULT_SUBJECTS = [
-  'Scripture & Catechism', 'Latin', 'Mathematics', 'Reading',
-  'Science (Wonders)', 'Music & Chant', 'History', 'Art & Nature', 'Copywork',
-]
+// Ambleside/CM daily & weekly rhythm, per level — seeded from the Year 6 planner.
+const AO_TEMPLATES = {
+  'Year 6': {
+    daily: ['Math lesson', 'Copywork (5–10 min)', 'Latin — Via Latina lesson', 'Modern foreign language', 'Musical instrument practice', 'Recitation', 'Physical activity'],
+    weekly: ['Prologue of Ochrid — saints of the week', 'Shakespeare — this term’s play (AO rotation)', 'Plutarch — this term’s Life (AO rotation)', 'Picture Study (AO artist rotation)', 'Composer / hymn / folksong (AO rotations)', 'Nature Study outing + Handbook of Nature Study', 'Written narration', 'Dictation', 'Grammar', 'Map work + timeline/Book of Centuries entry', 'Handicrafts'],
+  },
+  'Year 3': {
+    daily: ['Copywork (5–10 min)', 'Phonics / reading practice', 'Recitation', 'Math lesson', 'Foreign language', 'Latin — Via Latina (Prima Latina, optional)', 'Physical activity', 'Narrate every reading orally'],
+    weekly: ['Paterikon — saint of the week (with the Prologue)', 'Picture Study (AO artist rotation)', 'Composer / hymn / folksong (AO rotations)', 'Timeline + map with history readings', 'Nature Study outing + Handbook of Nature Study', 'Handicrafts', 'Art'],
+  },
+}
+// Per-level reading schedule + term rotations (from the ported Y6 planner).
+const LEVELS = {
+  'Year 6': { weeks: WEEKS, terms: TERMS, freeRead: '' },
+  'Year 3': { weeks: WEEKS3, terms: TERMS3, freeRead: FREE3 },
+}
+const CAT_ROWS = Object.values(CATS) // Bible, History, Biography, Geography, Science, Science Bio, Literature, Free Read
+const termFor = (level, wk) => (LEVELS[level]?.terms || []).find((t) => wk >= t.weeks[0] && wk <= t.weeks[1]) || null
+
+// Default subject rows = reading categories first, then the de-duplicated AO rhythm.
+const DEFAULT_SUBJECTS = (() => {
+  const seen = new Set(), out = []
+  const push = (arr) => arr.forEach((t) => { if (!seen.has(t)) { seen.add(t); out.push(t) } })
+  push(CAT_ROWS)
+  push(AO_TEMPLATES['Year 6'].daily); push(AO_TEMPLATES['Year 3'].daily)
+  push(AO_TEMPLATES['Year 6'].weekly); push(AO_TEMPLATES['Year 3'].weekly)
+  return out
+})()
 
 const uid = () => Math.random().toString(36).slice(2, 9)
 
@@ -38,7 +63,15 @@ const prettyWeek = (mondayStr) => {
   return `${m.toLocaleDateString(undefined, opt)} – ${f.toLocaleDateString(undefined, opt)}`
 }
 
-const EMPTY = () => ({ students: [], subjects: [...DEFAULT_SUBJECTS], entries: [] })
+const EMPTY = () => ({ students: [], subjects: [...DEFAULT_SUBJECTS], entries: [], yearStart: null })
+
+// School-week number (1..36) for a given Monday, if a year-start Monday is set.
+const weekNumFor = (yearStart, weekStart) => {
+  if (!yearStart) return null
+  const a = new Date(yearStart + 'T00:00:00'), b = new Date(weekStart + 'T00:00:00')
+  const n = Math.round((b - a) / (7 * 864e5)) + 1
+  return n >= 1 && n <= 36 ? n : null
+}
 
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=IM+Fell+English:ital@0;1&display=swap');
@@ -124,6 +157,8 @@ export default function LessonPlanner() {
   const [sync, setSync] = useState('local') // local | saving | saved | error
   const [studentModal, setStudentModal] = useState(null) // {id?, name, form, color}
   const [entryModal, setEntryModal] = useState(null)      // {subject, day, mode, studentId, text, src, unitId, lessonId}
+  const [fillOpen, setFillOpen] = useState(false)
+  const [fill, setFill] = useState({ level: 'Year 6', studentId: '', week: 1, rhythm: true, readings: true })
   const loaded = useRef(false)
   const saveTimer = useRef(null)
 
@@ -167,9 +202,8 @@ export default function LessonPlanner() {
           body: JSON.stringify({ data }),
         })
         if (r.ok) setSync('saved')
-        else if (r.status === 501) setSync('local') // no KV binding yet
-        else setSync('error')
-      } catch { setSync('error') }
+        else setSync('local') // no KV binding / sync unavailable — saved on this device
+      } catch { setSync('local') }
     }, 800)
   }, [data])
 
@@ -254,7 +288,44 @@ export default function LessonPlanner() {
   const deleteEntry = (id) =>
     setData((d) => ({ ...d, entries: d.entries.filter((e) => e.id !== id) }))
 
-  const syncLabel = { saving: 'Saving…', saved: 'Synced', local: 'This device', error: 'Save error' }[sync]
+  // ── Seed a week: AO rhythm + that school week's readings, for one child ──
+  const planWeek = () => {
+    const tpl = AO_TEMPLATES[fill.level]
+    const lvl = LEVELS[fill.level]
+    const sid = fill.studentId || null
+    const wk = fill.week
+    setData((d) => {
+      const subjects = [...d.subjects]
+      const ensure = (name) => { if (!subjects.includes(name)) subjects.push(name) }
+      // clear this child's previously-seeded entries for this week; keep hand-typed ones
+      const entries = d.entries.filter(
+        (e) => !(e.week === weekStart && (e.studentId || null) === sid && e.seed)
+      )
+      const add = (subject, day, label) =>
+        entries.push({ id: uid(), week: weekStart, subject, day, studentId: sid, label: label || '', ref: null, done: false, seed: true })
+
+      if (fill.rhythm && tpl) {
+        tpl.daily.forEach(ensure); tpl.weekly.forEach(ensure)
+        tpl.daily.forEach((t) => DAYS.forEach((day) => add(t, day, '')))   // every school day
+        tpl.weekly.forEach((t, i) => add(t, DAYS[i % DAYS.length], ''))     // once, spread
+      }
+      if (fill.readings && lvl?.weeks?.[wk]) {
+        CAT_ROWS.forEach(ensure)
+        lvl.weeks[wk].forEach(([cat, text], i) => add(CATS[cat] || 'Reading', DAYS[i % DAYS.length], text))
+      }
+      return { ...d, subjects, entries }
+    })
+    setFillOpen(false)
+  }
+
+  const openPlan = () => {
+    const suggested = weekNumFor(data.yearStart, weekStart) || 1
+    setFill({ level: 'Year 6', studentId: data.students[0]?.id || '', week: suggested, rhythm: true, readings: true })
+    setFillOpen(true)
+  }
+  const markWeekOne = () => setData((d) => ({ ...d, yearStart: weekStart }))
+
+  const syncLabel = { saving: 'Saving…', saved: 'Synced', local: 'This device' }[sync] || 'This device'
 
   // ── Modal-derived options ──
   const modalSrc = entryModal && CURRICULA.find((c) => c.key === entryModal.src)
@@ -290,6 +361,10 @@ export default function LessonPlanner() {
           <span className="lp-wk-label">{prettyWeek(weekStart)}</span>
           <button className="lp-wk-btn" onClick={() => shiftWeek(1)}>Next ›</button>
           {!isThisWeek && <button className="lp-wk-btn" onClick={() => setWeekStart(iso(mondayOf(new Date())))}>This week</button>}
+          <button className="lp-wk-btn" style={{ marginLeft: 'auto', borderColor: '#6a5030', color: '#e8b84b' }}
+                  onClick={openPlan}>
+            ＋ Plan week
+          </button>
           {isThisWeek && <span className="lp-today">● this week</span>}
         </div>
 
@@ -440,6 +515,88 @@ export default function LessonPlanner() {
           </div>
         </div>
       )}
+
+      {/* Plan-week modal */}
+      {fillOpen && (() => {
+        const term = termFor(fill.level, fill.week)
+        const lvl = LEVELS[fill.level]
+        const readingCount = lvl?.weeks?.[fill.week]?.length || 0
+        const suggested = weekNumFor(data.yearStart, weekStart)
+        return (
+          <div className="lp-ov" onClick={(e) => e.target === e.currentTarget && setFillOpen(false)}>
+            <div className="lp-modal">
+              <h3>Plan a week</h3>
+              <div className="sub">Drops the daily/weekly rhythm and this school week's readings into {prettyWeek(weekStart)} for one child. Re-running replaces that child's seeded items; anything you typed by hand stays.</div>
+
+              <div className="lp-field">
+                <label>Level</label>
+                <select className="lp-select" value={fill.level}
+                        onChange={(e) => setFill({ ...fill, level: e.target.value })}>
+                  {Object.keys(LEVELS).map((k) => <option key={k} value={k}>{k}</option>)}
+                </select>
+              </div>
+
+              <div className="lp-field">
+                <label>For whom</label>
+                <select className="lp-select" value={fill.studentId}
+                        onChange={(e) => setFill({ ...fill, studentId: e.target.value })}>
+                  <option value="">All students (together)</option>
+                  {data.students.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
+                </select>
+              </div>
+
+              <div className="lp-field">
+                <label>School week (1–36)</label>
+                <select className="lp-select" value={fill.week}
+                        onChange={(e) => setFill({ ...fill, week: Number(e.target.value) })}>
+                  {Array.from({ length: 36 }, (_, i) => i + 1).map((n) => (
+                    <option key={n} value={n}>Week {n}{termFor(fill.level, n) ? ` · Term ${termFor(fill.level, n).n}` : ''}{suggested === n ? ' · (this calendar week)' : ''}</option>
+                  ))}
+                </select>
+                <div style={{ marginTop: 6, fontSize: 12, color: '#9e8c72' }}>
+                  {data.yearStart
+                    ? <>Week 1 is set to {prettyWeek(data.yearStart)}. <span style={{ color: '#c9902a', cursor: 'pointer' }} onClick={markWeekOne}>Reset week 1 to this calendar week</span></>
+                    : <span style={{ color: '#c9902a', cursor: 'pointer' }} onClick={markWeekOne}>Mark this calendar week as school week 1 (auto-numbers future weeks)</span>}
+                </div>
+              </div>
+
+              {term && (
+                <div style={{ background: '#0e0b07', border: '1px solid #2a1e10', borderRadius: 5, padding: '8px 10px', marginBottom: 12, fontSize: 13 }}>
+                  <div style={{ fontFamily: "'Cinzel',serif", fontSize: 10, letterSpacing: '.12em', textTransform: 'uppercase', color: '#c9902a', marginBottom: 3 }}>Term {term.n} focus</div>
+                  <div><b>Poetry:</b> {term.poetry}</div>
+                  <div style={{ marginTop: 2 }}><b>Geography:</b> {term.geo}</div>
+                </div>
+              )}
+
+              <div className="lp-field">
+                <label>Include</label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: "'Crimson Pro',serif", textTransform: 'none', letterSpacing: 0, color: '#e8dfc8', fontSize: 14, marginBottom: 4 }}>
+                  <input type="checkbox" checked={fill.rhythm} onChange={(e) => setFill({ ...fill, rhythm: e.target.checked })} />
+                  Daily &amp; weekly rhythm
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: "'Crimson Pro',serif", textTransform: 'none', letterSpacing: 0, color: '#e8dfc8', fontSize: 14 }}>
+                  <input type="checkbox" checked={fill.readings} onChange={(e) => setFill({ ...fill, readings: e.target.checked })} />
+                  Week {fill.week} readings ({readingCount} items)
+                </label>
+              </div>
+
+              {fill.level === 'Year 3' && lvl.freeRead && (
+                <div style={{ fontSize: 12, color: '#9e8c72', fontStyle: 'italic', marginBottom: 12 }}>
+                  Free-reading shelf: {lvl.freeRead}
+                </div>
+              )}
+
+              <div className="lp-actions">
+                <span />
+                <div style={{ display: 'flex', gap: 8 }}>
+                  <button className="lp-btn ghost" onClick={() => setFillOpen(false)}>Cancel</button>
+                  <button className="lp-btn" onClick={planWeek}>Fill week</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )
+      })()}
     </div>
   )
 }
