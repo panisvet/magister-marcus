@@ -1,0 +1,1946 @@
+{
+  "meta": {
+    "book": "Latina Christiana",
+    "edition": "I (4th)",
+    "publisher": "Memoria Press",
+    "version": "0.9.0-bootstrap",
+    "total_lessons": 25,
+    "total_review_lessons": 5,
+    "status": "vocab-updated",
+    "note": "Vocab from provided lists (5 core words per lesson as in app structure). Structure and sayings from teacher guide screenshots. Paradigms and prayers expanded as needed. Pronunciation rules shared with Prima Latina. Real clips integrated for puella/servus declensions + amo/video present conjugations (clip-first in paradigms, fallback to TTS). Old corpus sentences (greetings, daily life, inscriptions, short fables from Phaedrus I) introduced in practical_latin of L1, L2, L3, L4, L6, L7, L8, L9, L11, L12, L17, L22, L23+. Added 1-2 new vocab words per lesson as needed (e.g. animals like canis, lupus, vulpes, rana, leo, cervus from Phaedrus fables). Word order variations (swapping nom/acc subjects and objects while preserving meaning via cases) added to L3 and L15 from Phaedrus. Full details can be further expanded from book."
+  },
+  "pronunciation_rules": [
+    {
+      "id": "vowel-a",
+      "category": "vowel",
+      "symbol": "A",
+      "sound": "ah",
+      "example_latin": "ambulo",
+      "english_hint": "as in father"
+    },
+    {
+      "id": "vowel-e",
+      "category": "vowel",
+      "symbol": "E",
+      "sound": "ay",
+      "example_latin": "deus",
+      "english_hint": "as in they"
+    },
+    {
+      "id": "vowel-i",
+      "category": "vowel",
+      "symbol": "I",
+      "sound": "ee",
+      "example_latin": "via",
+      "english_hint": "as in machine"
+    },
+    {
+      "id": "vowel-o",
+      "category": "vowel",
+      "symbol": "O",
+      "sound": "oh",
+      "example_latin": "toga",
+      "english_hint": "as in no"
+    },
+    {
+      "id": "vowel-u",
+      "category": "vowel",
+      "symbol": "U",
+      "sound": "oo",
+      "example_latin": "luna",
+      "english_hint": "as in boo"
+    },
+    {
+      "id": "team-ae",
+      "category": "vowel_team",
+      "symbol": "ae",
+      "sound": "ay",
+      "example_latin": "caelum",
+      "english_hint": "like e in they (ay)"
+    },
+    {
+      "id": "team-oe",
+      "category": "vowel_team",
+      "symbol": "oe",
+      "sound": "ay",
+      "example_latin": "proelium",
+      "english_hint": "like e in they (ay)"
+    },
+    {
+      "id": "diphthong-au",
+      "category": "diphthong",
+      "symbol": "au",
+      "sound": "ow",
+      "example_latin": "nauta",
+      "english_hint": "like ow in cow"
+    },
+    {
+      "id": "consonant-c-soft",
+      "category": "consonant",
+      "symbol": "c",
+      "condition": "before e, i, ae, oe",
+      "sound": "ch",
+      "example_latin": "caelum",
+      "english_hint": "as in charity"
+    },
+    {
+      "id": "consonant-c-hard",
+      "category": "consonant",
+      "symbol": "c",
+      "condition": "before all other letters",
+      "sound": "k",
+      "example_latin": "clamo, corona",
+      "english_hint": "as in cat"
+    },
+    {
+      "id": "consonant-g-soft",
+      "category": "consonant",
+      "symbol": "g",
+      "condition": "before e, i, ae, oe",
+      "sound": "j",
+      "example_latin": "regina, gemini",
+      "english_hint": "as in germ"
+    },
+    {
+      "id": "consonant-g-hard",
+      "category": "consonant",
+      "symbol": "g",
+      "condition": "before all other letters",
+      "sound": "g",
+      "example_latin": "gloria",
+      "english_hint": "as in good"
+    },
+    {
+      "id": "consonant-j",
+      "category": "consonant",
+      "symbol": "j",
+      "condition": null,
+      "sound": "y",
+      "example_latin": "Jesus, judico",
+      "english_hint": "as in yes"
+    },
+    {
+      "id": "consonant-s",
+      "category": "consonant",
+      "symbol": "s",
+      "condition": null,
+      "sound": "s",
+      "example_latin": "specto",
+      "english_hint": "as in soup (never z)"
+    },
+    {
+      "id": "consonant-t-ts",
+      "category": "consonant",
+      "symbol": "t",
+      "condition": "when followed by i and a vowel",
+      "sound": "ts",
+      "example_latin": "etiam",
+      "english_hint": "like ts"
+    }
+  ],
+  "lessons": [
+    {
+      "id": 1,
+      "type": "lesson",
+      "title": "First Declension — Introduction",
+      "focus": "First Declension, Agreement of Subject and Verb; cases of nouns",
+      "practical_latin": [
+        {
+          "latin": "Anno Domini",
+          "english": "In the year of the Lord (A.D.) — all time is cited from the Incarnation, the birth of Christ"
+        },
+        {
+          "latin": "Salve",
+          "english": "Hello! (to one person)"
+        },
+        {
+          "latin": "Salvete",
+          "english": "Hello! (to more than one person)"
+        },
+        {
+          "latin": "Vale",
+          "english": "Goodbye! (to one person)"
+        },
+        {
+          "latin": "Valete",
+          "english": "Goodbye! (to more than one person)"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-1-1",
+          "latin": "amo",
+          "english": "I love",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "amo",
+          "derivatives": [
+            {
+              "english": "amorous",
+              "gloss": "full of love (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-1-2",
+          "latin": "porto",
+          "english": "I carry",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "porto",
+          "derivatives": [
+            {
+              "english": "portable",
+              "gloss": "able to be carried (adj.)"
+            },
+            {
+              "english": "airport",
+              "gloss": "a place where aircraft land and take off (n.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-1-3",
+          "latin": "laudo",
+          "english": "I praise",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "laudo",
+          "derivatives": [
+            {
+              "english": "laudatory",
+              "gloss": "the art of public speaking (n.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-1-4",
+          "latin": "oro",
+          "english": "I pray",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "oro",
+          "derivatives": [
+            {
+              "english": "oral",
+              "gloss": "spoken or having to do with the mouth (adj.)"
+            },
+            {
+              "english": "oratory",
+              "gloss": "the art of public speaking (n.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-1-5",
+          "latin": "laboro",
+          "english": "I work",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "laboro",
+          "derivatives": [
+            {
+              "english": "laboratory",
+              "gloss": "a place for scientific work or research (n.)"
+            },
+            {
+              "english": "labor",
+              "gloss": "work; physical or mental exertion (n.)"
+            }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "agnus-dei",
+        "title": "Agnus Dei",
+        "latin_full": "Agnus Dei, qui tollis peccata mundi, miserere nobis. Agnus Dei, qui tollis peccata mundi, miserere nobis. Agnus Dei, qui tollis peccata mundi, dona nobis pacem.",
+        "english_full": "Lamb of God, who takes away the sins of the world, have mercy on us. Lamb of God, who takes away the sins of the world, have mercy on us. Lamb of God, who takes away the sins of the world, grant us peace.",
+        "type": "prayer",
+        "audio_key": "agnus-dei",
+        "new_portion_latin": "Agnus Dei, qui tollis peccata mundi, miserere nobis.",
+        "new_portion_english": "Lamb of God, who takes away the sins of the world, have mercy on us.",
+        "note": "Each week learn the new portion and add to what you know."
+      },
+      "paradigms": [
+        {
+          "id": "decl1-sing",
+          "label": "First Declension Singular (puella - girl)",
+          "type": "noun_declension",
+          "number": "singular",
+          "note": "ae has the long A sound",
+          "rows": [
+            {
+              "case": "nominative",
+              "latin": "puella",
+              "english": "girl (subj.)",
+              "clip": "latin-declensions/puella/puella-nom-sg"
+            },
+            {
+              "case": "genitive",
+              "latin": "puellae",
+              "english": "of the girl",
+              "clip": "latin-declensions/puella/puellae-gen-sg"
+            },
+            {
+              "case": "dative",
+              "latin": "puellae",
+              "english": "to/for the girl",
+              "clip": "latin-declensions/puella/puellae-dat-sg"
+            },
+            {
+              "case": "accusative",
+              "latin": "puellam",
+              "english": "girl (obj.)",
+              "clip": "latin-declensions/puella/puellam-acc-sg"
+            },
+            {
+              "case": "ablative",
+              "latin": "puella",
+              "english": "by/with/from the girl",
+              "clip": "latin-declensions/puella/puella-abl-sg"
+            }
+          ]
+        }
+      ],
+      "reading_key": "maxey-lc1"
+    },
+    {
+      "id": 2,
+      "type": "lesson",
+      "title": "First Declension — More Nouns",
+      "focus": "First Declension continued; nominative case subjects and predicate nouns",
+      "practical_latin": [
+        {
+          "latin": "Canis carnem portat.",
+          "english": "The dog carries the meat."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-2-1",
+          "latin": "voco",
+          "english": "I call",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "voco",
+          "derivatives": [
+            {
+              "english": "vocal",
+              "gloss": "having to do with speaking or singing (adj.)"
+            },
+            {
+              "english": "vocabulary",
+              "gloss": "a list of words (n.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-2-2",
+          "latin": "video",
+          "english": "I see",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "video",
+          "derivatives": []
+        },
+        {
+          "id": "lc-2-3",
+          "latin": "sedeo",
+          "english": "I sit",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "sedeo",
+          "derivatives": []
+        },
+        {
+          "id": "lc-2-4",
+          "latin": "habeo",
+          "english": "I have",
+          "pos": "verb",
+          "conjugation": 2,
+          "audio_key": "habeo",
+          "derivatives": []
+        },
+        {
+          "id": "lc-2-5",
+          "latin": "habito",
+          "english": "I live in",
+          "pos": "verb",
+          "conjugation": 1,
+          "audio_key": "habito",
+          "derivatives": [
+            {
+              "english": "habitat",
+              "gloss": "a place where something or someone lives (n.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-2-6",
+          "latin": "canis",
+          "english": "dog",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "canis",
+          "derivatives": []
+        },
+        {
+          "id": "lc-2-7",
+          "latin": "caro",
+          "english": "meat",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "caro",
+          "derivatives": []
+        }
+      ],
+      "prayer": {
+        "id": "agnus-dei",
+        "title": "Agnus Dei",
+        "latin_full": "Agnus Dei, qui tollis peccata mundi, miserere nobis. Agnus Dei, qui tollis peccata mundi, miserere nobis. Agnus Dei, qui tollis peccata mundi, dona nobis pacem.",
+        "english_full": "Lamb of God, who takes away the sins of the world, have mercy on us. ... grant us peace.",
+        "type": "prayer",
+        "audio_key": "agnus-dei",
+        "new_portion_latin": "Agnus Dei, qui tollis peccata mundi, dona nobis pacem.",
+        "new_portion_english": "Lamb of God, who takes away the sins of the world, grant us peace.",
+        "note": "Complete the prayer."
+      },
+      "paradigms": [],
+      "reading_key": "maxey-lc2"
+    },
+    {
+      "id": 3,
+      "type": "lesson",
+      "title": "First Declension Plural",
+      "focus": "First Declension plural endings; subject/verb agreement",
+      "practical_latin": [
+        {
+          "latin": "Lupus agnum vidit.",
+          "english": "The wolf saw the lamb."
+        },
+        {
+          "latin": "Agnum lupus vidit.",
+          "english": "The lamb the wolf saw."
+        },
+        {
+          "latin": "Vidit lupus agnum.",
+          "english": "The wolf saw the lamb."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-3-1",
+          "latin": "casa",
+          "english": "house",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "casa",
+          "derivatives": []
+        },
+        {
+          "id": "lc-3-2",
+          "latin": "porta",
+          "english": "gate",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "porta",
+          "derivatives": [
+            {
+              "english": "portal",
+              "gloss": "entrance"
+            }
+          ]
+        },
+        {
+          "id": "lc-3-3",
+          "latin": "puella",
+          "english": "girl",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "puella",
+          "derivatives": [
+            {
+              "english": "puerile",
+              "gloss": "childish (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-3-4",
+          "latin": "silva",
+          "english": "forest",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "silva",
+          "derivatives": [
+            {
+              "english": "sylvan",
+              "gloss": "of the woods"
+            }
+          ]
+        },
+        {
+          "id": "lc-3-5",
+          "latin": "terra",
+          "english": "earth/land",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "terra",
+          "derivatives": [
+            {
+              "english": "terrestrial",
+              "gloss": "of the earth"
+            }
+          ]
+        },
+        {
+          "id": "lc-3-6",
+          "latin": "lupus",
+          "english": "wolf",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "lupus",
+          "derivatives": []
+        },
+        {
+          "id": "lc-3-7",
+          "latin": "agnus",
+          "english": "lamb",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "agnus",
+          "derivatives": []
+        }
+      ],
+      "prayer_id": "agnus-dei",
+      "paradigms": [
+        {
+          "id": "decl1-pl",
+          "label": "First Declension Plural Endings",
+          "type": "noun_declension",
+          "number": "plural",
+          "note": "",
+          "rows": [
+            {
+              "case": "nominative",
+              "latin": "puellae",
+              "english": "girls (subj.)",
+              "ending": "ae",
+              "clip": "latin-declensions/puella/puellae-nom-pl"
+            },
+            {
+              "case": "genitive",
+              "latin": "puellarum",
+              "english": "of the girls",
+              "ending": "arum",
+              "clip": "latin-declensions/puella/puellarum-gen-pl"
+            },
+            {
+              "case": "dative",
+              "latin": "puellis",
+              "english": "to/for the girls",
+              "ending": "is",
+              "clip": "latin-declensions/puella/puellis-dat-pl"
+            },
+            {
+              "case": "accusative",
+              "latin": "puellas",
+              "english": "girls (obj.)",
+              "ending": "as",
+              "clip": "latin-declensions/puella/puellas-acc-pl"
+            },
+            {
+              "case": "ablative",
+              "latin": "puellis",
+              "english": "by/with/from the girls",
+              "ending": "is",
+              "clip": "latin-declensions/puella/puellis-abl-pl"
+            }
+          ]
+        }
+      ],
+      "reading_key": "maxey-lc3"
+    },
+    {
+      "id": 4,
+      "type": "lesson",
+      "title": "Verbs — First Conjugation Present",
+      "focus": "First Conjugation present tense; subject/verb agreement with 1st decl nouns",
+      "practical_latin": [
+        {
+          "latin": "Vulpes corvum laudavit.",
+          "english": "The fox praised the crow."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-4-1",
+          "latin": "via",
+          "english": "way/road",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "via",
+          "derivatives": [
+            {
+              "english": "viaduct",
+              "gloss": "roadway on piers (n.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-4-2",
+          "latin": "femina",
+          "english": "woman",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "femina",
+          "derivatives": []
+        },
+        {
+          "id": "lc-4-3",
+          "latin": "forma",
+          "english": "form/shape",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "forma",
+          "derivatives": []
+        },
+        {
+          "id": "lc-4-4",
+          "latin": "cena",
+          "english": "dinner",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "cena",
+          "derivatives": []
+        },
+        {
+          "id": "lc-4-5",
+          "latin": "regina",
+          "english": "queen",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "regina",
+          "derivatives": []
+        },
+        {
+          "id": "lc-4-6",
+          "latin": "vulpes",
+          "english": "fox",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "vulpes",
+          "derivatives": []
+        },
+        {
+          "id": "lc-4-7",
+          "latin": "corvus",
+          "english": "crow",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "corvus",
+          "derivatives": []
+        }
+      ],
+      "prayer_id": "agnus-dei",
+      "paradigms": [
+        {
+          "id": "conj1-pres",
+          "label": "First Conjugation Present Tense (amo)",
+          "type": "conjugation",
+          "model_verb": "amare",
+          "rows": [
+            {
+              "person": "1sg",
+              "latin": "amo",
+              "english": "I love",
+              "clip": "latin-paradigms/amo-present/amo-1sg"
+            },
+            {
+              "person": "2sg",
+              "latin": "amas",
+              "english": "you (s.) love",
+              "clip": "latin-paradigms/amo-present/amas-2sg"
+            },
+            {
+              "person": "3sg",
+              "latin": "amat",
+              "english": "he/she/it loves",
+              "clip": "latin-paradigms/amo-present/amat-3sg"
+            },
+            {
+              "person": "1pl",
+              "latin": "amamus",
+              "english": "we love",
+              "clip": "latin-paradigms/amo-present/amamus-1pl"
+            },
+            {
+              "person": "2pl",
+              "latin": "amatis",
+              "english": "you (pl.) love",
+              "clip": "latin-paradigms/amo-present/amatis-2pl"
+            },
+            {
+              "person": "3pl",
+              "latin": "amant",
+              "english": "they love",
+              "clip": "latin-paradigms/amo-present/amant-3pl"
+            }
+          ]
+        }
+      ],
+      "reading_key": "maxey-lc4"
+    },
+    {
+      "id": 5,
+      "type": "lesson",
+      "title": "First Declension Review & Verbs",
+      "focus": "Review first declension and 1st conj present; Latin saying from Virgil",
+      "practical_latin": [
+        {
+          "latin": "Labor omnia vincit",
+          "english": "Work conquers all things (Virgil)"
+        }
+      ],
+      "vocab": [],
+      "prayer_id": "agnus-dei",
+      "paradigms": [],
+      "reading_key": "maxey-lc5"
+    },
+    {
+      "id": "R1",
+      "type": "review",
+      "title": "Review Lesson 1 (Lessons 1–5)",
+      "reviews_lessons": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "prayer_id": "agnus-dei",
+      "latin_song": {
+        "title": "Dona Nobis Pacem (from Agnus Dei)",
+        "latin": "Dona nobis pacem",
+        "english": "Grant us peace",
+        "source": "Traditional"
+      },
+      "reading_key": "maxey-lc-r1"
+    },
+    {
+      "id": 6,
+      "type": "lesson",
+      "title": "Second Declension — Masculine",
+      "focus": "Second Declension (masculine -us); agreement of plural subject and verb",
+      "practical_latin": [
+        {
+          "latin": "Mane surgo.",
+          "english": "In the morning I get up."
+        },
+        {
+          "latin": "Aquam bibo.",
+          "english": "I drink water."
+        },
+        {
+          "latin": "In ludum eo.",
+          "english": "I go to school."
+        },
+        {
+          "latin": "Magister docet.",
+          "english": "The teacher teaches."
+        },
+        {
+          "latin": "Vespere ceno.",
+          "english": "In the evening I dine."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-6-1",
+          "latin": "dominus",
+          "english": "lord, master",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "derivatives": [
+            {
+              "english": "dominate",
+              "gloss": "to rule"
+            }
+          ]
+        },
+        {
+          "id": "lc-6-2",
+          "latin": "deus",
+          "english": "god",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "derivatives": [
+            {
+              "english": "deity",
+              "gloss": "a god"
+            }
+          ]
+        },
+        {
+          "id": "lc-6-3",
+          "latin": "filius",
+          "english": "son",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "derivatives": []
+        },
+        {
+          "id": "lc-6-4",
+          "latin": "equus",
+          "english": "horse",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "derivatives": [
+            {
+              "english": "equestrian",
+              "gloss": "horse-related"
+            }
+          ]
+        },
+        {
+          "id": "lc-6-5",
+          "latin": "servus",
+          "english": "slave, servant",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "derivatives": [
+            {
+              "english": "service",
+              "gloss": "work done for another"
+            }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "ave-maria",
+        "title": "Ave Maria",
+        "latin_full": "Ave Maria, gratia plena, Dominus tecum. Benedicta tu in mulieribus, et benedictus fructus ventris tui, Iesus. Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc et in hora mortis nostrae. Amen.",
+        "english_full": "Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.",
+        "type": "prayer",
+        "audio_key": "ave-maria",
+        "new_portion_latin": "Ave Maria, gratia plena, Dominus tecum.",
+        "new_portion_english": "Hail Mary, full of grace, the Lord is with thee.",
+        "note": "Learn the opening of the Hail Mary."
+      },
+      "paradigms": [
+        {
+          "id": "decl2-m-sing",
+          "label": "Second Declension Masculine Singular (servus)",
+          "type": "noun_declension",
+          "number": "singular",
+          "note": "",
+          "rows": [
+            {
+              "case": "nominative",
+              "latin": "servus",
+              "english": "servant (subj.)",
+              "clip": "latin-declensions/servus/servus-nom-sg"
+            },
+            {
+              "case": "genitive",
+              "latin": "servi",
+              "english": "of the servant",
+              "clip": "latin-declensions/servus/servi-gen-sg"
+            },
+            {
+              "case": "dative",
+              "latin": "servo",
+              "english": "to/for the servant",
+              "clip": "latin-declensions/servus/servo-dat-sg"
+            },
+            {
+              "case": "accusative",
+              "latin": "servum",
+              "english": "servant (obj.)",
+              "clip": "latin-declensions/servus/servum-acc-sg"
+            },
+            {
+              "case": "ablative",
+              "latin": "servo",
+              "english": "by/with/from the servant",
+              "clip": "latin-declensions/servus/servo-abl-sg"
+            }
+          ]
+        }
+      ],
+      "reading_key": "maxey-lc6"
+    },
+    {
+      "id": 7,
+      "type": "lesson",
+      "title": "Second Declension — Neuter & Plural",
+      "focus": "Second Declension neuter (-um); plural subjects and verbs",
+      "practical_latin": [
+        {
+          "latin": "Ranae ad deum ibant.",
+          "english": "The frogs were going to the god."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-7-1",
+          "latin": "rana",
+          "english": "frog",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "rana",
+          "derivatives": []
+        },
+        {
+          "id": "lc-7-2",
+          "latin": "rex",
+          "english": "king",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "rex",
+          "derivatives": []
+        }
+      ],
+      "prayer_id": "ave-maria",
+      "paradigms": [],
+      "reading_key": "maxey-lc7"
+    },
+    {
+      "id": 8,
+      "type": "lesson",
+      "title": "Adjectives — 1st/2nd Declension",
+      "focus": "Adjectives of the 1st/2nd declension; agreement in gender, number, case",
+      "practical_latin": [
+        {
+          "latin": "Vulpes personam vidit.",
+          "english": "The fox saw the mask."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-8-1",
+          "latin": "magnus, -a, -um",
+          "english": "great, large",
+          "pos": "adjective",
+          "declension": "1/2",
+          "derivatives": [
+            {
+              "english": "magnify",
+              "gloss": "to make great"
+            }
+          ]
+        },
+        {
+          "id": "lc-8-2",
+          "latin": "bonus, -a, -um",
+          "english": "good",
+          "pos": "adjective",
+          "declension": "1/2",
+          "derivatives": [
+            {
+              "english": "bonus",
+              "gloss": "extra good thing"
+            }
+          ]
+        },
+        {
+          "id": "lc-8-3",
+          "latin": "persona",
+          "english": "mask, person",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "persona",
+          "derivatives": []
+        }
+      ],
+      "prayer_id": "ave-maria",
+      "paradigms": [],
+      "reading_key": "maxey-lc8"
+    },
+    {
+      "id": 9,
+      "type": "lesson",
+      "title": "Second Declension Review; Common Sayings",
+      "focus": "Review 2nd declension; common Latin expressions (mea culpa, semper fidelis)",
+      "practical_latin": [
+        {
+          "latin": "Mea culpa",
+          "english": "Through my fault (from the Confiteor)"
+        },
+        {
+          "latin": "Semper fidelis",
+          "english": "Always faithful (motto of the U.S. Marine Corps)"
+        },
+        {
+          "latin": "Siste viator",
+          "english": "Traveler, stop!"
+        },
+        {
+          "latin": "Senatus populusque Romanus",
+          "english": "The Senate and People of Rome (S.P.Q.R.)"
+        },
+        {
+          "latin": "Dis manibus",
+          "english": "To the spirits of the dead"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-9-1",
+          "latin": "bellum",
+          "english": "war",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "bellum",
+          "derivatives": []
+        },
+        {
+          "id": "lc-9-2",
+          "latin": "donum",
+          "english": "gift",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "donum",
+          "derivatives": []
+        },
+        {
+          "id": "lc-9-3",
+          "latin": "frumentum",
+          "english": "grain",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "frumentum",
+          "derivatives": []
+        },
+        {
+          "id": "lc-9-4",
+          "latin": "imperium",
+          "english": "command/empire",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "imperium",
+          "derivatives": []
+        },
+        {
+          "id": "lc-9-5",
+          "latin": "oppidum",
+          "english": "town",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "oppidum",
+          "derivatives": []
+        }
+      ],
+      "prayer_id": "ave-maria",
+      "paradigms": [],
+      "reading_key": "maxey-lc9"
+    },
+    {
+      "id": 10,
+      "type": "lesson",
+      "title": "Second Conjugation Present",
+      "focus": "Second Conjugation verbs (e.g. -eo ending in 1sg); present tense",
+      "practical_latin": [],
+      "vocab": [
+        {
+          "id": "lc-10-1",
+          "latin": "deus",
+          "english": "God/god",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "deus",
+          "derivatives": [
+            {
+              "english": "deity",
+              "gloss": "a god (n.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-10-2",
+          "latin": "dominus",
+          "english": "Lord/master",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "dominus",
+          "derivatives": [
+            {
+              "english": "dominate",
+              "gloss": "to rule"
+            }
+          ]
+        },
+        {
+          "id": "lc-10-3",
+          "latin": "filius",
+          "english": "son",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "filius",
+          "derivatives": []
+        },
+        {
+          "id": "lc-10-4",
+          "latin": "amicus",
+          "english": "friend",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "amicus",
+          "derivatives": []
+        },
+        {
+          "id": "lc-10-5",
+          "latin": "servus",
+          "english": "slave/servant",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "servus",
+          "derivatives": [
+            {
+              "english": "service",
+              "gloss": "work done for another"
+            }
+          ]
+        }
+      ],
+      "prayer_id": "ave-maria",
+      "paradigms": [
+        {
+          "id": "conj2-pres",
+          "label": "Second Conjugation Present Tense (video - I see)",
+          "type": "conjugation",
+          "model_verb": "videre",
+          "rows": [
+            {
+              "person": "1sg",
+              "latin": "video",
+              "english": "I see",
+              "clip": "latin-paradigms/video-present/video-1sg"
+            },
+            {
+              "person": "2sg",
+              "latin": "vides",
+              "english": "you (s.) see",
+              "clip": "latin-paradigms/video-present/vides-2sg"
+            },
+            {
+              "person": "3sg",
+              "latin": "videt",
+              "english": "he/she/it sees",
+              "clip": "latin-paradigms/video-present/videt-3sg"
+            },
+            {
+              "person": "1pl",
+              "latin": "videmus",
+              "english": "we see",
+              "clip": "latin-paradigms/video-present/videmus-1pl"
+            },
+            {
+              "person": "2pl",
+              "latin": "videtis",
+              "english": "you (pl.) see",
+              "clip": "latin-paradigms/video-present/videtis-2pl"
+            },
+            {
+              "person": "3pl",
+              "latin": "vident",
+              "english": "they see",
+              "clip": "latin-paradigms/video-present/vident-3pl"
+            }
+          ]
+        }
+      ],
+      "reading_key": "maxey-lc10"
+    },
+    {
+      "id": "R2",
+      "type": "review",
+      "title": "Review Lesson 2 (Lessons 6–10)",
+      "reviews_lessons": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "prayer_id": "ave-maria",
+      "latin_song": {
+        "title": "Ave Maria (simple)",
+        "latin": "Ave Maria",
+        "english": "Hail Mary",
+        "source": "Traditional"
+      },
+      "reading_key": "maxey-lc-r2"
+    },
+    {
+      "id": 11,
+      "type": "lesson",
+      "title": "Personal Pronouns (1st/2nd Person)",
+      "focus": "Personal pronouns ego, tu, nos, vos; nominative forms",
+      "practical_latin": [
+        {
+          "latin": "Asinus et puer socii erant.",
+          "english": "The donkey and the boy were companions."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-11-1",
+          "latin": "puer",
+          "english": "boy",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "puer",
+          "derivatives": []
+        },
+        {
+          "id": "lc-11-2",
+          "latin": "vir",
+          "english": "man",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "vir",
+          "derivatives": []
+        },
+        {
+          "id": "lc-11-3",
+          "latin": "ager",
+          "english": "field",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "ager",
+          "derivatives": []
+        },
+        {
+          "id": "lc-11-4",
+          "latin": "magister",
+          "english": "teacher",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "magister",
+          "derivatives": []
+        },
+        {
+          "id": "lc-11-5",
+          "latin": "liber",
+          "english": "book",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "liber",
+          "derivatives": []
+        },
+        {
+          "id": "lc-11-6",
+          "latin": "asinus",
+          "english": "donkey",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "asinus",
+          "derivatives": []
+        }
+      ],
+      "prayer": {
+        "id": "gloria-patri",
+        "title": "Gloria Patri",
+        "latin_full": "Gloria Patri et Filio et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula saeculorum. Amen.",
+        "english_full": "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+        "type": "prayer",
+        "audio_key": "gloria-patri",
+        "new_portion_latin": "Gloria Patri et Filio et Spiritui Sancto,",
+        "new_portion_english": "Glory be to the Father, and to the Son, and to the Holy Spirit,",
+        "note": "Learn the Gloria Patri."
+      },
+      "paradigms": [],
+      "reading_key": "maxey-lc11"
+    },
+    {
+      "id": 12,
+      "type": "lesson",
+      "title": "Personal Pronouns — Oblique Cases",
+      "focus": "Pronoun forms in other cases; me, te, nobis, vobis",
+      "practical_latin": [
+        {
+          "latin": "Cervus ad aquam bibebat.",
+          "english": "The stag was drinking at the water."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-12-1",
+          "latin": "caelum",
+          "english": "sky/heaven",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "caelum",
+          "derivatives": [
+            {
+              "english": "celestial",
+              "gloss": "heavenly (adj.)"
+            }
+          ]
+        },
+        {
+          "id": "lc-12-2",
+          "latin": "terra",
+          "english": "earth",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "terra",
+          "derivatives": [
+            {
+              "english": "terrestrial",
+              "gloss": "of the earth"
+            }
+          ]
+        },
+        {
+          "id": "lc-12-3",
+          "latin": "cibus",
+          "english": "food",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "cibus",
+          "derivatives": []
+        },
+        {
+          "id": "lc-12-4",
+          "latin": "panis",
+          "english": "bread",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "panis",
+          "derivatives": []
+        },
+        {
+          "id": "lc-12-5",
+          "latin": "aqua",
+          "english": "water",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "aqua",
+          "derivatives": [
+            {
+              "english": "aquatic",
+              "gloss": "of water"
+            }
+          ]
+        },
+        {
+          "id": "lc-12-6",
+          "latin": "cervus",
+          "english": "stag, deer",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 2,
+          "audio_key": "cervus",
+          "derivatives": []
+        }
+      ],
+      "prayer_id": "gloria-patri",
+      "paradigms": [],
+      "reading_key": "maxey-lc12"
+    },
+    {
+      "id": 13,
+      "type": "lesson",
+      "title": "First Conjugation Future Tense",
+      "focus": "Future tense of 1st conjugation (-bo endings)",
+      "practical_latin": [],
+      "vocab": [],
+      "prayer_id": "gloria-patri",
+      "paradigms": [],
+      "reading_key": "maxey-lc13"
+    },
+    {
+      "id": 14,
+      "type": "lesson",
+      "title": "Second Conjugation Future Tense",
+      "focus": "Future tense of 2nd conjugation",
+      "practical_latin": [
+        {
+          "latin": "Nunc aut numquam",
+          "english": "Now or never"
+        }
+      ],
+      "vocab": [],
+      "prayer_id": "gloria-patri",
+      "paradigms": [],
+      "reading_key": "maxey-lc14"
+    },
+    {
+      "id": 15,
+      "type": "lesson",
+      "title": "Second Conjugation Review; Agnus Dei",
+      "focus": "Review 2nd conj; the Agnus Dei from the Mass",
+      "practical_latin": [
+        {
+          "latin": "Agnus Dei qui tollis peccata mundi",
+          "english": "Lamb of God, who takes away the sins of the world (John the Baptist)"
+        },
+        {
+          "latin": "Ad rivum eundem lupus et agnus venerant",
+          "english": "A wolf and a lamb had come to the same stream (Phaedrus)"
+        },
+        {
+          "latin": "Superior stabat lupus",
+          "english": "The wolf stood above"
+        },
+        {
+          "latin": "Lupus agnum ad rivum venit.",
+          "english": "The wolf came to the lamb at the stream."
+        },
+        {
+          "latin": "Agnus lupum ad rivum venit.",
+          "english": "The lamb came to the wolf at the stream."
+        },
+        {
+          "latin": "Ad rivum, lupus et agnus veniunt.",
+          "english": "At the stream, a wolf and a lamb come."
+        }
+      ],
+      "vocab": [],
+      "prayer_id": "gloria-patri",
+      "paradigms": [],
+      "reading_key": "maxey-lc15"
+    },
+    {
+      "id": "R3",
+      "type": "review",
+      "title": "Review Lesson 3 (Lessons 11–15)",
+      "reviews_lessons": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "prayer_id": "gloria-patri",
+      "latin_song": null,
+      "reading_key": "maxey-lc-r3"
+    },
+    {
+      "id": 16,
+      "type": "lesson",
+      "title": "Irregular Verb: Sum (to be) — Present",
+      "focus": "Irregular verb sum, esse; very common; present tense forms",
+      "practical_latin": [],
+      "vocab": [
+        {
+          "id": "lc-16-1",
+          "latin": "sum",
+          "english": "I am",
+          "pos": "verb",
+          "conjugation": "irreg",
+          "derivatives": []
+        },
+        {
+          "id": "lc-16-2",
+          "latin": "es",
+          "english": "you (s.) are",
+          "pos": "verb",
+          "conjugation": "irreg",
+          "derivatives": []
+        },
+        {
+          "id": "lc-16-3",
+          "latin": "est",
+          "english": "he/she/it is",
+          "pos": "verb",
+          "conjugation": "irreg",
+          "derivatives": []
+        }
+      ],
+      "prayer": {
+        "id": "credo",
+        "title": "Credo (Apostles' Creed excerpt)",
+        "latin_full": "Credo in Deum, Patrem omnipotentem, Creatorem caeli et terrae. Et in Iesum Christum, Filium eius unicum, Dominum nostrum.",
+        "english_full": "I believe in God, the Father almighty, Creator of heaven and earth. And in Jesus Christ, his only Son, our Lord.",
+        "type": "prayer",
+        "audio_key": "credo",
+        "new_portion_latin": "Credo in Deum, Patrem omnipotentem, Creatorem caeli et terrae.",
+        "new_portion_english": "I believe in God, the Father almighty, Creator of heaven and earth.",
+        "note": "Begin the Creed."
+      },
+      "paradigms": [
+        {
+          "id": "sum-pres",
+          "label": "Sum — Present Tense (to be)",
+          "type": "conjugation",
+          "model_verb": "esse",
+          "rows": [
+            {
+              "person": "1sg",
+              "latin": "sum",
+              "english": "I am"
+            },
+            {
+              "person": "2sg",
+              "latin": "es",
+              "english": "you (s.) are"
+            },
+            {
+              "person": "3sg",
+              "latin": "est",
+              "english": "he/she/it is"
+            },
+            {
+              "person": "1pl",
+              "latin": "sumus",
+              "english": "we are"
+            },
+            {
+              "person": "2pl",
+              "latin": "estis",
+              "english": "you (pl.) are"
+            },
+            {
+              "person": "3pl",
+              "latin": "sunt",
+              "english": "they are"
+            }
+          ]
+        }
+      ],
+      "reading_key": "maxey-lc16"
+    },
+    {
+      "id": 17,
+      "type": "lesson",
+      "title": "Sum — Imperfect and Future",
+      "focus": "Imperfect (eram) and future (ero) of sum",
+      "practical_latin": [
+        {
+          "latin": "Lupus agnum capere non poterat.",
+          "english": "The wolf could not seize the lamb."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-17-1",
+          "latin": "capere",
+          "english": "to seize, to catch",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "capere",
+          "derivatives": []
+        }
+      ],
+      "prayer_id": "credo",
+      "paradigms": [],
+      "reading_key": "maxey-lc17"
+    },
+    {
+      "id": 18,
+      "type": "lesson",
+      "title": "Irregular: Possum (to be able)",
+      "focus": "Possum, posse — compound of sum; 'I can / I am able'",
+      "practical_latin": [],
+      "vocab": [],
+      "prayer_id": "credo",
+      "paradigms": [],
+      "reading_key": "maxey-lc18"
+    },
+    {
+      "id": 19,
+      "type": "lesson",
+      "title": "Famous Sayings — Caesar",
+      "focus": "Veni, vidi, vici and other conquest sayings; perfect tense intro",
+      "practical_latin": [
+        {
+          "latin": "Veni, vidi, vici",
+          "english": "I came, I saw, I conquered (Julius Caesar)"
+        }
+      ],
+      "vocab": [],
+      "prayer_id": "credo",
+      "paradigms": [],
+      "reading_key": "maxey-lc19"
+    },
+    {
+      "id": 20,
+      "type": "lesson",
+      "title": "Quo Vadis and More Sayings",
+      "focus": "Quo vadis?; other famous phrases from history and Scripture",
+      "practical_latin": [
+        {
+          "latin": "Quo vadis?",
+          "english": "Where are you going?"
+        }
+      ],
+      "vocab": [],
+      "prayer_id": "credo",
+      "paradigms": [],
+      "reading_key": "maxey-lc20"
+    },
+    {
+      "id": "R4",
+      "type": "review",
+      "title": "Review Lesson 4 (Lessons 16–20)",
+      "reviews_lessons": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "prayer_id": "credo",
+      "latin_song": {
+        "title": "Veni, Vidi, Vici (chant)",
+        "latin": "Veni, vidi, vici",
+        "english": "I came, I saw, I conquered",
+        "source": "Historical"
+      },
+      "reading_key": "maxey-lc-r4"
+    },
+    {
+      "id": 21,
+      "type": "lesson",
+      "title": "Third Person Pronouns & Demonstratives",
+      "focus": "is, ea, id and basic demonstratives; history fill-ins (Roman kings, events)",
+      "practical_latin": [],
+      "vocab": [
+        {
+          "id": "lc-21-1",
+          "latin": "verbum",
+          "english": "word",
+          "pos": "noun",
+          "gender": "n",
+          "declension": 2,
+          "audio_key": "verbum",
+          "derivatives": []
+        },
+        {
+          "id": "lc-21-2",
+          "latin": "vox",
+          "english": "voice",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "vox",
+          "derivatives": []
+        },
+        {
+          "id": "lc-21-3",
+          "latin": "lex",
+          "english": "law",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "lex",
+          "derivatives": []
+        },
+        {
+          "id": "lc-21-4",
+          "latin": "lux",
+          "english": "light",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 3,
+          "audio_key": "lux",
+          "derivatives": []
+        },
+        {
+          "id": "lc-21-5",
+          "latin": "via",
+          "english": "way",
+          "pos": "noun",
+          "gender": "f",
+          "declension": 1,
+          "audio_key": "via",
+          "derivatives": [
+            {
+              "english": "viaduct",
+              "gloss": "roadway on piers (n.)"
+            }
+          ]
+        }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "Pater Noster",
+        "latin_full": "Pater noster, qui es in caelis, sanctificetur nomen tuum. Adveniat regnum tuum. Fiat voluntas tua, sicut in caelo et in terra. Panem nostrum quotidianum da nobis hodie, et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.",
+        "english_full": "Our Father, who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. Amen.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "Pater noster, qui es in caelis, sanctificetur nomen tuum.",
+        "new_portion_english": "Our Father, who art in heaven, hallowed be thy name.",
+        "note": "Begin the Lord's Prayer."
+      },
+      "paradigms": [],
+      "reading_key": "maxey-lc21"
+    },
+    {
+      "id": 22,
+      "type": "lesson",
+      "title": "History & More Vocabulary",
+      "focus": "Roman history key names (Romulus, Appius Claudius, etc.); more nouns/verbs",
+      "practical_latin": [
+        {
+          "latin": "Leo in silva habitabat.",
+          "english": "The lion lived in the forest."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-22-1",
+          "latin": "leo",
+          "english": "lion",
+          "pos": "noun",
+          "gender": "m",
+          "declension": 3,
+          "audio_key": "leo",
+          "derivatives": []
+        }
+      ],
+      "prayer_id": "pater-noster",
+      "paradigms": [],
+      "reading_key": "maxey-lc22"
+    },
+    {
+      "id": 23,
+      "type": "lesson",
+      "title": "Perfect Tense Introduction",
+      "focus": "Perfect (simple past) tense forms for 1st/2nd conjugation",
+      "practical_latin": [
+        {
+          "latin": "Vulpes corvum decepit.",
+          "english": "The fox deceived the crow."
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-23-1",
+          "latin": "decipere",
+          "english": "to deceive",
+          "pos": "verb",
+          "conjugation": 3,
+          "audio_key": "decipere",
+          "derivatives": []
+        }
+      ],
+      "prayer_id": "pater-noster",
+      "paradigms": [],
+      "reading_key": "maxey-lc23"
+    },
+    {
+      "id": 24,
+      "type": "lesson",
+      "title": "More History & Grammar Review",
+      "focus": "Pax Romana, more sayings; review declensions and conjugations",
+      "practical_latin": [
+        {
+          "latin": "Pax Romana",
+          "english": "Roman Peace"
+        },
+        {
+          "latin": "Vox populi",
+          "english": "Voice of the people"
+        }
+      ],
+      "vocab": [],
+      "prayer_id": "pater-noster",
+      "paradigms": [],
+      "reading_key": "maxey-lc24"
+    },
+    {
+      "id": 25,
+      "type": "lesson",
+      "title": "Final Review & Famous Betrayal",
+      "focus": "Complete review of 1st/2nd decl, 1st/2nd conj, pronouns, sum/possum; Et tu, Brute?",
+      "practical_latin": [
+        {
+          "latin": "Et tu, Brute?",
+          "english": "You too, Brutus? (Caesar's last words per Shakespeare)"
+        }
+      ],
+      "vocab": [
+        {
+          "id": "lc-25-1",
+          "latin": "bonus, -a, -um",
+          "english": "good",
+          "pos": "adjective",
+          "declension": "1/2",
+          "audio_key": "bonus",
+          "derivatives": [
+            {
+              "english": "bonus",
+              "gloss": "extra good thing"
+            }
+          ]
+        },
+        {
+          "id": "lc-25-2",
+          "latin": "magnus, -a, -um",
+          "english": "large/great",
+          "pos": "adjective",
+          "declension": "1/2",
+          "audio_key": "magnus",
+          "derivatives": [
+            {
+              "english": "magnify",
+              "gloss": "to make great"
+            }
+          ]
+        },
+        {
+          "id": "lc-25-3",
+          "latin": "malus, -a, -um",
+          "english": "bad",
+          "pos": "adjective",
+          "declension": "1/2",
+          "audio_key": "malus",
+          "derivatives": []
+        },
+        {
+          "id": "lc-25-4",
+          "latin": "multus, -a, -um",
+          "english": "much/many",
+          "pos": "adjective",
+          "declension": "1/2",
+          "audio_key": "multus",
+          "derivatives": []
+        },
+        {
+          "id": "lc-25-5",
+          "latin": "parvus, -a, -um",
+          "english": "small",
+          "pos": "adjective",
+          "declension": "1/2",
+          "audio_key": "parvus",
+          "derivatives": []
+        }
+      ],
+      "prayer": {
+        "id": "pater-noster",
+        "title": "Pater Noster",
+        "latin_full": "Pater noster... sed libera nos a malo. Amen.",
+        "english_full": "... but deliver us from evil. Amen.",
+        "type": "prayer",
+        "audio_key": "pater-noster",
+        "new_portion_latin": "Et ne nos inducas in tentationem, sed libera nos a malo. Amen.",
+        "new_portion_english": "And lead us not into temptation, but deliver us from evil. Amen.",
+        "note": "Full Pater Noster complete."
+      },
+      "paradigms": [],
+      "reading_key": "maxey-lc25"
+    },
+    {
+      "id": "R5",
+      "type": "review",
+      "title": "Review Lesson 5 (Lessons 21–25)",
+      "reviews_lessons": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "prayer_id": "pater-noster",
+      "latin_song": {
+        "title": "Et tu, Brute? / Historical",
+        "latin": "Et tu, Brute?",
+        "english": "You too, Brutus?",
+        "source": "Shakespeare / History"
+      },
+      "reading_key": "maxey-lc-r5"
+    }
+  ],
+  "prayers": {
+    "agnus-dei": {
+      "id": "agnus-dei",
+      "title": "Agnus Dei",
+      "latin": "Agnus Dei, qui tollis peccata mundi, miserere nobis. Agnus Dei, qui tollis peccata mundi, miserere nobis. Agnus Dei, qui tollis peccata mundi, dona nobis pacem.",
+      "english": "Lamb of God, who takes away the sins of the world, have mercy on us. Lamb of God, who takes away the sins of the world, have mercy on us. Lamb of God, who takes away the sins of the world, grant us peace.",
+      "type": "prayer",
+      "audio_key": "agnus-dei",
+      "introduced_lesson": 1,
+      "completed_lesson": 5
+    },
+    "ave-maria": {
+      "id": "ave-maria",
+      "title": "Ave Maria (Hail Mary)",
+      "latin": "Ave Maria, gratia plena, Dominus tecum. Benedicta tu in mulieribus, et benedictus fructus ventris tui, Iesus. Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc et in hora mortis nostrae. Amen.",
+      "english": "Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.",
+      "type": "prayer",
+      "audio_key": "ave-maria",
+      "introduced_lesson": 6,
+      "completed_lesson": 10
+    },
+    "gloria-patri": {
+      "id": "gloria-patri",
+      "title": "Gloria Patri",
+      "latin": "Gloria Patri et Filio et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula saeculorum. Amen.",
+      "english": "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "type": "prayer",
+      "audio_key": "gloria-patri",
+      "introduced_lesson": 11,
+      "completed_lesson": 15
+    },
+    "credo": {
+      "id": "credo",
+      "title": "Credo (Apostles' Creed — opening)",
+      "latin": "Credo in Deum, Patrem omnipotentem, Creatorem caeli et terrae. Et in Iesum Christum, Filium eius unicum, Dominum nostrum.",
+      "english": "I believe in God, the Father almighty, Creator of heaven and earth. And in Jesus Christ, his only Son, our Lord.",
+      "type": "prayer",
+      "audio_key": "credo",
+      "introduced_lesson": 16,
+      "completed_lesson": 20
+    },
+    "pater-noster": {
+      "id": "pater-noster",
+      "title": "Pater Noster (Our Father)",
+      "latin": "Pater noster, qui es in caelis, sanctificetur nomen tuum. Adveniat regnum tuum. Fiat voluntas tua, sicut in caelo et in terra. Panem nostrum quotidianum da nobis hodie, et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.",
+      "english": "Our Father, who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. Amen.",
+      "type": "prayer",
+      "audio_key": "pater-noster",
+      "introduced_lesson": 21,
+      "completed_lesson": 25,
+      "note": "Second half learned across L21–25; full prayer complete at L25"
+    }
+  }
+}
