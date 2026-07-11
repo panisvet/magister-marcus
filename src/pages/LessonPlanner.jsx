@@ -125,18 +125,25 @@ const prettyWeek = (mondayStr) => {
   return `${m.toLocaleDateString(undefined, opt)} – ${f.toLocaleDateString(undefined, opt)}`
 }
 
-const EMPTY = () => ({ students: [], subjects: [...DEFAULT_SUBJECTS], entries: [], yearStart: SCHOOL_YEAR_START, seeded: [], schoolStartV: SCHOOL_START_V })
+const EMPTY = () => ({ students: [], subjects: [...DEFAULT_SUBJECTS], entries: [], yearStart: SCHOOL_YEAR_START, seeded: [], breaks: [], schoolStartV: SCHOOL_START_V })
 
 // Infer a level from a CM Form label when one isn't set explicitly.
 const guessLevel = (form = '') => (/ii/i.test(form) ? 'Year 6' : /form\s*i\b|\bi[ab]?\b/i.test(form) ? 'Year 3' : null)
 
-// School-week number (1..36) for a given Monday, if a year-start Monday is set.
-const weekNumFor = (yearStart, weekStart) => {
+const weeksBetween = (a, b) => Math.round((new Date(b + 'T00:00:00') - new Date(a + 'T00:00:00')) / (7 * 864e5))
+
+// School-week number (1..36) for a Monday, skipping any break weeks. null = break or out of term.
+const schoolWeekFor = (yearStart, breaks, weekStart) => {
   if (!yearStart) return null
-  const a = new Date(yearStart + 'T00:00:00'), b = new Date(weekStart + 'T00:00:00')
-  const n = Math.round((b - a) / (7 * 864e5)) + 1
+  const raw = weeksBetween(yearStart, weekStart) // 0-based offset from week 1
+  if (raw < 0) return null
+  if ((breaks || []).includes(weekStart)) return null
+  const breaksBefore = (breaks || []).filter((b) => weeksBetween(yearStart, b) >= 0 && weeksBetween(b, weekStart) > 0).length
+  const n = raw - breaksBefore + 1
   return n >= 1 && n <= 36 ? n : null
 }
+// kept for the school-week picker (assumes no breaks before the anchor)
+const weekNumFor = (yearStart, weekStart) => schoolWeekFor(yearStart, [], weekStart)
 
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=IM+Fell+English:ital@0;1&display=swap');
@@ -199,6 +206,9 @@ const CSS = `
 .lp-schoolwk{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:-2px 0 14px;font-size:14px;color:#c8b48a;}
 .lp-wk-select{padding:3px 8px;background:#1a1208;border:1px solid #6a5030;border-radius:4px;color:#e8b84b;font-family:'Crimson Pro',serif;font-size:14px;}
 .lp-sw-note{color:#9e8c72;font-style:italic;font-size:12px;margin-left:6px;}
+.lp-break-btn{margin-left:8px;padding:3px 10px;background:transparent;border:1px dashed #6a5030;border-radius:4px;color:#c9902a;cursor:pointer;font-family:'Crimson Pro',serif;font-size:13px;}
+.lp-break-btn:hover{background:#1a1208;border-color:#c9902a;}
+.lp-break-badge{padding:3px 10px;border-radius:12px;background:#1f2a17;border:1px solid #3a5a30;color:#8ab870;font-family:'Cinzel',serif;font-size:12px;letter-spacing:.04em;}
 
 /* Modal */
 .lp-ov{position:fixed;inset:0;background:rgba(0,0,0,.62);display:flex;align-items:center;justify-content:center;z-index:200;padding:16px;}
@@ -383,6 +393,12 @@ export default function LessonPlanner() {
     setData((d) => ({ ...d, entries: d.entries.filter((e) => e.id !== id) }))
   const updateEntry = (id, patch) =>
     setData((d) => ({ ...d, entries: d.entries.map((e) => (e.id === id ? { ...e, ...patch } : e)) }))
+  const shiftEntryWeek = (e, deltaDays) => {
+    const m = new Date(e.week + 'T00:00:00'); m.setDate(m.getDate() + deltaDays)
+    const week = iso(m)
+    updateEntry(e.id, { week, seed: false })
+    setEditEntry({ ...e, week, seed: false })
+  }
 
   // ── Seed a week: AO rhythm + that school week's readings, for one child ──
   const planWeek = () => {
@@ -399,7 +415,19 @@ export default function LessonPlanner() {
 
   // Effective level for a student: explicit choice, else inferred from Form.
   const effLevel = useCallback((s) => (s.level === 'none' ? null : s.level || guessLevel(s.form)), [])
-  const currentWk = weekNumFor(data.yearStart, weekStart)
+  const currentWk = schoolWeekFor(data.yearStart, data.breaks, weekStart)
+  const isBreak = (data.breaks || []).includes(weekStart)
+
+  // Mark the current week as a break (or resume): everything from here on renumbers & re-seeds.
+  const setBreak = (on) => setData((d) => {
+    const breaks = on
+      ? Array.from(new Set([...(d.breaks || []), weekStart]))
+      : (d.breaks || []).filter((b) => b !== weekStart)
+    // drop auto-seeded items on this week and all later weeks so they re-number on visit; keep edits & past
+    const entries = d.entries.filter((e) => !(e.seed && e.week >= weekStart))
+    const seeded = (d.seeded || []).filter((k) => k.split('|')[0] < weekStart)
+    return { ...d, breaks, entries, seeded }
+  })
 
   // Set which school week the currently-viewed calendar week is, and re-seed it.
   const setSchoolWeek = (n) => {
@@ -427,7 +455,7 @@ export default function LessonPlanner() {
       setData((d) => ({ ...d, yearStart: SCHOOL_YEAR_START }))
       return
     }
-    const wk = weekNumFor(data.yearStart, weekStart)
+    const wk = schoolWeekFor(data.yearStart, data.breaks, weekStart)
     if (!wk) return
     const need = data.students.filter((s) => effLevel(s) && !(data.seeded || []).includes(`${weekStart}|${s.id}`))
     if (need.length === 0) return
@@ -441,7 +469,7 @@ export default function LessonPlanner() {
       })
       return { ...d, subjects, entries, seeded }
     })
-  }, [weekStart, data.students, data.yearStart, data.seeded, effLevel])
+  }, [weekStart, data.students, data.yearStart, data.seeded, data.breaks, effLevel])
 
   const openPlan = () => {
     setFill({ level: 'Year 6', studentId: data.students[0]?.id || '', week: currentWk || 1, rhythm: true, readings: true })
@@ -493,16 +521,27 @@ export default function LessonPlanner() {
         </div>
 
         <div className="lp-schoolwk">
-          School week:&nbsp;
-          <select className="lp-wk-select" value={currentWk || ''} onChange={(e) => e.target.value && setSchoolWeek(Number(e.target.value))}>
-            {!currentWk && <option value="">— set —</option>}
-            {Array.from({ length: 36 }, (_, i) => i + 1).map((n) => (
-              <option key={n} value={n}>Week {n}{termFor('Year 6', n) ? ` · Term ${termFor('Year 6', n).n}` : ''}</option>
-            ))}
-          </select>
-          {currentWk
-            ? <span className="lp-sw-note">Leveled children auto-fill each week. Set a child's level by clicking their name.</span>
-            : <span className="lp-sw-note">Pick the week you're on — then leveled children fill automatically.</span>}
+          {isBreak ? (
+            <>
+              <span className="lp-break-badge">🌿 Break week</span>
+              <span className="lp-sw-note">No lessons this week; later weeks shift forward.</span>
+              <button className="lp-break-btn" onClick={() => setBreak(false)}>Resume schedule this week</button>
+            </>
+          ) : (
+            <>
+              School week:&nbsp;
+              <select className="lp-wk-select" value={currentWk || ''} onChange={(e) => e.target.value && setSchoolWeek(Number(e.target.value))}>
+                {!currentWk && <option value="">— set —</option>}
+                {Array.from({ length: 36 }, (_, i) => i + 1).map((n) => (
+                  <option key={n} value={n}>Week {n}{termFor('Year 6', n) ? ` · Term ${termFor('Year 6', n).n}` : ''}</option>
+                ))}
+              </select>
+              {currentWk
+                ? <span className="lp-sw-note">Leveled children auto-fill each week. Set a child's level by clicking their name.</span>
+                : <span className="lp-sw-note">Pick the week you're on — then leveled children fill automatically.</span>}
+              <button className="lp-break-btn" onClick={() => setBreak(true)}>Insert break week</button>
+            </>
+          )}
         </div>
 
         {/* Grid */}
@@ -787,13 +826,40 @@ export default function LessonPlanner() {
           <div className="lp-ov" onClick={(ev) => ev.target === ev.currentTarget && setEditEntry(null)}>
             <div className="lp-modal">
               <h3>{e.subject}</h3>
-              <div className="sub">{stu ? stu.name : 'All students'}{e.label ? ` · ${e.label}` : ''}</div>
+              <div className="sub">{stu ? stu.name : 'All students'}</div>
+              <div className="lp-field">
+                <label>Reading / what to do</label>
+                <input className="lp-input" autoFocus value={e.label || ''}
+                       placeholder="e.g. The Hobbit ch 2"
+                       onChange={(ev) => { updateEntry(e.id, { label: ev.target.value, seed: false }); setEditEntry({ ...e, label: ev.target.value, seed: false }) }} />
+              </div>
+              <div className="lp-field">
+                <label>Subject / row</label>
+                <select className="lp-select" value={e.subject}
+                        onChange={(ev) => { updateEntry(e.id, { subject: ev.target.value, seed: false }); setEditEntry({ ...e, subject: ev.target.value, seed: false }) }}>
+                  {data.subjects.map((s) => <option key={s} value={s}>{s}</option>)}
+                </select>
+              </div>
               <div className="lp-field">
                 <label>Day</label>
                 <select className="lp-select" value={e.day}
                         onChange={(ev) => { updateEntry(e.id, { day: ev.target.value }); setEditEntry({ ...e, day: ev.target.value }) }}>
                   {DAYS.map((d) => <option key={d} value={d}>{d}</option>)}
                 </select>
+              </div>
+              <div className="lp-field">
+                <label>Week</label>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <button className="lp-btn ghost" style={{ padding: '6px 10px' }} onClick={() => shiftEntryWeek(e, -7)}>◀</button>
+                  <span style={{ fontSize: 13, minWidth: 130, textAlign: 'center' }}>{prettyWeek(e.week)}</span>
+                  <button className="lp-btn ghost" style={{ padding: '6px 10px' }} onClick={() => shiftEntryWeek(e, 7)}>▶</button>
+                </div>
+                {e.week !== weekStart && (
+                  <div style={{ fontSize: 12, color: '#9e8c72', marginTop: 5 }}>
+                    Moved out of the week you're viewing.{' '}
+                    <span style={{ color: '#c9902a', cursor: 'pointer' }} onClick={() => { setWeekStart(e.week); setEditEntry(null) }}>Go to that week →</span>
+                  </div>
+                )}
               </div>
               <div className="lp-field">
                 <label>Minutes</label>
