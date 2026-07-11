@@ -15,7 +15,7 @@ const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
 
 // Fixed start of the school year: Week 1 = the week of Monday, Aug 17 2026.
 const SCHOOL_YEAR_START = '2026-08-17'
-const SCHOOL_START_V = 'aug17-2026.2-bible4' // bump to force a re-anchor migration
+const SCHOOL_START_V = 'aug17-2026.3-bibleclean' // bump to force a re-anchor migration
 
 // Ensure loaded data anchors to the current school-year start; re-seed if it changed.
 const migrate = (data) => {
@@ -24,7 +24,7 @@ const migrate = (data) => {
     ...data,
     yearStart: SCHOOL_YEAR_START,
     schoolStartV: SCHOOL_START_V,
-    entries: (data.entries || []).filter((e) => !e.seed), // drop old auto-seeded items; they regenerate
+    entries: (data.entries || []).filter((e) => !e.seed && e.subject !== 'Bible'), // drop auto-seeded + any stale/hand-moved Bible; Bible regenerates from the schedule
     seeded: [],
   }
 }
@@ -95,7 +95,7 @@ function seedInto(subjects, entries, level, sid, wk, weekKey, { rhythm = true, r
   const tpl = AO_TEMPLATES[level], lvl = LEVELS[level]
   const subs = [...subjects]
   const ensure = (n) => { if (!subs.includes(n)) subs.push(n) }
-  const ents = entries.filter((e) => !(e.week === weekKey && (e.studentId || null) === sid && e.seed))
+  const ents = entries.filter((e) => !(e.week === weekKey && (e.studentId || null) === sid && (e.seed || e.subject === 'Bible')))
   const add = (subject, day, label) =>
     ents.push({ id: uid(), week: weekKey, subject, day, studentId: sid, label: label || '', ref: null, done: false, seed: true, min: estMin(level, subject), count: !NO_COUNT.has(subject) })
   if (rhythm && tpl) {
