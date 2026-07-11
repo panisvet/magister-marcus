@@ -1387,6 +1387,8 @@ export const ART_UNITS = [
         artist: "Cassatt vs. Morisot", period: "Impressionism, c. 1872–1893",
         work: "The Child's Bath vs. The Cradle",
         workUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Mary_Cassatt_-_The_Child%27s_Bath_-_Google_Art_Project.jpg/1280px-Mary_Cassatt_-_The_Child%27s_Bath_-_Google_Art_Project.jpg",
+        work2: "The Cradle",
+        workUrl2: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg/1920px-Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg",
         title: "★ Comparison: Two Women, Two Ways of Painting Care",
         tagline: "Both paint tenderness. One with clarity; one with gauze.",
         teacherPrep: "Display both images side by side.",
