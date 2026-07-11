@@ -15,7 +15,7 @@ const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
 
 // Fixed start of the school year: Week 1 = the week of Monday, Aug 17 2026.
 const SCHOOL_YEAR_START = '2026-08-17'
-const SCHOOL_START_V = 'aug17-2026' // bump to force a re-anchor migration
+const SCHOOL_START_V = 'aug17-2026.2-bible4' // bump to force a re-anchor migration
 
 // Ensure loaded data anchors to the current school-year start; re-seed if it changed.
 const migrate = (data) => {
