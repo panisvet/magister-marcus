@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import TopNav from '../components/TopNav.jsx'
 import { UNITS as WONDERS_Y1 } from '../data/lessons.js'
 import { UNITS as WONDERS_Y2 } from '../data/lessons-year2.js'
-import { WEEKS, WEEKS3, TERMS, TERMS3, CATS, FREE3 } from '../data/ao-schedule.js'
+import { WEEKS, WEEKS3, TERMS, TERMS3, CATS, FREE3, BIB_Y7, BIB_Y5 } from '../data/ao-schedule.js'
 
 // ── Curriculum sources the planner can pull lessons from ─────────────────────
 // Add more here as their data files are wired in (Latin, Chant, etc.).
@@ -46,6 +46,22 @@ const LEVELS = {
   'Year 3': { weeks: WEEKS3, terms: TERMS3, freeRead: FREE3 },
 }
 const CAT_ROWS = Object.values(CATS) // Bible, History, Biography, Geography, Science, Science Bio, Literature, Free Read
+// Bible split into two sequential streams (OT, NT) per level. We seed 2 OT (Mon, Wed) and
+// 2 NT (Tue, Thu) each week, pulled in order — so all 36 OT + 36 NT finish around week 18.
+const BIBLE_STREAMS = (() => {
+  const out = {}
+  for (const [lvlName, W, extra] of [['Year 6', WEEKS, BIB_Y7], ['Year 3', WEEKS3, BIB_Y5]]) {
+    const ot = [], nt = []
+    for (let w = 1; w <= 36; w++) (W[w] || []).forEach(([c, t]) => {
+      if (c !== 'BIB') return
+      if (/^\s*OT/.test(t)) ot.push(t)
+      else if (/^\s*NT/.test(t)) nt.push(t)
+    })
+    if (extra) { ot.push(...extra.ot); nt.push(...extra.nt) }  // weeks 19-36: Y7 (older) / Y5 (younger)
+    out[lvlName] = { ot, nt }
+  }
+  return out
+})()
 const termFor = (level, wk) => (LEVELS[level]?.terms || []).find((t) => wk >= t.weeks[0] && wk <= t.weeks[1]) || null
 
 // CM/AO short-lesson time estimates (minutes) per level & subject. Editable per entry after seeding.
@@ -89,7 +105,20 @@ function seedInto(subjects, entries, level, sid, wk, weekKey, { rhythm = true, r
   }
   if (readings && lvl?.weeks?.[wk]) {
     CAT_ROWS.forEach(ensure)
-    lvl.weeks[wk].forEach(([cat, text], i) => add(CATS[cat] || 'Reading', DAYS[i % DAYS.length], text))
+    // All non-Bible readings keep their usual index-based day placement.
+    lvl.weeks[wk].forEach(([cat, text], i) => {
+      if (cat === 'BIB') return
+      add(CATS[cat] || 'Reading', DAYS[i % DAYS.length], text)
+    })
+    // Bible: 4 readings/week — OT on Mon & Wed, NT on Tue & Thu, pulled sequentially.
+    const bib = BIBLE_STREAMS[level]
+    if (bib) {
+      const i = 2 * (wk - 1)
+      if (bib.ot[i])     add('Bible', 'Mon', bib.ot[i])
+      if (bib.ot[i + 1]) add('Bible', 'Wed', bib.ot[i + 1])
+      if (bib.nt[i])     add('Bible', 'Tue', bib.nt[i])
+      if (bib.nt[i + 1]) add('Bible', 'Thu', bib.nt[i + 1])
+    }
   }
   return { subjects: subs, entries: ents }
 }
