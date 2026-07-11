@@ -77,6 +77,8 @@ const { ART_UNITS } = await import('./src/data/artLessons.js')
     }
     if (l.type === 'COMPARISON' && !(l.work2 && l.workUrl2))
       err(`artis ${l.id}: COMPARISON lesson missing work2/workUrl2`)
+    if (l.workUrl2 && l.workUrl2 === l.workUrl)
+      err(`artis ${l.id}: workUrl and workUrl2 are the same image — comparison shows one painting twice`)
     for (const r of l.resources ?? [])
       if (r.url && !/^https?:\/\//.test(r.url)) err(`artis ${l.id}: resource url invalid: ${r.url}`)
   }
