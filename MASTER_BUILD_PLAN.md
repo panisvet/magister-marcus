@@ -118,7 +118,8 @@ U4_AnswerKey.md
 U4_Timeline.md
 ```
 
-**Total files: ~90 markdown files + 32 Nano Banana Pro images (8 per unit)**
+**Total files: ~90 markdown files + 32 notebooking page images (8 per unit)**
+**⚠️ Image pipeline:** Wrap generation (Nano Banana Pro) + PD image downloading + compositing are all handled by Claude Code outside these sessions. This Claude project handles only the markdown student page documents.
 
 ---
 
@@ -207,19 +208,21 @@ Each session = one conversation. Sessions are sized to avoid context overflow.
 
 ---
 
-### SESSION 6 — U1 Notebooking Image Generation
-**Goal:** Generate all 8 notebooking page images using approved prompts
+### SESSION 6 — U1 Notebooking Student Pages
+**Goal:** Build student-facing notebooking page documents using composited images already produced by Claude Code
+
+**⚠️ CLAUDE CODE NOTE:** Wrap generation, PD image downloading, and page compositing for Unit 1 are handled entirely by Claude Code outside these sessions.
+- Completed pages saved at: `iCloud/Desktop/U1_magister_historia_notebook/output_pages/`
+- Wrap prompt: `NB_U1_PageWrap_Prompt.md` (in project knowledge)
+
 **Files to load at session start:**
 - `U1_NotebookingPrompts.md` (approved version from outputs)
 
 **Files to produce:**
-1. `NB_U1_01_LandsWaters.png` through `NB_U1_08_FrenchIndianWar.png`
-2. `U1_NotebookingPages_IA.md` — complete student pages with embedded image refs, writing lines, narration prompts (Form IA)
-3. `U1_NotebookingPages_IIA.md` — same, Form IIA
+1. `U1_NotebookingPages_IA.md` — complete student pages with image refs, writing lines, narration prompts (Form IA)
+2. `U1_NotebookingPages_IIA.md` — same, Form IIA
 
-**⚠️ NOTE:** Each image generation = one bash call. 8 calls in one session is fine. Budget: ~$1.20–2.00 total on flash model.
-
-**Start command:** "Session 6 — load approved notebooking prompts, generate all 8 images and build student pages"
+**Start command:** "Session 6 — load approved U1_NotebookingPrompts from outputs, build U1_NotebookingPages_IA.md and U1_NotebookingPages_IIA.md. Composited pages are at iCloud/Desktop/U1_magister_historia_notebook/output_pages."
 
 ---
 
@@ -242,8 +245,35 @@ Each session = one conversation. Sessions are sized to avoid context overflow.
 **Session 8:** U2 Overview + Schedule + L1–L2 Lesson Plans
 **Session 9:** U2 L3–L4 Lesson Plans + Copywork + Narration Prompts
 **Session 10:** U2 All Assessments (6 quizzes + 2 tests + answer key)
-**Session 11:** U2 Notebooking Prompts (approval gate)
-**Session 12:** U2 Notebooking Image Generation + Student Pages
+### SESSION 11 — U2 Notebooking Prompts ✅ COMPLETE
+**Goal:** Source all 8 PD artwork images + draft wrap prompts for Unit 2
+
+**⚠️ CLAUDE CODE NOTE:** Wrap generation and page compositing for Unit 2 are handled entirely by Claude Code outside these sessions.
+- Wrap prompts (Option A botanical + Option B broadside): `NB_U2_PageWrap_Prompts.md`
+- Completed pages will be saved at: `iCloud/Desktop/U2_magister_historia_notebook/output_pages/`
+- All 8 PD source image URLs documented in `U2_NotebookingPrompts.md` — **manual download required** (LOC and Wikimedia block automated downloads)
+
+**Files produced:**
+1. `U2_NotebookingPrompts.md` — all 8 PD sources confirmed with download URLs ✅
+2. `NB_U2_PageWrap_Prompts.md` — Option A (botanical) and Option B (broadside) full prompts ✅
+### SESSION 12 — U2 Notebooking Student Pages
+**Goal:** Build student-facing notebooking page documents using composited images already produced by Claude Code
+
+**Files to load at session start:**
+- `U2_NotebookingPrompts.md` (from outputs)
+- `NB_U2_PageWrap_Prompts.md` (from outputs)
+
+**Prerequisites (done outside this session by Claude Code):**
+- Download 8 PD images (URLs in `U2_NotebookingPrompts.md`) — manual browser download required
+- Generate chosen wrap option (A or B) via Claude Code
+- Composite all 8 pages via Claude Code
+- Completed pages saved at: `iCloud/Desktop/U2_magister_historia_notebook/output_pages/`
+
+**Files to produce:**
+1. `U2_NotebookingPages_IA.md`
+2. `U2_NotebookingPages_IIA.md`
+
+**Start command:** "Session 12 — load U2_NotebookingPrompts.md and NB_U2_PageWrap_Prompts.md from outputs. Composited pages are at iCloud/Desktop/U2_magister_historia_notebook/output_pages. Build U2_NotebookingPages_IA.md and U2_NotebookingPages_IIA.md."
 **Session 13:** U2 Timeline + any loose ends
 
 **Files to load for Session 8:** `GLOBAL_CM_PedagogyGuide.md`, `GLOBAL_NarrationGuide.md`, Project knowledge: `Unit 2 (3-5).pdf`
@@ -254,8 +284,8 @@ Each session = one conversation. Sessions are sized to avoid context overflow.
 **Session 14:** U3 Overview + Schedule + L1–L2 Lesson Plans
 **Session 15:** U3 L3–L4 + Copywork + Narration
 **Session 16:** U3 Assessments
-**Session 17:** U3 Notebooking Prompts (approval gate)
-**Session 18:** U3 Image Generation + Student Pages
+**Session 17:** U3 Notebooking Prompts (approval gate) — PD image sourcing + wrap prompt drafting; Claude Code handles generation and compositing; completed pages at `iCloud/Desktop/U3_magister_historia_notebook/output_pages/`
+**Session 18:** U3 Notebooking Student Pages — build `U3_NotebookingPages_IA.md` + `IIA.md` from composited pages
 **Session 19:** U3 Timeline + loose ends
 
 **Files to load for Session 14:** `GLOBAL_CM_PedagogyGuide.md`, Project knowledge: `Unit 3 (3-5).pdf`
@@ -266,8 +296,8 @@ Each session = one conversation. Sessions are sized to avoid context overflow.
 **Session 20:** U4 Overview + Schedule + L1–L2 Lesson Plans
 **Session 21:** U4 L3–L4 + Copywork + Narration
 **Session 22:** U4 Assessments
-**Session 23:** U4 Notebooking Prompts (approval gate)
-**Session 24:** U4 Image Generation + Student Pages
+**Session 23:** U4 Notebooking Prompts (approval gate) — PD image sourcing + wrap prompt drafting; Claude Code handles generation and compositing; completed pages at `iCloud/Desktop/U4_magister_historia_notebook/output_pages/`
+**Session 24:** U4 Notebooking Student Pages — build `U4_NotebookingPages_IA.md` + `IIA.md` from composited pages
 **Session 25:** U4 Timeline + Final Global Docs
 
 ---
@@ -305,7 +335,7 @@ Each session = one conversation. Sessions are sized to avoid context overflow.
 ### Context management rules:
 1. **Each session starts lean** — load only the files listed in "Files to load at session start" above
 2. **Never load all 4 Hillsdale PDFs at once** — load only the relevant unit's PDF via project knowledge search
-3. **Notebooking sessions are image-only** — don't load lesson plans during image generation
+3. **Notebooking prompt sessions load lesson plans only** — Claude Code handles image generation and compositing outside these sessions
 4. **Assessment sessions load narration prompts** — they're the content contract for test questions
 
 ### What would require a new project:
@@ -328,10 +358,12 @@ Copy-paste these to begin each session:
 | 2 | "Session 2: Build GLOBAL_CM_PedagogyGuide, GLOBAL_NarrationGuide, U1_L1_Geography_LessonPlan, U1_L2_Exploration_LessonPlan. Load U1_Overview and U1_WeeklySchedule from outputs first." |
 | 3 | "Session 3: Build U1_L3_Colonies_LessonPlan, U1_L4_MajorEvents_LessonPlan, U1_CopyworkDictation, U1_NarrationPrompts. Load U1_L1 and U1_L2 lesson plans from outputs." |
 | 4 | "Session 4: Build all Unit 1 quizzes and tests (both forms) + answer key. Load U1_NarrationPrompts and U1_L3-L4 lesson plans from outputs." |
-| 5 | "Session 5: Draft all 8 U1 notebooking image prompts for approval. Load all 4 U1 lesson plans from outputs. Do NOT generate images yet." |
-| 6 | "Session 6: Generate all 8 U1 notebooking images and build student pages (both forms). Load U1_NotebookingPrompts from outputs." |
+| 5 | "Session 5: Draft all 8 U1 notebooking image prompts + source PD artwork. Load all 4 U1 lesson plans from outputs. Do NOT generate images — Claude Code handles that." |
+| 6 | "Session 6 — load approved U1_NotebookingPrompts from outputs, build U1_NotebookingPages_IA.md and U1_NotebookingPages_IIA.md. Composited pages are at iCloud/Desktop/U1_magister_historia_notebook/output_pages." |
 | 7 | "Session 7: Revise U1_WeeklySchedule for CM, build U1_Timeline, build GLOBAL_BookList_Budget. Load U1_WeeklySchedule and U1_Bibliography from outputs." |
 | 8 | "Session 8: Begin Unit 2. Build U2_Overview, U2_WeeklySchedule, U2_L1_SelfGovOrTyranny_LessonPlan, U2_L2_Declaration_LessonPlan. Load GLOBAL_CM_PedagogyGuide from outputs." |
+| 11 | "Session 11: Draft all 8 U2 notebooking image prompts for approval. Load all 4 U2 lesson plans from outputs. Do NOT generate images yet." — ✅ COMPLETE |
+| 12 | "Session 12 — load U2_NotebookingPrompts.md and NB_U2_PageWrap_Prompts.md from outputs. Composited pages are at iCloud/Desktop/U2_magister_historia_notebook/output_pages. Build U2_NotebookingPages_IA.md and U2_NotebookingPages_IIA.md." |
 | 9–26 | Follow same pattern — see session descriptions above |
 
 ---
