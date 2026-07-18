@@ -102,49 +102,86 @@ export function phonemeAudioUrl(key) {
 }
 
 // In-session cache of Grok (xAI) TTS audio, keyed by the spoken text, so
-// repeats don't re-hit the API.
+// repeats don't re-hit the API. `ttsInflight` dedupes concurrent identical
+// requests (two near-simultaneous taps → one fetch, not two → no echo).
 const ttsCache = new Map()
+const ttsInflight = new Map()
+
+// Single global playback stream. Every new playback stops the previous one so
+// two clips (or a clip + its Grok fallback, or rapid taps) can never overlap.
+let currentAudio = null
+let playToken = 0
+
+function stopCurrent() {
+  if (currentAudio) {
+    try { currentAudio.pause(); currentAudio.currentTime = 0 } catch { /* noop */ }
+    currentAudio.onended = null
+    currentAudio.onerror = null
+    currentAudio = null
+  }
+  if (typeof window !== 'undefined' && window.speechSynthesis) {
+    window.speechSynthesis.cancel()
+  }
+}
 
 /**
  * Play a URL — tries the recorded clip first, then Grok "leo" TTS via the
  * /api/tts proxy (key stays server-side), then the browser's built-in speech
- * synthesis as a last resort. Resolves when playback ends or all options fail.
+ * synthesis as a last resort. Any in-progress playback is stopped first, so
+ * overlapping calls never produce an echo. Resolves when playback ends/fails.
  */
 export function playUrl(url, fallbackText = '') {
+  stopCurrent()
+  const token = ++playToken   // invalidates any earlier, slower call
   return new Promise((resolve) => {
-    // No recorded clip → go straight to server (Grok) TTS.
     if (!url) {
-      serverSpeak(fallbackText, resolve)
+      serverSpeak(fallbackText, resolve, token)
       return
     }
 
     const audio = new Audio(url)
+    currentAudio = audio
     audio.onended = resolve
-    audio.onerror = () => serverSpeak(fallbackText, resolve)   // clip missing → Grok
-    audio.play().catch(() => serverSpeak(fallbackText, resolve))
+    audio.onerror = () => serverSpeak(fallbackText, resolve, token)  // clip missing → Grok
+    audio.play().catch(() => serverSpeak(fallbackText, resolve, token))
   })
 }
 
-// Grok "leo" TTS via /api/tts. Voice/model are configured server-side in
+// Fetch (and cache) Grok TTS audio for `text`, deduping concurrent requests.
+function fetchTts(text) {
+  if (ttsCache.has(text)) return Promise.resolve(ttsCache.get(text))
+  if (ttsInflight.has(text)) return ttsInflight.get(text)
+  const p = fetch('/api/tts', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text }),
+  })
+    .then(res => { if (!res.ok) throw new Error(`tts ${res.status}`); return res.blob() })
+    .then(blob => {
+      const objUrl = URL.createObjectURL(blob)
+      ttsCache.set(text, objUrl)
+      ttsInflight.delete(text)
+      return objUrl
+    })
+    .catch(err => { ttsInflight.delete(text); throw err })
+  ttsInflight.set(text, p)
+  return p
+}
+
+// Grok "leo" TTS via /api/tts. Voice/language are configured server-side in
 // functions/api/tts.js. Falls back to the browser voice if the proxy fails.
-async function serverSpeak(text, onDone) {
+async function serverSpeak(text, onDone, token) {
   if (!text) { onDone(); return }
   let settled = false
   const finish = () => { if (!settled) { settled = true; onDone() } }
   const toBrowser = () => { if (!settled) { settled = true; browserSpeak(text, onDone) } }
   try {
-    let objUrl = ttsCache.get(text)
-    if (!objUrl) {
-      const res = await fetch('/api/tts', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text }),
-      })
-      if (!res.ok) throw new Error(`tts ${res.status}`)
-      objUrl = URL.createObjectURL(await res.blob())
-      ttsCache.set(text, objUrl)
-    }
+    const objUrl = await fetchTts(text)
+    // A newer playback started while we were fetching — abandon this one.
+    if (token !== playToken) { finish(); return }
+    stopCurrent()
     const audio = new Audio(objUrl)
+    currentAudio = audio
     audio.onended = finish
     audio.onerror = toBrowser
     await audio.play()
