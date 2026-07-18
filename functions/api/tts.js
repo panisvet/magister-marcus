@@ -40,9 +40,11 @@ export async function onRequestPost({ request, env }) {
     body: JSON.stringify({
       text,
       voice_id: voice_id || 'leo',
-      // Only send language if the caller specified one — omitting lets xAI
-      // auto-detect, which avoids errors for Latin (not a named TTS language).
-      ...(language ? { language } : {}),
+      // `language` is required by xAI. Latin isn't a named TTS language, so we
+      // default to Italian ("it") — its phonetics match the ecclesiastical
+      // pronunciation this curriculum teaches (soft c/g, pure vowels), giving
+      // the closest correct Latin sound. Callers may override (e.g. "auto").
+      language: language || 'it',
     }),
   })
 
