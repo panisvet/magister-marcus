@@ -101,30 +101,56 @@ export function phonemeAudioUrl(key) {
   return `/audio/${key}.m4a`
 }
 
+// In-session cache of Grok (xAI) TTS audio, keyed by the spoken text, so
+// repeats don't re-hit the API.
+const ttsCache = new Map()
+
 /**
- * Play a URL — tries the file first, falls back to browser TTS.
- * Returns a promise that resolves when playback ends or fails.
+ * Play a URL — tries the recorded clip first, then Grok "leo" TTS via the
+ * /api/tts proxy (key stays server-side), then the browser's built-in speech
+ * synthesis as a last resort. Resolves when playback ends or all options fail.
  */
 export function playUrl(url, fallbackText = '') {
   return new Promise((resolve) => {
+    // No recorded clip → go straight to server (Grok) TTS.
     if (!url) {
-      if (fallbackText) browserSpeak(fallbackText, resolve)
-      else resolve()
+      serverSpeak(fallbackText, resolve)
       return
     }
 
     const audio = new Audio(url)
     audio.onended = resolve
-    audio.onerror = () => {
-      // File not recorded yet — fall back to browser TTS
-      if (fallbackText) browserSpeak(fallbackText, resolve)
-      else resolve()
-    }
-    audio.play().catch(() => {
-      if (fallbackText) browserSpeak(fallbackText, resolve)
-      else resolve()
-    })
+    audio.onerror = () => serverSpeak(fallbackText, resolve)   // clip missing → Grok
+    audio.play().catch(() => serverSpeak(fallbackText, resolve))
   })
+}
+
+// Grok "leo" TTS via /api/tts. Voice/model are configured server-side in
+// functions/api/tts.js. Falls back to the browser voice if the proxy fails.
+async function serverSpeak(text, onDone) {
+  if (!text) { onDone(); return }
+  let settled = false
+  const finish = () => { if (!settled) { settled = true; onDone() } }
+  const toBrowser = () => { if (!settled) { settled = true; browserSpeak(text, onDone) } }
+  try {
+    let objUrl = ttsCache.get(text)
+    if (!objUrl) {
+      const res = await fetch('/api/tts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text }),
+      })
+      if (!res.ok) throw new Error(`tts ${res.status}`)
+      objUrl = URL.createObjectURL(await res.blob())
+      ttsCache.set(text, objUrl)
+    }
+    const audio = new Audio(objUrl)
+    audio.onended = finish
+    audio.onerror = toBrowser
+    await audio.play()
+  } catch {
+    toBrowser()
+  }
 }
 
 function browserSpeak(text, onDone) {

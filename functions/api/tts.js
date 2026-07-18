@@ -20,7 +20,7 @@ export async function onRequestPost({ request, env }) {
     })
   }
 
-  const { text } = body
+  const { text, voice_id, language } = body
   if (!text?.trim()) {
     return new Response(JSON.stringify({ error: 'Missing text' }), {
       status: 400,
@@ -28,16 +28,21 @@ export async function onRequestPost({ request, env }) {
     })
   }
 
-  const resp = await fetch('https://api.x.ai/v1/audio/speech', {
+  // Current xAI Text-to-Speech API (https://docs.x.ai/.../audio/text-to-speech):
+  //   POST /v1/tts  { text, voice_id, language? }  → MP3 audio
+  // Voice defaults to "leo" (the voice previously wired up); callers may override.
+  const resp = await fetch('https://api.x.ai/v1/tts', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'grok-tts-audio-preview',
-      input: text,
-      voice: 'leo',
+      text,
+      voice_id: voice_id || 'leo',
+      // Only send language if the caller specified one — omitting lets xAI
+      // auto-detect, which avoids errors for Latin (not a named TTS language).
+      ...(language ? { language } : {}),
     }),
   })
 
