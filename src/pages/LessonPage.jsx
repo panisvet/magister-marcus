@@ -36,6 +36,14 @@ function findLesson(stageId, lessonId) {
   return data.lessons.find(l => String(l.id) === String(lessonId)) || null
 }
 
+// ordinal: 1 → "1st", 2 → "2nd", 3 → "3rd", 4 → "4th", 5 → "5th"
+function ordinal(n) {
+  const num = Number(n)
+  if (!Number.isFinite(num)) return String(n)
+  const suffix = num === 1 ? 'st' : num === 2 ? 'nd' : num === 3 ? 'rd' : 'th'
+  return `${num}${suffix}`
+}
+
 function findReading(readingKey) {
   if (!readingKey) return null
   const [source, id] = readingKey.split('-')
@@ -118,7 +126,7 @@ function VocabulaTab({ lesson, stageId, onComplete }) {
             </p>
             {current.pos && (
               <span style={{ fontSize: '0.8rem', color: 'var(--muted)', fontFamily: 'var(--font-heading)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-                {current.pos}{current.gender ? ` · ${current.gender}.` : ''}{current.declension ? ` · ${current.declension}rd decl.` : ''}
+                {current.pos}{current.gender ? ` · ${current.gender}.` : ''}{current.declension ? ` · ${ordinal(current.declension)} decl.` : ''}
               </span>
             )}
             <p style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--muted)' }}>tap to flip</p>
@@ -129,7 +137,7 @@ function VocabulaTab({ lesson, stageId, onComplete }) {
             </p>
             {current.derivatives?.length > 0 && (
               <p style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>
-                → {current.derivatives.join(', ')}
+                → {current.derivatives.map(d => (typeof d === 'string' ? d : d.english)).join(', ')}
               </p>
             )}
             {current.note && (
@@ -508,6 +516,26 @@ function LectioTab({ lesson, onComplete }) {
           </p>
         </div>
       )}
+
+      {/* Supplemental readings (e.g. Maxey Cap. XXII–XL attached to FFL lessons) */}
+      {(lesson.supplemental_reading_keys || []).map(k => findReading(k)).filter(Boolean).map(sup => (
+        <details key={sup.id} style={{ marginTop: '1.5rem', padding: '1rem', background: 'rgba(255,255,255,0.02)', border: '1px solid var(--border)', borderRadius: 'var(--radius)' }}>
+          <summary style={{ cursor: 'pointer', fontFamily: 'var(--font-heading)', color: 'var(--gold-lt)' }}>
+            Lectio Altera · {sup.title}
+          </summary>
+          <p className="reading-passage" style={{ whiteSpace: 'pre-line', marginTop: '0.75rem' }}>{sup.latin}</p>
+          {sup.vocab_hints?.length > 0 && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', margin: '0.75rem 0' }}>
+              {sup.vocab_hints.map((h, i) => (
+                <span key={i} style={{ padding: '0.2rem 0.6rem', background: 'rgba(201,144,42,0.1)', border: '1px solid rgba(201,144,42,0.2)', borderRadius: 4, fontSize: '0.82rem', color: 'var(--text)' }}>{h}</span>
+              ))}
+            </div>
+          )}
+          {showTranslation && (
+            <p className="reading-translation" style={{ whiteSpace: 'pre-line' }}>{sup.english}</p>
+          )}
+        </details>
+      ))}
 
       <div style={{ marginTop: '2rem' }}>
         <button className="btn btn-gold" onClick={onComplete}>

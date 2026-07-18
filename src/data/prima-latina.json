@@ -335,7 +335,7 @@
           "derivatives": [
             {
               "english": "laudatory",
-              "gloss": "the art of public speaking (n.)"
+              "gloss": "expressing praise (adj.)"
             }
           ]
         },
@@ -421,7 +421,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl2",
       "copywork": {
         "sentences": [
           "Puer est discipulus.",
@@ -572,7 +571,7 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl3",
+      "reading_key": "maxey-pl2",
       "copywork": {
         "sentences": [
           "Magistra nōn est puella.",
@@ -737,7 +736,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl4",
       "copywork": {
         "sentences": [
           "Hic puer puellam amat.",
@@ -879,7 +877,7 @@
         "note": "Final line — the full Sanctus is now complete."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl5",
+      "reading_key": "maxey-pl3",
       "copywork": {
         "sentences": [
           "Puellam parvam amō.",
@@ -907,7 +905,6 @@
         "english": "Grant us Peace",
         "source": "Lingua Angelica CD"
       },
-      "reading_key": "maxey-r1",
       "copywork": {
         "sentences": [
           "America est patria mea.",
@@ -1098,7 +1095,7 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl6",
+      "reading_key": "maxey-pl4",
       "copywork": {
         "sentences": [
           "Haec via est longa.",
@@ -1240,7 +1237,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl7",
       "copywork": {
         "sentences": [
           "Quis est haec puella?",
@@ -1392,7 +1388,7 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl8",
+      "reading_key": "maxey-pl5",
       "copywork": {
         "sentences": [
           "Agricola fīliam pulchram habet.",
@@ -1450,10 +1446,6 @@
           "pos": "number",
           "audio_key": "tres",
           "derivatives": [
-            {
-              "english": "tertiary",
-              "gloss": "third (adj.)"
-            },
             {
               "english": "trio",
               "gloss": "a group of three (n.)"
@@ -1533,7 +1525,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl9",
       "copywork": {
         "sentences": [
           "Nauta est amīcus agricolae.",
@@ -1688,7 +1679,7 @@
         "note": "Final line — the full Gloria Patri is now complete."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl10",
+      "reading_key": "maxey-r1",
       "copywork": {
         "sentences": [
           "Ego sum magistra.",
@@ -1729,7 +1720,6 @@
         ],
         "source": "Lingua Angelica CD"
       },
-      "reading_key": "maxey-r2",
       "copywork": {
         "sentences": [
           "Epistulam habeō.",
@@ -1933,7 +1923,7 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl11",
+      "reading_key": "maxey-pl6",
       "copywork": {
         "sentences": [
           "Haec est schola nostra.",
@@ -2073,7 +2063,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl12",
       "copywork": {
         "sentences": [
           "Medicus ad casam agricolae properat.",
@@ -2149,12 +2138,7 @@
           "english": "sick",
           "pos": "adjective",
           "audio_key": "aeger",
-          "derivatives": [
-            {
-              "english": "aegis",
-              "gloss": "protection or support (n.) — unrelated, but a good Latin word to know"
-            }
-          ]
+          "derivatives": []
         },
         {
           "id": "pl-13-8",
@@ -2220,7 +2204,7 @@
           ]
         }
       ],
-      "reading_key": "maxey-pl13",
+      "reading_key": "maxey-pl7",
       "copywork": {
         "sentences": [
           "Puer sōlus est, sed sōlus esse nōn cupit.",
@@ -2277,7 +2261,7 @@
           "derivatives": [
             {
               "english": "bonus",
-              "gloss": "a new invention (n.)"
+              "gloss": "something extra (n.)"
             }
           ]
         },
@@ -2301,6 +2285,10 @@
           "pos": "adjective",
           "audio_key": "novus",
           "derivatives": [
+            {
+              "english": "innovation",
+              "gloss": "a new invention (n.)"
+            },
             {
               "english": "novice",
               "gloss": "a beginner (n.)"
@@ -2362,7 +2350,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl14",
       "copywork": {
         "sentences": [
           "Puer nōn est miser sed laetus.",
@@ -2468,7 +2455,6 @@
         "note": "Final line — the full Table Blessing is now complete."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl15",
       "copywork": {
         "sentences": [
           "Minimē. Nōn in casā, sed in scholā labōrō.",
@@ -2512,7 +2498,7 @@
         ],
         "source": "Lingua Angelica CD"
       },
-      "reading_key": "maxey-r3",
+      "reading_key": "maxey-pl8",
       "copywork": {
         "sentences": [
           "Aestāte fēmina in tabernāculō habitat.",
@@ -2691,7 +2677,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl16",
       "copywork": {
         "sentences": [
           "Nox est et stellae et lūna sunt clārae.",
@@ -2830,7 +2815,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl17",
       "copywork": {
         "sentences": [
           "In hortō sunt multī et pulchrī flōrēs.",
@@ -2838,7 +2822,8 @@
           "Alta sunt līlia et pulchrae sunt rosae."
         ],
         "instructions": "Copy and translate. Rōsa and Lilium (from līlium) are still used today as scientific genus names. Find them! Notice alta, albae, pulchrae — these adjectives change ending to match the noun they describe. Are their nouns masculine or feminine?"
-      }
+      },
+      "reading_key": "maxey-pl9"
     },
     {
       "id": 18,
@@ -3002,7 +2987,6 @@
           ]
         }
       ],
-      "reading_key": "maxey-pl18",
       "copywork": {
         "sentences": [
           "Nox est et quiēs est in terrā.",
@@ -3177,7 +3161,6 @@
           ]
         }
       ],
-      "reading_key": "maxey-pl19",
       "copywork": {
         "sentences": [
           "Galeam et scūtum habeō.",
@@ -3186,7 +3169,8 @@
           "Bonus mīles pugnat. Mīles malus domum it."
         ],
         "instructions": "Copy and translate. Find every verb. Which end in -ō (I ___)? Which end in -t (he/she ___)?  The verb cupiō means 'I want' — what does the speaker want to do? Could you use possum here? Try: 'Patrem vidēre nōn possum.'"
-      }
+      },
+      "reading_key": "maxey-pl10"
     },
     {
       "id": 20,
@@ -3333,7 +3317,6 @@
           ]
         }
       ],
-      "reading_key": "maxey-pl20",
       "copywork": {
         "sentences": [
           "Hī quattuor puerī ā casīs ad silvam properant.",
@@ -3370,7 +3353,7 @@
         ],
         "source": "Lingua Angelica CD"
       },
-      "reading_key": "maxey-r4",
+      "reading_key": "maxey-r2",
       "copywork": {
         "sentences": [
           "Māne in carrō pater et fīlia per agrōs et silvam properant.",
@@ -3510,7 +3493,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl21",
       "copywork": {
         "sentences": [
           "Patria nostra in bellō nōn pugnat, sed fīnitimī nostrī pugnant et nōs sumus sociī.",
@@ -3572,16 +3554,7 @@
           "english": "why?",
           "pos": "interrogative",
           "audio_key": "cur",
-          "derivatives": [
-            {
-              "english": "query",
-              "gloss": "question (n.); to question someone or something (v.)"
-            },
-            {
-              "english": "curious",
-              "gloss": "eager to know (adj.)"
-            }
-          ]
+          "derivatives": []
         },
         {
           "id": "pl-22-5",
@@ -3602,12 +3575,7 @@
           "english": "that (m.)",
           "pos": "adjective",
           "audio_key": "ille",
-          "derivatives": [
-            {
-              "english": "illustrate",
-              "gloss": "to make clear with examples (v.) — from same root"
-            }
-          ]
+          "derivatives": []
         },
         {
           "id": "pl-22-7",
@@ -3635,7 +3603,6 @@
         "note": "Each week, learn the bold portion of the prayer and add it to what you know."
       },
       "paradigms": [],
-      "reading_key": "maxey-pl22",
       "copywork": {
         "sentences": [
           "Quis est ille vir?",
@@ -3644,7 +3611,8 @@
           "Necesse est ad aedificium magnum īre quod ibi vir caecus pecūniam accipit."
         ],
         "instructions": "Copy and translate. Circle the question word in each sentence (quis, cūr, ad quem). Match each question word to the kind of answer it expects: a person, a reason, or a place. Find the word meaning 'blind' — can you guess from context before looking it up?"
-      }
+      },
+      "reading_key": "maxey-pl11"
     },
     {
       "id": 23,
@@ -3735,7 +3703,6 @@
           ]
         }
       ],
-      "reading_key": "maxey-pl23",
       "copywork": {
         "sentences": [
           "Ille vir oculōs habet, sed nūllās rēs videt.",
@@ -3846,7 +3813,6 @@
           ]
         }
       ],
-      "reading_key": "maxey-pl24",
       "copywork": {
         "sentences": [
           "Hīc sunt castra nostra.",
@@ -3855,7 +3821,8 @@
           "Inter castra hostium et castra nostra illud flūmen fluit."
         ],
         "instructions": "Copy and translate. Find all plural nouns — what are their endings? Find any 1st declension nouns and identify their case. Find four different prepositions (trāns, circum, inter, in) — what does each one mean?"
-      }
+      },
+      "reading_key": "maxey-pl12"
     },
     {
       "id": 25,
@@ -4000,7 +3967,6 @@
           ]
         }
       ],
-      "reading_key": "maxey-pl25",
       "copywork": {
         "sentences": [
           "Vir avunculum in hortō iuvat.",
@@ -4033,7 +3999,7 @@
         ],
         "source": "Lingua Angelica CD"
       },
-      "reading_key": "maxey-r5",
+      "reading_key": "maxey-pl13",
       "copywork": {
         "sentences": [
           "Nōs sumus mīlitēs populī Rōmānī.",

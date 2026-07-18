@@ -285,7 +285,12 @@
         "medicīna = medicine",
         "impiger = energetic, diligent",
         "stat = stands",
-        "scrīpsit = wrote (perfect)"
+        "scrīpsit = wrote (perfect)",
+        "labōrābat = was working (imperfect)",
+        "dedit = gave (perfect)",
+        "vīdit = saw (perfect)",
+        "cupiēbat = was wanting (imperfect)",
+        "cupīvit = wanted (perfect)"
       ]
     },
     {
@@ -319,7 +324,8 @@
         "valida = healthy, strong",
         "saltat = jumps, dances",
         "respondet = answers",
-        "diū = for a long time"
+        "diū = for a long time",
+        "erat = was (imperfect of est)"
       ]
     },
     {
@@ -338,7 +344,11 @@
         "sēcum = to himself",
         "hōra = hour",
         "vocat = calls",
-        "mox = soon"
+        "mox = soon",
+        "eunt = they go (from īre, to go)",
+        "inquit = he/she says",
+        "sē / sēcum = himself / to himself",
+        "hanc = this (accusative)"
       ]
     },
     {
@@ -358,7 +368,10 @@
         "equus = horse",
         "frūmentum = grain",
         "stabulum = stable",
-        "edit = eats"
+        "edit = eats",
+        "quī = who, which (relative)",
+        "erat = was",
+        "lacrimantem = crying (participle)"
       ]
     },
     {
@@ -378,7 +391,12 @@
         "castra = camp (pl.)",
         "bellum = war",
         "tegit = protects",
-        "cōnsilia = plans"
+        "cōnsilia = plans",
+        "iērunt = they went (perfect)",
+        "audīvit = heard (perfect)",
+        "nārrātur = is told (passive)",
+        "videntur = are seen (passive)",
+        "quī / quae = who, which"
       ]
     },
     {
@@ -397,7 +415,11 @@
         "caput = head",
         "numquam = never",
         "iaculum = javelin",
-        "longē ā = far from"
+        "longē ā = far from",
+        "loquitur = speaks",
+        "facit = does, makes",
+        "eō / it = I go / goes (from īre)",
+        "quae = what, which"
       ]
     },
     {
@@ -415,7 +437,10 @@
         "mēnsa = table",
         "timent = they fear",
         "animālia = animals",
-        "niger/nigra = black"
+        "niger/nigra = black",
+        "quī / cuius / huius = who / whose / of this",
+        "portantur = are carried (passive)",
+        "faciunt = they do, make"
       ]
     },
     {
@@ -434,7 +459,12 @@
         "per = through",
         "aliquis = someone",
         "invītātur = is invited",
-        "currit = runs"
+        "currit = runs",
+        "vēnit = came (perfect)",
+        "portāvit = carried (perfect)",
+        "aperuit = opened (perfect)",
+        "lēgit = read (perfect)",
+        "videntur = are seen (passive)"
       ]
     },
     {
@@ -453,7 +483,10 @@
         "cōpiae = forces, troops",
         "arcus = bow",
         "monet = warns",
-        "morientur = will die"
+        "morientur = will die",
+        "eunt / veniunt = they go / they come",
+        "currunt = they run",
+        "portantur = are carried (passive)"
       ]
     },
     {
@@ -472,7 +505,10 @@
         "adest = is here/present",
         "accipit = receives",
         "sine = without (+ abl.)",
-        "iterum = again"
+        "iterum = again",
+        "exspectābat = was waiting (imperfect)",
+        "aderat / adest = was present / is present",
+        "eunt = they go"
       ]
     },
     {
@@ -490,7 +526,13 @@
         "posterō diē = the next day",
         "paene = almost",
         "fortis/fortēs = brave",
-        "fortiter = bravely"
+        "fortiter = bravely",
+        "erat / erant = was / were",
+        "pugnābat = was fighting (imperfect)",
+        "monēbat = was warning (imperfect)",
+        "vulnerābantur / necābantur = were being wounded / killed",
+        "accipitur = is received (passive)",
+        "putābam = I was thinking (imperfect)"
       ]
     },
     {
@@ -509,7 +551,11 @@
         "mortuus = dead",
         "abest = is absent",
         "clāmat = shouts",
-        "iacite = throw! (pl. command)"
+        "iacite = throw! (pl. command)",
+        "pugnāvit / nārrāvit = fought / told (perfect)",
+        "vulnerātī et necātī sunt = were wounded and killed",
+        "capient / vulnerābunt = they will capture / will wound (future)",
+        "erunt / erit = will be"
       ]
     },
     {
@@ -529,7 +575,12 @@
         "grātior = more pleasing",
         "validior = stronger",
         "oppugnat = attacks",
-        "salūtat = greets"
+        "salūtat = greets",
+        "vāstātī sunt = have been ruined",
+        "erant = were",
+        "spectābat / vāstābat / audiēbat = was watching / ruining / hearing (imperfect)",
+        "vēnit = came (perfect)",
+        "aberat = was away"
       ]
     },
     {
@@ -548,7 +599,12 @@
         "rūrī = in the country",
         "ācriter = fiercely",
         "putat = thinks",
-        "itaque = and so, therefore"
+        "itaque = and so, therefore",
+        "quōs = whom (relative)",
+        "oppugnābunt = they will attack (future)",
+        "erimus / aderunt = we will be / will be here (future)",
+        "expugnābuntur / dēlēbuntur / superābimur = will be stormed / destroyed / overcome (future passive)",
+        "manēbō = I will stay (future)"
       ]
     },
     {
