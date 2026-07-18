@@ -2,7 +2,10 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { useProfiles } from '../hooks/useProfiles.js'
 import { useProgress } from '../hooks/useProgress.js'
+import { useSrs } from '../hooks/useSrs.js'
+import { vocabCardId, paradigmCardId, scripturaCardId } from '../srs.js'
 import { vocabAudioUrl, paradigmAudioUrl, phonemeAudioUrl, playUrl } from '../audio.js'
+import RecallGrader from '../components/RecallGrader.jsx'
 import PageLayout from '../components/PageLayout.jsx'
 
 import primaData from '../data/prima-latina.json'
@@ -64,15 +67,27 @@ async function speakLatin(url, text, setPlaying) {
 }
 
 // ── Vocabula Tab ───────────────────────────────────────────────────────────
-function VocabulaTab({ lesson, stageId, onComplete }) {
+function VocabulaTab({ lesson, stageId, profileId, onComplete }) {
   const [idx, setIdx] = useState(0)
   const [flipped, setFlipped] = useState(false)
   const [playing, setPlaying] = useState(false)
   const [done, setDone] = useState(new Set())
+  const { review } = useSrs(profileId)
 
   const vocab = lesson.vocab || []
   const total = vocab.length
   const current = vocab[idx]
+
+  // Record the mastery event for the current card, then advance.
+  function grade(quality) {
+    if (current?.id) {
+      review(
+        { id: vocabCardId(current.id), stage: stageId, lessonId: String(lesson.id), type: 'vocab', label: current.latin },
+        quality,
+      )
+    }
+    next()
+  }
 
   function next() {
     const newDone = new Set(done).add(idx)
@@ -149,8 +164,17 @@ function VocabulaTab({ lesson, stageId, onComplete }) {
         </div>
       </div>
 
+      {/* Recall self-grade — appears once flipped; records the mastery event */}
+      {flipped
+        ? <RecallGrader onGrade={grade} prompt="How well did you recall the meaning?" />
+        : (
+          <p style={{ textAlign: 'center', fontSize: '0.75rem', color: 'var(--muted)', marginTop: '1.25rem' }}>
+            Recall the meaning, then tap the card to check.
+          </p>
+        )}
+
       {/* Controls */}
-      <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', marginTop: '1.5rem', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', marginTop: '1rem', flexWrap: 'wrap' }}>
         <button className="btn btn-outline" onClick={prev} disabled={idx === 0}>← Prev</button>
         <button
           className="btn btn-outline"
@@ -160,8 +184,8 @@ function VocabulaTab({ lesson, stageId, onComplete }) {
         >
           {playing ? '🔊 …' : '🔊 Listen'}
         </button>
-        <button className="btn btn-gold" onClick={next}>
-          {idx + 1 < total ? 'Next →' : 'Finish ✓'}
+        <button className="btn btn-outline" onClick={next}>
+          {idx + 1 < total ? 'Skip →' : 'Finish ✓'}
         </button>
       </div>
 
@@ -184,9 +208,19 @@ function VocabulaTab({ lesson, stageId, onComplete }) {
 }
 
 // ── Grammatica Tab ─────────────────────────────────────────────────────────
-function GrammaticaTab({ lesson, onComplete }) {
+function GrammaticaTab({ lesson, stageId, profileId, onComplete }) {
   const [mode, setMode] = useState('study')   // 'study' | 'drill'
   const [drillInput, setDrillInput] = useState({})
+  const { review } = useSrs(profileId)
+  const [gradedParadigms, setGradedParadigms] = useState({})
+
+  function gradeParadigm(p, quality) {
+    review(
+      { id: paradigmCardId(stageId, String(lesson.id), p.id), stage: stageId, lessonId: String(lesson.id), type: 'paradigm', label: p.label || p.id },
+      quality,
+    )
+    setGradedParadigms(g => ({ ...g, [p.id]: quality }))
+  }
   const [checked, setChecked] = useState(false)
   const [score, setScore] = useState(false)
   const [playingRow, setPlayingRow] = useState(null)
@@ -319,6 +353,12 @@ function GrammaticaTab({ lesson, onComplete }) {
             </tbody>
           </table>
         </div>
+        {/* Recall self-grade for this paradigm — records the mastery event */}
+        {gradedParadigms[p.id]
+          ? <p style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--green, #2e7d5b)', marginTop: '0.5rem' }}>
+              Recall recorded ✓ ({gradedParadigms[p.id]})
+            </p>
+          : <RecallGrader onGrade={q => gradeParadigm(p, q)} prompt="Recite this paradigm from memory, then rate your recall:" />}
       </div>
     )
   }
@@ -547,11 +587,12 @@ function LectioTab({ lesson, onComplete }) {
 }
 
 // ── Scriptura Tab ──────────────────────────────────────────────────────────
-function ScripturaTab({ lesson, onComplete }) {
+function ScripturaTab({ lesson, stageId, profileId, onComplete }) {
   const [sentence, setSentence] = useState(null)
   const [translation, setTranslation] = useState('')
   const [result, setResult] = useState(null)
   const [loading, setLoading] = useState(false)
+  const { review } = useSrs(profileId)
 
   // Pick a vocab item as the sentence to translate
   useEffect(() => {
@@ -606,6 +647,11 @@ ENCOURAGEMENT: [your encouragement]`
       const feedback = text.match(/FEEDBACK:\s*(.+)/)?.[1] || 'Good effort!'
       const encouragement = text.match(/ENCOURAGEMENT:\s*(.+)/)?.[1] || 'Keep practicing!'
       setResult({ grade, feedback, encouragement })
+      // Mastery event: map the letter grade to a recall quality.
+      review(
+        { id: scripturaCardId(stageId, String(lesson.id)), stage: stageId, lessonId: String(lesson.id), type: 'scriptura', label: `Translation: ${lesson.title}` },
+        grade === 'A' ? 'easy' : grade === 'B' ? 'good' : 'again',
+      )
       if (['A', 'B'].includes(grade)) onComplete()
     } catch {
       setResult({ grade: 'C', feedback: 'Could not reach Magister Marcus. Try again.', encouragement: 'Keep practicing!' })
@@ -1028,11 +1074,11 @@ export default function LessonPage() {
 
         {/* Tab content */}
         <div className="fade-in" key={activeTab}>
-          {activeTab === 'vocabula'        && <VocabulaTab       lesson={lesson} stageId={stage} onComplete={handleTabComplete} />}
-          {activeTab === 'grammatica'      && <GrammaticaTab     lesson={lesson} onComplete={handleTabComplete} />}
+          {activeTab === 'vocabula'        && <VocabulaTab       lesson={lesson} stageId={stage} profileId={activeId} onComplete={handleTabComplete} />}
+          {activeTab === 'grammatica'      && <GrammaticaTab     lesson={lesson} stageId={stage} profileId={activeId} onComplete={handleTabComplete} />}
           {activeTab === 'latina-practica' && <LatinaPracticaTab lesson={lesson} onComplete={handleTabComplete} />}
           {activeTab === 'lectio'          && <LectioTab         lesson={lesson} onComplete={handleTabComplete} />}
-          {activeTab === 'scriptura'       && <ScripturaTab      lesson={lesson} onComplete={handleTabComplete} />}
+          {activeTab === 'scriptura'       && <ScripturaTab      lesson={lesson} stageId={stage} profileId={activeId} onComplete={handleTabComplete} />}
           {activeTab === 'oremus'          && <OremusTab         lesson={lesson} stageId={stage} onComplete={handleTabComplete} />}
         </div>
 

@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import ViaLatina from './pages/ViaLatina.jsx'
 import LessonPage from './pages/LessonPage.jsx'
+import Repetitio from './pages/Repetitio.jsx'
+import ParentView from './pages/ParentView.jsx'
 import LessonViewer from './pages/LessonViewer.jsx'
 import LessonViewerY2 from './pages/LessonViewerY2.jsx'
 import LessonPlanner from './pages/LessonPlanner.jsx'
@@ -19,6 +21,8 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/via-latina" element={<ViaLatina />} />
       <Route path="/lesson/:stage/:lessonId" element={<LessonPage />} />
+      <Route path="/review" element={<Repetitio />} />
+      <Route path="/parent" element={<ParentView />} />
       <Route path="/read" element={<ReadingApp />} />
       <Route path="/sounds" element={<SoundsBoard />} />
       <Route path="/magister-natura" element={<MagisterNatura />} />

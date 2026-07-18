@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useProfiles } from '../hooks/useProfiles.js'
 import { useProgress } from '../hooks/useProgress.js'
+import { useSrs } from '../hooks/useSrs.js'
+import { statsFor } from '../srs.js'
 import PageLayout from '../components/PageLayout.jsx'
 import { phonemeAudioUrl, playUrl } from '../audio.js'
 
@@ -247,6 +249,35 @@ function ProfilePicker({ profiles, activeId, onSwitch, onAdd, onRemove }) {
   )
 }
 
+// ── Review Bar (Repetitio + Parent View entry points) ───────────────────────
+function ReviewBar({ profileId }) {
+  const navigate = useNavigate()
+  const { getLessonProgress } = useProgress(profileId)
+  const { store } = useSrs(profileId)
+
+  const eligible = []
+  for (const s of STAGES) {
+    if (!s.data) continue
+    for (const lesson of s.data.lessons) {
+      const lp = getLessonProgress(s.id, String(lesson.id))
+      if (lp?.completed || (lp?.tabsDone?.length > 0)) eligible.push({ stage: s.id, lesson })
+    }
+  }
+  const { dueNow } = statsFor(store, eligible)
+
+  return (
+    <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
+      <button className="btn btn-gold" onClick={() => navigate('/review')} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        ↻ Repetitio — Review
+        {dueNow > 0 && (
+          <span style={{ background: 'rgba(0,0,0,0.25)', borderRadius: 12, padding: '0.05rem 0.55rem', fontSize: '0.78rem' }}>{dueNow} due</span>
+        )}
+      </button>
+      <button className="btn btn-outline" onClick={() => navigate('/parent')}>Parent view</button>
+    </div>
+  )
+}
+
 // ── Lesson Node ────────────────────────────────────────────────────────────
 function LessonNode({ lesson, stageId, unlocked, lessonProgress, onClick, accentColor }) {
   const isReview = lesson.type === 'review'
@@ -462,6 +493,9 @@ export default function ViaLatina() {
           onAdd={addProfile}
           onRemove={removeProfile}
         />
+
+        {/* Repetitio + Parent view */}
+        <ReviewBar profileId={activeId} />
 
         {/* Stage selector tabs */}
         <div style={{
