@@ -35,7 +35,7 @@ export const HISTORIA_UNITS = [
         opening: "Before Columbus sailed, this continent was not empty. It was full — full of peoples, languages, cities, trade routes, stories, and civilizations. Some of those civilizations were older than anything in Europe. When European sailors arrived in 1492, they did not find a wilderness. They found a world.",
         readAloud: [
           { label: "Both forms — Week 1", title: "If You Lived in Colonial Times — Ann McGovern", pages: "Selected pages for geographic context", link: null },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 1–10", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 1–10", link: "https://www.gutenberg.org/ebooks/48051" },
         ],
         primarySource: null,
         narrationIA: "Tell me about the land of America. Name one big landform and one river. Tell me about one Native people who lived here before Columbus.",
@@ -77,7 +77,7 @@ export const HISTORIA_UNITS = [
         readAloud: [
           { label: "Both forms — Week 2–3", title: "If You Sailed on the Mayflower in 1620 — Ann McGovern", pages: "Full book", link: null },
           { label: "Audio (free — use instead of print)", title: "The Landing of the Pilgrims — James Daugherty", pages: "LibriVox audio", link: "https://librivox.org/the-landing-of-the-pilgrims-by-james-daugherty/" },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 11–44, 56–57", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 11–44, 56–57", link: "https://www.gutenberg.org/ebooks/48051" },
         ],
         primarySource: { label: "Primary source", title: "The Mayflower Compact (1620)", link: "https://avalon.law.yale.edu/17th_century/mayflower.asp" },
         narrationIA: "Tell the story of the Mayflower. Who was on it, where were they going, and what happened when they arrived?",
@@ -118,7 +118,7 @@ export const HISTORIA_UNITS = [
         opening: "England colonized America differently from Spain and France. Spain sent soldiers and priests. France sent fur traders and missionaries. England sent families. Private people, funded by private companies, seeking land and freedom and a better life. From this scattered, private beginning, something no one planned emerged: a people who expected liberty as their birthright.",
         readAloud: [
           { label: "Both forms — Week 5–6", title: "If You Lived in Colonial Times — Ann McGovern", pages: "Full book", link: null },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "Chapters 4–10", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "Chapters 4–10", link: "https://www.gutenberg.org/ebooks/48051" },
         ],
         primarySource: { label: "Primary source", title: "John Winthrop, 'A Model of Christian Charity' — City Upon a Hill (1630)", link: "https://avalon.law.yale.edu/17th_century/winthrop.asp" },
         narrationIA: "Tell me the story of Roger Williams. Why did he get in trouble? What did he do? What did he believe?",
@@ -221,7 +221,7 @@ export const HISTORIA_UNITS = [
         readAloud: [
           { label: "Form IA — Week 1–2", title: "Liberty! — Russell Freedman", pages: "pp. 6–17, 26–31, 35", link: null },
           { label: "Both forms — Week 2–3", title: "Meet George Washington — Joan Heilbroner", pages: "pp. 1–35", link: null },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 68–80", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 68–80", link: "https://www.gutenberg.org/ebooks/48051" },
         ],
         primarySource: { label: "Primary source", title: "Patrick Henry, 'Give Me Liberty or Give Me Death!' (1775)", link: "https://avalon.law.yale.edu/18th_century/patrick.asp" },
         narrationIA: "Tell the story of the Boston Tea Party. Why did it happen? What happened? What was the result?",
@@ -260,7 +260,7 @@ export const HISTORIA_UNITS = [
         readAloud: [
           { label: "Form IA — Week 4–5", title: "Meet Thomas Jefferson — Marvin Barrett", pages: "pp. 1–28", link: null },
           { label: "Primary source — both forms", title: "Declaration of Independence — full text", pages: "Preamble read in class", link: "https://avalon.law.yale.edu/18th_century/declare.asp" },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 81–82", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 81–82", link: "https://www.gutenberg.org/ebooks/48051" },
         ],
         primarySource: { label: "Seminar text", title: "Declaration of Independence — Preamble (full)", link: "https://avalon.law.yale.edu/18th_century/declare.asp" },
         narrationIA: "Tell me the story of how the Declaration was written and signed. What does the Declaration say about rights — tell me in your own words.",
@@ -303,7 +303,7 @@ export const HISTORIA_UNITS = [
         opening: "Thomas Paine wrote in December 1776: 'These are the times that try men's souls. The summer soldier and the sunshine patriot will, in this crisis, shrink from the service of their country.' Washington had his men read it aloud. Then he led them across an ice-choked river on Christmas night.",
         readAloud: [
           { label: "Both forms — Week 6–7", title: "Meet George Washington — Joan Heilbroner", pages: "pp. 36–63", link: null },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 83–102", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 83–102", link: "https://www.gutenberg.org/ebooks/48051" },
           { label: "Hillsdale free lecture", title: "The Great American Story — Lecture 4", pages: null, link: "https://online.hillsdale.edu" },
         ],
         primarySource: { label: "Primary source", title: "Thomas Paine, The American Crisis No. 1 (1776)", link: "https://www.gutenberg.org/ebooks/3741" },
@@ -347,7 +347,7 @@ export const HISTORIA_UNITS = [
         opening: "Madison wrote in Federalist No. 51: 'If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controls on government would be necessary. In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to control the governed; and in the next place oblige it to control itself.' The Constitution is the document that attempted to solve this problem.",
         readAloud: [
           { label: "Both forms — Week 8–9", title: "If You Were There When They Signed the Constitution", pages: "pp. 1–35", link: null },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 103–108", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies", pages: "pp. 103–108", link: "https://www.gutenberg.org/ebooks/48051" },
           { label: "Primary source (free)", title: "Federalist No. 51 — James Madison", pages: null, link: "https://avalon.law.yale.edu/18th_century/fed51.asp" },
         ],
         primarySource: { label: "Seminar text", title: "Preamble to the Constitution", link: "https://constitution.congress.gov/constitution/preamble/" },
@@ -405,7 +405,7 @@ export const HISTORIA_UNITS = [
         opening: "What does it mean to go first? Every president since Washington has had Washington's example to follow — or to break with. Washington had nothing. He invented the job as he went. He did not want it; he wrote that he felt like a condemned man walking to his execution. But he went, and every action he took became a precedent for the republic that followed.",
         readAloud: [
           { label: "Both forms — Week 1–2", title: "Meet George Washington — Joan Heilbroner", pages: "pp. 55–63", link: null },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies and the Great Republic", pages: "pp. 109–119", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, The Story of the Great Republic", pages: "Washington and Adams", link: "https://archive.org/details/storygreatrepub00guergoog" },
           { label: "Hillsdale free lecture", title: "The Great American Story — Lectures 5–6", pages: null, link: "https://online.hillsdale.edu" },
         ],
         primarySource: { label: "Primary source", title: "George Washington, Farewell Address (1796) — selections", link: "https://avalon.law.yale.edu/18th_century/washing.asp" },
@@ -450,7 +450,7 @@ export const HISTORIA_UNITS = [
         opening: "On March 4, 1801, Thomas Jefferson walked from his boarding house to the Capitol — no carriage, no ceremony, just a man walking to work. His vision was a republic of independent farmers, limited government, and westward expansion. Within two years he would double the size of the nation with the Louisiana Purchase — using an authority the Constitution never gave him — and set the young republic on a course toward the Pacific, and toward war.",
         readAloud: [
           { label: "Both forms — Week 3", title: "Meet Thomas Jefferson — Marvin Barrett", pages: "pp. 29–62", link: null },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies and the Great Republic", pages: "pp. 120–132", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, The Story of the Great Republic", pages: "Jefferson, Madison, and the War of 1812", link: "https://archive.org/details/storygreatrepub00guergoog" },
           { label: "Primary source (free)", title: "Lewis and Clark, journal entries — selections", pages: null, link: null },
         ],
         primarySource: { label: "Primary source", title: "Thomas Jefferson, First Inaugural Address (1801)", link: "https://avalon.law.yale.edu/19th_century/jefinau1.asp" },
@@ -495,7 +495,7 @@ export const HISTORIA_UNITS = [
         ],
         opening: "After the War of 1812, America entered a period of prosperity and expansion — the 'Era of Good Feelings' under James Monroe. New immigrants arrived from Europe, canals and steamboats and railroads began to bind the interior to the coast, and revival swept the frontier. And yet, beneath the growth, a machine for cleaning cotton was quietly binding millions more human beings into slavery — and the question of slavery in the new states rang out, in Jefferson's words, like a fire bell in the night.",
         readAloud: [
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies and the Great Republic", pages: "pp. 133–138", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, The Story of the Great Republic", pages: "Monroe and the Era of Good Feelings", link: "https://archive.org/details/storygreatrepub00guergoog" },
           { label: "Both forms — Week 5", title: "The Erie Canal — traditional song (public domain)", pages: null, link: null },
         ],
         primarySource: { label: "Primary source", title: "James Monroe, the Monroe Doctrine (1823) — selections", link: "https://avalon.law.yale.edu/19th_century/monroe.asp" },
@@ -537,7 +537,7 @@ export const HISTORIA_UNITS = [
         ],
         opening: "Andrew Jackson was the first president who came from neither the Virginia nor the Massachusetts gentry — a frontier fighter, a duelist, the hero of New Orleans, and the champion of the common man. In his age America believed it had a destiny to stretch from ocean to ocean. That belief built a continental nation — and it was paid for in the forced removal of the Cherokee, in the blood of the Alamo and the Mexican War, and in the widening wound of slavery.",
         readAloud: [
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies and the Great Republic", pages: "pp. 138–151", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, The Story of the Great Republic", pages: "Jackson and westward expansion", link: "https://archive.org/details/storygreatrepub00guergoog" },
           { label: "Primary source (free)", title: "Frederick Douglass, Narrative of the Life of Frederick Douglass — excerpts", pages: null, link: "https://www.gutenberg.org/ebooks/23" },
           { label: "Hillsdale free lecture", title: "The Great American Story — Lectures 7–9", pages: null, link: "https://online.hillsdale.edu" },
         ],
@@ -592,7 +592,7 @@ export const HISTORIA_UNITS = [
         opening: "When the Constitution was written, many founders — even some who owned slaves — believed slavery was dying and would fade away on its own. They were wrong. A single machine, Eli Whitney's cotton gin, made cotton so profitable that slavery exploded across the Deep South. By 1848 the South was built on 'King Cotton,' and its defenders had stopped calling slavery a necessary evil and begun calling it a positive good — something to be spread, not contained. Against them stood the abolitionists, and a boy in Baltimore who discovered that the men who owned him feared his mind more than his body.",
         readAloud: [
           { label: "Both forms — Weeks 1–2", title: "Meet Abraham Lincoln — Barbara Cary", pages: "pp. 1–44 (check ThriftBooks pricing first)", link: null },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies and the Great Republic", pages: "pp. 150–159", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, The Story of the Great Republic", pages: "The antebellum crisis and abolition", link: "https://archive.org/details/storygreatrepub00guergoog" },
           { label: "Primary source (free)", title: "Frederick Douglass, Narrative of the Life of Frederick Douglass — excerpts", pages: null, link: "https://www.gutenberg.org/ebooks/23" },
         ],
         primarySource: { label: "Primary source", title: "Frederick Douglass, Narrative of the Life of Frederick Douglass (1845) — excerpts", link: "https://www.gutenberg.org/ebooks/23" },
@@ -632,7 +632,7 @@ export const HISTORIA_UNITS = [
         opening: "Popular sovereignty promised that Americans could settle the question of slavery peacefully, at the ballot box. Instead, Kansas bled. The Supreme Court, meant to calm the country, declared in Dred Scott that no Black person could be a citizen and that Congress could not keep slavery out of any territory. A new party, the Republicans, formed to stop slavery's spread, and a former one-term congressman named Abraham Lincoln warned that a house divided against itself could not stand. From the Kansas-Nebraska Act to the guns at Fort Sumter, the nation walked, step by step, toward war.",
         readAloud: [
           { label: "Both forms — Weeks 3–4", title: "Meet Abraham Lincoln — Barbara Cary", pages: "pp. 45–50 (check ThriftBooks pricing first)", link: null },
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies and the Great Republic", pages: "pp. 160–169", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, The Story of the Great Republic", pages: "Bleeding Kansas to Fort Sumter", link: "https://archive.org/details/storygreatrepub00guergoog" },
           { label: "Primary source — selections", title: "Abraham Lincoln, 'House Divided' Speech (1858)", pages: null, link: null },
         ],
         primarySource: { label: "Primary source", title: "Abraham Lincoln, 'House Divided' Speech (1858) — selections", link: null },
@@ -715,7 +715,7 @@ export const HISTORIA_UNITS = [
         ],
         opening: "The guns fell silent at Appomattox, but the hardest questions remained. Four million people were suddenly free — but were they citizens? Could they vote? On what terms would the defeated South return? In five short years the Constitution was changed more deeply than at any time since the founding: three amendments abolished slavery, promised equal citizenship, and guaranteed the vote. A formerly enslaved people went to school, held office, and sent Hiram Revels to the Senate. And then, tragically, much of it was taken away. Reconstruction was a real fulfillment of the founding promise — and a betrayal of it — and it would have to be reclaimed.",
         readAloud: [
-          { label: "Teacher reference (free)", title: "Guerber, Story of the Thirteen Colonies and the Great Republic", pages: "pp. 196–202", link: "https://www.gutenberg.org/ebooks/17917" },
+          { label: "Teacher reference (free)", title: "Guerber, The Story of the Great Republic", pages: "Reconstruction", link: "https://archive.org/details/storygreatrepub00guergoog" },
           { label: "Primary source — both forms", title: "The Reconstruction Amendments (13th, 14th, 15th)", pages: "13th read in full; 14th and 15th paraphrased", link: "https://www.archives.gov/founding-docs/amendments-11-27" },
         ],
         primarySource: { label: "Primary source", title: "The 13th Amendment to the U.S. Constitution (1865)", link: "https://www.archives.gov/founding-docs/amendments-11-27" },
