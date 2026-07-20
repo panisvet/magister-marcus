@@ -15,7 +15,7 @@ const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
 
 // Fixed start of the school year: Week 1 = the week of Monday, Aug 17 2026.
 const SCHOOL_YEAR_START = '2026-08-17'
-const SCHOOL_START_V = 'aug17-2026.3-bibleclean' // bump to force a re-anchor migration
+const SCHOOL_START_V = 'aug17-2026.4-wonders' // bump to force a re-anchor migration
 
 // Ensure loaded data anchors to the current school-year start; re-seed if it changed.
 const migrate = (data) => {
@@ -120,6 +120,34 @@ function seedInto(subjects, entries, level, sid, wk, weekKey, { rhythm = true, r
       if (bib.nt[i + 1]) add('Bible', 'Thu', bib.nt[i + 1])
     }
   }
+  return { subjects: subs, entries: ents }
+}
+
+// ── Wonders science spine: the lessons scheduled for a given school week ─────
+// Wonders lessons carry a `week` (1–36). Both students do science together, so
+// these seed once per week as shared ("All") entries, on Mon/Wed/Fri.
+const WONDERS_SUBJECT = 'Science — Wonders'
+const WONDERS_DAYS = ['Mon', 'Wed', 'Fri']
+const wondersForWeek = (wk) => {
+  const out = []
+  for (const u of WONDERS_Y1) for (const l of (u.lessons || [])) if (l.week === wk) out.push({ unit: u, lesson: l })
+  return out
+}
+// Seed (or re-seed) this school week's Wonders lessons as shared entries.
+// Pure: returns new arrays. Clears this week's prior Wonders-seeded items first.
+function seedWonders(subjects, entries, wk, weekKey) {
+  const items = wondersForWeek(wk)
+  const ents = entries.filter((e) => !(e.week === weekKey && e.seed && e.wonders))
+  if (!items.length) return { subjects, entries: ents }
+  const subs = subjects.includes(WONDERS_SUBJECT) ? [...subjects] : [...subjects, WONDERS_SUBJECT]
+  items.forEach(({ unit, lesson }, i) => {
+    ents.push({
+      id: uid(), week: weekKey, subject: WONDERS_SUBJECT, day: WONDERS_DAYS[i % WONDERS_DAYS.length],
+      studentId: null, label: `${lesson.id} · ${lesson.title}`,
+      ref: { source: 'Wonders · Year One', unitTitle: unit.title, lessonId: lesson.id },
+      done: false, seed: true, wonders: true, min: 30, count: true,
+    })
+  })
   return { subjects: subs, entries: ents }
 }
 
@@ -277,7 +305,7 @@ export default function LessonPlanner() {
   const [fillOpen, setFillOpen] = useState(false)
   const dragSubj = useRef(null)
   const [dragOver, setDragOver] = useState(null)
-  const [fill, setFill] = useState({ level: 'Year 6', studentId: '', week: 1, rhythm: true, readings: true })
+  const [fill, setFill] = useState({ level: 'Year 6', studentId: '', week: 1, rhythm: true, readings: true, wonders: true })
   const [editEntry, setEditEntry] = useState(null) // entry object being edited
   const loaded = useRef(false)
   const saveTimer = useRef(null)
@@ -449,10 +477,17 @@ export default function LessonPlanner() {
     const sid = fill.studentId || null
     setData((d) => {
       const r = seedInto(d.subjects, d.entries, fill.level, sid, fill.week, weekStart, { rhythm: fill.rhythm, readings: fill.readings })
+      let subjects = r.subjects, entries = r.entries
       const seeded = [...(d.seeded || [])]
       const key = `${weekStart}|${sid}`
       if (!seeded.includes(key)) seeded.push(key)
-      return { ...d, subjects: r.subjects, entries: r.entries, seeded }
+      if (fill.wonders) {
+        const rw = seedWonders(subjects, entries, fill.week, weekStart)
+        subjects = rw.subjects; entries = rw.entries
+        const wk = `${weekStart}|__wonders__`
+        if (!seeded.includes(wk)) seeded.push(wk)
+      }
+      return { ...d, subjects, entries, seeded }
     })
     setFillOpen(false)
   }
@@ -487,6 +522,11 @@ export default function LessonPlanner() {
         subjects = r.subjects; entries = r.entries
         seeded.push(`${weekStart}|${s.id}`)
       })
+      // Wonders science for this week (shared), re-seeded to match the new week number.
+      const rw = seedWonders(subjects, entries, n, weekStart)
+      subjects = rw.subjects; entries = rw.entries
+      const wkey = `${weekStart}|__wonders__`
+      if (!seeded.includes(wkey)) seeded.push(wkey)
       return { ...d, yearStart, subjects, entries, seeded }
     })
   }
@@ -502,7 +542,10 @@ export default function LessonPlanner() {
     const wk = schoolWeekFor(data.yearStart, data.breaks, weekStart)
     if (!wk) return
     const need = data.students.filter((s) => effLevel(s) && !(data.seeded || []).includes(`${weekStart}|${s.id}`))
-    if (need.length === 0) return
+    // Wonders science seeds once per week (shared), as long as the household has a student.
+    const wondersKey = `${weekStart}|__wonders__`
+    const needWonders = data.students.length > 0 && wondersForWeek(wk).length > 0 && !(data.seeded || []).includes(wondersKey)
+    if (need.length === 0 && !needWonders) return
     setData((d) => {
       let subjects = [...d.subjects], entries = [...d.entries]
       const seeded = [...(d.seeded || [])]
@@ -511,6 +554,11 @@ export default function LessonPlanner() {
         subjects = r.subjects; entries = r.entries
         seeded.push(`${weekStart}|${s.id}`)
       })
+      if (needWonders) {
+        const r = seedWonders(subjects, entries, wk, weekStart)
+        subjects = r.subjects; entries = r.entries
+        seeded.push(wondersKey)
+      }
       return { ...d, subjects, entries, seeded }
     })
   }, [weekStart, data.students, data.yearStart, data.seeded, data.breaks, effLevel])
@@ -852,9 +900,13 @@ export default function LessonPlanner() {
                   <input type="checkbox" checked={fill.rhythm} onChange={(e) => setFill({ ...fill, rhythm: e.target.checked })} />
                   Daily &amp; weekly rhythm
                 </label>
-                <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: "'Crimson Pro',serif", textTransform: 'none', letterSpacing: 0, color: '#e8dfc8', fontSize: 14 }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: "'Crimson Pro',serif", textTransform: 'none', letterSpacing: 0, color: '#e8dfc8', fontSize: 14, marginBottom: 4 }}>
                   <input type="checkbox" checked={fill.readings} onChange={(e) => setFill({ ...fill, readings: e.target.checked })} />
                   Week {fill.week} readings ({readingCount} items)
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: "'Crimson Pro',serif", textTransform: 'none', letterSpacing: 0, color: '#e8dfc8', fontSize: 14 }}>
+                  <input type="checkbox" checked={fill.wonders} onChange={(e) => setFill({ ...fill, wonders: e.target.checked })} />
+                  Wonders science ({wondersForWeek(fill.week).length} lesson{wondersForWeek(fill.week).length === 1 ? '' : 's'}, shared)
                 </label>
               </div>
 
