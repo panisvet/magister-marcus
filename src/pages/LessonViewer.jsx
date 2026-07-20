@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import TeacherGuide, { ageToForm } from '../components/TeacherGuide.jsx'
+import VocabChips from '../components/VocabChips.jsx'
 import { UNITS } from '../data/lessons.js'
 import TopNav from '../components/TopNav.jsx'
 
@@ -345,7 +346,7 @@ export default function LessonViewer({ units = UNITS }) {
                   <div className="lv-card">
                     <div className="lv-chard" style={{background:'#1a1028'}}>Vocabulary</div>
                     <div className="lv-cbody">
-                      {l.vocab.map(v => <span key={v} className="lv-vchip">{v}</span>)}
+                      <VocabChips words={l.vocab} />
                     </div>
                   </div>
                 )}

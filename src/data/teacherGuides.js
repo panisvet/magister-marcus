@@ -13,6 +13,8 @@ import { GUIDES as G4, VOCAB as V4 } from "./teacherGuides/unit4.js";
 import { GUIDES as G5, VOCAB as V5 } from "./teacherGuides/unit5.js";
 import { GUIDES as G6, VOCAB as V6 } from "./teacherGuides/unit6.js";
 import { GUIDES as G7, VOCAB as V7 } from "./teacherGuides/unit7.js";
+import { VOCAB as VExtra } from "./teacherGuides/extraVocab.js";
 
 export const TEACHER_GUIDES = { ...G1, ...G2, ...G3, ...G4, ...G5, ...G6, ...G7 };
-export const VOCAB_DEFS = { ...V1, ...V2, ...V3, ...V4, ...V5, ...V6, ...V7 };
+// Extra defs first so any unit-specific definition overrides them on overlap.
+export const VOCAB_DEFS = { ...VExtra, ...V1, ...V2, ...V3, ...V4, ...V5, ...V6, ...V7 };
