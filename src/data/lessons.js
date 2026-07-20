@@ -2125,3 +2125,102 @@ export const UNITS = [
 
 
 ];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TEACHER GUIDES  (append-only; attached to lessons by id — no need to edit the
+// UNITS array inline). To add a guide for another lesson, add an entry to
+// TEACHER_GUIDES keyed by its lesson id. VOCAB_DEFS powers vocab tooltips.
+// ─────────────────────────────────────────────────────────────────────────────
+export const VOCAB_DEFS = {
+  observation: "Something you notice by looking or listening carefully — before naming or explaining it.",
+  exoskeleton: "A hard shell on the OUTSIDE of an animal that supports and protects it, like an insect's.",
+  segment: "One section of a body. Insects have three main body segments.",
+  antenna: "A feeler on an insect's head, used to smell, touch, and sense the world. (Two = antennae.)",
+};
+
+const TEACHER_GUIDES = {
+  "1.1": {
+    glance: {
+      time: "30–40 min",
+      where: "Outdoor start, indoor finish",
+      prep: "5 min",
+      heart: "Careful looking comes before naming.",
+      oneThing: "Make them SORT the creatures and say WHY — before anyone opens a book.",
+    },
+    background: {
+      text: [
+        "You are not teaching “insects” today. You are teaching how a scientist begins — by looking hard and honestly before reaching for a name. The children will gather small creatures, look closely with a magnifying glass, and sort them into groups by rules THEY invent. You are not correcting their rules yet. You are watching them think.",
+        "The hidden target is the definition that unlocks the unit: an insect has three body parts, six legs, usually wings, and often antennae. A spider is NOT an insect — eight legs, two body parts. A pill bug isn't either. Don't announce this today. Let them bump into it. Tomorrow's Fabre reading hands them the rule; today they earn the questions.",
+      ],
+      keyFacts: [
+        "Insect = 6 legs, 3 body parts, usually wings/antennae.",
+        "Spider = 8 legs, 2 body parts — an arachnid, not an insect.",
+        "The hard outer shell is an exoskeleton (skeleton on the outside).",
+        "A segment is one body section; antennae are the feelers.",
+        "“Bug” in everyday speech means any creepy-crawly; to a scientist it's narrower. Either is fine today.",
+      ],
+      sayItAloud: [
+        "Fabre = “FAH-bruh”",
+        "exoskeleton = “EK-so-SKEL-uh-tun”",
+        "antenna / antennae = “an-TEN-uh / an-TEN-ee”",
+      ],
+    },
+    supplies: [
+      { item: "4–6 small creatures OR clear photos", note: "Free: catch a housefly, ant, ladybug, pill bug. No yard? Photos of bee, spider, pill bug, housefly, ladybug, centipede." },
+      { item: "Hand lens (magnifying glass)", note: "Dollar-store lens is fine. No lens? A clear jar of water, or phone camera zoom." },
+      { item: "A clear jar or cup", note: "Observe a live insect safely, then release." },
+      { item: "Nature journal + pencil", note: "Any blank notebook; colored pencils optional." },
+    ],
+    prepNote: "5 minutes. Gather creatures or open the photos; set out lenses and journals. No reading today — that's intentional.",
+    flow: [
+      { min: "5", text: "Gather & set the rule. Put creatures/images on the table. Say: “Before we name a single one, we're going to be scientists and just look. Looking comes first.”" },
+      { min: "10", text: "Sort. “Put these into groups — any groups you like — but tell me your rule.” Ask “why did you put those together?” Do NOT correct." },
+      { min: "8", text: "Look closely. Hand out lenses. “Count the legs. How many body parts? Any feelers? Any wings?” Say the numbers aloud. Resist naming." },
+      { min: "3", text: "Slow the pencil. Require three full minutes of looking before drawing. (Rushers ruin the sketch — you can time it.)" },
+      { min: "10", text: "Journal. Draw one creature carefully and label what they can." },
+      { min: "2", text: "Narrate & close. Each child tells you what they noticed and ONE thing they can't yet explain. Leave that question hanging — tomorrow Fabre answers it." },
+    ],
+    discussion: {
+      launch: "Which of these are most alike? How can you tell? What's the same about all of them? What's different?",
+      formIA: "“What did you see? Show me. What are you still wondering about?” Keep it concrete — what they saw, not ideas.",
+      formIIA: "“Describe everything you observed. What one thing can you not yet explain?”",
+      ifAsked: [
+        { q: "Is a spider a bug?", a: "Great question. Count its legs and hold that thought — we'll find out for sure this week." },
+        { q: "Do insects feel pain?", a: "Scientists still argue about that. They react to danger, but whether they feel the way we do, nobody fully knows. A good mystery to sit with." },
+        { q: "What's this one called?", a: "Let's not name it yet — let's describe it so well that when we find the name, we'll really understand it." },
+      ],
+    },
+    worship: {
+      scripture: "“O Lord, how manifold are Thy works! In wisdom hast Thou made them all.” (Psalm 103:24 LXX / 104:24)",
+      patristic: "St. Anthony the Great said his “book” was the nature of created things, which he could read whenever he wished to hear the words of God. Today your children opened that book.",
+      godward: "“God made something as small as this fly with more parts than we can count, and we've barely started looking. What does that tell us about the One who made it?”",
+    },
+    challenges: [
+      { problem: "The child rushes the drawing.", fix: "Set a 3-minute timer for looking before the pencil moves. “Scientists look longer than they draw.”" },
+      { problem: "“I don't know what to write.”", fix: "Good — that's honest. Have them write the question instead of an answer. Uncertainty is the right starting posture." },
+      { problem: "They want the names NOW.", fix: "Hold the line gently: “Naming is tomorrow's job. Today we earn it.” The delay is the pedagogy." },
+      { problem: "A squeamish child.", fix: "Use images or a jarred specimen at arm's length. Wonder doesn't require touching." },
+    ],
+    models: {
+      formIA: "“The little grey one rolls into a ball when I touch it. It has lots of legs, more than the fly. The fly has wings and it's shiny. I don't know why the grey one rolls up.” — Concrete, observed, honest about the mystery.",
+      formIIA: "“I sorted them into flyers and crawlers first, but then I noticed the ladybug and the fly both have six legs and three body parts, while the spider has eight legs and only two parts. So maybe legs are a better rule than flying. The thing I can't explain is how the pill bug has so many legs and still isn't a spider or an insect.”",
+      journal: "A large, careful drawing of one creature; head/legs/wings labeled (spelling doesn't matter for IA); 2 sentences (IA) or a paragraph (IIA) beneath, ending in a question.",
+    },
+    extensions: {
+      minimum: "15 min: sort the creatures, look with a lens, count legs aloud, one oral narration. Skip the journal — you've still taught the whole idea.",
+      goOutside: "Take the lens on a “six-legged hunt” — tally six-legged vs. eight-legged creatures found.",
+      make: "Start a “Creatures We've Met” page at the back of the journal to add to all year.",
+      readMore: "Preview the first page of tomorrow's Fabre chapter (1.2) if the child is hungry.",
+      connect: "The bee is a symbol of the Church's industry and of St. John Chrysostom (“golden-mouthed,” like honey) — mention it if honeycomb comes up.",
+      multiAge: "Older child writes his paragraph while the younger colors and labels the drawing. Or let the older be SCRIBE for the younger's oral narration.",
+      youngest: "For a 5–6-year-old: just have them find the six legs and count them out loud. That's a complete first science lesson.",
+      digDeeper: null,
+    },
+  },
+};
+
+for (const u of UNITS) {
+  for (const l of (u.lessons || [])) {
+    if (TEACHER_GUIDES[l.id]) l.teacherGuide = TEACHER_GUIDES[l.id];
+  }
+}

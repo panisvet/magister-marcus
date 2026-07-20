@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
+import TeacherGuide, { ageToForm } from '../components/TeacherGuide.jsx'
 import { UNITS } from '../data/lessons.js'
 import TopNav from '../components/TopNav.jsx'
 
@@ -384,6 +385,7 @@ export default function LessonViewer({ units = UNITS }) {
               </div>
             </div>
 
+            <TeacherGuide guide={l.teacherGuide} form={ageToForm(age)} />
             {/* Bottom nav */}
             <div className="lv-bnav">
               <button className="lv-nbtn" disabled={ci===0} onClick={() => setCi(ci-1)}>← Previous</button>
