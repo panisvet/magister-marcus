@@ -1,67 +1,129 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   TeacherGuide.css
+   Inherits the app's design tokens from index.css (:root) so the guide ALWAYS
+   matches the surrounding UI — same text, surfaces, gold, and borders. If the
+   app theme ever changes, the guide follows automatically. No hardcoded theme.
+   Tokens used: --text --muted --gold --gold-lt --bg-card --bg-hover --border
+                --radius-lg --font-heading --font-body --font-latin
+   ───────────────────────────────────────────────────────────────────────────── */
+
 .tg {
-  --tg-gold: var(--gold, #c9902a);
-  --tg-gold2: var(--gold2, #e8b84b);
-  --tg-parch: var(--parch, #f7edcc);
-  --tg-ink: #2b2213;
-  --tg-line: color-mix(in srgb, var(--tg-gold) 35%, transparent);
-  --tg-card: color-mix(in srgb, var(--tg-parch) 92%, #fff);
-  --tg-radius: 14px;
+  /* local aliases with safe fallbacks in case a token is missing */
+  --tg-gold:  var(--gold, #c9902a);
+  --tg-gold2: var(--gold-lt, #e8b84b);
+  --tg-text:  var(--text, #f7edcc);
+  --tg-muted: var(--muted, #9e8c72);
+  --tg-card:  var(--bg-card, #13100b);
+  --tg-card2: var(--bg-hover, #1c1710);
+  --tg-line:  var(--border, #2e2518);
+  --tg-radius: var(--radius-lg, 14px);
+
   margin-top: 1.75rem;
-  font-family: "Crimson Pro", Georgia, serif;
-  color: var(--tg-ink);
+  font-family: var(--font-body, "Crimson Pro", Georgia, serif);
+  color: var(--tg-text);
   line-height: 1.6;
 }
-.tg__bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-top: 2px solid var(--tg-line); padding-top: 1rem; }
-.tg__heading { font-family: "Cinzel", serif; font-size: 1.15rem; letter-spacing: 0.04em; color: var(--tg-gold); margin: 0; }
-.tg__print { font-family: "Crimson Pro", serif; font-size: 0.95rem; background: transparent; color: var(--tg-gold); border: 1px solid var(--tg-line); border-radius: 999px; padding: 0.4rem 0.9rem; cursor: pointer; min-height: 44px; transition: background 0.15s ease; }
-.tg__print:hover { background: color-mix(in srgb, var(--tg-gold) 12%, transparent); }
-.tg-glance { background: linear-gradient(180deg, color-mix(in srgb, var(--tg-gold) 14%, transparent), transparent); border: 1px solid var(--tg-line); border-left: 4px solid var(--tg-gold); border-radius: var(--tg-radius); padding: 1rem 1.15rem; margin: 1rem 0 1.25rem; }
-.tg-glance__row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.6rem; }
-.tg-glance__chip { font-size: 0.9rem; background: color-mix(in srgb, var(--tg-gold) 18%, transparent); border-radius: 999px; padding: 0.25rem 0.7rem; white-space: nowrap; }
-.tg-glance__heart, .tg-glance__one { margin: 0.35rem 0; }
-.tg-glance__one { color: color-mix(in srgb, var(--tg-ink) 82%, var(--tg-gold)); }
+
+/* ── Header bar ───────────────────────────────────────────────────────────── */
+.tg__bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-top: 2px solid var(--tg-gold); padding-top: 1rem; }
+.tg__heading { font-family: var(--font-heading, "Cinzel", serif); font-size: 1.15rem; letter-spacing: 0.04em; color: var(--tg-gold2); margin: 0; }
+.tg__print { font-family: var(--font-body, "Crimson Pro", serif); font-size: 0.95rem; background: transparent; color: var(--tg-gold2); border: 1px solid var(--tg-gold); border-radius: 999px; padding: 0.4rem 0.9rem; cursor: pointer; min-height: 44px; transition: background 0.15s ease; }
+.tg__print:hover { background: rgba(201, 144, 42, 0.16); }
+
+/* ── At-a-glance box ──────────────────────────────────────────────────────── */
+.tg-glance {
+  background: rgba(201, 144, 42, 0.10);
+  border: 1px solid var(--tg-line);
+  border-left: 4px solid var(--tg-gold);
+  border-radius: var(--tg-radius);
+  padding: 1rem 1.15rem;
+  margin: 1rem 0 1.25rem;
+  color: var(--tg-text);
+}
+.tg-glance__row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.7rem; }
+.tg-glance__chip {
+  font-size: 0.9rem;
+  color: var(--tg-gold2);
+  background: rgba(201, 144, 42, 0.14);
+  border: 1px solid var(--tg-line);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  white-space: nowrap;
+}
+.tg-glance__heart, .tg-glance__one { margin: 0.4rem 0; color: var(--tg-text); }
+.tg-glance__heart strong, .tg-glance__one strong { color: var(--tg-gold2); font-family: var(--font-heading, "Cinzel", serif); font-weight: 600; }
+
+/* ── Collapsible sections (accordion) ─────────────────────────────────────── */
 .tg-section { border: 1px solid var(--tg-line); border-radius: var(--tg-radius); margin-bottom: 0.7rem; overflow: hidden; background: var(--tg-card); }
-.tg-section__head { width: 100%; display: flex; align-items: center; gap: 0.7rem; background: transparent; border: 0; cursor: pointer; text-align: left; padding: 0.85rem 1rem; min-height: 52px; font-family: "Cinzel", serif; font-size: 1rem; letter-spacing: 0.03em; color: var(--tg-ink); }
-.tg-section.is-open .tg-section__head { color: var(--tg-gold); }
+.tg-section__head {
+  width: 100%; display: flex; align-items: center; gap: 0.7rem;
+  background: var(--tg-card2); border: 0; cursor: pointer; text-align: left;
+  padding: 0.85rem 1rem; min-height: 52px;
+  font-family: var(--font-heading, "Cinzel", serif); font-size: 1rem; letter-spacing: 0.03em;
+  color: var(--tg-text);
+}
+.tg-section.is-open .tg-section__head { color: var(--tg-gold2); }
 .tg-section__icon { font-size: 1.1rem; }
 .tg-section__title { flex: 1; }
-.tg-section__chevron { font-size: 1.3rem; line-height: 1; color: var(--tg-gold); width: 1.5rem; text-align: center; }
-.tg-section__body { padding: 0.25rem 1.15rem 1.1rem; animation: tg-fade 0.18s ease; }
+.tg-section__chevron { font-size: 1.3rem; line-height: 1; color: var(--tg-gold2); width: 1.5rem; text-align: center; }
+.tg-section__body { padding: 0.6rem 1.15rem 1.1rem; color: var(--tg-text); animation: tg-fade 0.18s ease; }
+.tg-section__body p { color: var(--tg-text); }
 @keyframes tg-fade { from { opacity: 0; transform: translateY(-2px); } to { opacity: 1; } }
-.tg-label { font-family: "Cinzel", serif; font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--tg-gold); margin: 0.9rem 0 0.3rem; }
+
+/* ── Shared text bits ─────────────────────────────────────────────────────── */
+.tg-label { font-family: var(--font-heading, "Cinzel", serif); font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--tg-gold2); margin: 0.9rem 0 0.3rem; }
 .tg-list { margin: 0.3rem 0; padding-left: 1.2rem; }
 .tg-list li { margin: 0.25rem 0; }
-.tg-note, .tg-min, .tg-dig { background: color-mix(in srgb, var(--tg-gold) 8%, transparent); border-radius: 8px; padding: 0.5rem 0.7rem; margin: 0.6rem 0; }
-.tg-aloud { font-style: italic; color: color-mix(in srgb, var(--tg-ink) 75%, #000); margin-top: 0.7rem; }
+.tg-note, .tg-min, .tg-dig { background: rgba(201, 144, 42, 0.10); border: 1px solid var(--tg-line); border-radius: 8px; padding: 0.5rem 0.7rem; margin: 0.6rem 0; }
+.tg-aloud { font-style: italic; color: var(--tg-muted); margin-top: 0.7rem; }
+
+/* ── Supplies table ───────────────────────────────────────────────────────── */
 .tg-table { width: 100%; border-collapse: collapse; margin: 0.4rem 0; }
 .tg-table th, .tg-table td { border-bottom: 1px solid var(--tg-line); padding: 0.55rem 0.5rem; text-align: left; vertical-align: top; }
-.tg-table th { width: 38%; font-weight: 600; }
-.tg-table td { color: color-mix(in srgb, var(--tg-ink) 88%, #000); }
+.tg-table th { width: 38%; font-weight: 600; color: var(--tg-text); }
+.tg-table td { color: var(--tg-muted); }
+
+/* ── Teaching flow ────────────────────────────────────────────────────────── */
 .tg-flow { list-style: none; counter-reset: step; margin: 0; padding: 0; }
 .tg-flow li { counter-increment: step; display: grid; grid-template-columns: 2rem auto 1fr; gap: 0.6rem; align-items: start; padding: 0.55rem 0; border-bottom: 1px dashed var(--tg-line); }
-.tg-flow li::before { content: counter(step); font-family: "Cinzel", serif; color: #fff; background: var(--tg-gold); width: 1.7rem; height: 1.7rem; border-radius: 50%; display: grid; place-items: center; font-size: 0.85rem; }
-.tg-flow__time { font-size: 0.8rem; color: var(--tg-gold); white-space: nowrap; padding-top: 0.15rem; }
-.tg-flow__text { grid-column: 3; }
+.tg-flow li::before { content: counter(step); font-family: var(--font-heading, "Cinzel", serif); color: #1a1206; background: var(--tg-gold2); width: 1.7rem; height: 1.7rem; border-radius: 50%; display: grid; place-items: center; font-size: 0.85rem; font-weight: 700; }
+.tg-flow__time { font-size: 0.8rem; color: var(--tg-gold2); white-space: nowrap; padding-top: 0.15rem; }
+.tg-flow__text { grid-column: 3; color: var(--tg-text); }
+
+/* ── Form IA / IIA blocks ─────────────────────────────────────────────────── */
 .tg-forms { display: grid; gap: 0.6rem; margin: 0.6rem 0; }
 @media (min-width: 720px) { .tg-forms { grid-template-columns: 1fr 1fr; } }
-.tg-form { border-radius: 10px; padding: 0.6rem 0.8rem; border: 1px solid var(--tg-line); }
-.tg-form--ia  { background: color-mix(in srgb, #6ea86e 12%, transparent); }
-.tg-form--iia { background: color-mix(in srgb, #6e86c9 12%, transparent); }
-.tg-form__tag { display: inline-block; font-family: "Cinzel", serif; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--tg-gold); margin-right: 0.4rem; }
+.tg-form { border-radius: 10px; padding: 0.6rem 0.8rem; border: 1px solid var(--tg-line); color: var(--tg-text); }
+.tg-form--ia  { background: rgba(110, 168, 110, 0.14); }
+.tg-form--iia { background: rgba(110, 134, 201, 0.16); }
+.tg-form__tag { display: inline-block; font-family: var(--font-heading, "Cinzel", serif); font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--tg-gold2); margin-right: 0.4rem; }
+
+/* ── Q&A + challenges (definition lists) ──────────────────────────────────── */
 .tg-qa__item, .tg-challenges__item { margin: 0.5rem 0; }
-.tg-qa dt, .tg-challenges dt { font-weight: 600; }
-.tg-qa dd, .tg-challenges dd { margin: 0.15rem 0 0 0; color: color-mix(in srgb, var(--tg-ink) 85%, #000); }
+.tg-qa dt, .tg-challenges dt { font-weight: 600; color: var(--tg-text); }
+.tg-qa dd, .tg-challenges dd { margin: 0.15rem 0 0 0; color: var(--tg-muted); }
+
+/* ── Worship block ────────────────────────────────────────────────────────── */
 .tg-worship { border-left: 3px solid var(--tg-gold2); padding-left: 0.9rem; }
-.tg-scripture { font-family: "IM Fell English", Georgia, serif; font-style: italic; font-size: 1.08rem; margin: 0.2rem 0 0.6rem; color: color-mix(in srgb, var(--tg-ink) 80%, var(--tg-gold)); }
-.tg-godward { margin-top: 0.5rem; }
+.tg-scripture { font-family: var(--font-latin, "IM Fell English", Georgia, serif); font-style: italic; font-size: 1.08rem; margin: 0.2rem 0 0.6rem; color: var(--tg-gold2); }
+.tg-godward { margin-top: 0.5rem; color: var(--tg-text); }
+
+/* ── PRINT: force light background + black ink, expand everything ──────────── */
 @media print {
+  .tg { color: #000 !important; }
   .tg__print { display: none !important; }
   .tg-section__body[hidden] { display: block !important; }
   .tg-section, .tg-glance { border: 1px solid #999; background: #fff !important; break-inside: avoid; }
+  .tg-section__head { background: #f3ead2 !important; color: #000 !important; }
   .tg-section__chevron { display: none; }
-  .tg, .tg-scripture, .tg-godward { color: #000 !important; }
-  .tg-flow li::before { background: #000; }
+  .tg, .tg-scripture, .tg-godward, .tg-section__body, .tg-section__body p,
+  .tg-glance__heart, .tg-glance__one, .tg-flow__text, .tg-form,
+  .tg-qa dt, .tg-qa dd, .tg-challenges dt, .tg-challenges dd, .tg-table th, .tg-table td { color: #000 !important; }
+  .tg-glance__chip { color: #000 !important; background: #f3ead2 !important; }
+  .tg-flow li::before { background: #000; color: #fff; }
 }
+
+/* ── Small screens ────────────────────────────────────────────────────────── */
 @media (max-width: 480px) {
   .tg-flow li { grid-template-columns: 1.7rem 1fr; }
   .tg-flow__time { grid-column: 2; }
