@@ -52,7 +52,7 @@ export const GUIDES = {
     },
     worship: {
       scripture: "“He appointed the moon for seasons: the sun knoweth his going down.” (Psalm 103:19 LXX / 104:19)",
-      patristic: "St. Basil the Great, in the Hexaemeron, marveled that the sun's daily course was set by God “not without a purpose, but for the use of living beings” — even something as ordinary as a shadow's swing was made to serve us.",
+      patristic: "St. Basil the Great, in the Hexaemeron, marveled that the sun's daily course was set by God not without purpose but for the use of living beings — even something as ordinary as a shadow's swing was made to serve us.",
       godward: "“This stick and its shadow have been quietly telling time since before clocks existed. God set that rhythm going — and today, for the first time, you watched it with your own eyes.”",
     },
     challenges: [
@@ -131,7 +131,7 @@ export const GUIDES = {
     },
     worship: {
       scripture: "“Thou hast made summer and winter.” (Psalm 73:17 LXX / 74:17)",
-      patristic: "St. Basil the Great wrote in the Hexaemeron that the sun's alternating course was arranged “for the perfect fulfillment of the year,” so that day, night, and season would each serve the good order of creation.",
+      patristic: "St. Basil the Great wrote in the Hexaemeron that the sun's alternating course was arranged for the perfect fulfilling of the year, so that day, night, and season would each serve the good order of creation.",
       godward: "“The same tilt that gives us summer strawberries also gives us winter snow. One quiet lean of the Earth, doing two different kinds of good, all year round.”",
     },
     challenges: [
