@@ -141,9 +141,20 @@ export function playUrl(url, fallbackText = '') {
 
     const audio = new Audio(url)
     currentAudio = audio
-    audio.onended = resolve
-    audio.onerror = () => serverSpeak(fallbackText, resolve, token)  // clip missing → Grok
-    audio.play().catch(() => serverSpeak(fallbackText, resolve, token))
+    // Single-fire latch: a failed clip fires BOTH `onerror` and `play().catch`.
+    // Without this latch that calls the Grok fallback twice → two audio streams
+    // playing the same blob → the echo. Fall back to Grok at most once.
+    let settled = false
+    const finish = () => { if (!settled) { settled = true; resolve() } }
+    const fallback = () => {
+      if (settled) return
+      settled = true
+      try { audio.pause() } catch { /* noop */ }   // silence the clip before Grok
+      serverSpeak(fallbackText, resolve, token)     // exactly one Grok attempt
+    }
+    audio.onended = finish
+    audio.onerror = fallback                         // 404 / decode failure → Grok
+    audio.play().catch(fallback)                     // autoplay / interrupt → same latch
   })
 }
 
