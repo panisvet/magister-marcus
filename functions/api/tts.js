@@ -1,6 +1,29 @@
 // Cloudflare Pages Function: /api/tts
 // Proxies to xAI TTS API — keeps the API key server-side
 
+// Prepare Latin text for the Italian-voiced TTS so it reads ECCLESIASTICAL
+// Latin correctly instead of spelling letters or reading punctuation aloud.
+//   1. Strip dictionary shorthand: adjective endings ", -a, -um" and stray
+//      hyphens (Leo reads "-" literally as "dash" — the "…dash loom" bug).
+//   2. Respell so Italian's own rules yield the right sound:
+//        ae/oe → e        caelum→celum ("CHEH-loom"), puellae→puelle
+//        j     → i        Jesus→Iesus ("YEH-zoos")
+//        ti+vowel → zi    gratia→grazia ("GRAH-tsee-ah")  [not after s/t/x]
+// Only the spoken text is changed; the app still DISPLAYS the real spelling.
+function latinForSpeech(input) {
+  let t = String(input)
+  // Expand 2-1-2 adjective shorthand so Leo speaks the three forms an adjective
+  // is learned as: "magnus, -a, -um" → "magnus, magna, magnum".
+  t = t.replace(/(\p{L}+)us,\s*-a,\s*-um/giu, (_m, stem) => `${stem}us, ${stem}a, ${stem}um`)
+  t = t.replace(/,\s*-\p{L}+/gu, '')        // drop any other leftover ", -ending" shorthand
+  t = t.replace(/-/g, ' ')                   // any remaining hyphen → space (never "dash")
+  t = t.replace(/ae/gi, 'e').replace(/oe/gi, 'e')
+  t = t.replace(/j/g, 'i').replace(/J/g, 'I')
+  t = t.replace(/(?<![stxSTX])ti(?=[aeiouAEIOUāēīōūàèéìòù])/g, 'zi')
+  t = t.replace(/(?<![stxSTX])TI(?=[AEIOU])/g, 'ZI')
+  return t.replace(/\s+/g, ' ').trim()
+}
+
 export async function onRequestPost({ request, env }) {
   const apiKey = env.XAI_API_KEY
   if (!apiKey) {
@@ -38,7 +61,7 @@ export async function onRequestPost({ request, env }) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      text,
+      text: latinForSpeech(text),
       voice_id: voice_id || 'leo',
       // `language` is required by xAI. Latin isn't a named TTS language, so we
       // default to Italian ("it") — its phonetics match the ecclesiastical

@@ -47,6 +47,14 @@ function ordinal(n) {
   return `${num}${suffix}`
 }
 
+// A reading's vocab_hints may be plain strings (maxey/phaedrus/etc.) or
+// objects {latin, english} (vulgate). Render either without crashing.
+function hintText(h) {
+  if (h == null) return ''
+  if (typeof h === 'string') return h
+  return [h.latin, h.english].filter(Boolean).join(' — ') || h.word || ''
+}
+
 function findReading(readingKey) {
   if (!readingKey) return null
   const [source, id] = readingKey.split('-')
@@ -523,7 +531,7 @@ function LectioTab({ lesson, onComplete }) {
                 borderRadius: 4,
                 fontSize: '0.82rem',
                 color: 'var(--text)',
-              }}>{h}</span>
+              }}>{hintText(h)}</span>
             ))}
           </div>
         </div>
@@ -567,7 +575,7 @@ function LectioTab({ lesson, onComplete }) {
           {sup.vocab_hints?.length > 0 && (
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', margin: '0.75rem 0' }}>
               {sup.vocab_hints.map((h, i) => (
-                <span key={i} style={{ padding: '0.2rem 0.6rem', background: 'rgba(201,144,42,0.1)', border: '1px solid rgba(201,144,42,0.2)', borderRadius: 4, fontSize: '0.82rem', color: 'var(--text)' }}>{h}</span>
+                <span key={i} style={{ padding: '0.2rem 0.6rem', background: 'rgba(201,144,42,0.1)', border: '1px solid rgba(201,144,42,0.2)', borderRadius: 4, fontSize: '0.82rem', color: 'var(--text)' }}>{hintText(h)}</span>
               ))}
             </div>
           )}
