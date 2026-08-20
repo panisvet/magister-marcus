@@ -181,6 +181,8 @@ const prettyWeek = (mondayStr) => {
   const opt = { month: 'short', day: 'numeric' }
   return `${m.toLocaleDateString(undefined, opt)} – ${f.toLocaleDateString(undefined, opt)}`
 }
+const prettyDate = (dateStr) =>
+  new Date(dateStr + 'T00:00:00').toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })
 
 const EMPTY = () => ({ students: [], subjects: [...DEFAULT_SUBJECTS], entries: [], yearStart: SCHOOL_YEAR_START, seeded: [], breaks: [], dayOffs: [], schoolStartV: SCHOOL_START_V })
 
@@ -302,6 +304,21 @@ const CSS = `
 .lp-btn.danger{background:transparent;color:#d98a6a;border-color:#5a3020;}
 .lp-btn.danger:hover{background:#2a1410;}
 .lp-empty{color:#5a4a38;font-style:italic;font-size:13px;padding:24px;text-align:center;}
+
+/* Plan of the Day — printable sheet (hidden on screen, shown only when printing) */
+.lp-print-sheet{display:none;}
+@media print{
+  body *{visibility:hidden !important;}
+  .lp-print-sheet,.lp-print-sheet *{visibility:visible !important;}
+  .lp-print-sheet{display:block !important;position:absolute;top:0;left:0;width:100%;background:#fff;}
+  .lp-print-page{page-break-after:always;padding:32px 36px;font-family:Georgia,'Times New Roman',serif;color:#1a1a1a;}
+  .lp-print-page:last-child{page-break-after:auto;}
+  .lp-print-h{font-size:22px;font-weight:bold;border-bottom:2px solid #333;padding-bottom:8px;margin-bottom:4px;}
+  .lp-print-sub{font-size:13px;color:#555;font-style:italic;margin-bottom:18px;}
+  .lp-print-subj{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#7a5c3e;margin:16px 0 5px;font-weight:bold;}
+  .lp-print-item{display:flex;gap:9px;align-items:flex-start;font-size:14px;line-height:1.4;margin-bottom:7px;}
+  .lp-print-box{width:13px;height:13px;border:1.5px solid #333;margin-top:2px;flex-shrink:0;}
+}
 `
 
 export default function LessonPlanner() {
@@ -318,8 +335,18 @@ export default function LessonPlanner() {
   const [dragOver, setDragOver] = useState(null)
   const [fill, setFill] = useState({ level: 'Year 6', studentId: '', week: 1, rhythm: true, readings: true, wonders: true })
   const [editEntry, setEditEntry] = useState(null) // entry object being edited
+  const [printTarget, setPrintTarget] = useState(null) // { date, studentId } for the one student's plan-of-the-day sheet being printed
   const loaded = useRef(false)
   const saveTimer = useRef(null)
+
+  // Fire the browser print dialog once the printable sheet has rendered, then clear it afterward.
+  useEffect(() => {
+    if (!printTarget) return
+    const t = setTimeout(() => window.print(), 60)
+    const clear = () => setPrintTarget(null)
+    window.addEventListener('afterprint', clear)
+    return () => { clearTimeout(t); window.removeEventListener('afterprint', clear) }
+  }, [printTarget])
 
   // ── Load: try server, fall back to localStorage ──
   useEffect(() => {
@@ -534,6 +561,29 @@ export default function LessonPlanner() {
   const currentWk = schoolWeekFor(data.yearStart, data.breaks, weekStart)
   const isBreak = (data.breaks || []).includes(weekStart)
 
+  // ── Plan of the Day: one printable sheet per student for a given calendar date ──
+  const bySubject = (items) => {
+    const map = {}
+    items.forEach((e) => { (map[e.subject] ||= []).push(e) })
+    return data.subjects.filter((s) => map[s]).map((s) => [s, map[s]])
+  }
+  // studentId: a specific student's id, or null for the shared/no-student fallback sheet
+  const planFor = (dateStr, studentId) => {
+    const d = new Date(dateStr + 'T00:00:00')
+    const dow = (d.getDay() + 6) % 7 // Mon=0 .. Sun=6
+    if (dow >= 5) return { weekend: true, dateStr }
+    const week = iso(mondayOf(d))
+    const day = DAYS[dow]
+    const dayOff = (data.dayOffs || []).includes(dateStr)
+    const wk = schoolWeekFor(data.yearStart, data.breaks, week)
+    const ents = data.entries.filter((e) => e.week === week && e.day === day)
+    const student = studentId ? studentsById[studentId] : null
+    const items = student
+      ? ents.filter((e) => (e.studentId || null) === student.id || e.studentId == null)
+      : ents
+    return { dateStr, day, week, wk, dayOff, student, items }
+  }
+
   // Mark the current week as a break (or resume): everything from here on renumbers & re-seeds.
   const setBreak = (on) => setData((d) => {
     const breaks = on
@@ -685,9 +735,10 @@ export default function LessonPlanner() {
                 {DAYS.map((d) => {
                   const ds = dayDateFor(d)
                   const off = isDayOff(ds)
+                  const isToday = ds === iso(new Date())
                   return (
                     <th key={d}>
-                      {d}
+                      {d}{isToday && <span style={{ color: '#8ab870', marginLeft: 5, fontSize: 10 }}>● today</span>}
                       <button
                         className={`lp-dayoff-btn${off ? ' on' : ''}`}
                         title={off ? 'Resume school on this day' : 'Mark this day off (appointment, feast day, etc.)'}
@@ -695,6 +746,25 @@ export default function LessonPlanner() {
                       >
                         {off ? '🌿 Day off' : '+ Day off'}
                       </button>
+                      {data.students.length ? data.students.map((s) => (
+                        <button
+                          key={s.id}
+                          className="lp-dayoff-btn"
+                          style={{ borderColor: s.color, color: s.color }}
+                          title={`Print ${s.name}'s Plan of the Day for this date`}
+                          onClick={() => setPrintTarget({ date: ds, studentId: s.id })}
+                        >
+                          🖨 {s.name}
+                        </button>
+                      )) : (
+                        <button
+                          className="lp-dayoff-btn"
+                          title="Print the Plan of the Day for this date"
+                          onClick={() => setPrintTarget({ date: ds, studentId: null })}
+                        >
+                          🖨 Print plan
+                        </button>
+                      )}
                     </th>
                   )
                 })}
@@ -1046,6 +1116,43 @@ export default function LessonPlanner() {
           </div>
         )
       })()}
+
+      {/* Plan of the Day — printable sheet for one student; only visible via print CSS */}
+      <div className="lp-print-sheet">
+        {printTarget && (() => {
+          const plan = planFor(printTarget.date, printTarget.studentId)
+          if (plan.weekend) {
+            return (
+              <div className="lp-print-page">
+                <div className="lp-print-h">No school</div>
+                <div className="lp-print-sub">{prettyDate(printTarget.date)} is a weekend.</div>
+              </div>
+            )
+          }
+          return (
+            <div className="lp-print-page">
+              <div className="lp-print-h">
+                {plan.student ? plan.student.name : "Today's Plan"}{plan.student?.form ? ` — ${plan.student.form}` : ''}
+              </div>
+              <div className="lp-print-sub">
+                {prettyDate(plan.dateStr)}{plan.wk ? ` · Week ${plan.wk}` : ''}{plan.dayOff ? ' · Marked as a day off' : ''}
+              </div>
+              {bySubject(plan.items).map(([subj, items]) => (
+                <div key={subj}>
+                  <div className="lp-print-subj">{subj}</div>
+                  {items.map((e) => (
+                    <div className="lp-print-item" key={e.id}>
+                      <span className="lp-print-box" />
+                      <span>{e.label || subj}</span>
+                    </div>
+                  ))}
+                </div>
+              ))}
+              {!plan.items.length && <div className="lp-print-sub">Nothing scheduled — enjoy a free day.</div>}
+            </div>
+          )
+        })()}
+      </div>
     </div>
   )
 }
