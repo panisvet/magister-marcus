@@ -182,7 +182,14 @@ const prettyWeek = (mondayStr) => {
   return `${m.toLocaleDateString(undefined, opt)} – ${f.toLocaleDateString(undefined, opt)}`
 }
 
-const EMPTY = () => ({ students: [], subjects: [...DEFAULT_SUBJECTS], entries: [], yearStart: SCHOOL_YEAR_START, seeded: [], breaks: [], schoolStartV: SCHOOL_START_V })
+const EMPTY = () => ({ students: [], subjects: [...DEFAULT_SUBJECTS], entries: [], yearStart: SCHOOL_YEAR_START, seeded: [], breaks: [], dayOffs: [], schoolStartV: SCHOOL_START_V })
+
+// Add n days to an ISO date string, returning an ISO date string.
+const addDaysISO = (dateStr, n) => {
+  const d = new Date(dateStr + 'T00:00:00')
+  d.setDate(d.getDate() + n)
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+}
 
 // Infer a level from a CM Form label when one isn't set explicitly.
 const guessLevel = (form = '') => (/ii/i.test(form) ? 'Year 6' : /form\s*i\b|\bi[ab]?\b/i.test(form) ? 'Year 3' : null)
@@ -267,6 +274,10 @@ const CSS = `
 .lp-break-btn{margin-left:8px;padding:3px 10px;background:transparent;border:1px dashed #6a5030;border-radius:4px;color:#c9902a;cursor:pointer;font-family:'Crimson Pro',serif;font-size:13px;}
 .lp-break-btn:hover{background:#1a1208;border-color:#c9902a;}
 .lp-break-badge{padding:3px 10px;border-radius:12px;background:#1f2a17;border:1px solid #3a5a30;color:#8ab870;font-family:'Cinzel',serif;font-size:12px;letter-spacing:.04em;}
+.lp-dayoff-btn{display:block;margin:4px auto 0;font-size:10px;padding:2px 7px;border-radius:10px;border:1px dashed #6a5030;background:transparent;color:#c9902a;cursor:pointer;font-family:'Cinzel',serif;letter-spacing:.04em;text-transform:none;}
+.lp-dayoff-btn:hover{border-color:#c9902a;color:#f7edcc;}
+.lp-dayoff-btn.on{border:1px solid #3a5a30;background:#1f2a17;color:#8ab870;}
+.lp-cell-off{opacity:.4;}
 
 /* Modal */
 .lp-ov{position:fixed;inset:0;background:rgba(0,0,0,.62);display:flex;align-items:center;justify-content:center;z-index:200;padding:16px;}
@@ -365,11 +376,19 @@ export default function LessonPlanner() {
     (subject, day) => weekEntries.filter((e) => e.subject === subject && e.day === day),
     [weekEntries]
   )
-  // seat-time totals (minutes) — excludes entries flagged count:false
+  // Single-day breaks (e.g. an appointment or feast day) — flagged by exact date, not a whole week.
+  const dayDateFor = useCallback((day) => addDaysISO(weekStart, DAYS.indexOf(day)), [weekStart])
+  const isDayOff = useCallback((dateStr) => (data.dayOffs || []).includes(dateStr), [data.dayOffs])
+  const toggleDayOff = (dateStr) => setData((d) => {
+    const has = (d.dayOffs || []).includes(dateStr)
+    const dayOffs = has ? d.dayOffs.filter((x) => x !== dateStr) : [...(d.dayOffs || []), dateStr].sort()
+    return { ...d, dayOffs }
+  })
+  // seat-time totals (minutes) — excludes entries flagged count:false; a day-off day always totals 0
   const dayTotal = useCallback(
-    (sid, day) => weekEntries.filter((e) => (e.studentId || null) === sid && e.day === day && e.count !== false)
+    (sid, day) => isDayOff(dayDateFor(day)) ? 0 : weekEntries.filter((e) => (e.studentId || null) === sid && e.day === day && e.count !== false)
       .reduce((s, e) => s + (Number(e.min) || 0), 0),
-    [weekEntries]
+    [weekEntries, isDayOff, dayDateFor]
   )
   const weekTotal = useCallback(
     (sid) => DAYS.reduce((s, day) => s + dayTotal(sid, day), 0),
@@ -645,7 +664,22 @@ export default function LessonPlanner() {
             <thead>
               <tr>
                 <th style={{ textAlign: 'left', paddingLeft: 10 }}>Subject</th>
-                {DAYS.map((d) => <th key={d}>{d}</th>)}
+                {DAYS.map((d) => {
+                  const ds = dayDateFor(d)
+                  const off = isDayOff(ds)
+                  return (
+                    <th key={d}>
+                      {d}
+                      <button
+                        className={`lp-dayoff-btn${off ? ' on' : ''}`}
+                        title={off ? 'Resume school on this day' : 'Mark this day off (appointment, feast day, etc.)'}
+                        onClick={() => toggleDayOff(ds)}
+                      >
+                        {off ? '🌿 Day off' : '+ Day off'}
+                      </button>
+                    </th>
+                  )
+                })}
               </tr>
             </thead>
             <tbody>
@@ -667,7 +701,7 @@ export default function LessonPlanner() {
                     <span className="x" title="Remove subject" onClick={() => removeSubject(subj)}>✕</span>
                   </td>
                   {DAYS.map((day) => (
-                    <td key={day} className="lp-cell">
+                    <td key={day} className={`lp-cell${isDayOff(dayDateFor(day)) ? ' lp-cell-off' : ''}`}>
                       {cellEntries(subj, day).map((e) => {
                         const stu = e.studentId ? studentsById[e.studentId] : null
                         return (
