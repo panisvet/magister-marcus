@@ -379,11 +379,29 @@ export default function LessonPlanner() {
   // Single-day breaks (e.g. an appointment or feast day) — flagged by exact date, not a whole week.
   const dayDateFor = useCallback((day) => addDaysISO(weekStart, DAYS.indexOf(day)), [weekStart])
   const isDayOff = useCallback((dateStr) => (data.dayOffs || []).includes(dateStr), [data.dayOffs])
-  const toggleDayOff = (dateStr) => setData((d) => {
-    const has = (d.dayOffs || []).includes(dateStr)
-    const dayOffs = has ? d.dayOffs.filter((x) => x !== dateStr) : [...(d.dayOffs || []), dateStr].sort()
-    return { ...d, dayOffs }
-  })
+  // Turning a day ON as a break offers to push that day's not-yet-done lessons to the next
+  // school day (Fri rolls to next week's Mon); turning it back off just un-flags the date.
+  const toggleDayOff = (dateStr, day) => {
+    const turningOn = !isDayOff(dateStr)
+    if (!turningOn) {
+      setData((d) => ({ ...d, dayOffs: (d.dayOffs || []).filter((x) => x !== dateStr) }))
+      return
+    }
+    const idx = DAYS.indexOf(day)
+    const toMove = data.entries.filter((e) => e.week === weekStart && e.day === day && !e.done)
+    const doMove = toMove.length > 0 &&
+      confirm(`Move ${toMove.length} lesson${toMove.length === 1 ? '' : 's'} from ${day} to the next school day?`)
+    setData((d) => {
+      const dayOffs = Array.from(new Set([...(d.dayOffs || []), dateStr])).sort()
+      if (!doMove) return { ...d, dayOffs }
+      const nextWeek = idx === DAYS.length - 1 ? addDaysISO(weekStart, 7) : weekStart
+      const nextDay = idx === DAYS.length - 1 ? DAYS[0] : DAYS[idx + 1]
+      const entries = d.entries.map((e) =>
+        (e.week === weekStart && e.day === day && !e.done) ? { ...e, week: nextWeek, day: nextDay, seed: false } : e
+      )
+      return { ...d, dayOffs, entries }
+    })
+  }
   // seat-time totals (minutes) — excludes entries flagged count:false; a day-off day always totals 0
   const dayTotal = useCallback(
     (sid, day) => isDayOff(dayDateFor(day)) ? 0 : weekEntries.filter((e) => (e.studentId || null) === sid && e.day === day && e.count !== false)
@@ -673,7 +691,7 @@ export default function LessonPlanner() {
                       <button
                         className={`lp-dayoff-btn${off ? ' on' : ''}`}
                         title={off ? 'Resume school on this day' : 'Mark this day off (appointment, feast day, etc.)'}
-                        onClick={() => toggleDayOff(ds)}
+                        onClick={() => toggleDayOff(ds, d)}
                       >
                         {off ? '🌿 Day off' : '+ Day off'}
                       </button>
