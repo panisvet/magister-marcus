@@ -16,17 +16,44 @@ const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
 // Fixed start of the school year: Week 1 = the week of Monday, Aug 17 2026.
 const SCHOOL_YEAR_START = '2026-08-17'
 const SCHOOL_START_V = 'aug17-2026.4-wonders' // bump to force a re-anchor migration
+const DEDUPE_V = 'dedupe-1' // bump to force another duplicate-entry sweep
 
-// Ensure loaded data anchors to the current school-year start; re-seed if it changed.
-const migrate = (data) => {
-  if (data.schoolStartV === SCHOOL_START_V && data.yearStart) return data
-  return {
-    ...data,
-    yearStart: SCHOOL_YEAR_START,
-    schoolStartV: SCHOOL_START_V,
-    entries: (data.entries || []).filter((e) => !e.seed && e.subject !== 'Bible'), // drop auto-seeded + any stale/hand-moved Bible; Bible regenerates from the schedule
-    seeded: [],
+// Collapse duplicate auto-seeded/Bible entries (same week+day+student+subject+label).
+// Hand-typed entries (seed:false) are never touched. If duplicates disagree on `done`,
+// the checked-off one wins, so no completed work is lost in the cleanup.
+function dedupeEntries(entries) {
+  const seen = new Map()
+  const keep = []
+  for (const e of entries || []) {
+    if (!e.seed && e.subject !== 'Bible') { keep.push(e); continue }
+    const key = `${e.week}|${e.day}|${e.studentId || ''}|${e.subject}|${e.label}`
+    const prevIdx = seen.get(key)
+    if (prevIdx === undefined) { seen.set(key, keep.length); keep.push(e) }
+    else if (e.done && !keep[prevIdx].done) { keep[prevIdx] = e }
   }
+  return keep
+}
+
+// Ensure loaded data anchors to the current school-year start (re-seeding if it changed),
+// and sweep any duplicate entries that piled up from repeated seeding.
+const migrate = (data) => {
+  let d = data
+  let changed = false
+  if (d.schoolStartV !== SCHOOL_START_V || !d.yearStart) {
+    d = {
+      ...d,
+      yearStart: SCHOOL_YEAR_START,
+      schoolStartV: SCHOOL_START_V,
+      entries: (d.entries || []).filter((e) => !e.seed && e.subject !== 'Bible'), // drop auto-seeded + any stale/hand-moved Bible; Bible regenerates from the schedule
+      seeded: [],
+    }
+    changed = true
+  }
+  if (d.dedupeV !== DEDUPE_V) {
+    d = { ...d, entries: dedupeEntries(d.entries), dedupeV: DEDUPE_V }
+    changed = true
+  }
+  return changed ? d : data
 }
 const STUDENT_COLORS = ['#c9902a', '#5a7a4a', '#4a6a7a', '#8a5a2a', '#6a4a7a', '#7a4a4a']
 // Ambleside/CM daily & weekly rhythm, per level — seeded from the Year 6 planner.
