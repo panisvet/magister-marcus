@@ -332,13 +332,18 @@ const CSS = `
 .lp-btn.danger:hover{background:#2a1410;}
 .lp-empty{color:#5a4a38;font-style:italic;font-size:13px;padding:24px;text-align:center;}
 
-/* Plan of the Day — printable sheet (hidden on screen, shown only when printing) */
+/* Plan of the Day — printable sheet (hidden on screen, shown only when printing).
+   Siblings are hidden with display:none (not visibility:hidden) so they occupy zero
+   layout height and paint no background — visibility tricks left blank/black pages
+   behind on some mobile print pipelines because the huge invisible dark grid still
+   took up space and its background could bleed through. */
 .lp-print-sheet{display:none;}
 @media print{
-  body *{visibility:hidden !important;}
-  .lp-print-sheet,.lp-print-sheet *{visibility:visible !important;}
-  .lp-print-sheet{display:block !important;position:absolute;top:0;left:0;width:100%;background:#fff;}
-  .lp-print-page{page-break-after:always;padding:32px 36px;font-family:Georgia,'Times New Roman',serif;color:#1a1a1a;}
+  html,body{background:#fff !important;height:auto !important;min-height:0 !important;}
+  .lp-root{background:#fff !important;min-height:0 !important;padding:0 !important;color:#000;}
+  .lp-root > *:not(.lp-print-sheet){display:none !important;}
+  .lp-print-sheet{display:block !important;width:100%;background:#fff;}
+  .lp-print-page{page-break-after:always;padding:32px 36px;font-family:Georgia,'Times New Roman',serif;color:#1a1a1a;background:#fff;}
   .lp-print-page:last-child{page-break-after:auto;}
   .lp-print-h{font-size:22px;font-weight:bold;border-bottom:2px solid #333;padding-bottom:8px;margin-bottom:4px;}
   .lp-print-sub{font-size:13px;color:#555;font-style:italic;margin-bottom:18px;}
