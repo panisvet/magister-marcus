@@ -371,13 +371,17 @@ export default function LessonPlanner() {
   const loaded = useRef(false)
   const saveTimer = useRef(null)
 
-  // Fire the browser print dialog once the printable sheet has rendered, then clear it afterward.
+  // Fire the browser print dialog once the printable sheet has rendered.
+  // Deliberately does NOT clear printTarget on 'afterprint': that event fires early/unreliably
+  // on mobile print pipelines (share-sheet printing in particular), which was wiping the sheet's
+  // content out from under the OS print job before it finished capturing — printed as a blank
+  // page on the second and later attempts. The sheet is invisible outside of @media print either
+  // way, so leaving the last target set has no on-screen effect; it's simply replaced next time
+  // a print button is clicked.
   useEffect(() => {
     if (!printTarget) return
-    const t = setTimeout(() => window.print(), 60)
-    const clear = () => setPrintTarget(null)
-    window.addEventListener('afterprint', clear)
-    return () => { clearTimeout(t); window.removeEventListener('afterprint', clear) }
+    const t = setTimeout(() => window.print(), 150)
+    return () => clearTimeout(t)
   }, [printTarget])
 
   // ── Load: try server, fall back to localStorage ──
