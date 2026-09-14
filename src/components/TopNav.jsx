@@ -1,3 +1,5 @@
+import { Link, useLocation } from 'react-router-dom'
+
 const NAV_STYLES = `
 .sch-nav {
   position: fixed;
@@ -66,32 +68,35 @@ const NAV_STYLES = `
 // Single source of truth for active subjects.
 // Add entries here as new subjects go live.
 const ACTIVE_SUBJECTS = [
-  { label: 'Latin',   href: '/latin'           },
-  { label: 'Natura',  href: '/magister-natura' },
-  { label: 'Lessons', href: '/lesson-viewer'   },
+  { label: 'Latin',         href: '/latin'               },
+  { label: 'Natura',        href: '/magister-natura'          },
+  { label: 'Artis',         href: '/magister-artis'           },
+  { label: 'Architecturae', href: '/magister-architecturae'   },
+  { label: 'Lessons',       href: '/lesson-viewer'            },
   // { label: 'Math',    href: '/math'    },
   // { label: 'History', href: '/history' },
 ];
 
 export default function TopNav({ current }) {
-  const path = current || (typeof window !== 'undefined' ? window.location.pathname : '');
+  const location = useLocation();
+  const path = current || location.pathname;
   return (
     <>
       <style>{NAV_STYLES}</style>
       <nav className="sch-nav">
-        <a href="/" className="sch-nav-home">
+        <Link to="/" className="sch-nav-home">
           <span className="sch-nav-home-icon">🏛</span>
           Schola Domestica
-        </a>
+        </Link>
         <div className="sch-nav-subjects">
           {ACTIVE_SUBJECTS.map(s => (
-            <a
+            <Link
               key={s.href}
-              href={s.href}
+              to={s.href}
               className={`sch-nav-pill${path.startsWith(s.href) ? ' active' : ''}`}
             >
               {s.label}
-            </a>
+            </Link>
           ))}
         </div>
       </nav>

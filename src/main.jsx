@@ -11,6 +11,7 @@ import ScholaCantorum from './pages/ScholaCantorum.jsx'
 import RegentNikolay from './pages/RegentNikolay.jsx'
 import MagisterHistoria from "./pages/MagisterHistoria"
 import MagisterArtis from "./pages/MagisterArtis.jsx"
+import MagisterArchitecturae from "./pages/MagisterArchitecturae.jsx"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/regent-nikolay" element={<RegentNikolay />} />
         <Route path="/history" element={<MagisterHistoria />} />
         <Route path="/magister-artis" element={<MagisterArtis />} />
+        <Route path="/magister-architecturae" element={<MagisterArchitecturae />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
