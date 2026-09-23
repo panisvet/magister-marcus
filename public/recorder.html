@@ -23,7 +23,12 @@
   html, body { margin: 0; background: var(--paper); }
   body { font-family: 'Newsreader', Georgia, serif; color: var(--ink); font-size: 17px; line-height: 1.55; }
   .page { max-width: 34rem; margin: 0 auto; padding: 1.4rem 1.25rem 3rem; }
-  h1 { font-size: 1.1rem; font-weight: 400; font-style: italic; color: var(--quiet); margin: 0 0 1.5rem; }
+  .top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin: 0 0 1.5rem; }
+  h1 { font-size: 1.1rem; font-weight: 400; font-style: italic; color: var(--quiet); margin: 0; }
+  .back {
+    appearance: none; background: none; border: 1px solid var(--rule); border-radius: 2px;
+    font: inherit; font-size: 1rem; color: var(--mark); padding: 0.45rem 0.8rem; min-height: 2.6rem; cursor: pointer;
+  }
   .who { display: flex; flex-wrap: wrap; gap: 0 1.5rem; margin: 0 0 1.5rem; }
   .who button {
     appearance: none; background: none; border: 0; border-bottom: 2px solid transparent;
@@ -51,7 +56,10 @@
 </head>
 <body>
 <div class="page">
-  <h1>Narration recorder</h1>
+  <div class="top">
+    <h1>Narration recorder</h1>
+    <button type="button" class="back" id="back">&larr; Day book</button>
+  </div>
 
   <div class="who" id="who"></div>
 
@@ -88,6 +96,22 @@
     };
     $('who').appendChild(b);
   });
+
+  // Back to the day book. Only a Google Apps Script address is accepted.
+  var DAYBOOK = (function () {
+    var b = new URLSearchParams(location.search).get('back') || '';
+    return /^https:\/\/script\.google\.com\//.test(b) ? b : '';
+  })();
+
+  $('back').onclick = function () {
+    if (blob && !confirm('This recording has not been sent. Leave anyway?')) return;
+    if (window.opener) { window.close(); }
+    // If the tab could not close itself, go there instead.
+    setTimeout(function () {
+      if (DAYBOOK) location.href = DAYBOOK;
+      else if (history.length > 1) history.back();
+    }, 300);
+  };
 
   // Opened from the day book: ?child=Fritz&what=...
   (function () {
