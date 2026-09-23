@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Narration recorder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9EBE4; --ink: #0C0F14; --rule: #C2C9BF; --quiet: #3A423D; --mark: #7A2E2E;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #16191A; --ink: #E3E7E0; --rule: #2B3230; --quiet: #8B948C; --mark: #C46B62;
+    }
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html, body { margin: 0; background: var(--paper); }
+  body { font-family: 'Newsreader', Georgia, serif; color: var(--ink); font-size: 17px; line-height: 1.55; }
+  .page { max-width: 34rem; margin: 0 auto; padding: 1.4rem 1.25rem 3rem; }
+  h1 { font-size: 1.1rem; font-weight: 400; font-style: italic; color: var(--quiet); margin: 0 0 1.5rem; }
+  .who { display: flex; flex-wrap: wrap; gap: 0 1.5rem; margin: 0 0 1.5rem; }
+  .who button {
+    appearance: none; background: none; border: 0; border-bottom: 2px solid transparent;
+    padding: 0.35rem 0 0.3rem; font: inherit; font-size: 1.7rem; color: var(--quiet); cursor: pointer;
+  }
+  .who button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+  label.head { display: block; font-size: 0.95rem; font-style: italic; font-weight: 300; color: var(--quiet); margin-bottom: 0.4rem; }
+  input[type="text"] {
+    width: 100%; font: inherit; font-size: 1rem; color: var(--ink); background: none;
+    border: 1px solid var(--rule); border-radius: 2px; padding: 0.55rem 0.6rem; min-height: 2.6rem;
+  }
+  .big {
+    display: block; width: 100%; margin: 1.75rem 0 0.75rem; appearance: none; border: 1px solid var(--mark);
+    border-radius: 2px; background: none; color: var(--mark); font: inherit; font-size: 1.15rem;
+    padding: 1.1rem; min-height: 3.6rem; cursor: pointer;
+  }
+  .big.on { background: var(--mark); color: #F4F2EC; }
+  .big[disabled] { opacity: 0.4; cursor: default; }
+  .send { background: var(--mark); color: #F4F2EC; }
+  audio { width: 100%; margin: 0.5rem 0; }
+  .status { min-height: 1.5em; font-style: italic; color: var(--quiet); }
+  .status.err { color: var(--mark); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Narration recorder</h1>
+
+  <div class="who" id="who"></div>
+
+  <label class="head" for="what">What was it about</label>
+  <input type="text" id="what" autocomplete="off" placeholder="e.g. Paul Revere's ride">
+
+  <button class="big" id="rec" disabled>Record</button>
+  <p class="status" id="timer"></p>
+
+  <div id="review" hidden>
+    <audio id="play" controls></audio>
+    <button class="big send" id="send">Send</button>
+    <button class="big" id="again">Record again</button>
+  </div>
+
+  <p class="status" id="status"></p>
+</div>
+
+<script>
+  var CHILDREN = ['David', 'Fritz', 'Ileana'];
+  var LIMIT_SECONDS = 300;
+  var child = '', blob = null, mr = null, chunks = [], startedAt = 0, tick = null, stream = null;
+  var $ = function (id) { return document.getElementById(id); };
+
+  CHILDREN.forEach(function (name) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.textContent = name; b.setAttribute('aria-pressed', 'false');
+    b.onclick = function () {
+      child = name;
+      Array.prototype.forEach.call($('who').children, function (x) {
+        x.setAttribute('aria-pressed', String(x.textContent === name));
+      });
+      $('rec').disabled = !!blob;
+    };
+    $('who').appendChild(b);
+  });
+
+  function say(msg, err) { $('status').textContent = msg || ''; $('status').className = 'status' + (err ? ' err' : ''); }
+
+  $('rec').onclick = function () {
+    if (mr && mr.state === 'recording') { stop(); return; }
+    if (!navigator.mediaDevices || !window.MediaRecorder) { say('This browser cannot record. Try Safari or Chrome.', true); return; }
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (s) {
+      stream = s;
+      var types = ['audio/mp4', 'audio/webm;codecs=opus', 'audio/webm'], mime = '';
+      for (var i = 0; i < types.length; i++) if (MediaRecorder.isTypeSupported(types[i])) { mime = types[i]; break; }
+      chunks = [];
+      mr = mime ? new MediaRecorder(s, { mimeType: mime }) : new MediaRecorder(s);
+      mr.ondataavailable = function (e) { if (e.data && e.data.size) chunks.push(e.data); };
+      mr.onstop = function () {
+        stream.getTracks().forEach(function (t) { t.stop(); });
+        clearInterval(tick);
+        blob = new Blob(chunks, { type: mr.mimeType || 'audio/mp4' });
+        $('play').src = URL.createObjectURL(blob);
+        $('review').hidden = false;
+        $('rec').hidden = true;
+        $('timer').textContent = Math.round((Date.now() - startedAt) / 1000) + ' seconds recorded.';
+      };
+      mr.start(1000);
+      startedAt = Date.now();
+      $('rec').textContent = 'Stop'; $('rec').className = 'big on';
+      say('');
+      tick = setInterval(function () {
+        var secs = Math.round((Date.now() - startedAt) / 1000);
+        $('timer').textContent = secs + 's';
+        if (secs >= LIMIT_SECONDS) stop();
+      }, 500);
+    }).catch(function (err) {
+      say('Microphone refused (' + ((err && err.name) || 'unknown') + '). Allow the microphone for this site and try again.', true);
+    });
+  };
+
+  function stop() {
+    if (mr && mr.state === 'recording') mr.stop();
+    $('rec').textContent = 'Record'; $('rec').className = 'big';
+  }
+
+  $('again').onclick = function () {
+    blob = null; $('review').hidden = true; $('rec').hidden = false; $('rec').disabled = !child;
+    $('timer').textContent = ''; say('');
+  };
+
+  $('send').onclick = function () {
+    if (!blob || !child) { say('Pick a name first.', true); return; }
+    $('send').disabled = true; $('again').disabled = true;
+    say('Sending…');
+    fetch('/api/recording', {
+      method: 'POST',
+      headers: {
+        'Content-Type': blob.type || 'audio/mp4',
+        'X-Child': child,
+        'X-Activity': encodeURIComponent($('what').value.trim()),
+      },
+      body: blob,
+    }).then(function (r) {
+      return r.json().then(function (j) { return { ok: r.ok, j: j }; });
+    }).then(function (res) {
+      $('send').disabled = false; $('again').disabled = false;
+      if (!res.ok) { say((res.j && res.j.error) || 'That did not send. Try again.', true); return; }
+      blob = null; $('review').hidden = true; $('rec').hidden = false; $('rec').disabled = false;
+      $('what').value = ''; $('timer').textContent = '';
+      say('Sent. It will be in the day book within the hour.');
+    }).catch(function () {
+      $('send').disabled = false; $('again').disabled = false;
+      say('No connection. The recording is still here; press Send again.', true);
+    });
+  };
+</script>
+</body>
+</html>
