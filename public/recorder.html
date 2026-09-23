@@ -89,6 +89,16 @@
     $('who').appendChild(b);
   });
 
+  // Opened from the day book: ?child=Fritz&what=...
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var c = q.get('child'), w = q.get('what');
+    if (w) $('what').value = w;
+    if (c && CHILDREN.indexOf(c) >= 0) {
+      Array.prototype.forEach.call($('who').children, function (x) { if (x.textContent === c) x.click(); });
+    }
+  })();
+
   function say(msg, err) { $('status').textContent = msg || ''; $('status').className = 'status' + (err ? ' err' : ''); }
 
   $('rec').onclick = function () {
