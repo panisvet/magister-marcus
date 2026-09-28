@@ -251,6 +251,9 @@ const CSS = `
 .lp-sync.saved{color:#8ab870;border-color:#3a5a30;}
 .lp-sync.local{color:#c8a86a;border-color:#6a5030;}
 .lp-sync.error{color:#d98a6a;border-color:#7a4a30;}
+.lp-notice{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;margin:10px 0 14px;padding:10px 14px;border:1px solid #6a5030;border-radius:6px;background:rgba(232,184,75,.08);color:#e8d7b0;font-size:14px;line-height:1.45;}
+.lp-notice button{background:none;border:0;color:#c8a86a;font-size:18px;cursor:pointer;line-height:1;padding:0 2px;}
+@media print{.lp-notice{display:none!important;}}
 
 .lp-section-lbl{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#c9902a;margin:6px 0 8px;}
 
@@ -370,6 +373,13 @@ export default function LessonPlanner() {
   const [printTarget, setPrintTarget] = useState(null) // { date, studentId } for the one student's plan-of-the-day sheet being printed
   const loaded = useRef(false)
   const saveTimer = useRef(null)
+  // Revision guard (see functions/api/planner.js). revRef is the server
+  // revision this page's copy is based on; null means we have not seen the
+  // server copy, so any save will be refused and the server copy adopted.
+  const revRef = useRef(null)
+  const skipSave = useRef(false)   // don't echo a copy we just took from the server
+  const pending = useRef(false)    // a save is waiting or in flight
+  const [notice, setNotice] = useState('')
 
   // Fire the browser print dialog once the printable sheet has rendered.
   // Deliberately does NOT clear printTarget on 'afterprint': that event fires early/unreliably
@@ -392,6 +402,7 @@ export default function LessonPlanner() {
         const r = await fetch('/api/planner')
         if (r.ok) {
           const j = await r.json()
+          if (!cancelled && j.bound) revRef.current = Number(j.rev) || 0
           if (!cancelled && j.bound && j.data) { setData(migrate({ ...EMPTY(), ...j.data })); setSync('saved') }
           else if (!cancelled) { loadLocal(); setSync(j.bound ? 'saved' : 'local') }
           loaded.current = true
@@ -410,24 +421,68 @@ export default function LessonPlanner() {
     } catch { /* ignore */ }
   }
 
+  // Take the server's copy as ours (after a refused save, or a newer copy found).
+  function adoptServer(j, message) {
+    skipSave.current = true
+    revRef.current = Number(j.rev) || 0
+    setData(migrate({ ...EMPTY(), ...(j.data || {}) }))
+    setSync('saved')
+    if (message) setNotice(message)
+  }
+
   // ── Save: debounced to localStorage + server ──
   useEffect(() => {
     if (!loaded.current) return
     try { localStorage.setItem('schola-planner', JSON.stringify(data)) } catch { /* ignore */ }
+    if (skipSave.current) { skipSave.current = false; return }
     clearTimeout(saveTimer.current)
+    pending.current = true
     setSync((s) => (s === 'local' ? 'local' : 'saving'))
     saveTimer.current = setTimeout(async () => {
       try {
         const r = await fetch('/api/planner', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ data }),
+          body: JSON.stringify({ data, baseRev: revRef.current }),
         })
-        if (r.ok) setSync('saved')
-        else setSync('local') // no KV binding / sync unavailable — saved on this device
+        if (r.ok) {
+          const j = await r.json().catch(() => ({}))
+          if (j.rev !== undefined) revRef.current = Number(j.rev)
+          setSync('saved')
+        } else if (r.status === 409) {
+          const j = await r.json()
+          adoptServer(j, 'The planner was changed somewhere else (another device or the day book), so this page has been refreshed with the newer copy. Your last change was not saved; please make it again.')
+        } else {
+          setSync('local') // no KV binding / sync unavailable — saved on this device
+        }
       } catch { setSync('local') }
+      pending.current = false
     }, 800)
   }, [data])
+
+  // ── Refresh when you come back to the page ──
+  // If the server has a newer copy (changed on another device or by the day
+  // book), take it before you edit, instead of overwriting it later.
+  useEffect(() => {
+    const check = async () => {
+      if (document.visibilityState !== 'visible' || !loaded.current || pending.current) return
+      try {
+        const r = await fetch('/api/planner', { cache: 'no-store' })
+        if (!r.ok) return
+        const j = await r.json()
+        if (!j.bound || !j.data || pending.current) return
+        if (revRef.current === null || Number(j.rev) !== revRef.current) {
+          adoptServer(j, 'Updated with newer changes from another device.')
+        }
+      } catch { /* offline: try again next time */ }
+    }
+    document.addEventListener('visibilitychange', check)
+    window.addEventListener('focus', check)
+    return () => {
+      document.removeEventListener('visibilitychange', check)
+      window.removeEventListener('focus', check)
+    }
+  }, [])
 
   // ── Helpers ──
   const studentsById = useMemo(() => Object.fromEntries(data.students.map((s) => [s.id, s])), [data.students])
@@ -707,6 +762,12 @@ export default function LessonPlanner() {
           <div className="lp-title">Lesson Planner<small>Schola Domestica · weekly plan for your household</small></div>
           <span className={`lp-sync ${sync}`}>{syncLabel}</span>
         </div>
+        {notice && (
+          <div className="lp-notice" role="status">
+            {notice}
+            <button type="button" onClick={() => setNotice('')} aria-label="Dismiss">×</button>
+          </div>
+        )}
 
         {/* Students */}
         <div className="lp-section-lbl">Students</div>
