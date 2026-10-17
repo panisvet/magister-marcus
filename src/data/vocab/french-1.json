@@ -1,0 +1,288 @@
+{
+ "id": "french-1",
+ "title": "French I",
+ "subtitle": "OLI · Carnegie Mellon",
+ "lang": "fr-FR",
+ "learner": "David",
+ "attribution": "Vocabulary from French 1, Open Learning Initiative, Carnegie Mellon University (oli.cmu.edu), CC BY-NC-ND 3.0. For our family's private, non-commercial practice.",
+ "lessons": [
+  {
+   "id": "1",
+   "title": "Leçon 1 · Se présenter",
+   "sections": [
+    "Bonjour",
+    "Salut",
+    "Je m'appelle Éric",
+    "Épeler"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Bonjour",
+     "fr": "Bonjour.",
+     "en": "Hello or Good morning",
+     "kind": "word"
+    },
+    {
+     "id": "02",
+     "section": "Bonjour",
+     "fr": "Merci.",
+     "en": "Thank you.",
+     "kind": "word"
+    },
+    {
+     "id": "03",
+     "section": "Bonjour",
+     "fr": "vous",
+     "en": "you (formal)",
+     "kind": "word"
+    },
+    {
+     "id": "04",
+     "section": "Bonjour",
+     "fr": "Au revoir.",
+     "en": "Goodbye.",
+     "kind": "phrase"
+    },
+    {
+     "id": "05",
+     "section": "Bonjour",
+     "fr": "Bonjour, Madame.",
+     "en": "Good morning, ma'am.",
+     "kind": "phrase"
+    },
+    {
+     "id": "06",
+     "section": "Bonjour",
+     "fr": "Bonjour, Monsieur.",
+     "en": "Good morning, sir.",
+     "kind": "phrase"
+    },
+    {
+     "id": "07",
+     "section": "Bonjour",
+     "fr": "Comment allez-vous?",
+     "en": "How are you? (formal)",
+     "kind": "phrase"
+    },
+    {
+     "id": "08",
+     "section": "Bonjour",
+     "fr": "Très bien, merci.",
+     "en": "Very well, thanks.",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Bonjour",
+     "fr": "Et vous?",
+     "en": "And you? (formal)",
+     "kind": "phrase"
+    },
+    {
+     "id": "10",
+     "section": "Bonjour",
+     "fr": "Comme-ci, comme-ça.",
+     "en": "Just fair.",
+     "kind": "phrase"
+    },
+    {
+     "id": "11",
+     "section": "Bonjour",
+     "fr": "Au revoir, Madame.",
+     "en": "Goodbye, ma'am.",
+     "kind": "phrase"
+    },
+    {
+     "id": "12",
+     "section": "Bonjour",
+     "fr": "Au revoir, Monsieur.",
+     "en": "Goodbye, sir.",
+     "kind": "phrase"
+    },
+    {
+     "id": "13",
+     "section": "Salut",
+     "fr": "Salut!",
+     "en": "Hi (informal)",
+     "kind": "word"
+    },
+    {
+     "id": "14",
+     "section": "Salut",
+     "fr": "Comment",
+     "en": "How",
+     "kind": "word"
+    },
+    {
+     "id": "15",
+     "section": "Salut",
+     "fr": "Bien",
+     "en": "Well",
+     "kind": "word"
+    },
+    {
+     "id": "16",
+     "section": "Salut",
+     "fr": "Pas mal",
+     "en": "Not bad",
+     "kind": "phrase"
+    },
+    {
+     "id": "17",
+     "section": "Salut",
+     "fr": "Salut, Michel.",
+     "en": "Hi Michael.",
+     "kind": "line"
+    },
+    {
+     "id": "18",
+     "section": "Salut",
+     "fr": "Salut, Alice.",
+     "en": "Hi Alice.",
+     "kind": "line"
+    },
+    {
+     "id": "19",
+     "section": "Salut",
+     "fr": "Comment vas-tu?",
+     "en": "How are you? (informal)",
+     "kind": "phrase"
+    },
+    {
+     "id": "20",
+     "section": "Salut",
+     "fr": "Je vais bien, merci. Et toi?",
+     "en": "I'm doing well, thanks. And you? (informal)",
+     "kind": "line"
+    },
+    {
+     "id": "21",
+     "section": "Salut",
+     "fr": "Salut. À bientôt!",
+     "en": "Bye. See you soon! (informal)",
+     "kind": "phrase"
+    },
+    {
+     "id": "22",
+     "section": "Je m'appelle Éric",
+     "fr": "Comment t'appelles-tu?",
+     "en": "What's your name? (informal)",
+     "kind": "phrase"
+    },
+    {
+     "id": "23",
+     "section": "Je m'appelle Éric",
+     "fr": "Moi",
+     "en": "Me",
+     "kind": "word"
+    },
+    {
+     "id": "24",
+     "section": "Je m'appelle Éric",
+     "fr": "Je m'appelle Éric. Enchanté.",
+     "en": "My name's Eric. Nice to meet you.",
+     "kind": "line"
+    },
+    {
+     "id": "25",
+     "section": "Je m'appelle Éric",
+     "fr": "Salut Michel. Salut Alice. Ça va?",
+     "en": "Hi Michael. Hi Alice. How are you? (informal)",
+     "kind": "line"
+    },
+    {
+     "id": "26",
+     "section": "Je m'appelle Éric",
+     "fr": "Salut",
+     "en": "Hi (informal)",
+     "kind": "word"
+    },
+    {
+     "id": "27",
+     "section": "Je m'appelle Éric",
+     "fr": "Moi, c'est Sophie. Comment t'appelles-tu?",
+     "en": "My name's Sophie. What's yours? (informal)",
+     "kind": "line"
+    },
+    {
+     "id": "28",
+     "section": "Je m'appelle Éric",
+     "fr": "Enchantée.",
+     "en": "Nice to meet you. (feminine)",
+     "kind": "word"
+    },
+    {
+     "id": "29",
+     "section": "Épeler",
+     "fr": "Mademoiselle",
+     "en": "Miss",
+     "kind": "word"
+    },
+    {
+     "id": "30",
+     "section": "Épeler",
+     "fr": "Voilà.",
+     "en": "That's it or I see.",
+     "kind": "word"
+    },
+    {
+     "id": "31",
+     "section": "Épeler",
+     "fr": "Asseyez-vous.",
+     "en": "Have a seat.",
+     "kind": "phrase"
+    },
+    {
+     "id": "32",
+     "section": "Épeler",
+     "fr": "Madame",
+     "en": "Ma'am",
+     "kind": "word"
+    },
+    {
+     "id": "33",
+     "section": "Épeler",
+     "fr": "Bonjour, Mademoiselle.",
+     "en": "Good morning, miss.",
+     "kind": "phrase"
+    },
+    {
+     "id": "34",
+     "section": "Épeler",
+     "fr": "Bonjour, Madame. Je m'appelle Clara Vanhoutte.",
+     "en": "Good morning, ma'am. My name is Clara Vanhoutte.",
+     "kind": "line"
+    },
+    {
+     "id": "35",
+     "section": "Épeler",
+     "fr": "Nathalie Dubois. Asseyez-vous.",
+     "en": "(I'm) Nathalie Dubois. Have a seat.",
+     "kind": "line"
+    },
+    {
+     "id": "36",
+     "section": "Épeler",
+     "fr": "Comment s'épelle Vanhoutte?",
+     "en": "How do you spell Vanhoutte?",
+     "kind": "line"
+    },
+    {
+     "id": "37",
+     "section": "Épeler",
+     "fr": "C'est v-a-n-h-o-u-deux-t-e. Vanhoutte.",
+     "en": "It's v-a-n-h-o-u-2 ts-e. Vanhoutte.",
+     "kind": "line"
+    },
+    {
+     "id": "38",
+     "section": "Épeler",
+     "fr": "Ah, voilà. Merci.",
+     "en": "Oh, there it is. Thank you.",
+     "kind": "line"
+    }
+   ]
+  }
+ ]
+}

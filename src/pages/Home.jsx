@@ -217,6 +217,17 @@ const TOOLS = [
     tag: 'Active',
   },
   {
+    id: 'vocabula',
+    icon: '🗂',
+    title: 'Vocabula',
+    subtitle: 'Vocabulary practice & review',
+    desc: 'French I (OLI) flashcards and typed practice with spaced review. Elementa Latin to follow. Every answer is counted for the term record.',
+    accent: '#c9902a',
+    href: '/vocab',
+    status: 'active',
+    tag: 'Active',
+  },
+  {
     id: 'natura',
     icon: '🌿',
     title: 'Magister Natura',

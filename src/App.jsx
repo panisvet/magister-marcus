@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import Vocabula from './pages/Vocabula.jsx'
 import Home from './pages/Home.jsx'
 import ViaLatina from './pages/ViaLatina.jsx'
 import LessonPage from './pages/LessonPage.jsx'
@@ -33,6 +34,8 @@ export default function App() {
       <Route path="/regent-nikolay" element={<RegentNikolay />} />
       <Route path="/history" element={<MagisterHistoria />} />
       <Route path="/magister-artis" element={<MagisterArtis />} />
+      <Route path="/vocab" element={<Vocabula />} />
+      <Route path="/vocab/:deckId" element={<Vocabula />} />
       <Route path="*" element={<Home />} />
     </Routes>
   )

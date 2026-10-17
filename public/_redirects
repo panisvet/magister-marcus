@@ -2,6 +2,8 @@
 /via-latina / 200
 /lesson/* / 200
 /review / 200
+/vocab / 200
+/vocab/* / 200
 /parent / 200
 /read / 200
 /sounds / 200
