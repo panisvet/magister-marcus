@@ -61,7 +61,8 @@ export async function onRequestPost({ request, env }) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      text: latinForSpeech(text),
+      // Latin respelling only for Latin (no language, or 'it'); French etc. as written. GROK_FR
+      text: (!language || language === 'it') ? latinForSpeech(text) : String(text).trim(),
       voice_id: voice_id || 'leo',
       // `language` is required by xAI. Latin isn't a named TTS language, so we
       // default to Italian ("it") — its phonetics match the ecclesiastical

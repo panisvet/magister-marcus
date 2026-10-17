@@ -1,4 +1,4 @@
-// VOCABULA_V1 — vocabulary practice and review, one page for every deck.
+// VOCABULA_V2 — vocabulary practice and review, one page for every deck.
 // Deck data lives in src/data/vocab/*.json. Every graded answer is a mastery
 // event in the shared spaced-repetition store (srs.js) and is queued for
 // Homeschool OS (sync.js → /api/recall → recall tab). All numbers are
@@ -73,8 +73,13 @@ function checkTyped(typed, answers) {
   return 'wrong'
 }
 
-// ── speech (browser voice; free, offline on iPad) ──────────────────────────
-function speak(text, lang) {
+// ── speech: Grok voice via /api/tts (key stays on the server) ──────────────
+// Deck JSON sets "voice" (xAI voice id) and "lang". Each phrase is fetched once
+// per visit and kept in memory. If Grok fails, the iPad's own voice speaks.
+const ttsCache = new Map()
+let current = null
+
+function browserSpeak(text, lang) {
   try {
     const synth = window.speechSynthesis
     if (!synth) return
@@ -86,6 +91,29 @@ function speak(text, lang) {
     u.rate = 0.85
     synth.speak(u)
   } catch { /* no speech: fine */ }
+}
+
+async function speak(text, lang, voice) {
+  const key = `${voice}|${lang}|${text}`
+  try { current?.pause() } catch { /* noop */ }
+  try {
+    let url = ttsCache.get(key)
+    if (!url) {
+      const r = await fetch('/api/tts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text, language: lang.slice(0, 2), voice_id: voice }),
+      })
+      if (!r.ok) throw new Error('tts ' + r.status)
+      url = URL.createObjectURL(await r.blob())
+      ttsCache.set(key, url)
+    }
+    const a = new Audio(url)
+    current = a
+    await a.play()
+  } catch {
+    browserSpeak(text, lang)
+  }
 }
 
 // ── small UI pieces ────────────────────────────────────────────────────────
@@ -105,9 +133,9 @@ const btn = {
   fontFamily: 'var(--font-heading)', fontSize: '0.95rem',
 }
 
-function SpeakButton({ text, lang }) {
+function SpeakButton({ text, lang, voice }) {
   return (
-    <button aria-label="Listen" title="Listen" onClick={(e) => { e.stopPropagation(); speak(text, lang) }}
+    <button aria-label="Listen" title="Listen" onClick={(e) => { e.stopPropagation(); speak(text, lang, voice) }}
       style={{ ...chip(false), fontSize: '1rem', marginTop: '0.75rem' }}>🔊 Listen</button>
   )
 }
@@ -241,6 +269,7 @@ function Deck({ deck }) {
 // ── a practice session ─────────────────────────────────────────────────────
 function Session({ deck, lesson, section, mode, includeLines, store, review, onDone }) {
   const lang = deck.lang || 'fr-FR'
+  const voice = deck.voice || 'leo'
   const [queue, setQueue] = useState(() => {
     if (mode === 'browse') return shuffle(cardsFor(deck, lesson, section, 'fe', true))
     if (mode === 'review') return reviewQueue(store, cardsFor(deck, lesson, section, 'fe', true))
@@ -283,7 +312,7 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
     if (!card || result) return
     const r = checkTyped(typed, answers)
     setResult(r)
-    speak(card.item.fr, lang)
+    speak(card.item.fr, lang, voice)
   }
 
   // Keyboard: space/enter flips, 1 2 3 grade, arrows browse.
@@ -348,7 +377,7 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
             style={{ ...box, minHeight: 230, cursor: 'pointer', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             <div style={{ fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)' }}>{it.section}</div>
             <div lang="fr" style={{ ...big, color: 'var(--text)', marginTop: '0.4rem' }}>{it.fr}</div>
-            <SpeakButton text={it.fr} lang={lang} />
+            <SpeakButton text={it.fr} lang={lang} voice={voice} />
             {flipped
               ? <div style={{ marginTop: '1rem', fontSize: '1.3rem', color: 'var(--gold-lt)' }}>{it.en}</div>
               : <div style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--muted)' }}>Tap (or space) to see the meaning</div>}
@@ -385,7 +414,7 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
                     {result === 'right' ? 'Correct' : result === 'accents' ? 'Almost: check the accents' : 'Not quite'}
                   </div>
                   <div lang="fr" style={{ ...big, fontSize: '1.6rem', marginTop: '0.4rem' }}>{it.fr}</div>
-                  <SpeakButton text={it.fr} lang={lang} />
+                  <SpeakButton text={it.fr} lang={lang} voice={voice} />
                   <div>
                     <button style={{ ...btn, marginTop: '1rem' }} onClick={() => grade(result === 'right' ? 'good' : 'again')}>Next ›</button>
                   </div>
