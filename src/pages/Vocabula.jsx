@@ -1,4 +1,4 @@
-// VOCABULA_V2 — vocabulary practice and review, one page for every deck.
+// VOCABULA_V4 — vocabulary practice and review, one page for every deck.
 // Deck data lives in src/data/vocab/*.json. Every graded answer is a mastery
 // event in the shared spaced-repetition store (srs.js) and is queued for
 // Homeschool OS (sync.js → /api/recall → recall tab). All numbers are
@@ -25,7 +25,7 @@ function cardFor(deck, lesson, item, dir) {
     stage: deck.id,
     lessonId: String(lesson.id),
     type: dir === 'fe' ? 'vocab' : 'vocab-typed',
-    label: item.fr,
+    label: item.word,
     item,
     dir,
   }
@@ -35,6 +35,7 @@ function cardsFor(deck, lesson, section, dir, includeLines) {
   return lesson.items
     .filter((it) => section === 'all' || it.section === section)
     .filter((it) => dir === 'fe' || includeLines || it.kind !== 'line')
+    .filter((it) => dir === 'fe' || it.gloss !== 'fr')   // French-only glosses can't be an English prompt
     .map((it) => cardFor(deck, lesson, it, dir))
 }
 
@@ -60,14 +61,16 @@ function reviewQueue(store, cards) {
 const base = (s) => String(s).normalize('NFC').toLowerCase()
   .replace(/[’‘`]/g, "'")
   .replace(/[-–—]/g, ' ')
-  .replace(/[.,!?;:«»"()]/g, ' ')
+  .replace(/[.,!?;:«»"()…_]/g, ' ')
   .replace(/\s+/g, ' ').trim()
 const noAccents = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 
 // 'right' | 'accents' (only accents wrong) | 'wrong'
-function checkTyped(typed, answers) {
+// marks 'ignore' (Latin): long marks optional, so missing ones are still right.
+function checkTyped(typed, answers, marks) {
   const t = base(typed)
   if (!t) return 'wrong'
+  if (marks === 'ignore') return answers.some((a) => noAccents(base(a)) === noAccents(t)) ? 'right' : 'wrong'
   if (answers.some((a) => base(a) === t)) return 'right'
   if (answers.some((a) => noAccents(base(a)) === noAccents(t))) return 'accents'
   return 'wrong'
@@ -167,10 +170,6 @@ function Hub() {
             </div>
           </Link>
         ))}
-        <div style={{ ...box, opacity: 0.55 }}>
-          <div style={{ fontFamily: 'var(--font-heading)', fontSize: '1.15rem' }}>Elementa Latin</div>
-          <div style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>Coming soon</div>
-        </div>
       </div>
     </PageLayout>
   )
@@ -182,7 +181,12 @@ function Deck({ deck }) {
   const { activeId, activeProfile } = prof
   const { store, review, reload } = useSrs(activeId)
   useEffect(() => { reload() }, [activeId, reload])
-  const [lessonId, setLessonId] = useState(String(deck.lessons[0].id))
+  const lastKey = `vocab_lesson_${deck.id}`
+  const [lessonId, setLessonIdRaw] = useState(() => {
+    try { const v = localStorage.getItem(lastKey); if (v && deck.lessons.some((l) => String(l.id) === v)) return v } catch { /* */ }
+    return String(deck.lessons[0].id)
+  })
+  const setLessonId = (v) => { setLessonIdRaw(v); try { localStorage.setItem(lastKey, v) } catch { /* */ } }
   const [section, setSection] = useState('all')
   const [mode, setMode] = useState(null)          // null | 'review' | 'type' | 'browse'
   const [includeLines, setIncludeLines] = useState(false)
@@ -234,26 +238,27 @@ function Deck({ deck }) {
 
         <div style={{ marginTop: '1.1rem', display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
           {deck.lessons.map((l) => (
-            <button key={l.id} style={chip(String(l.id) === lessonId)} onClick={() => { setLessonId(String(l.id)); setSection('all') }}>{l.title}</button>
+            <button key={l.id} style={chip(String(l.id) === lessonId)} onClick={() => { setLessonId(String(l.id)); setSection('all') }}>{l.short || l.title}</button>
           ))}
         </div>
-        <div style={{ marginTop: '0.6rem', display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
+        <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.05rem', color: 'var(--gold-lt)', marginTop: '0.9rem' }}>{lesson.title}</h2>
+        {lesson.sections.length > 1 && <div style={{ marginTop: '0.6rem', display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
           <button style={chip(section === 'all')} onClick={() => setSection('all')}>All ({lesson.items.length})</button>
           {lesson.sections.map((s) => (
             <button key={s} style={chip(section === s)} onClick={() => setSection(s)}>
               {s} ({lesson.items.filter((i) => i.section === s).length})
             </button>
           ))}
-        </div>
+        </div>}
 
         <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1.1rem' }}>
-          <Stat title="Recognize (French → English)" c={counts.fe} />
-          <Stat title="Produce (English → French, typed)" c={counts.ef} />
+          <Stat title={`Recognize (${deck.langName || 'French'} → English)`} c={counts.fe} />
+          <Stat title={`Produce (English → ${deck.langName || 'French'}, typed)`} c={counts.ef} />
         </div>
 
         <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1.1rem' }}>
           <button style={btn} onClick={() => setMode('review')}>Review cards</button>
-          <button style={btn} onClick={() => setMode('type')}>Type the French</button>
+          <button style={btn} onClick={() => setMode('type')}>Type the {deck.langName || 'French'}</button>
           <button style={{ ...btn, borderColor: 'var(--border)', color: 'var(--text)', background: 'transparent' }} onClick={() => setMode('browse')}>Browse (not recorded)</button>
         </div>
         <label style={{ display: 'block', marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--muted)' }}>
@@ -289,7 +294,7 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
   const answers = useMemo(() => {
     if (!card) return []
     const en = base(card.item.en)
-    return lesson.items.filter((x) => base(x.en) === en).map((x) => x.fr)
+    return lesson.items.filter((x) => base(x.en) === en).flatMap((x) => x.accept || [x.word])
   }, [card, lesson])
 
   const next = useCallback(() => {
@@ -310,9 +315,9 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
 
   const submit = () => {
     if (!card || result) return
-    const r = checkTyped(typed, answers)
+    const r = checkTyped(typed, answers, deck.marks)
     setResult(r)
-    speak(card.item.fr, lang, voice)
+    speak(card.item.say || card.item.word, lang, voice)
   }
 
   // Keyboard: space/enter flips, 1 2 3 grade, arrows browse.
@@ -337,7 +342,7 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
 
   const header = (
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.9rem', fontSize: '0.85rem', color: 'var(--muted)' }}>
-      <span>{mode === 'review' ? 'Review' : mode === 'type' ? 'Type the French' : 'Browse'} · {section === 'all' ? lesson.title : section}</span>
+      <span>{mode === 'review' ? 'Review' : mode === 'type' ? `Type the ${deck.langName || 'French'}` : 'Browse'} · {section === 'all' ? lesson.title : section}</span>
       <span>{done ? queue.length : i + 1} of {queue.length}</span>
     </div>
   )
@@ -354,7 +359,7 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
               : mode === 'browse'
                 ? <p>That's the whole set.</p>
                 : <>
-                    <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--gold-lt)', fontSize: '1.2rem' }}>Bien fait !</p>
+                    <p style={{ fontFamily: 'var(--font-heading)', color: 'var(--gold-lt)', fontSize: '1.2rem' }}>{deck.praise || 'Well done!'}</p>
                     <p>{tally.first} cards · right the first time: {tally.firstRight}{pct !== null ? ` (${pct}%)` : ''}</p>
                   </>}
             <button style={{ ...btn, marginTop: '1rem' }} onClick={onDone}>Back</button>
@@ -365,7 +370,7 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
   }
 
   const it = card.item
-  const big = { fontFamily: 'var(--font-latin)', fontSize: it.fr.length > 30 ? '1.6rem' : '2.2rem', lineHeight: 1.3 }
+  const big = { fontFamily: 'var(--font-latin)', fontSize: it.word.length > 30 ? '1.6rem' : '2.2rem', lineHeight: 1.3 }
 
   return (
     <PageLayout back="/vocab" backLabel="Vocabula" breadcrumb={deck.title}>
@@ -375,11 +380,14 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
         {mode !== 'type' && (
           <div role="button" tabIndex={0} onClick={() => setFlipped((f) => !f)}
             style={{ ...box, minHeight: 230, cursor: 'pointer', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-            <div style={{ fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)' }}>{it.section}</div>
-            <div lang="fr" style={{ ...big, color: 'var(--text)', marginTop: '0.4rem' }}>{it.fr}</div>
-            <SpeakButton text={it.fr} lang={lang} voice={voice} />
+            <div style={{ fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)' }}>{[it.section, it.pos].filter(Boolean).join(' · ')}</div>
+            <div style={{ ...big, color: 'var(--text)', marginTop: '0.4rem' }}>{it.word}</div>
+            <SpeakButton text={it.say || it.word} lang={lang} voice={voice} />
             {flipped
-              ? <div style={{ marginTop: '1rem', fontSize: '1.3rem', color: 'var(--gold-lt)' }}>{it.en}</div>
+              ? <div style={{ marginTop: '1rem', fontSize: '1.3rem', color: 'var(--gold-lt)' }}>
+                  {it.gloss === 'fr' && <div style={{ fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)' }}>Autrement dit</div>}
+                  {it.en}
+                </div>
               : <div style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--muted)' }}>Tap (or space) to see the meaning</div>}
           </div>
         )}
@@ -394,15 +402,15 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
 
         {mode === 'type' && (
           <div style={{ ...box, textAlign: 'center' }}>
-            <div style={{ fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)' }}>{it.section} · say it in French</div>
+            <div style={{ fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--muted)' }}>{[it.section, it.pos].filter(Boolean).join(' · ')} · say it in {deck.langName || 'French'}</div>
             <div style={{ fontSize: '1.5rem', color: 'var(--gold-lt)', margin: '0.5rem 0 1rem' }}>{it.en}</div>
-            <input lang="fr" autoFocus value={typed} disabled={!!result}
+            <input autoFocus value={typed} disabled={!!result}
               autoCapitalize="off" autoCorrect="off" spellCheck={false}
               onChange={(e) => setTyped(e.target.value)}
               style={{ width: '100%', padding: '0.7rem', fontSize: '1.3rem', fontFamily: 'var(--font-body)', background: 'var(--bg)', color: 'var(--text)', border: '1px solid var(--border)', borderRadius: 'var(--radius)' }} />
             {!result && (
               <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap', justifyContent: 'center', marginTop: '0.6rem' }}>
-                {ACCENT_KEYS.map((k) => (
+                {(deck.keys || ACCENT_KEYS).map((k) => (
                   <button key={k} style={{ ...chip(false), minWidth: 38, fontSize: '1rem' }} onClick={() => setTyped((t) => t + k)}>{k}</button>
                 ))}
               </div>
@@ -413,8 +421,8 @@ function Session({ deck, lesson, section, mode, includeLines, store, review, onD
                   <div style={{ fontSize: '1.1rem', color: result === 'right' ? 'var(--success)' : 'var(--danger)' }}>
                     {result === 'right' ? 'Correct' : result === 'accents' ? 'Almost: check the accents' : 'Not quite'}
                   </div>
-                  <div lang="fr" style={{ ...big, fontSize: '1.6rem', marginTop: '0.4rem' }}>{it.fr}</div>
-                  <SpeakButton text={it.fr} lang={lang} voice={voice} />
+                  <div style={{ ...big, fontSize: '1.6rem', marginTop: '0.4rem' }}>{it.word}</div>
+                  <SpeakButton text={it.say || it.word} lang={lang} voice={voice} />
                   <div>
                     <button style={{ ...btn, marginTop: '1rem' }} onClick={() => grade(result === 'right' ? 'good' : 'again')}>Next ›</button>
                   </div>

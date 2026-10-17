@@ -5,11 +5,15 @@
  "lang": "fr-FR",
  "voice": "leo",
  "learner": "David",
- "attribution": "Vocabulary from French 1, Open Learning Initiative, Carnegie Mellon University (oli.cmu.edu), CC BY-NC-ND 3.0. For our family's private, non-commercial practice.",
+ "attribution": "Vocabulary from French 1, Open Learning Initiative, Carnegie Mellon University (oli.cmu.edu), CC BY-NC-ND 3.0. A few reference-list glosses (numbers, weather, body, clothing, food) were added by us. For our family's private, non-commercial practice.",
+ "langName": "French",
+ "marks": "strict",
+ "praise": "Bien fait !",
  "lessons": [
   {
    "id": "1",
    "title": "Leçon 1 · Se présenter",
+   "short": "1 · Se présenter",
    "sections": [
     "Bonjour",
     "Salut",
@@ -20,268 +24,6384 @@
     {
      "id": "01",
      "section": "Bonjour",
-     "fr": "Bonjour.",
      "en": "Hello or Good morning",
-     "kind": "word"
+     "kind": "word",
+     "word": "Bonjour."
     },
     {
      "id": "02",
      "section": "Bonjour",
-     "fr": "Merci.",
      "en": "Thank you.",
-     "kind": "word"
+     "kind": "word",
+     "word": "Merci."
     },
     {
      "id": "03",
      "section": "Bonjour",
-     "fr": "vous",
      "en": "you (formal)",
-     "kind": "word"
+     "kind": "word",
+     "word": "vous"
     },
     {
      "id": "04",
      "section": "Bonjour",
-     "fr": "Au revoir.",
      "en": "Goodbye.",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Au revoir."
     },
     {
      "id": "05",
      "section": "Bonjour",
-     "fr": "Bonjour, Madame.",
      "en": "Good morning, ma'am.",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Bonjour, Madame."
     },
     {
      "id": "06",
      "section": "Bonjour",
-     "fr": "Bonjour, Monsieur.",
      "en": "Good morning, sir.",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Bonjour, Monsieur."
     },
     {
      "id": "07",
      "section": "Bonjour",
-     "fr": "Comment allez-vous?",
      "en": "How are you? (formal)",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Comment allez-vous?"
     },
     {
      "id": "08",
      "section": "Bonjour",
-     "fr": "Très bien, merci.",
      "en": "Very well, thanks.",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Très bien, merci."
     },
     {
      "id": "09",
      "section": "Bonjour",
-     "fr": "Et vous?",
      "en": "And you? (formal)",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Et vous?"
     },
     {
      "id": "10",
      "section": "Bonjour",
-     "fr": "Comme-ci, comme-ça.",
      "en": "Just fair.",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Comme-ci, comme-ça."
     },
     {
      "id": "11",
      "section": "Bonjour",
-     "fr": "Au revoir, Madame.",
      "en": "Goodbye, ma'am.",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Au revoir, Madame."
     },
     {
      "id": "12",
      "section": "Bonjour",
-     "fr": "Au revoir, Monsieur.",
      "en": "Goodbye, sir.",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Au revoir, Monsieur."
     },
     {
      "id": "13",
      "section": "Salut",
-     "fr": "Salut!",
      "en": "Hi (informal)",
-     "kind": "word"
+     "kind": "word",
+     "word": "Salut!"
     },
     {
      "id": "14",
      "section": "Salut",
-     "fr": "Comment",
      "en": "How",
-     "kind": "word"
+     "kind": "word",
+     "word": "Comment"
     },
     {
      "id": "15",
      "section": "Salut",
-     "fr": "Bien",
      "en": "Well",
-     "kind": "word"
+     "kind": "word",
+     "word": "Bien"
     },
     {
      "id": "16",
      "section": "Salut",
-     "fr": "Pas mal",
      "en": "Not bad",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Pas mal"
     },
     {
      "id": "17",
      "section": "Salut",
-     "fr": "Salut, Michel.",
      "en": "Hi Michael.",
-     "kind": "line"
+     "kind": "line",
+     "word": "Salut, Michel."
     },
     {
      "id": "18",
      "section": "Salut",
-     "fr": "Salut, Alice.",
      "en": "Hi Alice.",
-     "kind": "line"
+     "kind": "line",
+     "word": "Salut, Alice."
     },
     {
      "id": "19",
      "section": "Salut",
-     "fr": "Comment vas-tu?",
      "en": "How are you? (informal)",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Comment vas-tu?"
     },
     {
      "id": "20",
      "section": "Salut",
-     "fr": "Je vais bien, merci. Et toi?",
      "en": "I'm doing well, thanks. And you? (informal)",
-     "kind": "line"
+     "kind": "line",
+     "word": "Je vais bien, merci. Et toi?"
     },
     {
      "id": "21",
      "section": "Salut",
-     "fr": "Salut. À bientôt!",
      "en": "Bye. See you soon! (informal)",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Salut. À bientôt!"
     },
     {
      "id": "22",
      "section": "Je m'appelle Éric",
-     "fr": "Comment t'appelles-tu?",
      "en": "What's your name? (informal)",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Comment t'appelles-tu?"
     },
     {
      "id": "23",
      "section": "Je m'appelle Éric",
-     "fr": "Moi",
      "en": "Me",
-     "kind": "word"
+     "kind": "word",
+     "word": "Moi"
     },
     {
      "id": "24",
      "section": "Je m'appelle Éric",
-     "fr": "Je m'appelle Éric. Enchanté.",
      "en": "My name's Eric. Nice to meet you.",
-     "kind": "line"
+     "kind": "line",
+     "word": "Je m'appelle Éric. Enchanté."
     },
     {
      "id": "25",
      "section": "Je m'appelle Éric",
-     "fr": "Salut Michel. Salut Alice. Ça va?",
      "en": "Hi Michael. Hi Alice. How are you? (informal)",
-     "kind": "line"
+     "kind": "line",
+     "word": "Salut Michel. Salut Alice. Ça va?"
     },
     {
      "id": "26",
      "section": "Je m'appelle Éric",
-     "fr": "Salut",
      "en": "Hi (informal)",
-     "kind": "word"
+     "kind": "word",
+     "word": "Salut"
     },
     {
      "id": "27",
      "section": "Je m'appelle Éric",
-     "fr": "Moi, c'est Sophie. Comment t'appelles-tu?",
      "en": "My name's Sophie. What's yours? (informal)",
-     "kind": "line"
+     "kind": "line",
+     "word": "Moi, c'est Sophie. Comment t'appelles-tu?"
     },
     {
      "id": "28",
      "section": "Je m'appelle Éric",
-     "fr": "Enchantée.",
      "en": "Nice to meet you. (feminine)",
-     "kind": "word"
+     "kind": "word",
+     "word": "Enchantée."
     },
     {
      "id": "29",
      "section": "Épeler",
-     "fr": "Mademoiselle",
      "en": "Miss",
-     "kind": "word"
+     "kind": "word",
+     "word": "Mademoiselle"
     },
     {
      "id": "30",
      "section": "Épeler",
-     "fr": "Voilà.",
      "en": "That's it or I see.",
-     "kind": "word"
+     "kind": "word",
+     "word": "Voilà."
     },
     {
      "id": "31",
      "section": "Épeler",
-     "fr": "Asseyez-vous.",
      "en": "Have a seat.",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Asseyez-vous."
     },
     {
      "id": "32",
      "section": "Épeler",
-     "fr": "Madame",
      "en": "Ma'am",
-     "kind": "word"
+     "kind": "word",
+     "word": "Madame"
     },
     {
      "id": "33",
      "section": "Épeler",
-     "fr": "Bonjour, Mademoiselle.",
      "en": "Good morning, miss.",
-     "kind": "phrase"
+     "kind": "phrase",
+     "word": "Bonjour, Mademoiselle."
     },
     {
      "id": "34",
      "section": "Épeler",
-     "fr": "Bonjour, Madame. Je m'appelle Clara Vanhoutte.",
      "en": "Good morning, ma'am. My name is Clara Vanhoutte.",
-     "kind": "line"
+     "kind": "line",
+     "word": "Bonjour, Madame. Je m'appelle Clara Vanhoutte."
     },
     {
      "id": "35",
      "section": "Épeler",
-     "fr": "Nathalie Dubois. Asseyez-vous.",
      "en": "(I'm) Nathalie Dubois. Have a seat.",
-     "kind": "line"
+     "kind": "line",
+     "word": "Nathalie Dubois. Asseyez-vous."
     },
     {
      "id": "36",
      "section": "Épeler",
-     "fr": "Comment s'épelle Vanhoutte?",
      "en": "How do you spell Vanhoutte?",
-     "kind": "line"
+     "kind": "line",
+     "word": "Comment s'épelle Vanhoutte?"
     },
     {
      "id": "37",
      "section": "Épeler",
-     "fr": "C'est v-a-n-h-o-u-deux-t-e. Vanhoutte.",
      "en": "It's v-a-n-h-o-u-2 ts-e. Vanhoutte.",
-     "kind": "line"
+     "kind": "line",
+     "word": "C'est v-a-n-h-o-u-deux-t-e. Vanhoutte."
     },
     {
      "id": "38",
      "section": "Épeler",
-     "fr": "Ah, voilà. Merci.",
      "en": "Oh, there it is. Thank you.",
+     "kind": "line",
+     "word": "Ah, voilà. Merci."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "title": "Leçon 2 · Les origines",
+   "short": "2 · Les origines",
+   "sections": [
+    "Vous êtes québécois?",
+    "Il est de Barcelone.",
+    "Je suis de Rimouski. (Montréal)",
+    "Ma chambre"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Vous êtes québécois?",
+     "word": "Asseyez-vous.",
+     "en": "Have a seat",
+     "kind": "word"
+    },
+    {
+     "id": "02",
+     "section": "Vous êtes québécois?",
+     "word": "S'il vous plaît",
+     "en": "Please (formal)",
+     "kind": "phrase"
+    },
+    {
+     "id": "03",
+     "section": "Vous êtes québécois?",
+     "word": "S'il te plaît",
+     "en": "Please (informal)",
+     "kind": "phrase"
+    },
+    {
+     "id": "04",
+     "section": "Vous êtes québécois?",
+     "word": "Maintenant",
+     "en": "Now",
+     "kind": "word"
+    },
+    {
+     "id": "05",
+     "section": "Vous êtes québécois?",
+     "word": "Peut-être",
+     "en": "Perhaps",
+     "kind": "word"
+    },
+    {
+     "id": "06",
+     "section": "Vous êtes québécois?",
+     "word": "Bonjour, Monsieur.",
+     "en": "Good morning, sir.",
+     "kind": "word"
+    },
+    {
+     "id": "07",
+     "section": "Vous êtes québécois?",
+     "word": "Bonjour, Madame.",
+     "en": "Good morning, ma'am.",
+     "kind": "word"
+    },
+    {
+     "id": "08",
+     "section": "Vous êtes québécois?",
+     "word": "Asseyez-vous, s'il vous plaît.",
+     "en": "Please have a seat.",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Vous êtes québécois?",
+     "word": "Merci",
+     "en": "Thank you",
+     "kind": "word"
+    },
+    {
+     "id": "10",
+     "section": "Vous êtes québécois?",
+     "word": "Vous êtes…?",
+     "en": "And you are... ?",
+     "kind": "phrase"
+    },
+    {
+     "id": "11",
+     "section": "Vous êtes québécois?",
+     "word": "Je m'appelle Alex Tremblay.",
+     "en": "My name is Alex Tremblay.",
+     "kind": "phrase"
+    },
+    {
+     "id": "12",
+     "section": "Vous êtes québécois?",
+     "word": "Vous épelez Tremblay comment?",
+     "en": "How do you spell Tremblay?",
+     "kind": "phrase"
+    },
+    {
+     "id": "13",
+     "section": "Vous êtes québécois?",
+     "word": "C'est T-R-E-M-B-L-A-Y.",
+     "en": "T-R-E-M-B-L-A-Y",
+     "kind": "word"
+    },
+    {
+     "id": "14",
+     "section": "Vous êtes québécois?",
+     "word": "Vous êtes québécois peut-être?",
+     "en": "Might you be a Quebecker?",
+     "kind": "phrase"
+    },
+    {
+     "id": "15",
+     "section": "Vous êtes québécois?",
+     "word": "Je suis de Montréal.",
+     "en": "I'm from Montreal.",
+     "kind": "phrase"
+    },
+    {
+     "id": "16",
+     "section": "Vous êtes québécois?",
+     "word": "Maintenant, j'habite à Paris.",
+     "en": "Now I live in Paris.",
+     "kind": "phrase"
+    },
+    {
+     "id": "17",
+     "section": "Il est de Barcelone.",
+     "word": "Salut",
+     "en": "Hi",
+     "kind": "word"
+    },
+    {
+     "id": "18",
+     "section": "Il est de Barcelone.",
+     "word": "Moi",
+     "en": "Me",
+     "kind": "word"
+    },
+    {
+     "id": "19",
+     "section": "Il est de Barcelone.",
+     "word": "Lui",
+     "en": "Him",
+     "kind": "word"
+    },
+    {
+     "id": "20",
+     "section": "Il est de Barcelone.",
+     "word": "Toi",
+     "en": "You - familiar",
+     "kind": "word"
+    },
+    {
+     "id": "21",
+     "section": "Il est de Barcelone.",
+     "word": "Oui, oui.",
+     "en": "Yes, yes.",
+     "kind": "word"
+    },
+    {
+     "id": "22",
+     "section": "Il est de Barcelone.",
+     "word": "Pourquoi?",
+     "en": "Why?",
+     "kind": "phrase"
+    },
+    {
+     "id": "23",
+     "section": "Il est de Barcelone.",
+     "word": "Vous êtes à l'auberge de jeunesse, non?",
+     "en": "You're at the youth hostel, right?",
      "kind": "line"
+    },
+    {
+     "id": "24",
+     "section": "Il est de Barcelone.",
+     "word": "Nous sommes à l'auberge.",
+     "en": "We are at the youth hostel.",
+     "kind": "phrase"
+    },
+    {
+     "id": "25",
+     "section": "Il est de Barcelone.",
+     "word": "Comment t’appelles-tu?",
+     "en": "What's your name?",
+     "kind": "phrase"
+    },
+    {
+     "id": "26",
+     "section": "Il est de Barcelone.",
+     "word": "Moi, c'est Raphaël.",
+     "en": "My name is Raphaël.",
+     "kind": "phrase"
+    },
+    {
+     "id": "27",
+     "section": "Il est de Barcelone.",
+     "word": "Lui, c'est Manuel.",
+     "en": "He's Manuel.",
+     "kind": "phrase"
+    },
+    {
+     "id": "28",
+     "section": "Il est de Barcelone.",
+     "word": "Il est de Barcelone.",
+     "en": "He's from Barcelona.",
+     "kind": "phrase"
+    },
+    {
+     "id": "29",
+     "section": "Il est de Barcelone.",
+     "word": "Pourquoi est-il à Nantes?",
+     "en": "Why is he in Nantes?",
+     "kind": "phrase"
+    },
+    {
+     "id": "30",
+     "section": "Il est de Barcelone.",
+     "word": "Il étudie le français.",
+     "en": "He's studying French.",
+     "kind": "phrase"
+    },
+    {
+     "id": "31",
+     "section": "Il est de Barcelone.",
+     "word": "Moi, je suis belge.",
+     "en": "Me, I'm Belgian.",
+     "kind": "phrase"
+    },
+    {
+     "id": "32",
+     "section": "Il est de Barcelone.",
+     "word": "Je suis de Bruxelles, en vacances ici.",
+     "en": "I'm from Brussels, on vacation here.",
+     "kind": "line"
+    },
+    {
+     "id": "33",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Bonjour.",
+     "en": "Hello or Good morning",
+     "kind": "word"
+    },
+    {
+     "id": "34",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Comment tu t'appelles?",
+     "en": "What's your name?",
+     "kind": "phrase"
+    },
+    {
+     "id": "35",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Je m'appelle Marc-André.",
+     "en": "My name is Marc-André.",
+     "kind": "phrase"
+    },
+    {
+     "id": "36",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Je m'appelle Sophie.",
+     "en": "My name is Sophie.",
+     "kind": "phrase"
+    },
+    {
+     "id": "37",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Tu viens d'où?",
+     "en": "Where do you come from?",
+     "kind": "phrase"
+    },
+    {
+     "id": "38",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Je viens du Saguenay.",
+     "en": "I come from the Saguenay region.",
+     "kind": "phrase"
+    },
+    {
+     "id": "39",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Je suis de Rimouski.",
+     "en": "I'm from (the city of) Rimouski.",
+     "kind": "phrase"
+    },
+    {
+     "id": "40",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "C'est la première fois.",
+     "en": "It's the first time.",
+     "kind": "phrase"
+    },
+    {
+     "id": "41",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Je viens à Montréal.",
+     "en": "I come to Montreal.",
+     "kind": "phrase"
+    },
+    {
+     "id": "42",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "C'est la première fois que je viens à Montréal.",
+     "en": "It's the first time I've come to Montreal.",
+     "kind": "line"
+    },
+    {
+     "id": "43",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Moi aussi!",
+     "en": "Me too",
+     "kind": "word"
+    },
+    {
+     "id": "44",
+     "section": "Je suis de Rimouski. (Montréal)",
+     "word": "Enchantée.",
+     "en": "Pleased (to meet you).",
+     "kind": "word"
+    },
+    {
+     "id": "45",
+     "section": "Ma chambre",
+     "word": "Dans ma chambre, il y a une chaise, une table, un lit et une armoire",
+     "en": "In my room, there's a chair, a table, a bed, and a dresser.",
+     "kind": "line"
+    },
+    {
+     "id": "46",
+     "section": "Ma chambre",
+     "word": "Sur la table il y a un ordinateur, avec une souris et un clavier, et une lampe.",
+     "en": "On the table there's a computer with a mouse and keyboard, and a lamp.",
+     "kind": "line"
+    },
+    {
+     "id": "47",
+     "section": "Ma chambre",
+     "word": "Il y a aussi des livres.",
+     "en": "There are also some books.",
+     "kind": "phrase"
+    },
+    {
+     "id": "48",
+     "section": "Ma chambre",
+     "word": "Dans ma chambre",
+     "en": "In my room",
+     "kind": "phrase"
+    },
+    {
+     "id": "49",
+     "section": "Ma chambre",
+     "word": "Il y a",
+     "en": "There is/there are",
+     "kind": "phrase"
+    },
+    {
+     "id": "50",
+     "section": "Ma chambre",
+     "word": "Il y a un ordinateur.",
+     "en": "There's a computer.",
+     "kind": "phrase"
+    },
+    {
+     "id": "51",
+     "section": "Ma chambre",
+     "word": "Il n'y a pas de télévision.",
+     "en": "There is no television.",
+     "kind": "phrase"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "title": "Leçon 3 · Les études",
+   "short": "3 · Les études",
+   "sections": [
+    "Qu'est-ce que tu étudies?",
+    "Elle est à l'université.",
+    "Mon expérience scientifique (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Asseyez-vous.",
+     "en": "Have a seat (formal)",
+     "kind": "word"
+    },
+    {
+     "id": "02",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Assieds-toi.",
+     "en": "Have a seat (informal)",
+     "kind": "word"
+    },
+    {
+     "id": "03",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "En ce moment",
+     "en": "Right now",
+     "kind": "phrase"
+    },
+    {
+     "id": "04",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "En vacances",
+     "en": "On holiday, on vacation",
+     "kind": "word"
+    },
+    {
+     "id": "05",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Là-bas",
+     "en": "There",
+     "kind": "word"
+    },
+    {
+     "id": "06",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Facile",
+     "en": "Easy",
+     "kind": "word"
+    },
+    {
+     "id": "07",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Quelles",
+     "en": "Which",
+     "kind": "word"
+    },
+    {
+     "id": "08",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Ça marche.",
+     "en": "It's going well.",
+     "kind": "word"
+    },
+    {
+     "id": "09",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Tu es en vacances en ce moment?",
+     "en": "Are you on vacation now?",
+     "kind": "line"
+    },
+    {
+     "id": "10",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Pour l'été.",
+     "en": "For the summer.",
+     "kind": "word"
+    },
+    {
+     "id": "11",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Tu vas à l'université à Nantes, non?",
+     "en": "You go to the University of Nantes, don't you?",
+     "kind": "line"
+    },
+    {
+     "id": "12",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Oui j'étudie l'informatique là-bas.",
+     "en": "I study computer science there.",
+     "kind": "phrase"
+    },
+    {
+     "id": "13",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "C'est difficile?",
+     "en": "Is it difficult?",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Ce n'est pas facile.",
+     "en": "It's not easy.",
+     "kind": "phrase"
+    },
+    {
+     "id": "15",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Mais les études vont bien.",
+     "en": "But my studies are going well.",
+     "kind": "phrase"
+    },
+    {
+     "id": "16",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Moi, je suis à la Sorbonne.",
+     "en": "I'm at the Sorbonne.",
+     "kind": "phrase"
+    },
+    {
+     "id": "17",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "J'étudie les langues.",
+     "en": "I'm studying languages.",
+     "kind": "phrase"
+    },
+    {
+     "id": "18",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Quelles langues étudies-tu?",
+     "en": "Which languages are you studying?",
+     "kind": "phrase"
+    },
+    {
+     "id": "19",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Le français et l'allemand.",
+     "en": "French and German.",
+     "kind": "phrase"
+    },
+    {
+     "id": "20",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Et ça marche?",
+     "en": "And that's going well?",
+     "kind": "phrase"
+    },
+    {
+     "id": "21",
+     "section": "Qu'est-ce que tu étudies?",
+     "word": "Ça marche pas mal, mais j'étudie beaucoup.",
+     "en": "It's going OK, but I study a lot.",
+     "kind": "line"
+    },
+    {
+     "id": "22",
+     "section": "Elle est à l'université.",
+     "word": "Où est Cécile maintenant?",
+     "en": "Where is Cecilia now?",
+     "kind": "phrase"
+    },
+    {
+     "id": "23",
+     "section": "Elle est à l'université.",
+     "word": "Elle habite Strasbourg, en Alsace.",
+     "en": "She lives in Strasbourg, in Alsace.",
+     "kind": "phrase"
+    },
+    {
+     "id": "24",
+     "section": "Elle est à l'université.",
+     "word": "Qu'est-ce qu'elle étudie?",
+     "en": "What does she study?",
+     "kind": "phrase"
+    },
+    {
+     "id": "25",
+     "section": "Elle est à l'université.",
+     "word": "Elle étudie les sciences économiques.",
+     "en": "She's studying economics.",
+     "kind": "phrase"
+    },
+    {
+     "id": "26",
+     "section": "Elle est à l'université.",
+     "word": "Ah, oui. Ce n'est pas évident, comme matière.",
+     "en": "Ah yes. That's not an easy subject.",
+     "kind": "line"
+    },
+    {
+     "id": "27",
+     "section": "Elle est à l'université.",
+     "word": "Mais ça marche bien pour elle.",
+     "en": "But it's going well for her.",
+     "kind": "phrase"
+    },
+    {
+     "id": "28",
+     "section": "Elle est à l'université.",
+     "word": "Elle habite à Strasbourg l'été aussi?",
+     "en": "Does she live in Strasbourg in the summer too?",
+     "kind": "phrase"
+    },
+    {
+     "id": "29",
+     "section": "Elle est à l'université.",
+     "word": "Non, elle est à Nantes maintenant.",
+     "en": "No. She's in Nantes now.",
+     "kind": "phrase"
+    },
+    {
+     "id": "30",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "un tableau",
+     "en": "a chart or graph",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "31",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "une expérience scientifique",
+     "en": "a scientific experiment",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "32",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "une hypothèse",
+     "en": "an hypothesis",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "33",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "le matériel informatique",
+     "en": "computer hardware",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "34",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "susceptible",
+     "en": "susceptible",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "35",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "C'est quoi, cette affaire-là?",
+     "en": "What's that thing?",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "36",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "C'est un tableau qui montre le plan de mon expérience scientifique.",
+     "en": "It's a chart showing the plan for my scientific experiment.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "37",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "C'est pour quel cours?",
+     "en": "What course is it for?",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "38",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "C'est pour mon cours de sociologie.",
+     "en": "It's for my sociology course.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "39",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "J'aimerais savoir qui utilise les mots en français et qui utilise les mots en anglais.",
+     "en": "I'd like to know who uses French words and who uses English words.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "40",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "C'est une expérience sociologique et linguistique.",
+     "en": "It's a sociological and linguistic experiment.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "41",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "Les personnes les plus susceptibles d'utiliser les mots en anglais sont les jeunes.",
+     "en": "The people most susceptible to using English words are the young.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "42",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "C'est pas surprenant.",
+     "en": "That isn't surprising.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "43",
+     "section": "Mon expérience scientifique (Montréal)",
+     "word": "Non, pantoute.",
+     "en": "No, not at all (Quebec expression)",
+     "kind": "word",
+     "gloss": "fr"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "title": "Leçon 4 · L'âge",
+   "short": "4 · L'âge",
+   "sections": [
+    "Tu as quel âge?",
+    "Le Sénégal en juillet",
+    "Un grand homme",
+    "Les chiffres",
+    "Le temps et les saisons",
+    "L'escalier en hiver (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Tu as quel âge?",
+     "word": "C'est ton anniversaire.",
+     "en": "It's your birthday.",
+     "kind": "phrase"
+    },
+    {
+     "id": "02",
+     "section": "Tu as quel âge?",
+     "word": "C'est vrai.",
+     "en": "It's true.",
+     "kind": "word"
+    },
+    {
+     "id": "03",
+     "section": "Tu as quel âge?",
+     "word": "Quel âge as-tu?",
+     "en": "How old are you?",
+     "kind": "phrase"
+    },
+    {
+     "id": "04",
+     "section": "Tu as quel âge?",
+     "word": "J'ai vingt-deux ans",
+     "en": "I'm 22 years old.",
+     "kind": "phrase"
+    },
+    {
+     "id": "05",
+     "section": "Tu as quel âge?",
+     "word": "Qu'est-ce que tu es vieux!",
+     "en": "How old you are!",
+     "kind": "phrase"
+    },
+    {
+     "id": "06",
+     "section": "Tu as quel âge?",
+     "word": "Tu parles!",
+     "en": "Yeah right!",
+     "kind": "word"
+    },
+    {
+     "id": "07",
+     "section": "Tu as quel âge?",
+     "word": "Toi, tu es vieille.",
+     "en": "You are old.",
+     "kind": "phrase"
+    },
+    {
+     "id": "08",
+     "section": "Tu as quel âge?",
+     "word": "Moi, je suis jeune.",
+     "en": "I am young.",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Le Sénégal en juillet",
+     "word": "Dis-moi.",
+     "en": "Tell me.",
+     "kind": "word"
+    },
+    {
+     "id": "10",
+     "section": "Le Sénégal en juillet",
+     "word": "Je vais au Sénégal en juillet.",
+     "en": "I’m going to Senegal in July.",
+     "kind": "phrase"
+    },
+    {
+     "id": "11",
+     "section": "Le Sénégal en juillet",
+     "word": "Tu sais le temps qu’il fait à Dakar en été?",
+     "en": "Do you know what the weather is like in Dakar in the summer?",
+     "kind": "line"
+    },
+    {
+     "id": "12",
+     "section": "Le Sénégal en juillet",
+     "word": "C’est la saison des pluies au Sénégal.",
+     "en": "It’s the rainy season in Senegal.",
+     "kind": "line"
+    },
+    {
+     "id": "13",
+     "section": "Le Sénégal en juillet",
+     "word": "Il pleut beaucoup.",
+     "en": "It rains a lot.",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "Le Sénégal en juillet",
+     "word": "Il fait très chaud.",
+     "en": "It's very hot.",
+     "kind": "phrase"
+    },
+    {
+     "id": "15",
+     "section": "Un grand homme",
+     "word": "C’est l’anniversaire du Président aujourd’hui.",
+     "en": "It’s the President’s birthday today.",
+     "kind": "phrase"
+    },
+    {
+     "id": "16",
+     "section": "Un grand homme",
+     "word": "Il a soixante-douze ans.",
+     "en": "He’s 72 years old",
+     "kind": "phrase"
+    },
+    {
+     "id": "17",
+     "section": "Un grand homme",
+     "word": "C’est un grand homme.",
+     "en": "He’s a great man.",
+     "kind": "phrase"
+    },
+    {
+     "id": "18",
+     "section": "Un grand homme",
+     "word": "C’est un vieil homme.",
+     "en": "He’s an old man.",
+     "kind": "phrase"
+    },
+    {
+     "id": "19",
+     "section": "Un grand homme",
+     "word": "C’est différent.",
+     "en": "It’s different.",
+     "kind": "word"
+    },
+    {
+     "id": "20",
+     "section": "Un grand homme",
+     "word": "Il est grand quand-même.",
+     "en": "He’s tall anyway!",
+     "kind": "phrase"
+    },
+    {
+     "id": "21",
+     "section": "Un grand homme",
+     "word": "D’accord!",
+     "en": "All right!",
+     "kind": "word"
+    },
+    {
+     "id": "22",
+     "section": "Un grand homme",
+     "word": "Un homme grand n’est pas toujours un grand homme.",
+     "en": "A tall man isn’t always a great man.",
+     "kind": "line"
+    },
+    {
+     "id": "23",
+     "section": "Les chiffres",
+     "word": "zéro",
+     "en": "0",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "24",
+     "section": "Les chiffres",
+     "word": "un",
+     "en": "1",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "25",
+     "section": "Les chiffres",
+     "word": "deux",
+     "en": "2",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "26",
+     "section": "Les chiffres",
+     "word": "trois",
+     "en": "3",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "27",
+     "section": "Les chiffres",
+     "word": "quatre",
+     "en": "4",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "28",
+     "section": "Les chiffres",
+     "word": "cinq",
+     "en": "5",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "29",
+     "section": "Les chiffres",
+     "word": "six",
+     "en": "6",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "30",
+     "section": "Les chiffres",
+     "word": "sept",
+     "en": "7",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "31",
+     "section": "Les chiffres",
+     "word": "huit",
+     "en": "8",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "32",
+     "section": "Les chiffres",
+     "word": "neuf",
+     "en": "9",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "33",
+     "section": "Les chiffres",
+     "word": "dix",
+     "en": "10",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "34",
+     "section": "Les chiffres",
+     "word": "onze",
+     "en": "11",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "35",
+     "section": "Les chiffres",
+     "word": "douze",
+     "en": "12",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "36",
+     "section": "Les chiffres",
+     "word": "treize",
+     "en": "13",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "37",
+     "section": "Les chiffres",
+     "word": "quatorze",
+     "en": "14",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "38",
+     "section": "Les chiffres",
+     "word": "quinze",
+     "en": "15",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "39",
+     "section": "Les chiffres",
+     "word": "seize",
+     "en": "16",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "40",
+     "section": "Les chiffres",
+     "word": "dix-sept",
+     "en": "17",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "41",
+     "section": "Les chiffres",
+     "word": "dix-huit",
+     "en": "18",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "42",
+     "section": "Les chiffres",
+     "word": "dix-neuf",
+     "en": "19",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "43",
+     "section": "Les chiffres",
+     "word": "vingt",
+     "en": "20",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "44",
+     "section": "Les chiffres",
+     "word": "vingt et un",
+     "en": "21",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "45",
+     "section": "Les chiffres",
+     "word": "vingt-deux",
+     "en": "22",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "46",
+     "section": "Les chiffres",
+     "word": "vingt-trois",
+     "en": "23",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "47",
+     "section": "Les chiffres",
+     "word": "vingt-quatre",
+     "en": "24",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "48",
+     "section": "Les chiffres",
+     "word": "vingt-cinq",
+     "en": "25",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "49",
+     "section": "Les chiffres",
+     "word": "vingt-six",
+     "en": "26",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "50",
+     "section": "Les chiffres",
+     "word": "vingt-sept",
+     "en": "27",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "51",
+     "section": "Les chiffres",
+     "word": "vingt-huit",
+     "en": "28",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "52",
+     "section": "Les chiffres",
+     "word": "vingt-neuf",
+     "en": "29",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "53",
+     "section": "Les chiffres",
+     "word": "trente",
+     "en": "30",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "54",
+     "section": "Les chiffres",
+     "word": "trente et un...",
+     "en": "31...",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "55",
+     "section": "Les chiffres",
+     "word": "quarante",
+     "en": "40",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "56",
+     "section": "Les chiffres",
+     "word": "quarante et un...",
+     "en": "41...",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "57",
+     "section": "Les chiffres",
+     "word": "cinquante",
+     "en": "50",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "58",
+     "section": "Les chiffres",
+     "word": "cinquante et un...",
+     "en": "51...",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "59",
+     "section": "Les chiffres",
+     "word": "soixante",
+     "en": "60",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "60",
+     "section": "Les chiffres",
+     "word": "soixante et un...",
+     "en": "61...",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "61",
+     "section": "Les chiffres",
+     "word": "soixante-dix",
+     "en": "70",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "62",
+     "section": "Les chiffres",
+     "word": "soixante-et-onze",
+     "en": "71",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "63",
+     "section": "Les chiffres",
+     "word": "soixante-douze",
+     "en": "72",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "64",
+     "section": "Les chiffres",
+     "word": "soixante-treize",
+     "en": "73",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "65",
+     "section": "Les chiffres",
+     "word": "soixante-quatorze",
+     "en": "74",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "66",
+     "section": "Les chiffres",
+     "word": "soixante-quinze",
+     "en": "75",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "67",
+     "section": "Les chiffres",
+     "word": "soixante-seize",
+     "en": "76",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "68",
+     "section": "Les chiffres",
+     "word": "soixante-dix-sept",
+     "en": "77",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "69",
+     "section": "Les chiffres",
+     "word": "soixante-dix-huit",
+     "en": "78",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "70",
+     "section": "Les chiffres",
+     "word": "soixante-dix-neuf",
+     "en": "79",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "71",
+     "section": "Les chiffres",
+     "word": "quatre-vingts",
+     "en": "80",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "72",
+     "section": "Les chiffres",
+     "word": "quatre-vingt-un...",
+     "en": "81...",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "73",
+     "section": "Les chiffres",
+     "word": "quatre-vingt-dix",
+     "en": "90",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "74",
+     "section": "Les chiffres",
+     "word": "quatre-vingt-onze...",
+     "en": "91...",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "75",
+     "section": "Les chiffres",
+     "word": "cent",
+     "en": "100",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "76",
+     "section": "Les chiffres",
+     "word": "cent un...",
+     "en": "101...",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "77",
+     "section": "Le temps et les saisons",
+     "word": "Les quatre saisons",
+     "en": "The four seasons",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "78",
+     "section": "Le temps et les saisons",
+     "word": "Le printemps",
+     "en": "Spring",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "79",
+     "section": "Le temps et les saisons",
+     "word": "L’été",
+     "en": "Summer",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "80",
+     "section": "Le temps et les saisons",
+     "word": "L’automne",
+     "en": "Autumn / fall",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "81",
+     "section": "Le temps et les saisons",
+     "word": "L’hiver",
+     "en": "Winter",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "82",
+     "section": "Le temps et les saisons",
+     "word": "Quel temps fait-il?",
+     "en": "What's the weather like?",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "83",
+     "section": "Le temps et les saisons",
+     "word": "Il fait beau.",
+     "en": "The weather is nice.",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "84",
+     "section": "Le temps et les saisons",
+     "word": "Il fait chaud. Il fait vingt-trois degrés.",
+     "en": "It's hot. It's twenty-three degrees.",
+     "kind": "line",
+     "added": true
+    },
+    {
+     "id": "85",
+     "section": "Le temps et les saisons",
+     "word": "Il pleut. Il fait mauvais.",
+     "en": "It's raining. The weather is bad.",
+     "kind": "line",
+     "added": true
+    },
+    {
+     "id": "86",
+     "section": "Le temps et les saisons",
+     "word": "Il neige. Il fait froid. Il fait 2 degrés.",
+     "en": "It's snowing. It's cold. It's 2 degrees.",
+     "kind": "line",
+     "added": true
+    },
+    {
+     "id": "87",
+     "section": "Le temps et les saisons",
+     "word": "Au printemps, il fait beau ou il pleut.",
+     "en": "In spring, it's nice or it rains.",
+     "kind": "line",
+     "added": true
+    },
+    {
+     "id": "88",
+     "section": "Le temps et les saisons",
+     "word": "En été, il fait beau. Il fait chaud.",
+     "en": "In summer, it's nice. It's hot.",
+     "kind": "line",
+     "added": true
+    },
+    {
+     "id": "89",
+     "section": "Le temps et les saisons",
+     "word": "En automne, il fait mauvais. Les feuilles tombent des arbres.",
+     "en": "In autumn, the weather is bad. The leaves fall from the trees.",
+     "kind": "line",
+     "added": true
+    },
+    {
+     "id": "90",
+     "section": "Le temps et les saisons",
+     "word": "En hiver, il fait froid. Il neige.",
+     "en": "In winter, it's cold. It snows.",
+     "kind": "line",
+     "added": true
+    },
+    {
+     "id": "91",
+     "section": "Le temps et les saisons",
+     "word": "0°C",
+     "en": "freezing",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "92",
+     "section": "Le temps et les saisons",
+     "word": "10°C",
+     "en": "chilly",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "93",
+     "section": "Le temps et les saisons",
+     "word": "17°C",
+     "en": "mild",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "94",
+     "section": "Le temps et les saisons",
+     "word": "24°C",
+     "en": "warm",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "95",
+     "section": "Le temps et les saisons",
+     "word": "30°C",
+     "en": "hot",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "96",
+     "section": "Le temps et les saisons",
+     "word": "37°C",
+     "en": "body temperature",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "97",
+     "section": "Le temps et les saisons",
+     "word": "100°C",
+     "en": "boiling",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "98",
+     "section": "Le temps et les saisons",
+     "word": "Il fait froid!",
+     "en": "It's cold!",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "99",
+     "section": "Le temps et les saisons",
+     "word": "Il fait frais.",
+     "en": "Chilly",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "100",
+     "section": "Le temps et les saisons",
+     "word": "Il ne fait pas froid.",
+     "en": "It isn't cold.",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "101",
+     "section": "Le temps et les saisons",
+     "word": "Il fait chaud!",
+     "en": "It's hot!",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "102",
+     "section": "Le temps et les saisons",
+     "word": "La température normale du corps humain.",
+     "en": "Normal body temperature",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "103",
+     "section": "Le temps et les saisons",
+     "word": "L’eau bout!",
+     "en": "Water boils",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "104",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "Ça va bien?",
+     "en": "You're doing well?",
+     "kind": "phrase"
+    },
+    {
+     "id": "105",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "Pas trop mal.",
+     "en": "Not too bad.",
+     "kind": "phrase"
+    },
+    {
+     "id": "106",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "C'est dur.",
+     "en": "It's hard.",
+     "kind": "word"
+    },
+    {
+     "id": "107",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "l'hiver à Montréal",
+     "en": "winter in Montréal",
+     "kind": "phrase"
+    },
+    {
+     "id": "108",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "Effectivement.",
+     "en": "Indeed.",
+     "kind": "word"
+    },
+    {
+     "id": "109",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "Il gèle.",
+     "en": "It sleets.",
+     "kind": "word"
+    },
+    {
+     "id": "110",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "Il y a de la glace.",
+     "en": "There is ice.",
+     "kind": "phrase"
+    },
+    {
+     "id": "111",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "C'est un grand problème.",
+     "en": "It's a big problem.",
+     "kind": "phrase"
+    },
+    {
+     "id": "112",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "Tu sais, l'hiver à Montréal, c'est dur.",
+     "en": "You know, the winter in Montreal is hard.",
+     "kind": "line"
+    },
+    {
+     "id": "113",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "Il y a de la neige dans les rues.",
+     "en": "There's snow in the streets.",
+     "kind": "line"
+    },
+    {
+     "id": "114",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "Il y a de la glace dans les escaliers.",
+     "en": "There's ice on the stairs.",
+     "kind": "line"
+    },
+    {
+     "id": "115",
+     "section": "L'escalier en hiver (Montréal)",
+     "word": "Ce que je trouve le pire, c'est quand il gèle.",
+     "en": "What I find the worst is when it sleets.",
+     "kind": "line"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "title": "Leçon 5 · L'apparence",
+   "short": "5 · L'apparence",
+   "sections": [
+    "Où habitent tes parents?",
+    "Sports d'hiver",
+    "J'ai mal aux pieds.",
+    "Les parties du corps"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Où habitent tes parents?",
+     "word": "Où habitent tes parents?",
+     "en": "Where do your parents live?",
+     "kind": "phrase"
+    },
+    {
+     "id": "02",
+     "section": "Où habitent tes parents?",
+     "word": "Ils habitent à Lyon.",
+     "en": "They live in Lyon.",
+     "kind": "phrase"
+    },
+    {
+     "id": "03",
+     "section": "Où habitent tes parents?",
+     "word": "Tu as des frères et des sœurs?",
+     "en": "Do you have brothers and sisters?",
+     "kind": "line"
+    },
+    {
+     "id": "04",
+     "section": "Où habitent tes parents?",
+     "word": "J’ai un frère.",
+     "en": "I have one brother.",
+     "kind": "phrase"
+    },
+    {
+     "id": "05",
+     "section": "Où habitent tes parents?",
+     "word": "J’ai une sœur.",
+     "en": "I have one sister.",
+     "kind": "phrase"
+    },
+    {
+     "id": "06",
+     "section": "Où habitent tes parents?",
+     "word": "Comment est-elle?",
+     "en": "What’s she like?",
+     "kind": "phrase"
+    },
+    {
+     "id": "07",
+     "section": "Où habitent tes parents?",
+     "word": "Comment est-il?",
+     "en": "What’s he like?",
+     "kind": "phrase"
+    },
+    {
+     "id": "08",
+     "section": "Où habitent tes parents?",
+     "word": "Elle est sympathique.",
+     "en": "She’s nice.",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Où habitent tes parents?",
+     "word": "Elle est sympa.",
+     "en": "She’s nice.",
+     "kind": "phrase"
+    },
+    {
+     "id": "10",
+     "section": "Où habitent tes parents?",
+     "word": "Elle est ambitieuse.",
+     "en": "She’s ambitious.",
+     "kind": "phrase"
+    },
+    {
+     "id": "11",
+     "section": "Où habitent tes parents?",
+     "word": "Comme toi.",
+     "en": "Like you.",
+     "kind": "word"
+    },
+    {
+     "id": "12",
+     "section": "Où habitent tes parents?",
+     "word": "Comme ma mère.",
+     "en": "Like my mother.",
+     "kind": "phrase"
+    },
+    {
+     "id": "13",
+     "section": "Où habitent tes parents?",
+     "word": "Est-ce qu’elle est brune?",
+     "en": "Is she brunette?",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "Où habitent tes parents?",
+     "word": "Elle est blonde et petite.",
+     "en": "She’s blond and small.",
+     "kind": "phrase"
+    },
+    {
+     "id": "15",
+     "section": "Où habitent tes parents?",
+     "word": "Elle est châtain clair.",
+     "en": "She has light brown hair.",
+     "kind": "phrase"
+    },
+    {
+     "id": "16",
+     "section": "Où habitent tes parents?",
+     "word": "Elle a les yeux noirs.",
+     "en": "She has black eyes.",
+     "kind": "phrase"
+    },
+    {
+     "id": "17",
+     "section": "Où habitent tes parents?",
+     "word": "Il a les yeux bleus.",
+     "en": "He has blue eyes.",
+     "kind": "phrase"
+    },
+    {
+     "id": "18",
+     "section": "Où habitent tes parents?",
+     "word": "J'ai les yeux verts, comme ma mère.",
+     "en": "I have green eyes, like my mother.",
+     "kind": "line"
+    },
+    {
+     "id": "19",
+     "section": "Sports d'hiver",
+     "word": "C’est vrai!",
+     "en": "That’s true.",
+     "kind": "word"
+    },
+    {
+     "id": "20",
+     "section": "Sports d'hiver",
+     "word": "N’est-ce pas?",
+     "en": "Right?",
+     "kind": "phrase"
+    },
+    {
+     "id": "21",
+     "section": "Sports d'hiver",
+     "word": "C’est difficile.",
+     "en": "It’s difficult.",
+     "kind": "word"
+    },
+    {
+     "id": "22",
+     "section": "Sports d'hiver",
+     "word": "Bravo, euh...",
+     "en": "Good for you!",
+     "kind": "word"
+    },
+    {
+     "id": "23",
+     "section": "Sports d'hiver",
+     "word": "en hiver",
+     "en": "in the winter",
+     "kind": "word"
+    },
+    {
+     "id": "24",
+     "section": "Sports d'hiver",
+     "word": "en été",
+     "en": "in the summer",
+     "kind": "word"
+    },
+    {
+     "id": "25",
+     "section": "Sports d'hiver",
+     "word": "toute l’année",
+     "en": "all year",
+     "kind": "word"
+    },
+    {
+     "id": "26",
+     "section": "Sports d'hiver",
+     "word": "assez",
+     "en": "fairly, somewhat",
+     "kind": "word"
+    },
+    {
+     "id": "27",
+     "section": "Sports d'hiver",
+     "word": "Tu es très sportive, n’est-ce pas?",
+     "en": "You’re very athletic, right?",
+     "kind": "phrase"
+    },
+    {
+     "id": "28",
+     "section": "Sports d'hiver",
+     "word": "Je suis assez sportive.",
+     "en": "I’m somewhat athletic.",
+     "kind": "phrase"
+    },
+    {
+     "id": "29",
+     "section": "Sports d'hiver",
+     "word": "C’est vrai qu’en hiver, c’est difficile.",
+     "en": "It’s true that it’s difficult in the winter.",
+     "kind": "phrase"
+    },
+    {
+     "id": "30",
+     "section": "Sports d'hiver",
+     "word": "Qu’est-ce que tu fais en hiver?",
+     "en": "What do you do in the winter?",
+     "kind": "phrase"
+    },
+    {
+     "id": "31",
+     "section": "Sports d'hiver",
+     "word": "Il ne neige pas beaucoup.",
+     "en": "It doesn’t snow much.",
+     "kind": "phrase"
+    },
+    {
+     "id": "32",
+     "section": "Sports d'hiver",
+     "word": "Il neige rarement, mais il fait assez froid.",
+     "en": "It rarely snows, but it’s pretty cold.",
+     "kind": "line"
+    },
+    {
+     "id": "33",
+     "section": "Sports d'hiver",
+     "word": "Moi, je fais de la natation tous les mardis.",
+     "en": "As for me, I swim every Tuesday.",
+     "kind": "line"
+    },
+    {
+     "id": "34",
+     "section": "Sports d'hiver",
+     "word": "J’ai l’habitude.",
+     "en": "I’m used to it.",
+     "kind": "word"
+    },
+    {
+     "id": "35",
+     "section": "J'ai mal aux pieds.",
+     "word": "Je vais prendre le bus.",
+     "en": "I’m going to take the bus.",
+     "kind": "phrase"
+    },
+    {
+     "id": "36",
+     "section": "J'ai mal aux pieds.",
+     "word": "Je prends le bus.",
+     "en": "I take the bus.",
+     "kind": "phrase"
+    },
+    {
+     "id": "37",
+     "section": "J'ai mal aux pieds.",
+     "word": "Pourquoi?",
+     "en": "Why?",
+     "kind": "phrase"
+    },
+    {
+     "id": "38",
+     "section": "J'ai mal aux pieds.",
+     "word": "J’ai mal aux pieds.",
+     "en": "My feet hurt.",
+     "kind": "phrase"
+    },
+    {
+     "id": "39",
+     "section": "J'ai mal aux pieds.",
+     "word": "J’ai mal aux genoux.",
+     "en": "My knees hurt.",
+     "kind": "phrase"
+    },
+    {
+     "id": "40",
+     "section": "J'ai mal aux pieds.",
+     "word": "J’ai mal à la tête.",
+     "en": "My head hurts.",
+     "kind": "phrase"
+    },
+    {
+     "id": "41",
+     "section": "J'ai mal aux pieds.",
+     "word": "Écoute!",
+     "en": "Listen!",
+     "kind": "word"
+    },
+    {
+     "id": "42",
+     "section": "J'ai mal aux pieds.",
+     "word": "Ça fait du bien de marcher.",
+     "en": "It’s good for you to walk.",
+     "kind": "phrase"
+    },
+    {
+     "id": "43",
+     "section": "J'ai mal aux pieds.",
+     "word": "Il ne faut pas exagérer.",
+     "en": "One shouldn’t get carried away.",
+     "kind": "phrase"
+    },
+    {
+     "id": "44",
+     "section": "J'ai mal aux pieds.",
+     "word": "Il fait chaud.",
+     "en": "It’s hot.",
+     "kind": "phrase"
+    },
+    {
+     "id": "45",
+     "section": "J'ai mal aux pieds.",
+     "word": "Il fait trop chaud.",
+     "en": "It’s too hot.",
+     "kind": "phrase"
+    },
+    {
+     "id": "46",
+     "section": "J'ai mal aux pieds.",
+     "word": "Le soleil fait mal aux yeux.",
+     "en": "The sun hurts my eyes.",
+     "kind": "phrase"
+    },
+    {
+     "id": "47",
+     "section": "J'ai mal aux pieds.",
+     "word": "Franchement",
+     "en": "Frankly",
+     "kind": "word"
+    },
+    {
+     "id": "48",
+     "section": "J'ai mal aux pieds.",
+     "word": "Vraiment",
+     "en": "Truly",
+     "kind": "word"
+    },
+    {
+     "id": "49",
+     "section": "J'ai mal aux pieds.",
+     "word": "Tu es un cas spécial!",
+     "en": "You’re a special case!",
+     "kind": "phrase"
+    },
+    {
+     "id": "50",
+     "section": "Les parties du corps",
+     "word": "la tête",
+     "en": "the head",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "51",
+     "section": "Les parties du corps",
+     "word": "un œil",
+     "en": "an eye",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "52",
+     "section": "Les parties du corps",
+     "word": "les yeux",
+     "en": "the eyes",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "53",
+     "section": "Les parties du corps",
+     "word": "le nez",
+     "en": "the nose",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "54",
+     "section": "Les parties du corps",
+     "word": "la bouche",
+     "en": "the mouth",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "55",
+     "section": "Les parties du corps",
+     "word": "les épaules",
+     "en": "the shoulders",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "56",
+     "section": "Les parties du corps",
+     "word": "les cheveux",
+     "en": "the hair",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "57",
+     "section": "Les parties du corps",
+     "word": "le visage",
+     "en": "the face",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "58",
+     "section": "Les parties du corps",
+     "word": "la gorge",
+     "en": "the throat",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "59",
+     "section": "Les parties du corps",
+     "word": "la poitrine",
+     "en": "the chest",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "60",
+     "section": "Les parties du corps",
+     "word": "les bras (m.)",
+     "en": "the arms",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "61",
+     "section": "Les parties du corps",
+     "word": "les coudes (m.)",
+     "en": "the elbows",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "62",
+     "section": "Les parties du corps",
+     "word": "le ventre",
+     "en": "the stomach, belly",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "63",
+     "section": "Les parties du corps",
+     "word": "les mains (f.)",
+     "en": "the hands",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "64",
+     "section": "Les parties du corps",
+     "word": "les jambes (f.)",
+     "en": "the legs",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "65",
+     "section": "Les parties du corps",
+     "word": "les genoux (m.)",
+     "en": "the knees",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "66",
+     "section": "Les parties du corps",
+     "word": "les chevilles (f.)",
+     "en": "the ankles",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "67",
+     "section": "Les parties du corps",
+     "word": "les pieds (m.)",
+     "en": "the feet",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "68",
+     "section": "Les parties du corps",
+     "word": "le dos",
+     "en": "the back",
+     "kind": "word",
+     "added": true
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "title": "Leçon 6 · La personnalité",
+   "short": "6 · La personnalité",
+   "sections": [
+    "Nous allons à la mer.",
+    "Quelle est la date de ton anniversaire?",
+    "Il est agressif, même méchant parfois.",
+    "Une soirée d'anniversaire (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Nous allons à la mer.",
+     "word": "je pense aller",
+     "en": "I'm thinking about going",
+     "kind": "phrase"
+    },
+    {
+     "id": "02",
+     "section": "Nous allons à la mer.",
+     "word": "montagne",
+     "en": "mountains",
+     "kind": "word"
+    },
+    {
+     "id": "03",
+     "section": "Nous allons à la mer.",
+     "word": "vrai",
+     "en": "true",
+     "kind": "word"
+    },
+    {
+     "id": "04",
+     "section": "Nous allons à la mer.",
+     "word": "toujours",
+     "en": "always",
+     "kind": "word"
+    },
+    {
+     "id": "05",
+     "section": "Nous allons à la mer.",
+     "word": "mer",
+     "en": "sea",
+     "kind": "word"
+    },
+    {
+     "id": "06",
+     "section": "Nous allons à la mer.",
+     "word": "chance",
+     "en": "luck",
+     "kind": "word"
+    },
+    {
+     "id": "07",
+     "section": "Nous allons à la mer.",
+     "word": "mois",
+     "en": "month",
+     "kind": "word"
+    },
+    {
+     "id": "08",
+     "section": "Nous allons à la mer.",
+     "word": "juillet",
+     "en": "July",
+     "kind": "word"
+    },
+    {
+     "id": "09",
+     "section": "Nous allons à la mer.",
+     "word": "aussi",
+     "en": "also, too",
+     "kind": "word"
+    },
+    {
+     "id": "10",
+     "section": "Nous allons à la mer.",
+     "word": "août",
+     "en": "August",
+     "kind": "word"
+    },
+    {
+     "id": "11",
+     "section": "Nous allons à la mer.",
+     "word": "donc",
+     "en": "so, therefore",
+     "kind": "word"
+    },
+    {
+     "id": "12",
+     "section": "Nous allons à la mer.",
+     "word": "chanson",
+     "en": "song",
+     "kind": "word"
+    },
+    {
+     "id": "13",
+     "section": "Nous allons à la mer.",
+     "word": "Je pense aller à la montagne.",
+     "en": "I’m thinking about going to the mountains.",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "Nous allons à la mer.",
+     "word": "Dans les Alpes, peut-être.",
+     "en": "Maybe to the Alps.",
+     "kind": "phrase"
+    },
+    {
+     "id": "15",
+     "section": "Nous allons à la mer.",
+     "word": "Je vais toujours à la mer.",
+     "en": "I always go to the sea.",
+     "kind": "phrase"
+    },
+    {
+     "id": "16",
+     "section": "Nous allons à la mer.",
+     "word": "Tu as de la chance.",
+     "en": "You’re lucky.",
+     "kind": "phrase"
+    },
+    {
+     "id": "17",
+     "section": "Nous allons à la mer.",
+     "word": "Mes parents passent tout l’été là-bas.",
+     "en": "My parents spend the whole summer there.",
+     "kind": "phrase"
+    },
+    {
+     "id": "18",
+     "section": "Nous allons à la mer.",
+     "word": "Moi, j’y passe toujours le mois de juillet.",
+     "en": "I always spend the month of July there.",
+     "kind": "line"
+    },
+    {
+     "id": "19",
+     "section": "Nous allons à la mer.",
+     "word": "Elle passe le mois d’août.",
+     "en": "She spends the month of August.",
+     "kind": "phrase"
+    },
+    {
+     "id": "20",
+     "section": "Nous allons à la mer.",
+     "word": "Donc, vous êtes là pour le festival de la chanson?",
+     "en": "So, you are there for the music festival?",
+     "kind": "line"
+    },
+    {
+     "id": "21",
+     "section": "Nous allons à la mer.",
+     "word": "Je vais être là pour le festival.",
+     "en": "I’m going to be there for the festival.",
+     "kind": "line"
+    },
+    {
+     "id": "22",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Je vais passer",
+     "en": "I’m going to spend (time)",
+     "kind": "phrase"
+    },
+    {
+     "id": "23",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Je pense visiter",
+     "en": "I’m thinking about visiting",
+     "kind": "phrase"
+    },
+    {
+     "id": "24",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Dommage",
+     "en": "That’s too bad",
+     "kind": "word"
+    },
+    {
+     "id": "25",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Genre",
+     "en": "type, kind",
+     "kind": "word"
+    },
+    {
+     "id": "26",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Tu vas avoir",
+     "en": "You’re going to have",
+     "kind": "phrase"
+    },
+    {
+     "id": "27",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Je vais passer le mois d’août à Boston.",
+     "en": "I’m going to spend the month of August in Boston",
+     "kind": "line"
+    },
+    {
+     "id": "28",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Je pense aussi visiter New York.",
+     "en": "I’m also thinking about visiting New York",
+     "kind": "phrase"
+    },
+    {
+     "id": "29",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Quand est ton anniversaire?",
+     "en": "When is your birthday?",
+     "kind": "phrase"
+    },
+    {
+     "id": "30",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "C’est le 14 septembre.",
+     "en": "It’s September 14th",
+     "kind": "phrase"
+    },
+    {
+     "id": "31",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Tu vas avoir des problèmes.",
+     "en": "You’re going to have problems.",
+     "kind": "phrase"
+    },
+    {
+     "id": "32",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "De quel genre?",
+     "en": "Of what type?",
+     "kind": "phrase"
+    },
+    {
+     "id": "33",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Il faut avoir 21 ans pour entrer dans les bars.",
+     "en": "One must be 21 to enter bars",
+     "kind": "line"
+    },
+    {
+     "id": "34",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Comment font les étudiants, alors?",
+     "en": "How do the students do (it), then?",
+     "kind": "phrase"
+    },
+    {
+     "id": "35",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Certains ont de fausses cartes d’identité.",
+     "en": "Certain of them have fake identification cards.",
+     "kind": "phrase"
+    },
+    {
+     "id": "36",
+     "section": "Quelle est la date de ton anniversaire?",
+     "word": "Je vais passer beaucoup de temps à la maison.",
+     "en": "I’m going to spend a lot of time at home.",
+     "kind": "line"
+    },
+    {
+     "id": "37",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "vert",
+     "en": "green",
+     "kind": "word"
+    },
+    {
+     "id": "38",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "lunettes",
+     "en": "glasses",
+     "kind": "word"
+    },
+    {
+     "id": "39",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "brun",
+     "en": "brown",
+     "kind": "word"
+    },
+    {
+     "id": "40",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "je suppose que oui",
+     "en": "I suppose so",
+     "kind": "phrase"
+    },
+    {
+     "id": "41",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "tu veux dire",
+     "en": "you mean",
+     "kind": "phrase"
+    },
+    {
+     "id": "42",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "en cours",
+     "en": "in class",
+     "kind": "word"
+    },
+    {
+     "id": "43",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "méchant",
+     "en": "mean",
+     "kind": "word"
+    },
+    {
+     "id": "44",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "parfois",
+     "en": "sometimes",
+     "kind": "word"
+    },
+    {
+     "id": "45",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "que veux-tu?",
+     "en": "what do you want?",
+     "kind": "phrase"
+    },
+    {
+     "id": "46",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "vie",
+     "en": "life",
+     "kind": "word"
+    },
+    {
+     "id": "47",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "C’est le petit homme aux yeux verts.",
+     "en": "He’s the small man with green eyes.",
+     "kind": "line"
+    },
+    {
+     "id": "48",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "Il porte des lunettes.",
+     "en": "He wears glasses.",
+     "kind": "phrase"
+    },
+    {
+     "id": "49",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "Il a les cheveux bruns.",
+     "en": "He has brown hair.",
+     "kind": "phrase"
+    },
+    {
+     "id": "50",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "C’est un bon prof?",
+     "en": "Is he a good prof?",
+     "kind": "phrase"
+    },
+    {
+     "id": "51",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "Il n’est pas très drôle.",
+     "en": "He’s not very funny.",
+     "kind": "phrase"
+    },
+    {
+     "id": "52",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "Qu’est-ce que tu veux dire?",
+     "en": "What do you mean?",
+     "kind": "phrase"
+    },
+    {
+     "id": "53",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "Quand tu poses une question stupide…",
+     "en": "When you ask a stupid question…",
+     "kind": "phrase"
+    },
+    {
+     "id": "54",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "Il est agressif, même méchant parfois.",
+     "en": "He’s aggressive, even mean sometimes.",
+     "kind": "phrase"
+    },
+    {
+     "id": "55",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "J’ai une vie sociale très active.",
+     "en": "I have a very active social life.",
+     "kind": "phrase"
+    },
+    {
+     "id": "56",
+     "section": "Il est agressif, même méchant parfois.",
+     "word": "C’est la belle vie!",
+     "en": "Life is good!",
+     "kind": "phrase"
+    },
+    {
+     "id": "57",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "Qu’est-ce que tu fais à soir?",
+     "en": "What are you doing tonight?",
+     "kind": "phrase"
+    },
+    {
+     "id": "58",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "C’est spécial!",
+     "en": "It's special!",
+     "kind": "word"
+    },
+    {
+     "id": "59",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "Je fête mes vingt-deux ans!",
+     "en": "I'm celebrating my twenty-second birthday.",
+     "kind": "phrase"
+    },
+    {
+     "id": "60",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "As-tu des plans?",
+     "en": "Do you have plans?",
+     "kind": "phrase"
+    },
+    {
+     "id": "61",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "Je sors avec mon chum.",
+     "en": "I'm going out with my boyfriend (Quebec expression).",
+     "kind": "phrase"
+    },
+    {
+     "id": "62",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "Je sors avec ma blonde.",
+     "en": "I'm going out with my girlfriend (Quebec expression).",
+     "kind": "phrase"
+    },
+    {
+     "id": "63",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "On va d'abord au Réservoir, sur Duluth.",
+     "en": "We're going first to Réservoir, on Duluth (street).",
+     "kind": "line"
+    },
+    {
+     "id": "64",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "Puis j'ai des billets pour Malajube, au Club Soda.",
+     "en": "Then I've got tickets for Malajube, at Club Soda.",
+     "kind": "line"
+    },
+    {
+     "id": "65",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "C'est à quelle heure, le concert?",
+     "en": "What time is the concert?",
+     "kind": "phrase"
+    },
+    {
+     "id": "66",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "C'est à dix heures.",
+     "en": "It's at ten o'clock.",
+     "kind": "phrase"
+    },
+    {
+     "id": "67",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "Sympathique soirée!",
+     "en": "Great evening!",
+     "kind": "word"
+    },
+    {
+     "id": "68",
+     "section": "Une soirée d'anniversaire (Montréal)",
+     "word": "Amuse-toi bien!",
+     "en": "Enjoy yourself!",
+     "kind": "word"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "title": "Leçon 7 · Mes préférences",
+   "short": "7 · Mes préférences",
+   "sections": [
+    "Qu'est-ce que tu fais à St. Malo?",
+    "Je cherche un camarade de chambre.",
+    "Une cabane à sucre en Mauricie (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "Je vais à Saint-Malo demain.",
+     "en": "I’m going to Saint-Malo tomorrow.",
+     "kind": "phrase"
+    },
+    {
+     "id": "02",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "J’ai une location pendant deux semaines.",
+     "en": "I have a rental for two weeks.",
+     "kind": "phrase"
+    },
+    {
+     "id": "03",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "Je n’aime pas la plage.",
+     "en": "I don’t like the beach.",
+     "kind": "phrase"
+    },
+    {
+     "id": "04",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "Il y a trop de gens.",
+     "en": "There are too many people.",
+     "kind": "phrase"
+    },
+    {
+     "id": "05",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "Je préfère avoir chaud.",
+     "en": "I prefer to be warm.",
+     "kind": "phrase"
+    },
+    {
+     "id": "06",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "L’hiver est long pour moi, tu sais.",
+     "en": "Winter is long for me, you know.",
+     "kind": "line"
+    },
+    {
+     "id": "07",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "Cette année je fais quelque chose de différent.",
+     "en": "This year I’m doing something different.",
+     "kind": "line"
+    },
+    {
+     "id": "08",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "Je vais visiter les Pays-Bas.",
+     "en": "I’m going to visit the Netherlands.",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "Chouette!",
+     "en": "Great!",
+     "kind": "word"
+    },
+    {
+     "id": "10",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "Je vais d’abord à Amsterdam.",
+     "en": "I’m going first to Amsterdam.",
+     "kind": "phrase"
+    },
+    {
+     "id": "11",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "Après je vais rendre visite à des amis à Eindhoven.",
+     "en": "Then I’m going to visit some friends in Eindhoven.",
+     "kind": "line"
+    },
+    {
+     "id": "12",
+     "section": "Qu'est-ce que tu fais à St. Malo?",
+     "word": "J’espère avoir de nouvelles expériences.",
+     "en": "I hope to live new experiences.",
+     "kind": "phrase"
+    },
+    {
+     "id": "13",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "Tu as l'air préoccupé.",
+     "en": "You look preoccupied.",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "Il y a un problème?",
+     "en": "Is there a problem?",
+     "kind": "phrase"
+    },
+    {
+     "id": "15",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "En fait, oui.",
+     "en": "In fact, yes there is.",
+     "kind": "phrase"
+    },
+    {
+     "id": "16",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "Sylvain part aux Etats-Unis le mois prochain.",
+     "en": "Sylvain is leaving for the United States next month.",
+     "kind": "line"
+    },
+    {
+     "id": "17",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "Il me faut trouver un autre colocataire.",
+     "en": "I have to find another roommate.",
+     "kind": "line"
+    },
+    {
+     "id": "18",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "Est-ce que tu as une idée?",
+     "en": "Do you have an idea?",
+     "kind": "phrase"
+    },
+    {
+     "id": "19",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "Peut-être.",
+     "en": "Maybe.",
+     "kind": "word"
+    },
+    {
+     "id": "20",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "Je cherche un garçon qui ne fume pas et qui aime la musique.",
+     "en": "I'm looking for a young man who doesn't smoke and who likes music.",
+     "kind": "line"
+    },
+    {
+     "id": "21",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "J'écoute de la musique toute la journée, surtout de l'opéra.",
+     "en": "I listen to music all day long, especially opera music.",
+     "kind": "line"
+    },
+    {
+     "id": "22",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "Cette dernière condition est difficile.",
+     "en": "This last requirement is difficult.",
+     "kind": "phrase"
+    },
+    {
+     "id": "23",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "Il est au conservatoire.",
+     "en": "He's at the Conservatory.",
+     "kind": "phrase"
+    },
+    {
+     "id": "24",
+     "section": "Je cherche un camarade de chambre.",
+     "word": "C'est une très bonne idée.",
+     "en": "It's a very good idea.",
+     "kind": "phrase"
+    },
+    {
+     "id": "25",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "un petit café",
+     "en": "a (small) coffee",
+     "kind": "phrase"
+    },
+    {
+     "id": "26",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Une cabane à sucre.",
+     "en": "a sugar shack (for maple sugar and syrup)",
+     "kind": "phrase"
+    },
+    {
+     "id": "27",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "un autobus",
+     "en": "a bus",
+     "kind": "word"
+    },
+    {
+     "id": "28",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "le terminus",
+     "en": "(bus) terminal",
+     "kind": "word"
+    },
+    {
+     "id": "29",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "la Mauricie",
+     "en": "region halfway between Montreal and Quebec City",
+     "kind": "word"
+    },
+    {
+     "id": "30",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "chanceux",
+     "en": "lucky",
+     "kind": "word"
+    },
+    {
+     "id": "31",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "tanné(e)",
+     "en": "tired of, bored",
+     "kind": "word"
+    },
+    {
+     "id": "32",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Tu as le temps de prendre un petit café?",
+     "en": "Do you have time to have a coffee?",
+     "kind": "line"
+    },
+    {
+     "id": "33",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Je suis vraiment pressé.",
+     "en": "I'm really in a hurry.",
+     "kind": "phrase"
+    },
+    {
+     "id": "34",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "C'est la saison des sucres.",
+     "en": "It's the (maple) sugar season.",
+     "kind": "phrase"
+    },
+    {
+     "id": "35",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Nous allons visiter une cabane à sucre en Mauricie.",
+     "en": "We're going to visit a sugar shack in Mauricie.",
+     "kind": "line"
+    },
+    {
+     "id": "36",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Tu es chanceux.",
+     "en": "You're lucky.",
+     "kind": "phrase"
+    },
+    {
+     "id": "37",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Je passe la fin de semaine à l'université.",
+     "en": "I'm spending the weekend at the university.",
+     "kind": "line"
+    },
+    {
+     "id": "38",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "J'ai beaucoup de devoirs.",
+     "en": "I've got a lot of classwork.",
+     "kind": "phrase"
+    },
+    {
+     "id": "39",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Je suis tannée de la routine quotidienne.",
+     "en": "I've had it with the daily routine.",
+     "kind": "line"
+    },
+    {
+     "id": "40",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Tu devrais faire tes devoirs en route.",
+     "en": "You should do your classwork on the road.",
+     "kind": "line"
+    },
+    {
+     "id": "41",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "C'est ce que je pense faire.",
+     "en": "That's what I'm thinking of doing.",
+     "kind": "phrase"
+    },
+    {
+     "id": "42",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Écoute, je suis en retard.",
+     "en": "Listen, I'm late.",
+     "kind": "phrase"
+    },
+    {
+     "id": "43",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Mon autobus quitte le terminus à deux heures.",
+     "en": "My bus leaves the station at two o'clock.",
+     "kind": "line"
+    },
+    {
+     "id": "44",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "On se voit bientôt.",
+     "en": "We'll see each other soon.",
+     "kind": "phrase"
+    },
+    {
+     "id": "45",
+     "section": "Une cabane à sucre en Mauricie (Montréal)",
+     "word": "Passe une bonne fin de semaine en Mauricie!",
+     "en": "Have a good weekend in Mauricie!",
+     "kind": "line"
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "title": "Leçon 8 · Les activités",
+   "short": "8 · Les activités",
+   "sections": [
+    "Est-ce que tu joues au volley?",
+    "Où est-ce que tu vas?",
+    "Elle joue de la guitare.",
+    "Un jeu de société (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Regarde!",
+     "en": "Look!",
+     "kind": "word"
+    },
+    {
+     "id": "02",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Moi, non.",
+     "en": "Not me.",
+     "kind": "word"
+    },
+    {
+     "id": "03",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Quelle idée!",
+     "en": "What nonsense!/What an idea!",
+     "kind": "word"
+    },
+    {
+     "id": "04",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Très souvent.",
+     "en": "Very often.",
+     "kind": "word"
+    },
+    {
+     "id": "05",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Très rarement.",
+     "en": "Very rarely.",
+     "kind": "word"
+    },
+    {
+     "id": "06",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Est-ce que tu joues au volley?",
+     "en": "Do you play volleyball?",
+     "kind": "phrase"
+    },
+    {
+     "id": "07",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Je joue au golf et au basket, pas au volley.",
+     "en": "I play golf and basketball, not volleyball.",
+     "kind": "line"
+    },
+    {
+     "id": "08",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Tu joues souvent au basket?",
+     "en": "Do you play basketball often?",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Je fais partie de l’équipe de l’université.",
+     "en": "I’m a member of the university team.",
+     "kind": "line"
+    },
+    {
+     "id": "10",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Et tu joues beaucoup au golf?",
+     "en": "And do you play golf often?",
+     "kind": "phrase"
+    },
+    {
+     "id": "11",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Je n’ai pas le temps, et le golf coûte cher.",
+     "en": "I don’t have the time, and golf is expensive.",
+     "kind": "line"
+    },
+    {
+     "id": "12",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "Moi, j’y joue assez souvent l’été.",
+     "en": "As for me, I play it quite often in the summer.",
+     "kind": "phrase"
+    },
+    {
+     "id": "13",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "L’hiver je n’y joue jamais.",
+     "en": "I never play it in the winter.",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "C’est l’avantage du basket.",
+     "en": "That’s the advantage of basketball.",
+     "kind": "phrase"
+    },
+    {
+     "id": "15",
+     "section": "Est-ce que tu joues au volley?",
+     "word": "On peut jouer au basket toute l’année.",
+     "en": "One can play basketball all year.",
+     "kind": "line"
+    },
+    {
+     "id": "16",
+     "section": "Où est-ce que tu vas?",
+     "word": "la piscine",
+     "en": "swimming pool",
+     "kind": "word"
+    },
+    {
+     "id": "17",
+     "section": "Où est-ce que tu vas?",
+     "word": "nager",
+     "en": "to swim",
+     "kind": "word"
+    },
+    {
+     "id": "18",
+     "section": "Où est-ce que tu vas?",
+     "word": "la natation",
+     "en": "swimming",
+     "kind": "word"
+    },
+    {
+     "id": "19",
+     "section": "Où est-ce que tu vas?",
+     "word": "le ski nautique",
+     "en": "water skiing",
+     "kind": "phrase"
+    },
+    {
+     "id": "20",
+     "section": "Où est-ce que tu vas?",
+     "word": "commun",
+     "en": "common",
+     "kind": "word"
+    },
+    {
+     "id": "21",
+     "section": "Où est-ce que tu vas?",
+     "word": "du foot",
+     "en": "soccer",
+     "kind": "word"
+    },
+    {
+     "id": "22",
+     "section": "Où est-ce que tu vas?",
+     "word": "parfait",
+     "en": "perfect",
+     "kind": "word"
+    },
+    {
+     "id": "23",
+     "section": "Où est-ce que tu vas?",
+     "word": "ensemble",
+     "en": "together",
+     "kind": "word"
+    },
+    {
+     "id": "24",
+     "section": "Où est-ce que tu vas?",
+     "word": "Il y a toujours le ski nautique.",
+     "en": "There is always water skiing.",
+     "kind": "line"
+    },
+    {
+     "id": "25",
+     "section": "Où est-ce que tu vas?",
+     "word": "Ce n'est pas très commun.",
+     "en": "It’s not very common.",
+     "kind": "phrase"
+    },
+    {
+     "id": "26",
+     "section": "Où est-ce que tu vas?",
+     "word": "Je fais du foot.",
+     "en": "I play soccer.",
+     "kind": "phrase"
+    },
+    {
+     "id": "27",
+     "section": "Où est-ce que tu vas?",
+     "word": "Moi aussi, je joue au foot.",
+     "en": "I play soccer too.",
+     "kind": "phrase"
+    },
+    {
+     "id": "28",
+     "section": "Où est-ce que tu vas?",
+     "word": "On joue ensemble ce week-end?",
+     "en": "Shall we play together this weekend?",
+     "kind": "phrase"
+    },
+    {
+     "id": "29",
+     "section": "Elle joue de la guitare.",
+     "word": "Pas souvent.",
+     "en": "Not often.",
+     "kind": "word"
+    },
+    {
+     "id": "30",
+     "section": "Elle joue de la guitare.",
+     "word": "Il faut dire.",
+     "en": "I have to say.",
+     "kind": "phrase"
+    },
+    {
+     "id": "31",
+     "section": "Elle joue de la guitare.",
+     "word": "C’est logique.",
+     "en": "That’s logical.",
+     "kind": "word"
+    },
+    {
+     "id": "32",
+     "section": "Elle joue de la guitare.",
+     "word": "Encore une fois.",
+     "en": "One more time.",
+     "kind": "phrase"
+    },
+    {
+     "id": "33",
+     "section": "Elle joue de la guitare.",
+     "word": "C’est toi, alors.",
+     "en": "That’s you, then.",
+     "kind": "phrase"
+    },
+    {
+     "id": "34",
+     "section": "Elle joue de la guitare.",
+     "word": "un bassiste",
+     "en": "a bass player",
+     "kind": "word"
+    },
+    {
+     "id": "35",
+     "section": "Elle joue de la guitare.",
+     "word": "Correct",
+     "en": "that’s right",
+     "kind": "word"
+    },
+    {
+     "id": "36",
+     "section": "Elle joue de la guitare.",
+     "word": "Exact.",
+     "en": "Exactly.",
+     "kind": "word"
+    },
+    {
+     "id": "37",
+     "section": "Elle joue de la guitare.",
+     "word": "Les Bleus",
+     "en": "The Blues",
+     "kind": "word"
+    },
+    {
+     "id": "38",
+     "section": "Elle joue de la guitare.",
+     "word": "Je joue du piano.",
+     "en": "I play piano.",
+     "kind": "phrase"
+    },
+    {
+     "id": "39",
+     "section": "Elle joue de la guitare.",
+     "word": "Je joue de la basse.",
+     "en": "I play bass.",
+     "kind": "phrase"
+    },
+    {
+     "id": "40",
+     "section": "Elle joue de la guitare.",
+     "word": "Tu apprends le saxo.",
+     "en": "You're learning sax.",
+     "kind": "phrase"
+    },
+    {
+     "id": "41",
+     "section": "Elle joue de la guitare.",
+     "word": "Tu connais Hélène?",
+     "en": "Do you know Helen?",
+     "kind": "phrase"
+    },
+    {
+     "id": "42",
+     "section": "Elle joue de la guitare.",
+     "word": "Comment s’appelle le groupe?",
+     "en": "What’s the name of the band?",
+     "kind": "phrase"
+    },
+    {
+     "id": "43",
+     "section": "Elle joue de la guitare.",
+     "word": "Ils ont besoin d’un bassiste.",
+     "en": "They need a bass player.",
+     "kind": "phrase"
+    },
+    {
+     "id": "44",
+     "section": "Elle joue de la guitare.",
+     "word": "La grande fille aux cheveux bleus?",
+     "en": "The tall girl with blue hair?",
+     "kind": "phrase"
+    },
+    {
+     "id": "45",
+     "section": "Elle joue de la guitare.",
+     "word": "Elle joue de la guitare dans un groupe rock.",
+     "en": "She plays guitar in a rock group.",
+     "kind": "line"
+    },
+    {
+     "id": "46",
+     "section": "Elle joue de la guitare.",
+     "word": "Tu vas jouer de la basse et avoir les cheveux bleus.",
+     "en": "You’re going to play bass and have blue hair.",
+     "kind": "line"
+    },
+    {
+     "id": "47",
+     "section": "Un jeu de société (Montréal)",
+     "word": "un jeu de société",
+     "en": "a board game",
+     "kind": "phrase"
+    },
+    {
+     "id": "48",
+     "section": "Un jeu de société (Montréal)",
+     "word": "dehors",
+     "en": "outside",
+     "kind": "word"
+    },
+    {
+     "id": "49",
+     "section": "Un jeu de société (Montréal)",
+     "word": "C'est amusant.",
+     "en": "That's funny.",
+     "kind": "word"
+    },
+    {
+     "id": "50",
+     "section": "Un jeu de société (Montréal)",
+     "word": "C'est interminable.",
+     "en": "It's endless.",
+     "kind": "word"
+    },
+    {
+     "id": "51",
+     "section": "Un jeu de société (Montréal)",
+     "word": "T'as raison.",
+     "en": "You're right.",
+     "kind": "word"
+    },
+    {
+     "id": "52",
+     "section": "Un jeu de société (Montréal)",
+     "word": "C'est pas mon genre.",
+     "en": "It's not my type.",
+     "kind": "phrase"
+    },
+    {
+     "id": "53",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Allons-y!",
+     "en": "Let's go!",
+     "kind": "word"
+    },
+    {
+     "id": "54",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Bonne idée!",
+     "en": "Good idea!",
+     "kind": "word"
+    },
+    {
+     "id": "55",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Ça te dit?",
+     "en": "Are you interested?",
+     "kind": "phrase"
+    },
+    {
+     "id": "56",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Qu’est-ce qu’on pourrait bien faire cet après-midi?",
+     "en": "What could we do this afternoon?",
+     "kind": "line"
+    },
+    {
+     "id": "57",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Il fait trop froid pour faire quelque chose dehors.",
+     "en": "It's too cold to do anything ouside.",
+     "kind": "line"
+    },
+    {
+     "id": "58",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Je sais pas trop.",
+     "en": "I don't have much of an idea.",
+     "kind": "phrase"
+    },
+    {
+     "id": "59",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Est-ce que ça te dit de jouer à un jeu de société?",
+     "en": "Do you feel like playing a board game?",
+     "kind": "line"
+    },
+    {
+     "id": "60",
+     "section": "Un jeu de société (Montréal)",
+     "word": "On peut aller se louer un film.",
+     "en": "We could go rent ourselves a movie.",
+     "kind": "line"
+    },
+    {
+     "id": "61",
+     "section": "Un jeu de société (Montréal)",
+     "word": "J’aime mieux ça!",
+     "en": "I like that better.",
+     "kind": "phrase"
+    },
+    {
+     "id": "62",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Qu’est que tu dirais de louer un bon film d’action?",
+     "en": "What would you say to renting a good action film.",
+     "kind": "line"
+    },
+    {
+     "id": "63",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Ce n’est pas mon genre préféré.",
+     "en": "It's not my favorite kind.",
+     "kind": "phrase"
+    },
+    {
+     "id": "64",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Si ça te fait plaisir.",
+     "en": "If that would make you happy.",
+     "kind": "phrase"
+    },
+    {
+     "id": "65",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Allons-y pour un film d’action.",
+     "en": "Let's go for an action film.",
+     "kind": "phrase"
+    },
+    {
+     "id": "66",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Ce n’est pas mon genre préféré, mais si ça te fait plaisir, allons-y pour un film d’action!",
+     "en": "It's not my favorite kind, but if it makes you happy, let's go for an action film!",
+     "kind": "line"
+    },
+    {
+     "id": "67",
+     "section": "Un jeu de société (Montréal)",
+     "word": "Puis on va faire du maïs soufflé!",
+     "en": "Then we'll make some popcorn.",
+     "kind": "line"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "title": "Leçon 9 · L'heure",
+   "short": "9 · L'heure",
+   "sections": [
+    "En retard",
+    "L'heure",
+    "Un concert",
+    "Faisons autre chose ce soir! (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "En retard",
+     "word": "Te voilà!",
+     "en": "There you are!",
+     "kind": "word"
+    },
+    {
+     "id": "02",
+     "section": "En retard",
+     "word": "Allons-y.",
+     "en": "Let’s go.",
+     "kind": "word"
+    },
+    {
+     "id": "03",
+     "section": "En retard",
+     "word": "Tant mieux.",
+     "en": "So much the better.",
+     "kind": "word"
+    },
+    {
+     "id": "04",
+     "section": "En retard",
+     "word": "C’est ça.",
+     "en": "That’s right.",
+     "kind": "word"
+    },
+    {
+     "id": "05",
+     "section": "En retard",
+     "word": "Je suis en retard.",
+     "en": "I’m late.",
+     "kind": "phrase"
+    },
+    {
+     "id": "06",
+     "section": "En retard",
+     "word": "Je suis en avance.",
+     "en": "I’m early.",
+     "kind": "phrase"
+    },
+    {
+     "id": "07",
+     "section": "En retard",
+     "word": "Il est quelle heure?",
+     "en": "What time is it?",
+     "kind": "phrase"
+    },
+    {
+     "id": "08",
+     "section": "En retard",
+     "word": "Quelle heure est-il?",
+     "en": "What time is it ?",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "En retard",
+     "word": "Il est deux heures et quart.",
+     "en": "It’s two-fifteen.",
+     "kind": "phrase"
+    },
+    {
+     "id": "10",
+     "section": "En retard",
+     "word": "Il n’est que deux heures et quart.",
+     "en": "It’s only two-fifteen.",
+     "kind": "line"
+    },
+    {
+     "id": "11",
+     "section": "En retard",
+     "word": "La séance est à deux heures et demie.",
+     "en": "The show is at two-thirty.",
+     "kind": "line"
+    },
+    {
+     "id": "12",
+     "section": "En retard",
+     "word": "Il faut acheter les billets.",
+     "en": "We need to buy the tickets.",
+     "kind": "phrase"
+    },
+    {
+     "id": "13",
+     "section": "En retard",
+     "word": "Il faut aller acheter les billets.",
+     "en": "We need to go buy the tickets.",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "L'heure",
+     "word": "Mince!!",
+     "en": "Nuts!!",
+     "kind": "word"
+    },
+    {
+     "id": "15",
+     "section": "L'heure",
+     "word": "Bonne chance!",
+     "en": "Good luck!",
+     "kind": "word"
+    },
+    {
+     "id": "16",
+     "section": "L'heure",
+     "word": "À demain.",
+     "en": "See you tomorrow.",
+     "kind": "word"
+    },
+    {
+     "id": "17",
+     "section": "L'heure",
+     "word": "J’y vais.",
+     "en": "I’m outa here.",
+     "kind": "word"
+    },
+    {
+     "id": "18",
+     "section": "L'heure",
+     "word": "Effectivement.",
+     "en": "You’re right about that.",
+     "kind": "word"
+    },
+    {
+     "id": "19",
+     "section": "L'heure",
+     "word": "Il faut y aller.",
+     "en": "It’s time to go.",
+     "kind": "phrase"
+    },
+    {
+     "id": "20",
+     "section": "L'heure",
+     "word": "Tu as toujours ta mobylette?",
+     "en": "Do you still have your scooter?",
+     "kind": "phrase"
+    },
+    {
+     "id": "21",
+     "section": "L'heure",
+     "word": "Quelle heure il est?",
+     "en": "What time is it?",
+     "kind": "phrase"
+    },
+    {
+     "id": "22",
+     "section": "L'heure",
+     "word": "Il est quatorze heures.",
+     "en": "It’s two o’clock in the afternoon.",
+     "kind": "phrase"
+    },
+    {
+     "id": "23",
+     "section": "L'heure",
+     "word": "J’ai un rendez-vous avec mon prof.",
+     "en": "I have a meeting with my teacher.",
+     "kind": "phrase"
+    },
+    {
+     "id": "24",
+     "section": "L'heure",
+     "word": "J’ai rendez-vous à quatorze heures quinze.",
+     "en": "I have a meeting at two fifteen.",
+     "kind": "phrase"
+    },
+    {
+     "id": "25",
+     "section": "Un concert",
+     "word": "Allô.",
+     "en": "Hello.",
+     "kind": "word"
+    },
+    {
+     "id": "26",
+     "section": "Un concert",
+     "word": "Écoute.",
+     "en": "Listen.",
+     "kind": "word"
+    },
+    {
+     "id": "27",
+     "section": "Un concert",
+     "word": "Ah oui?",
+     "en": "Really?",
+     "kind": "phrase"
+    },
+    {
+     "id": "28",
+     "section": "Un concert",
+     "word": "Justement.",
+     "en": "Exactly.",
+     "kind": "word"
+    },
+    {
+     "id": "29",
+     "section": "Un concert",
+     "word": "Mettons dix-huit heures.",
+     "en": "Let’s say six o’clock.",
+     "kind": "phrase"
+    },
+    {
+     "id": "30",
+     "section": "Un concert",
+     "word": "Parfait.",
+     "en": "Perfect.",
+     "kind": "word"
+    },
+    {
+     "id": "31",
+     "section": "Un concert",
+     "word": "Ciao.",
+     "en": "Bye! (Italian)",
+     "kind": "word"
+    },
+    {
+     "id": "32",
+     "section": "Un concert",
+     "word": "À quelle heure?",
+     "en": "At what time?",
+     "kind": "phrase"
+    },
+    {
+     "id": "33",
+     "section": "Un concert",
+     "word": "C’est Michelle.",
+     "en": "It’s Michelle.",
+     "kind": "word"
+    },
+    {
+     "id": "34",
+     "section": "Un concert",
+     "word": "après",
+     "en": "after",
+     "kind": "word"
+    },
+    {
+     "id": "35",
+     "section": "Un concert",
+     "word": "J’ai deux billets pour Paris Combo demain.",
+     "en": "I’ve got two tickets for Paris Combo tomorrow.",
+     "kind": "line"
+    },
+    {
+     "id": "36",
+     "section": "Un concert",
+     "word": "Ça t’intéresse?",
+     "en": "You interested?",
+     "kind": "phrase"
+    },
+    {
+     "id": "37",
+     "section": "Un concert",
+     "word": "C’est à vingt heures.",
+     "en": "It’s at eight o’clock.",
+     "kind": "phrase"
+    },
+    {
+     "id": "38",
+     "section": "Un concert",
+     "word": "Ça m’intéresse beaucoup.",
+     "en": "I’m very interested.",
+     "kind": "phrase"
+    },
+    {
+     "id": "39",
+     "section": "Un concert",
+     "word": "Tu vas manger avant?",
+     "en": "Are you going to eat before?",
+     "kind": "phrase"
+    },
+    {
+     "id": "40",
+     "section": "Un concert",
+     "word": "On se retrouve au Skipper?",
+     "en": "Shall we meet at the Skipper?",
+     "kind": "phrase"
+    },
+    {
+     "id": "41",
+     "section": "Un concert",
+     "word": "On prend un bus pour aller au concert.",
+     "en": "We’ll take a bus to go to the concert.",
+     "kind": "line"
+    },
+    {
+     "id": "42",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "Salut les gars!",
+     "en": "Hey guys!",
+     "kind": "phrase"
+    },
+    {
+     "id": "43",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "C'est plate.",
+     "en": "It's boring",
+     "kind": "word"
+    },
+    {
+     "id": "44",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "On est tanné.",
+     "en": "We're tired (of this).",
+     "kind": "phrase"
+    },
+    {
+     "id": "45",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "Par exemple?",
+     "en": "For example?",
+     "kind": "phrase"
+    },
+    {
+     "id": "46",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "chialer",
+     "en": "whine",
+     "kind": "word"
+    },
+    {
+     "id": "47",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "souper",
+     "en": "Eat dinner (Quebec)",
+     "kind": "word"
+    },
+    {
+     "id": "48",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "en tout cas",
+     "en": "in any case",
+     "kind": "phrase"
+    },
+    {
+     "id": "49",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "vers huit heures du soir",
+     "en": "about eight o'clock in the evening",
+     "kind": "phrase"
+    },
+    {
+     "id": "50",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "Vous êtes sûrs?",
+     "en": "Are you sure?",
+     "kind": "phrase"
+    },
+    {
+     "id": "51",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "Ça n’a pas l’air d’aller.",
+     "en": "It doesn't look like it's going well.",
+     "kind": "phrase"
+    },
+    {
+     "id": "52",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "Vous avez l'air de vous ennuyer.",
+     "en": "It looks like you're bored.",
+     "kind": "phrase"
+    },
+    {
+     "id": "53",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "On est tanné de faire toujours la même affaire le vendredi soir.",
+     "en": "We're tired of always doing the same thing on Friday nights.",
+     "kind": "line"
+    },
+    {
+     "id": "54",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "C’est plate qu’on change pas d’activité.",
+     "en": "It's boring that we never change activities.",
+     "kind": "phrase"
+    },
+    {
+     "id": "55",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "Arrêtez de chialer!",
+     "en": "Stop whining!",
+     "kind": "phrase"
+    },
+    {
+     "id": "56",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "On pourrait aller souper dans un restaurant chic.",
+     "en": "We could go out to eat in a fancy restaurant.",
+     "kind": "line"
+    },
+    {
+     "id": "57",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "Juste les trois?",
+     "en": "Just the three of us?",
+     "kind": "phrase"
+    },
+    {
+     "id": "58",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "Tu veux pas que j’appelle Sandrine?",
+     "en": "Shouldn't I call Sandrine?",
+     "kind": "phrase"
+    },
+    {
+     "id": "59",
+     "section": "Faisons autre chose ce soir! (Montréal)",
+     "word": "Allons au restaurant Saint-Hébert de la Montagne vers huit heures du soir.",
+     "en": "Let's go to the restaurant Saint-Hébert de la Montagne around eight o'clock in the evening.",
+     "kind": "line"
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "title": "Leçon 10 · La famille",
+   "short": "10 · La famille",
+   "sections": [
+    "Elle est sympa, ta famille!",
+    "D'où vient ta famille?",
+    "Qu'est-ce qu'on va mettre?",
+    "Les vêtements",
+    "Deux copines magasinent (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Elle est sympa, ta famille!",
+     "word": "réussir",
+     "en": "to pass, to succeed",
+     "kind": "word"
+    },
+    {
+     "id": "02",
+     "section": "Elle est sympa, ta famille!",
+     "word": "une fête",
+     "en": "a party",
+     "kind": "word"
+    },
+    {
+     "id": "03",
+     "section": "Elle est sympa, ta famille!",
+     "word": "avoir de la chance",
+     "en": "to be lucky",
+     "kind": "phrase"
+    },
+    {
+     "id": "04",
+     "section": "Elle est sympa, ta famille!",
+     "word": "l'aîné(e)",
+     "en": "the oldest",
+     "kind": "word"
+    },
+    {
+     "id": "05",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Qu'est-ce que vous allez faire?",
+     "en": "What are you going to do?",
+     "kind": "phrase"
+    },
+    {
+     "id": "06",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Tout le monde",
+     "en": "everybody",
+     "kind": "phrase"
+    },
+    {
+     "id": "07",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Ils sont sympas.",
+     "en": "They're nice",
+     "kind": "phrase"
+    },
+    {
+     "id": "08",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Je suis le troisième.",
+     "en": "I'm the third. (child)",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Elle est sympa, ta famille!",
+     "word": "à la maison",
+     "en": "at my house",
+     "kind": "phrase"
+    },
+    {
+     "id": "10",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Qu'est-ce que vous allez faire en attendant les vacances?",
+     "en": "What are you going to do while you're waiting for vacation?",
+     "kind": "line"
+    },
+    {
+     "id": "11",
+     "section": "Elle est sympa, ta famille!",
+     "word": "J'organise une super fête à la maison avec tout le monde: mes amis, mes cousins, et même mes frères et mes sœurs.",
+     "en": "I'm organizing a big party at my house with everyone: My friends, my cousins, and even my brothers and sisters.",
+     "kind": "line"
+    },
+    {
+     "id": "12",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Tes parents te permettent de faire ça?",
+     "en": "Your parents let you do that?",
+     "kind": "line"
+    },
+    {
+     "id": "13",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Ouais, ils sont super sympas!",
+     "en": "Yeah, they're really nice!",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Même si je sors tard, ils ne disent rien.",
+     "en": "Even if I go out late, they don't say anything.",
+     "kind": "line"
+    },
+    {
+     "id": "15",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Tu as de la chance.",
+     "en": "You're lucky.",
+     "kind": "phrase"
+    },
+    {
+     "id": "16",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Moi, mon père c'est: 'fais-ci, fais ça, range ta chambre!'",
+     "en": "With my Dad it's: 'do this, do that, clean your room!'",
+     "kind": "line"
+    },
+    {
+     "id": "17",
+     "section": "Elle est sympa, ta famille!",
+     "word": "Moi, je suis le troisième et ils me fichent la paix!",
+     "en": "I'm the third child and they leave me alone!",
+     "kind": "line"
+    },
+    {
+     "id": "18",
+     "section": "D'où vient ta famille?",
+     "word": "venir de",
+     "en": "to come from",
+     "kind": "word"
+    },
+    {
+     "id": "19",
+     "section": "D'où vient ta famille?",
+     "word": "tous les deux",
+     "en": "both",
+     "kind": "phrase"
+    },
+    {
+     "id": "20",
+     "section": "D'où vient ta famille?",
+     "word": "un habitant",
+     "en": "an inhabitant",
+     "kind": "word"
+    },
+    {
+     "id": "21",
+     "section": "D'où vient ta famille?",
+     "word": "se sentir",
+     "en": "to feel",
+     "kind": "word"
+    },
+    {
+     "id": "22",
+     "section": "D'où vient ta famille?",
+     "word": "se débrouiller",
+     "en": "to manage, to get by",
+     "kind": "word"
+    },
+    {
+     "id": "23",
+     "section": "D'où vient ta famille?",
+     "word": "Tu viens d’où déjà?",
+     "en": "Where are you from?",
+     "kind": "phrase"
+    },
+    {
+     "id": "24",
+     "section": "D'où vient ta famille?",
+     "word": "Je viens de Genève mais mes parents habitent à Paris.",
+     "en": "I’m from Geneva but my parents live in Paris.",
+     "kind": "line"
+    },
+    {
+     "id": "25",
+     "section": "D'où vient ta famille?",
+     "word": "Pourquoi ils habitent à Paris?",
+     "en": "Why do they live in Paris?",
+     "kind": "phrase"
+    },
+    {
+     "id": "26",
+     "section": "D'où vient ta famille?",
+     "word": "Ils travaillent tous les deux à l’ambassade de Suisse.",
+     "en": "They both work at the Swiss embassy.",
+     "kind": "line"
+    },
+    {
+     "id": "27",
+     "section": "D'où vient ta famille?",
+     "word": "En fait, toute ma famille habite à l’étranger.",
+     "en": "In fact, my whole family lives abroad.",
+     "kind": "line"
+    },
+    {
+     "id": "28",
+     "section": "D'où vient ta famille?",
+     "word": "Ma tante est à Rio, mon oncle habite à Tokyo.",
+     "en": "My aunt is in Rio, my uncle lives in Tokyo.",
+     "kind": "line"
+    },
+    {
+     "id": "29",
+     "section": "D'où vient ta famille?",
+     "word": "Il y a un peu moins de 200.000 [deux cent mille] habitants.",
+     "en": "There are a little less than 200,000 (two hundred thousand) inhabitants.",
+     "kind": "line"
+    },
+    {
+     "id": "30",
+     "section": "D'où vient ta famille?",
+     "word": "Si tu te sens perdue, appelle-moi!",
+     "en": "If you feel lost, call me!",
+     "kind": "phrase"
+    },
+    {
+     "id": "31",
+     "section": "D'où vient ta famille?",
+     "word": "Mais merci quand même pour l’offre!",
+     "en": "But thanks anyway for the offer.",
+     "kind": "phrase"
+    },
+    {
+     "id": "32",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "un entretien",
+     "en": "an interview",
+     "kind": "word"
+    },
+    {
+     "id": "33",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "prêter",
+     "en": "to loan",
+     "kind": "word"
+    },
+    {
+     "id": "34",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Ah, super!",
+     "en": "Great!",
+     "kind": "word"
+    },
+    {
+     "id": "35",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Je t’appelle d’urgence",
+     "en": "I’m calling with an urgent request",
+     "kind": "phrase"
+    },
+    {
+     "id": "36",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Qu’est-ce que tu vas mettre?",
+     "en": "What are you going to wear?",
+     "kind": "phrase"
+    },
+    {
+     "id": "37",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "un chemisier",
+     "en": "a blouse",
+     "kind": "word"
+    },
+    {
+     "id": "38",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "un tailleur",
+     "en": "a woman’s suit",
+     "kind": "word"
+    },
+    {
+     "id": "39",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "des collants",
+     "en": "tights",
+     "kind": "word"
+    },
+    {
+     "id": "40",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "des chaussures",
+     "en": "shoes",
+     "kind": "word"
+    },
+    {
+     "id": "41",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Je n’ai pas le temps.",
+     "en": "I don’t have time.",
+     "kind": "phrase"
+    },
+    {
+     "id": "42",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Tu me sauves la vie!",
+     "en": "You’re saving my life!",
+     "kind": "phrase"
+    },
+    {
+     "id": "43",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Allô Alice, je t’appelle d’urgence pour savoir ce que tu vas mettre demain pour l’entretien.",
+     "en": "Hello Alice, I’m calling you with an urgent request to find out what you are going to wear tomorrow for the interview.",
+     "kind": "line"
+    },
+    {
+     "id": "44",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Oh, je vais m’habiller style professionnel.",
+     "en": "Oh, I’m going to dress professionally.",
+     "kind": "phrase"
+    },
+    {
+     "id": "45",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Je vais porter un chemisier, un tailleur, des collants et des chaussures.",
+     "en": "I’m going to wear a blouse, a suit, tights, and shoes.",
+     "kind": "line"
+    },
+    {
+     "id": "46",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Ah super! Oh c’est horrible, moi je n’ai rien à me mettre aujourd’hui.",
+     "en": "Oh great! It’s awful, I don’t have anything to wear today.",
+     "kind": "line"
+    },
+    {
+     "id": "47",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Je porte une vieille robe et je n’ai pas le temps de faire les magasins.",
+     "en": "I’m wearing an old dress and I don’t have time to go shopping.",
+     "kind": "line"
+    },
+    {
+     "id": "48",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Tu veux que je te prête un pantalon et une veste?",
+     "en": "Do you want me to loan you pants and a jacket?",
+     "kind": "line"
+    },
+    {
+     "id": "49",
+     "section": "Qu'est-ce qu'on va mettre?",
+     "word": "Oh super! Merci Alice! Tu me sauves la vie!",
+     "en": "Great! Thanks Alice! You’re saving my life!",
+     "kind": "line"
+    },
+    {
+     "id": "50",
+     "section": "Les vêtements",
+     "word": "une chemise",
+     "en": "a shirt",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "51",
+     "section": "Les vêtements",
+     "word": "un polo",
+     "en": "a polo shirt",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "52",
+     "section": "Les vêtements",
+     "word": "un tee-shirt",
+     "en": "a t-shirt",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "53",
+     "section": "Les vêtements",
+     "word": "un pull",
+     "en": "a sweater",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "54",
+     "section": "Les vêtements",
+     "word": "un jean",
+     "en": "jeans",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "55",
+     "section": "Les vêtements",
+     "word": "un pantalon",
+     "en": "trousers, pants",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "56",
+     "section": "Les vêtements",
+     "word": "un short",
+     "en": "shorts",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "57",
+     "section": "Les vêtements",
+     "word": "une jupe",
+     "en": "a skirt",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "58",
+     "section": "Les vêtements",
+     "word": "une robe",
+     "en": "a dress",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "59",
+     "section": "Les vêtements",
+     "word": "un costume",
+     "en": "a man's suit",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "60",
+     "section": "Les vêtements",
+     "word": "un tailleur",
+     "en": "a woman's suit",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "61",
+     "section": "Les vêtements",
+     "word": "des chaussures à hauts talons",
+     "en": "high-heeled shoes",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "62",
+     "section": "Les vêtements",
+     "word": "des sandales",
+     "en": "sandals",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "63",
+     "section": "Les vêtements",
+     "word": "des bottes",
+     "en": "boots",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "64",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "une belle robe",
+     "en": "un joli vêtement de femme",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "65",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "mon chum",
+     "en": "mon copain, mon amour",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "66",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "ma blonde",
+     "en": "ma copine, mon amour",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "67",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "dispendieux",
+     "en": "cher",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "68",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "le magasinage",
+     "en": "le shopping",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "69",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "être sur son 36",
+     "en": "être bien habillé(e)",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "70",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Qu’est-ce que tu cherches?",
+     "en": "Qu'est-ce que vous essayez de trouver?",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "71",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Une belle robe pour ce soir.",
+     "en": "Un joli vêtement pour ce soir.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "72",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Mon chum m’amène au club 57.",
+     "en": "Mon copain m’invite au club 57.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "73",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Quelle sorte de robe est-ce que tu cherches?",
+     "en": "Quel type de vêtement désirez-vous?",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "74",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Je cherche quelque chose d’élégant mais de pas trop dispendieux.",
+     "en": "Je veux trouver quelque chose de gracieux mais de pas trop cher.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "75",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Cette boutique ne vend pas bon marché.",
+     "en": "Tout est cher dans cette boutique.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "76",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Tout est dispendieux ici!",
+     "en": "Tout est cher.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "77",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "J’ai une robe chez moi que je n’ai portée qu’une seule fois.",
+     "en": "J'ai un vêtement à la maison presque neuf (nouveau).",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "78",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Tu peux la porter si tu veux.",
+     "en": "Tu peux t'en servir.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "79",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "C’est pas bête comme idée!",
+     "en": "Ce n'est pas une idée stupide.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "80",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Viens chez moi voir la robe.",
+     "en": "Viens à la maison regarder le vêtement.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "81",
+     "section": "Deux copines magasinent (Montréal)",
+     "word": "Si tu ne l’aimes pas, on a encore quatre heures pour magasiner.",
+     "en": "Si tu préfères autre chose, on a encore quatre heures pour faire le shopping.",
+     "kind": "line",
+     "gloss": "fr"
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "title": "Leçon 11 · La maison",
+   "short": "11 · La maison",
+   "sections": [
+    "Désolée, elle fait le ménage…",
+    "Un dimanche à la campagne",
+    "Réparer la voiture (Montréal)",
+    "Les tâches domestiques"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "être occupé(e)",
+     "en": "to be busy",
+     "kind": "word"
+    },
+    {
+     "id": "02",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "être en haut",
+     "en": "to be upstairs",
+     "kind": "phrase"
+    },
+    {
+     "id": "03",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "faire le ménage",
+     "en": "to do housework",
+     "kind": "phrase"
+    },
+    {
+     "id": "04",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "rappeler",
+     "en": "to call back",
+     "kind": "word"
+    },
+    {
+     "id": "05",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Allô?",
+     "en": "Hello?",
+     "kind": "phrase"
+    },
+    {
+     "id": "06",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Madame Morin?",
+     "en": "Madame Morin?",
+     "kind": "phrase"
+    },
+    {
+     "id": "07",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Oui, c’est elle.",
+     "en": "Yes, this is she.",
+     "kind": "phrase"
+    },
+    {
+     "id": "08",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Bonjour, c’est Isabelle.",
+     "en": "Hello, this is Isabelle.",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Je peux parler à Sabine?",
+     "en": "Can I talk to Sabine?",
+     "kind": "phrase"
+    },
+    {
+     "id": "10",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Désolée, elle est occupée.",
+     "en": "Sorry, she’s busy.",
+     "kind": "phrase"
+    },
+    {
+     "id": "11",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Elle est en haut.",
+     "en": "She's upstairs.",
+     "kind": "phrase"
+    },
+    {
+     "id": "12",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Elle est dans sa chambre.",
+     "en": "She is in her room.",
+     "kind": "phrase"
+    },
+    {
+     "id": "13",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Elle fait le ménage.",
+     "en": "She's doing housework / cleaning.",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Je la rappellerai dans une heure.",
+     "en": "I'll call her back in an hour.",
+     "kind": "phrase"
+    },
+    {
+     "id": "15",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Vous pouvez lui dire que j’ai téléphoné?",
+     "en": "Can you tell her that I called?",
+     "kind": "line"
+    },
+    {
+     "id": "16",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Bon, vous pouvez lui dire que je la rappellerai dans une heure?",
+     "en": "Okay, can you tell her that I'll call her back in an hour?",
+     "kind": "line"
+    },
+    {
+     "id": "17",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "Bien sûr!",
+     "en": "Of course!",
+     "kind": "word"
+    },
+    {
+     "id": "18",
+     "section": "Désolée, elle fait le ménage…",
+     "word": "À tout à l’heure!",
+     "en": "Talk to you soon!",
+     "kind": "phrase"
+    },
+    {
+     "id": "19",
+     "section": "Un dimanche à la campagne",
+     "word": "à la campagne",
+     "en": "in the country",
+     "kind": "phrase"
+    },
+    {
+     "id": "20",
+     "section": "Un dimanche à la campagne",
+     "word": "déménager",
+     "en": "to move",
+     "kind": "word"
+    },
+    {
+     "id": "21",
+     "section": "Un dimanche à la campagne",
+     "word": "se promener",
+     "en": "to walk",
+     "kind": "word"
+    },
+    {
+     "id": "22",
+     "section": "Un dimanche à la campagne",
+     "word": "la mer",
+     "en": "the sea",
+     "kind": "word"
+    },
+    {
+     "id": "23",
+     "section": "Un dimanche à la campagne",
+     "word": "Qu’est-ce que tu fais?",
+     "en": "What are you doing?",
+     "kind": "phrase"
+    },
+    {
+     "id": "24",
+     "section": "Un dimanche à la campagne",
+     "word": "Qu'est-ce que tu fais ce week-end?",
+     "en": "What are you doing this weekend?",
+     "kind": "phrase"
+    },
+    {
+     "id": "25",
+     "section": "Un dimanche à la campagne",
+     "word": "Je vais à la campagne.",
+     "en": "I'm going to the country.",
+     "kind": "phrase"
+    },
+    {
+     "id": "26",
+     "section": "Un dimanche à la campagne",
+     "word": "Je vais à la maison de mes grands-parents.",
+     "en": "I’m going to the home of my grandparents.",
+     "kind": "line"
+    },
+    {
+     "id": "27",
+     "section": "Un dimanche à la campagne",
+     "word": "Tu y vas souvent?",
+     "en": "Do you go there often?",
+     "kind": "phrase"
+    },
+    {
+     "id": "28",
+     "section": "Un dimanche à la campagne",
+     "word": "Je dois déménager une vieille armoire.",
+     "en": "I have to move an old dresser.",
+     "kind": "phrase"
+    },
+    {
+     "id": "29",
+     "section": "Un dimanche à la campagne",
+     "word": "Je dois déménager un lit et des meubles.",
+     "en": "I have to move a bed and some furniture.",
+     "kind": "line"
+    },
+    {
+     "id": "30",
+     "section": "Un dimanche à la campagne",
+     "word": "C’est pour leur appartement en ville.",
+     "en": "It’s for their apartment in the city.",
+     "kind": "phrase"
+    },
+    {
+     "id": "31",
+     "section": "Un dimanche à la campagne",
+     "word": "Ça me fait un peu d’argent.",
+     "en": "That gets me a little money.",
+     "kind": "phrase"
+    },
+    {
+     "id": "32",
+     "section": "Un dimanche à la campagne",
+     "word": "Ça me fait de l’argent pour l’été.",
+     "en": "That gets me a little money for the summer.",
+     "kind": "line"
+    },
+    {
+     "id": "33",
+     "section": "Un dimanche à la campagne",
+     "word": "Et à part ça?",
+     "en": "And besides that?",
+     "kind": "phrase"
+    },
+    {
+     "id": "34",
+     "section": "Un dimanche à la campagne",
+     "word": "Qu’est-ce que tu vas y faire?",
+     "en": "What are you going to do there?",
+     "kind": "phrase"
+    },
+    {
+     "id": "35",
+     "section": "Un dimanche à la campagne",
+     "word": "Je vais me promener.",
+     "en": "I'm going to take walks.",
+     "kind": "phrase"
+    },
+    {
+     "id": "36",
+     "section": "Un dimanche à la campagne",
+     "word": "Il y a la mer.",
+     "en": "There is the sea.",
+     "kind": "phrase"
+    },
+    {
+     "id": "37",
+     "section": "Un dimanche à la campagne",
+     "word": "Ce n’est pas loin.",
+     "en": "It isn't far away.",
+     "kind": "phrase"
+    },
+    {
+     "id": "38",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "l'alternateur",
+     "en": "une partie/pièce d'une voiture",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "39",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "T’es sûr?",
+     "en": "Tu es certain?",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "40",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "une grosse dépense",
+     "en": "qui coûte beaucoup d'argent",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "41",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "tu te vantes",
+     "en": "tu te penses bon",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "42",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Tsiguidou!",
+     "en": "Super! On y va!",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "43",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Écoute, je crois qu’on n'a pas le choix.",
+     "en": "Il n'y a pas d'alternative.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "44",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Il faut changer l’alternateur..",
+     "en": "Il faut acheter une nouvelle pièce.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "45",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "On ne peut pas le réparer ?",
+     "en": "Est-il impossible de le récupérer?",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "46",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "C’est une grosse dépense, sinon.",
+     "en": "Ça va coûter beaucoup d'argent, autrement.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "47",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "J’ai essayé pendant une heure.",
+     "en": "J'ai fait un effort pendant 60 minutes.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "48",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Je pense que j’ai empiré la situation.",
+     "en": "Je pense que la situation est pire qu'avant.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "49",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Tu te vantes d’être un homme doué pour les travaux manuels.",
+     "en": "Tu dis que tu es un homme qui sait travailler avec ses mains.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "50",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Je constate ton talent.",
+     "en": "Je note ton talent.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "51",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Tu peux essayer si tu veux.",
+     "en": "Vas-y toi-même.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "52",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Tu vas voir que ce n’est pas si facile qu’on le croit.",
+     "en": "Tu vas voir que c'est assez difficile.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "53",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Disons que j’ai d’autres choses à faire.",
+     "en": "Je préfère m'occuper autrement.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "54",
+     "section": "Réparer la voiture (Montréal)",
+     "word": "Je t’accompagne demain au garage.",
+     "en": "Je vais avec toi demain au garage.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "55",
+     "section": "Les tâches domestiques",
+     "word": "Je fais mon lit.",
+     "en": "I make my bed.",
+     "kind": "phrase"
+    },
+    {
+     "id": "56",
+     "section": "Les tâches domestiques",
+     "word": "Je fais le ménage.",
+     "en": "I clean house.",
+     "kind": "phrase"
+    },
+    {
+     "id": "57",
+     "section": "Les tâches domestiques",
+     "word": "Je fais la lessive.",
+     "en": "I wash clothes / do laundry.",
+     "kind": "phrase"
+    },
+    {
+     "id": "58",
+     "section": "Les tâches domestiques",
+     "word": "Je fais le repassage.",
+     "en": "I iron.",
+     "kind": "phrase"
+    },
+    {
+     "id": "59",
+     "section": "Les tâches domestiques",
+     "word": "Je fais la cuisine.",
+     "en": "I cook.",
+     "kind": "phrase"
+    },
+    {
+     "id": "60",
+     "section": "Les tâches domestiques",
+     "word": "Je fais la vaisselle.",
+     "en": "I do the dishes.",
+     "kind": "phrase"
+    },
+    {
+     "id": "61",
+     "section": "Les tâches domestiques",
+     "word": "Je fais les courses.",
+     "en": "I go grocery shopping.",
+     "kind": "phrase"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "title": "Leçon 12 · Le travail",
+   "short": "12 · Le travail",
+   "sections": [
+    "Qu'est-ce qu'ils font comme métier?",
+    "Qu'est-ce que tu veux faire dans la vie?",
+    "Tu es prête pour ton entretien demain?",
+    "Un emploi d'été (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Qu’est-ce que tu fais?",
+     "en": "What do you do?",
+     "kind": "phrase"
+    },
+    {
+     "id": "02",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Quel est votre métier?",
+     "en": "What is your line of work?",
+     "kind": "phrase"
+    },
+    {
+     "id": "03",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Mathieu est avocat.",
+     "en": "Mathieu is a lawyer.",
+     "kind": "phrase"
+    },
+    {
+     "id": "04",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Marie est ingénieur.",
+     "en": "Marie is an engineer.",
+     "kind": "phrase"
+    },
+    {
+     "id": "05",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Elle est étudiante aux beaux-arts.",
+     "en": "She is a student of fine arts.",
+     "kind": "phrase"
+    },
+    {
+     "id": "06",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Qu'est-ce qu'ils font tes frères et soeurs?",
+     "en": "What do your brother and sister do?",
+     "kind": "line"
+    },
+    {
+     "id": "07",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Marie est ingénieur en robotique.",
+     "en": "Marie is a robotical engineer.",
+     "kind": "phrase"
+    },
+    {
+     "id": "08",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Et les tiens?",
+     "en": "And yours (sisters and brothers)?",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Ma grande sœur est étudiante aux beaux-arts.",
+     "en": "My sister is a student of fine arts.",
+     "kind": "line"
+    },
+    {
+     "id": "10",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "C'est une super artiste que je respecte beaucoup.",
+     "en": "She’s a great artist that I respect a lot.",
+     "kind": "line"
+    },
+    {
+     "id": "11",
+     "section": "Qu'est-ce qu'ils font comme métier?",
+     "word": "Ma petite sœur est plus intéressée par les affaires.",
+     "en": "My little sister is more interested in business.",
+     "kind": "line"
+    },
+    {
+     "id": "12",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "devenir",
+     "en": "to become",
+     "kind": "word"
+    },
+    {
+     "id": "13",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "un métier",
+     "en": "line of work",
+     "kind": "word"
+    },
+    {
+     "id": "14",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "un stage",
+     "en": "internship",
+     "kind": "word"
+    },
+    {
+     "id": "15",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "J'aime beaucoup l'architecture.",
+     "en": "I like architecture a lot.",
+     "kind": "phrase"
+    },
+    {
+     "id": "16",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "Je veux devenir architecte.",
+     "en": "I want to become an architect.",
+     "kind": "phrase"
+    },
+    {
+     "id": "17",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "Moi aussi j'aime l'architecture.",
+     "en": "I like architecture too.",
+     "kind": "phrase"
+    },
+    {
+     "id": "18",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "Ce métier ne m'intéresse pas beaucoup.",
+     "en": "This profession doesn’t interest me.",
+     "kind": "phrase"
+    },
+    {
+     "id": "19",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "Tu fais des études d'architecture?",
+     "en": "Are you studying architecture?",
+     "kind": "phrase"
+    },
+    {
+     "id": "20",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "Je suis déjà en cinquième année.",
+     "en": "I’m already in my fifth year.",
+     "kind": "phrase"
+    },
+    {
+     "id": "21",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "Je vais bientôt terminer mes études.",
+     "en": "I’m going to finish my studies soon.",
+     "kind": "phrase"
+    },
+    {
+     "id": "22",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "Tu vas commencer à chercher du travail?",
+     "en": "Are you going to start looking for work?",
+     "kind": "line"
+    },
+    {
+     "id": "23",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "Je dois chercher du travail.",
+     "en": "I have to look for work.",
+     "kind": "phrase"
+    },
+    {
+     "id": "24",
+     "section": "Qu'est-ce que tu veux faire dans la vie?",
+     "word": "Je dois au moins essayer de trouver un stage!",
+     "en": "I have to at least try to find an internship!",
+     "kind": "line"
+    },
+    {
+     "id": "25",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "un entretien",
+     "en": "an interview",
+     "kind": "word"
+    },
+    {
+     "id": "26",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "un CV",
+     "en": "a resume",
+     "kind": "word"
+    },
+    {
+     "id": "27",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "les références",
+     "en": "references",
+     "kind": "word"
+    },
+    {
+     "id": "28",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "une entreprise",
+     "en": "a business",
+     "kind": "word"
+    },
+    {
+     "id": "29",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "embaucher",
+     "en": "to hire",
+     "kind": "word"
+    },
+    {
+     "id": "30",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "Tu es prête pour ton entretien?",
+     "en": "Are you ready for your interview?",
+     "kind": "phrase"
+    },
+    {
+     "id": "31",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "Oui, j’ai mon CV, mes références et des questions.",
+     "en": "Yes, I have my resume, my references, and some questions.",
+     "kind": "line"
+    },
+    {
+     "id": "32",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "Pourquoi veux-tu travailler pour eux?",
+     "en": "Why do you want to work for them?",
+     "kind": "phrase"
+    },
+    {
+     "id": "33",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "Je connais bien leur entreprise.",
+     "en": "I know their business well.",
+     "kind": "phrase"
+    },
+    {
+     "id": "34",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "Je vais leur montrer que je connais bien leur entreprise.",
+     "en": "I’m going to show them that I know their business well.",
+     "kind": "line"
+    },
+    {
+     "id": "35",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "Ce que je veux faire.",
+     "en": "What I want to do.",
+     "kind": "phrase"
+    },
+    {
+     "id": "36",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "Leur mission correspond à ce que je veux faire.",
+     "en": "Their mission corresponds to what I want to do.",
+     "kind": "line"
+    },
+    {
+     "id": "37",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "Ensuite je vais leur dire que leur mission correspond à ce que je veux faire dans la vie.",
+     "en": "Then I’m going to tell them that their mission corresponds to what I want to do with my life.",
+     "kind": "line"
+    },
+    {
+     "id": "38",
+     "section": "Tu es prête pour ton entretien demain?",
+     "word": "S’ils ne t’embauchent pas, ils sont difficiles!",
+     "en": "If they don’t hire you, they are difficult!",
+     "kind": "line"
+    },
+    {
+     "id": "39",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "les festivals",
+     "en": "de chanson, d'humour, de jazz",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "40",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "la Place des Arts",
+     "en": "lieu où se présentent des concerts, des pièces de théatre",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "41",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "un agent de sécurité",
+     "en": "personne qui aide à contrôler/guider les gens dans un festival",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "42",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "un spectacle payant",
+     "en": "qui coûte de l'argent",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "43",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "un spectacle gratuit",
+     "en": "qui ne coûte rien",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "44",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Ça fait longtemps!",
+     "en": "Je ne t'ai pas vu depuis un temps considérable.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "45",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Quoi de neuf?",
+     "en": "Qu'est-ce qu'il y a de nouveau dans ta vie?",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "46",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "J’ai fini l’école lundi.",
+     "en": "L'année scolaire vient de se terminer.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "47",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Je commence à travailler en fin de semaine.",
+     "en": "J'ai un job qui commence bientôt.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "48",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Tu vas travailler où?",
+     "en": "Où se trouve ton lieu de travail?",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "49",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "J’ai trouvé un emploi d’agent de sécurité.",
+     "en": "J'ai été engagé comme agent de sécurité.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "50",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Il paraît que les horaires sont pas supers.",
+     "en": "Il semble que les heures de travail sont un peu ennuyeuses.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "51",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "C’est pas génial.",
+     "en": "Ce n'est pas idéal.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "52",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Je finis tard.",
+     "en": "Je termine tard (dans la nuit).",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "53",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "C’est assez payant.",
+     "en": "Je gagne pas mal d'argent.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "54",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Tant mieux.",
+     "en": "C'est une bonne chose.",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "55",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Je ne suis pas au courant.",
+     "en": "Je n'en sais rien.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "56",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Il faut que je termine mes études.",
+     "en": "Je dois terminer mes cours.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "57",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Tu vas me raconter ça.",
+     "en": "Tu vas me décrire ton expérience.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "58",
+     "section": "Un emploi d'été (Montréal)",
+     "word": "Écoute, je dois y aller maintenant.",
+     "en": "Je dois partir maintenant.",
+     "kind": "phrase",
+     "gloss": "fr"
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "title": "Leçon 13 · Les repas",
+   "short": "13 · Les repas",
+   "sections": [
+    "Vous avez réservé?",
+    "Le coin non-fumeur",
+    "Vous avez choisi?",
+    "La nourriture",
+    "Veux-tu déjeuner? (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "Vous avez réservé?",
+     "word": "avoir réservé",
+     "en": "made a reservation",
+     "kind": "word"
+    },
+    {
+     "id": "02",
+     "section": "Vous avez réservé?",
+     "word": "être complet",
+     "en": "to be full (a restaurant not a person)",
+     "kind": "word"
+    },
+    {
+     "id": "03",
+     "section": "Vous avez réservé?",
+     "word": "Vous avez réservé?",
+     "en": "Do you have a reservation?",
+     "kind": "phrase"
+    },
+    {
+     "id": "04",
+     "section": "Vous avez réservé?",
+     "word": "Je suis désolé.",
+     "en": "I’m sorry.",
+     "kind": "phrase"
+    },
+    {
+     "id": "05",
+     "section": "Vous avez réservé?",
+     "word": "Nous sommes complets.",
+     "en": "We’re full.",
+     "kind": "phrase"
+    },
+    {
+     "id": "06",
+     "section": "Vous avez réservé?",
+     "word": "Ah c’est dommage!",
+     "en": "Oh that’s too bad!",
+     "kind": "phrase"
+    },
+    {
+     "id": "07",
+     "section": "Vous avez réservé?",
+     "word": "Tant pis.",
+     "en": "What a shame.",
+     "kind": "word"
+    },
+    {
+     "id": "08",
+     "section": "Le coin non-fumeur",
+     "word": "être allergique à quelque chose",
+     "en": "to be allergic to something",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "Le coin non-fumeur",
+     "word": "la fumée",
+     "en": "the smoke",
+     "kind": "word"
+    },
+    {
+     "id": "10",
+     "section": "Le coin non-fumeur",
+     "word": "S’il vous plaît.",
+     "en": "Please.",
+     "kind": "phrase"
+    },
+    {
+     "id": "11",
+     "section": "Le coin non-fumeur",
+     "word": "Où se trouve le coin non-fumeur s’il vous plaît?",
+     "en": "Where is the no smoking section please?",
+     "kind": "line"
+    },
+    {
+     "id": "12",
+     "section": "Le coin non-fumeur",
+     "word": "Je suis allergique à la fumée de cigarette.",
+     "en": "I’m allergic to cigarette smoke.",
+     "kind": "line"
+    },
+    {
+     "id": "13",
+     "section": "Le coin non-fumeur",
+     "word": "Au fond à gauche.",
+     "en": "In the back on the left.",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "Le coin non-fumeur",
+     "word": "Messieurs Dames.",
+     "en": "Ladies and gentleman.",
+     "kind": "word"
+    },
+    {
+     "id": "15",
+     "section": "Le coin non-fumeur",
+     "word": "Bon déjeuner.",
+     "en": "Have a good lunch.",
+     "kind": "word"
+    },
+    {
+     "id": "16",
+     "section": "Vous avez choisi?",
+     "word": "le plat principal",
+     "en": "the main dish",
+     "kind": "phrase"
+    },
+    {
+     "id": "17",
+     "section": "Vous avez choisi?",
+     "word": "être servi avec",
+     "en": "to be served with",
+     "kind": "phrase"
+    },
+    {
+     "id": "18",
+     "section": "Vous avez choisi?",
+     "word": "Vous avez choisi?",
+     "en": "Have you made your selection?",
+     "kind": "phrase"
+    },
+    {
+     "id": "19",
+     "section": "Vous avez choisi?",
+     "word": "Moi aussi.",
+     "en": "Me too.",
+     "kind": "word"
+    },
+    {
+     "id": "20",
+     "section": "Vous avez choisi?",
+     "word": "Je crois que je vais prendre le menu à prix fixe à 16,50€.",
+     "en": "I think that I’m going to take the fixed price menu for 16 euros 50.",
+     "kind": "line"
+    },
+    {
+     "id": "21",
+     "section": "Vous avez choisi?",
+     "word": "Qu’est-ce que vous buvez?",
+     "en": "What would you like to drink?",
+     "kind": "phrase"
+    },
+    {
+     "id": "22",
+     "section": "Vous avez choisi?",
+     "word": "Il est servi avec des petits légumes ou du riz?",
+     "en": "Is it served with vegetables or rice?",
+     "kind": "line"
+    },
+    {
+     "id": "23",
+     "section": "Vous avez choisi?",
+     "word": "Moi comme plat principal, j’hésite entre le homard ou le bar.",
+     "en": "For my main dish, I’m hesitating between the lobster and the bass.",
+     "kind": "line"
+    },
+    {
+     "id": "24",
+     "section": "Vous avez choisi?",
+     "word": "Je vais prendre le bar.",
+     "en": "I’m going to have the bass.",
+     "kind": "phrase"
+    },
+    {
+     "id": "25",
+     "section": "Vous avez choisi?",
+     "word": "Prends plutôt un verre d’eau?",
+     "en": "Have a glass of water instead?",
+     "kind": "phrase"
+    },
+    {
+     "id": "26",
+     "section": "Vous avez choisi?",
+     "word": "Une bouteille de vin s’il vous plaît.",
+     "en": "A bottle of wine please.",
+     "kind": "line"
+    },
+    {
+     "id": "27",
+     "section": "La nourriture",
+     "word": "La Viande / Les Produits Animaux",
+     "en": "Meat / animal products",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "28",
+     "section": "La nourriture",
+     "word": "le biftek",
+     "en": "steak",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "29",
+     "section": "La nourriture",
+     "word": "la dinde",
+     "en": "turkey",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "30",
+     "section": "La nourriture",
+     "word": "le jambon",
+     "en": "ham",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "31",
+     "section": "La nourriture",
+     "word": "le poulet",
+     "en": "chicken",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "32",
+     "section": "La nourriture",
+     "word": "des oeufs",
+     "en": "eggs",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "33",
+     "section": "La nourriture",
+     "word": "les saucisses",
+     "en": "sausages",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "34",
+     "section": "La nourriture",
+     "word": "le saucisson",
+     "en": "dry sausage, salami",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "35",
+     "section": "La nourriture",
+     "word": "Les Produits laitiers",
+     "en": "Dairy products",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "36",
+     "section": "La nourriture",
+     "word": "le lait",
+     "en": "milk",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "37",
+     "section": "La nourriture",
+     "word": "le fromage",
+     "en": "cheese",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "38",
+     "section": "La nourriture",
+     "word": "le yaourt",
+     "en": "yogurt",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "39",
+     "section": "La nourriture",
+     "word": "la glace",
+     "en": "ice cream",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "40",
+     "section": "La nourriture",
+     "word": "Les Fruits",
+     "en": "Fruit",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "41",
+     "section": "La nourriture",
+     "word": "une pomme",
+     "en": "an apple",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "42",
+     "section": "La nourriture",
+     "word": "des bananes",
+     "en": "bananas",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "43",
+     "section": "La nourriture",
+     "word": "une orange",
+     "en": "an orange",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "44",
+     "section": "La nourriture",
+     "word": "des fraises",
+     "en": "strawberries",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "45",
+     "section": "La nourriture",
+     "word": "une poire",
+     "en": "a pear",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "46",
+     "section": "La nourriture",
+     "word": "un citron",
+     "en": "a lemon",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "47",
+     "section": "La nourriture",
+     "word": "une pêche",
+     "en": "a peach",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "48",
+     "section": "La nourriture",
+     "word": "un ananas",
+     "en": "a pineapple",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "49",
+     "section": "La nourriture",
+     "word": "Les Légumes",
+     "en": "Vegetables",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "50",
+     "section": "La nourriture",
+     "word": "la laitue",
+     "en": "lettuce",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "51",
+     "section": "La nourriture",
+     "word": "le chou-fleur",
+     "en": "cauliflower",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "52",
+     "section": "La nourriture",
+     "word": "des carottes",
+     "en": "carrots",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "53",
+     "section": "La nourriture",
+     "word": "des poivrons",
+     "en": "bell peppers",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "54",
+     "section": "La nourriture",
+     "word": "des pommes de terre",
+     "en": "potatoes",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "55",
+     "section": "La nourriture",
+     "word": "des haricots verts",
+     "en": "green beans",
+     "kind": "phrase",
+     "added": true
+    },
+    {
+     "id": "56",
+     "section": "La nourriture",
+     "word": "le maïs",
+     "en": "corn",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "57",
+     "section": "La nourriture",
+     "word": "des oignons",
+     "en": "onions",
+     "kind": "word",
+     "added": true
+    },
+    {
+     "id": "58",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "Bon matin!",
+     "en": "Bonjour! (Québec)",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "59",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "déjeuner, le déjeuner",
+     "en": "premier repas de la journée (Québec), prendre le premier repas de la journée",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "60",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "bleuets",
+     "en": "petits fruits bleus (Québec, 'myrtilles' en France)",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "61",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "des toasts",
+     "en": "pain grillé du matin (Québec)",
+     "kind": "word",
+     "gloss": "fr"
+    },
+    {
+     "id": "62",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "Tu as vraiment trop bu hier.",
+     "en": "Tu as consommé trop d'alcool hier.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "63",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "Tu as raison.",
+     "en": "Je suis de la même opinion.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "64",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "Veux-tu déjeuner?",
+     "en": "Tu veux manger quelque chose? (matin)",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "65",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "Oui, s’il te plaît.",
+     "en": "Oui, si tu veux bien.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "66",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "Qu’est-ce que tu préfères?",
+     "en": "Qu'est-ce que tu veux (manger)?",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "67",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "On a des œufs, des céréales, ou des toasts.",
+     "en": "La liste de ce qu'il y a à manger dans la maison.",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "68",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "Je prends les toasts.",
+     "en": "Je préfère le pain grillé.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "69",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "Est-ce qu’il y a de la confiture?",
+     "en": "Est-ce qu'il y a quelque chose à mettre sur les toasts?",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "70",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "Oui, de la confiture aux bleuets.",
+     "en": "Oui, nous avons de la marmelade de petits fruits bleus.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "71",
+     "section": "Veux-tu déjeuner? (Montréal)",
+     "word": "C'est parfait.",
+     "en": "C'est exactement ce qu'il me faut.",
+     "kind": "word",
+     "gloss": "fr"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "title": "Leçon 14 · Au restaurant",
+   "short": "14 · Au restaurant",
+   "sections": [
+    "J’accepte ton invitation.",
+    "Désolée, je suis déjà prise.",
+    "Qu'est-ce que je vous sers? (Montréal)"
+   ],
+   "items": [
+    {
+     "id": "01",
+     "section": "J’accepte ton invitation.",
+     "word": "une soirée",
+     "en": "a party",
+     "kind": "word"
+    },
+    {
+     "id": "02",
+     "section": "J’accepte ton invitation.",
+     "word": "un cuisinier",
+     "en": "a chef",
+     "kind": "word"
+    },
+    {
+     "id": "03",
+     "section": "J’accepte ton invitation.",
+     "word": "bon marché",
+     "en": "cheap",
+     "kind": "word"
+    },
+    {
+     "id": "04",
+     "section": "J’accepte ton invitation.",
+     "word": "réserver",
+     "en": "make a reservation",
+     "kind": "word"
+    },
+    {
+     "id": "05",
+     "section": "J’accepte ton invitation.",
+     "word": "se retrouver",
+     "en": "to meet each other",
+     "kind": "word"
+    },
+    {
+     "id": "06",
+     "section": "J’accepte ton invitation.",
+     "word": "Allô?",
+     "en": "Hello",
+     "kind": "phrase"
+    },
+    {
+     "id": "07",
+     "section": "J’accepte ton invitation.",
+     "word": "J’organise une petite soirée.",
+     "en": "I’m organizing a little party",
+     "kind": "phrase"
+    },
+    {
+     "id": "08",
+     "section": "J’accepte ton invitation.",
+     "word": "Tu veux venir?",
+     "en": "Do you want to come?",
+     "kind": "phrase"
+    },
+    {
+     "id": "09",
+     "section": "J’accepte ton invitation.",
+     "word": "Avec plaisir!",
+     "en": "I would like that!",
+     "kind": "word"
+    },
+    {
+     "id": "10",
+     "section": "J’accepte ton invitation.",
+     "word": "Tu connais des restaurants bon marché?",
+     "en": "Do you know any cheap restaurants?",
+     "kind": "phrase"
+    },
+    {
+     "id": "11",
+     "section": "J’accepte ton invitation.",
+     "word": "J’en connais beaucoup.",
+     "en": "I know a lot of them.",
+     "kind": "phrase"
+    },
+    {
+     "id": "12",
+     "section": "J’accepte ton invitation.",
+     "word": "À mon avis, oui.",
+     "en": "Yes, in my opinion.",
+     "kind": "phrase"
+    },
+    {
+     "id": "13",
+     "section": "J’accepte ton invitation.",
+     "word": "Il faut réserver.",
+     "en": "You must make a reservation.",
+     "kind": "phrase"
+    },
+    {
+     "id": "14",
+     "section": "J’accepte ton invitation.",
+     "word": "On se retrouve où et à quelle heure?",
+     "en": "Where and at what time will we meet?",
+     "kind": "line"
+    },
+    {
+     "id": "15",
+     "section": "J’accepte ton invitation.",
+     "word": "Pas de problème.",
+     "en": "No problem.",
+     "kind": "phrase"
+    },
+    {
+     "id": "16",
+     "section": "J’accepte ton invitation.",
+     "word": "À samedi.",
+     "en": "See you Saturday.",
+     "kind": "word"
+    },
+    {
+     "id": "17",
+     "section": "Désolée, je suis déjà prise.",
+     "word": "être libre",
+     "en": "to be free",
+     "kind": "word"
+    },
+    {
+     "id": "18",
+     "section": "Désolée, je suis déjà prise.",
+     "word": "Si on allait au restau?",
+     "en": "How about if we go to a restaurant?",
+     "kind": "phrase"
+    },
+    {
+     "id": "19",
+     "section": "Désolée, je suis déjà prise.",
+     "word": "Tu es libre?",
+     "en": "Are you free?",
+     "kind": "phrase"
+    },
+    {
+     "id": "20",
+     "section": "Désolée, je suis déjà prise.",
+     "word": "J’ai déjà programmé quelque chose.",
+     "en": "I already planned something.",
+     "kind": "phrase"
+    },
+    {
+     "id": "21",
+     "section": "Désolée, je suis déjà prise.",
+     "word": "En fait.",
+     "en": "In fact.",
+     "kind": "word"
+    },
+    {
+     "id": "22",
+     "section": "Désolée, je suis déjà prise.",
+     "word": "J’y suis allé hier.",
+     "en": "I went there yesterday.",
+     "kind": "phrase"
+    },
+    {
+     "id": "23",
+     "section": "Désolée, je suis déjà prise.",
+     "word": "Une autre fois?",
+     "en": "Another time?",
+     "kind": "phrase"
+    },
+    {
+     "id": "24",
+     "section": "Qu'est-ce que je vous sers? (Montréal)",
+     "word": "Qu’est-ce que je vous sers?",
+     "en": "Qu'est-ce que vous voulez manger (ou boire)?",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "25",
+     "section": "Qu'est-ce que je vous sers? (Montréal)",
+     "word": "Je vais prendre une bière.",
+     "en": "J'aimerais boire une bière.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "26",
+     "section": "Qu'est-ce que je vous sers? (Montréal)",
+     "word": "Je vais prendre une liqueur, s’il vous plaît.",
+     "en": "Je vais prendre une boisson gazeuse (Quebéc).",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "27",
+     "section": "Qu'est-ce que je vous sers? (Montréal)",
+     "word": "Nous avons du coke, du 7-up et de la bière d’épinette maison.",
+     "en": "boisson gazeuse avec un goût forestier (spruce)",
+     "kind": "line",
+     "gloss": "fr"
+    },
+    {
+     "id": "28",
+     "section": "Qu'est-ce que je vous sers? (Montréal)",
+     "word": "Un coke, s’il vous plaît.",
+     "en": "Son choix de boisson.",
+     "kind": "phrase",
+     "gloss": "fr"
+    },
+    {
+     "id": "29",
+     "section": "Qu'est-ce que je vous sers? (Montréal)",
+     "word": "D’accord.",
+     "en": "La serveuse indique qu'elle a compris.",
+     "kind": "word",
+     "gloss": "fr"
     }
    ]
   }

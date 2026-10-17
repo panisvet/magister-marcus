@@ -221,7 +221,7 @@ const TOOLS = [
     icon: '🗂',
     title: 'Vocabula',
     subtitle: 'Vocabulary practice & review',
-    desc: 'French I (OLI) flashcards and typed practice with spaced review. Elementa Latin to follow. Every answer is counted for the term record.',
+    desc: 'French I (OLI, Leçons 1–14) and Elementa Latin: flashcards and typed practice with spaced review. Every answer is counted for the term record.',
     accent: '#c9902a',
     href: '/vocab',
     status: 'active',
