@@ -1,0 +1,8007 @@
+{
+ "id": "elementa",
+ "title": "Elementa Latin",
+ "subtitle": "Paideia Institute · Elementa I and II",
+ "lang": "it-IT",
+ "voice": "leo",
+ "langName": "Latin",
+ "learner": "David",
+ "marks": "ignore",
+ "praise": "Optimē!",
+ "keys": [
+  "ā",
+  "ē",
+  "ī",
+  "ō",
+  "ū"
+ ],
+ "attribution": "Vocabulary lists from Elementa I and II, Paideia Institute (online.paideiainstitute.org). For our family's private practice. Long marks (macrons) are optional when typing.",
+ "lessons": [
+  {
+   "id": "I-1",
+   "title": "Elementa I · Unit 1 · Roman Conversation",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "Salve",
+     "en": "Hello (to one person)",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "Salve"
+     ],
+     "say": "Salve",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "Salvete",
+     "en": "Hello (to more than one person)",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "Salvete"
+     ],
+     "say": "Salvete",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "Quid tibi nomen est?",
+     "en": "What is your name?",
+     "pos": "",
+     "kind": "phrase",
+     "accept": [
+      "Quid tibi nomen est?"
+     ],
+     "say": "Quid tibi nomen est?",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "Mihi nomen est …",
+     "en": "My name is…",
+     "pos": "",
+     "kind": "phrase",
+     "accept": [
+      "Mihi nomen est …"
+     ],
+     "say": "Mihi nomen est",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "Gratias",
+     "en": "Thank you",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "Gratias"
+     ],
+     "say": "Gratias",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "Nihil est",
+     "en": "It's nothing (You're welcome)",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "Nihil est"
+     ],
+     "say": "Nihil est",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "Quid agis?",
+     "en": "How are you?",
+     "pos": "",
+     "kind": "phrase",
+     "accept": [
+      "Quid agis?"
+     ],
+     "say": "Quid agis?",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "Ago bene",
+     "en": "I'm well",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "Ago bene"
+     ],
+     "say": "Ago bene",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "Ago male",
+     "en": "I'm bad",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "Ago male"
+     ],
+     "say": "Ago male",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "Ago optime",
+     "en": "I feel great",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "Ago optime"
+     ],
+     "say": "Ago optime",
+     "id": "10"
+    },
+    {
+     "section": "Words",
+     "word": "Ago pessime",
+     "en": "I feel horrible",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "Ago pessime"
+     ],
+     "say": "Ago pessime",
+     "id": "11"
+    },
+    {
+     "section": "Words",
+     "word": "Vale, Valete",
+     "en": "Farewell",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "Vale, Valete",
+      "Vale",
+      "Valete"
+     ],
+     "say": "Vale, Valete",
+     "id": "12"
+    }
+   ],
+   "short": "I·1 Roman Conversation"
+  },
+  {
+   "id": "I-2",
+   "title": "Elementa I · Unit 2 · Nouns / The Roman Household",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "avia",
+     "en": "grandmother",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "avia"
+     ],
+     "say": "avia",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "avus",
+     "en": "grandfather",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "avus"
+     ],
+     "say": "avus",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "lupa",
+     "en": "she-wolf",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "lupa"
+     ],
+     "say": "lupa",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "pater",
+     "en": "father",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "pater"
+     ],
+     "say": "pater",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "mater",
+     "en": "mother",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "mater"
+     ],
+     "say": "mater",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "filia",
+     "en": "daughter",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "filia"
+     ],
+     "say": "filia",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "filius",
+     "en": "son",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "filius"
+     ],
+     "say": "filius",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "puer",
+     "en": "boy",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "puer"
+     ],
+     "say": "puer",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "puella",
+     "en": "girl",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "puella"
+     ],
+     "say": "puella",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "frater",
+     "en": "brother",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "frater"
+     ],
+     "say": "frater",
+     "id": "10"
+    },
+    {
+     "section": "Words",
+     "word": "soror",
+     "en": "sister",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "soror"
+     ],
+     "say": "soror",
+     "id": "11"
+    },
+    {
+     "section": "Words",
+     "word": "domus",
+     "en": "home",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "domus"
+     ],
+     "say": "domus",
+     "id": "12"
+    },
+    {
+     "section": "Words",
+     "word": "lupus",
+     "en": "wolf",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "lupus"
+     ],
+     "say": "lupus",
+     "id": "13"
+    },
+    {
+     "section": "Words",
+     "word": "rex",
+     "en": "king",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "rex"
+     ],
+     "say": "rex",
+     "id": "14"
+    },
+    {
+     "section": "Words",
+     "word": "pastor",
+     "en": "shepherd",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "pastor"
+     ],
+     "say": "pastor",
+     "id": "15"
+    }
+   ],
+   "short": "I·2 The Roman Household"
+  },
+  {
+   "id": "I-3",
+   "title": "Elementa I · Unit 3 · Pronouns / Roman Food",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "ego / me",
+     "en": "I / me",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ego / me",
+      "ego",
+      "me"
+     ],
+     "say": "ego, me",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "tu / te",
+     "en": "you (singular)",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "tu / te",
+      "tu",
+      "te"
+     ],
+     "say": "tu, te",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "illud",
+     "en": "it",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "illud"
+     ],
+     "say": "illud",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "ille",
+     "en": "he",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ille"
+     ],
+     "say": "ille",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "illa",
+     "en": "she",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "illa"
+     ],
+     "say": "illa",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "nos",
+     "en": "we / us",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "nos"
+     ],
+     "say": "nos",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "vos",
+     "en": "you (plural)",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "vos"
+     ],
+     "say": "vos",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "aqua",
+     "en": "water",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "aqua"
+     ],
+     "say": "aqua",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "caseus",
+     "en": "cheese",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "caseus"
+     ],
+     "say": "caseus",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "piscis",
+     "en": "fish",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "piscis"
+     ],
+     "say": "piscis",
+     "id": "10"
+    },
+    {
+     "section": "Words",
+     "word": "caro / carnem",
+     "en": "meat",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "caro / carnem",
+      "caro",
+      "carnem"
+     ],
+     "say": "caro, carnem",
+     "id": "11"
+    },
+    {
+     "section": "Words",
+     "word": "panis",
+     "en": "bread",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "panis"
+     ],
+     "say": "panis",
+     "id": "12"
+    },
+    {
+     "section": "Words",
+     "word": "vinum",
+     "en": "wine",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "vinum"
+     ],
+     "say": "vinum",
+     "id": "13"
+    },
+    {
+     "section": "Words",
+     "word": "edo / comedo",
+     "en": "I eat",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "edo / comedo",
+      "edo",
+      "comedo"
+     ],
+     "say": "edo, comedo",
+     "id": "14"
+    }
+   ],
+   "short": "I·3 Roman Food"
+  },
+  {
+   "id": "I-4",
+   "title": "Elementa I · Unit 4 · Verbs / The Roman Army",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "pugno, pugnare",
+     "en": "to fight",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "pugno, pugnare",
+      "pugno"
+     ],
+     "say": "pugno, pugnare",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "amo, amare",
+     "en": "to love, to like",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "amo, amare",
+      "amo"
+     ],
+     "say": "amo, amare",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "specto, spectare",
+     "en": "to watch",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "specto, spectare",
+      "specto"
+     ],
+     "say": "specto, spectare",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "timeo, timere",
+     "en": "to fear, to be afraid",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "timeo, timere",
+      "timeo"
+     ],
+     "say": "timeo, timere",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "fugio, fugere",
+     "en": "to flee, to run away",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "fugio, fugere",
+      "fugio"
+     ],
+     "say": "fugio, fugere",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "capio, capere",
+     "en": "to take, to seize",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "capio, capere",
+      "capio"
+     ],
+     "say": "capio, capere",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "vinco, vincere",
+     "en": "to conquer",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "vinco, vincere",
+      "vinco"
+     ],
+     "say": "vinco, vincere",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "miles, milites",
+     "en": "soldier, soldiers",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "miles, milites",
+      "miles",
+      "milites"
+     ],
+     "say": "miles, milites",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "arma",
+     "en": "weapons, armor",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "arma"
+     ],
+     "say": "arma",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "gladius",
+     "en": "sword",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "gladius"
+     ],
+     "say": "gladius",
+     "id": "10"
+    },
+    {
+     "section": "Words",
+     "word": "pilum",
+     "en": "javelin",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "pilum"
+     ],
+     "say": "pilum",
+     "id": "11"
+    },
+    {
+     "section": "Words",
+     "word": "scutum",
+     "en": "shield",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "scutum"
+     ],
+     "say": "scutum",
+     "id": "12"
+    }
+   ],
+   "short": "I·4 The Roman Army"
+  },
+  {
+   "id": "I-5",
+   "title": "Elementa I · Unit 5 · Interrogatives / Roman Education",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "quid",
+     "en": "what",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "quid"
+     ],
+     "say": "quid",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "quis",
+     "en": "who",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "quis"
+     ],
+     "say": "quis",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "ubi",
+     "en": "where",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ubi"
+     ],
+     "say": "ubi",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "quando",
+     "en": "when",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "quando"
+     ],
+     "say": "quando",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "cur",
+     "en": "why",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "cur"
+     ],
+     "say": "cur",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "quantum",
+     "en": "how much",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "quantum"
+     ],
+     "say": "quantum",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "quot",
+     "en": "how many",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "quot"
+     ],
+     "say": "quot",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "stilus",
+     "en": "pen / pencil",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "stilus"
+     ],
+     "say": "stilus",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "magister, magistra",
+     "en": "male teacher, female teacher",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "magister, magistra",
+      "magister",
+      "magistra"
+     ],
+     "say": "magister, magistra",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "discipuli",
+     "en": "students",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "discipuli"
+     ],
+     "say": "discipuli",
+     "id": "10"
+    },
+    {
+     "section": "Words",
+     "word": "ianua",
+     "en": "door",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ianua"
+     ],
+     "say": "ianua",
+     "id": "11"
+    },
+    {
+     "section": "Words",
+     "word": "fenestra",
+     "en": "window",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "fenestra"
+     ],
+     "say": "fenestra",
+     "id": "12"
+    },
+    {
+     "section": "Words",
+     "word": "tabula",
+     "en": "writing slate",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "tabula"
+     ],
+     "say": "tabula",
+     "id": "13"
+    }
+   ],
+   "short": "I·5 Roman Education"
+  },
+  {
+   "id": "I-6",
+   "title": "Elementa I · Unit 6 · Adjectives / Roman Clothing",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "laetus / laeta / laetum",
+     "en": "happy",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "laetus / laeta / laetum",
+      "laetus",
+      "laeta",
+      "laetum"
+     ],
+     "say": "laetus, laeta, laetum",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "iratus / irata / iratum",
+     "en": "angry",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "iratus / irata / iratum",
+      "iratus",
+      "irata",
+      "iratum"
+     ],
+     "say": "iratus, irata, iratum",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "validus / valida / validum",
+     "en": "strong, brave",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "validus / valida / validum",
+      "validus",
+      "valida",
+      "validum"
+     ],
+     "say": "validus, valida, validum",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "miser / misera / miserum",
+     "en": "sad, miserable, wretched",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "miser / misera / miserum",
+      "miser",
+      "misera",
+      "miserum"
+     ],
+     "say": "miser, misera, miserum",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "fortunatus / fortunata / fortunatum",
+     "en": "lucky, fortunate",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "fortunatus / fortunata / fortunatum",
+      "fortunatus",
+      "fortunata",
+      "fortunatum"
+     ],
+     "say": "fortunatus, fortunata, fortunatum",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "bellus / bella / bellum",
+     "en": "pretty, handsome",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "bellus / bella / bellum",
+      "bellus",
+      "bella",
+      "bellum"
+     ],
+     "say": "bellus, bella, bellum",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "novus / nova / novum",
+     "en": "new",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "novus / nova / novum",
+      "novus",
+      "nova",
+      "novum"
+     ],
+     "say": "novus, nova, novum",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "fatigatus / fatigata / fatigatum",
+     "en": "tired",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "fatigatus / fatigata / fatigatum",
+      "fatigatus",
+      "fatigata",
+      "fatigatum"
+     ],
+     "say": "fatigatus, fatigata, fatigatum",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "mortuus / mortua / mortuum",
+     "en": "dead",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "mortuus / mortua / mortuum",
+      "mortuus",
+      "mortua",
+      "mortuum"
+     ],
+     "say": "mortuus, mortua, mortuum",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "magnus / magna / magnum",
+     "en": "big, great",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "magnus / magna / magnum",
+      "magnus",
+      "magna",
+      "magnum"
+     ],
+     "say": "magnus, magna, magnum",
+     "id": "10"
+    },
+    {
+     "section": "Words",
+     "word": "parvus / parva / parvum",
+     "en": "small",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "parvus / parva / parvum",
+      "parvus",
+      "parva",
+      "parvum"
+     ],
+     "say": "parvus, parva, parvum",
+     "id": "11"
+    }
+   ],
+   "short": "I·6 Roman Clothing"
+  },
+  {
+   "id": "I-7",
+   "title": "Elementa I · Unit 7 · Adverbs / Gladiators",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "nunc",
+     "en": "now",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "nunc"
+     ],
+     "say": "nunc",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "semper",
+     "en": "always",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "semper"
+     ],
+     "say": "semper",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "subito",
+     "en": "suddenly",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "subito"
+     ],
+     "say": "subito",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "numquam",
+     "en": "never",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "numquam"
+     ],
+     "say": "numquam",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "lente",
+     "en": "slowly",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "lente"
+     ],
+     "say": "lente",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "celeriter",
+     "en": "quickly",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "celeriter"
+     ],
+     "say": "celeriter",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "ferociter",
+     "en": "fiercely",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ferociter"
+     ],
+     "say": "ferociter",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "iterum",
+     "en": "again",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "iterum"
+     ],
+     "say": "iterum",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "diu",
+     "en": "for a long time",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "diu"
+     ],
+     "say": "diu",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "breviter",
+     "en": "for a short time",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "breviter"
+     ],
+     "say": "breviter",
+     "id": "10"
+    },
+    {
+     "section": "Words",
+     "word": "suaviter",
+     "en": "sweetly, pleasantly",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "suaviter"
+     ],
+     "say": "suaviter",
+     "id": "11"
+    }
+   ],
+   "short": "I·7 Gladiators"
+  },
+  {
+   "id": "I-8",
+   "title": "Elementa I · Unit 8 · Interjections / Roman Innovations",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "ecce",
+     "en": "Look!",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ecce"
+     ],
+     "say": "ecce",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "eheu",
+     "en": "Oh dear! Alas!",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "eheu"
+     ],
+     "say": "eheu",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "eugepae",
+     "en": "Hooray!",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "eugepae"
+     ],
+     "say": "eugepae",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "minime",
+     "en": "Not at all!",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "minime"
+     ],
+     "say": "minime",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "ita vero",
+     "en": "Yes, indeed!",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ita vero"
+     ],
+     "say": "ita vero",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "mirabile",
+     "en": "Marvelous! Wonderful!",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "mirabile"
+     ],
+     "say": "mirabile",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "pax",
+     "en": "Enough! Peace! Shh!",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "pax"
+     ],
+     "say": "pax",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "via",
+     "en": "road",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "via"
+     ],
+     "say": "via",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "statua",
+     "en": "statue, image",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "statua"
+     ],
+     "say": "statua",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "caput",
+     "en": "head",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "caput"
+     ],
+     "say": "caput",
+     "id": "10"
+    }
+   ],
+   "short": "I·8 Roman Innovations"
+  },
+  {
+   "id": "I-9",
+   "title": "Elementa I · Unit 9 · Conjunctions / Roman Religion",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "et",
+     "en": "and",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "et"
+     ],
+     "say": "et",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "-que",
+     "en": "and (attached to the end of a word)",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "-que"
+     ],
+     "say": "-que",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "sed",
+     "en": "but",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "sed"
+     ],
+     "say": "sed",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "aut",
+     "en": "or",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "aut"
+     ],
+     "say": "aut",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "quamquam",
+     "en": "although",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "quamquam"
+     ],
+     "say": "quamquam",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "quod",
+     "en": "because",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "quod"
+     ],
+     "say": "quod",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "deus",
+     "en": "god",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "deus"
+     ],
+     "say": "deus",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "dea",
+     "en": "goddess",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "dea"
+     ],
+     "say": "dea",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "templum",
+     "en": "temple",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "templum"
+     ],
+     "say": "templum",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "festum",
+     "en": "holiday",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "festum"
+     ],
+     "say": "festum",
+     "id": "10"
+    },
+    {
+     "section": "Words",
+     "word": "arbor",
+     "en": "tree",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "arbor"
+     ],
+     "say": "arbor",
+     "id": "11"
+    }
+   ],
+   "short": "I·9 Roman Religion"
+  },
+  {
+   "id": "I-10",
+   "title": "Elementa I · Unit 10 · Prepositions / The City of Rome",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "in",
+     "en": "in, at",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "in"
+     ],
+     "say": "in",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "ad",
+     "en": "to, toward",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ad"
+     ],
+     "say": "ad",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "ab",
+     "en": "away from",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ab"
+     ],
+     "say": "ab",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "trans",
+     "en": "across",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "trans"
+     ],
+     "say": "trans",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "ex",
+     "en": "out of",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "ex"
+     ],
+     "say": "ex",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "inter",
+     "en": "between",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "inter"
+     ],
+     "say": "inter",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "per",
+     "en": "through",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "per"
+     ],
+     "say": "per",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "super",
+     "en": "above, over",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "super"
+     ],
+     "say": "super",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "sub",
+     "en": "under",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "sub"
+     ],
+     "say": "sub",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "circum",
+     "en": "around",
+     "pos": "",
+     "kind": "word",
+     "accept": [
+      "circum"
+     ],
+     "say": "circum",
+     "id": "10"
+    }
+   ],
+   "short": "I·10 The City of Rome"
+  },
+  {
+   "id": "I-11",
+   "title": "Elementa I · Unit 11 · Roman Numerals / Roman Coins",
+   "sections": [
+    "Words"
+   ],
+   "items": [
+    {
+     "section": "Words",
+     "word": "unus, una, unum",
+     "en": "one (I)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "unus, una, unum",
+      "unus"
+     ],
+     "say": "unus, una, unum",
+     "id": "01"
+    },
+    {
+     "section": "Words",
+     "word": "duo",
+     "en": "two (II)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "duo"
+     ],
+     "say": "duo",
+     "id": "02"
+    },
+    {
+     "section": "Words",
+     "word": "tres",
+     "en": "three (III)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "tres"
+     ],
+     "say": "tres",
+     "id": "03"
+    },
+    {
+     "section": "Words",
+     "word": "quattuor",
+     "en": "four (IV)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "quattuor"
+     ],
+     "say": "quattuor",
+     "id": "04"
+    },
+    {
+     "section": "Words",
+     "word": "quinque",
+     "en": "five (V)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "quinque"
+     ],
+     "say": "quinque",
+     "id": "05"
+    },
+    {
+     "section": "Words",
+     "word": "sex",
+     "en": "six (VI)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "sex"
+     ],
+     "say": "sex",
+     "id": "06"
+    },
+    {
+     "section": "Words",
+     "word": "septem",
+     "en": "seven (VII)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "septem"
+     ],
+     "say": "septem",
+     "id": "07"
+    },
+    {
+     "section": "Words",
+     "word": "octo",
+     "en": "eight (VIII)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "octo"
+     ],
+     "say": "octo",
+     "id": "08"
+    },
+    {
+     "section": "Words",
+     "word": "novem",
+     "en": "nine (IX)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "novem"
+     ],
+     "say": "novem",
+     "id": "09"
+    },
+    {
+     "section": "Words",
+     "word": "decem",
+     "en": "ten (X)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "decem"
+     ],
+     "say": "decem",
+     "id": "10"
+    },
+    {
+     "section": "Words",
+     "word": "centum",
+     "en": "one hundred (C)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "centum"
+     ],
+     "say": "centum",
+     "id": "11"
+    },
+    {
+     "section": "Words",
+     "word": "mille",
+     "en": "one thousand (M)",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "mille"
+     ],
+     "say": "mille",
+     "id": "12"
+    }
+   ],
+   "short": "I·11 Roman Coins"
+  },
+  {
+   "id": "II-0",
+   "title": "Elementa II · Unit 0 · Vocabulary Review",
+   "sections": [
+    "Review"
+   ],
+   "items": [
+    {
+     "section": "Review",
+     "word": "nōmen, nōminis, n.",
+     "en": "name",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "nōmen, nōminis, n.",
+      "nōmen"
+     ],
+     "say": "nomen, nominis",
+     "id": "01"
+    },
+    {
+     "section": "Review",
+     "word": "pānis, pānis, m.",
+     "en": "bread",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pānis, pānis, m.",
+      "pānis"
+     ],
+     "say": "panis, panis",
+     "id": "02"
+    },
+    {
+     "section": "Review",
+     "word": "puella, puellae, f.",
+     "en": "girl",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "puella, puellae, f.",
+      "puella"
+     ],
+     "say": "puella, puellae",
+     "id": "03"
+    },
+    {
+     "section": "Review",
+     "word": "puer, puerī, m.",
+     "en": "boy",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "puer, puerī, m.",
+      "puer"
+     ],
+     "say": "puer, pueri",
+     "id": "04"
+    },
+    {
+     "section": "Review",
+     "word": "habeō, habēre",
+     "en": "to have (habet — she/he/it has)",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "habeō, habēre",
+      "habeō"
+     ],
+     "say": "habeo, habere",
+     "id": "05"
+    },
+    {
+     "section": "Review",
+     "word": "habitō, habitāre",
+     "en": "to live (habitat — she/he/it lives)",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "habitō, habitāre",
+      "habitō"
+     ],
+     "say": "habito, habitare",
+     "id": "06"
+    },
+    {
+     "section": "Review",
+     "word": "sciō, scīre",
+     "en": "to know (sciō — I know)",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "sciō, scīre",
+      "sciō"
+     ],
+     "say": "scio, scire",
+     "id": "07"
+    },
+    {
+     "section": "Review",
+     "word": "bonus/bona/bonum",
+     "en": "good",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "bonus/bona/bonum",
+      "bonus",
+      "bona",
+      "bonum"
+     ],
+     "say": "bonus, bona, bonum",
+     "id": "08"
+    },
+    {
+     "section": "Review",
+     "word": "malus/mala/malum",
+     "en": "bad, evil",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "malus/mala/malum",
+      "malus",
+      "mala",
+      "malum"
+     ],
+     "say": "malus, mala, malum",
+     "id": "09"
+    },
+    {
+     "section": "Review",
+     "word": "multus/multa/multum",
+     "en": "much, many",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "multus/multa/multum",
+      "multus",
+      "multa",
+      "multum"
+     ],
+     "say": "multus, multa, multum",
+     "id": "10"
+    },
+    {
+     "section": "Review",
+     "word": "novus/nova/novum",
+     "en": "new",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "novus/nova/novum",
+      "novus",
+      "nova",
+      "novum"
+     ],
+     "say": "novus, nova, novum",
+     "id": "11"
+    },
+    {
+     "section": "Review",
+     "word": "bene",
+     "en": "well",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "bene"
+     ],
+     "say": "bene",
+     "id": "12"
+    },
+    {
+     "section": "Review",
+     "word": "nunc",
+     "en": "now",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "nunc"
+     ],
+     "say": "nunc",
+     "id": "13"
+    },
+    {
+     "section": "Review",
+     "word": "optimē",
+     "en": "very well, wonderfully",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "optimē"
+     ],
+     "say": "optime",
+     "id": "14"
+    },
+    {
+     "section": "Review",
+     "word": "pessimē",
+     "en": "very poorly, terribly",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "pessimē"
+     ],
+     "say": "pessime",
+     "id": "15"
+    },
+    {
+     "section": "Review",
+     "word": "ego",
+     "en": "I",
+     "pos": "pronoun",
+     "kind": "word",
+     "accept": [
+      "ego"
+     ],
+     "say": "ego",
+     "id": "16"
+    },
+    {
+     "section": "Review",
+     "word": "mē",
+     "en": "me",
+     "pos": "pronoun",
+     "kind": "word",
+     "accept": [
+      "mē"
+     ],
+     "say": "me",
+     "id": "17"
+    },
+    {
+     "section": "Review",
+     "word": "mea/meus/meum",
+     "en": "my",
+     "pos": "pronoun",
+     "kind": "word",
+     "accept": [
+      "mea/meus/meum",
+      "mea",
+      "meus",
+      "meum"
+     ],
+     "say": "mea, meus, meum",
+     "id": "18"
+    },
+    {
+     "section": "Review",
+     "word": "mihi",
+     "en": "for me, to me",
+     "pos": "pronoun",
+     "kind": "word",
+     "accept": [
+      "mihi"
+     ],
+     "say": "mihi",
+     "id": "19"
+    },
+    {
+     "section": "Review",
+     "word": "tū/tē",
+     "en": "you",
+     "pos": "pronoun",
+     "kind": "word",
+     "accept": [
+      "tū/tē",
+      "tū"
+     ],
+     "say": "tu, te",
+     "id": "20"
+    },
+    {
+     "section": "Review",
+     "word": "tibi",
+     "en": "for you, to you",
+     "pos": "pronoun",
+     "kind": "word",
+     "accept": [
+      "tibi"
+     ],
+     "say": "tibi",
+     "id": "21"
+    },
+    {
+     "section": "Review",
+     "word": "tua/tuus/tuum",
+     "en": "your",
+     "pos": "pronoun",
+     "kind": "word",
+     "accept": [
+      "tua/tuus/tuum",
+      "tua",
+      "tuus",
+      "tuum"
+     ],
+     "say": "tua, tuus, tuum",
+     "id": "22"
+    },
+    {
+     "section": "Review",
+     "word": "ab",
+     "en": "away from",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "ab"
+     ],
+     "say": "ab",
+     "id": "23"
+    },
+    {
+     "section": "Review",
+     "word": "ad",
+     "en": "to, towards",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "ad"
+     ],
+     "say": "ad",
+     "id": "24"
+    },
+    {
+     "section": "Review",
+     "word": "in",
+     "en": "in, into",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "in"
+     ],
+     "say": "in",
+     "id": "25"
+    },
+    {
+     "section": "Review",
+     "word": "prope",
+     "en": "near",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "prope"
+     ],
+     "say": "prope",
+     "id": "26"
+    },
+    {
+     "section": "Review",
+     "word": "et",
+     "en": "and",
+     "pos": "conjunction",
+     "kind": "word",
+     "accept": [
+      "et"
+     ],
+     "say": "et",
+     "id": "27"
+    },
+    {
+     "section": "Review",
+     "word": "quod",
+     "en": "because",
+     "pos": "conjunction",
+     "kind": "word",
+     "accept": [
+      "quod"
+     ],
+     "say": "quod",
+     "id": "28"
+    },
+    {
+     "section": "Review",
+     "word": "sed",
+     "en": "but",
+     "pos": "conjunction",
+     "kind": "word",
+     "accept": [
+      "sed"
+     ],
+     "say": "sed",
+     "id": "29"
+    },
+    {
+     "section": "Review",
+     "word": "Ecce!",
+     "en": "Look! Behold! Here (is ___)!",
+     "pos": "interjection",
+     "kind": "word",
+     "accept": [
+      "Ecce!"
+     ],
+     "say": "Ecce!",
+     "id": "30"
+    },
+    {
+     "section": "Review",
+     "word": "Ita vērō!",
+     "en": "Yes, indeed!",
+     "pos": "interjection",
+     "kind": "word",
+     "accept": [
+      "Ita vērō!"
+     ],
+     "say": "Ita vero!",
+     "id": "31"
+    },
+    {
+     "section": "Review",
+     "word": "Minimē!",
+     "en": "Not at all!",
+     "pos": "interjection",
+     "kind": "word",
+     "accept": [
+      "Minimē!"
+     ],
+     "say": "Minime!",
+     "id": "32"
+    },
+    {
+     "section": "Review",
+     "word": "Quid?",
+     "en": "What?",
+     "pos": "question word",
+     "kind": "phrase",
+     "accept": [
+      "Quid?"
+     ],
+     "say": "Quid?",
+     "id": "33"
+    },
+    {
+     "section": "Review",
+     "word": "Quis?",
+     "en": "Who?",
+     "pos": "question word",
+     "kind": "phrase",
+     "accept": [
+      "Quis?"
+     ],
+     "say": "Quis?",
+     "id": "34"
+    },
+    {
+     "section": "Review",
+     "word": "Quōmodo?",
+     "en": "How? In what way?",
+     "pos": "question word",
+     "kind": "phrase",
+     "accept": [
+      "Quōmodo?"
+     ],
+     "say": "Quomodo?",
+     "id": "35"
+    },
+    {
+     "section": "Review",
+     "word": "Ubī?",
+     "en": "Where?",
+     "pos": "question word",
+     "kind": "phrase",
+     "accept": [
+      "Ubī?"
+     ],
+     "say": "Ubi?",
+     "id": "36"
+    }
+   ],
+   "short": "II·0 Vocabulary Review"
+  },
+  {
+   "id": "II-1",
+   "title": "Elementa II · Unit 1 · Esse; Nominative Nouns / Roman Jobs",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "agricola, agricolae, m.",
+     "en": "farmer",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "agricola, agricolae, m.",
+      "agricola"
+     ],
+     "say": "agricola, agricolae",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "amīca, amīcae, f.",
+     "en": "female friend",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "amīca, amīcae, f.",
+      "amīca"
+     ],
+     "say": "amica, amicae",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "amīcus, amīcī, m.",
+     "en": "male friend",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "amīcus, amīcī, m.",
+      "amīcus"
+     ],
+     "say": "amicus, amici",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "discipulus, discipulī, m.",
+     "en": "male student",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "discipulus, discipulī, m.",
+      "discipulus"
+     ],
+     "say": "discipulus, discipuli",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "discipula, discipulae, f.",
+     "en": "female student",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "discipula, discipulae, f.",
+      "discipula"
+     ],
+     "say": "discipula, discipulae",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "frāter, frātris, m.",
+     "en": "brother",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "frāter, frātris, m.",
+      "frāter"
+     ],
+     "say": "frater, fratris",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "garum, garī, n.",
+     "en": "fish sauce",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "garum, garī, n.",
+      "garum"
+     ],
+     "say": "garum, gari",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "īnsula, īnsulae, f.",
+     "en": "island, apartment building",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "īnsula, īnsulae, f.",
+      "īnsula"
+     ],
+     "say": "insula, insulae",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "magister, magistrī, m.",
+     "en": "male teacher",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "magister, magistrī, m.",
+      "magister"
+     ],
+     "say": "magister, magistri",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "magistra, magistrae, f.",
+     "en": "female teacher",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "magistra, magistrae, f.",
+      "magistra"
+     ],
+     "say": "magistra, magistrae",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "māter, mātris, f.",
+     "en": "mother",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "māter, mātris, f.",
+      "māter"
+     ],
+     "say": "mater, matris",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "mīles, mīlitis, m.",
+     "en": "soldier",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "mīles, mīlitis, m.",
+      "mīles"
+     ],
+     "say": "miles, militis",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nauta, nautae, m.",
+     "en": "sailor",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "nauta, nautae, m.",
+      "nauta"
+     ],
+     "say": "nauta, nautae",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "pater, patris, m.",
+     "en": "father",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pater, patris, m.",
+      "pater"
+     ],
+     "say": "pater, patris",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "soror, sorōris, f.",
+     "en": "sister",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "soror, sorōris, f.",
+      "soror"
+     ],
+     "say": "soror, sororis",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "rēx, rēgis, m.",
+     "en": "king",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "rēx, rēgis, m.",
+      "rēx"
+     ],
+     "say": "rex, regis",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "taberna, tabernae, f.",
+     "en": "shop",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "taberna, tabernae, f.",
+      "taberna"
+     ],
+     "say": "taberna, tabernae",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "urbs, urbis, f.",
+     "en": "city",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "urbs, urbis, f.",
+      "urbs"
+     ],
+     "say": "urbs, urbis",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "necesse est",
+     "en": "it is necessary",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "necesse est"
+     ],
+     "say": "necesse est",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "portō, portāre",
+     "en": "to carry",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "portō, portāre",
+      "portō"
+     ],
+     "say": "porto, portare",
+     "id": "20"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "sum, esse",
+     "en": "to be",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "sum, esse",
+      "sum"
+     ],
+     "say": "sum, esse",
+     "id": "21"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "vēndō, vēndere",
+     "en": "to sell",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "vēndō, vēndere",
+      "vēndō"
+     ],
+     "say": "vendo, vendere",
+     "id": "22"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nōtus, nōta, nōtum",
+     "en": "known",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "nōtus, nōta, nōtum",
+      "nōtus"
+     ],
+     "say": "notus, nota, notum",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "Aegyptus, Aegyptī, f.",
+     "en": "Egypt",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "Aegyptus, Aegyptī, f.",
+      "Aegyptus"
+     ],
+     "say": "Aegyptus, Aegypti",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "amphora, amphorae, f.",
+     "en": "jar, amphora",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "amphora, amphorae, f.",
+      "amphora"
+     ],
+     "say": "amphora, amphorae",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "familia, familiae, f.",
+     "en": "family",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "familia, familiae, f.",
+      "familia"
+     ],
+     "say": "familia, familiae",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "fēmina, fēminae, f.",
+     "en": "woman, female",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "fēmina, fēminae, f.",
+      "fēmina"
+     ],
+     "say": "femina, feminae",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "medicus, medicī, m.",
+     "en": "doctor",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "medicus, medicī, m.",
+      "medicus"
+     ],
+     "say": "medicus, medici",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "mercātor, mercātōris, m.",
+     "en": "trader, merchant",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "mercātor, mercātōris, m.",
+      "mercātor"
+     ],
+     "say": "mercator, mercatoris",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "pistor, pistōris, m.",
+     "en": "baker",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pistor, pistōris, m.",
+      "pistor"
+     ],
+     "say": "pistor, pistoris",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "poēta, poētae, m.",
+     "en": "poet",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "poēta, poētae, m.",
+      "poēta"
+     ],
+     "say": "poeta, poetae",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "rēgīna, rēgīnae, f.",
+     "en": "queen",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "rēgīna, rēgīnae, f.",
+      "rēgīna"
+     ],
+     "say": "regina, reginae",
+     "id": "32"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "Sābrata, Sābratae, f.",
+     "en": "Sabratha, a city in North Africa",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "Sābrata, Sābratae, f.",
+      "Sābrata"
+     ],
+     "say": "Sabrata, Sabratae",
+     "id": "33"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sacerdōs, sacerdōtis, m.",
+     "en": "priest",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "sacerdōs, sacerdōtis, m.",
+      "sacerdōs"
+     ],
+     "say": "sacerdos, sacerdotis",
+     "id": "34"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "servus, servī, m.",
+     "en": "enslaved person",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "servus, servī, m.",
+      "servus"
+     ],
+     "say": "servus, servi",
+     "id": "35"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tabulārius, tabulāriī, m.",
+     "en": "accountant",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "tabulārius, tabulāriī, m.",
+      "tabulārius"
+     ],
+     "say": "tabularius, tabularii",
+     "id": "36"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vēndit",
+     "en": "he/she/it sells",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "vēndit"
+     ],
+     "say": "vendit",
+     "id": "37"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "Aegyptia/Aegyptius",
+     "en": "from Egypt, Egyptian",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "Aegyptia/Aegyptius",
+      "Aegyptia",
+      "Aegyptius"
+     ],
+     "say": "Aegyptia, Aegyptius",
+     "id": "38"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "Iūdaea/Iūdaeus",
+     "en": "from Judaea, Jewish",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "Iūdaea/Iūdaeus",
+      "Iūdaea",
+      "Iūdaeus"
+     ],
+     "say": "Iudaea, Iudaeus",
+     "id": "39"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "Sābratēnsis",
+     "en": "Sabrathan, from Sabratha",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "Sābratēnsis"
+     ],
+     "say": "Sabratensis",
+     "id": "40"
+    }
+   ],
+   "short": "II·1 Roman Jobs"
+  },
+  {
+   "id": "II-2",
+   "title": "Elementa II · Unit 2 · Infinitives, Conjugations, Imperatives / The 12 Tables",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "canis, canis, m./f.",
+     "en": "dog",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "canis, canis, m./f.",
+      "canis"
+     ],
+     "say": "canis, canis",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nāvis, nāvis, f.",
+     "en": "ship",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "nāvis, nāvis, f.",
+      "nāvis"
+     ],
+     "say": "navis, navis",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "difficile est",
+     "en": "it is difficult",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "difficile est"
+     ],
+     "say": "difficile est",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "licet",
+     "en": "it is allowed",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "licet"
+     ],
+     "say": "licet",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "necesse est",
+     "en": "it is necessary",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "necesse est"
+     ],
+     "say": "necesse est",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "placet",
+     "en": "it is pleasing",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "placet"
+     ],
+     "say": "placet",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "audiō, audīre",
+     "en": "to listen, to hear",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "audiō, audīre",
+      "audiō"
+     ],
+     "say": "audio, audire",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "comedō, comedere",
+     "en": "to eat",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "comedō, comedere",
+      "comedō"
+     ],
+     "say": "comedo, comedere",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "dēbeō, dēbēre",
+     "en": "to owe, to ought (to)",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "dēbeō, dēbēre",
+      "dēbeō"
+     ],
+     "say": "debeo, debere",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "faciō, facere",
+     "en": "to do, to make",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "faciō, facere",
+      "faciō"
+     ],
+     "say": "facio, facere",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "possum, posse",
+     "en": "to be able (to)",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "possum, posse",
+      "possum"
+     ],
+     "say": "possum, posse",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "sedeō, sedēre",
+     "en": "to sit",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "sedeō, sedēre",
+      "sedeō"
+     ],
+     "say": "sedeo, sedere",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "timeō, timēre",
+     "en": "to fear, be afraid of",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "timeō, timēre",
+      "timeō"
+     ],
+     "say": "timeo, timere",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "veniō, venīre",
+     "en": "to come",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "veniō, venīre",
+      "veniō"
+     ],
+     "say": "venio, venire",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "optimus/a/um",
+     "en": "the best",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "optimus/a/um",
+      "optimus"
+     ],
+     "say": "optimus, optima, optimum",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "sollicitus/a/um",
+     "en": "worried",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "sollicitus/a/um",
+      "sollicitus"
+     ],
+     "say": "sollicitus, sollicita, sollicitum",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "fortasse",
+     "en": "perhaps",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "fortasse"
+     ],
+     "say": "fortasse",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nōlī ___!",
+     "en": "Don't ___! (to one person)",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "nōlī ___!"
+     ],
+     "say": "noli !",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nōlīte ___!",
+     "en": "Don't ___! (to more than one person)",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "nōlīte ___!"
+     ],
+     "say": "nolite !",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "omnēs",
+     "en": "everyone",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "omnēs"
+     ],
+     "say": "omnes",
+     "id": "20"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "quoque",
+     "en": "also",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "quoque"
+     ],
+     "say": "quoque",
+     "id": "21"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ēmptor, ēmptōris, m./f.",
+     "en": "customer, buyer",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "ēmptor, ēmptōris, m./f.",
+      "ēmptor"
+     ],
+     "say": "emptor, emptoris",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "līberī",
+     "en": "children",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "līberī"
+     ],
+     "say": "liberi",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "lupus, lupī, m.",
+     "en": "wolf",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "lupus, lupī, m.",
+      "lupus"
+     ],
+     "say": "lupus, lupi",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "pecūnia, pecūniae, f.",
+     "en": "money",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pecūnia, pecūniae, f.",
+      "pecūnia"
+     ],
+     "say": "pecunia, pecuniae",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "spōnsus, spōnsī, m.",
+     "en": "betrothed man",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "spōnsus, spōnsī, m.",
+      "spōnsus"
+     ],
+     "say": "sponsus, sponsi",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vīcīnus, vīcīnī, m.",
+     "en": "neighbor",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vīcīnus, vīcīnī, m.",
+      "vīcīnus"
+     ],
+     "say": "vicinus, vicini",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "facile est",
+     "en": "it is easy",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "facile est"
+     ],
+     "say": "facile est",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "cantō, cantāre",
+     "en": "to sing",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "cantō, cantāre",
+      "cantō"
+     ],
+     "say": "canto, cantare",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "exspectō, exspectāre",
+     "en": "to wait, hope for",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "exspectō, exspectāre",
+      "exspectō"
+     ],
+     "say": "exspecto, exspectare",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "lātrō, lātrāre",
+     "en": "to bark",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "lātrō, lātrāre",
+      "lātrō"
+     ],
+     "say": "latro, latrare",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nūbō, nūbere",
+     "en": "to marry (to), to be married (to)",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "nūbō, nūbere",
+      "nūbō"
+     ],
+     "say": "nubo, nubere",
+     "id": "32"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "salūtō, salūtāre",
+     "en": "to greet, to salute",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "salūtō, salūtāre",
+      "salūtō"
+     ],
+     "say": "saluto, salutare",
+     "id": "33"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sistō, sistere",
+     "en": "to stop",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "sistō, sistere",
+      "sistō"
+     ],
+     "say": "sisto, sistere",
+     "id": "34"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "surgō, surgere",
+     "en": "to get up, to rise",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "surgō, surgere",
+      "surgō"
+     ],
+     "say": "surgo, surgere",
+     "id": "35"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "taceō, tacēre",
+     "en": "to be quiet",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "taceō, tacēre",
+      "taceō"
+     ],
+     "say": "taceo, tacere",
+     "id": "36"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tangō, tangere",
+     "en": "to touch",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "tangō, tangere",
+      "tangō"
+     ],
+     "say": "tango, tangere",
+     "id": "37"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vexō, vexāre",
+     "en": "to annoy (vexat — he/she/it annoys)",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "vexō, vexāre",
+      "vexō"
+     ],
+     "say": "vexo, vexare",
+     "id": "38"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vomō, vomere",
+     "en": "to vomit (vomunt — they vomit)",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "vomō, vomere",
+      "vomō"
+     ],
+     "say": "vomo, vomere",
+     "id": "39"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "noster, nostra, nostrum",
+     "en": "our",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "noster, nostra, nostrum",
+      "noster"
+     ],
+     "say": "noster, nostra, nostrum",
+     "id": "40"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nōbilis, nōbile",
+     "en": "important, noble, prominent",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "nōbilis, nōbile",
+      "nōbilis",
+      "nōbile"
+     ],
+     "say": "nobilis, nobile",
+     "id": "41"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "Ēheu!",
+     "en": "oh no!",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "Ēheu!"
+     ],
+     "say": "Eheu!",
+     "id": "42"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "hīc",
+     "en": "here",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "hīc"
+     ],
+     "say": "hic",
+     "id": "43"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "Mehercule!",
+     "en": "By Hercules!",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "Mehercule!"
+     ],
+     "say": "Mehercule!",
+     "id": "44"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "Mīrābile!",
+     "en": "Wonderful!",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "Mīrābile!"
+     ],
+     "say": "Mirabile!",
+     "id": "45"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "mox",
+     "en": "soon",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "mox"
+     ],
+     "say": "mox",
+     "id": "46"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nōbīscum",
+     "en": "with us",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "nōbīscum"
+     ],
+     "say": "nobiscum",
+     "id": "47"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "quōmodo?",
+     "en": "How?",
+     "pos": "other",
+     "kind": "phrase",
+     "accept": [
+      "quōmodo?"
+     ],
+     "say": "quomodo?",
+     "id": "48"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "lātrā!/lātrāte!",
+     "en": "Bark!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "lātrā!/lātrāte!",
+      "lātrā!",
+      "lātrāte!"
+     ],
+     "say": "latra!, latrate!",
+     "id": "49"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sedē!/sedēte!",
+     "en": "Sit down!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "sedē!/sedēte!",
+      "sedē!",
+      "sedēte!"
+     ],
+     "say": "sede!, sedete!",
+     "id": "50"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "surge!/surgite!",
+     "en": "Get up!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "surge!/surgite!",
+      "surge!",
+      "surgite!"
+     ],
+     "say": "surge!, surgite!",
+     "id": "51"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "cantā!/cantāte!",
+     "en": "Sing!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "cantā!/cantāte!",
+      "cantā!",
+      "cantāte!"
+     ],
+     "say": "canta!, cantate!",
+     "id": "52"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tacē!/tacēte!",
+     "en": "Be quiet!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "tacē!/tacēte!",
+      "tacē!",
+      "tacēte!"
+     ],
+     "say": "tace!, tacete!",
+     "id": "53"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "siste!/sistite!",
+     "en": "Stop!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "siste!/sistite!",
+      "siste!",
+      "sistite!"
+     ],
+     "say": "siste!, sistite!",
+     "id": "54"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "salī!/salīte!",
+     "en": "Jump!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "salī!/salīte!",
+      "salī!",
+      "salīte!"
+     ],
+     "say": "sali!, salite!",
+     "id": "55"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "aperī/aperīte iānuam!",
+     "en": "Open the door!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "aperī/aperīte iānuam!",
+      "aperī iānuam!",
+      "aperīte iānuam!"
+     ],
+     "say": "aperi, aperite ianuam!",
+     "id": "56"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "claude/claudite iānuam!",
+     "en": "Close the door!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "claude/claudite iānuam!",
+      "claude iānuam!",
+      "claudite iānuam!"
+     ],
+     "say": "claude, claudite ianuam!",
+     "id": "57"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "aperī/aperīte tuōs oculōs!",
+     "en": "Open your eyes!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "aperī/aperīte tuōs oculōs!",
+      "aperī tuōs oculōs!",
+      "aperīte tuōs oculōs!"
+     ],
+     "say": "aperi, aperite tuos oculos!",
+     "id": "58"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "claude/claudite tuōs oculōs!",
+     "en": "Close your eyes!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "claude/claudite tuōs oculōs!",
+      "claude tuōs oculōs!",
+      "claudite tuōs oculōs!"
+     ],
+     "say": "claude, claudite tuos oculos!",
+     "id": "59"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tange/tangite tuōs oculōs!",
+     "en": "Touch your eyes!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "tange/tangite tuōs oculōs!",
+      "tange tuōs oculōs!",
+      "tangite tuōs oculōs!"
+     ],
+     "say": "tange, tangite tuos oculos!",
+     "id": "60"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tange/tangite tuōs umerōs!",
+     "en": "Touch your shoulders!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "tange/tangite tuōs umerōs!",
+      "tange tuōs umerōs!",
+      "tangite tuōs umerōs!"
+     ],
+     "say": "tange, tangite tuos umeros!",
+     "id": "61"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tange/tangite tuōs pedēs!",
+     "en": "Touch your feet!",
+     "pos": "",
+     "kind": "line",
+     "accept": [
+      "tange/tangite tuōs pedēs!",
+      "tange tuōs pedēs!",
+      "tangite tuōs pedēs!"
+     ],
+     "say": "tange, tangite tuos pedes!",
+     "id": "62"
+    }
+   ],
+   "short": "II·2 The 12 Tables"
+  },
+  {
+   "id": "II-3",
+   "title": "Elementa II · Unit 3 · Present Tense / Roman Warfare",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "aqua, aquae, f.",
+     "en": "water",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "aqua, aquae, f.",
+      "aqua"
+     ],
+     "say": "aqua, aquae",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "diēs, diēī, m.",
+     "en": "day",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "diēs, diēī, m.",
+      "diēs"
+     ],
+     "say": "dies, diei",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "historia, historiae, f.",
+     "en": "account, history, story",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "historia, historiae, f.",
+      "historia"
+     ],
+     "say": "historia, historiae",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nox, noctis, f.",
+     "en": "night",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "nox, noctis, f.",
+      "nox"
+     ],
+     "say": "nox, noctis",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "vir, virī, m.",
+     "en": "man",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vir, virī, m.",
+      "vir"
+     ],
+     "say": "vir, viri",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "amō, amāre",
+     "en": "to love",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "amō, amāre",
+      "amō"
+     ],
+     "say": "amo, amare",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "aperiō, aperīre",
+     "en": "to open",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "aperiō, aperīre",
+      "aperiō"
+     ],
+     "say": "aperio, aperire",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "cūstōdiō, cūstōdīre",
+     "en": "to guard, to protect",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "cūstōdiō, cūstōdīre",
+      "cūstōdiō"
+     ],
+     "say": "custodio, custodire",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "dormiō, dormīre",
+     "en": "to sleep",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "dormiō, dormīre",
+      "dormiō"
+     ],
+     "say": "dormio, dormire",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "fugiō, fugere",
+     "en": "to flee",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "fugiō, fugere",
+      "fugiō"
+     ],
+     "say": "fugio, fugere",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "legō, legere",
+     "en": "to read",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "legō, legere",
+      "legō"
+     ],
+     "say": "lego, legere",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nārrō, narrāre",
+     "en": "to tell, recount, describe",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "nārrō, narrāre",
+      "nārrō"
+     ],
+     "say": "narro, narrare",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "scrībō, scrībere",
+     "en": "to write",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "scrībō, scrībere",
+      "scrībō"
+     ],
+     "say": "scribo, scribere",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "videō, vidēre",
+     "en": "to see",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "videō, vidēre",
+      "videō"
+     ],
+     "say": "video, videre",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "volō, velle",
+     "en": "to want",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "volō, velle",
+      "volō",
+      "velle"
+     ],
+     "say": "volo, velle",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "ignōtus/a/um",
+     "en": "unknown, strange",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "ignōtus/a/um",
+      "ignōtus"
+     ],
+     "say": "ignotus, ignota, ignotum",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "parvus/a/um",
+     "en": "small",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "parvus/a/um",
+      "parvus"
+     ],
+     "say": "parvus, parva, parvum",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "perīculōsus/a/um",
+     "en": "dangerous",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "perīculōsus/a/um",
+      "perīculōsus"
+     ],
+     "say": "periculosus, periculosa, periculosum",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "eāmus",
+     "en": "let's go",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "eāmus"
+     ],
+     "say": "eamus",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "postrīdiē",
+     "en": "the next day",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "postrīdiē"
+     ],
+     "say": "postridie",
+     "id": "20"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ampulla, ampullae, f.",
+     "en": "a little bottle, jar",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "ampulla, ampullae, f.",
+      "ampulla"
+     ],
+     "say": "ampulla, ampullae",
+     "id": "21"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "carō, carnīs, f.",
+     "en": "meat",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "carō, carnīs, f.",
+      "carō"
+     ],
+     "say": "caro, carnis",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "cāseus, cāseī, m.",
+     "en": "cheese",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "cāseus, cāseī, m.",
+      "cāseus"
+     ],
+     "say": "caseus, casei",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "cibus, cibī, m.",
+     "en": "food",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "cibus, cibī, m.",
+      "cibus"
+     ],
+     "say": "cibus, cibi",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "lac, lactis, n.",
+     "en": "milk",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "lac, lactis, n.",
+      "lac"
+     ],
+     "say": "lac, lactis",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "mālum, mālī, n.",
+     "en": "apple",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "mālum, mālī, n.",
+      "mālum"
+     ],
+     "say": "malum, mali",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ōvum, ōvī, n.",
+     "en": "egg",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "ōvum, ōvī, n.",
+      "ōvum"
+     ],
+     "say": "ovum, ovi",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "piscis, piscis, m.",
+     "en": "fish",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "piscis, piscis, m.",
+      "piscis"
+     ],
+     "say": "piscis, piscis",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "pūgiō, pūgiōnis, m.",
+     "en": "dagger, knife",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pūgiō, pūgiōnis, m.",
+      "pūgiō"
+     ],
+     "say": "pugio, pugionis",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sagum, sagī, n.",
+     "en": "cloak",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "sagum, sagī, n.",
+      "sagum"
+     ],
+     "say": "sagum, sagi",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sonus, sonī, m.",
+     "en": "noise, a sound",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "sonus, sonī, m.",
+      "sonus"
+     ],
+     "say": "sonus, soni",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "thermopōlium, thermopōliī, n.",
+     "en": "tavern, cafe",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "thermopōlium, thermopōliī, n.",
+      "thermopōlium"
+     ],
+     "say": "thermopolium, thermopolii",
+     "id": "32"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "venēnum, venēnī, n.",
+     "en": "poison",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "venēnum, venēnī, n.",
+      "venēnum"
+     ],
+     "say": "venenum, veneni",
+     "id": "33"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vīnum, vīnī, n.",
+     "en": "wine",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vīnum, vīnī, n.",
+      "vīnum"
+     ],
+     "say": "vinum, vini",
+     "id": "34"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "adiuvō, adiuvāre",
+     "en": "to help",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "adiuvō, adiuvāre",
+      "adiuvō"
+     ],
+     "say": "adiuvo, adiuvare",
+     "id": "35"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ambulō, ambulāre",
+     "en": "to walk",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "ambulō, ambulāre",
+      "ambulō"
+     ],
+     "say": "ambulo, ambulare",
+     "id": "36"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "inveniō, invenīre",
+     "en": "to come upon, to discover, to find",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "inveniō, invenīre",
+      "inveniō"
+     ],
+     "say": "invenio, invenire",
+     "id": "37"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "lātrō, lātrāre",
+     "en": "to bark",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "lātrō, lātrāre",
+      "lātrō"
+     ],
+     "say": "latro, latrare",
+     "id": "38"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "teneō, tenēre",
+     "en": "to hold",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "teneō, tenēre",
+      "teneō"
+     ],
+     "say": "teneo, tenere",
+     "id": "39"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sequor, sequī",
+     "en": "to follow",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "sequor, sequī",
+      "sequor",
+      "sequī"
+     ],
+     "say": "sequor, sequi",
+     "id": "40"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "fētidus/a/um",
+     "en": "foul-smelling",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "fētidus/a/um",
+      "fētidus"
+     ],
+     "say": "fetidus, fetida, fetidum",
+     "id": "41"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ruber, rubra, rubrum",
+     "en": "red",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "ruber, rubra, rubrum",
+      "ruber"
+     ],
+     "say": "ruber, rubra, rubrum",
+     "id": "42"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ignōsce mihi",
+     "en": "excuse me",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "ignōsce mihi"
+     ],
+     "say": "ignosce mihi",
+     "id": "43"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tamen",
+     "en": "nevertheless, yet",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "tamen"
+     ],
+     "say": "tamen",
+     "id": "44"
+    }
+   ],
+   "short": "II·3 Roman Warfare"
+  },
+  {
+   "id": "II-4",
+   "title": "Elementa II · Unit 4 · Nominative & Accusative / The Cursus Honōrum",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "arma, armōrum, n. pl.",
+     "en": "weapons",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "arma, armōrum, n. pl.",
+      "arma"
+     ],
+     "say": "arma, armorum",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "bēstia, bēstiae, f.",
+     "en": "animal, beast",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "bēstia, bēstiae, f.",
+      "bēstia"
+     ],
+     "say": "bestia, bestiae",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "equus, equī, m.",
+     "en": "horse",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "equus, equī, m.",
+      "equus"
+     ],
+     "say": "equus, equi",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "fēles, fēlis, f.",
+     "en": "cat",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "fēles, fēlis, f.",
+      "fēles"
+     ],
+     "say": "feles, felis",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "gladius, gladiī, m.",
+     "en": "sword",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "gladius, gladiī, m.",
+      "gladius"
+     ],
+     "say": "gladius, gladii",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "iānua, iānuae, f.",
+     "en": "door",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "iānua, iānuae, f.",
+      "iānua"
+     ],
+     "say": "ianua, ianuae",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "leō, leōnis, m.",
+     "en": "lion",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "leō, leōnis, m.",
+      "leō"
+     ],
+     "say": "leo, leonis",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "locus, locī, m.",
+     "en": "place",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "locus, locī, m.",
+      "locus"
+     ],
+     "say": "locus, loci",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "lupus, lupī, m.",
+     "en": "wolf",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "lupus, lupī, m.",
+      "lupus"
+     ],
+     "say": "lupus, lupi",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "piscis, piscis, m.",
+     "en": "fish",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "piscis, piscis, m.",
+      "piscis"
+     ],
+     "say": "piscis, piscis",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "porcus, porcī, m.",
+     "en": "pig, piglet",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "porcus, porcī, m.",
+      "porcus"
+     ],
+     "say": "porcus, porci",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "statua, statuae, f.",
+     "en": "statue",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "statua, statuae, f.",
+      "statua"
+     ],
+     "say": "statua, statuae",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "thermae, thermārum, f. pl.",
+     "en": "baths, bathhouse",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "thermae, thermārum, f. pl.",
+      "thermae"
+     ],
+     "say": "thermae, thermarum",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "vacca, vaccae, f.",
+     "en": "cow",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vacca, vaccae, f.",
+      "vacca"
+     ],
+     "say": "vacca, vaccae",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "vestis, vestis, f.",
+     "en": "clothes, robe",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vestis, vestis, f.",
+      "vestis"
+     ],
+     "say": "vestis, vestis",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "via, viae, f.",
+     "en": "road",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "via, viae, f.",
+      "via"
+     ],
+     "say": "via, viae",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "pugnō, pugnāre",
+     "en": "to fight",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "pugnō, pugnāre",
+      "pugnō"
+     ],
+     "say": "pugno, pugnare",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "quaerō, quaerere",
+     "en": "to seek, to search for, to ask",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "quaerō, quaerere",
+      "quaerō"
+     ],
+     "say": "quaero, quaerere",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "spectō, spectāre",
+     "en": "to watch",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "spectō, spectāre",
+      "spectō"
+     ],
+     "say": "specto, spectare",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "noster",
+     "en": "our",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "noster"
+     ],
+     "say": "noster",
+     "id": "20"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "sēcrētus/a/um",
+     "en": "hidden, secret",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "sēcrētus/a/um",
+      "sēcrētus"
+     ],
+     "say": "secretus, secreta, secretum",
+     "id": "21"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "cūr?",
+     "en": "why",
+     "pos": "other",
+     "kind": "phrase",
+     "accept": [
+      "cūr?"
+     ],
+     "say": "cur?",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "avis, avis, f.",
+     "en": "bird",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "avis, avis, f.",
+      "avis"
+     ],
+     "say": "avis, avis",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "bubō, bubōnis, m.",
+     "en": "owl",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "bubō, bubōnis, m.",
+      "bubō"
+     ],
+     "say": "bubo, bubonis",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "dracō, dracōnis, m.",
+     "en": "dragon",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "dracō, dracōnis, m.",
+      "dracō"
+     ],
+     "say": "draco, draconis",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "pūgiō, pūgiōnis, m.",
+     "en": "dagger",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pūgiō, pūgiōnis, m.",
+      "pūgiō"
+     ],
+     "say": "pugio, pugionis",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "quaestor, quaestōris, m.",
+     "en": "quaestor, treasurer",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "quaestor, quaestōris, m.",
+      "quaestor"
+     ],
+     "say": "quaestor, quaestoris",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "rāna, rānae, f.",
+     "en": "frog",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "rāna, rānae, f.",
+      "rāna"
+     ],
+     "say": "rana, ranae",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "scūtum, scūtī, n.",
+     "en": "shield",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "scūtum, scūtī, n.",
+      "scūtum"
+     ],
+     "say": "scutum, scuti",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "serpēns, serpentis, m./f.",
+     "en": "snake",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "serpēns, serpentis, m./f.",
+      "serpēns"
+     ],
+     "say": "serpens, serpentis",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "taurus, taurī, m.",
+     "en": "bull",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "taurus, taurī, m.",
+      "taurus"
+     ],
+     "say": "taurus, tauri",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ursa, ursae, f.",
+     "en": "she-bear",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "ursa, ursae, f.",
+      "ursa"
+     ],
+     "say": "ursa, ursae",
+     "id": "32"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vīcīnus, vīcīnī, m.",
+     "en": "neighbor",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vīcīnus, vīcīnī, m.",
+      "vīcīnus"
+     ],
+     "say": "vicinus, vicini",
+     "id": "33"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "aedificō, aedificāre",
+     "en": "to build",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "aedificō, aedificāre",
+      "aedificō"
+     ],
+     "say": "aedifico, aedificare",
+     "id": "34"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "intrō, intrāre",
+     "en": "to enter",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "intrō, intrāre",
+      "intrō"
+     ],
+     "say": "intro, intrare",
+     "id": "35"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "simulō, simulāre",
+     "en": "to pretend (to be), to imitate",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "simulō, simulāre",
+      "simulō"
+     ],
+     "say": "simulo, simulare",
+     "id": "36"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "venēnō, venēnāre",
+     "en": "to poison",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "venēnō, venēnāre",
+      "venēnō"
+     ],
+     "say": "veneno, venenare",
+     "id": "37"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "hic",
+     "en": "this",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "hic"
+     ],
+     "say": "hic",
+     "id": "38"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ille",
+     "en": "that",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "ille"
+     ],
+     "say": "ille",
+     "id": "39"
+    }
+   ],
+   "short": "II·4 The Cursus Honōrum"
+  },
+  {
+   "id": "II-5",
+   "title": "Elementa II · Unit 5 · The Imperfect Tense / Roman Baths",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "colloquium, colloquiī, n.",
+     "en": "meeting, interview, conversation",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "colloquium, colloquiī, n.",
+      "colloquium"
+     ],
+     "say": "colloquium, colloquii",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "forum, forī, n.",
+     "en": "public square or market",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "forum, forī, n.",
+      "forum"
+     ],
+     "say": "forum, fori",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nebula, nebulae, f.",
+     "en": "fog, mist",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "nebula, nebulae, f.",
+      "nebula"
+     ],
+     "say": "nebula, nebulae",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "sōl, sōlis, m.",
+     "en": "sun",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "sōl, sōlis, m.",
+      "sōl"
+     ],
+     "say": "sol, solis",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "capiō, capere",
+     "en": "to take, to seize",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "capiō, capere",
+      "capiō"
+     ],
+     "say": "capio, capere",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "currō, currere",
+     "en": "to run",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "currō, currere",
+      "currō"
+     ],
+     "say": "curro, currere",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "festīnō, festīnāre",
+     "en": "to hurry",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "festīnō, festīnāre",
+      "festīnō"
+     ],
+     "say": "festino, festinare",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "gerō, gerere",
+     "en": "to wear",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "gerō, gerere",
+      "gerō"
+     ],
+     "say": "gero, gerere",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "calidus/a/um",
+     "en": "hot",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "calidus/a/um",
+      "calidus"
+     ],
+     "say": "calidus, calida, calidum",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "frīgidus/a/um",
+     "en": "cold",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "frīgidus/a/um",
+      "frīgidus"
+     ],
+     "say": "frigidus, frigida, frigidum",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "gravis, grave",
+     "en": "serious, important",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "gravis, grave",
+      "gravis",
+      "grave"
+     ],
+     "say": "gravis, grave",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "celeriter",
+     "en": "quickly",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "celeriter"
+     ],
+     "say": "celeriter",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "cotīdiē",
+     "en": "daily",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "cotīdiē"
+     ],
+     "say": "cotidie",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "crās",
+     "en": "tomorrow",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "crās"
+     ],
+     "say": "cras",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "heri",
+     "en": "yesterday",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "heri"
+     ],
+     "say": "heri",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "hodiē",
+     "en": "today",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "hodiē"
+     ],
+     "say": "hodie",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "numquam",
+     "en": "never",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "numquam"
+     ],
+     "say": "numquam",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "saepe",
+     "en": "often",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "saepe"
+     ],
+     "say": "saepe",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "semper",
+     "en": "always",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "semper"
+     ],
+     "say": "semper",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "quot",
+     "en": "how many",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "quot"
+     ],
+     "say": "quot",
+     "id": "20"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "arcus, arcūs, m.",
+     "en": "rainbow",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "arcus, arcūs, m.",
+      "arcus"
+     ],
+     "say": "arcus, arcus",
+     "id": "21"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "īris, īridis, f.",
+     "en": "rainbow",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "īris, īridis, f.",
+      "īris"
+     ],
+     "say": "iris, iridis",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tempestās, tempestātis, f.",
+     "en": "storm",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "tempestās, tempestātis, f.",
+      "tempestās"
+     ],
+     "say": "tempestas, tempestatis",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "cēlō, cēlāre",
+     "en": "to hide, to conceal",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "cēlō, cēlāre",
+      "cēlō"
+     ],
+     "say": "celo, celare",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "lūceō, lūcēre",
+     "en": "to shine, to emit light",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "lūceō, lūcēre",
+      "lūceō"
+     ],
+     "say": "luceo, lucere",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ningit",
+     "en": "it is snowing",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "ningit"
+     ],
+     "say": "ningit",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "pluit",
+     "en": "it is raining",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "pluit"
+     ],
+     "say": "pluit",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nūbilus/a/um",
+     "en": "cloudy",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "nūbilus/a/um",
+      "nūbilus"
+     ],
+     "say": "nubilus, nubila, nubilum",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "serēnus/a/um",
+     "en": "cheerful, bright, calm",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "serēnus/a/um",
+      "serēnus"
+     ],
+     "say": "serenus, serena, serenum",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ventōsus/a/um",
+     "en": "windy",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "ventōsus/a/um",
+      "ventōsus"
+     ],
+     "say": "ventosus, ventosa, ventosum",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "valdē",
+     "en": "strongly, powerfully",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "valdē"
+     ],
+     "say": "valde",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vix",
+     "en": "barely",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "vix"
+     ],
+     "say": "vix",
+     "id": "32"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "quīdam, quaedam, quoddam",
+     "en": "a certain (someone/thing)",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "quīdam, quaedam, quoddam",
+      "quīdam"
+     ],
+     "say": "quidam, quaedam, quoddam",
+     "id": "33"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "centum",
+     "en": "one hundred",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "centum"
+     ],
+     "say": "centum",
+     "id": "34"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ille",
+     "en": "that",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "ille"
+     ],
+     "say": "ille",
+     "id": "35"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "mīlle",
+     "en": "one thousand",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "mīlle"
+     ],
+     "say": "mille",
+     "id": "36"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nōs",
+     "en": "we/us",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "nōs"
+     ],
+     "say": "nos",
+     "id": "37"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nōbīs",
+     "en": "to/for us",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "nōbīs"
+     ],
+     "say": "nobis",
+     "id": "38"
+    }
+   ],
+   "short": "II·5 Roman Baths"
+  },
+  {
+   "id": "II-6",
+   "title": "Elementa II · Unit 6 · Noun–Adjective Agreement / Roman Gaul",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "cōnsilium, cōnsiliī, n.",
+     "en": "plan, idea, strategy",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "cōnsilium, cōnsiliī, n.",
+      "cōnsilium"
+     ],
+     "say": "consilium, consilii",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "perīculum, perīculī, n.",
+     "en": "danger",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "perīculum, perīculī, n.",
+      "perīculum"
+     ],
+     "say": "periculum, periculi",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "absum, abesse",
+     "en": "to be away, missing",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "absum, abesse",
+      "absum"
+     ],
+     "say": "absum, abesse",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "dīcō, dīcere",
+     "en": "to say, to speak",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "dīcō, dīcere",
+      "dīcō"
+     ],
+     "say": "dico, dicere",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "acūtus/a/um",
+     "en": "sharp, pointed",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "acūtus/a/um",
+      "acūtus"
+     ],
+     "say": "acutus, acuta, acutum",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "albus/a/um",
+     "en": "white",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "albus/a/um",
+      "albus"
+     ],
+     "say": "albus, alba, album",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "alius, alia, aliud",
+     "en": "different, other, another",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "alius, alia, aliud",
+      "alius"
+     ],
+     "say": "alius, alia, aliud",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "aureus/a/um",
+     "en": "gold",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "aureus/a/um",
+      "aureus"
+     ],
+     "say": "aureus, aurea, aureum",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "cārus/a/um",
+     "en": "dear",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "cārus/a/um",
+      "cārus"
+     ],
+     "say": "carus, cara, carum",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "flāvus/a/um",
+     "en": "yellow",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "flāvus/a/um",
+      "flāvus"
+     ],
+     "say": "flavus, flava, flavum",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "fuscus/a/um",
+     "en": "brown, dark",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "fuscus/a/um",
+      "fuscus"
+     ],
+     "say": "fuscus, fusca, fuscum",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "laetus/a/um",
+     "en": "happy",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "laetus/a/um",
+      "laetus"
+     ],
+     "say": "laetus, laeta, laetum",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "magnus/a/um",
+     "en": "great, large",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "magnus/a/um",
+      "magnus"
+     ],
+     "say": "magnus, magna, magnum",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "miser/misera/um",
+     "en": "wretched, miserable",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "miser/misera/um",
+      "miser",
+      "misera"
+     ],
+     "say": "miser, misera, um",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "mortuus/a/um",
+     "en": "dead",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "mortuus/a/um",
+      "mortuus"
+     ],
+     "say": "mortuus, mortua, mortuum",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "ruber/rubra/um",
+     "en": "red",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "ruber/rubra/um",
+      "ruber",
+      "rubra"
+     ],
+     "say": "ruber, rubra, um",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "validus/a/um",
+     "en": "brave, strong",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "validus/a/um",
+      "validus"
+     ],
+     "say": "validus, valida, validum",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "iterum",
+     "en": "again",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "iterum"
+     ],
+     "say": "iterum",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "quōmodo",
+     "en": "how",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "quōmodo"
+     ],
+     "say": "quomodo",
+     "id": "19"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "capillus, capillī, m.",
+     "en": "hair, fur",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "capillus, capillī, m.",
+      "capillus"
+     ],
+     "say": "capillus, capilli",
+     "id": "20"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vigil, vigilis, m.",
+     "en": "firefighter, guard, watchman (originally a member of the Roman fire brigade)",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vigil, vigilis, m.",
+      "vigil"
+     ],
+     "say": "vigil, vigilis",
+     "id": "21"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "teneō, tenēre",
+     "en": "to hold",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "teneō, tenēre",
+      "teneō"
+     ],
+     "say": "teneo, tenere",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "argenteus/a/um",
+     "en": "silver",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "argenteus/a/um",
+      "argenteus"
+     ],
+     "say": "argenteus, argentea, argenteum",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "āter/ātra/ātrum",
+     "en": "black",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "āter/ātra/ātrum",
+      "āter",
+      "ātra",
+      "ātrum"
+     ],
+     "say": "ater, atra, atrum",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "caeruleus/a/um",
+     "en": "blue",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "caeruleus/a/um",
+      "caeruleus"
+     ],
+     "say": "caeruleus, caerulea, caeruleum",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "cānus/a/um",
+     "en": "gray",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "cānus/a/um",
+      "cānus"
+     ],
+     "say": "canus, cana, canum",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "fessus/a/um",
+     "en": "tired, weary",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "fessus/a/um",
+      "fessus"
+     ],
+     "say": "fessus, fessa, fessum",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "fētidus/a/um",
+     "en": "foul-smelling",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "fētidus/a/um",
+      "fētidus"
+     ],
+     "say": "fetidus, fetida, fetidum",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "improbus/a/um",
+     "en": "wicked, rude",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "improbus/a/um",
+      "improbus"
+     ],
+     "say": "improbus, improba, improbum",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "parvus/a/um",
+     "en": "small",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "parvus/a/um",
+      "parvus"
+     ],
+     "say": "parvus, parva, parvum",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "perīculōsus/a/um",
+     "en": "dangerous",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "perīculōsus/a/um",
+      "perīculōsus"
+     ],
+     "say": "periculosus, periculosa, periculosum",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "prasinus/a/um",
+     "en": "green",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "prasinus/a/um",
+      "prasinus"
+     ],
+     "say": "prasinus, prasina, prasinum",
+     "id": "32"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "purpureus/a/um",
+     "en": "purple",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "purpureus/a/um",
+      "purpureus"
+     ],
+     "say": "purpureus, purpurea, purpureum",
+     "id": "33"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "roseus/a/um",
+     "en": "pink",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "roseus/a/um",
+      "roseus"
+     ],
+     "say": "roseus, rosea, roseum",
+     "id": "34"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sollicitus/a/um",
+     "en": "worried",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "sollicitus/a/um",
+      "sollicitus"
+     ],
+     "say": "sollicitus, sollicita, sollicitum",
+     "id": "35"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "eāmus",
+     "en": "let's go",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "eāmus"
+     ],
+     "say": "eamus",
+     "id": "36"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sīcut",
+     "en": "like, as if, just as",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "sīcut"
+     ],
+     "say": "sicut",
+     "id": "37"
+    }
+   ],
+   "short": "II·6 Roman Gaul"
+  },
+  {
+   "id": "II-7",
+   "title": "Elementa II · Unit 7 · The Genitive Case / The Roman Calendar",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "auris, auris, f.",
+     "en": "ear",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "auris, auris, f.",
+      "auris"
+     ],
+     "say": "auris, auris",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "bracchium, bracchiī, n.",
+     "en": "arm",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "bracchium, bracchiī, n.",
+      "bracchium"
+     ],
+     "say": "bracchium, bracchii",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "caput, capitis, n.",
+     "en": "head",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "caput, capitis, n.",
+      "caput"
+     ],
+     "say": "caput, capitis",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "corpus, corporis, n.",
+     "en": "body",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "corpus, corporis, n.",
+      "corpus"
+     ],
+     "say": "corpus, corporis",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "dens, dentis, m.",
+     "en": "tooth",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "dens, dentis, m.",
+      "dens"
+     ],
+     "say": "dens, dentis",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "digitus, digitī, m.",
+     "en": "finger, toe",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "digitus, digitī, m.",
+      "digitus"
+     ],
+     "say": "digitus, digiti",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "ēmptor, ēmptōris, m.",
+     "en": "customer, buyer",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "ēmptor, ēmptōris, m.",
+      "ēmptor"
+     ],
+     "say": "emptor, emptoris",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "genū, genūs, n.",
+     "en": "knee",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "genū, genūs, n.",
+      "genū"
+     ],
+     "say": "genu, genus",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "lingua, linguae, f.",
+     "en": "tongue (also: language)",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "lingua, linguae, f.",
+      "lingua"
+     ],
+     "say": "lingua, linguae",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "manus, manūs, f.",
+     "en": "hand",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "manus, manūs, f.",
+      "manus"
+     ],
+     "say": "manus, manus",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "oculus, oculī, m.",
+     "en": "eye",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "oculus, oculī, m.",
+      "oculus"
+     ],
+     "say": "oculus, oculi",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "ōs, ōris, n.",
+     "en": "mouth",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "ōs, ōris, n.",
+      "ōs"
+     ],
+     "say": "os, oris",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "pēs, pedis, m.",
+     "en": "foot",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pēs, pedis, m.",
+      "pēs"
+     ],
+     "say": "pes, pedis",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "vigil, vigilis, m.",
+     "en": "guard, watchman",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vigil, vigilis, m.",
+      "vigil"
+     ],
+     "say": "vigil, vigilis",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "apprehendō, apprehendere",
+     "en": "to apprehend, arrest, seize",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "apprehendō, apprehendere",
+      "apprehendō"
+     ],
+     "say": "apprehendo, apprehendere",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "cēlō, cēlāre",
+     "en": "to hide, to conceal",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "cēlō, cēlāre",
+      "cēlō"
+     ],
+     "say": "celo, celare",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "errō, errāre",
+     "en": "to make a mistake, to wander",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "errō, errāre",
+      "errō"
+     ],
+     "say": "erro, errare",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "taceō, tacēre",
+     "en": "to be quiet",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "taceō, tacēre",
+      "taceō"
+     ],
+     "say": "taceo, tacere",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "alter, altera, alterum",
+     "en": "other, another",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "alter, altera, alterum",
+      "alter"
+     ],
+     "say": "alter, altera, alterum",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nefās!",
+     "en": "abominable!",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "nefās!"
+     ],
+     "say": "nefas!",
+     "id": "20"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "barba, barbae, f.",
+     "en": "beard",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "barba, barbae, f.",
+      "barba"
+     ],
+     "say": "barba, barbae",
+     "id": "21"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "capillus, capillī, m.",
+     "en": "a hair, the hair of the head",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "capillus, capillī, m.",
+      "capillus"
+     ],
+     "say": "capillus, capilli",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nāsus, nāsī, m.",
+     "en": "nose",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "nāsus, nāsī, m.",
+      "nāsus"
+     ],
+     "say": "nasus, nasi",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tergum, tergī, n.",
+     "en": "back",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "tergum, tergī, n.",
+      "tergum"
+     ],
+     "say": "tergum, tergi",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "venter, ventris, m.",
+     "en": "stomach",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "venter, ventris, m.",
+      "venter"
+     ],
+     "say": "venter, ventris",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "occīdō, occīdere",
+     "en": "to kill, to murder",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "occīdō, occīdere",
+      "occīdō"
+     ],
+     "say": "occido, occidere",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "recordor, recordārī",
+     "en": "to recall, to remember",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "recordor, recordārī",
+      "recordor",
+      "recordārī"
+     ],
+     "say": "recordor, recordari",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "honestus/a/um",
+     "en": "honest, virtuous, honorable",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "honestus/a/um",
+      "honestus"
+     ],
+     "say": "honestus, honesta, honestum",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "cum",
+     "en": "with",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "cum"
+     ],
+     "say": "cum",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "hic",
+     "en": "this",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "hic"
+     ],
+     "say": "hic",
+     "id": "30"
+    }
+   ],
+   "short": "II·7 The Roman Calendar"
+  },
+  {
+   "id": "II-8",
+   "title": "Elementa II · Unit 8 · The Ablative Case / Ports, Ships, and Pirates",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "arca, arcae, f.",
+     "en": "cage, box",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "arca, arcae, f.",
+      "arca"
+     ],
+     "say": "arca, arcae",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "cella, cellae, f.",
+     "en": "room, storeroom",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "cella, cellae, f.",
+      "cella"
+     ],
+     "say": "cella, cellae",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "clāvis, clāvis, f.",
+     "en": "key",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "clāvis, clāvis, f.",
+      "clāvis"
+     ],
+     "say": "clavis, clavis",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "fenestra, fenestrae, f.",
+     "en": "window",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "fenestra, fenestrae, f.",
+      "fenestra"
+     ],
+     "say": "fenestra, fenestrae",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "liber, librī, m.",
+     "en": "book",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "liber, librī, m.",
+      "liber"
+     ],
+     "say": "liber, libri",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "mūrus, mūrī, m.",
+     "en": "wall",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "mūrus, mūrī, m.",
+      "mūrus"
+     ],
+     "say": "murus, muri",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "pēnsum, pēnsī, n.",
+     "en": "task (also: homework)",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pēnsum, pēnsī, n.",
+      "pēnsum"
+     ],
+     "say": "pensum, pensi",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "stilus, stilī, m.",
+     "en": "pen/pencil",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "stilus, stilī, m.",
+      "stilus"
+     ],
+     "say": "stilus, stili",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "tabula, tabulae, f.",
+     "en": "writing slate",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "tabula, tabulae, f.",
+      "tabula"
+     ],
+     "say": "tabula, tabulae",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "adveniō, advenīre",
+     "en": "to arrive",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "adveniō, advenīre",
+      "adveniō"
+     ],
+     "say": "advenio, advenire",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "exeō, exīre",
+     "en": "to go away, to leave",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "exeō, exīre",
+      "exeō"
+     ],
+     "say": "exeo, exire",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "līberō, līberāre",
+     "en": "to free, to release",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "līberō, līberāre",
+      "līberō"
+     ],
+     "say": "libero, liberare",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "maneō, manēre",
+     "en": "to wait, to stay",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "maneō, manēre",
+      "maneō"
+     ],
+     "say": "maneo, manere",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "salūtō, salūtāre",
+     "en": "to greet, to salute",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "salūtō, salūtāre",
+      "salūtō"
+     ],
+     "say": "saluto, salutare",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "cārissimus/a/um",
+     "en": "dearest",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "cārissimus/a/um",
+      "cārissimus"
+     ],
+     "say": "carissimus, carissima, carissimum",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "subitō",
+     "en": "suddenly",
+     "pos": "adverb",
+     "kind": "word",
+     "accept": [
+      "subitō"
+     ],
+     "say": "subito",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "eugepae!",
+     "en": "Hooray!",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "eugepae!"
+     ],
+     "say": "eugepae!",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "cum",
+     "en": "with",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "cum"
+     ],
+     "say": "cum",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "dē",
+     "en": "down/away from, about, concerning",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "dē"
+     ],
+     "say": "de",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "ē/ex",
+     "en": "out of",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "ē/ex",
+      "ē"
+     ],
+     "say": "e, ex",
+     "id": "20"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "sine",
+     "en": "without",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "sine"
+     ],
+     "say": "sine",
+     "id": "21"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "charta, chartae, f.",
+     "en": "paper",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "charta, chartae, f.",
+      "charta"
+     ],
+     "say": "charta, chartae",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ērāsūra, ērāsūrae, f.",
+     "en": "eraser",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "ērāsūra, ērāsūrae, f.",
+      "ērāsūra"
+     ],
+     "say": "erasura, erasurae",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "hōrologium, hōrologiī, n.",
+     "en": "clock",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "hōrologium, hōrologiī, n.",
+      "hōrologium"
+     ],
+     "say": "horologium, horologii",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "laetitia, laetitiae, f.",
+     "en": "happiness, joy",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "laetitia, laetitiae, f.",
+      "laetitia"
+     ],
+     "say": "laetitia, laetitiae",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "mēnsa, mēnsae, f.",
+     "en": "table, desk",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "mēnsa, mēnsae, f.",
+      "mēnsa"
+     ],
+     "say": "mensa, mensae",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ordinatrum, ordinatrī, n.",
+     "en": "computer",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "ordinatrum, ordinatrī, n.",
+      "ordinatrum"
+     ],
+     "say": "ordinatrum, ordinatri",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sarcina, sarcinae, f.",
+     "en": "baggage, backpack",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "sarcina, sarcinae, f.",
+      "sarcina"
+     ],
+     "say": "sarcina, sarcinae",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sella, sellae, f.",
+     "en": "chair",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "sella, sellae, f.",
+      "sella"
+     ],
+     "say": "sella, sellae",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "attatatae!!",
+     "en": "Aaaaaah!!",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "attatatae!!"
+     ],
+     "say": "attatatae!!",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "quaesō",
+     "en": "please",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "quaesō"
+     ],
+     "say": "quaeso",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tabula geōgraphica",
+     "en": "map",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "tabula geōgraphica"
+     ],
+     "say": "tabula geographica",
+     "id": "32"
+    }
+   ],
+   "short": "II·8 Ports, Ships, and Pirates"
+  },
+  {
+   "id": "II-9",
+   "title": "Elementa II · Unit 9 · The Dative Case / Isis and Mystery Cults",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "ager, agrī, m.",
+     "en": "field",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "ager, agrī, m.",
+      "ager"
+     ],
+     "say": "ager, agri",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "arbor, arboris, f.",
+     "en": "tree",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "arbor, arboris, f.",
+      "arbor"
+     ],
+     "say": "arbor, arboris",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "caelum, caelī, n.",
+     "en": "sky, heavens",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "caelum, caelī, n.",
+      "caelum"
+     ],
+     "say": "caelum, caeli",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "dea, deae, f.",
+     "en": "goddess",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "dea, deae, f.",
+      "dea"
+     ],
+     "say": "dea, deae",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "deus, deī, m.",
+     "en": "god",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "deus, deī, m.",
+      "deus"
+     ],
+     "say": "deus, dei",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "fēstum, fēstī, n.",
+     "en": "festival, holiday",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "fēstum, fēstī, n.",
+      "fēstum"
+     ],
+     "say": "festum, festi",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "flōs, flōris, m.",
+     "en": "flower",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "flōs, flōris, m.",
+      "flōs"
+     ],
+     "say": "flos, floris",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "lūna, lūnae, f.",
+     "en": "moon",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "lūna, lūnae, f.",
+      "lūna"
+     ],
+     "say": "luna, lunae",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "mare, maris, n.",
+     "en": "sea",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "mare, maris, n.",
+      "mare"
+     ],
+     "say": "mare, maris",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "mōns, montis, m.",
+     "en": "mountain",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "mōns, montis, m.",
+      "mōns"
+     ],
+     "say": "mons, montis",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "nūntium, nūntiī, n.",
+     "en": "news, announcement",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "nūntium, nūntiī, n.",
+      "nūntium"
+     ],
+     "say": "nuntium, nuntii",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "silva, silvae, f.",
+     "en": "forest",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "silva, silvae, f.",
+      "silva"
+     ],
+     "say": "silva, silvae",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "stēlla, stēllae, f.",
+     "en": "star",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "stēlla, stēllae, f.",
+      "stēlla"
+     ],
+     "say": "stella, stellae",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "terra, terrae, f.",
+     "en": "earth, land",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "terra, terrae, f.",
+      "terra"
+     ],
+     "say": "terra, terrae",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "caveō, cavēre",
+     "en": "to be careful, to beware",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "caveō, cavēre",
+      "caveō"
+     ],
+     "say": "caveo, cavere",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "dēdicō, dēdicāre",
+     "en": "to dedicate",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "dēdicō, dēdicāre",
+      "dēdicō"
+     ],
+     "say": "dedico, dedicare",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "dō, dare",
+     "en": "to give",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "dō, dare",
+      "dō"
+     ],
+     "say": "do, dare",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "mittō, mittere",
+     "en": "to send",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "mittō, mittere",
+      "mittō"
+     ],
+     "say": "mitto, mittere",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "rīdeō, rīdēre",
+     "en": "to laugh, to smile",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "rīdeō, rīdēre",
+      "rīdeō"
+     ],
+     "say": "rideo, ridere",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "īnsānus/a/um",
+     "en": "wild, insane",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "īnsānus/a/um",
+      "īnsānus"
+     ],
+     "say": "insanus, insana, insanum",
+     "id": "20"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "diū",
+     "en": "for a long time",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "diū"
+     ],
+     "say": "diu",
+     "id": "21"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "arōma, arōmatis, n.",
+     "en": "spice, sweet-smelling substances",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "arōma, arōmatis, n.",
+      "arōma"
+     ],
+     "say": "aroma, aromatis",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "convīvium, convīviī, n.",
+     "en": "banquet, feast, party",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "convīvium, convīviī, n.",
+      "convīvium"
+     ],
+     "say": "convivium, convivii",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "fluvius, fluviī, m.",
+     "en": "river, stream",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "fluvius, fluviī, m.",
+      "fluvius"
+     ],
+     "say": "fluvius, fluvii",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "fortūna, fortūnae, f.",
+     "en": "luck, chance, fate",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "fortūna, fortūnae, f.",
+      "fortūna"
+     ],
+     "say": "fortuna, fortunae",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "Īsis, Īsidis, f.",
+     "en": "Isis (Egyptian goddess)",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "Īsis, Īsidis, f.",
+      "Īsis"
+     ],
+     "say": "Isis, Isidis",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "lātrīna, lātrīnae, f.",
+     "en": "toilet, public bathroom",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "lātrīna, lātrīnae, f.",
+      "lātrīna"
+     ],
+     "say": "latrina, latrinae",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "pompa, pompae, f.",
+     "en": "parade, procession",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pompa, pompae, f.",
+      "pompa"
+     ],
+     "say": "pompa, pompae",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sacerdōs, sacerdōtis, m.",
+     "en": "priest",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "sacerdōs, sacerdōtis, m.",
+      "sacerdōs"
+     ],
+     "say": "sacerdos, sacerdotis",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "saxum, saxī, n.",
+     "en": "stone",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "saxum, saxī, n.",
+      "saxum"
+     ],
+     "say": "saxum, saxi",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nāvigō, nāvigāre",
+     "en": "to sail",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "nāvigō, nāvigāre",
+      "nāvigō"
+     ],
+     "say": "navigo, navigare",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "prōmittō, prōmittere",
+     "en": "to promise",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "prōmittō, prōmittere",
+      "prōmittō"
+     ],
+     "say": "promitto, promittere",
+     "id": "32"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "saliō, salire",
+     "en": "to leap, to jump",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "saliō, salire",
+      "saliō"
+     ],
+     "say": "salio, salire",
+     "id": "33"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ab",
+     "en": "from, away from",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "ab"
+     ],
+     "say": "ab",
+     "id": "34"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "fūfae!",
+     "en": "yuck!",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "fūfae!"
+     ],
+     "say": "fufae!",
+     "id": "35"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "grātiās agere",
+     "en": "to give thanks",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "grātiās agere"
+     ],
+     "say": "gratias agere",
+     "id": "36"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "hoc",
+     "en": "this",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "hoc"
+     ],
+     "say": "hoc",
+     "id": "37"
+    }
+   ],
+   "short": "II·9 Isis and Mystery Cults"
+  },
+  {
+   "id": "II-10",
+   "title": "Elementa II · Unit 10 · Objects of Prepositions / Roman Housing",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "amor, amōris, m.",
+     "en": "love",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "amor, amōris, m.",
+      "amor"
+     ],
+     "say": "amor, amoris",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "fōns, fontis, m.",
+     "en": "fountain",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "fōns, fontis, m.",
+      "fōns"
+     ],
+     "say": "fons, fontis",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "templum, templī, n.",
+     "en": "temple",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "templum, templī, n.",
+      "templum"
+     ],
+     "say": "templum, templi",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "approbō, approbāre",
+     "en": "to approve, to allow",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "approbō, approbāre",
+      "approbō"
+     ],
+     "say": "approbo, approbare",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "claudō, claudere",
+     "en": "to close",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "claudō, claudere",
+      "claudō"
+     ],
+     "say": "claudo, claudere",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "gaudeō, gaudēre",
+     "en": "to rejoice",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "gaudeō, gaudēre",
+      "gaudeō"
+     ],
+     "say": "gaudeo, gaudere",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "laudō, laudāre",
+     "en": "to praise",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "laudō, laudāre",
+      "laudō"
+     ],
+     "say": "laudo, laudare",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "lūdō, lūdere",
+     "en": "to play",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "lūdō, lūdere",
+      "lūdō"
+     ],
+     "say": "ludo, ludere",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "benignus/a/um",
+     "en": "kind",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "benignus/a/um",
+      "benignus"
+     ],
+     "say": "benignus, benigna, benignum",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "fortūnātus/a/um",
+     "en": "lucky, fortunate",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "fortūnātus/a/um",
+      "fortūnātus"
+     ],
+     "say": "fortunatus, fortunata, fortunatum",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "ante",
+     "en": "before",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "ante"
+     ],
+     "say": "ante",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "apud",
+     "en": "at, by, near, at the house of",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "apud"
+     ],
+     "say": "apud",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "circum",
+     "en": "around",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "circum"
+     ],
+     "say": "circum",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "ē/ex",
+     "en": "out of",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "ē/ex",
+      "ē"
+     ],
+     "say": "e, ex",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "inter",
+     "en": "between",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "inter"
+     ],
+     "say": "inter",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "per",
+     "en": "through",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "per"
+     ],
+     "say": "per",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "post",
+     "en": "after",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "post"
+     ],
+     "say": "post",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "sub",
+     "en": "under",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "sub"
+     ],
+     "say": "sub",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "super",
+     "en": "above, over",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "super"
+     ],
+     "say": "super",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "trāns",
+     "en": "across",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "trāns"
+     ],
+     "say": "trans",
+     "id": "20"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "basilica, basilicae, f.",
+     "en": "law court",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "basilica, basilicae, f.",
+      "basilica"
+     ],
+     "say": "basilica, basilicae",
+     "id": "21"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "casa, casae, f.",
+     "en": "cottage, house",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "casa, casae, f.",
+      "casa"
+     ],
+     "say": "casa, casae",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "columna, columnae, f.",
+     "en": "column, pillar",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "columna, columnae, f.",
+      "columna"
+     ],
+     "say": "columna, columnae",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "domus, domūs, f.",
+     "en": "home, house",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "domus, domūs, f.",
+      "domus"
+     ],
+     "say": "domus, domus",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "hortus, hortī, m.",
+     "en": "garden",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "hortus, hortī, m.",
+      "hortus"
+     ],
+     "say": "hortus, horti",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nihil",
+     "en": "nothing",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "nihil"
+     ],
+     "say": "nihil",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vīlla, vīllae, f.",
+     "en": "country house, estate",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vīlla, vīllae, f.",
+      "vīlla"
+     ],
+     "say": "villa, villae",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vīnum, vīnī, n.",
+     "en": "wine",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "vīnum, vīnī, n.",
+      "vīnum"
+     ],
+     "say": "vinum, vini",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "dēscendō, dēscendere",
+     "en": "to climb down, to descend",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "dēscendō, dēscendere",
+      "dēscendō"
+     ],
+     "say": "descendo, descendere",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "emō, emere",
+     "en": "to buy",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "emō, emere",
+      "emō"
+     ],
+     "say": "emo, emere",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "latitō, latitāre",
+     "en": "to hide oneself",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "latitō, latitāre",
+      "latitō"
+     ],
+     "say": "latito, latitare",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "vestīgō, vestīgāre",
+     "en": "to seek, to search out",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "vestīgō, vestīgāre",
+      "vestīgō"
+     ],
+     "say": "vestigo, vestigare",
+     "id": "32"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "timidus/a/um",
+     "en": "shy",
+     "pos": "adjective",
+     "kind": "word",
+     "accept": [
+      "timidus/a/um",
+      "timidus"
+     ],
+     "say": "timidus, timida, timidum",
+     "id": "33"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ad",
+     "en": "to, towards",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "ad"
+     ],
+     "say": "ad",
+     "id": "34"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ā/ab",
+     "en": "from, away from",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "ā/ab",
+      "ā"
+     ],
+     "say": "a, ab",
+     "id": "35"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "cum",
+     "en": "with",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "cum"
+     ],
+     "say": "cum",
+     "id": "36"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "dē",
+     "en": "down from",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "dē"
+     ],
+     "say": "de",
+     "id": "37"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "in",
+     "en": "in, into",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "in"
+     ],
+     "say": "in",
+     "id": "38"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "prope",
+     "en": "near",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "prope"
+     ],
+     "say": "prope",
+     "id": "39"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sine",
+     "en": "without",
+     "pos": "preposition",
+     "kind": "word",
+     "accept": [
+      "sine"
+     ],
+     "say": "sine",
+     "id": "40"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "congrātulātiōnēs",
+     "en": "congratulations",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "congrātulātiōnēs"
+     ],
+     "say": "congratulationes",
+     "id": "41"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "illud",
+     "en": "that",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "illud"
+     ],
+     "say": "illud",
+     "id": "42"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "-que",
+     "en": "and (attached to end of a word)",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "-que"
+     ],
+     "say": "-que",
+     "id": "43"
+    }
+   ],
+   "short": "II·10 Roman Housing"
+  },
+  {
+   "id": "II-11",
+   "title": "Elementa II · Unit 11 · The Future Tense / Palmyra",
+   "sections": [
+    "Verba Necessāria",
+    "Verba Ūtilia"
+   ],
+   "items": [
+    {
+     "section": "Verba Necessāria",
+     "word": "fīlia, fīliae, f.",
+     "en": "daughter",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "fīlia, fīliae, f.",
+      "fīlia"
+     ],
+     "say": "filia, filiae",
+     "id": "01"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "fīlius, fīliī, m.",
+     "en": "son",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "fīlius, fīliī, m.",
+      "fīlius"
+     ],
+     "say": "filius, filii",
+     "id": "02"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "hospes, hospitis, m.",
+     "en": "guest, visitor",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "hospes, hospitis, m.",
+      "hospes"
+     ],
+     "say": "hospes, hospitis",
+     "id": "03"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "pecūnia, pecūniae, f.",
+     "en": "money",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "pecūnia, pecūniae, f.",
+      "pecūnia"
+     ],
+     "say": "pecunia, pecuniae",
+     "id": "04"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "vincō, vincere",
+     "en": "to conquer",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "vincō, vincere",
+      "vincō"
+     ],
+     "say": "vinco, vincere",
+     "id": "05"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "ūnus/a/um",
+     "en": "one",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "ūnus/a/um",
+      "ūnus"
+     ],
+     "say": "unus, una, unum",
+     "id": "06"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "duo/duae",
+     "en": "two",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "duo/duae",
+      "duo",
+      "duae"
+     ],
+     "say": "duo, duae",
+     "id": "07"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "trēs/tria",
+     "en": "three",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "trēs/tria",
+      "trēs",
+      "tria"
+     ],
+     "say": "tres, tria",
+     "id": "08"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "quattuor",
+     "en": "four",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "quattuor"
+     ],
+     "say": "quattuor",
+     "id": "09"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "quīnque",
+     "en": "five",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "quīnque"
+     ],
+     "say": "quinque",
+     "id": "10"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "sex",
+     "en": "six",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "sex"
+     ],
+     "say": "sex",
+     "id": "11"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "septem",
+     "en": "seven",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "septem"
+     ],
+     "say": "septem",
+     "id": "12"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "octo",
+     "en": "eight",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "octo"
+     ],
+     "say": "octo",
+     "id": "13"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "novem",
+     "en": "nine",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "novem"
+     ],
+     "say": "novem",
+     "id": "14"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "decem",
+     "en": "ten",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "decem"
+     ],
+     "say": "decem",
+     "id": "15"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "centum",
+     "en": "one hundred",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "centum"
+     ],
+     "say": "centum",
+     "id": "16"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "mīlle",
+     "en": "one thousand",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "mīlle"
+     ],
+     "say": "mille",
+     "id": "17"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "prīmus/a/um",
+     "en": "first",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "prīmus/a/um",
+      "prīmus"
+     ],
+     "say": "primus, prima, primum",
+     "id": "18"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "aut",
+     "en": "or",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "aut"
+     ],
+     "say": "aut",
+     "id": "19"
+    },
+    {
+     "section": "Verba Necessāria",
+     "word": "satis",
+     "en": "enough, sufficient",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "satis"
+     ],
+     "say": "satis",
+     "id": "20"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "amor, amōris, m.",
+     "en": "love",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "amor, amōris, m.",
+      "amor"
+     ],
+     "say": "amor, amoris",
+     "id": "21"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "annus, annī, m.",
+     "en": "year",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "annus, annī, m.",
+      "annus"
+     ],
+     "say": "annus, anni",
+     "id": "22"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "īnfāns, īnfantis, m./f.",
+     "en": "baby, infant",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "īnfāns, īnfantis, m./f.",
+      "īnfāns"
+     ],
+     "say": "infans, infantis",
+     "id": "23"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "littera, litterae, f.",
+     "en": "a letter (of the alphabet)",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "littera, litterae, f.",
+      "littera"
+     ],
+     "say": "littera, litterae",
+     "id": "24"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "mātrimōnium, mātrimōniī, n.",
+     "en": "marriage",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "mātrimōnium, mātrimōniī, n.",
+      "mātrimōnium"
+     ],
+     "say": "matrimonium, matrimonii",
+     "id": "25"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nūptiae, nūptiārum, f. pl.",
+     "en": "wedding (nuptials)",
+     "pos": "noun",
+     "kind": "word",
+     "accept": [
+      "nūptiae, nūptiārum, f. pl.",
+      "nūptiae"
+     ],
+     "say": "nuptiae, nuptiarum",
+     "id": "26"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "negō, negāre",
+     "en": "to deny, to refuse",
+     "pos": "verb",
+     "kind": "word",
+     "accept": [
+      "negō, negāre",
+      "negō"
+     ],
+     "say": "nego, negare",
+     "id": "27"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "secundus/a/um",
+     "en": "second",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "secundus/a/um",
+      "secundus"
+     ],
+     "say": "secundus, secunda, secundum",
+     "id": "28"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "tertius/a/um",
+     "en": "third",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "tertius/a/um",
+      "tertius"
+     ],
+     "say": "tertius, tertia, tertium",
+     "id": "29"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "quārtus/a/um",
+     "en": "fourth",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "quārtus/a/um",
+      "quārtus"
+     ],
+     "say": "quartus, quarta, quartum",
+     "id": "30"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "quīntus/a/um",
+     "en": "fifth",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "quīntus/a/um",
+      "quīntus"
+     ],
+     "say": "quintus, quinta, quintum",
+     "id": "31"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "sextus/a/um",
+     "en": "sixth",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "sextus/a/um",
+      "sextus"
+     ],
+     "say": "sextus, sexta, sextum",
+     "id": "32"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "septimus/a/um",
+     "en": "seventh",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "septimus/a/um",
+      "septimus"
+     ],
+     "say": "septimus, septima, septimum",
+     "id": "33"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "octāvus/a/um",
+     "en": "eighth",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "octāvus/a/um",
+      "octāvus"
+     ],
+     "say": "octavus, octava, octavum",
+     "id": "34"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "nōnus/a/um",
+     "en": "ninth",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "nōnus/a/um",
+      "nōnus"
+     ],
+     "say": "nonus, nona, nonum",
+     "id": "35"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "decimus/a/um",
+     "en": "tenth",
+     "pos": "number",
+     "kind": "word",
+     "accept": [
+      "decimus/a/um",
+      "decimus"
+     ],
+     "say": "decimus, decima, decimum",
+     "id": "36"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "aliquandō",
+     "en": "someday",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "aliquandō"
+     ],
+     "say": "aliquando",
+     "id": "37"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "ōlim",
+     "en": "once upon a time, one day",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "ōlim"
+     ],
+     "say": "olim",
+     "id": "38"
+    },
+    {
+     "section": "Verba Ūtilia",
+     "word": "quandō",
+     "en": "when",
+     "pos": "other",
+     "kind": "word",
+     "accept": [
+      "quandō"
+     ],
+     "say": "quando",
+     "id": "39"
+    }
+   ],
+   "short": "II·11 Palmyra"
+  }
+ ]
+}
